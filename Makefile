@@ -45,7 +45,9 @@ clean: tidy
 	find src/gfx \
 	     \( -iname '*.1bpp' \
 	        -o -iname '*.2bpp' \
-	        -o -iname '*.pal' \) \
+	        -o -iname '*.pal'  \
+	        -o -iname '*.attrmap'  \
+	        -o -iname '*.cardattr' \) \
 	     -delete
 
 tidy:
@@ -104,6 +106,8 @@ $(rom): $(rom_obj) src/layout.link
 
 ### Misc file-specific graphics rules
 
+src/gfx/cards/%.2bpp: RGBGFXFLAGS += -Z -P -A
+
 src/gfx/coins/%.2bpp: RGBGFXFLAGS += -x 1
 
 src/gfx/booster_packs/beginning_pack.2bpp: RGBGFXFLAGS += -x 2
@@ -124,13 +128,17 @@ src/gfx/link/link_scene.2bpp: RGBGFXFLAGS += -x 7
 %.png: ;
 
 %.pal: ;
+%.attrmap: ;
 
 %.2bpp: %.png
-	$(RGBGFX) --colors dmg $(RGBGFXFLAGS) -o $@ $<
+	$(RGBGFX) $(RGBGFXFLAGS) -o $@ $<
 	$(if $(tools/gfx),\
 		tools/gfx $(tools/gfx) -o $@ $@)
 
 %.1bpp: %.png
-	$(RGBGFX) --colors dmg $(RGBGFXFLAGS) --depth 1 -o $@ $<
+	$(RGBGFX) $(RGBGFXFLAGS) --depth 1 -o $@ $<
 	$(if $(tools/gfx),\
 		tools/gfx $(tools/gfx) -d1 -o $@ $@)
+
+%.cardattr: %.attrmap
+	tools/card_attributes $(tools/card_attributes) -o $@ $<

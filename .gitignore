@@ -24,3 +24,6 @@
 
 # *disasm.py output file
 *disasm_output.asm
+
+# converted card attributes
+*.cardattr
