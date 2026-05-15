@@ -314,8 +314,8 @@
 	const MEWTWO_LV30              ; $139
 	const MEWTWO_LV53              ; $13a
 	const MEWTWO_LV54              ; $13b
-	const MEWTWO_LV60              ; $13c
-	const MEWTWO_ALT_LV60          ; $13d
+	const MEWTWO_ALT_LV60          ; $13c
+	const MEWTWO_LV60              ; $13d
 	const MEWTWO_LV67              ; $13e
 	const GRS_MEWTWO               ; $13f
 	const MEW_LV8                  ; $140
