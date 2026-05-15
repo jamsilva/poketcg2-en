@@ -6925,11 +6925,6 @@ AppendOwnedCardCountNumber:
 .end
 	call GetOwnedCardCount
 	call ConvertToNumericalDigits
-	ldfw bc, "枚"
-	ld [hl], c
-	inc hl
-	ld [hl], b
-	inc hl
 	ld [hl], $00 ; insert byte terminator
 	pop hl
 	pop de
@@ -6999,11 +6994,6 @@ PrintTotalNumberOfCardsInCollection:
 	call .PlaceNumericalChar
 	call .PlaceNumericalChar
 	call .PlaceNumericalChar
-	ldfw bc, "枚"
-	ld [hl], c ; 枚
-	inc hl
-	ld [hl], b
-	inc hl
 	ld [hl], TX_END
 	lb de, 13, 0
 	call InitTextPrinting

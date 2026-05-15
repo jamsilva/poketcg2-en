@@ -1,5 +1,4 @@
 ; return a = streak
-; harmless bug: also return bc = wUnusedCoinFlipGamePayout which is garbage but unused
 CoinFlipGameScreen:
 	farcall SuspendOverworldForSubScreen
 	call ShowCoinFlipGame
@@ -7,7 +6,6 @@ CoinFlipGameScreen:
 	ret
 
 ; return a = streak
-; harmless bug: also return bc = wUnusedCoinFlipGamePayout which is garbage but unused
 ShowCoinFlipGame:
 	push de
 	push hl
@@ -20,42 +18,10 @@ ShowCoinFlipGame:
 	ld a, AUDVOL_FULL_VOLUME
 	call CallSetVolume
 	pop af
-	call .LoadPayout
-	ld hl, wUnusedCoinFlipGamePayout
-	ld c, [hl]
-	inc hl
-	ld b, [hl]
 	ld a, [wCoinFlipGameStreak]
 	pop hl
 	pop de
 	ret
-
-; bug: never points at .payout and loads garbage to the buffer
-.LoadPayout:
-	ld a, [wCoinFlipGameStreak]
-	add a
-	ld c, a
-	ld b, $00
-	; ld hl, .payout
-	add hl, bc
-	ld a, [hli]
-	ld [wUnusedCoinFlipGamePayout], a
-	ld a, [hl]
-	ld [wUnusedCoinFlipGamePayout + 1], a
-	ret
-
-.payout
-	dw 0
-	dw 0
-	dw 0
-	dw CHIPS_COIN_FLIP_STREAK_3
-	dw CHIPS_COIN_FLIP_STREAK_4
-	dw CHIPS_COIN_FLIP_STREAK_5
-	dw CHIPS_COIN_FLIP_STREAK_6
-	dw CHIPS_COIN_FLIP_STREAK_7
-	dw CHIPS_COIN_FLIP_STREAK_8
-	dw CHIPS_COIN_FLIP_STREAK_9
-	dw 0
 
 PlayCoinFlipGame:
 	farcall ClearSpriteAnimsAndSetInitialGraphicsConfiguration
