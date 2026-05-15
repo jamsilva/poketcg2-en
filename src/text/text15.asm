@@ -1,3 +1,5 @@
+SECTION "Text 15", ROMX
+
 GrowlDescription:
 	textfw "次の相手の番、"
 	linefw "このワザを受けた[相手]が、"

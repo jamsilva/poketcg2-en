@@ -1,3 +1,5 @@
+SECTION "Text 14", ROMX
+
 UsefulButtonsBookText:
 	textfw "対戦画面での べんりなボタン"
 	linefw "Bボタンをおしながら 十字ボタン!"
@@ -116,7 +118,7 @@ PhantomCardsBookText:
 	linefw "どんなカードなのかは ふめいだそうだ"
 	linefw "いったい どんなカードなのだろう"
 	linefw "まぼろしのカードを てにいれるぞ"
-	linefw "          Mr.イシハラ"
+	linefw "          M<RDOT>イシハラ"
 	done
 
 DarkPokemonBookText:

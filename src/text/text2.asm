@@ -1,3 +1,5 @@
+SECTION "Text 2", ROMX
+
 PrehistoricDreamCheckText:
 	textfw "「おもて」なら 「なにかの化石」から"
 	linefw "進化したポケモンの ダメージが+10"
@@ -2504,7 +2506,7 @@ MachineGreatDragonDeckName:
 	done
 
 MachineStarterDeckDescriptionText:
-	textfw "Dr.オーヤマから もらったデッキ"
+	textfw "D<RDOT>オーヤマから もらったデッキ"
 	linefw "炎と 闘エネルギーで つくられている"
 	done
 

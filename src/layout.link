@@ -70,7 +70,10 @@ ROMX $12
 	"Bank 12"
 ROMX $13
 	"Bank 13"
-; ROMX $14 and $15 are empty
+ROMX $14
+	"Text Offsets"
+ROMX $15
+	"Text Offsets 2"
 ROMX $16
 	"Effect Commands"
 	"Decks"
@@ -89,43 +92,45 @@ ROMX $1d
 	"Card Gfx 1"
 ; ROMX $1e-$36 not started
 ROMX $37
-	"Text Offsets"
-ROMX $38
-	"Text Offsets 2"
 	"Text 1"
-ROMX $39
+ROMX $38
 	"Text 2"
-ROMX $3a
+ROMX $39
 	"Text 3"
-ROMX $3b
+ROMX $3a
 	"Text 4"
-ROMX $3c
+ROMX $3b
 	"Text 5"
-ROMX $3d
+ROMX $3c
 	"Text 6"
-ROMX $3e
+ROMX $3d
 	"Text 7"
-ROMX $3f
+ROMX $3e
 	"Text 8"
-ROMX $40
+ROMX $3f
 	"Text 9"
-ROMX $41
+ROMX $40
 	"Text 10"
-ROMX $42
+ROMX $41
 	"Text 11"
-ROMX $43
+ROMX $42
 	"Text 12"
-ROMX $44
+ROMX $43
 	"Text 13"
-ROMX $45
+ROMX $44
 	"Text 14"
-ROMX $46
+ROMX $45
 	"Text 15"
-ROMX $47
+ROMX $46
 	"Text 16"
-ROMX $48
+ROMX $47
 	"Text 17"
-; ROMX $49 and $4a are empty
+ROMX $48
+	"Text 18"
+ROMX $49
+	"Text 19"
+ROMX $4a
+	"Text 20"
 ROMX $4b
 	"Bank 4b"
 	"Tilemaps 1"
