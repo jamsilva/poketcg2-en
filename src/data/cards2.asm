@@ -9090,7 +9090,7 @@ HereComesTeamRocketCard:
 	db TYPE_TRAINER ; type
 	gfx HereComesTeamRocketCardGfx ; gfx
 	tx HereComesTeamRocketName ; name
-	db WHITESTAR ; rarity
+	db STAR ; rarity
 	db TEAM_ROCKET ; real set
 	db PROMOTIONAL ; in-game set
 	dw HERE_COMES_TEAM_ROCKET

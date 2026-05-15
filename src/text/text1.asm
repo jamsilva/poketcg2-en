@@ -1,5 +1,9 @@
 SECTION "Text 1", ROMX
 
+; UNUSED
+UNUSED_0015:
+	done
+
 HandText:
 	textfw "てふだ"
 	done
@@ -100,10 +104,6 @@ DiamondRarityText:
 
 StarRarityText:
 	textfw "★"
-	done
-
-WhitestarRarityText:
-	textfw "☆"
 	done
 
 AllCardsOwnedText:

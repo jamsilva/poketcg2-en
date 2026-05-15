@@ -3949,7 +3949,6 @@ CardRarityTextIDs:
 	tx CircleRarityText    ; CIRCLE
 	tx DiamondRarityText   ; DIAMOND
 	tx StarRarityText      ; STAR
-	tx WhitestarRarityText ; WHITESTAR
 
 DisplayCardPage_TrainerPage1:
 	xor a ; HEADER_TRAINER
