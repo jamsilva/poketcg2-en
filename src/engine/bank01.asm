@@ -1426,7 +1426,7 @@ CheckIfEnoughEnergiesForGivenAttack:
 PrintDuelResultStats:
 	lb de, 8, 8
 	call .PrintDuelistResultStats
-	lb de, 2, 1
+	lb de, 1, 1
 	call SwapTurn
 	call .PrintDuelistResultStats
 	call SwapTurn
