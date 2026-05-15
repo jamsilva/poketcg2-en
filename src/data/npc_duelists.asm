@@ -110,362 +110,362 @@ MACRO npc_duelist
 ENDM
 
 SamNPCDuelistHeader:
-	npc_duelist NPC_SAM, DialogSamText, \
+	npc_duelist NPC_SAM, DuelistSamName, \
 		NONE, NONE, \
 		UNUSED_SAMS_PRACTICE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AaronNPCDuelistHeader:
-	npc_duelist NPC_AARON, DialogAaronText, \
+	npc_duelist NPC_AARON, DuelistAaronName, \
 		NONE, DialogTechText, \
 		AARONS_STEP1_DECK_ID, AARONS_STEP2_DECK_ID, AARONS_STEP3_DECK_ID, BRICK_WALK_DECK_ID, BENCH_TRAP_DECK_ID
 NikkiNPCDuelistHeader:
-	npc_duelist NPC_NIKKI, DialogNikkiText, \
+	npc_duelist NPC_NIKKI, DuelistNikkiName, \
 		GrassClubShortText, OpponentGrassClubMasterBracketedText, \
 		MAX_ENERGY_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 BrittanyNPCDuelistHeader:
-	npc_duelist NPC_BRITTANY, DialogBrittanyText, \
+	npc_duelist NPC_BRITTANY, DuelistBrittanyName, \
 		GrassClubShortText, OpponentGrassClubMemberBracketedText, \
 		REMAINING_GREEN_DECK_ID, POISON_CURSE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 KristinNPCDuelistHeader:
-	npc_duelist NPC_KRISTIN, DialogKristinText, \
+	npc_duelist NPC_KRISTIN, DuelistKristinName, \
 		GrassClubShortText, OpponentGrassClubMemberBracketedText, \
 		GLITTERING_SCALES_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 HeatherNPCDuelistHeader:
-	npc_duelist NPC_HEATHER, DialogHeatherText, \
+	npc_duelist NPC_HEATHER, DuelistHeatherName, \
 		GrassClubShortText, OpponentGrassClubMemberBracketedText, \
 		STEADY_INCREASE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AmyNPCDuelistHeader:
-	npc_duelist NPC_AMY_LOUNGE, DialogAmyText, \
+	npc_duelist NPC_AMY_LOUNGE, DuelistAmyName, \
 		WaterClubShortText, OpponentWaterClubMasterBracketedText, \
 		RAIN_DANCE_CONFUSION_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JoshuaNPCDuelistHeader:
-	npc_duelist NPC_JOSHUA, DialogJoshuaText, \
+	npc_duelist NPC_JOSHUA, DuelistJoshuaName, \
 		WaterClubShortText, OpponentWaterClubMemberBracketedText, \
 		CONSERVING_WATER_DECK_ID, ENERGY_REMOVAL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 SaraNPCDuelistHeader:
-	npc_duelist NPC_SARA, DialogSaraText, \
+	npc_duelist NPC_SARA, DuelistSaraName, \
 		WaterClubShortText, OpponentWaterClubMemberBracketedText, \
 		SPLASHING_ABOUT_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AmandaNPCDuelistHeader:
-	npc_duelist NPC_AMANDA, DialogAmandaText, \
+	npc_duelist NPC_AMANDA, DuelistAmandaName, \
 		WaterClubShortText, OpponentWaterClubMemberBracketedText, \
 		BEACH_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GeneNPCDuelistHeader:
-	npc_duelist NPC_GENE, DialogGeneText, \
+	npc_duelist NPC_GENE, DuelistGeneName, \
 		RockClubShortText, OpponentRockClubMasterBracketedText, \
 		EVEN3_YEARS_ON_A_ROCK_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MatthewNPCDuelistHeader:
-	npc_duelist NPC_MATTHEW, DialogMatthewText, \
+	npc_duelist NPC_MATTHEW, DuelistMatthewName, \
 		RockClubShortText, OpponentRockClubMemberBracketedText, \
 		ROLLING_STONE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RyanNPCDuelistHeader:
-	npc_duelist NPC_RYAN, DialogRyanText, \
+	npc_duelist NPC_RYAN, DuelistRyanName, \
 		RockClubShortText, OpponentRockClubMemberBracketedText, \
 		GREAT_EARTHQUAKE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AndrewNPCDuelistHeader:
-	npc_duelist NPC_ANDREW, DialogAndrewText, \
+	npc_duelist NPC_ANDREW, DuelistAndrewName, \
 		RockClubShortText, OpponentRockClubMemberBracketedText, \
 		AWESOME_FOSSIL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MitchNPCDuelistHeader:
-	npc_duelist NPC_MITCH, DialogMitchText, \
+	npc_duelist NPC_MITCH, DuelistMitchName, \
 		FightingClubShortText, OpponentFightingClubMasterBracketedText, \
 		RAGING_BILLOW_OF_FISTS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MichaelNPCDuelistHeader:
-	npc_duelist NPC_MICHAEL, DialogMichaelText, \
+	npc_duelist NPC_MICHAEL, DuelistMichaelName, \
 		FightingClubShortText, OpponentFightingClubMemberBracketedText, \
 		YOU_CAN_DO_IT_MACHOP_DECK_ID, NEW_MACHOKE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 ChrisNPCDuelistHeader:
-	npc_duelist NPC_CHRIS, DialogChrisText, \
+	npc_duelist NPC_CHRIS, DuelistChrisName, \
 		FightingClubShortText, OpponentFightingClubMemberBracketedText, \
 		SKILLED_WARRIOR_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JessicaNPCDuelistHeader:
-	npc_duelist NPC_JESSICA, DialogJessicaText, \
+	npc_duelist NPC_JESSICA, DuelistJessicaName, \
 		FightingClubShortText, OpponentFightingClubMemberBracketedText, \
 		I_LOVE_TO_FIGHT_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RickNPCDuelistHeader:
-	npc_duelist NPC_RICK, DialogRickText, \
+	npc_duelist NPC_RICK, DuelistRickName, \
 		ScienceClubShortText, OpponentScienceClubMasterBracketedText, \
 		DARK_SCIENCE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 DavidNPCDuelistHeader:
-	npc_duelist NPC_DAVID, DialogDavidText, \
+	npc_duelist NPC_DAVID, DuelistDavidName, \
 		ScienceClubShortText, OpponentScienceClubMemberBracketedText, \
 		NATURAL_SCIENCE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JosephNPCDuelistHeader:
-	npc_duelist NPC_JOSEPH, DialogJosephText, \
+	npc_duelist NPC_JOSEPH, DuelistJosephName, \
 		ScienceClubShortText, OpponentScienceClubMemberBracketedText, \
 		POISONOUS_SWAMP_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 ErikNPCDuelistHeader:
-	npc_duelist NPC_ERIK, DialogErikText, \
+	npc_duelist NPC_ERIK, DuelistErikName, \
 		ScienceClubShortText, OpponentScienceClubMemberBracketedText, \
 		GATHERING_NIDORAN_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 KenNPCDuelistHeader:
-	npc_duelist NPC_KEN, DialogKenText, \
+	npc_duelist NPC_KEN, DuelistKenName, \
 		FireClubShortText, OpponentFireClubMasterBracketedText, \
 		GO_ARCANINE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JohnNPCDuelistHeader:
-	npc_duelist NPC_JOHN, DialogJohnText, \
+	npc_duelist NPC_JOHN, DuelistJohnName, \
 		FireClubShortText, OpponentFireClubMemberBracketedText, \
 		FLAME_FESTIVAL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AdamNPCDuelistHeader:
-	npc_duelist NPC_ADAM, DialogAdamText, \
+	npc_duelist NPC_ADAM, DuelistAdamName, \
 		FireClubShortText, OpponentFireClubMemberBracketedText, \
 		ELECTRIC_CURRENT_SHOCK_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JonathanNPCDuelistHeader:
-	npc_duelist NPC_JONATHAN, DialogJonathanText, \
+	npc_duelist NPC_JONATHAN, DuelistJonathanName, \
 		FireClubShortText, OpponentFireClubMemberBracketedText, \
 		IMMORTAL_FLAME_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 IsaacNPCDuelistHeader:
-	npc_duelist NPC_ISAAC, DialogIsaacText, \
+	npc_duelist NPC_ISAAC, DuelistIsaacName, \
 		LightningClubShortText, OpponentLightningClubMasterBracketedText, \
 		SKY_SPARK_DECK_ID, ELECTRIC_SELFDESTRUCT_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 JenniferNPCDuelistHeader:
-	npc_duelist NPC_JENNIFER, DialogJenniferText, \
+	npc_duelist NPC_JENNIFER, DuelistJenniferName, \
 		LightningClubShortText, OpponentLightningClubMemberBracketedText, \
 		I_LOVE_PIKACHU_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 NicholasNPCDuelistHeader:
-	npc_duelist NPC_NICHOLAS, DialogNicholasText, \
+	npc_duelist NPC_NICHOLAS, DuelistNicholasName, \
 		LightningClubShortText, OpponentLightningClubMemberBracketedText, \
 		OVERFLOW_DECK_ID, TRIPLE_ZAPDOS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 BrandonNPCDuelistHeader:
-	npc_duelist NPC_BRANDON, DialogBrandonText, \
+	npc_duelist NPC_BRANDON, DuelistBrandonName, \
 		LightningClubShortText, OpponentLightningClubMemberBracketedText, \
 		TEN_THOUSAND_VOLTS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MurrayNPCDuelistHeader:
-	npc_duelist NPC_MURRAY, DialogMurrayText, \
+	npc_duelist NPC_MURRAY, DuelistMurrayName, \
 		PsychicClubShortText, OpponentPsychicClubMasterBracketedText, \
 		HAND_OVER_GR_DECK_ID, PSYCHIC_ELITE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE
 RobertNPCDuelistHeader:
-	npc_duelist NPC_ROBERT, DialogRobertText, \
+	npc_duelist NPC_ROBERT, DuelistRobertName, \
 		PsychicClubShortText, OpponentPsychicClubMemberBracketedText, \
 		PHANTOM_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 DanielNPCDuelistHeader:
-	npc_duelist NPC_DANIEL, DialogDanielText, \
+	npc_duelist NPC_DANIEL, DuelistDanielName, \
 		PsychicClubShortText, OpponentPsychicClubMemberBracketedText, \
 		PUPPET_MASTER_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 StephanieNPCDuelistHeader:
-	npc_duelist NPC_STEPHANIE, DialogStephanieText, \
+	npc_duelist NPC_STEPHANIE, DuelistStephanieName, \
 		PsychicClubShortText, OpponentPsychicClubMemberBracketedText, \
 		PSYCHOKINESIS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RodNPCDuelistHeader:
-	npc_duelist NPC_ROD, DialogRodText, \
+	npc_duelist NPC_ROD, DuelistRodName, \
 		NONE, OpponentGrandMasterText, \
 		GREAT_DRAGON_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JackNPCDuelistHeader:
-	npc_duelist NPC_JACK, DialogJackText, \
+	npc_duelist NPC_JACK, DuelistJackName, \
 		NONE, OpponentGrandMasterText, \
 		WATER_LEGEND_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 SteveNPCDuelistHeader:
-	npc_duelist NPC_STEVE, DialogSteveText, \
+	npc_duelist NPC_STEVE, DuelistSteveName, \
 		NONE, OpponentGrandMasterText, \
 		LEGENDARY_FOSSIL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 CourtneyNPCDuelistHeader:
-	npc_duelist NPC_COURTNEY, DialogCourtneyText, \
+	npc_duelist NPC_COURTNEY, DuelistCourtneyName, \
 		NONE, OpponentGrandMasterText, \
 		GRAND_FIRE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MorinoNPCDuelistHeader:
-	npc_duelist NPC_MORINO, DialogMorinoText, \
+	npc_duelist NPC_MORINO, DuelistMorinoName, \
 		GRGrassFortShortText, OpponentGRGrassFortLeaderText, \
 		MAD_PETALS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MiyukiNPCDuelistHeader:
-	npc_duelist NPC_MIYUKI, DialogMiyukiText, \
+	npc_duelist NPC_MIYUKI, DuelistMiyukiName, \
 		GRGrassFortShortText, OpponentGRGrassFortMemberText, \
 		STICKY_POISON_GAS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 YutaNPCDuelistHeader:
-	npc_duelist NPC_YUTA, DialogYutaText, \
+	npc_duelist NPC_YUTA, DuelistYutaName, \
 		GRGrassFortShortText, OpponentGRGrassFortMemberText, \
 		DEMONIC_FOREST_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MidoriNPCDuelistHeader:
-	npc_duelist NPC_MIDORI, DialogMidoriText, \
+	npc_duelist NPC_MIDORI, DuelistMidoriName, \
 		GRGrassFortShortText, OpponentGRGrassFortMemberText, \
 		BUG_COLLECTING_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 CatherineNPCDuelistHeader:
-	npc_duelist NPC_CATHERINE, DialogCatherineText, \
+	npc_duelist NPC_CATHERINE, DuelistCatherineName, \
 		GRLightningFortShortText, OpponentGRLightningFortLeaderText, \
 		QUICK_ATTACK_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 IchikawaNPCDuelistHeader:
-	npc_duelist NPC_ICHIKAWA, DialogIchikawaText, \
+	npc_duelist NPC_ICHIKAWA, DuelistIchikawaName, \
 		GRLightningFortShortText, OpponentGRLightningFortMemberText, \
 		THIS_IS_THE_POWER_OF_ELECTRICITY_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RennaNPCDuelistHeader:
-	npc_duelist NPC_RENNA, DialogRennaText, \
+	npc_duelist NPC_RENNA, DuelistRennaName, \
 		GRLightningFortShortText, OpponentGRLightningFortMemberText, \
 		CHAIN_LIGHTNING_BY_PIKACHU_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 HideroNPCDuelistHeader:
-	npc_duelist NPC_HIDERO, DialogHideroText, \
+	npc_duelist NPC_HIDERO, DuelistHideroName, \
 		GRFireFortShortText, OpponentGRFireFortLeaderText, \
 		GAZE_UPON_THE_POWER_OF_FIRE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 ShokoNPCDuelistHeader:
-	npc_duelist NPC_SHOKO, DialogShokoText, \
+	npc_duelist NPC_SHOKO, DuelistShokoName, \
 		GRFireFortShortText, OpponentGRFireFortMemberText, \
 		EEVEE_SHOWDOWN_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 YukiNPCDuelistHeader:
-	npc_duelist NPC_YUKI, DialogYukiText, \
+	npc_duelist NPC_YUKI, DuelistYukiName, \
 		GRFireFortShortText, OpponentGRFireFortMemberText, \
 		FIREBALL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 JesNPCDuelistHeader:
-	npc_duelist NPC_JES, DialogJesText, \
+	npc_duelist NPC_JES, DuelistJesName, \
 		GRFireFortShortText, OpponentGRFireFortMemberText, \
 		COMPLETE_COMBUSTION_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 KanokoNPCDuelistHeader:
-	npc_duelist NPC_KANOKO, DialogKanokoText, \
+	npc_duelist NPC_KANOKO, DuelistKanokoName, \
 		GRWaterFortShortText, OpponentGRWaterFortLeaderText, \
 		WATER_STREAM_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AiraNPCDuelistHeader:
-	npc_duelist NPC_AIRA, DialogAiraText, \
+	npc_duelist NPC_AIRA, DuelistAiraName, \
 		GRWaterFortShortText, OpponentGRWaterFortMemberText, \
 		BENCH_CALL_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 SentaNPCDuelistHeader:
-	npc_duelist NPC_SENTA, DialogSentaText, \
+	npc_duelist NPC_SENTA, DuelistSentaName, \
 		GRWaterFortShortText, OpponentGRWaterFortMemberText, \
 		PARALYZED_PARALYZED_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MiyajimaNPCDuelistHeader:
-	npc_duelist NPC_MIYAJIMA, DialogMiyajimaText, \
+	npc_duelist NPC_MIYAJIMA, DuelistMiyajimaName, \
 		GRWaterFortShortText, OpponentGRWaterFortMemberText, \
 		WHIRLPOOL_SHOWER_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 KamiyaNPCDuelistHeader:
-	npc_duelist NPC_KAMIYA, DialogKamiyaText, \
+	npc_duelist NPC_KAMIYA, DuelistKamiyaName, \
 		GRFightingFortShortText, OpponentGRFightingFortLeaderText, \
 		RUNNING_WILD_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GraceNPCDuelistHeader:
-	npc_duelist NPC_GRACE, DialogGraceText, \
+	npc_duelist NPC_GRACE, DuelistGraceName, \
 		GRFightingFortShortText, OpponentGRFightingFortMemberText, \
 		FULL_STRENGTH_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GodaNPCDuelistHeader:
-	npc_duelist NPC_GODA, DialogGodaText, \
+	npc_duelist NPC_GODA, DuelistGodaName, \
 		GRFightingFortShortText, OpponentGRFightingFortMemberText, \
 		ROCK_BLAST_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MamiNPCDuelistHeader:
-	npc_duelist NPC_MAMI, DialogMamiText, \
+	npc_duelist NPC_MAMI, DuelistMamiName, \
 		GRPsychicStrongholdShortText, OpponentGRPsychicStrongholdLeaderText, \
 		SPIRITED_AWAY_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RyokoNPCDuelistHeader:
-	npc_duelist NPC_RYOKO, DialogRyokoText, \
+	npc_duelist NPC_RYOKO, DuelistRyokoName, \
 		GRPsychicStrongholdShortText, OpponentGRPsychicStrongholdMemberText, \
 		POKEMON_POWER_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 YosukeNPCDuelistHeader:
-	npc_duelist NPC_YOSUKE, DialogYosukeText, \
+	npc_duelist NPC_YOSUKE, DuelistYosukeName, \
 		GRPsychicStrongholdShortText, OpponentGRPsychicStrongholdMemberText, \
 		BAD_DREAM_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 KevinNPCDuelistHeader:
-	npc_duelist NPC_KEVIN, DialogKevinText, \
+	npc_duelist NPC_KEVIN, DuelistKevinName, \
 		GRPsychicStrongholdShortText, OpponentGRPsychicStrongholdMemberText, \
 		SUPERDESTRUCTIVE_POWER_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MiwaNPCDuelistHeader:
-	npc_duelist NPC_MIWA, DialogMiwaText, \
+	npc_duelist NPC_MIWA, DuelistMiwaName, \
 		GRPsychicStrongholdShortText, OpponentGRPsychicStrongholdMemberText, \
 		DIRECT_HIT_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 SamejimaNPCDuelistHeader:
-	npc_duelist NPC_SAMEJIMA, DialogSamejimaText, \
+	npc_duelist NPC_SAMEJIMA, DuelistSamejimaName, \
 		ColorlessAltarShortText, OpponentColorlessAltarGuardianText, \
 		SUDDEN_GROWTH_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 IshiiNPCDuelistHeader:
-	npc_duelist NPC_ISHII, DialogIshiiText, \
+	npc_duelist NPC_ISHII, DuelistIshiiName, \
 		ColorlessAltarShortText, OpponentColorlessAltarGuardianText, \
 		EYE_OF_THE_STORM_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 NishijimaNPCDuelistHeader:
-	npc_duelist NPC_NISHIJIMA, DialogNishijimaText, \
+	npc_duelist NPC_NISHIJIMA, DuelistNishijimaName, \
 		ColorlessAltarShortText, OpponentColorlessAltarGuardianText, \
 		SNORLAX_GUARD_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 BiruritchiNPCDuelistHeader:
-	npc_duelist NPC_BIRURITCHI, DialogBiruritchiText, \
+	npc_duelist NPC_BIRURITCHI, DuelistBiruritchiName, \
 		NONE, OpponentGRKingText, \
 		STOP_LIFE_DECK_ID, SCORCHER_DECK_ID, TSUNAMI_STARTER_DECK_ID, SMASH_TO_MINCEMEAT_DECK_ID, DECK_NONE
 RuiNPCDuelistHeader:
-	npc_duelist NPC_RUI, DialogRuiText, \
+	npc_duelist NPC_RUI, DuelistRuiName, \
 		NONE, OpponentGRBigBossText, \
 		POISON_MIST_DECK_ID, ULTRA_REMOVAL_DECK_ID, PSYCHIC_BATTLE_DECK_ID, DECK_NONE, DECK_NONE
 KanzakiNPCDuelistHeader:
-	npc_duelist NPC_KANZAKI, DialogKanzakiText, \
+	npc_duelist NPC_KANZAKI, DuelistKanzakiName, \
 		NONE, OpponentGRBigBossText, \
 		BAD_GUYS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RonaldNPCDuelistHeader:
-	npc_duelist NPC_RONALD, DialogRonaldText, \
+	npc_duelist NPC_RONALD, DuelistRonaldName, \
 		NONE, OpponentRivalText, \
 		RONALDS_UNCOOL_DECK_ID, RONALDS_GRX_DECK_ID, RONALDS_POWER_DECK_ID, RONALDS_PSYCHIC_DECK_ID, RONALDS_ULTRA_DECK_ID
 ImakuniBlackNPCDuelistHeader:
-	npc_duelist NPC_IMAKUNI_BLACK, DialogImakuniText, \
+	npc_duelist NPC_IMAKUNI_BLACK, DuelistImakuniName, \
 		NONE, OpponentStrangeLifeFormText, \
 		WEIRD_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 ImakuniRedNPCDuelistHeader:
-	npc_duelist NPC_IMAKUNI_RED, DialogImakuniText, \
+	npc_duelist NPC_IMAKUNI_RED, DuelistImakuniName, \
 		NONE, OpponentStrangeLifeFormText, \
 		STRANGE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 IshiharaNPCDuelistHeader:
-	npc_duelist NPC_ISHIHARA, DialogMrIshiharaText, \
+	npc_duelist NPC_ISHIHARA, DuelistMrIshiharaName, \
 		NONE, NONE, \
 		VERY_RARE_CARD_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 TapNPCDuelistHeader:
-	npc_duelist NPC_TAP, DialogTapText, \
+	npc_duelist NPC_TAP, DuelistTapName, \
 		NONE, NONE, \
 		DANGEROUS_BENCH_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 QueenNPCDuelistHeader:
-	npc_duelist NPC_QUEEN, DialogQueenText, \
+	npc_duelist NPC_QUEEN, DuelistQueenName, \
 		NONE, NONE, \
 		POWERFUL_POKEMON_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 RookNPCDuelistHeader:
-	npc_duelist NPC_ROOK, DialogRookText, \
+	npc_duelist NPC_ROOK, DuelistRookName, \
 		NONE, NONE, \
 		COLORLESS_ENERGY_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 BishopNPCDuelistHeader:
-	npc_duelist NPC_BISHOP, DialogBishopText, \
+	npc_duelist NPC_BISHOP, DuelistBishopName, \
 		NONE, NONE, \
 		TEXTURE_TUNER7_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 KnightNPCDuelistHeader:
-	npc_duelist NPC_KNIGHT, DialogKnightText, \
+	npc_duelist NPC_KNIGHT, DuelistKnightName, \
 		NONE, NONE, \
 		PROTOHISTORIC_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 PawnNPCDuelistHeader:
-	npc_duelist NPC_PAWN, DialogPawnText, \
+	npc_duelist NPC_PAWN, DuelistPawnName, \
 		NONE, NONE, \
 		TEST_YOUR_LUCK_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 TobichanNPCDuelistHeader:
-	npc_duelist NPC_TOBICHAN, DialogTobichanText, \
+	npc_duelist NPC_TOBICHAN, DuelistTobichanName, \
 		NONE, NONE, \
 		POISON_STORM_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 EijiNPCDuelistHeader:
-	npc_duelist NPC_EIJI, DialogEijiText, \
+	npc_duelist NPC_EIJI, DuelistEijiName, \
 		NONE, NONE, \
 		EVERYBODYS_FRIEND_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MagicianNPCDuelistHeader:
-	npc_duelist NPC_MAGICIAN, DialogMagicianText, \
+	npc_duelist NPC_MAGICIAN, DuelistMagicianName, \
 		NONE, NONE, \
 		IMMORTAL_POKEMON_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 YuiNPCDuelistHeader:
-	npc_duelist NPC_YUI, DialogYuiText, \
+	npc_duelist NPC_YUI, DuelistYuiName, \
 		NONE, NONE, \
 		TORRENTIAL_FLOOD_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 ToshironNPCDuelistHeader:
-	npc_duelist NPC_TOSHIRON, DialogToshironText, \
+	npc_duelist NPC_TOSHIRON, DuelistToshironName, \
 		NONE, NONE, \
 		TRAINER_IMPRISON_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 PierrotNPCDuelistHeader:
-	npc_duelist NPC_PIERROT, DialogPierrotText, \
+	npc_duelist NPC_PIERROT, DuelistPierrotName, \
 		NONE, NONE, \
 		BLAZING_FLAME_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AnnaNPCDuelistHeader:
-	npc_duelist NPC_ANNA, DialogAnnaText, \
+	npc_duelist NPC_ANNA, DuelistAnnaName, \
 		NONE, NONE, \
 		DAMAGE_CHAOS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 DeeNPCDuelistHeader:
-	npc_duelist NPC_DEE, DialogDeeText, \
+	npc_duelist NPC_DEE, DuelistDeeName, \
 		NONE, NONE, \
 		BIG_THUNDER_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 MasqueradeNPCDuelistHeader:
-	npc_duelist NPC_MASQUERADE, DialogMasqueradeText, \
+	npc_duelist NPC_MASQUERADE, DuelistMasqueradeName, \
 		NONE, NONE, \
 		POWER_OF_DARKNESS_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GR1NPCDuelistHeader:
-	npc_duelist NPC_GR_1, DialogGR1Text, \
+	npc_duelist NPC_GR_1, DuelistGR1Name, \
 		NONE, OpponentEnigmaticMaskText, \
 		GREAT_ROCKET1_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GR2NPCDuelistHeader:
-	npc_duelist NPC_GR_2, DialogGR2Text, \
+	npc_duelist NPC_GR_2, DuelistGR2Name, \
 		NONE, OpponentEnigmaticMaskText, \
 		GREAT_ROCKET2_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GR3NPCDuelistHeader:
-	npc_duelist NPC_GR_3, DialogGR3Text, \
+	npc_duelist NPC_GR_3, DuelistGR3Name, \
 		NONE, OpponentEnigmaticMaskText, \
 		GREAT_ROCKET3_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 GR4NPCDuelistHeader:
-	npc_duelist NPC_GR_4, DialogGR4Text, \
+	npc_duelist NPC_GR_4, DuelistGR4Name, \
 		NONE, OpponentEnigmaticMaskText, \
 		GREAT_ROCKET4_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE

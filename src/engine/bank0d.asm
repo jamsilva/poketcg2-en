@@ -2,7 +2,7 @@ Script_34000:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $01
 	send_mail $10
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_player .NPCMovement_34031, TRUE
 	wait_for_player_animation
 	move_active_npc .NPCMovement_3402b
@@ -38,7 +38,7 @@ Script_RonaldClubEntranceCardPop:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $02
 	load_npc NPC_RONALD, 15, 3, EAST
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_34095
 	wait_for_player_animation
 	start_dialog
@@ -91,7 +91,7 @@ Script_RonaldWaterLightningClubEntranceCardPop:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $02
 	load_npc NPC_RONALD, 15, 3, EAST
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_34102
 	wait_for_player_animation
 	start_dialog
@@ -144,7 +144,7 @@ Script_RonaldRockClubEntranceCardPop:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $02
 	load_npc NPC_RONALD, 15, 3, EAST
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_3416f
 	wait_for_player_animation
 	start_dialog
@@ -197,7 +197,7 @@ Script_RonaldPsychicClubEntranceDuel:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $03
 	load_npc NPC_RONALD, 15, 3, EAST
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_341b7
 	wait_for_player_animation
 	start_dialog
@@ -280,7 +280,7 @@ Script_RonaldPsychicClubEntranceGift:
 	set_var VAR_21, $04
 .ows_3421c
 	load_npc NPC_RONALD, 4, 9, NORTH
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_3425f
 	wait_for_player_animation
 	start_dialog
@@ -338,7 +338,7 @@ Script_RonaldGameCenter:
 	play_song_next MUSIC_RONALD
 	scroll_to_position $ff, $00
 	load_npc NPC_RONALD, 6, 15, SOUTH
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_342da
 	wait_for_player_animation
 	start_dialog
@@ -397,7 +397,7 @@ Script_RonaldGrassFortScene:
 	send_mail $14
 	set_var VAR_TIMES_MET_RONALD, $05
 	load_npc NPC_GR_X, 4, 15, SOUTH
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	move_active_npc .NPCMovement_3431d
 	wait_for_player_animation
 	start_dialog
@@ -429,7 +429,7 @@ DoRonaldGrassFortAfterDuelScene:
 	end_dialog
 	spin_active_npc 515
 	replace_npc NPC_GR_X, NPC_RONALD
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	start_dialog
 	print_npc_text Text127a
 	give_booster_packs BoosterList_cdcf
@@ -437,7 +437,7 @@ DoRonaldGrassFortAfterDuelScene:
 	end_dialog
 	spin_active_npc_reverse 515
 	replace_npc NPC_RONALD, NPC_GR_X
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	start_dialog
 	print_npc_text Text127c
 	end_dialog
@@ -447,14 +447,14 @@ DoRonaldGrassFortAfterDuelScene:
 	end_dialog
 	spin_active_npc 515
 	replace_npc NPC_GR_X, NPC_RONALD
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	start_dialog
 	print_npc_text Text127e
 	print_npc_text Text127b
 	end_dialog
 	spin_active_npc_reverse 515
 	replace_npc NPC_RONALD, NPC_GR_X
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	start_dialog
 	print_npc_text Text127c
 	end_dialog
@@ -477,7 +477,7 @@ Script_RonaldPowerFortScene:
 	wait_for_fade
 	set_var VAR_TIMES_MET_RONALD, $06
 	load_npc NPC_GR_X, 4, 10, NORTH
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	move_active_npc .NPCMovement_343e2
 	wait_for_player_animation
 	check_event EVENT_GOT_MAGMAR_COIN
@@ -500,7 +500,7 @@ Script_RonaldPowerFortScene:
 	end_dialog
 	spin_active_npc 515
 	replace_npc NPC_GR_X, NPC_RONALD
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	start_dialog
 	print_npc_text Text1281
 	end_dialog
@@ -536,7 +536,7 @@ DoRonaldAfterDuelScene:
 	end_dialog
 	spin_active_npc_reverse 515
 	replace_npc NPC_RONALD, NPC_GR_X
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	move_active_npc .NPCMovement_3442a
 	wait_for_player_animation
 	unload_npc NPC_GR_X
@@ -553,7 +553,7 @@ DoRonaldAfterDuelScene:
 Script_RonaldAltarScene:
 	ld a, NPC_GR_X
 	ld [wScriptNPC], a
-	ldtx hl, DialogGRXText
+	ldtx hl, DuelistGRXName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -574,13 +574,13 @@ Script_RonaldAltarScene:
 	end_dialog
 	spin_active_npc 515
 	replace_npc NPC_GR_X, NPC_RONALD
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	start_dialog
 	print_npc_text Text1287
 	end_dialog
 	spin_active_npc_reverse 515
 	replace_npc NPC_RONALD, NPC_GR_X
-	set_active_npc NPC_GR_X, DialogGRXText
+	set_active_npc NPC_GR_X, DuelistGRXName
 	move_active_npc .NPCMovement_34488
 	wait_for_player_animation
 	unload_npc NPC_GR_X
@@ -606,7 +606,7 @@ Script_RonaldGrCastleScene:
 	play_song_next MUSIC_RONALD
 	do_frames 60
 	load_npc NPC_RONALD, 5, 2, NORTH
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	animate_active_npc_movement $82, $01
 	animate_active_npc_movement $82, $01
 	animate_active_npc_movement $82, $01
@@ -678,7 +678,7 @@ Script_RonaldWaterClubGiftScene:
 	start_script
 	wait_for_fade
 	load_npc NPC_RONALD, 4, 9, NORTH
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	move_active_npc .NPCMovement_34565
 	wait_for_player_animation
 	start_dialog
@@ -2213,7 +2213,7 @@ CardDungeonBishop_AfterDuel:
 Script_Bishop:
 	ld a, NPC_BISHOP
 	ld [wScriptNPC], a
-	ldtx hl, DialogBishopText
+	ldtx hl, DuelistBishopName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2717,7 +2717,7 @@ GrassFortMorino_AfterDuelScripts:
 Script_Morino:
 	ld a, NPC_MORINO
 	ld [wScriptNPC], a
-	ldtx hl, DialogMorinoText
+	ldtx hl, DuelistMorinoName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2916,7 +2916,7 @@ WaterFortSenta_AfterDuelScripts:
 Script_Senta:
 	ld a, NPC_SENTA
 	ld [wScriptNPC], a
-	ldtx hl, DialogSentaText
+	ldtx hl, DuelistSentaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3026,7 +3026,7 @@ Script_SentaAfterDuel:
 	play_sfx SFX_DOORS
 	load_tilemap TILEMAP_08C, $05, $00
 	load_npc NPC_JACK, 6, 1, SOUTH
-	set_active_npc NPC_JACK, DialogJackText
+	set_active_npc NPC_JACK, DuelistJackName
 	move_active_npc .NPCMovement_357aa
 	wait_for_player_animation
 	load_tilemap TILEMAP_08A, $05, $00
@@ -3086,7 +3086,7 @@ Script_SentaAfterDuel:
 	db $ff
 
 Script_357bf:
-	set_active_npc NPC_SENTA, DialogSentaText
+	set_active_npc NPC_SENTA, DuelistSentaName
 	move_active_npc .NPCMovement_357fe
 	wait_for_player_animation
 	set_player_direction SOUTH
@@ -3205,7 +3205,7 @@ WaterFortAira_AfterDuelScripts:
 Script_Aira:
 	ld a, NPC_AIRA
 	ld [wScriptNPC], a
-	ldtx hl, DialogAiraText
+	ldtx hl, DuelistAiraName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3457,20 +3457,20 @@ FightingFort_MeetMembersScript:
 	set_event EVENT_MET_FIGHTING_FORT_MEMBERS
 	move_player .NPCMovement_35b09, TRUE
 	wait_for_player_animation
-	set_active_npc NPC_KAMIYA, DialogKamiyaText
+	set_active_npc NPC_KAMIYA, DuelistKamiyaName
 	start_dialog
 	print_npc_text Text0c11
 	end_dialog
 	do_frames 30
 	set_active_npc_direction WEST
 	do_frames 30
-	set_active_npc NPC_GODA, DialogGodaText
+	set_active_npc NPC_GODA, DuelistGodaName
 	start_dialog
 	print_npc_text Text0c12
 	end_dialog
 	animate_active_npc_movement $02, $01
 	do_frames 30
-	set_active_npc NPC_KAMIYA, DialogKamiyaText
+	set_active_npc NPC_KAMIYA, DuelistKamiyaName
 	start_dialog
 	print_npc_text Text0c13
 	end_dialog
@@ -3478,12 +3478,12 @@ FightingFort_MeetMembersScript:
 	set_active_npc_direction EAST
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_GRACE, DialogGraceText
+	set_active_npc NPC_GRACE, DuelistGraceName
 	print_npc_text Text0c14
 	end_dialog
 	animate_active_npc_movement $02, $01
 	do_frames 30
-	set_active_npc NPC_KAMIYA, DialogKamiyaText
+	set_active_npc NPC_KAMIYA, DuelistKamiyaName
 	start_dialog
 	set_active_npc_direction SOUTH
 	print_npc_text Text0c15
@@ -3517,7 +3517,7 @@ FightingFort_MeetMembersScript:
 Script_Kamiya:
 	ld a, NPC_KAMIYA
 	ld [wScriptNPC], a
-	ldtx hl, DialogKamiyaText
+	ldtx hl, DuelistKamiyaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3845,7 +3845,7 @@ Script_FightingFortMitchCage:
 	ret nz
 	ld a, NPC_MITCH
 	ld [wScriptNPC], a
-	ldtx hl, DialogMitchText
+	ldtx hl, DuelistMitchName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3872,7 +3872,7 @@ FightingFortGoda_MitchAppearanceCheck:
 Script_Goda:
 	ld a, NPC_GODA
 	ld [wScriptNPC], a
-	ldtx hl, DialogGodaText
+	ldtx hl, DuelistGodaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3984,7 +3984,7 @@ Script_GodaAfterDuel:
 	fade_in $00, TRUE
 	wait_for_fade
 	do_frames 30
-	set_active_npc NPC_MITCH, DialogMitchText
+	set_active_npc NPC_MITCH, DuelistMitchName
 	start_dialog
 	set_player_direction EAST
 	print_npc_text Text0bf9
@@ -3998,15 +3998,15 @@ Script_GodaAfterDuel:
 	do_frames 30
 	start_dialog
 	print_npc_text Text0bfb
-	set_active_npc NPC_GODA, DialogGodaText
+	set_active_npc NPC_GODA, DuelistGodaName
 	print_npc_text Text0bfc
-	set_active_npc NPC_MITCH, DialogMitchText
+	set_active_npc NPC_MITCH, DuelistMitchName
 	print_npc_text Text0bfd
 	end_dialog
 	move_active_npc .NPCMovement_35f11
 	wait_for_player_animation
 	unload_npc NPC_MITCH
-	set_active_npc NPC_GODA, DialogGodaText
+	set_active_npc NPC_GODA, DuelistGodaName
 	start_dialog
 	set_player_direction NORTH
 	print_npc_text Text0bfe
@@ -4078,7 +4078,7 @@ FightingFortGrace_AfterDuelScripts:
 Script_Grace:
 	ld a, NPC_GRACE
 	ld [wScriptNPC], a
-	ldtx hl, DialogGraceText
+	ldtx hl, DuelistGraceName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4736,7 +4736,7 @@ PsychicStronghold_AfterDuelScripts:
 PsychicStronghold_MamiIntroPlatformScript:
 	ld a, NPC_MAMI
 	ld [wScriptNPC], a
-	ldtx hl, DialogMamiText
+	ldtx hl, DuelistMamiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4793,11 +4793,11 @@ PsychicStronghold_MamiIntroPlatformScript:
 	load_npc NPC_YOSUKE, 10, 7, SOUTH
 	unload_npc NPC_WARP_SPARKLES
 	start_dialog
-	set_active_npc NPC_YOSUKE, DialogYosukeText
+	set_active_npc NPC_YOSUKE, DuelistYosukeName
 	print_npc_text Text113b
 	end_dialog
 	do_frames 30
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	set_active_npc_direction WEST
 	start_dialog
 	print_npc_text Text113c
@@ -4809,17 +4809,17 @@ PsychicStronghold_MamiIntroPlatformScript:
 	load_npc NPC_GR_4, 5, 7, SOUTH
 	unload_npc NPC_WARP_SPARKLES
 	start_dialog
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	print_npc_text Text113d
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	print_npc_text Text113e
 	end_dialog
 	do_frames 30
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	set_active_npc_direction EAST
 	start_dialog
 	print_npc_text Text113f
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	print_npc_text Text1140
 	end_dialog
 	animate_active_npc_movement $83, $02
@@ -4829,7 +4829,7 @@ PsychicStronghold_MamiIntroPlatformScript:
 	play_sfx SFX_PLACE_PRIZE
 	animate_active_npc_movement $81, $02
 	set_active_npc_direction WEST
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	set_active_npc_direction EAST
 	start_dialog
 	print_npc_text Text1141
@@ -4841,12 +4841,12 @@ PsychicStronghold_MamiIntroPlatformScript:
 	wait_for_npc_animation NPC_WARP_SPARKLES
 	load_npc NPC_MIWA, 5, 7, SOUTH
 	unload_npc NPC_WARP_SPARKLES
-	set_active_npc NPC_MIWA, DialogMiwaText
+	set_active_npc NPC_MIWA, DuelistMiwaName
 	start_dialog
 	print_npc_text Text1142
 	end_dialog
 	spin_active_npc 267
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	do_frames 60
 	set_active_npc_direction SOUTH
 	animate_active_npc_movement $80, $01
@@ -4863,11 +4863,11 @@ PsychicStronghold_MamiIntroPlatformScript:
 	load_npc NPC_KEVIN, 3, 5, SOUTH
 	unload_npc NPC_WARP_SPARKLES
 	start_dialog
-	set_active_npc NPC_KEVIN, DialogKevinText
+	set_active_npc NPC_KEVIN, DuelistKevinName
 	print_npc_text Text1144
 	end_dialog
 	do_frames 30
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	set_active_npc_direction EAST
 	start_dialog
 	print_npc_text Text1145
@@ -4971,7 +4971,7 @@ Script_3663f:
 .ows_366c6
 	animate_player_movement $00, $01
 .ows_366c9
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	start_dialog
 	print_npc_text Text1147
 	end_dialog
@@ -5010,7 +5010,7 @@ Script_3663f:
 Script_Miwa:
 	ld a, NPC_MIWA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMiwaText
+	ldtx hl, DuelistMiwaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5157,7 +5157,7 @@ Script_MiwaAfterDuel:
 Script_Kevin:
 	ld a, NPC_KEVIN
 	ld [wScriptNPC], a
-	ldtx hl, DialogKevinText
+	ldtx hl, DuelistKevinName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5286,7 +5286,7 @@ Script_KevinAfterDuel:
 Script_Yosuke:
 	ld a, NPC_YOSUKE
 	ld [wScriptNPC], a
-	ldtx hl, DialogYosukeText
+	ldtx hl, DuelistYosukeName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5425,7 +5425,7 @@ Script_YosukeAfterDuel:
 Script_Ryoko:
 	ld a, NPC_RYOKO
 	ld [wScriptNPC], a
-	ldtx hl, DialogRyokoText
+	ldtx hl, DuelistRyokoName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5872,14 +5872,14 @@ Script_36d75:
 	set_npc_direction NPC_ROD, WEST
 	start_dialog
 	print_npc_text Text111a
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	print_npc_text Text111b
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	print_npc_text Text111c
 	end_dialog
 	set_active_npc_direction SOUTH
 	start_dialog
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	print_npc_text Text111d
 	end_dialog
 	get_player_direction
@@ -5904,7 +5904,7 @@ Script_36d75:
 	unload_npc NPC_ROD
 	set_player_direction NORTH
 	start_dialog
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	print_npc_text Text1120
 	end_dialog
 	end_script
@@ -5916,7 +5916,7 @@ Script_36d75:
 Script_RodPsychicStronghold:
 	ld a, NPC_ROD
 	ld [wScriptNPC], a
-	ldtx hl, DialogRodText
+	ldtx hl, DuelistRodName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5946,7 +5946,7 @@ PsychicStrongholdMami_RodAppearanceCheck:
 Script_Mami:
 	ld a, NPC_MAMI
 	ld [wScriptNPC], a
-	ldtx hl, DialogMamiText
+	ldtx hl, DuelistMamiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6047,7 +6047,7 @@ PsychicStrongholdMami_MeetMamiAndRodScript:
 	move_player .NPCMovement_36f40, TRUE
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	print_npc_text Text1132
 	end_dialog
 	do_frames 30
@@ -6072,11 +6072,11 @@ PsychicStrongholdMami_MeetMamiAndRodScript:
 	load_npc NPC_ROD, 8, 2, SOUTH
 	unload_npc NPC_WARP_SPARKLES
 	do_frames 60
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	set_active_npc_direction WEST
 	start_dialog
 	print_npc_text Text1134
-	set_active_npc NPC_MAMI, DialogMamiText
+	set_active_npc NPC_MAMI, DuelistMamiName
 	set_active_npc_direction EAST
 	print_npc_text Text1135
 	end_dialog
@@ -6216,7 +6216,7 @@ ColorlessAltar_AfterDuelScripts:
 
 Script_37031:
 	set_event EVENT_MET_COLORLESS_ALTAR_MEMBERS
-	set_active_npc NPC_SAMEJIMA, DialogSamejimaText
+	set_active_npc NPC_SAMEJIMA, DuelistSamejimaName
 	set_active_npc_direction SOUTH
 	print_npc_text Text0f57
 	set_npc_direction NPC_NISHIJIMA, SOUTH
@@ -6226,14 +6226,14 @@ Script_37031:
 	set_active_npc_direction NORTH
 	start_dialog
 	print_npc_text Text0f59
-	set_active_npc NPC_ISHII, DialogIshiiText
+	set_active_npc NPC_ISHII, DuelistIshiiName
 	print_npc_text Text0f5a
 	end_dialog
 	set_active_npc_direction SOUTH
 	do_frames 30
 	set_npc_direction NPC_SAMEJIMA, SOUTH
 	start_dialog
-	set_active_npc NPC_SAMEJIMA, DialogSamejimaText
+	set_active_npc NPC_SAMEJIMA, DuelistSamejimaName
 	print_npc_text Text0f5b
 	end_dialog
 	move_active_npc .NPCMovement_3706c
@@ -6259,7 +6259,7 @@ Script_37071:
 Script_Nishijima:
 	ld a, NPC_NISHIJIMA
 	ld [wScriptNPC], a
-	ldtx hl, DialogNishijimaText
+	ldtx hl, DuelistNishijimaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6389,7 +6389,7 @@ Script_NishijimaAfterDuel:
 Script_Ishii:
 	ld a, NPC_ISHII
 	ld [wScriptNPC], a
-	ldtx hl, DialogIshiiText
+	ldtx hl, DuelistIshiiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6534,7 +6534,7 @@ Script_IshiiAfterDuel:
 Script_Samejima:
 	ld a, NPC_SAMEJIMA
 	ld [wScriptNPC], a
-	ldtx hl, DialogSamejimaText
+	ldtx hl, DuelistSamejimaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7093,7 +7093,7 @@ GrCastle_BiruritchiEncounterScript:
 	farcall MaxOutEventValue
 	ld a, NPC_BIRURITCHI
 	ld [wScriptNPC], a
-	ldtx hl, DialogBiruritchiText
+	ldtx hl, DuelistBiruritchiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7127,7 +7127,7 @@ GrCastle_BiruritchiEncounterScript:
 	do_frames 30
 	start_dialog
 	print_npc_text Text08f4
-	set_active_npc NPC_KANZAKI, DialogKanzakiText
+	set_active_npc NPC_KANZAKI, DuelistKanzakiName
 	print_npc_text Text08f5
 	end_dialog
 	spin_active_npc_reverse 263
@@ -7135,9 +7135,9 @@ GrCastle_BiruritchiEncounterScript:
 	animate_active_npc_movement $02, $01
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_BIRURITCHI, DialogBiruritchiText
+	set_active_npc NPC_BIRURITCHI, DuelistBiruritchiName
 	print_npc_text Text08f6
-	set_active_npc NPC_RUI, DialogRuiText
+	set_active_npc NPC_RUI, DuelistRuiName
 	print_npc_text Text08f7
 	end_dialog
 	spin_active_npc 772
@@ -7145,14 +7145,14 @@ GrCastle_BiruritchiEncounterScript:
 	animate_active_npc_movement $02, $01
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_BIRURITCHI, DialogBiruritchiText
+	set_active_npc NPC_BIRURITCHI, DuelistBiruritchiName
 	print_npc_text Text08f8
 	end_dialog
 	move_active_npc .NPCMovement_377aa
 	wait_for_player_animation
 	unload_npc NPC_BIRURITCHI
 	start_dialog
-	set_active_npc NPC_KANZAKI, DialogKanzakiText
+	set_active_npc NPC_KANZAKI, DuelistKanzakiName
 	print_npc_text Text08f9
 	end_dialog
 	move_player .NPCMovement_377ad, TRUE
@@ -7222,7 +7222,7 @@ Script_377c4:
 Script_Kanzaki:
 	ld a, NPC_KANZAKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogKanzakiText
+	ldtx hl, DuelistKanzakiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7375,7 +7375,7 @@ Script_KanzakiAfterDuel:
 Script_RuiGrCastle:
 	ld a, NPC_RUI
 	ld [wScriptNPC], a
-	ldtx hl, DialogRuiText
+	ldtx hl, DuelistRuiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7396,9 +7396,9 @@ Script_37952:
 	check_event EVENT_TALKED_TO_RUI
 	script_jump_if_b0z .ows_37980
 	set_event EVENT_TALKED_TO_RUI
-	set_active_npc NPC_RUI, DialogRuiText
+	set_active_npc NPC_RUI, DuelistRuiName
 	print_npc_text Text0911
-	set_active_npc NPC_KANZAKI, DialogKanzakiText
+	set_active_npc NPC_KANZAKI, DuelistKanzakiName
 	print_npc_text Text0912
 	end_dialog
 	move_active_npc .NPCMovement_379c7
@@ -7406,7 +7406,7 @@ Script_37952:
 	wait_for_player_animation
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_RUI, DialogRuiText
+	set_active_npc NPC_RUI, DuelistRuiName
 	print_npc_text Text0913
 	print_npc_text Text0914
 	script_jump .ows_37983
@@ -7546,7 +7546,7 @@ GrCastle_RuiKanzakiStairsBlock:
 	jr nz, .asm_37a9b
 	ld a, NPC_RUI
 	ld [wScriptNPC], a
-	ldtx hl, DialogRuiText
+	ldtx hl, DuelistRuiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7560,7 +7560,7 @@ GrCastle_RuiKanzakiStairsBlock:
 .asm_37a9b
 	ld a, NPC_KANZAKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogKanzakiText
+	ldtx hl, DuelistKanzakiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h

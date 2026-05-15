@@ -385,10 +385,6 @@ DarkMachampName:
 	textfw "わるいカイリキー"
 	done
 
-FlingAltName:
-	textfw "つまみだす"
-	done
-
 FlingDescription:
 	textfw "[相手]と[相手]についているすべての"
 	linefw "カードを山札に戻し、その山札をよく"
@@ -460,10 +456,6 @@ GravelerLv27Description:
 	textfw "坂道を転がりながら移動。"
 	linefw "じゃまなものはどんどん押しつぶして"
 	linefw "進んでいく。"
-	done
-
-StoneBarrageAltName:
-	textfw "れんぞくいわなげ"
 	done
 
 StoneBarrage20DamageDescription:
@@ -814,10 +806,6 @@ RhydonLv37Description:
 	textfw "全身を、よろいのような皮膚で守って"
 	linefw "いる。2000度のマグマの中でも"
 	linefw "生きられる。"
-	done
-
-RamAltName:
-	textfw "げきとつ"
 	done
 
 RamDescription:
@@ -1268,11 +1256,6 @@ SleepingGasName:
 	textfw "さいみんガス"
 	done
 
-MayInflictSleepAltDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を「ねむり」状態にする。"
-	done
-
 DestinyBondName:
 	textfw "みちづれ"
 	done
@@ -1535,10 +1518,6 @@ LongDistanceHypnosisDescription:
 	linefw "「ねむり」状態にする。このカードが"
 	linefw "「ねむり・マヒ・こんらん」状態のとき"
 	linefw "この力は使えない。"
-	done
-
-HypnosisCategoryName:
-	textfw "さいみん"
 	done
 
 DrowzeeLv10Description:

@@ -429,7 +429,7 @@ PrintGRIslandLocationName:
 	ret
 
 .data
-	textitem 33, 4, MapGRAirportText           ; OWMAP_GR_AIRPORT
+	textitem 33, 4, MapAirportText             ; OWMAP_GR_AIRPORT
 	textitem 33, 2, MapIshiharasVillaText      ; OWMAP_ISHIHARAS_VILLA
 	textitem 33, 3, MapGameCenterText          ; OWMAP_GAME_CENTER
 	textitem 33, 2, MapSealedFortText          ; OWMAP_SEALED_FORT
@@ -970,7 +970,7 @@ CardDungeonQueen_AfterDuel:
 Script_Queen:
 	ld a, NPC_QUEEN
 	ld [wScriptNPC], a
-	ldtx hl, DialogQueenText
+	ldtx hl, DuelistQueenName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1777,7 +1777,7 @@ Script_GrassFortMidoriLockedDoor:
 	ret nz
 	ld a, NPC_RICK
 	ld [wScriptNPC], a
-	ldtx hl, DialogRickText
+	ldtx hl, DuelistRickName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1811,7 +1811,7 @@ GrassFortMidori_RickAppearanceCheck:
 Script_Midori:
 	ld a, NPC_MIDORI
 	ld [wScriptNPC], a
-	ldtx hl, DialogMidoriText
+	ldtx hl, DuelistMidoriName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1919,7 +1919,7 @@ Script_MidoriAfterDuel:
 	do_frames 28
 	fade_in $00, TRUE
 	wait_for_fade
-	set_active_npc NPC_RICK, DialogRickText
+	set_active_npc NPC_RICK, DuelistRickName
 	move_active_npc .NPCMovement_3196b
 	wait_for_player_animation
 	set_player_direction EAST
@@ -1932,7 +1932,7 @@ Script_MidoriAfterDuel:
 	wait_for_player_animation
 	unload_npc NPC_RICK
 	set_player_direction NORTH
-	set_active_npc NPC_MIDORI, DialogMidoriText
+	set_active_npc NPC_MIDORI, DuelistMidoriName
 	start_dialog
 	print_npc_text Text0da3
 	end_dialog
@@ -2028,7 +2028,7 @@ GrassFortYuta_AfterDuelScripts:
 Script_Yuta:
 	ld a, NPC_YUTA
 	ld [wScriptNPC], a
-	ldtx hl, DialogYutaText
+	ldtx hl, DuelistYutaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2135,7 +2135,7 @@ Script_GrassFortYutaLockedDoor:
 	jr nz, .asm_31b05
 	ld a, NPC_YUTA
 	ld [wScriptNPC], a
-	ldtx hl, DialogYutaText
+	ldtx hl, DuelistYutaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2252,7 +2252,7 @@ GrassFortMiyuki_AfterDuelScripts:
 Script_Miyuki:
 	ld a, NPC_MIYUKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogMiyukiText
+	ldtx hl, DuelistMiyukiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2701,7 +2701,7 @@ Script_LightningFortChubbyKid:
 Script_Tap:
 	ld a, NPC_TAP
 	ld [wScriptNPC], a
-	ldtx hl, DialogTapText
+	ldtx hl, DuelistTapName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2836,7 +2836,7 @@ LightningFortRenna_AfterDuelScripts:
 Script_Renna:
 	ld a, NPC_RENNA
 	ld [wScriptNPC], a
-	ldtx hl, DialogRennaText
+	ldtx hl, DuelistRennaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2925,7 +2925,7 @@ Script_LightningFortRennaLockedDoor:
 	jr nz, .asm_32119
 	ld a, NPC_RENNA
 	ld [wScriptNPC], a
-	ldtx hl, DialogRennaText
+	ldtx hl, DuelistRennaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3053,7 +3053,7 @@ LightningFortIchikawa_AfterDuelScripts:
 Script_Ichikawa:
 	ld a, NPC_ICHIKAWA
 	ld [wScriptNPC], a
-	ldtx hl, DialogIchikawaText
+	ldtx hl, DuelistIchikawaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3210,7 +3210,7 @@ Script_IchikawaAfterDuel:
 	load_npc NPC_STEVE, 3, 3, SOUTH
 	set_active_npc_direction SOUTH
 	do_frames 30
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	start_dialog
 	print_npc_text Text11c4
 	receive_card ELECTABUZZ_LV20
@@ -3236,19 +3236,19 @@ Script_IchikawaAfterDuel:
 	db $ff
 
 Script_32376:
-	set_active_npc NPC_ICHIKAWA, DialogIchikawaText
+	set_active_npc NPC_ICHIKAWA, DuelistIchikawaName
 	start_dialog
 	print_npc_text Text11c6
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	print_npc_text Text11c7
 	end_dialog
 	set_active_npc_direction NORTH
-	set_active_npc NPC_ICHIKAWA, DialogIchikawaText
+	set_active_npc NPC_ICHIKAWA, DuelistIchikawaName
 	animate_active_npc_movement $03, $01
 	set_active_npc_direction SOUTH
 	start_dialog
 	print_npc_text Text11c8
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	print_npc_text Text11c9
 	end_dialog
 	animate_active_npc_movement $02, $01
@@ -3266,7 +3266,7 @@ Script_32376:
 	db $ff
 
 Script_323b5:
-	set_active_npc NPC_ICHIKAWA, DialogIchikawaText
+	set_active_npc NPC_ICHIKAWA, DuelistIchikawaName
 	start_dialog
 	set_player_direction NORTH
 	print_npc_text Text11cb
@@ -3383,7 +3383,7 @@ LightningFortCatherine_AfterDuelScripts:
 Script_Catherine:
 	ld a, NPC_CATHERINE
 	ld [wScriptNPC], a
-	ldtx hl, DialogCatherineText
+	ldtx hl, DuelistCatherineName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3923,7 +3923,7 @@ FireFortJes_AfterDuelScripts:
 Script_Jes:
 	ld a, NPC_JES
 	ld [wScriptNPC], a
-	ldtx hl, DialogJesText
+	ldtx hl, DuelistJesName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4127,7 +4127,7 @@ FireFortYuki_AfterDuelScripts:
 FireFortYuki_MeetScript:
 	ld a, NPC_YUKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogYukiText
+	ldtx hl, DuelistYukiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4163,7 +4163,7 @@ FireFortYuki_MeetScript:
 Script_Yuki:
 	ld a, NPC_YUKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogYukiText
+	ldtx hl, DuelistYukiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4465,7 +4465,7 @@ FireFortShoko_AfterDuelScripts:
 Script_Shoko:
 	ld a, NPC_SHOKO
 	ld [wScriptNPC], a
-	ldtx hl, DialogShokoText
+	ldtx hl, DuelistShokoName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4573,7 +4573,7 @@ Script_FireFortShokoLockedDoor:
 	jr nz, .asm_32d7d
 	ld a, NPC_SHOKO
 	ld [wScriptNPC], a
-	ldtx hl, DialogShokoText
+	ldtx hl, DuelistShokoName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4625,7 +4625,7 @@ Script_32d8f:
 	move_player .NPCMovement_32df6, TRUE
 .ows_32dc5
 	wait_for_player_animation
-	set_active_npc NPC_COURTNEY, DialogCourtneyText
+	set_active_npc NPC_COURTNEY, DuelistCourtneyName
 	start_dialog
 	print_npc_text Text0cb6
 	receive_card ARCANINE_LV34
@@ -4661,7 +4661,7 @@ Script_32d8f:
 	db $ff
 
 Script_32dff:
-	set_active_npc NPC_SHOKO, DialogShokoText
+	set_active_npc NPC_SHOKO, DuelistShokoName
 	start_dialog
 	print_npc_text Text0cb8
 	end_dialog
@@ -4735,7 +4735,7 @@ FireFortHidero_AfterDuelScripts:
 Script_Hidero:
 	ld a, NPC_HIDERO
 	ld [wScriptNPC], a
-	ldtx hl, DialogHideroText
+	ldtx hl, DuelistHideroName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5114,7 +5114,7 @@ WaterFortMiyajima_AfterDuelScripts:
 Script_Miyajima:
 	ld a, NPC_MIYAJIMA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMiyajimaText
+	ldtx hl, DuelistMiyajimaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5292,7 +5292,7 @@ WaterFortKanoko_AfterDuelScripts:
 Script_Kanoko:
 	ld a, NPC_KANOKO
 	ld [wScriptNPC], a
-	ldtx hl, DialogKanokoText
+	ldtx hl, DuelistKanokoName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h

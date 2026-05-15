@@ -12,7 +12,7 @@ ENDM
 AutoDeckMachine1Entries:
 ; basic
 	auto_deck MachineStarterDeckList, \
-		MachineStarterDeckName, \
+		StarterDeckName, \
 		MachineStarterDeckDescriptionText
 	auto_deck MachineElectricFireDeckList, \
 		MachineElectricFireDeckName, \
@@ -25,23 +25,23 @@ AutoDeckMachine1Entries:
 		MachineEsperGreenDeckDescriptionText
 ; gifts
 	auto_deck MachineSweatAntiGR1DeckList, \
-		MachineSweatAntiGR1DeckName, \
+		SweatAntiGR1DeckName, \
 		MachineSweatAntiGR1DeckDescriptionText
 	auto_deck MachineGiveInAntiGR2DeckList, \
-		MachineGiveInAntiGR2DeckName, \
+		GiveInAntiGR2DeckName, \
 		MachineGiveInAntiGR2DeckDescriptionText
 	auto_deck MachineVengefulAntiGR3DeckList, \
-		MachineVengefulAntiGR3DeckName, \
+		VengefulAntiGR3DeckName, \
 		MachineVengefulAntiGR3DeckDescriptionText
 	auto_deck MachineUnforgivingAntiGR4DeckList, \
-		MachineUnforgivingAntiGR4DeckName, \
+		UnforgivingAntiGR4DeckName, \
 		MachineUnforgivingAntiGR4DeckDescriptionText
 ; fighting
 	auto_deck MachineAwesomeFossilsDeckList, \
 		MachineAwesomeFossilsDeckName, \
 		MachineAwesomeFossilsDeckDescriptionText
 	auto_deck MachineNewMachokeDeckList, \
-		MachineNewMachokeDeckName, \
+		NewMachokeDeckName, \
 		MachineNewMachokeDeckDescriptionText
 	auto_deck MachineRockFestivalDeckList, \
 		MachineRockFestivalDeckName, \
@@ -51,10 +51,10 @@ AutoDeckMachine1Entries:
 		MachineJabHookDeckDescriptionText
 ; grass
 	auto_deck MachineSteadyIncreaseDeckList, \
-		MachineSteadyIncreaseDeckName, \
+		SteadyIncreaseDeckName, \
 		MachineSteadyIncreaseDeckDescriptionText
 	auto_deck MachineGatheringNidoranDeckList, \
-		MachineGatheringNidoranDeckName, \
+		GatheringNidoranDeckName, \
 		MachineGatheringNidoranDeckDescriptionText
 	auto_deck MachineNationalParkDeckList, \
 		MachineNationalParkDeckName, \
@@ -64,10 +64,10 @@ AutoDeckMachine1Entries:
 		MachineSelectiveBreedingDeckDescriptionText
 ; water
 	auto_deck MachineSplashingAboutDeckList, \
-		MachineSplashingAboutDeckName, \
+		SplashingAboutDeckName, \
 		MachineSplashingAboutDeckDescriptionText
 	auto_deck MachineBeachDeckList, \
-		MachineBeachDeckName, \
+		BeachDeckName, \
 		MachineBeachDeckDescriptionText
 	auto_deck MachineInsulationDeckList, \
 		MachineInsulationDeckName, \
@@ -77,10 +77,10 @@ AutoDeckMachine1Entries:
 		MachineAntarcticDeckDescriptionText
 ; fire
 	auto_deck MachineFlameFestivalDeckList, \
-		MachineFlameFestivalDeckName, \
+		FlameFestivalDeckName, \
 		MachineFlameFestivalDeckDescriptionText
 	auto_deck MachineElectricCurrentShockDeckList, \
-		MachineElectricCurrentShockDeckName, \
+		ElectricCurrentShockDeckName, \
 		MachineElectricCurrentShockDeckDescriptionText
 	auto_deck MachineRiskyBlazeDeckList, \
 		MachineRiskyBlazeDeckName, \
@@ -96,10 +96,10 @@ AutoDeckMachine1Entries:
 		MachineElectricShockDeckName, \
 		MachineElectricShockDeckDescriptionText
 	auto_deck MachineOverflowDeckList, \
-		MachineOverflowDeckName, \
+		OverflowDeckName, \
 		MachineOverflowDeckDescriptionText
 	auto_deck MachineTripleZapdosDeckList, \
-		MachineTripleZapdosDeckName, \
+		TripleZapdosDeckName, \
 		MachineTripleZapdosDeckDescriptionText
 ; psychic
 	auto_deck MachineSpecialBarrierDeckList, \
@@ -109,10 +109,10 @@ AutoDeckMachine1Entries:
 		MachineEvolutionProhibitedDeckName, \
 		MachineEvolutionProhibitedDeckDescriptionText
 	auto_deck MachineGhostDeckList, \
-		MachineGhostDeckName, \
+		GhostDeckName, \
 		MachineGhostDeckDescriptionText
 	auto_deck MachinePuppetMasterDeckList, \
-		MachinePuppetMasterDeckName, \
+		PuppetMasterDeckName, \
 		MachinePuppetMasterDeckDescriptionText
 ; special
 	auto_deck MachineMewLv15DeckList, \
@@ -129,22 +129,22 @@ AutoDeckMachine1Entries:
 		MachineEverybodySurfDeckDescriptionText
 ; legendary
 	auto_deck MachineGrandFireDeckList, \
-		MachineGrandFireDeckName, \
+		GrandFireDeckName, \
 		MachineGrandFireDeckDescriptionText
 	auto_deck MachineLegendaryFossilDeckList, \
-		MachineLegendaryFossilDeckName, \
+		LegendaryFossilDeckName, \
 		MachineLegendaryFossilDeckDescriptionText
 	auto_deck MachineWaterLegendDeckList, \
-		MachineWaterLegendDeckName, \
+		WaterLegendDeckName, \
 		MachineWaterLegendDeckDescriptionText
 	auto_deck MachineGreatDragonDeckList, \
-		MachineGreatDragonDeckName, \
+		GreatDragonDeckName, \
 		MachineGreatDragonDeckDescriptionText
 
 AutoDeckMachine2Entries:
 ; dark grass
 	auto_deck MachineInsectCollectionDeckList, \
-		MachineInsectCollectionDeckName, \
+		InsectCollectionDeckName, \
 		MachineInsectCollectionDeckDescriptionText
 	auto_deck MachineCaveExplorationDeckList, \
 		MachineCaveExplorationDeckName, \
@@ -176,17 +176,17 @@ AutoDeckMachine2Entries:
 		MachineQuickFreezeDeckName, \
 		MachineQuickFreezeDeckDescriptionText
 	auto_deck MachineWhirlpoolShowerDeckList, \
-		MachineWhirlpoolShowerDeckName, \
+		WhirlpoolShowerDeckName, \
 		MachineWhirlpoolShowerDeckDescriptionText
 	auto_deck MachineWaterGangDeckList, \
 		MachineWaterGangDeckName, \
 		MachineWaterGangDeckDescriptionText
 ; dark fire
 	auto_deck MachineFireballDeckList, \
-		MachineFireballDeckName, \
+		FireballDeckName, \
 		MachineFireballDeckDescriptionText
 	auto_deck MachineCompleteCombustionDeckList, \
-		MachineCompleteCombustionDeckName, \
+		CompleteCombustionDeckName, \
 		MachineCompleteCombustionDeckDescriptionText
 	auto_deck MachineOminousSpiritFlamesDeckList, \
 		MachineOminousSpiritFlamesDeckName, \
@@ -202,7 +202,7 @@ AutoDeckMachine2Entries:
 		MachineOgresKickDeckName, \
 		MachineOgresKickDeckDescriptionText
 	auto_deck MachineRockBlastDeckList, \
-		MachineRockBlastDeckName, \
+		RockBlastDeckName, \
 		MachineRockBlastDeckDescriptionText
 	auto_deck MachineHeavyWorkDeckList, \
 		MachineHeavyWorkDeckName, \
@@ -212,23 +212,23 @@ AutoDeckMachine2Entries:
 		MachineSlowbrosFishingDeckName, \
 		MachineSlowbrosFishingDeckDescriptionText
 	auto_deck MachineDirectHitDeckList, \
-		MachineDirectHitDeckName, \
+		DirectHitDeckName, \
 		MachineDirectHitDeckDescriptionText
 	auto_deck MachineBadDreamDeckList, \
-		MachineBadDreamDeckName, \
+		BadDreamDeckName, \
 		MachineBadDreamDeckDescriptionText
 	auto_deck MachineBenchPanicDeckList, \
 		MachineBenchPanicDeckName, \
 		MachineBenchPanicDeckDescriptionText
 ; colorless
 	auto_deck MachineSnorlaxGuardDeckList, \
-		MachineSnorlaxGuardDeckName, \
+		SnorlaxGuardDeckName, \
 		MachineSnorlaxGuardDeckDescriptionText
 	auto_deck MachineEyeOfTheStormDeckList, \
-		MachineEyeOfTheStormDeckName, \
+		EyeOfTheStormDeckName, \
 		MachineEyeOfTheStormDeckDescriptionText
 	auto_deck MachineSuddenGrowthDeckList, \
-		MachineSuddenGrowthDeckName, \
+		SuddenGrowthDeckName, \
 		MachineSuddenGrowthDeckDescriptionText
 	auto_deck MachineKingDragoniteDeckList, \
 		MachineKingDragoniteDeckName, \

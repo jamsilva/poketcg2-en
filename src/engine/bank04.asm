@@ -3319,7 +3319,7 @@ _PCMenu:
 		PAD_A, PAD_B, FALSE, 1, NULL, NULL
 	textitem 2,  2, PCMenuCardAlbumText
 	textitem 2,  4, PCMenuDeckDiagnosisText
-	textitem 2,  6, PCMenuGlossaryText
+	textitem 2,  6, GlossaryText
 	textitem 2,  8, PCMenuPrintText
 	textitem 2, 10, PCMenuShutdownText
 	textitems_end

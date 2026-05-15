@@ -369,7 +369,7 @@ Script_3c2f0:
 Script_ImakuniBlack:
 	ld a, NPC_IMAKUNI_BLACK
 	ld [wScriptNPC], a
-	ldtx hl, DialogImakuniText
+	ldtx hl, DuelistImakuniName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -613,7 +613,7 @@ Script_3c497:
 Script_ImakuniRed:
 	ld a, NPC_IMAKUNI_RED
 	ld [wScriptNPC], a
-	ldtx hl, DialogImakuniText
+	ldtx hl, DuelistImakuniName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1050,7 +1050,7 @@ MasonLaboratoryTrainingRoom_AfterDuelScripts:
 Script_Aaron:
 	ld a, NPC_AARON
 	ld [wScriptNPC], a
-	ldtx hl, DialogAaronText
+	ldtx hl, DuelistAaronName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1567,7 +1567,7 @@ LightningClubEntrance_WarpFadeInPreload:
 	farcall LoadAndQueueOWMapTilemap
 	call CheckMetRonaldAtLeastTwice
 	jr c, .asm_3cc35
-	ldtx hl, DialogGR4Text
+	ldtx hl, DuelistGR4Name
 	call LoadTxRam2
 	ld a, OWMODE_SCRIPT
 	ld [wOverworldMode], a
@@ -1693,7 +1693,7 @@ LightningClubLobby_Interact:
 Script_JenniferLightningClubLobby:
 	ld a, NPC_JENNIFER
 	ld [wScriptNPC], a
-	ldtx hl, DialogJenniferText
+	ldtx hl, DuelistJenniferName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1721,7 +1721,7 @@ Script_JenniferLightningClubLobby:
 Script_BrandonLightningClubLobby:
 	ld a, NPC_BRANDON
 	ld [wScriptNPC], a
-	ldtx hl, DialogBrandonText
+	ldtx hl, DuelistBrandonName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2012,7 +2012,7 @@ GrassClubLobby_AfterDuelScripts:
 Script_BrittanyGrassClubLobby:
 	ld a, NPC_BRITTANY
 	ld [wScriptNPC], a
-	ldtx hl, DialogBrittanyText
+	ldtx hl, DuelistBrittanyName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2085,7 +2085,7 @@ Script_BrittanyGrassClubLobbyAfterDuel:
 Script_KristinGrassClubLobby:
 	ld a, NPC_KRISTIN
 	ld [wScriptNPC], a
-	ldtx hl, DialogKristinText
+	ldtx hl, DuelistKristinName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2122,7 +2122,7 @@ Script_KristinGrassClubLobby:
 Script_HeatherGrassClubLobby:
 	ld a, NPC_HEATHER
 	ld [wScriptNPC], a
-	ldtx hl, DialogHeatherText
+	ldtx hl, DuelistHeatherName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2975,7 +2975,7 @@ PokemonDome_AfterDuelScripts:
 Script_Courtney:
 	ld a, NPC_COURTNEY
 	ld [wScriptNPC], a
-	ldtx hl, DialogCourtneyText
+	ldtx hl, DuelistCourtneyName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3065,7 +3065,7 @@ PokemonDome_CourtneyAppearanceCheck:
 Script_Steve:
 	ld a, NPC_STEVE
 	ld [wScriptNPC], a
-	ldtx hl, DialogSteveText
+	ldtx hl, DuelistSteveName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3158,7 +3158,7 @@ PokemonDome_SteveAppearanceCheck:
 Script_Jack:
 	ld a, NPC_JACK
 	ld [wScriptNPC], a
-	ldtx hl, DialogJackText
+	ldtx hl, DuelistJackName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3250,7 +3250,7 @@ PokemonDome_JackAppearanceCheck:
 Script_Rod:
 	ld a, NPC_ROD
 	ld [wScriptNPC], a
-	ldtx hl, DialogRodText
+	ldtx hl, DuelistRodName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3662,7 +3662,7 @@ Script_MovePlayerIntoGrandMasterCup:
 Script_RodAfterFinalCup:
 	ld a, NPC_ROD
 	ld [wScriptNPC], a
-	ldtx hl, DialogRodText
+	ldtx hl, DuelistRodName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3989,7 +3989,7 @@ Script_FinalCupIntroAndRound1Start:
 	do_frames 30
 	set_scroll_state $02
 	unload_npc NPC_CUP_HOST
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodFinalCupIntroAndRound1OpponentText
 	end_dialog
@@ -4037,7 +4037,7 @@ Script_FinalCupIntroAndRound1Start:
 	db $ff
 .round1
 	set_var VAR_FINAL_CUP_PLAYED_ROUNDS, 0
-	set_active_npc NPC_COURTNEY, DialogCourtneyText
+	set_active_npc NPC_COURTNEY, DuelistCourtneyName
 	start_dialog
 	print_npc_text CourtneyFinalCupDuelStartText
 	end_dialog
@@ -4055,7 +4055,7 @@ Script_FinalCupRound1AfterDuel:
 	end_dialog
 	move_active_npc .NPCMovement_3df81
 	wait_for_player_animation
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodFinalCupRound1NextOpponentText
 	end_dialog
@@ -4078,10 +4078,10 @@ Script_FinalCupRound1AfterDuel:
 
 Script_FinalCupRound2Start:
 	set_var VAR_FINAL_CUP_PLAYED_ROUNDS, 1
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	start_dialog
 	print_npc_text SteveFinalCupReadyToDuelText
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 .loop_prep
 	print_npc_text RodFinalCupAreYourDecksReadyText
 	ask_question DuelPrepPromptText, FALSE
@@ -4093,9 +4093,9 @@ Script_FinalCupRound2Start:
 	start_dialog
 	script_jump .loop_prep
 .start_duel
-	set_text_ram2 DialogSteveText
+	set_text_ram2 DuelistSteveName
 	print_npc_text RodFinalCupResumeRoundText
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	print_npc_text SteveFinalCupDuelStartText
 	end_dialog
 	start_duel LEGENDARY_FOSSIL_DECK_ID, MUSIC_MATCH_START_GRAND_MASTER
@@ -4112,7 +4112,7 @@ Script_FinalCupRound2AfterDuel:
 	end_dialog
 	move_active_npc .NPCMovement_3dfed
 	wait_for_player_animation
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodFinalCupRound2NextOpponentText
 	end_dialog
@@ -4135,10 +4135,10 @@ Script_FinalCupRound2AfterDuel:
 
 Script_FinalCupRound3Start:
 	set_var VAR_FINAL_CUP_PLAYED_ROUNDS, 2
-	set_active_npc NPC_JACK, DialogJackText
+	set_active_npc NPC_JACK, DuelistJackName
 	start_dialog
 	print_npc_text JackFinalCupReadyToDuelText
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 .loop_prep
 	print_npc_text RodFinalCupAreYourDecksReadyText
 	ask_question DuelPrepPromptText, FALSE
@@ -4150,9 +4150,9 @@ Script_FinalCupRound3Start:
 	start_dialog
 	script_jump .loop_prep
 .start_duel
-	set_text_ram2 DialogJackText
+	set_text_ram2 DuelistJackName
 	print_npc_text RodFinalCupResumeRoundText
-	set_active_npc NPC_JACK, DialogJackText
+	set_active_npc NPC_JACK, DuelistJackName
 	print_npc_text JackFinalCupDuelStartText
 	end_dialog
 	start_duel WATER_LEGEND_DECK_ID, MUSIC_MATCH_START_GRAND_MASTER
@@ -4169,7 +4169,7 @@ Script_FinalCupRound3AfterDuel:
 	end_dialog
 	move_active_npc .NPCMovement_3e059
 	wait_for_player_animation
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodFinalCupRound3NextOpponentText
 	end_dialog
@@ -4194,7 +4194,7 @@ Script_FinalCupRound3AfterDuel:
 
 Script_FinalCupRound4Start:
 	set_var VAR_FINAL_CUP_PLAYED_ROUNDS, 3
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodFinalCupReadyToDuelText
 .loop_prep
@@ -4275,7 +4275,7 @@ Script_FinalCupPlayerLost:
 	move_npc NPC_ROD, .NPCMovement_3e126
 	wait_for_player_animation
 	set_player_direction NORTH
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	start_dialog
 	print_npc_text RodYouDoNotDeserveLegendaryCardsText
 	end_dialog
@@ -4458,7 +4458,7 @@ Script_GrandMasterCupFinalsStart:
 	ld a, $01
 	start_script
 	print_npc_text CupHostGrandMasterCupFinalsCallOpponentRonaldText
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	print_npc_text RonaldGrandMasterCupFinalsText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 .start_duel
@@ -4591,7 +4591,7 @@ Script_GrandMasterCupAfterDuel:
 ; won against Ronald
 	ld a, $01
 	start_script
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	print_npc_text RonaldGrandMasterCupFinalsPlayerWonText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	script_jump .finals_eliminate_opponent
@@ -4638,7 +4638,7 @@ Script_GrandMasterCupAfterDuel:
 ; lost to Ronald
 	ld a, $01
 	start_script
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	print_npc_text RonaldGrandMasterCupFinalsPlayerLostText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	script_jump .finals_eliminate_player
@@ -4676,7 +4676,7 @@ Script_GrandMasterCupGrandFinalsStart:
 	start_dialog
 	print_npc_text CupHostGrandMasterCupGrandFinalsText
 	end_dialog
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	move_active_npc .NPCMovement_3e44e
 	wait_for_player_animation
 	start_dialog
@@ -4696,7 +4696,7 @@ Script_GrandMasterCupGrandFinalsStart:
 
 Script_GrandMasterCupGrandFinalsVsCourtney:
 	set_var VAR_GRANDMASTERCUP_GF_GRAND_MASTER_INDEX, GRAND_MASTER_COURTNEY
-	set_text_ram2 DialogCourtneyText
+	set_text_ram2 DuelistCourtneyName
 	print_npc_text RodGrandMasterCupGrandFinalsBracketReveal2Text
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsCallCourtneyText
@@ -4705,7 +4705,7 @@ Script_GrandMasterCupGrandFinalsVsCourtney:
 	move_npc NPC_ROD, .NPCMovement_3e48d
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_COURTNEY, DialogCourtneyText
+	set_active_npc NPC_COURTNEY, DuelistCourtneyName
 	print_npc_text CourtneyGrandMasterCupGrandFinalsText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsDuelStartText
@@ -4726,7 +4726,7 @@ Script_GrandMasterCupGrandFinalsVsCourtney:
 	db $ff
 
 Script_GrandMasterCupGrandFinalsVsCourtneyAfterDuel:
-	set_active_npc NPC_COURTNEY, DialogCourtneyText
+	set_active_npc NPC_COURTNEY, DuelistCourtneyName
 	check_event EVENT_SET_UNTIL_MAP_RELOAD_2
 	script_jump_if_b0nz .lost_to_courtney
 	print_npc_text CourtneyTournamentsPlayerWonText
@@ -4734,14 +4734,14 @@ Script_GrandMasterCupGrandFinalsVsCourtneyAfterDuel:
 .lost_to_courtney
 	print_npc_text CourtneyGrandMasterCupGrandFinalsPlayerLostText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
-	set_text_ram2 DialogCourtneyText
+	set_text_ram2 DuelistCourtneyName
 	print_npc_text CupHostGrandMasterCupGrandFinalsPlayerLostText
 	end_dialog
 	script_jump Script_GrandMasterCupPlayerLost
 
 Script_GrandMasterCupGrandFinalsVsSteve:
 	set_var VAR_GRANDMASTERCUP_GF_GRAND_MASTER_INDEX, GRAND_MASTER_STEVE
-	set_text_ram2 DialogSteveText
+	set_text_ram2 DuelistSteveName
 	print_npc_text RodGrandMasterCupGrandFinalsBracketReveal2Text
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsCallSteveText
@@ -4750,7 +4750,7 @@ Script_GrandMasterCupGrandFinalsVsSteve:
 	move_npc NPC_ROD, .NPCMovement_3e4ee
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	print_npc_text SteveGrandMasterCupGrandFinalsText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsDuelStartText
@@ -4772,7 +4772,7 @@ Script_GrandMasterCupGrandFinalsVsSteve:
 	db $ff
 
 Script_GrandMasterCupGrandFinalsVsSteveAfterDuel:
-	set_active_npc NPC_STEVE, DialogSteveText
+	set_active_npc NPC_STEVE, DuelistSteveName
 	check_event EVENT_SET_UNTIL_MAP_RELOAD_2
 	script_jump_if_b0nz .lost_to_steve
 	print_npc_text SteveTournamentsPlayerWonText
@@ -4780,14 +4780,14 @@ Script_GrandMasterCupGrandFinalsVsSteveAfterDuel:
 .lost_to_steve
 	print_npc_text SteveTournamentsPlayerLostText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
-	set_text_ram2 DialogSteveText
+	set_text_ram2 DuelistSteveName
 	print_npc_text CupHostGrandMasterCupGrandFinalsPlayerLostText
 	end_dialog
 	script_jump Script_GrandMasterCupPlayerLost
 
 Script_GrandMasterCupGrandFinalsVsJack:
 	set_var VAR_GRANDMASTERCUP_GF_GRAND_MASTER_INDEX, GRAND_MASTER_JACK
-	set_text_ram2 DialogJackText
+	set_text_ram2 DuelistJackName
 	print_npc_text RodGrandMasterCupGrandFinalsBracketReveal2Text
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsCallJackText
@@ -4796,7 +4796,7 @@ Script_GrandMasterCupGrandFinalsVsJack:
 	move_npc NPC_ROD, .NPCMovement_3e54b
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_JACK, DialogJackText
+	set_active_npc NPC_JACK, DuelistJackName
 	print_npc_text JackGrandMasterCupGrandFinalsText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsDuelStartText
@@ -4816,7 +4816,7 @@ Script_GrandMasterCupGrandFinalsVsJack:
 	db $ff
 
 Script_GrandMasterCupGrandFinalsVsJackAfterDuel:
-	set_active_npc NPC_JACK, DialogJackText
+	set_active_npc NPC_JACK, DuelistJackName
 	check_event EVENT_SET_UNTIL_MAP_RELOAD_2
 	script_jump_if_b0nz .lost_to_jack
 	print_npc_text JackGrandMasterCupGrandFinalsPlayerWonText
@@ -4824,14 +4824,14 @@ Script_GrandMasterCupGrandFinalsVsJackAfterDuel:
 .lost_to_jack
 	print_npc_text JackTournamentsPlayerLostText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
-	set_text_ram2 DialogJackText
+	set_text_ram2 DuelistJackName
 	print_npc_text CupHostGrandMasterCupGrandFinalsPlayerLostText
 	end_dialog
 	script_jump Script_GrandMasterCupPlayerLost
 
 Script_GrandMasterCupGrandFinalsVsRod:
 	set_var VAR_GRANDMASTERCUP_GF_GRAND_MASTER_INDEX, GRAND_MASTER_ROD
-	set_text_ram2 DialogRodText
+	set_text_ram2 DuelistRodName
 	print_npc_text RodGrandMasterCupGrandFinalsBracketReveal2Text
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsCallRodText
@@ -4839,7 +4839,7 @@ Script_GrandMasterCupGrandFinalsVsRod:
 	move_npc NPC_ROD, .NPCMovement_3e59d
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	print_npc_text RodGrandMasterCupGrandFinalsText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 	print_npc_text CupHostGrandMasterCupGrandFinalsDuelStartText
@@ -4854,7 +4854,7 @@ Script_GrandMasterCupGrandFinalsVsRod:
 	db $ff
 
 Script_GrandMasterCupGrandFinalsVsRodAfterDuel:
-	set_active_npc NPC_ROD, DialogRodText
+	set_active_npc NPC_ROD, DuelistRodName
 	check_event EVENT_SET_UNTIL_MAP_RELOAD_2
 	script_jump_if_b0nz .lost_to_rod
 	print_npc_text RodTournamentsPlayerWonText
@@ -4862,7 +4862,7 @@ Script_GrandMasterCupGrandFinalsVsRodAfterDuel:
 .lost_to_rod
 	print_npc_text RodTournamentsPlayerLostText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
-	set_text_ram2 DialogRodText
+	set_text_ram2 DuelistRodName
 	print_npc_text CupHostGrandMasterCupGrandFinalsPlayerLostText
 	end_dialog
 	script_jump Script_GrandMasterCupPlayerLost
@@ -5165,7 +5165,7 @@ IshiharasVillaMain_IshiharaAppearanceCheck:
 Script_IshiharaDuel:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5218,7 +5218,7 @@ Script_IshiharaAfterDuel:
 Script_IshiharaCongratsAtVillaMain:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5275,7 +5275,7 @@ Script_SeatPlayerAtIshiharaDuelTable:
 Script_RuiAtVillaMain:
 	ld a, NPC_ISHIHARAS_VILLA_GR_GAL
 	ld [wScriptNPC], a
-	ldtx hl, DialogRuiText
+	ldtx hl, DuelistRuiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5515,7 +5515,7 @@ IshiharasVillaLibrary_IshiharaAppearanceCheck:
 Script_IshiharaVillaWelcome:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5539,7 +5539,7 @@ Script_IshiharaVillaWelcome:
 Script_IshiharaTrade4:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5586,7 +5586,7 @@ Script_IshiharaTrade4:
 Script_IshiharaTrade5:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5633,7 +5633,7 @@ Script_IshiharaTrade5:
 Script_IshiharaTrade6:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5680,7 +5680,7 @@ Script_IshiharaTrade6:
 Script_IshiharaTrade7:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5727,7 +5727,7 @@ Script_IshiharaTrade7:
 Script_IshiharaTradeLaterAtVilla:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5743,7 +5743,7 @@ Script_IshiharaTradeLaterAtVilla:
 Script_IshiharaCongratsAtVillaLibrary:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5760,7 +5760,7 @@ Script_IshiharaCongratsAtVillaLibrary:
 Script_RuiAtVillaLibrary:
 	ld a, NPC_ISHIHARAS_VILLA_GR_GAL
 	ld [wScriptNPC], a
-	ldtx hl, DialogRuiText
+	ldtx hl, DuelistRuiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5785,10 +5785,10 @@ Script_RuiAtVillaLibrary:
 	wait_for_player_animation
 	start_dialog
 	print_npc_text RuiThanksIshiharaText
-	set_active_npc NPC_ISHIHARA, DialogMrIshiharaText
+	set_active_npc NPC_ISHIHARA, DuelistMrIshiharaName
 	set_active_npc_direction WEST
 	print_npc_text IshiharaGladToHelpRuiText
-	set_active_npc NPC_ISHIHARAS_VILLA_GR_GAL, DialogRuiText
+	set_active_npc NPC_ISHIHARAS_VILLA_GR_GAL, DuelistRuiName
 	print_npc_text RuiGoodbyeIshiharaText
 	end_dialog
 	move_active_npc .NPCMovement_3eccf
@@ -6324,7 +6324,7 @@ CardDungeonPawn_AfterDuel:
 Script_Pawn:
 	ld a, NPC_PAWN
 	ld [wScriptNPC], a
-	ldtx hl, DialogPawnText
+	ldtx hl, DuelistPawnName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6543,7 +6543,7 @@ CardDungeonKnight_AfterDuel:
 Script_Knight:
 	ld a, NPC_KNIGHT
 	ld [wScriptNPC], a
-	ldtx hl, DialogKnightText
+	ldtx hl, DuelistKnightName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6784,7 +6784,7 @@ CardDungeonRook_AfterDuel:
 Script_Rook:
 	ld a, NPC_ROOK
 	ld [wScriptNPC], a
-	ldtx hl, DialogRookText
+	ldtx hl, DuelistRookName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h

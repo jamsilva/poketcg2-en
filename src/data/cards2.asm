@@ -13,7 +13,7 @@ MachokeLv24Card:
 	; attack 1
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
 	tx WickedJabName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -362,7 +362,7 @@ DarkMachampCard:
 
 	; attack 2
 	energy FIGHTING, 3, COLORLESS, 1 ; energies
-	tx FlingAltName ; name
+	tx FlingName ; name
 	tx FlingDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -572,7 +572,7 @@ GravelerLv28Card:
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx StoneBarrageAltName ; name
+	tx StoneBarrageName ; name
 	tx StoneBarrage20DamageDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -853,7 +853,7 @@ OnixLv25Card:
 	; attack 1
 	energy FIGHTING, 1 ; energies
 	tx BindName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1203,7 +1203,7 @@ HitmonleeLv23Card:
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
 	tx RollingKickName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1538,7 +1538,7 @@ RhydonLv48Card:
 
 	; attack 2
 	energy FIGHTING, 4 ; energies
-	tx RamAltName ; name
+	tx RamName ; name
 	tx RamDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -1987,7 +1987,7 @@ AbraLv14Card:
 	; attack 2
 	energy PSYCHIC, 1 ; energies
 	tx PsyshockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2211,7 +2211,7 @@ AlakazamLv42Card:
 	; attack 2
 	energy PSYCHIC, 3 ; energies
 	tx ConfuseRayName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2659,7 +2659,7 @@ DarkSlowbroCard:
 	; attack 2
 	energy PSYCHIC, 2 ; energies
 	tx FickleAttackName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2701,7 +2701,7 @@ GastlyLv8Card:
 	; attack 1
 	energy PSYCHIC, 1 ; energies
 	tx SleepingGasName ; name
-	tx MayInflictSleepAltDescription ; description
+	tx MayInflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3345,7 +3345,7 @@ DrowzeeLv10Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx HypnosisCategoryName ; category
+	tx HypnosisMoveName ; category
 	db DEX_DROWZEE ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
 IF METRIC
@@ -3387,7 +3387,7 @@ DrowzeeLv12Card:
 	; attack 2
 	energy PSYCHIC, 2 ; energies
 	tx ConfuseRayName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3401,7 +3401,7 @@ DrowzeeLv12Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx HypnosisCategoryName ; category
+	tx HypnosisMoveName ; category
 	db DEX_DROWZEE ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
 IF METRIC
@@ -3457,7 +3457,7 @@ HypnoLv30Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx HypnosisCategoryName ; category
+	tx HypnosisMoveName ; category
 	db DEX_HYPNO ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
 IF METRIC
@@ -3513,7 +3513,7 @@ HypnoLv36Card:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx HypnosisCategoryName ; category
+	tx HypnosisMoveName ; category
 	db DEX_HYPNO ; Pokedex number
 	darkness_level FALSE, 36 ; is Dark?, level
 IF METRIC
@@ -3569,7 +3569,7 @@ DarkHypnoCard:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx HypnosisCategoryName ; category
+	tx HypnosisMoveName ; category
 	db DEX_HYPNO ; Pokedex number
 	darkness_level TRUE, 26 ; is Dark?, level
 IF METRIC
@@ -3709,7 +3709,7 @@ JynxLv18Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx IcePunchName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4283,7 +4283,7 @@ MewLv8Card:
 	; attack 2
 	energy PSYCHIC, 1 ; energies
 	tx PsyshockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5011,7 +5011,7 @@ DarkRaticateCard:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx HyperFangName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5235,7 +5235,7 @@ FearowLv24Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx DrillDescentName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5389,7 +5389,7 @@ ClefairyLv14Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx SingName ; name
-	tx MayInflictSleepAltDescription ; description
+	tx MayInflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6243,7 +6243,7 @@ DarkPersianLv28Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx PoisonClawsName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6299,7 +6299,7 @@ DarkPersianAltLv28Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx PoisonClawsName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6676,8 +6676,8 @@ LickitungLv20Card:
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx LickAltName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx LickName ; name
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6747,7 +6747,7 @@ LickitungLv26Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx SupersonicName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6802,7 +6802,7 @@ ChanseyLv40Card:
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx DoubleSlapAltName ; name
+	tx DoubleSlapName ; name
 	tx Do20DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -7251,7 +7251,7 @@ EeveeLv5Card:
 	; attack 2
 	energy COLORLESS, 1 ; energies
 	tx LungeName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7853,7 +7853,7 @@ DratiniLv12Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx WrapName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -8091,7 +8091,7 @@ DragoniteLv43Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx SupersonicFlightName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
 	db DAMAGE_NORMAL ; category
@@ -8203,7 +8203,7 @@ DarkDragoniteCard:
 	; attack 2
 	energy COLORLESS, 4 ; energies
 	tx GiantTailName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 70 ; damage
 	db DAMAGE_NORMAL ; category
