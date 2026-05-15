@@ -1,5 +1,3 @@
-SECTION "Text 16", ROMX
-
 DigUnderDescription:
 	textfw "相手の場のポケモンを1匹選び、"
 	linefw "「弱点・抵抗力」に関係なく、"
@@ -22,7 +20,7 @@ DiglettLv16Description:
 	done
 
 DugtrioName:
-	textfw "ダグトリオ"
+	text "Dugtrio"
 	done
 
 EarthquakeName:
@@ -66,7 +64,7 @@ DugtrioLv40Description:
 	done
 
 DarkDugtrioName:
-	textfw "わるいダグトリオ"
+	text "Dark Dugtrio"
 	done
 
 SinkholeName:
@@ -99,7 +97,7 @@ DarkDugtrioDescription:
 	done
 
 MankeyName:
-	textfw "マンキー"
+	text "Mankey"
 	done
 
 PeekName:
@@ -144,7 +142,7 @@ MankeyLv14Description:
 	done
 
 PrimeapeName:
-	textfw "オコリザル"
+	text "Primeape"
 	done
 
 TantrumName:
@@ -163,7 +161,7 @@ PrimeapeDescription:
 	done
 
 DarkPrimeapeName:
-	textfw "わるいオコリザル"
+	text "Dark Primeape"
 	done
 
 FrenzyName:
@@ -192,7 +190,7 @@ DarkPrimeapeDescription:
 	done
 
 MachopName:
-	textfw "ワンリキー"
+	text "Machop"
 	done
 
 FocusedOneShotName:
@@ -245,7 +243,7 @@ MachopLv24Description:
 	done
 
 MachokeName:
-	textfw "ゴーリキー"
+	text "Machoke"
 	done
 
 WickedJabName:
@@ -304,7 +302,7 @@ MachokeLv40Description:
 	done
 
 DarkMachokeName:
-	textfw "わるいゴーリキー"
+	text "Dark Machoke"
 	done
 
 DragOffName:
@@ -330,7 +328,7 @@ DarkMachokeDescription:
 	done
 
 MachampName:
-	textfw "カイリキー"
+	text "Machamp"
 	done
 
 SeethingAngerName:
@@ -382,7 +380,7 @@ MachampLv67Description:
 	done
 
 DarkMachampName:
-	textfw "わるいカイリキー"
+	text "Dark Machamp"
 	done
 
 FlingDescription:
@@ -398,7 +396,7 @@ DarkMachampDescription:
 	done
 
 GeodudeName:
-	textfw "イシツブテ"
+	text "Geodude"
 	done
 
 HardenName:
@@ -437,7 +435,7 @@ GeodudeLv16Description:
 	done
 
 GravelerName:
-	textfw "ゴローン"
+	text "Graveler"
 	done
 
 BoulderSmashName:
@@ -493,7 +491,7 @@ GravelerLv29Description:
 	done
 
 GolemName:
-	textfw "ゴローニャ"
+	text "Golem"
 	done
 
 AvalancheName:
@@ -534,7 +532,7 @@ GolemLv37Description:
 	done
 
 OnixName:
-	textfw "イワーク"
+	text "Onix"
 	done
 
 Harden30DamageAltDescription:
@@ -570,7 +568,7 @@ OnixLv25Description:
 	done
 
 CuboneName:
-	textfw "カラカラ"
+	text "Cubone"
 	done
 
 SnivelName:
@@ -610,7 +608,7 @@ CuboneLv14Description:
 	done
 
 MarowakName:
-	textfw "ガラガラ"
+	text "Marowak"
 	done
 
 BonemerangName:
@@ -667,7 +665,7 @@ MarowakLv32Description:
 	done
 
 DarkMarowakName:
-	textfw "わるいガラガラ"
+	text "Dark Marowak"
 	done
 
 BoneHeadbuttName:
@@ -689,7 +687,7 @@ DarkMarowakDescription:
 	done
 
 HitmonleeName:
-	textfw "サワムラー"
+	text "Hitmonlee"
 	done
 
 RollingKickName:
@@ -724,7 +722,7 @@ HitmonleeLv30Description:
 	done
 
 HitmonchanName:
-	textfw "エビワラー"
+	text "Hitmonchan"
 	done
 
 MatchPunchName:
@@ -758,7 +756,7 @@ HitmonchanLv33Description:
 	done
 
 RhyhornName:
-	textfw "サイホーン"
+	text "Rhyhorn"
 	done
 
 LeerName:
@@ -783,7 +781,7 @@ RhyhornDescription:
 	done
 
 RhydonName:
-	textfw "サイドン"
+	text "Rhydon"
 	done
 
 MountainBreakName:
@@ -823,7 +821,7 @@ RhydonLv48Description:
 	done
 
 KabutoName:
-	textfw "カブト"
+	text "Kabuto"
 	done
 
 KabutoArmorName:
@@ -872,7 +870,7 @@ KabutoLv22Description:
 	done
 
 KabutopsName:
-	textfw "カブトプス"
+	text "Kabutops"
 	done
 
 SharpSickleName:
@@ -890,7 +888,7 @@ KabutopsDescription:
 	done
 
 AerodactylName:
-	textfw "プテラ"
+	text "Aerodactyl"
 	done
 
 PrehistoricPowerName:
@@ -932,7 +930,7 @@ AerodactylLv30Description:
 	done
 
 AbraName:
-	textfw "ケーシィ"
+	text "Abra"
 	done
 
 PsychicBeamName:
@@ -975,7 +973,7 @@ AbraLv14Description:
 	done
 
 KadabraName:
-	textfw "ユンゲラー"
+	text "Kadabra"
 	done
 
 RecoverPsychicDescription:
@@ -1021,7 +1019,7 @@ KadabraLv39Description:
 	done
 
 DarkKadabraName:
-	textfw "わるいユンゲラー"
+	text "Dark Kadabra"
 	done
 
 MatterExchangeName:
@@ -1052,7 +1050,7 @@ DarkKadabraDescription:
 	done
 
 AlakazamName:
-	textfw "フーディン"
+	text "Alakazam"
 	done
 
 DamageSwapName:
@@ -1092,7 +1090,7 @@ AlakazamLv45Description:
 	done
 
 DarkAlakazamName:
-	textfw "わるいフーディン"
+	text "Dark Alakazam"
 	done
 
 TeleportBlastName:
@@ -1112,7 +1110,7 @@ DarkAlakazamDescription:
 	done
 
 SlowpokeName:
-	textfw "ヤドン"
+	text "Slowpoke"
 	done
 
 DopeyName:
@@ -1171,7 +1169,7 @@ SlowpokeLv18Description:
 	done
 
 SlowbroName:
-	textfw "ヤドラン"
+	text "Slowbro"
 	done
 
 StrangeBehaviorName:
@@ -1223,7 +1221,7 @@ SlowbroLv35Description:
 	done
 
 DarkSlowbroName:
-	textfw "わるいヤドラン"
+	text "Dark Slowbro"
 	done
 
 ReelInName:
@@ -1249,7 +1247,7 @@ DarkSlowbroDescription:
 	done
 
 GastlyName:
-	textfw "ゴース"
+	text "Gastly"
 	done
 
 SleepingGasName:
@@ -1320,7 +1318,7 @@ GastlyLv17Description:
 	done
 
 HaunterName:
-	textfw "ゴースト"
+	text "Haunter"
 	done
 
 TransparencyName:
@@ -1396,7 +1394,7 @@ BadDreamsDescription:
 	done
 
 DarkHaunterName:
-	textfw "わるいゴースト"
+	text "Dark Haunter"
 	done
 
 BotherName:
@@ -1417,7 +1415,7 @@ DarkHaunterDescription:
 	done
 
 GengarName:
-	textfw "ゲンガー"
+	text "Gengar"
 	done
 
 CurseName:
@@ -1470,7 +1468,7 @@ GengarLv40Description:
 	done
 
 DarkGengarName:
-	textfw "わるいゲンガー"
+	text "Dark Gengar"
 	done
 
 PlayTricksName:
@@ -1503,7 +1501,7 @@ DarkGengarDescription:
 	done
 
 DrowzeeName:
-	textfw "スリープ"
+	text "Drowzee"
 	done
 
 LongDistanceHypnosisName:
@@ -1531,7 +1529,7 @@ DrowzeeLv12Description:
 	done
 
 HypnoName:
-	textfw "スリーパー"
+	text "Hypno"
 	done
 
 PuppetMasterName:
@@ -1571,7 +1569,7 @@ HypnoLv36Description:
 	done
 
 DarkHypnoName:
-	textfw "わるいスリーパー"
+	text "Dark Hypno"
 	done
 
 PsypunchName:
@@ -1597,7 +1595,7 @@ DarkHypnoDescription:
 	done
 
 MrMimeName:
-	textfw "バリヤード"
+	text "Mr. Mime"
 	done
 
 DampeningShieldName:
@@ -1660,7 +1658,7 @@ MrMimeLv28Description:
 	done
 
 JynxName:
-	textfw "ルージュラ"
+	text "Jynx"
 	done
 
 IcePunchName:
@@ -1693,7 +1691,7 @@ JynxLv27Description:
 	done
 
 MewtwoName:
-	textfw "ミュウツー"
+	text "Mewtwo"
 	done
 
 EnergyControlDescription:
@@ -1800,7 +1798,7 @@ MewtwoLv67Description:
 	done
 
 GRsMewtwoName:
-	textfw "GR団のミュウツー"
+	text "Team GR's Mewtwo"
 	done
 
 DarkWaveName:
@@ -1834,7 +1832,7 @@ GRsMewtwoDescription:
 	done
 
 MewName:
-	textfw "ミュウ"
+	text "Mew"
 	done
 
 NeutralShieldName:
@@ -1903,7 +1901,7 @@ MewLv23Description:
 	done
 
 PidgeyName:
-	textfw "ポッポ"
+	text "Pidgey"
 	done
 
 TinyBirdName:
@@ -1926,7 +1924,7 @@ PidgeyLv10Description:
 	done
 
 PidgeottoName:
-	textfw "ピジョン"
+	text "Pidgeotto"
 	done
 
 MirrorMoveName:
@@ -1976,7 +1974,7 @@ PidgeottoLv38Description:
 	done
 
 PidgeotName:
-	textfw "ピジョット"
+	text "Pidgeot"
 	done
 
 SlicingWingName:
@@ -2022,7 +2020,7 @@ PidgeotLv40Description:
 	done
 
 RattataName:
-	textfw "コラッタ"
+	text "Rattata"
 	done
 
 RattataLv9Description:
@@ -2056,7 +2054,7 @@ RattataLv15Description:
 	done
 
 RaticateName:
-	textfw "ラッタ"
+	text "Raticate"
 	done
 
 SuperFangName:
@@ -2075,7 +2073,7 @@ RaticateDescription:
 	done
 
 DarkRaticateName:
-	textfw "わるいラッタ"
+	text "Dark Raticate"
 	done
 
 HyperFangName:
@@ -2088,7 +2086,7 @@ DarkRaticateDescription:
 	done
 
 SpearowName:
-	textfw "オニスズメ"
+	text "Spearow"
 	done
 
 SpearowLv9Description:
@@ -2113,7 +2111,7 @@ SpearowLv13Description:
 	done
 
 FearowName:
-	textfw "オニドリル"
+	text "Fearow"
 	done
 
 DrillDescentName:
@@ -2140,7 +2138,7 @@ FearowLv27Description:
 	done
 
 DarkFearowName:
-	textfw "わるいオニドリル"
+	text "Dark Fearow"
 	done
 
 FlyHighName:
@@ -2168,7 +2166,7 @@ DarkFearowDescription:
 	done
 
 ClefairyName:
-	textfw "ピッピ"
+	text "Clefairy"
 	done
 
 MetronomeName:
@@ -2206,7 +2204,7 @@ ClefairyLv15Description:
 	done
 
 ClefableName:
-	textfw "ピクシー"
+	text "Clefable"
 	done
 
 MinimizeAltDescription:
@@ -2222,7 +2220,7 @@ ClefableDescription:
 	done
 
 DarkClefableName:
-	textfw "わるいピクシー"
+	text "Dark Clefable"
 	done
 
 DarknessVeilName:
@@ -2256,7 +2254,7 @@ DarkClefableDescription:
 	done
 
 JigglypuffName:
-	textfw "プリン"
+	text "Jigglypuff"
 	done
 
 DoubleEdgeName:
@@ -2309,7 +2307,7 @@ JigglypuffLv14Description:
 	done
 
 WigglytuffName:
-	textfw "プクリン"
+	text "Wigglytuff"
 	done
 
 DoTheWaveName:
@@ -2351,7 +2349,7 @@ WigglytuffLv40Description:
 	done
 
 MeowthName:
-	textfw "ニャース"
+	text "Meowth"
 	done
 
 CoinHurlName:
@@ -2395,6 +2393,8 @@ ClearProfitName:
 	textfw "まるもうけ"
 	done
 
+SECTION "Text 17", ROMX
+
 ClearProfitDescription:
 	textfw "「うら」が出るまでコインを投げつづけ"
 	linefw "その間に出た「おもて」の数だけ、"
@@ -2429,7 +2429,7 @@ MeowthLv17Description:
 	done
 
 PersianName:
-	textfw "ペルシアン"
+	text "Persian"
 	done
 
 PounceName:
@@ -2453,7 +2453,7 @@ PersianDescription:
 	done
 
 DarkPersianName:
-	textfw "わるいペルシアン"
+	text "Dark Persian"
 	done
 
 FascinateName:
@@ -2479,7 +2479,7 @@ DarkPersianDescription:
 	done
 
 FarfetchdName:
-	textfw "カモネギ"
+	text "Farfetch'd"
 	done
 
 LeekSlapName:

@@ -502,7 +502,7 @@ BattleCenter100WinsRewardsText:
 	done
 
 GrassEnergyName:
-	textfw "草エネルギー"
+	text "Grass Energy"
 	done
 
 GrassEnergyDescription:
@@ -512,7 +512,7 @@ GrassEnergyDescription:
 	done
 
 FireEnergyName:
-	textfw "炎エネルギー"
+	text "Fire Energy"
 	done
 
 FireEnergyDescription:
@@ -522,7 +522,7 @@ FireEnergyDescription:
 	done
 
 WaterEnergyName:
-	textfw "水エネルギー"
+	text "Water Energy"
 	done
 
 WaterEnergyDescription:
@@ -532,7 +532,7 @@ WaterEnergyDescription:
 	done
 
 LightningEnergyName:
-	textfw "雷エネルギー"
+	text "Lightning Energy"
 	done
 
 LightningEnergyDescription:
@@ -542,7 +542,7 @@ LightningEnergyDescription:
 	done
 
 FightingEnergyName:
-	textfw "闘エネルギー"
+	text "Fighting Energy"
 	done
 
 FightingEnergyDescription:
@@ -552,7 +552,7 @@ FightingEnergyDescription:
 	done
 
 PsychicEnergyName:
-	textfw "超エネルギー"
+	text "Psychic Energy"
 	done
 
 PsychicEnergyDescription:
@@ -562,7 +562,7 @@ PsychicEnergyDescription:
 	done
 
 DoubleColorlessEnergyName:
-	textfw "無色2個エネルギー"
+	text "Double Colorless Energy"
 	done
 
 DoubleColorlessEnergyDescription:
@@ -576,7 +576,7 @@ DoubleColorlessEnergyDescription:
 	done
 
 PotionEnergyName:
-	textfw "きずぐすり配合エネルギー"
+	text "Potion Energy"
 	done
 
 PotionEnergyDescription:
@@ -596,7 +596,7 @@ PotionEnergyDescriptionCont:
 	done
 
 FullHealEnergyName:
-	textfw "なんでもなおし配合E"
+	text "Full Heal Energy"
 	done
 
 FullHealEnergyDescription:
@@ -609,7 +609,7 @@ FullHealEnergyDescription:
 	done
 
 RainbowEnergyName:
-	textfw "レインボーエネルギー"
+	text "Rainbow Energy"
 	done
 
 RainbowEnergyDescription:
@@ -623,7 +623,7 @@ RainbowEnergyDescription:
 	done
 
 RecycleEnergyName:
-	textfw "リサイクルエネルギー"
+	text "Recycle Energy"
 	done
 
 RecycleEnergyDescription:
@@ -635,7 +635,7 @@ RecycleEnergyDescription:
 	done
 
 BulbasaurName:
-	textfw "フシギダネ"
+	text "Bulbasaur"
 	done
 
 TackleName:
@@ -694,7 +694,7 @@ BulbasaurLv15Description:
 	done
 
 IvysaurName:
-	textfw "フシギソウ"
+	text "Ivysaur"
 	done
 
 VineWhipName:
@@ -723,7 +723,7 @@ IvysaurLv26Description:
 	done
 
 DarkIvysaurName:
-	textfw "わるいフシギソウ"
+	text "Dark Ivysaur"
 	done
 
 VinePullName:
@@ -756,7 +756,7 @@ DarkIvysaurDescription:
 	done
 
 VenusaurName:
-	textfw "フシギバナ"
+	text "Venusaur"
 	done
 
 SolarPowerName:
@@ -811,7 +811,7 @@ VenusaurLv67Description:
 	done
 
 DarkVenusaurName:
-	textfw "わるいフシギバナ"
+	text "Dark Venusaur"
 	done
 
 HorridPollenName:
@@ -832,7 +832,7 @@ DarkVenusaurDescription:
 	done
 
 CaterpieName:
-	textfw "キャタピー"
+	text "Caterpie"
 	done
 
 StringShotName:
@@ -855,7 +855,7 @@ CaterpieDescription:
 	done
 
 MetapodName:
-	textfw "トランセル"
+	text "Metapod"
 	done
 
 GreenShieldName:
@@ -910,7 +910,7 @@ MetapodLv21Description:
 	done
 
 ButterfreeName:
-	textfw "バタフリー"
+	text "Butterfree"
 	done
 
 WhirlwindName:
@@ -934,7 +934,7 @@ ButterfreeDescription:
 	done
 
 WeedleName:
-	textfw "ビードル"
+	text "Weedle"
 	done
 
 PoisonStingName:
@@ -971,7 +971,7 @@ WeedleLv15Description:
 	done
 
 KakunaName:
-	textfw "コクーン"
+	text "Kakuna"
 	done
 
 PoisonFluidName:
@@ -1004,7 +1004,7 @@ KakunaLv23Description:
 	done
 
 BeedrillName:
-	textfw "スピアー"
+	text "Beedrill"
 	done
 
 TwineedleName:
@@ -1027,7 +1027,7 @@ BeedrillDescription:
 	done
 
 EkansName:
-	textfw "アーボ"
+	text "Ekans"
 	done
 
 SpitPoisonName:
@@ -1059,7 +1059,7 @@ EkansLv15Description:
 	done
 
 ArbokName:
-	textfw "アーボック"
+	text "Arbok"
 	done
 
 TerrorStrikeName:
@@ -1105,7 +1105,7 @@ ArbokLv30Description:
 	done
 
 DarkArbokName:
-	textfw "わるいアーボック"
+	text "Dark Arbok"
 	done
 
 StareName:
@@ -1138,7 +1138,7 @@ DarkArbokDescription:
 	done
 
 NidoranFName:
-	textfw "ニドラン♀"
+	text "Nidoran♀"
 	done
 
 TailWhipName:
@@ -1185,7 +1185,7 @@ NidoranFLv13Description:
 	done
 
 NidorinaName:
-	textfw "ニドリーナ"
+	text "Nidorina"
 	done
 
 StrengthInNumbersName:
@@ -1225,7 +1225,7 @@ NidorinaLv24Description:
 	done
 
 NidoqueenName:
-	textfw "ニドクイン"
+	text "Nidoqueen"
 	done
 
 BoyfriendsName:
@@ -1252,7 +1252,7 @@ NidoqueenDescription:
 	done
 
 NidoranMName:
-	textfw "ニドラン♂"
+	text "Nidoran♂"
 	done
 
 HornHazardName:
@@ -1290,7 +1290,7 @@ NidoranMLv22Description:
 	done
 
 NidorinoName:
-	textfw "ニドリーノ"
+	text "Nidorino"
 	done
 
 SwiftLungeName:
@@ -1320,7 +1320,7 @@ NidorinoLv25Description:
 	done
 
 NidokingName:
-	textfw "ニドキング"
+	text "Nidoking"
 	done
 
 ThrashName:
@@ -1351,7 +1351,7 @@ NidokingDescription:
 	done
 
 ZubatName:
-	textfw "ズバット"
+	text "Zubat"
 	done
 
 RamName:
@@ -1393,7 +1393,7 @@ ZubatLv12Description:
 	done
 
 GolbatName:
-	textfw "ゴルバット"
+	text "Golbat"
 	done
 
 LeechLifeAltDescription:
@@ -1428,7 +1428,7 @@ GolbatLv29Description:
 	done
 
 DarkGolbatName:
-	textfw "わるいゴルバット"
+	text "Dark Golbat"
 	done
 
 SneakAttackName:
@@ -1460,7 +1460,7 @@ DarkGolbatDescription:
 	done
 
 OddishName:
-	textfw "ナゾノクサ"
+	text "Oddish"
 	done
 
 SproutName:
@@ -1500,7 +1500,7 @@ OddishLv21Description:
 	done
 
 GloomName:
-	textfw "クサイハナ"
+	text "Gloom"
 	done
 
 FoulOdorName:
@@ -1518,7 +1518,7 @@ GloomDescription:
 	done
 
 DarkGloomName:
-	textfw "わるいクサイハナ"
+	text "Dark Gloom"
 	done
 
 PollenStenchName:
@@ -1542,7 +1542,7 @@ DarkGloomDescription:
 	done
 
 VileplumeName:
-	textfw "ラフレシア"
+	text "Vileplume"
 	done
 
 HealName:
@@ -1579,7 +1579,7 @@ VileplumeDescription:
 	done
 
 DarkVileplumeName:
-	textfw "わるいラフレシア"
+	text "Dark Vileplume"
 	done
 
 HayFeverName:
@@ -1613,7 +1613,7 @@ DarkVileplumeDescription:
 	done
 
 ParasName:
-	textfw "パラス"
+	text "Paras"
 	done
 
 ScratchName:
@@ -1652,7 +1652,7 @@ ParasLv15Description:
 	done
 
 ParasectName:
-	textfw "パラセクト"
+	text "Parasect"
 	done
 
 SlashName:
@@ -1675,7 +1675,7 @@ ParasectLv29Description:
 	done
 
 VenonatName:
-	textfw "コンパン"
+	text "Venonat"
 	done
 
 InsectName:
@@ -1710,7 +1710,7 @@ VenonatLv15Description:
 	done
 
 VenomothName:
-	textfw "モルフォン"
+	text "Venomoth"
 	done
 
 StirUpTwisterName:
@@ -1783,7 +1783,7 @@ VenomothLv28Description:
 	done
 
 BellsproutName:
-	textfw "マダツボミ"
+	text "Bellsprout"
 	done
 
 SwayName:
@@ -1811,7 +1811,7 @@ BellsproutLv11Description:
 	done
 
 WeepinbellName:
-	textfw "ウツドン"
+	text "Weepinbell"
 	done
 
 RegenerationName:
@@ -1853,7 +1853,7 @@ WeepinbellLv28Description:
 	done
 
 VictreebelName:
-	textfw "ウツボット"
+	text "Victreebel"
 	done
 
 LureName:
@@ -1884,7 +1884,7 @@ VictreebelDescription:
 	done
 
 GrimerName:
-	textfw "ベトベター"
+	text "Grimer"
 	done
 
 PoisonGasName:
@@ -1932,7 +1932,7 @@ GrimerLv17Description:
 	done
 
 MukName:
-	textfw "ベトベトン"
+	text "Muk"
 	done
 
 ToxicGasName:
@@ -1953,7 +1953,7 @@ MukDescription:
 	done
 
 DarkMukName:
-	textfw "わるいベトベトン"
+	text "Dark Muk"
 	done
 
 StickyGooName:
@@ -1980,7 +1980,7 @@ DarkMukDescription:
 	done
 
 ExeggcuteName:
-	textfw "タマタマ"
+	text "Exeggcute"
 	done
 
 HypnosisMoveName:
@@ -1997,7 +1997,7 @@ ExeggcuteDescription:
 	done
 
 ExeggutorName:
-	textfw "ナッシー"
+	text "Exeggutor"
 	done
 
 TeleportName:
@@ -2030,7 +2030,7 @@ ExeggutorDescription:
 	done
 
 KoffingName:
-	textfw "ドガース"
+	text "Koffing"
 	done
 
 KoffingLv12Description:
@@ -2065,7 +2065,7 @@ KoffingLv14Description:
 	done
 
 WeezingName:
-	textfw "マタドガス"
+	text "Weezing"
 	done
 
 PoisonMistName:
@@ -2126,7 +2126,7 @@ WeezingLv27Description:
 	done
 
 DarkWeezingName:
-	textfw "わるいマタドガス"
+	text "Dark Weezing"
 	done
 
 MassExplosionName:
@@ -2158,7 +2158,7 @@ DarkWeezingDescription:
 	done
 
 TangelaName:
-	textfw "モンジャラ"
+	text "Tangela"
 	done
 
 BindName:
@@ -2185,7 +2185,7 @@ TangelaLv12Description:
 	done
 
 ScytherName:
-	textfw "ストライク"
+	text "Scyther"
 	done
 
 SlashingStrikeName:
@@ -2224,7 +2224,7 @@ ScytherLv25Description:
 	done
 
 PinsirName:
-	textfw "カイロス"
+	text "Pinsir"
 	done
 
 SlicingThrowName:
@@ -2261,7 +2261,7 @@ PinsirLv24Description:
 	done
 
 CharmanderName:
-	textfw "ヒトカゲ"
+	text "Charmander"
 	done
 
 GatherFireName:
@@ -2293,6 +2293,8 @@ CharmanderLv9Description:
 EmberName:
 	textfw "ひのこ"
 	done
+
+SECTION "Text 15", ROMX
 
 DiscardOneFireEnergyDescription:
 	textfw "[自分]についている「炎」エネルギーカ"
