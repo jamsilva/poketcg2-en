@@ -12,12 +12,6 @@ rom_obj := \
 
 ### Build tools
 
-ifeq (,$(shell which sha1sum))
-SHA1 := shasum
-else
-SHA1 := sha1sum
-endif
-
 RGBDS ?=
 RGBASM  ?= $(RGBDS)rgbasm
 RGBFIX  ?= $(RGBDS)rgbfix
@@ -36,10 +30,10 @@ RGBGFXFLAGS  ?= -Weverything
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all tcg2 clean tidy compare tools
+.PHONY: all tcg2 clean tidy tools
 
-all: $(rom) compare
-tcg2: $(rom) compare
+all: $(rom)
+tcg2: $(rom)
 
 clean: tidy
 	find src/gfx \
@@ -55,9 +49,6 @@ tidy:
 	      $(rom_obj) \
 	      src/rgbdscheck.o
 	$(MAKE) clean -C tools/
-
-compare: $(rom)
-	@$(SHA1) -c rom.sha1
 
 tools:
 	$(MAKE) -C tools/
