@@ -145,7 +145,6 @@ DEF TYPE_TRAINER_F EQU 4
 DEF CIRCLE    EQU $0
 DEF DIAMOND   EQU $1
 DEF STAR      EQU $2
-DEF WHITESTAR EQU $3
 DEF PROMOSTAR EQU $ff
 
 ; rarities for Card Pop! and booster content
