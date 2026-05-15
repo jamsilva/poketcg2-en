@@ -318,7 +318,7 @@ ENDM
 	fwcharmap TX_FULLWIDTH0, "。", $76
 	fwcharmap TX_FULLWIDTH0, "・", $77
 	fwcharmap TX_FULLWIDTH0, "ー", $78
-	fwcharmap TX_FULLWIDTH0, "r.", $79
+	fwcharmap TX_FULLWIDTH0, "<RDOT>", $79
 
 	charmap "[相手]", $7a, $7b, $7c
 	charmap "[自分]", $7d, $7e, $7f

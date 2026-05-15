@@ -152,7 +152,7 @@ IshiharaAtVillaTradeLaterReadMyBooksText:
 RuiStudyingAtIshiharasVillaPostgameText:
 	textfw "あら <RAMNAME>くん?"
 	linefw "あなたも べんきょうにきたの?"
-	linefw "Mr.イシハラの本は 対戦のためになる"
+	linefw "M<RDOT>イシハラの本は 対戦のためになる"
 	linefw "すばらしい本ですわよ"
 	linefw "大かんぶの わたくし ルイも"
 	linefw "よく べんきょうに まいりますのよ"
@@ -167,7 +167,7 @@ RuiStudyingAtIshiharasVillaPostgameText:
 
 RuiThanksIshiharaText:
 	textfw "いつも ありがとうございます"
-	linefw "Mr.イシハラ・・・"
+	linefw "M<RDOT>イシハラ・・・"
 	done
 
 IshiharaGladToHelpRuiText:
@@ -177,7 +177,7 @@ IshiharaGladToHelpRuiText:
 
 RuiGoodbyeIshiharaText:
 	textfw "では しつれいします"
-	linefw "Mr.イシハラ・・・"
+	linefw "M<RDOT>イシハラ・・・"
 	done
 
 IshiharaWantsToDuelInitialText:
@@ -205,7 +205,7 @@ IshiharaWantsToDuelRepeatText:
 	done
 
 IshiharaDuelPromptText:
-	textfw "Mr.イシハラと 対戦しますか?"
+	textfw "M<RDOT>イシハラと 対戦しますか?"
 	done
 
 IshiharaDuelStartText:
@@ -255,7 +255,7 @@ RuiStudyingAtIshiharasVilla1Text:
 RuiStudyingAtIshiharasVilla2Text:
 	textfw "なに? いま ポケモンカードの"
 	linefw "べんきょうしているのよ"
-	linefw "Mr.イシハラの本は 対戦のためになる"
+	linefw "M<RDOT>イシハラの本は 対戦のためになる"
 	linefw "すばらしい本ですわよ"
 	linefw "あなたも よんで"
 	linefw "べんきょうすると よろしいですわ"
@@ -346,7 +346,7 @@ Text0ef7:
 Text0ef8:
 	textfw "やあ <RAMNAME>くん!"
 	linefw "しっているかな?"
-	linefw "こんど Dr.オーヤマのつくった"
+	linefw "こんど D<RDOT>オーヤマのつくった"
 	linefw "オートきろくの デッキマシンは"
 	linefw "カードが ぜんぶ そろってなくても"
 	linefw "デッキを つくってくれるんだ"
@@ -394,7 +394,7 @@ Text0efb:
 	done
 
 Text0efc:
-	textfw "Dr.オーヤマのいらいを うけますか?"
+	textfw "D<RDOT>オーヤマのいらいを うけますか?"
 	done
 
 Text0efd:
@@ -608,7 +608,7 @@ Text0f13:
 Text0f14:
 	textfw "それじゃあ"
 	linefw "れんしゅう対戦を はじめよう"
-	linefw "Dr.オーヤマの アドバイスどおりに"
+	linefw "D<RDOT>オーヤマの アドバイスどおりに"
 	linefw "そうさするんだよ"
 	done
 
@@ -683,7 +683,7 @@ Text0f20:
 Text0f21:
 	textfw "それじゃあ"
 	linefw "「れんしゅう対戦」を はじめよう!"
-	linefw "Dr.オーヤマ!"
+	linefw "D<RDOT>オーヤマ!"
 	linefw "おねがいします!"
 	done
 
@@ -765,7 +765,7 @@ Text0f2b:
 	done
 
 Text0f2c:
-	textfw "これが Dr.オーヤマのつくった"
+	textfw "これが D<RDOT>オーヤマのつくった"
 	linefw "チャレンジマシンだ!"
 	linefw "チャレンジマシンは"
 	linefw "ポケモンカードの 対戦ゲームマシンだ"
@@ -832,7 +832,7 @@ Text0f31:
 	linefw "オートデッキマシンが あるんだよ"
 	linefw "あと むこうのヘヤには"
 	linefw "トレーニングルームが できたんだ"
-	linefw "Dr.オーヤマが ポケモンカードを"
+	linefw "D<RDOT>オーヤマが ポケモンカードを"
 	linefw "はじめる ひとのために つくったんだ"
 	linefw "いちど"
 	linefw "いってごらんよ"
@@ -1183,7 +1183,7 @@ Text0f55:
 	done
 
 Text0f56:
-	textfw "Dr.オーヤマの めいれいで"
+	textfw "D<RDOT>オーヤマの めいれいで"
 	linefw "トレーニング室を つくったんだけど"
 	linefw "あらいモンのやつ"
 	linefw "こんなに ひろくしやがって!"

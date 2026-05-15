@@ -118,7 +118,7 @@ PhantomCardsBookText:
 	linefw "どんなカードなのかは ふめいだそうだ"
 	linefw "いったい どんなカードなのだろう"
 	linefw "まぼろしのカードを てにいれるぞ"
-	linefw "          Mr.イシハラ"
+	linefw "          M<RDOT>イシハラ"
 	done
 
 DarkPokemonBookText:

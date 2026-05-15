@@ -855,7 +855,7 @@ Text1263:
 	linefw "オレは ひとあしさきに"
 	linefw "ヤツらのうごきを しらべておくぜ!"
 	linefw "くわしい はなしは"
-	linefw "Dr.オーヤマに きいてくれ!"
+	linefw "D<RDOT>オーヤマに きいてくれ!"
 	linefw "じゃあな! <RAMNAME>!"
 	done
 

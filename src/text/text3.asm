@@ -649,7 +649,7 @@ MaxEnergyDeckName:
 	done
 
 DuelistMrIshiharaName:
-	textfw "Mr.イシハラ"
+	textfw "M<RDOT>イシハラ"
 	done
 
 DemonicForestDeckName:
@@ -1457,7 +1457,7 @@ DuelistMainCharacterName:
 	done
 
 DrMasonText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 PracticeDuelHeaderPlayersTurnNumberText:
@@ -1868,7 +1868,7 @@ DeckDiagnosisPsychicText:
 	done
 
 DeckDiagnosisDialogInitialText:
-	textfw "Dr.オーヤマの デッキしんだんじゃ"
+	textfw "D<RDOT>オーヤマの デッキしんだんじゃ"
 	linefw "メニューを えらぶんじゃ"
 	done
 

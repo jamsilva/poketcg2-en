@@ -423,8 +423,8 @@ ENDR
 ; too hacky and verbose
 .default_scorers
 ; tcg
-; should just be textfw "Dr.オーヤマ" (+ padding)
-	textfw "Dr.オ"
+; should just be textfw "D<RDOT>オーヤマ" (+ padding)
+	textfw "D<RDOT>オ"
 	katakana "-"
 	katakana "ヤ"
 	katakana "マ"

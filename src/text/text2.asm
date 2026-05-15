@@ -2506,7 +2506,7 @@ MachineGreatDragonDeckName:
 	done
 
 MachineStarterDeckDescriptionText:
-	textfw "Dr.オーヤマから もらったデッキ"
+	textfw "D<RDOT>オーヤマから もらったデッキ"
 	linefw "炎と 闘エネルギーで つくられている"
 	done
 

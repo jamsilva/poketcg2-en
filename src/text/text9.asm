@@ -1270,8 +1270,8 @@ Text0e81:
 	textfw "それじゃあ クニミさんが"
 	linefw "どこにいるか はなすわね"
 	linefw "クニミさんは ミサキにある"
-	linefw "Mr.イシハラのとこに いるわ"
-	linefw "はやく Mr.イシハラのとこに いって"
+	linefw "M<RDOT>イシハラのとこに いるわ"
+	linefw "はやく M<RDOT>イシハラのとこに いって"
 	linefw "クニミさんに あって!"
 	done
 
@@ -1279,8 +1279,8 @@ Text0e82:
 	textfw "ねんのために クニミさんが"
 	linefw "どこにいるか もう1回 はなすわね"
 	linefw "クニミさんは ミサキにある"
-	linefw "Mr.イシハラのとこに いるわ"
-	linefw "はやく Mr.イシハラのとこに いって"
+	linefw "M<RDOT>イシハラのとこに いるわ"
+	linefw "はやく M<RDOT>イシハラのとこに いって"
 	linefw "クニミさんに あって!"
 	done
 
@@ -1418,7 +1418,7 @@ Text0e96:
 
 IshiharaUnderGRInvasionInitialText:
 	textfw "やあ こんにちは"
-	linefw "わたしが Mr.イシハラです"
+	linefw "わたしが M<RDOT>イシハラです"
 	linefw "わたしは ポケモンカードのコレクター"
 	linefw "カードをあつめるのが すきなのです"
 	linefw "でも いまは GR団が やってきて"
@@ -1431,7 +1431,7 @@ IshiharaUnderGRInvasionInitialText:
 
 IshiharaUnderGRInvasionRepeatText:
 	textfw "やあ こんにちは"
-	linefw "わたしが Mr.イシハラです"
+	linefw "わたしが M<RDOT>イシハラです"
 	linefw "クラブやドームが GR団に"
 	linefw "おそわれていると ききました"
 	linefw "みなさん"
@@ -1440,7 +1440,7 @@ IshiharaUnderGRInvasionRepeatText:
 
 IshiharaListenToNikkiText:
 	textfw "やあ こんにちは"
-	linefw "わたしが Mr.イシハラです"
+	linefw "わたしが M<RDOT>イシハラです"
 	linefw "わたしは ポケモンカードのコレクター"
 	linefw "カードをあつめるのが すきなのです"
 	linefw "でも いまは"
@@ -1451,7 +1451,7 @@ IshiharaListenToNikkiText:
 
 IshiharaHelpNikkiText:
 	textfw "やあ こんにちは"
-	linefw "わたしが Mr.イシハラです"
+	linefw "わたしが M<RDOT>イシハラです"
 	linefw "わたしは ポケモンカードのコレクター"
 	linefw "カードをあつめるのが すきなのです"
 	linefw "でも いまは"

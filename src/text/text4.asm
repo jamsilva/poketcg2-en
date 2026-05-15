@@ -1249,7 +1249,7 @@ MailBillsPCOutputBody2Text:
 	done
 
 MailMailboxIntroSenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailMailboxIntroSubjectText:
@@ -1258,7 +1258,7 @@ MailMailboxIntroSubjectText:
 
 MailMailboxIntroBody1Text:
 	textfw "<RAMNAME>!"
-	linefw "わしじゃ Dr.オーヤマじゃ"
+	linefw "わしじゃ D<RDOT>オーヤマじゃ"
 	linefw "ちゃんと このメールを"
 	linefw "よむことが できたかな?"
 	linefw "よいか いろいろな じょうほうが"
@@ -1279,8 +1279,8 @@ MailMailboxIntroBody3Text:
 	linefw "しておくと あたらしいメールが"
 	linefw "うけとれないことが あるからのう"
 	linefw ""
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailMailboxIntroBody4Text:
@@ -1291,7 +1291,7 @@ MailMailboxIntroBody4Text:
 	done
 
 MailDeckDiagnosis1SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailDeckDiagnosis1SubjectText:
@@ -1300,7 +1300,7 @@ MailDeckDiagnosis1SubjectText:
 
 MailDeckDiagnosis1Body1Text:
 	textfw "<RAMNAME>!"
-	linefw "わしじゃ Dr.オーヤマじゃ"
+	linefw "わしじゃ D<RDOT>オーヤマじゃ"
 	linefw "しんはつめいの おしらせじゃ"
 	linefw "わしのながねんの ポケモンカードの"
 	linefw "研究せいかを けっしゅうした"
@@ -1321,8 +1321,8 @@ MailDeckDiagnosis1Body3Text:
 	linefw "あくまでも きほんてきなアドバイスと"
 	linefw "デッキチェックじゃがな・・・"
 	linefw ""
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailDeckDiagnosis1Body4Text:
@@ -1332,7 +1332,7 @@ MailDeckDiagnosis1Body4Text:
 	done
 
 MailDeckDiagnosis2SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailDeckDiagnosis2SubjectText:
@@ -1340,7 +1340,7 @@ MailDeckDiagnosis2SubjectText:
 	done
 
 MailDeckDiagnosis2Body1Text:
-	textfw "<RAMNAME>! Dr.オーヤマじゃ"
+	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
 	linefw "「デッキしんだんシステム」の"
 	linefw "バージョンアップの おしらせじゃ"
 	linefw "ちょっと ポケモンカードになれた"
@@ -1362,8 +1362,8 @@ MailDeckDiagnosis2Body3Text:
 	linefw "「パソコン」から アクセスできるぞ"
 	linefw "どんなもんか ためしてみてくれ"
 	linefw ""
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailDeckDiagnosis2Body4Text:
@@ -1373,7 +1373,7 @@ MailDeckDiagnosis2Body4Text:
 	done
 
 MailDeckDiagnosis3SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailDeckDiagnosis3SubjectText:
@@ -1381,7 +1381,7 @@ MailDeckDiagnosis3SubjectText:
 	done
 
 MailDeckDiagnosis3Body1Text:
-	textfw "わしじゃ Dr.オーヤマじゃ"
+	textfw "わしじゃ D<RDOT>オーヤマじゃ"
 	linefw "「デッキしんだんシステム」の"
 	linefw "バージョンアップの おしらせじゃ"
 	linefw "「ステップ3」の かんせいじゃ"
@@ -1394,8 +1394,8 @@ MailDeckDiagnosis3Body2Text:
 	linefw "きほんてきな アドバイスは"
 	linefw "これで おわりじゃな・・・"
 	linefw ""
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailDeckDiagnosis3Body3Text:
@@ -1405,7 +1405,7 @@ MailDeckDiagnosis3Body3Text:
 	done
 
 MailDeckDiagnosis4SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailDeckDiagnosis4SubjectText:
@@ -1413,7 +1413,7 @@ MailDeckDiagnosis4SubjectText:
 	done
 
 MailDeckDiagnosis4Body1Text:
-	textfw "<RAMNAME> Dr.オーヤマじゃ"
+	textfw "<RAMNAME> D<RDOT>オーヤマじゃ"
 	linefw "また 「デッキしんだんシステム」の"
 	linefw "バージョンアップの おしらせじゃ"
 	linefw "「ステップ4」は よりよいデッキを"
@@ -1426,12 +1426,12 @@ MailDeckDiagnosis4Body2Text:
 	linefw "デッキに もんだいが あるのじゃ"
 	linefw "そんなときは デッキを キチンと"
 	linefw "みなおして みるのも たいせつじゃぞ"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailAutoDeckMachine1SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine1SubjectText:
@@ -1439,7 +1439,7 @@ MailAutoDeckMachine1SubjectText:
 	done
 
 MailAutoDeckMachine1Body1Text:
-	textfw "<RAMNAME>! Dr.オーヤマじゃ"
+	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
 	linefw "デッキをつくるのが たいへんなら"
 	linefw "オートデッキマシンを つかうと"
 	linefw "いいじゃろう"
@@ -1452,8 +1452,8 @@ MailAutoDeckMachine1Body2Text:
 	linefw "だんだん バージョンアップさせる"
 	linefw "よていじゃ!"
 	linefw "これからの対戦に やくだててくれ"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailAutoDeckMachine1Body3Text:
@@ -1464,7 +1464,7 @@ MailAutoDeckMachine1Body3Text:
 	done
 
 MailAutoDeckMachine2SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine2SubjectText:
@@ -1472,7 +1472,7 @@ MailAutoDeckMachine2SubjectText:
 	done
 
 MailAutoDeckMachine2Body1Text:
-	textfw "Dr.オーヤマじゃ"
+	textfw "D<RDOT>オーヤマじゃ"
 	linefw "<RAMNAME>! オートデッキマシンに"
 	linefw "だいぶ デッキが あつまっておるぞ"
 	linefw "たまには 研究所へ もどって"
@@ -1485,8 +1485,8 @@ MailAutoDeckMachine2Body2Text:
 	linefw "バージョンアップする つもりじゃ"
 	linefw "どんどん つかって 対戦に"
 	linefw "やくだてて くれ"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailAutoDeckMachine2Body3Text:
@@ -1496,7 +1496,7 @@ MailAutoDeckMachine2Body3Text:
 	done
 
 MailAutoDeckMachine3SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine3SubjectText:
@@ -1517,8 +1517,8 @@ MailAutoDeckMachine3Body2Text:
 	linefw "もってこいの マシンじゃぞ"
 	linefw "たまには 研究所へもどってきて"
 	linefw "あいてを 研究するんじゃ!"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailAutoDeckMachine3Body3Text:
@@ -1528,7 +1528,7 @@ MailAutoDeckMachine3Body3Text:
 	done
 
 MailAutoDeckMachine4SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine4SubjectText:
@@ -1536,7 +1536,7 @@ MailAutoDeckMachine4SubjectText:
 	done
 
 MailAutoDeckMachine4Body1Text:
-	textfw "<RAMNAME>! Dr.オーヤマじゃ"
+	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
 	linefw "GR団との対戦は どうじゃ?"
 	linefw "オートデッキマシン2号には"
 	linefw "けっこう GR団のカードをつかった"
@@ -1549,8 +1549,8 @@ MailAutoDeckMachine4Body2Text:
 	linefw "とりもどしたし たまには"
 	linefw "こちらのしまの れんちゅうとも"
 	linefw "対戦してみては どうかな?"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailAutoDeckMachine4Body3Text:
@@ -1560,7 +1560,7 @@ MailAutoDeckMachine4Body3Text:
 	done
 
 MailAutoDeckMachine5SenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine5SubjectText:
@@ -1568,7 +1568,7 @@ MailAutoDeckMachine5SubjectText:
 	done
 
 MailAutoDeckMachine5Body1Text:
-	textfw "わしじゃ Dr.オーヤマじゃ"
+	textfw "わしじゃ D<RDOT>オーヤマじゃ"
 	linefw "ついに GR団のキング ビルリッチを"
 	linefw "かいしんさせた そうじゃな"
 	linefw "だが まだまだポケモンカードを"
@@ -1589,12 +1589,12 @@ MailAutoDeckMachine5Body3Text:
 	textfw "オートデッキマシン1号も 2号も"
 	linefw "まだまだ デッキは ふえるぞ!"
 	linefw ""
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^о^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
 MailChallengeMachineSenderText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 MailChallengeMachineSubjectText:
@@ -1602,7 +1602,7 @@ MailChallengeMachineSubjectText:
 	done
 
 MailChallengeMachineBody1Text:
-	textfw "わしじゃ! Dr.オーヤマじゃ"
+	textfw "わしじゃ! D<RDOT>オーヤマじゃ"
 	linefw "チャレンジマシーンは"
 	linefw "たのしんで もらえておるかな?"
 	linefw "さいきょうの デッキをつくって"
@@ -1615,8 +1615,8 @@ MailChallengeMachineBody2Text:
 	linefw "コインを <RAMNAME>に やろう"
 	linefw "「ダグトリオ」のコインじゃ!!"
 	linefw "さあ レッツ チャレンジじゃ"
-	linefw "Dr.オーヤマ研究所"
-	linefw "   所長 Dr.オーヤマ (^◇^)"
+	linefw "D<RDOT>オーヤマ研究所"
+	linefw "   所長 D<RDOT>オーヤマ (^◇^)"
 	done
 
 MailGRChallengeMachineSenderText:
@@ -1637,7 +1637,7 @@ MailGRChallengeMachineBody1Text:
 	done
 
 MailGRChallengeMachineBody2Text:
-	textfw "マシンは Dr.オーヤマに"
+	textfw "マシンは D<RDOT>オーヤマに"
 	linefw "つくって もらったものだが"
 	linefw "けっこう たのしいものだ"
 	linefw "ぜひ チャレンジしてみてくれ!"
@@ -2451,7 +2451,7 @@ ProloguePlayerToLabLine2Text:
 	done
 
 ProloguePlayerToLabLine3Text:
-	textfw "Dr.オーヤマのいる 研究所へ"
+	textfw "D<RDOT>オーヤマのいる 研究所へ"
 	linefw "むかったのでした・・・"
 	done
 
