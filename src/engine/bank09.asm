@@ -763,12 +763,12 @@ DrawDuelistPortraitsAndNames:
 	ld de, wDefaultText
 	push de
 	call CopyPlayerName
-	lb de, 0, 11
+	lb de, 1, 11
 	call InitTextPrinting
 	pop hl
 	call ProcessText
 	; player's portrait
-	lb bc, 0, 5
+	lb bc, 1, 5
 	call DrawPlayerPortrait
 
 	; opponent's name (aligned to the right)
@@ -778,7 +778,7 @@ DrawDuelistPortraitsAndNames:
 	pop hl
 	call GetTextLengthInTiles
 	push hl
-	add SCREEN_WIDTH
+	add SCREEN_WIDTH-1
 	ld d, a
 	ld e, 0
 	call InitTextPrinting
@@ -1183,10 +1183,10 @@ PrintPlayerNumberOfHandAndDeckCards:
 	sub [hl]
 	ld e, a
 	ld a, d
-	lb bc, 16, 10
+	lb bc, 17, 10
 	bank1call WriteTwoDigitNumberInTxSymbolFormat
 	ld a, e
-	lb bc, 10, 10
+	lb bc, 11, 10
 	bank1call WriteTwoDigitNumberInTxSymbolFormat
 	ret
 
@@ -1202,27 +1202,27 @@ PrintOpponentNumberOfHandAndDeckCards:
 	sub [hl]
 	ld e, a
 	ld a, d
-	lb bc, 5, 3
+	lb bc, 4, 3
 	bank1call WriteTwoDigitNumberInTxSymbolFormat
 	ld a, e
-	lb bc, 11, 3
+	lb bc, 10, 3
 	bank1call WriteTwoDigitNumberInTxSymbolFormat
 	ret
 
 DeckAndHandIconsTileData:
 ; x, y, tiles[], 0
-	db  4,  3, SYM_CROSS, 0 ; x for opponent's hand
-	db 10,  3, SYM_CROSS, 0 ; x for opponent's deck
-	db  8,  2, $f4, $f5,  0 ; opponent's deck icon
-	db  8,  3, $f6, $f7,  0 ; opponent's deck icon
-	db  2,  2, $f8, $f9,  0 ; opponent's hand icon
-	db  2,  3, $fa, $fb,  0 ; opponent's hand icon
-	db  9, 10, SYM_CROSS, 0 ; x for player's deck
-	db 15, 10, SYM_CROSS, 0 ; x for player's hand
-	db  7,  9, $f4, $f5,  0 ; player's deck icon
-	db  7, 10, $f6, $f7,  0 ; player's deck icon
-	db 13,  9, $f8, $f9,  0 ; player's hand icon
-	db 13, 10, $fa, $fb,  0 ; player's hand icon
+	db  3,  3, SYM_CROSS, 0 ; x for opponent's hand
+	db  9,  3, SYM_CROSS, 0 ; x for opponent's deck
+	db  7,  2, $f4, $f5,  0 ; opponent's deck icon
+	db  7,  3, $f6, $f7,  0 ; opponent's deck icon
+	db  1,  2, $f8, $f9,  0 ; opponent's hand icon
+	db  1,  3, $fa, $fb,  0 ; opponent's hand icon
+	db 10, 10, SYM_CROSS, 0 ; x for player's deck
+	db 16, 10, SYM_CROSS, 0 ; x for player's hand
+	db  8,  9, $f4, $f5,  0 ; player's deck icon
+	db  8, 10, $f6, $f7,  0 ; player's deck icon
+	db 14,  9, $f8, $f9,  0 ; player's hand icon
+	db 14, 10, $fa, $fb,  0 ; player's hand icon
 	db $ff
 
 ; unreferenced, copied over from TCG1
