@@ -396,56 +396,56 @@ CardPointers::
 	card_ptr DarkDragoniteCard         ; DARK_DRAGONITE
 	card_ptr TogepiCard                ; TOGEPI
 	card_ptr LugiaCard                 ; LUGIA
-	card_ptr SuperPotionCard           ; SUPER_POTION
-	card_ptr ImakuniCardCard           ; IMAKUNI_CARD
-	card_ptr EnergyRemovalCard         ; ENERGY_REMOVAL
-	card_ptr EnergyRetrievalCard       ; ENERGY_RETRIEVAL
-	card_ptr EnergySearchCard          ; ENERGY_SEARCH
 	card_ptr ProfessorOakCard          ; PROFESSOR_OAK
-	card_ptr FossilExcavationCard      ; FOSSIL_EXCAVATION
-	card_ptr PotionCard                ; POTION
-	card_ptr GamblerCard               ; GAMBLER
-	card_ptr ReviveCard                ; REVIVE
-	card_ptr MaxReviveCard             ; MAX_REVIVE
-	card_ptr SuperScoopUpCard          ; SUPER_SCOOP_UP
-	card_ptr DevolutionSprayCard       ; DEVOLUTION_SPRAY
-	card_ptr ItemFinderCard            ; ITEMFINDER
-	card_ptr ChallengeCard             ; CHALLENGE
-	card_ptr SuperEnergyRetrievalCard  ; SUPER_ENERGY_RETRIEVAL
-	card_ptr SuperEnergyRemovalCard    ; SUPER_ENERGY_REMOVAL
-	card_ptr MoonStoneCard             ; MOON_STONE
-	card_ptr DefenderCard              ; DEFENDER
-	card_ptr GustOfWindCard            ; GUST_OF_WIND
-	card_ptr MysteriousFossilCard      ; MYSTERIOUS_FOSSIL
-	card_ptr FullHealCard              ; FULL_HEAL
-	card_ptr ImposterOaksRevengeCard   ; IMPOSTER_OAKS_REVENGE
 	card_ptr ImposterProfessorOakCard  ; IMPOSTER_PROFESSOR_OAK
-	card_ptr SleepCard                 ; SLEEP
-	card_ptr ComputerErrorCard         ; COMPUTER_ERROR
-	card_ptr ComputerSearchCard        ; COMPUTER_SEARCH
-	card_ptr DiggerCard                ; DIGGER
-	card_ptr ClefairyDollCard          ; CLEFAIRY_DOLL
-	card_ptr MrFujiCard                ; MR_FUJI
-	card_ptr PlusPowerCard             ; PLUSPOWER
-	card_ptr SwitchCard                ; SWITCH
-	card_ptr ScoopUpCard               ; SCOOP_UP
-	card_ptr PokemonTraderCard         ; POKEMON_TRADER
-	card_ptr PokemonRecallCard         ; POKEMON_RECALL
-	card_ptr PokedexCard               ; POKEDEX
-	card_ptr PokemonCenterCard         ; POKEMON_CENTER
-	card_ptr PokemonBreederCard        ; POKEMON_BREEDER
-	card_ptr PokemonFluteCard          ; POKEMON_FLUTE
-	card_ptr TheBosssWayCard           ; THE_BOSSS_WAY
-	card_ptr GoopGasAttackCard         ; GOOP_GAS_ATTACK
+	card_ptr ImposterOaksRevengeCard   ; IMPOSTER_OAKS_REVENGE
 	card_ptr BillCard                  ; BILL
 	card_ptr BillsTeleporterCard       ; BILLS_TELEPORTER
 	card_ptr BillsComputerCard         ; BILLS_COMPUTER
-	card_ptr MasterBallCard            ; MASTER_BALL
+	card_ptr MrFujiCard                ; MR_FUJI
 	card_ptr LassCard                  ; LASS
-	card_ptr MaintenanceCard           ; MAINTENANCE
+	card_ptr ImakuniCardCard           ; IMAKUNI_CARD
+	card_ptr PokemonTraderCard         ; POKEMON_TRADER
+	card_ptr PokemonBreederCard        ; POKEMON_BREEDER
+	card_ptr ClefairyDollCard          ; CLEFAIRY_DOLL
+	card_ptr MysteriousFossilCard      ; MYSTERIOUS_FOSSIL
+	card_ptr FossilExcavationCard      ; FOSSIL_EXCAVATION
+	card_ptr EnergyRetrievalCard       ; ENERGY_RETRIEVAL
+	card_ptr SuperEnergyRetrievalCard  ; SUPER_ENERGY_RETRIEVAL
+	card_ptr EnergySearchCard          ; ENERGY_SEARCH
+	card_ptr EnergyRemovalCard         ; ENERGY_REMOVAL
+	card_ptr SuperEnergyRemovalCard    ; SUPER_ENERGY_REMOVAL
+	card_ptr SwitchCard                ; SWITCH
+	card_ptr PokemonCenterCard         ; POKEMON_CENTER
 	card_ptr PokeballCard              ; POKEBALL
-	card_ptr NightlyGarbageRunCard     ; NIGHTLY_GARBAGE_RUN
+	card_ptr MasterBallCard            ; MASTER_BALL
+	card_ptr MoonStoneCard             ; MOON_STONE
+	card_ptr ScoopUpCard               ; SCOOP_UP
+	card_ptr SuperScoopUpCard          ; SUPER_SCOOP_UP
+	card_ptr ComputerSearchCard        ; COMPUTER_SEARCH
+	card_ptr ComputerErrorCard         ; COMPUTER_ERROR
+	card_ptr PokedexCard               ; POKEDEX
+	card_ptr PlusPowerCard             ; PLUSPOWER
+	card_ptr DefenderCard              ; DEFENDER
+	card_ptr ItemFinderCard            ; ITEMFINDER
+	card_ptr GustOfWindCard            ; GUST_OF_WIND
+	card_ptr DevolutionSprayCard       ; DEVOLUTION_SPRAY
+	card_ptr PotionCard                ; POTION
+	card_ptr SuperPotionCard           ; SUPER_POTION
+	card_ptr FullHealCard              ; FULL_HEAL
+	card_ptr ReviveCard                ; REVIVE
+	card_ptr MaxReviveCard             ; MAX_REVIVE
+	card_ptr MaintenanceCard           ; MAINTENANCE
+	card_ptr PokemonFluteCard          ; POKEMON_FLUTE
+	card_ptr PokemonRecallCard         ; POKEMON_RECALL
+	card_ptr GamblerCard               ; GAMBLER
 	card_ptr RecycleCard               ; RECYCLE
+	card_ptr NightlyGarbageRunCard     ; NIGHTLY_GARBAGE_RUN
+	card_ptr ChallengeCard             ; CHALLENGE
+	card_ptr SleepCard                 ; SLEEP
+	card_ptr GoopGasAttackCard         ; GOOP_GAS_ATTACK
+	card_ptr DiggerCard                ; DIGGER
+	card_ptr TheBosssWayCard           ; THE_BOSSS_WAY
 	card_ptr RocketsSneakAttackCard    ; ROCKETS_SNEAK_ATTACK
-	card_ptr HereComesTeamRocketCard   ; HERE_COMES_TEAM_ROCKET
 	card_ptr TheRocketsTrapCard        ; THE_ROCKETS_TRAP
+	card_ptr HereComesTeamRocketCard   ; HERE_COMES_TEAM_ROCKET
