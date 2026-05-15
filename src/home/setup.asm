@@ -36,11 +36,7 @@ DetectConsole:
 	ld b, CONSOLE_CGB
 	cp BOOTUP_A_CGB
 	jr z, .got_console
-	call DetectSGB
 	ld b, CONSOLE_DMG
-	jr nc, .got_console
-	call InitSGB
-	ld b, CONSOLE_SGB
 .got_console
 	ld a, b
 	ld [wConsole], a
@@ -50,6 +46,9 @@ DetectConsole:
 	ldh [rWBK], a
 	call SwitchToCGBDoubleSpeed
 	ret
+REPT $a ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; initialize the palettes (both monochrome and color)
 SetupPalettes:
