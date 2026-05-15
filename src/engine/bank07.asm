@@ -2324,7 +2324,7 @@ ShowStartMenu:
 ; draw player portrait
 	call GetPlayerPortrait
 	add 0
-	lb bc, 13, 1
+	lb bc, 14, 1
 	ld e, EMOTION_NORMAL
 	call DrawNPCPortrait
 
@@ -2381,14 +2381,14 @@ ShowStartMenu:
 	dw .Config4Params ; STARTMENU_CONFIG_4
 
 .Config0Params
-	menubox_params TRUE, 12, 4, \
+	menubox_params TRUE, 14, 4, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, 0, FALSE, 0, StartMenuBoxUpdate, NULL
 	textitem 2, 2, MainMenuNewGameText
 	textitems_end
 
 .Config1Params
-	menubox_params TRUE, 12, 6, \
+	menubox_params TRUE, 14, 6, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, 0, FALSE, 1, StartMenuBoxUpdate, NULL
 	textitem 2, 2, MainMenuContinueFromDiaryText
@@ -2396,7 +2396,7 @@ ShowStartMenu:
 	textitems_end
 
 .Config2Params
-	menubox_params TRUE, 12, 8, \
+	menubox_params TRUE, 14, 8, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, 0, FALSE, 1, StartMenuBoxUpdate, NULL
 	textitem 2, 2, MainMenuCardPopText
@@ -2405,7 +2405,7 @@ ShowStartMenu:
 	textitems_end
 
 .Config3Params
-	menubox_params TRUE, 12, 10, \
+	menubox_params TRUE, 14, 10, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, 0, FALSE, 1, StartMenuBoxUpdate, NULL
 	textitem 2, 2, MainMenuCardPopText
@@ -2415,7 +2415,7 @@ ShowStartMenu:
 	textitems_end
 
 .Config4Params
-	menubox_params TRUE, 12, 8, \
+	menubox_params TRUE, 14, 8, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, 0, FALSE, 1, StartMenuBoxUpdate, NULL
 	textitem 2, 2, MainMenuContinueFromDiaryText
