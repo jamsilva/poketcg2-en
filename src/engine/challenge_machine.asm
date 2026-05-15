@@ -126,7 +126,7 @@ ENDR
 
 ChallengeMachine_StartConfirmation:
 	ldtx hl, ChallengeMachineStartPromptText
-	ld a, $01
+	ld a, $00
 	call DrawWideTextBox_PrintTextWithYesOrNoMenu
 	ret
 
