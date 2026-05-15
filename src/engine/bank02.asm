@@ -6920,17 +6920,15 @@ AppendOwnedCardCountNumber:
 .end
 	call GetOwnedCardCount
 	call ConvertToNumericalDigits
-	ldfw bc, "枚"
-	ld [hl], c
-	inc hl
-	ld [hl], b
-	inc hl
 	ld [hl], $00 ; insert byte terminator
 	pop hl
 	pop de
 	pop bc
 	pop af
 	ret
+REPT $7 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; print header info (card count and player name)
 PrintPlayersCardsHeaderInfo:
@@ -6994,17 +6992,15 @@ PrintTotalNumberOfCardsInCollection:
 	call .PlaceNumericalChar
 	call .PlaceNumericalChar
 	call .PlaceNumericalChar
-	ldfw bc, "枚"
-	ld [hl], c ; 枚
-	inc hl
-	ld [hl], b
-	inc hl
 	ld [hl], TX_END
 	lb de, 13, 0
 	call InitTextPrinting
 	ld hl, wTempCardCollection
 	call ProcessText
 	ret
+REPT $7 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; places a numerical character in hl from de
 ; doesn't place a 0 if no non-0

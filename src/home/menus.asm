@@ -702,60 +702,47 @@ CardSymbolTable::
 CopyCardNameAndLevel::
 	push bc
 	push de
-	ld c, a
-	ld a, [wLoadedCard1Type]
-	cp TYPE_ENERGY
-	jr nc, .level_done ; jump if energy or trainer
-	ld a, [wLoadedCard1DarknessLevel]
-	and $7f ; drop the darkness bit
-	push af
-	jr z, .level_done
-	inc c
-	inc c
-	pop af
-	cp 10
-	jr c, .level_done
-	inc c ; second digit
-.level_done
+	ld [wCardNameLength], a
 	ld hl, wLoadedCard1Name
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
 	ld de, wDefaultText
 	push de
-	call CopyText
+	call CopyText ; copy card name to wDefaultText
 	pop hl
-	push de
-	ld e, c
-	call GetTextLengthInTiles
-	add e
-	ld c, a
-	pop hl
-	push hl
-.fill_loop
-	ld a, $70
-	ld [hli], a
-	dec c
-	jr nz, .fill_loop
-	ld [hl], TX_END
-	pop hl
+	ld a, [wCardNameLength]
+	inc a
+	add a
+	ld b, a
+	ld hl, wDefaultText
+.find_end_text_loop
+	dec b
+	ld a, [hli]
+	or a ; TX_END
+	jr nz, .find_end_text_loop
+	dec hl
 	ld a, [wLoadedCard1Type]
 	cp TYPE_ENERGY
-	jr nc, .done
+	jr nc, .level_done
 	ld a, [wLoadedCard1DarknessLevel]
 	and $7f ; drop the darkness bit
-	push af
-	jr z, .done
-	ld a, TX_SYMBOL
+	jr z, .level_done
+	ld c, a
+	ld a, ' '
 	ld [hli], a
-	ld [hl], SYM_Lv
-	inc hl
-	pop af
+	dec b
+	ld a, 'L'
+	ld [hli], a
+	dec b
+	ld a, 'v'
+	ld [hli], a
+	dec b
+	ld a, c
 	cp 10
-	jr c, .one_digit
-	ld [hl], TX_SYMBOL
-	inc hl
-	ld b, SYM_0 - 1
+	jr c, .got_level
+	push bc
+	ld b, '0' - 1
 .first_digit_loop
 	inc b
 	sub 10
@@ -763,16 +750,29 @@ CopyCardNameAndLevel::
 	add 10
 	ld [hl], b ; first digit
 	inc hl
-.one_digit
-	ld [hl], TX_SYMBOL
-	inc hl
-	add SYM_0
-	ld [hl], a ; last (or only) digit
-	inc hl
-.done
+	pop bc
+	ld c, a
+	dec b
+.got_level
+	ld a, c
+	add '0'
+	ld [hli], a ; last (or only) digit
+	dec b
+.level_done
+	push hl
+	ld a, ' '
+.fill_spaces_loop
+	ld [hli], a
+	dec b
+	jr nz, .fill_spaces_loop
+	ld [hl], TX_END
+	pop hl
 	pop de
 	pop bc
 	ret
+REPT $9 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; sets cursor parameters for navigating in a text box, but using
 ; default values for the cursor tile (SYM_CURSOR_R) and the tile behind it (SYM_SPACE).

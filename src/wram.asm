@@ -3191,9 +3191,12 @@ wClaimedJigglypuffCoin:: ; db1f
 wCoinFlipGameStreak:: ; db20
 	ds $1
 
-; harmless bug: stores garbage data but is unused
-wUnusedCoinFlipGamePayout:: ; db21
-	ds $2
+; used in _CopyCardNameAndLevel to keep track of the remaining space to copy the text
+wCardNameLength:: ; db21
+	ds $1
+
+; unused / free to use
+	ds $1
 
 ; for each reel,
 ; bit 0--5 : offset
