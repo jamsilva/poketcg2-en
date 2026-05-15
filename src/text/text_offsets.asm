@@ -18,8 +18,8 @@ TextOffsets::
 	textpointer LengthText                                            ; 0x000c
 	textpointer WeightText                                            ; 0x000d
 	textpointer PokemonText                                           ; 0x000e
-	textpointer LengthUnitMetresText                                  ; 0x000f
-	textpointer WeightUnitKilogramsText                               ; 0x0010
+	textpointer LengthUnitEndText                                     ; 0x000f
+	textpointer WeightUnitEndText                                     ; 0x0010
 	textpointer PromostarRarityText                                   ; 0x0011
 	textpointer CircleRarityText                                      ; 0x0012
 	textpointer DiamondRarityText                                     ; 0x0013
@@ -143,7 +143,7 @@ TextOffsets::
 	textpointer MenuUseCheckText                                      ; 0x0089
 	textpointer MenuPutOutCheckText                                   ; 0x008a
 	textpointer MenuSelectCheckText                                   ; 0x008b
-	textpointer UnusedText008c                                        ; 0x008c
+	textpointer LengthUnitSeparatorText                               ; 0x008c
 	textpointer DuelistIsThinkingText                                 ; 0x008d
 	textpointer ClearOpponentNameText                                 ; 0x008e
 	textpointer DebugComputerOpponentSelectionText                    ; 0x008f

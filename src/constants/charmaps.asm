@@ -1167,7 +1167,7 @@ ENDM
 	fwcharmap TX_FULLWIDTH4, "♂", $4a
 	fwcharmap TX_FULLWIDTH4, "々", $4b
 	fwcharmap TX_FULLWIDTH4, "ヴ", $4c
-	fwcharmap TX_FULLWIDTH4, "@", $4d
+	fwcharmap TX_FULLWIDTH4, ".", $4d
 	fwcharmap TX_FULLWIDTH4, ":", $4e
 	fwcharmap TX_FULLWIDTH4, ";", $4f
 	fwcharmap TX_FULLWIDTH4, "【", $50
@@ -1191,6 +1191,9 @@ ENDM
 	fwcharmap TX_FULLWIDTH4, "=", $62
 	fwcharmap TX_FULLWIDTH4, "◇", $63
 	fwcharmap TX_FULLWIDTH4, "ˉ", $64
+	fwcharmap TX_FULLWIDTH4, "”", $87
+	fwcharmap TX_FULLWIDTH4, "'", $8c
+	fwcharmap TX_FULLWIDTH4, "@", $a5
 
 MACRO txsymbol
 	REDEF symbol EQUS \1

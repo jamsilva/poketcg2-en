@@ -104,14 +104,9 @@ GetCardType::
 ; returns nz if card ID given in de is a Dark Pokémon
 CheckIfCardIDIsDarkPokemon::
 	jp CheckIfCardIDIsDarkPokemon_Implementation
-REPT $11 ; dummy NOPs here to pad space freed
+REPT $16 ; dummy NOPs here to pad space freed
 	nop
 ENDR
-
-; Utility function used by bank01.asm, moved here to make use of the freed space
-SetKatakana::
-	ld a, TX_KATAKANA
-	jp ProcessSpecialTextCharacter
 
 ; return in de the 2-byte text id of the name of the card with id at de
 GetCardName::

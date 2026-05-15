@@ -1,15 +1,3 @@
-rom := poketcg2.gbc
-
-rom_obj := \
-	src/main.o \
-	src/home.o \
-	src/gfx.o \
-	src/text.o \
-	src/audio.o \
-	src/wram.o \
-	src/hram.o
-
-
 ### Build tools
 
 RGBDS ?=
@@ -23,6 +11,28 @@ RGBLINKFLAGS ?= -Weverything -Wtruncation=1
 RGBFIXFLAGS  ?= -Weverything
 RGBGFXFLAGS  ?= -Weverything
 
+### Options
+
+ifeq (metric,$(MAKECMDGOALS))
+  FLAVOR := _metric
+  RGBASMFLAGS += -DMETRIC=1
+else
+  FLAVOR = _imperial
+  RGBASMFLAGS += -DMETRIC=0
+endif
+
+### Objects
+
+rom := poketcg2$(FLAVOR).gbc
+
+rom_obj := \
+	src/main$(FLAVOR).o \
+	src/home$(FLAVOR).o \
+	src/gfx$(FLAVOR).o \
+	src/text$(FLAVOR).o \
+	src/audio$(FLAVOR).o \
+	src/wram$(FLAVOR).o \
+	src/hram$(FLAVOR).o
 
 ### Build targets
 
@@ -30,10 +40,10 @@ RGBGFXFLAGS  ?= -Weverything
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all tcg2 clean tidy tools
+.PHONY: imperial metric clean tidy tools
 
-all: $(rom)
-tcg2: $(rom)
+imperial: $(rom)
+metric: $(rom)
 
 clean: tidy
 	find src/gfx \
@@ -43,10 +53,10 @@ clean: tidy
 	     -delete
 
 tidy:
-	$(RM) $(rom) \
-	      $(rom:.gbc=.sym) \
-	      $(rom:.gbc=.map) \
-	      $(rom_obj) \
+	$(RM) $(rom:_imperial.gbc=_{metric,imperial}.gbc) \
+	      $(rom:_imperial.gbc=_{metric,imperial}.sym) \
+	      $(rom:_imperial.gbc=_{metric,imperial}.map) \
+	      $(rom_obj:_imperial.o=_{metric,imperial}.o) \
 	      src/rgbdscheck.o
 	$(MAKE) clean -C tools/
 
@@ -78,7 +88,7 @@ $1: $2 $$(shell tools/scan_includes -s -I src/ $2) | src/rgbdscheck.o
 endef
 
 # Dependencies for objects
-$(foreach obj, $(rom_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
+$(foreach obj, $(rom_obj), $(eval $(call DEP,$(obj),$(obj:$(FLAVOR).o=.asm))))
 
 endif
 
