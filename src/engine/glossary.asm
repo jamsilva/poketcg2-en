@@ -229,7 +229,7 @@ Glossary:
 ; GLOSSARY_GAME_BASICS
 	ld hl, .ExplanationTextData_GameBasics
 	push hl
-	ldtx hl, GlossaryGameBasicsTitleText
+	ldtx hl, GlossaryGameBasicsText
 	push hl
 	lb de, 2, 0
 	jr .got_explanation_data
@@ -240,7 +240,7 @@ Glossary:
 ; GLOSSARY_CARD_TYPE_EXPLANATIONS
 	ld hl, .ExplanationTextData_CardTypes
 	push hl
-	ldtx hl, GlossaryCardTypesAndKeywordsTitleText
+	ldtx hl, GlossaryCardTypesAndKeywordsText
 	push hl
 	lb de, 2, 0
 	jr .got_explanation_data
@@ -251,7 +251,7 @@ Glossary:
 ; GLOSSARY_STATUS_WINNING_LOSING
 	ld hl, .ExplanationTextData_StatusWinningLosing
 	push hl
-	ldtx hl, GlossaryStatusesAndDecisionTitleText
+	ldtx hl, GlossaryStatusesAndDecisionText
 	push hl
 	lb de, 2, 0
 	jr .got_explanation_data
@@ -260,7 +260,7 @@ Glossary:
 ; GLOSSARY_SPECIAL_DUEL_RULES
 	ld hl, .ExplanationTextData_SpecialDuelRules
 	push hl
-	ldtx hl, GlossarySpecialRulesTitleText
+	ldtx hl, GlossarySpecialRulesText
 	push hl
 	lb de, 5, 0
 .got_explanation_data

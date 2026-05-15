@@ -98,10 +98,6 @@ LickitungName:
 	textfw "ベロリンガ"
 	done
 
-LickAltName:
-	textfw "なめる"
-	done
-
 LickingName:
 	textfw "なめまわし"
 	done
@@ -124,10 +120,6 @@ LickitungLv26Description:
 
 ChanseyName:
 	textfw "ラッキー"
-	done
-
-DoubleSlapAltName:
-	textfw "おうふくビンタ"
 	done
 
 ChanseyLv40Description:

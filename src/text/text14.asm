@@ -710,18 +710,10 @@ IvysaurLv20Description:
 	linefw "吸収していくと、大きな花が咲くという"
 	done
 
-LeechSeedAltName:
-	textfw "やどりぎのたね"
-	done
-
 IvysaursLeechSeedDescription:
 	textfw "[相手]にダメージを与えたら、[自分]に"
 	linefw "のっているダメージカウンターを"
 	linefw "1個とりのぞく。"
-	done
-
-VineWhipAltName:
-	textfw "つるのムチ"
 	done
 
 IvysaurLv26Description:
@@ -1060,11 +1052,6 @@ BiteName:
 	textfw "かみつく"
 	done
 
-MayInflictPoisonAltDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「どく」状態にする。"
-	done
-
 EkansLv15Description:
 	textfw "肉食でなんでも噛まずに飲み込んで"
 	linefw "しまう。ポッポやオニスズメの卵が"
@@ -1099,11 +1086,6 @@ ArbokLv27Description:
 	textfw "お腹の模様がこわい顏に見える。"
 	linefw "弱い敵はその模様を見ただけで"
 	linefw "逃げ出してしまう。"
-	done
-
-MayInflictParalysisAltDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「マヒ」状態にする。"
 	done
 
 DeadlyPoisonName:
@@ -1232,11 +1214,6 @@ SupersonicName:
 	textfw "ちょうおんぱ"
 	done
 
-MayInflictConfusionAltDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を「こんらん」状態にする。"
-	done
-
 DoubleKickName:
 	textfw "にどげり"
 	done
@@ -1305,11 +1282,6 @@ FocusEnergyHornRushDescription:
 
 HornRushName:
 	textfw "つのでとっしん"
-	done
-
-IfTailsDoNothingAltDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "このワザは失敗する。"
 	done
 
 NidoranMLv22Description:
@@ -1973,10 +1945,6 @@ ToxicGasDescription:
 	linefw "特殊能力は使えず、その力も消える。"
 	linefw "このカードが「ねむり・マヒ・こんらん"
 	linefw "」状態のとき、この力は消える。"
-	done
-
-SludgeMoveName:
-	textfw "ヘドロこうげき"
 	done
 
 MukDescription:

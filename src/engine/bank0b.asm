@@ -217,7 +217,7 @@ IshiharasHouse_IshiharaAppearanceCheck:
 Script_IshiharaSheltering:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -240,7 +240,7 @@ Script_IshiharaSheltering:
 Script_IshiharaWithNikki:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -262,7 +262,7 @@ Script_IshiharaWithNikki:
 Script_IshiharaTrade1:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -309,7 +309,7 @@ Script_IshiharaTrade1:
 Script_IshiharaTradeLaterAtHome:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -325,7 +325,7 @@ Script_IshiharaTradeLaterAtHome:
 Script_IshiharaTrade2:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -372,7 +372,7 @@ Script_IshiharaTrade2:
 Script_IshiharaTrade3:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -419,7 +419,7 @@ Script_IshiharaTrade3:
 Script_IshiharaHeadingForVilla:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -435,7 +435,7 @@ Script_IshiharaHeadingForVilla:
 Script_IshiharaBusy:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -452,7 +452,7 @@ Script_IshiharaBusy:
 Script_IshiharaCongratsAtHome:
 	ld a, NPC_ISHIHARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogMrIshiharaText
+	ldtx hl, DuelistMrIshiharaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -474,7 +474,7 @@ Script_IshiharaCongratsAtHome:
 Script_NikkiRetreated:
 	ld a, NPC_NIKKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogNikkiText
+	ldtx hl, DuelistNikkiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -702,29 +702,29 @@ Func_2c584:
 	wait_for_fade
 	send_mail $13
 	set_event EVENT_MET_GR4_LIGHTNING_CLUB
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	start_dialog
 	print_npc_text Text0b03
-	set_active_npc NPC_NICHOLAS, DialogNicholasText
+	set_active_npc NPC_NICHOLAS, DuelistNicholasName
 	print_npc_text Text0b04
 	end_dialog
 	animate_active_npc_movement $02, $01
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	print_npc_text Text0b05
-	set_active_npc NPC_ISAAC, DialogIsaacText
+	set_active_npc NPC_ISAAC, DuelistIsaacName
 	print_npc_text Text0b06
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	set_active_npc_direction WEST
 	print_npc_text Text0b07
-	set_active_npc NPC_ISAAC, DialogIsaacText
+	set_active_npc NPC_ISAAC, DuelistIsaacName
 	print_npc_text Text0b08
 	end_dialog
 	animate_active_npc_movement $02, $01
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	set_active_npc_direction SOUTH
 	print_npc_text Text0b09
 	end_dialog
@@ -755,7 +755,7 @@ Script_2c5f5:
 	reset_event EVENT_TALKED_TO_JENNIFER
 	reset_event EVENT_TALKED_TO_NICHOLAS
 	reset_event EVENT_TALKED_TO_BRANDON
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	move_active_npc .NPCMovement_2c637
 	wait_for_player_animation
 	set_active_npc_direction WEST
@@ -775,7 +775,7 @@ Script_2c5f5:
 	unload_npc NPC_GR_4
 	play_song_next MUSIC_CLUB_1
 	start_dialog
-	set_active_npc NPC_ISAAC, DialogIsaacText
+	set_active_npc NPC_ISAAC, DuelistIsaacName
 	set_event EVENT_GOT_PIKACHU_COIN
 	print_npc_text Text0b0c
 	give_coin COIN_PIKACHU
@@ -800,7 +800,7 @@ Script_2c5f5:
 Func_2c645:
 	ld a, NPC_ISAAC
 	ld [wScriptNPC], a
-	ldtx hl, DialogIsaacText
+	ldtx hl, DuelistIsaacName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -935,7 +935,7 @@ Func_2c6ec:
 Func_2c73b:
 	ld a, NPC_JENNIFER
 	ld [wScriptNPC], a
-	ldtx hl, DialogJenniferText
+	ldtx hl, DuelistJenniferName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -991,7 +991,7 @@ Func_2c781:
 Func_2c79d:
 	ld a, NPC_NICHOLAS
 	ld [wScriptNPC], a
-	ldtx hl, DialogNicholasText
+	ldtx hl, DuelistNicholasName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1128,7 +1128,7 @@ Func_2c847:
 Func_2c897:
 	ld a, NPC_BRANDON
 	ld [wScriptNPC], a
-	ldtx hl, DialogBrandonText
+	ldtx hl, DuelistBrandonName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1198,7 +1198,7 @@ Func_2c8f9:
 Func_2c90e:
 	ld a, NPC_GR_4
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR4Text
+	ldtx hl, DuelistGR4Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1408,7 +1408,7 @@ Func_2ca46:
 Func_2caa0:
 	ld a, NPC_STEPHANIE
 	ld [wScriptNPC], a
-	ldtx hl, DialogStephanieText
+	ldtx hl, DuelistStephanieName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1863,17 +1863,17 @@ Func_2ce39:
 	set_event EVENT_WALKED_INTO_MURRAYS_CLUB_ROOM
 	do_frames 30
 	scroll_to_position $ff, $02
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	start_dialog
 	print_npc_text Text0b66
 	end_dialog
-	set_active_npc NPC_MURRAY, DialogMurrayText
+	set_active_npc NPC_MURRAY, DuelistMurrayName
 	do_frames 30
 	set_active_npc_direction NORTH
 	do_frames 30
 	start_dialog
 	print_npc_text Text0b67
-	set_active_npc NPC_GR_4, DialogGR4Text
+	set_active_npc NPC_GR_4, DuelistGR4Name
 	print_npc_text Text0b68
 	end_dialog
 	move_npc NPC_MURRAY, .NPCMovement_2ce7c
@@ -1899,7 +1899,7 @@ Func_2ce39:
 Func_2ce88:
 	ld a, NPC_MURRAY
 	ld [wScriptNPC], a
-	ldtx hl, DialogMurrayText
+	ldtx hl, DuelistMurrayName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2069,7 +2069,7 @@ Func_2cf73:
 Func_2cfcc:
 	ld a, NPC_ROBERT
 	ld [wScriptNPC], a
-	ldtx hl, DialogRobertText
+	ldtx hl, DuelistRobertName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2139,7 +2139,7 @@ Func_2d02a:
 Func_2d046:
 	ld a, NPC_DANIEL
 	ld [wScriptNPC], a
-	ldtx hl, DialogDanielText
+	ldtx hl, DuelistDanielName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2202,7 +2202,7 @@ Func_2d097:
 Func_2d0b3:
 	ld a, NPC_STEPHANIE
 	ld [wScriptNPC], a
-	ldtx hl, DialogStephanieText
+	ldtx hl, DuelistStephanieName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2324,7 +2324,7 @@ Func_2d142:
 Func_2d190:
 	ld a, NPC_GR_4
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR4Text
+	ldtx hl, DuelistGR4Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -2993,23 +2993,23 @@ Func_2d6ca:
 	wait_for_fade
 	set_event EVENT_MET_GR1_ROCK_CLUB
 	start_dialog
-	set_active_npc NPC_GR_1, DialogGR1Text
+	set_active_npc NPC_GR_1, DuelistGR1Name
 	print_npc_text Text10cc
 	end_dialog
 	scroll_to_position $ff, $00
 	start_dialog
-	set_active_npc NPC_GENE, DialogGeneText
+	set_active_npc NPC_GENE, DuelistGeneName
 	print_npc_text Text10cd
 	end_dialog
 	set_player_position 6, 13
 	move_player .NPCMovement_2d74e, TRUE
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_GR_1, DialogGR1Text
+	set_active_npc NPC_GR_1, DuelistGR1Name
 	print_npc_text Text10ce
-	set_active_npc NPC_GENE, DialogGeneText
+	set_active_npc NPC_GENE, DuelistGeneName
 	print_npc_text Text10cf
-	set_active_npc NPC_GR_1, DialogGR1Text
+	set_active_npc NPC_GR_1, DuelistGR1Name
 	print_npc_text Text10d0
 	end_dialog
 	animate_active_npc_movement $82, $01
@@ -3036,7 +3036,7 @@ Func_2d6ca:
 	fade_in $03, FALSE
 	wait_for_fade
 	start_dialog
-	set_active_npc NPC_GENE, DialogGeneText
+	set_active_npc NPC_GENE, DuelistGeneName
 	print_npc_text Text10d4
 	end_dialog
 	end_script
@@ -3053,7 +3053,7 @@ Func_2d6ca:
 Func_2d754:
 	ld a, NPC_GENE
 	ld [wScriptNPC], a
-	ldtx hl, DialogGeneText
+	ldtx hl, DuelistGeneName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3129,7 +3129,7 @@ Func_2d7c3:
 Func_2d7ea:
 	ld a, NPC_MATTHEW
 	ld [wScriptNPC], a
-	ldtx hl, DialogMatthewText
+	ldtx hl, DuelistMatthewName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3178,7 +3178,7 @@ Func_2d825:
 Func_2d841:
 	ld a, NPC_RYAN
 	ld [wScriptNPC], a
-	ldtx hl, DialogRyanText
+	ldtx hl, DuelistRyanName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3229,7 +3229,7 @@ Func_2d87e:
 Func_2d89c:
 	ld a, NPC_ANDREW
 	ld [wScriptNPC], a
-	ldtx hl, DialogAndrewText
+	ldtx hl, DuelistAndrewName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3541,7 +3541,7 @@ FightingClubLobby_AfterDuelScripts:
 Func_2db0e:
 	ld a, NPC_MICHAEL
 	ld [wScriptNPC], a
-	ldtx hl, DialogMichaelText
+	ldtx hl, DuelistMichaelName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3848,7 +3848,7 @@ FightingClub_AfterDuelScripts:
 Func_2dd62:
 	ld a, NPC_MITCH
 	ld [wScriptNPC], a
-	ldtx hl, DialogMitchText
+	ldtx hl, DuelistMitchName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3931,7 +3931,7 @@ Func_2dde4:
 Func_2ddf1:
 	ld a, NPC_MICHAEL
 	ld [wScriptNPC], a
-	ldtx hl, DialogMichaelText
+	ldtx hl, DuelistMichaelName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4034,7 +4034,7 @@ Func_2de75:
 Func_2dead:
 	ld a, NPC_CHRIS
 	ld [wScriptNPC], a
-	ldtx hl, DialogChrisText
+	ldtx hl, DuelistChrisName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4113,7 +4113,7 @@ Func_2df1e:
 Func_2df3a:
 	ld a, NPC_JESSICA
 	ld [wScriptNPC], a
-	ldtx hl, DialogJessicaText
+	ldtx hl, DuelistJessicaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4183,7 +4183,7 @@ Func_2df9c:
 Func_2dfb1:
 	ld a, NPC_GR_1
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR1Text
+	ldtx hl, DuelistGR1Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4521,7 +4521,7 @@ GrassClub_AfterDuelScripts:
 Func_2e226:
 	ld a, NPC_NIKKI
 	ld [wScriptNPC], a
-	ldtx hl, DialogNikkiText
+	ldtx hl, DuelistNikkiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4579,7 +4579,7 @@ Func_2e26e:
 Func_2e28c:
 	ld a, NPC_BRITTANY
 	ld [wScriptNPC], a
-	ldtx hl, DialogBrittanyText
+	ldtx hl, DuelistBrittanyName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4670,7 +4670,7 @@ Func_2e2f6:
 Func_2e332:
 	ld a, NPC_KRISTIN
 	ld [wScriptNPC], a
-	ldtx hl, DialogKristinText
+	ldtx hl, DuelistKristinName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4726,7 +4726,7 @@ Func_2e378:
 Func_2e394:
 	ld a, NPC_HEATHER
 	ld [wScriptNPC], a
-	ldtx hl, DialogHeatherText
+	ldtx hl, DuelistHeatherName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4796,7 +4796,7 @@ Func_2e3f6:
 Func_2e40b:
 	ld a, NPC_GR_2
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR2Text
+	ldtx hl, DuelistGR2Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5049,7 +5049,7 @@ ScienceClubEntrance_ShouldRonaldAppear:
 Func_2e5d0:
 	ld a, NPC_JOSEPH
 	ld [wScriptNPC], a
-	ldtx hl, DialogJosephText
+	ldtx hl, DuelistJosephName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5232,7 +5232,7 @@ Func_2e752:
 Func_2e76e:
 	ld a, NPC_DAVID
 	ld [wScriptNPC], a
-	ldtx hl, DialogDavidText
+	ldtx hl, DuelistDavidName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5297,7 +5297,7 @@ Func_2e7c7:
 Func_2e7e3:
 	ld a, NPC_ERIK
 	ld [wScriptNPC], a
-	ldtx hl, DialogErikText
+	ldtx hl, DuelistErikName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5551,7 +5551,7 @@ ScienceClub_AfterDuelScripts:
 Func_2e9c7:
 	ld a, NPC_RICK
 	ld [wScriptNPC], a
-	ldtx hl, DialogRickText
+	ldtx hl, DuelistRickName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5663,7 +5663,7 @@ Func_2ea87:
 Func_2ea94:
 	ld a, NPC_DAVID
 	ld [wScriptNPC], a
-	ldtx hl, DialogDavidText
+	ldtx hl, DuelistDavidName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5714,7 +5714,7 @@ Func_2ead1:
 Func_2eaef:
 	ld a, NPC_JOSEPH
 	ld [wScriptNPC], a
-	ldtx hl, DialogJosephText
+	ldtx hl, DuelistJosephName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5815,7 +5815,7 @@ Func_2eb6d:
 Func_2eba5:
 	ld a, NPC_ERIK
 	ld [wScriptNPC], a
-	ldtx hl, DialogErikText
+	ldtx hl, DuelistErikName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5885,7 +5885,7 @@ Func_2ec07:
 Func_2ec1c:
 	ld a, NPC_GR_2
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR2Text
+	ldtx hl, DuelistGR2Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6037,7 +6037,7 @@ Func_2ed3e:
 	jr c, .quit
 	or a
 	jr nz, .gift
-	ldtx hl, DialogGR3Text
+	ldtx hl, DuelistGR3Name
 	call LoadTxRam2
 	ld hl, Func_340a4
 	jr .got_event
@@ -6234,7 +6234,7 @@ Func_2eece:
 Func_2eeea:
 	ld a, NPC_JOSHUA
 	ld [wScriptNPC], a
-	ldtx hl, DialogJoshuaText
+	ldtx hl, DuelistJoshuaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6581,7 +6581,7 @@ Script_2f127:
 	db $ff
 
 Script_2f19d:
-	set_active_npc NPC_AMY, DialogAmyText
+	set_active_npc NPC_AMY, DuelistAmyName
 	animate_player_movement $00, $01
 	wait_for_player_animation
 	start_dialog
@@ -6612,7 +6612,7 @@ Script_2f19d:
 Func_2f1d2:
 	ld a, NPC_AMY
 	ld [wScriptNPC], a
-	ldtx hl, DialogAmyText
+	ldtx hl, DuelistAmyName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6639,7 +6639,7 @@ Func_2f1ed:
 Func_2f1fa:
 	ld a, NPC_AMY_LOUNGE
 	ld [wScriptNPC], a
-	ldtx hl, DialogAmyText
+	ldtx hl, DuelistAmyName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6754,7 +6754,7 @@ Func_2f28a:
 Func_2f2cf:
 	ld a, NPC_JOSHUA
 	ld [wScriptNPC], a
-	ldtx hl, DialogJoshuaText
+	ldtx hl, DuelistJoshuaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6855,7 +6855,7 @@ Func_2f36d:
 Func_2f382:
 	ld a, NPC_SARA
 	ld [wScriptNPC], a
-	ldtx hl, DialogSaraText
+	ldtx hl, DuelistSaraName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -6918,7 +6918,7 @@ Func_2f3d5:
 Func_2f3f1:
 	ld a, NPC_AMANDA
 	ld [wScriptNPC], a
-	ldtx hl, DialogAmandaText
+	ldtx hl, DuelistAmandaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7005,7 +7005,7 @@ Func_2f478:
 Func_2f485:
 	ld a, NPC_GR_3
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR3Text
+	ldtx hl, DuelistGR3Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7555,7 +7555,7 @@ FireClub_AfterDuelScripts:
 	db $ff
 
 Script_2f8f8:
-	set_active_npc NPC_KEN, DialogKenText
+	set_active_npc NPC_KEN, DuelistKenName
 	start_dialog
 	set_active_npc_direction NORTH
 	do_frames 60
@@ -7583,7 +7583,7 @@ Script_2f8f8:
 Func_2f926:
 	ld a, NPC_KEN
 	ld [wScriptNPC], a
-	ldtx hl, DialogKenText
+	ldtx hl, DuelistKenName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7723,7 +7723,7 @@ Func_2f9ed:
 Func_2fa25:
 	ld a, NPC_JOHN
 	ld [wScriptNPC], a
-	ldtx hl, DialogJohnText
+	ldtx hl, DuelistJohnName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7794,7 +7794,7 @@ Func_2fa85:
 Func_2faa1:
 	ld a, NPC_ADAM
 	ld [wScriptNPC], a
-	ldtx hl, DialogAdamText
+	ldtx hl, DuelistAdamName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7889,7 +7889,7 @@ Func_2fb32:
 Func_2fb4e:
 	ld a, NPC_JONATHAN
 	ld [wScriptNPC], a
-	ldtx hl, DialogJonathanText
+	ldtx hl, DuelistJonathanName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -7964,7 +7964,7 @@ Func_2fbb7:
 Func_2fbd3:
 	ld a, NPC_GR_3
 	ld [wScriptNPC], a
-	ldtx hl, DialogGR3Text
+	ldtx hl, DuelistGR3Name
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h

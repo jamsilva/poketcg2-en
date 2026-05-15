@@ -867,7 +867,7 @@ ScatterSpores_CheckDeckAndBench:
 ScatterSpores_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseAParasFromDeckText
-	ldtx bc, EffectTargetParasText
+	ldtx bc, ParasName
 	ld de, DEX_PARAS
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -2258,7 +2258,7 @@ MagnetMove_PlayerSelectEffect:
 .successful
 	call CreateDeckCardList
 	ldtx hl, ChooseAMagnemiteFromDeckText
-	ldtx bc, EffectTargetMagnemiteText
+	ldtx bc, MagnemiteName
 	ld de, DEX_MAGNEMITE
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck

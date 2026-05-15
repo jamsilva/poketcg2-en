@@ -1790,7 +1790,7 @@ ConvertSpecialTrainerCardToPokemon::
 
 .mind_shock_attack_data
 	energy 0 ; energies
-	tx ClefairyDollsMindShockName ; name
+	tx MindShockName ; name
 	tx ClefairyDollsMindShockDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage

@@ -24,28 +24,28 @@ ReceiveCardTextPointers:
 		ReceivedPromotionalGRMewtwoText, FALSE, NONE
 	receive_card_text ARCANINE_LV34, \
 		PromotionalArcanineLv34Text, PromotionalArcanineLv34Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text ELECTABUZZ_LV20, \
 		PromotionalElectabuzzLv20Text, PromotionalElectabuzzLv20Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text DRAGONITE_LV41, \
 		PromotionalDragoniteLv41Text, PromotionalDragoniteLv41Text, \
-		ReceivedLegendaryCardText_2, TRUE, ReceivedPromotionalCardText_2
+		ReceivedLegendaryCardText, TRUE, ReceivedPromotionalCardText
 	receive_card_text DRAGONITE_LV43, \
 		PromotionalDragoniteLv43Text, PromotionalDragoniteLv43Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text COOL_PORYGON, \
 		PromotionalCoolPorygonLv15Text, PromotionalCoolPorygonText, \
 		ReceivedPromotionalCoolPorygonText, FALSE, NONE
 	receive_card_text BLASTOISE_ALT_LV52, \
 		PromotionalBlastoiseLv52Text, PromotionalBlastoiseLv52Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text FARFETCHD_ALT_LV20, \
 		PromotionalFarfetchdLv20Text, PromotionalFarfetchdLv20Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text KANGASKHAN_LV38, \
 		PromotionalKangaskhanLv38Text, PromotionalKangaskhanLv38Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text POTION_ENERGY, \
 		NONE, NotPromotionalPotionEnergyText, \
 		ReceivedNotPromotionalPotionEnergyText, FALSE, NONE
@@ -54,192 +54,192 @@ ReceiveCardTextPointers:
 		ReceivedPromotionalHungrySnorlaxText, FALSE, NONE
 	receive_card_text MAGIKARP_LV10, \
 		PromotionalMagikarpLv10Text, PromotionalMagikarpLv10Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text ZAPDOS_LV68, \
 		PromotionalZapdosLv68Text, PromotionalZapdosLv68Text, \
-		ReceivedLegendaryCardText_2, TRUE, ReceivedPromotionalCardText_2
+		ReceivedLegendaryCardText, TRUE, ReceivedPromotionalCardText
 	receive_card_text FLYING_PIKACHU_LV12, \
 		PromotionalFlyingPikachuLv12Text, PromotionalFlyingPikachuText, \
-		ReceivedPromotionalFlyingPikachuText_2, FALSE, NONE
+		ReceivedPromotionalFlyingPikachuText, FALSE, NONE
 	receive_card_text FLYING_PIKACHU_ALT_LV12, \
 		PromotionalFlyingPikachuLv12Text, PromotionalFlyingPikachuText, \
-		ReceivedPromotionalFlyingPikachuText_2, FALSE, NONE
+		ReceivedPromotionalFlyingPikachuText, FALSE, NONE
 	receive_card_text DUGTRIO_LV40, \
 		PromotionalDugtrioLv40Text, PromotionalDugtrioLv40Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text SUPER_ENERGY_RETRIEVAL, \
 		PromotionalSuperEnergyRetrievalText, PromotionalSuperEnergyRetrievalText, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text DIGLETT_LV16, \
 		PromotionalDiglettLv16Text, PromotionalDiglettLv16Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text TOGEPI, \
 		PromotionalTogepiLv8Text, PromotionalTogepiLv8Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text SURFING_PIKACHU_LV13, \
 		PromotionalSurfingPikachuLv13Text, PromotionalSurfingPikachuText, \
-		ReceivedPromotionalSurfingPikachuText_2, FALSE, NONE
+		ReceivedPromotionalSurfingPikachuText, FALSE, NONE
 	receive_card_text SURFING_PIKACHU_ALT_LV13, \
 		PromotionalSurfingPikachuLv13Text, PromotionalSurfingPikachuText, \
-		ReceivedPromotionalSurfingPikachuText_2, FALSE, NONE
+		ReceivedPromotionalSurfingPikachuText, FALSE, NONE
 	receive_card_text MEOWTH_LV14, \
 		PromotionalMeowthLv14Text, PromotionalMeowthLv14Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text COMPUTER_ERROR, \
 		PromotionalComputerErrorText, PromotionalComputerErrorText, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text PIKACHU_LV13, \
 		PromotionalPikachuLv13Text, PromotionalPikachuLv13Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text PIKACHU_LV16, \
 		PromotionalPikachuLv16Text, PromotionalPikachuLv16Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text PIKACHU_ALT_LV16, \
 		PromotionalPikachuLv16Text, PromotionalPikachuLv16Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MOLTRES_LV40, \
 		PromotionalMoltresLv40Text, PromotionalMoltresLv40Text, \
-		ReceivedLegendaryCardText_2, TRUE, ReceivedPromotionalCardText_2
+		ReceivedLegendaryCardText, TRUE, ReceivedPromotionalCardText
 	receive_card_text VENUSAUR_ALT_LV67, \
 		PromotionalVenusaurLv67Text, PromotionalVenusaurLv67Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text ARTICUNO_LV37, \
 		PromotionalArticunoLv37Text, PromotionalArticunoLv37Text, \
-		ReceivedLegendaryCardText_2, TRUE, ReceivedPromotionalCardText_2
+		ReceivedLegendaryCardText, TRUE, ReceivedPromotionalCardText
 	receive_card_text JIGGLYPUFF_LV12, \
 		PromotionalJigglypuffLv12Text, PromotionalJigglypuffLv12Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text GOOP_GAS_ATTACK, \
 		NONE, NONE, \
-		ReceivedCardText_4, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text BILLS_COMPUTER, \
 		PromotionalBillsComputerText, PromotionalBillsComputerText, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MARILL, \
 		PromotionalMarillLv17Text, PromotionalMarillLv17Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MANKEY_ALT_LV7, \
 		PromotionalMankeyLv7Text, PromotionalMankeyLv7Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MEW_LV8, \
 		PromotionalMewLv8Text, PromotionalMewLv8Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MEWTWO_LV30, \
 		PromotionalMewtwoLv30Text, PromotionalMewtwoLv30Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MEWTWO_ALT_LV60, \
 		PromotionalMewtwoLv60Text, PromotionalMewtwoLv60Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text MEWTWO_LV60, \
 		PromotionalMewtwoLv60Text, PromotionalMewtwoLv60Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text SLOWPOKE_LV9, \
 		PromotionalSlowpokeLv9Text, PromotionalSlowpokeLv9Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text CHARIZARD_ALT_LV76, \
 		PromotionalCharizardLv76Text, PromotionalCharizardLv76Text, \
-		ReceivedPromotionalCardText_2, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text ROCKETS_SNEAK_ATTACK, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_ARBOK, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_PRIMEAPE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_FEAROW, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_MACHAMP, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_DRAGONITE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_BLASTOISE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_NINETALES, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_GYARADOS, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_RAPIDASH, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_GLOOM, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_MACHOKE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_GOLDUCK, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_GOLBAT, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_JOLTEON, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_VAPOREON, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_STARMIE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_HYPNO, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_DUGTRIO, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_DRAGONAIR, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_FLAREON, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_ALAKAZAM, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_IVYSAUR, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_VENUSAUR, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_MUK, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_PERSIAN_LV28, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_PERSIAN_ALT_LV28, \
 		PromotionalDarkPersianLv28Text, PromotionalDarkPersianLv28Text, \
-		ReceivedPromotionalCardText_3, FALSE, NONE
+		ReceivedPromotionalCardText, FALSE, NONE
 	receive_card_text DARK_WEEZING, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_ELECTRODE, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_KADABRA, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_RAICHU, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_VILEPLUME, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_CHARIZARD, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 	receive_card_text DARK_MAGNETON, \
 		NONE, NONE, \
-		ReceivedCardText_3, FALSE, NONE
+		ReceivedCardText, FALSE, NONE
 
 	dw $ffff ; end of list

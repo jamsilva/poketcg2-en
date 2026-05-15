@@ -48,10 +48,6 @@ PauseMenuExitText:
 	textfw "とじる"
 	done
 
-ConfigTitleText:
-	textfw "せっていのへんこう"
-	done
-
 ConfigMessageSpeedText:
 	textfw " メッセージの はやさ "
 	done
@@ -116,7 +112,7 @@ PlayerDiaryTitleText:
 	textfw "<RAMNAME>のにっき"
 	done
 
-PlayerDiaryNameText:
+NameText:
 	textfw "なまえ"
 	done
 
@@ -138,10 +134,6 @@ PlayerDiaryPlayTimeText:
 
 PlayerDiaryPromptText:
 	textfw "にっきを つけますか?"
-	done
-
-PlayerDiaryPromptYesText:
-	textfw "はい"
 	done
 
 PlayerDiaryPromptNoText:
@@ -315,10 +307,6 @@ DebugObjectCharacterDisplayText:
 	textfw "OBJ人物の表示"
 	done
 
-IsThisOKText_2:
-	textfw "これで よろしいですか?"
-	done
-
 PlayerGenderText:
 	textfw "せいべつ"
 	done
@@ -383,20 +371,6 @@ GameCenterPrize1PresentPackText:
 
 GameCenterPrize3PresentPacksText:
 	textfw "プレゼントパック×3"
-	done
-
-BattleCenterWelcomeTextOld: ; left over from tcg1, cf. 0x12e4--
-	textfw "いらっしゃいませ"
-	linefw "バトルセンターへ ようこそ!"
-	done
-
-BattleCenterBeginPromptTextOld: ; the same
-	textfw "ともだちとの対戦を はじめますか?"
-	done
-
-BattleCenterThankYouTextOld: ; probably the same
-	textfw "バトルセンターの ごりよう"
-	linefw "ありがとうございました"
 	done
 
 GiftCenterWelcomeText:
@@ -1196,10 +1170,6 @@ MailboxEmptySubjectText:
 	textfw "------------"
 	done
 
-MailBlackBoxOutputSenderText:
-	textfw "ゲームセンター"
-	done
-
 MailBlackBoxOutputSubjectText:
 	textfw "ブラックボックス"
 	done
@@ -1222,10 +1192,6 @@ MailBlackBoxOutputBody2Text:
 	linefw "  GR団ゲームセンター(^-^)/"
 	done
 
-MailBillsPCOutputSenderText:
-	textfw "ゲームセンター"
-	done
-
 MailBillsPCOutputSubjectText:
 	textfw "マサキのパソコン"
 	done
@@ -1246,10 +1212,6 @@ MailBillsPCOutputBody2Text:
 	linefw "ごりようを おまちしています"
 	linefw ""
 	linefw "  GR団ゲームセンター(^-^)/"
-	done
-
-MailMailboxIntroSenderText:
-	textfw "D<RDOT>オーヤマ"
 	done
 
 MailMailboxIntroSubjectText:
@@ -1290,10 +1252,6 @@ MailMailboxIntroBody4Text:
 	linefw "これからの対戦に やくだててくれ"
 	done
 
-MailDeckDiagnosis1SenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailDeckDiagnosis1SubjectText:
 	textfw "「デッキしんだん」"
 	done
@@ -1329,10 +1287,6 @@ MailDeckDiagnosis1Body4Text:
 	textfw "ついしん"
 	linefw "「ステップ2」が かんせいしたら"
 	linefw "また れんらくするからな・・・"
-	done
-
-MailDeckDiagnosis2SenderText:
-	textfw "D<RDOT>オーヤマ"
 	done
 
 MailDeckDiagnosis2SubjectText:
@@ -1372,10 +1326,6 @@ MailDeckDiagnosis2Body4Text:
 	linefw "また れんらくするからな・・・"
 	done
 
-MailDeckDiagnosis3SenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailDeckDiagnosis3SubjectText:
 	textfw "「デッキしんだん」3"
 	done
@@ -1404,10 +1354,6 @@ MailDeckDiagnosis3Body3Text:
 	linefw "また れんらくするからな・・・"
 	done
 
-MailDeckDiagnosis4SenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailDeckDiagnosis4SubjectText:
 	textfw "「デッキしんだん」4"
 	done
@@ -1428,10 +1374,6 @@ MailDeckDiagnosis4Body2Text:
 	linefw "みなおして みるのも たいせつじゃぞ"
 	linefw "D<RDOT>オーヤマ研究所"
 	linefw "   所長 D<RDOT>オーヤマ (^о^)"
-	done
-
-MailAutoDeckMachine1SenderText:
-	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine1SubjectText:
@@ -1463,10 +1405,6 @@ MailAutoDeckMachine1Body3Text:
 	linefw "とりあえず プレゼントじゃ!"
 	done
 
-MailAutoDeckMachine2SenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailAutoDeckMachine2SubjectText:
 	textfw "オートデッキマシン2"
 	done
@@ -1493,10 +1431,6 @@ MailAutoDeckMachine2Body3Text:
 	textfw "ついしん"
 	linefw "とりあえず プレゼントじゃ!"
 	linefw "うけとって くれ"
-	done
-
-MailAutoDeckMachine3SenderText:
-	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine3SubjectText:
@@ -1527,10 +1461,6 @@ MailAutoDeckMachine3Body3Text:
 	linefw "こんどは 第3彈じゃ!!"
 	done
 
-MailAutoDeckMachine4SenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailAutoDeckMachine4SubjectText:
 	textfw "オートデッキマシン4"
 	done
@@ -1557,10 +1487,6 @@ MailAutoDeckMachine4Body3Text:
 	textfw "ついしん"
 	linefw "これが おまえが とりもどした"
 	linefw "さいしんの拡張パックじゃ!"
-	done
-
-MailAutoDeckMachine5SenderText:
-	textfw "D<RDOT>オーヤマ"
 	done
 
 MailAutoDeckMachine5SubjectText:
@@ -1593,10 +1519,6 @@ MailAutoDeckMachine5Body3Text:
 	linefw "   所長 D<RDOT>オーヤマ (^о^)"
 	done
 
-MailChallengeMachineSenderText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
 MailChallengeMachineSubjectText:
 	textfw "チャレンジマシーン!"
 	done
@@ -1617,10 +1539,6 @@ MailChallengeMachineBody2Text:
 	linefw "さあ レッツ チャレンジじゃ"
 	linefw "D<RDOT>オーヤマ研究所"
 	linefw "   所長 D<RDOT>オーヤマ (^◇^)"
-	done
-
-MailGRChallengeMachineSenderText:
-	textfw "ビルリッチ"
 	done
 
 MailGRChallengeMachineSubjectText:
@@ -1653,10 +1571,6 @@ MailGRChallengeMachineBody3Text:
 	linefw "        ビルリッチ(ˉ^ˉ)"
 	done
 
-MailGrandMasterCupSenderText:
-	textfw "リュウドー"
-	done
-
 MailGrandMasterCupSubjectText:
 	textfw "グランドマスター杯"
 	done
@@ -1677,10 +1591,6 @@ MailGrandMasterCupBody2Text:
 	linefw "ポケモンドームに よってくれたまえ"
 	linefw "グランドマスター リーダー"
 	linefw "        リュウドー(^о^)"
-	done
-
-MailRonaldsScoutGR1SenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutGR1SubjectText:
@@ -1705,10 +1615,6 @@ MailRonaldsScoutGR1Body2Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutGR2SenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutGR2SubjectText:
 	textfw "GR2号のデッキ"
 	done
@@ -1729,10 +1635,6 @@ MailRonaldsScoutGR2Body2Text:
 	linefw "きを つけろ! じゃあな"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailRonaldsScoutGR3SenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutGR3SubjectText:
@@ -1757,10 +1659,6 @@ MailRonaldsScoutGR3Body2Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutGR4SenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutGR4SubjectText:
 	textfw "GR4号のデッキ"
 	done
@@ -1780,10 +1678,6 @@ MailRonaldsScoutGR4Body2Text:
 	linefw "アドバイスを もらうんだ いいな"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailRonaldsScoutMorinoSenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutMorinoSubjectText:
@@ -1826,10 +1720,6 @@ MailRonaldsScoutMorinoBody4Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutCatherineSenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutCatherineSubjectText:
 	textfw "キャサリンのデッキ"
 	done
@@ -1859,10 +1749,6 @@ MailRonaldsScoutCatherineBody3Text:
 	linefw "たたかうかは おまえしだいだ!"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailRonaldsScoutHideroSenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutHideroSubjectText:
@@ -1896,10 +1782,6 @@ MailRonaldsScoutHideroBody3Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutKanokoSenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutKanokoSubjectText:
 	textfw "カノコのデッキ"
 	done
@@ -1931,10 +1813,6 @@ MailRonaldsScoutKanokoBody3Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutKamiyaSenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutKamiyaSubjectText:
 	textfw "カミヤのデッキ"
 	done
@@ -1964,10 +1842,6 @@ MailRonaldsScoutKamiyaBody3Text:
 	linefw "たぶんな・・・まあ ガンバレよ!"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailRonaldsScoutMamiSenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutMamiSubjectText:
@@ -2018,10 +1892,6 @@ MailRonaldsScoutMamiBody5Text:
 	linefw "          ランド(●_●)"
 	done
 
-MailRonaldsScoutColorlessAltarSenderText:
-	textfw "ランド"
-	done
-
 MailRonaldsScoutColorlessAltarSubjectText:
 	textfw "無のさいだんじょうほう"
 	done
@@ -2060,10 +1930,6 @@ MailRonaldsScoutColorlessAltarBody4Text:
 	linefw "あわてても しょうがないだろ・・・"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailRonaldsScoutBiruritchiSenderText:
-	textfw "ランド"
 	done
 
 MailRonaldsScoutBiruritchiSubjectText:
@@ -2113,10 +1979,6 @@ MailRonaldsScoutBiruritchiBody5Text:
 	linefw "ガンバレよ! <RAMNAME>!!"
 	linefw ""
 	linefw "          ランド(●_●)"
-	done
-
-MailLinkDuelSenderText:
-	textfw "バトルセンター"
 	done
 
 MailLinkDuelSubjectText:
@@ -2459,10 +2321,6 @@ IntroductionText:
 	textfw "イントロダクション"
 	done
 
-ConfigTitleText_2:
-	textfw "せっていへんこう"
-	done
-
 ConfigFrameColorText:
 	textfw " ウィンドウカラー "
 	done
@@ -2664,16 +2522,8 @@ ChallengeMachineOpponentGrandMasterText:
 	textfw "グランドマスター"
 	done
 
-GameCenterBillsPCTitleText_2:
-	textfw "マサキのパソコン"
-	done
-
 GameCenterXChipsPerPlayText:
 	textfw "チップ<RAMNUM>枚"
-	done
-
-IncompleteText_2:
-	textfw "未完成"
 	done
 
 ChallengeMachineOpponentXDialogText:
@@ -3087,11 +2937,6 @@ OpenedBoosterPackText:
 NoCardsSelectedTryAgainText:
 	textfw "カードのまいすうが 0枚です"
 	linefw "もういちど えらびなおしてください"
-	done
-
-GameCenterToBeMailedText_2:
-	textfw "けっかはメールボックスに とどきます"
-	linefw "おたのしみに!"
 	done
 
 DebugDummyLinesText:

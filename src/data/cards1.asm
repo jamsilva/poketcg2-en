@@ -236,7 +236,7 @@ IvysaurLv26Card:
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx LeechSeedAltName ; name
+	tx LeechSeedName ; name
 	tx IvysaursLeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -250,7 +250,7 @@ IvysaurLv26Card:
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
-	tx VineWhipAltName ; name
+	tx VineWhipName ; name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -1147,7 +1147,7 @@ EkansLv15Card:
 	; attack 2
 	energy GRASS, 2 ; energies
 	tx PoisonStingName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1245,7 +1245,7 @@ ArbokLv30Card:
 	; attack 1
 	energy GRASS, 1, COLORLESS, 1 ; energies
 	tx WrapName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1371,7 +1371,7 @@ NidoranFLv12Card:
 	; attack 2
 	energy GRASS, 1 ; energies
 	tx PoisonStingName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1525,7 +1525,7 @@ NidorinaLv24Card:
 	; attack 1
 	energy GRASS, 1 ; energies
 	tx SupersonicName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1707,7 +1707,7 @@ NidoranMLv22Card:
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
 	tx HornRushName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1973,7 +1973,7 @@ ZubatLv10Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx SupersonicName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3051,7 +3051,7 @@ BellsproutLv10Card:
 	; attack 2
 	energy GRASS, 1 ; energies
 	tx StunSporeName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3092,7 +3092,7 @@ BellsproutLv11Card:
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx VineWhipAltName ; name
+	tx VineWhipName ; name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3442,7 +3442,7 @@ MukCard:
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx SludgeMoveName ; name
+	tx SludgeCategoryName ; name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3554,7 +3554,7 @@ ExeggcuteCard:
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx LeechSeedAltName ; name
+	tx LeechSeedName ; name
 	tx LeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -3667,7 +3667,7 @@ KoffingLv12Card:
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
 	tx PoisonGasName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3765,7 +3765,7 @@ KoffingLv14Card:
 	; attack 1
 	energy GRASS, 1 ; energies
 	tx PoisonGasName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4884,7 +4884,7 @@ NinetalesLv32Card:
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx LureAltName ; name
+	tx LureName ; name
 	tx LureDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5053,7 +5053,7 @@ GrowlitheLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx LungeName ; name
-	tx IfTailsDoNothingAltDescription ; description
+	tx IfTailsDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5739,7 +5739,7 @@ MagmarLv18Card:
 	; attack 2
 	energy FIRE, 2 ; energies
 	tx SmogName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6565,7 +6565,7 @@ WartortleLv24Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx BubbleName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7181,7 +7181,7 @@ PoliwagLv15Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx BubbleName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7307,7 +7307,7 @@ PoliwhirlLv30Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
 	tx BodySlamName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7517,7 +7517,7 @@ TentacruelCard:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx SupersonicName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7587,7 +7587,7 @@ SeelLv10Card:
 	; attack 2
 	energy WATER, 2 ; energies
 	tx IceBeamName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7797,7 +7797,7 @@ ShellderLv8Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx SupersonicName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7965,7 +7965,7 @@ KrabbyLv17Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx BubbleName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7978,7 +7978,7 @@ KrabbyLv17Card:
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
-	tx GuillotineAltName ; name
+	tx GuillotineName ; name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -8034,7 +8034,7 @@ KrabbyLv20Card:
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx IrongripAltName ; name
+	tx IrongripName ; name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8987,7 +8987,7 @@ DarkGyaradosCard:
 	; attack 2
 	energy WATER, 3 ; energies
 	tx IceBeamName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9099,7 +9099,7 @@ LaprasLv31Card:
 	; attack 2
 	energy WATER, 2 ; energies
 	tx ConfuseRayName ; name
-	tx MayInflictConfusionAltDescription ; description
+	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9603,7 +9603,7 @@ ArticunoLv34Card:
 	; attack 2
 	energy WATER, 2, COLORLESS, 2 ; energies
 	tx IceBeamName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9813,7 +9813,7 @@ PikachuLv5Card:
 	; attack 1
 	energy LIGHTNING, 1 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10051,7 +10051,7 @@ PikachuLv16Card:
 	; attack 2
 	energy LIGHTNING, 2 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10107,7 +10107,7 @@ PikachuAltLv16Card:
 	; attack 2
 	energy LIGHTNING, 2 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10149,7 +10149,7 @@ FlyingPikachuLv12Card:
 	; attack 1
 	energy LIGHTNING, 1 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10205,7 +10205,7 @@ FlyingPikachuAltLv12Card:
 	; attack 1
 	energy LIGHTNING, 1 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10387,7 +10387,7 @@ RaichuLv32Card:
 	; attack 2
 	energy LIGHTNING, 2, COLORLESS, 1 ; energies
 	tx SparkingKickName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10820,7 +10820,7 @@ MagnemiteLv15Card:
 
 	; attack 1
 	energy 0 ; energies
-	tx MagnetMoveName ; name
+	tx MagnetCategoryName ; name
 	tx MagnetMoveDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -11101,7 +11101,7 @@ VoltorbLv8Card:
 	; attack 1
 	energy LIGHTNING, 1 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -11493,7 +11493,7 @@ ElectabuzzLv30Card:
 	; attack 1
 	energy LIGHTNING, 2, COLORLESS, 1 ; energies
 	tx ThundershockName ; name
-	tx MayInflictParalysisAltDescription ; description
+	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -12053,7 +12053,7 @@ SandshrewLv15Card:
 	; attack 1
 	energy FIGHTING, 1 ; energies
 	tx PoisonStingName ; name
-	tx MayInflictPoisonAltDescription ; description
+	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
