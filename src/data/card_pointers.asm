@@ -319,8 +319,8 @@ CardPointers::
 	card_ptr MewtwoLv30Card            ; MEWTWO_LV30
 	card_ptr MewtwoLv53Card            ; MEWTWO_LV53
 	card_ptr MewtwoLv54Card            ; MEWTWO_LV54
-	card_ptr MewtwoLv60Card            ; MEWTWO_LV60
 	card_ptr MewtwoAltLv60Card         ; MEWTWO_ALT_LV60
+	card_ptr MewtwoLv60Card            ; MEWTWO_LV60
 	card_ptr MewtwoLv67Card            ; MEWTWO_LV67
 	card_ptr GRsMewtwoCard             ; GRS_MEWTWO
 	card_ptr MewLv8Card                ; MEW_LV8
