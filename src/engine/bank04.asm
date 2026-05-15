@@ -6292,26 +6292,12 @@ PlayerNameSelection:
 	dw .default_female_name
 
 .default_male_name
-	katakana "パ"
-	katakana "ー"
-	katakana "ク"
-	done
-	done
-	done
-	done
-	done
-	done
+	textfw "MARK"
+	db TX_END, TX_END, TX_END, TX_END
 
 .default_female_name
-	katakana "ミ"
-	katakana "ン"
-	katakana "ト"
-	done
-	done
-	done
-	done
-	done
-	done
+	textfw "MINT"
+	db TX_END, TX_END, TX_END, TX_END
 
 ; a = PLAYER_* gender flag
 SavePlayerGenderToSRAM:
