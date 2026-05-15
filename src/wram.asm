@@ -1108,8 +1108,8 @@ wHalfWidthPrintState:: ; cd74
 wTextMaxLength:: ; cd75
 	ds $1
 
-; half-width font letters become uppercase if non-0, lowercase if 0
-wUppercaseHalfWidthLetters:: ; cd76
+; if unset, half-width text is turned all-uppercase
+wDontUppercaseHalfWidthLetters:: ; cd76
 	ds $1
 
 wcd77:: ; cd77
