@@ -3550,9 +3550,10 @@ DisplayCardPage_PokemonOverview:
 .basic
 	; print card level and maximum HP
 	lb bc, 12, 2
-	ld a, [wLoadedCard1Level]
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
 	call WriteTwoDigitNumberInTxSymbol_PadSpace
-	lb bc, 16, 2
+	ld b, 16 ; bc is now 16, 2
 	ld a, [wLoadedCard1HP]
 	call WriteOneByteNumberInTxSymbol_PadSpace
 	jr .print_numbers_and_energies
@@ -3609,11 +3610,11 @@ DisplayCardPage_PokemonOverview:
 	; print the colors (energies) of the weakness(es) and resistance(s)
 	inc c ; 15
 	ld a, [wCardPageType]
-	or a
-	jr z, .wr_from_loaded_card
+	ld b, a
 	ld a, [wCurPlayAreaSlot]
-	or a
-	jr nz, .wr_from_loaded_card
+	cpl
+	or b
+	jr z, .wr_from_loaded_card
 	call GetArenaCardWeakness
 	ld d, a
 	call GetArenaCardResistance
@@ -3864,7 +3865,8 @@ DisplayCardPage_PokemonDescription:
 	call DrawCardSymbol
 	; print the Level and HP numbers at 12,2 and 16,2 respectively
 	lb bc, 12, 2
-	ld a, [wLoadedCard1Level]
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
 	call WriteTwoDigitNumberInTxSymbol_PadSpace
 	lb bc, 16, 2
 	ld a, [wLoadedCard1HP]
@@ -4662,7 +4664,8 @@ PrintPlayAreaCardHeader:
 	ld a, [wCurPlayAreaY]
 	ld c, a
 	ld b, 15
-	ld a, [wLoadedCard1Level]
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
 	call WriteTwoDigitNumberInTxSymbol_PadSpace
 
 	; print the 2x2 face down card image depending on the Pokemon's evolution stage
@@ -4678,10 +4681,11 @@ PrintPlayAreaCardHeader:
 	push hl
 	push af
 	lb hl, 1, 2
-	lb bc, 2, 2
+	ld b, l
+	ld c, b ; bc is now 2, 2
 	ld a, [wCurPlayAreaY]
 	ld e, a
-	ld d, 2
+	ld d, c ; d is now 2
 	pop af
 	call FillRectangle
 	pop hl

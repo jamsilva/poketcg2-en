@@ -80,8 +80,12 @@ MACRO? energy
 	ENDC
 ENDM
 
+MACRO? darkness_level
+	db (\1 << 7) | \2
+ENDM
+
 MACRO? length
-	db ROUND(\1 * 10) >> 16
+	dw ROUND(\1 * 10) >> 16
 ENDM
 
 MACRO? weight
