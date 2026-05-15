@@ -1740,11 +1740,12 @@ ExecuteCardSearchFunc:
 	ld a, [wLoadedCard2Type]
 	cp TYPE_ENERGY
 	jr nc, .no_carry
-	ld a, [wLoadedCard2Dark]
-	or a
-	jr z, .no_carry ; not Dark
-	scf
+	ld a, [wLoadedCard2DarknessLevel] ; we got the darkness and level...
+	rla ; ...now set the carry flag based on the darkness
 	ret
+REPT $3 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; returns carry if input card is a Psychic energy
 .SearchPsychicEnergy:
@@ -4006,16 +4007,16 @@ CheckDarkPokemonRequirement:
 	inc hl
 	ld d, [hl]
 	inc hl
-	ld a, e
-	or d
+	ld a, e ; check for the NULL
+	or d    ; list terminator here...
 	jr z, .scanned
 	call LoadCardDataToBuffer1_FromCardID
 	ld a, [wLoadedCard1Type]
 	cp TYPE_ENERGY ; non-pokemon
 	jr nc, .scan_deck_loop
-	ld a, [wLoadedCard1Dark]
-	or a
-	jr z, .scan_deck_loop
+	ld a, [wLoadedCard1DarknessLevel] ; we got the darkness and level...
+	rla ; ...now set the carry flag based on the darkness
+	jr nc, .scan_deck_loop
 	inc c
 	jr .scan_deck_loop
 .scanned
