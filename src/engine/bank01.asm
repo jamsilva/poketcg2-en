@@ -3595,26 +3595,25 @@ DisplayCardPage_PokemonOverview:
 	; print the retreat cost (some amount of colorless energies) at 8,14
 	inc c
 	inc c ; 14
-	ld b, 5
+	ld b, 8
 	ld a, [wLoadedCard1RetreatCost]
 	ld e, a
 	inc e
 .retreat_cost_loop
 	dec e
 	jr z, .retreat_cost_done
-	ld a, SYM_COLORLESS
-	call JPWriteByteToBGMap0
+	call WriteSymColorlessToBGMap0
 	inc b
 	jr .retreat_cost_loop
 .retreat_cost_done
 	; print the colors (energies) of the weakness(es) and resistance(s)
 	inc c ; 15
 	ld a, [wCardPageType]
-	ld b, a
-	ld a, [wCurPlayAreaSlot]
-	cpl
-	or b
+	or a
 	jr z, .wr_from_loaded_card
+	ld a, [wCurPlayAreaSlot]
+	or a
+	jr nz, .wr_from_loaded_card
 	call GetArenaCardWeakness
 	ld d, a
 	call GetArenaCardResistance
@@ -3627,12 +3626,13 @@ DisplayCardPage_PokemonOverview:
 	ld e, a
 .got_wr
 	ld a, d
-	ld b, 5
+	ld b, 8
 	call PrintCardPageWeaknessesOrResistances
 	inc c
 	ld a, e
 	call PrintCardPageWeaknessesOrResistances
 	ret
+	nop ; dummy NOP here to pad space freed
 
 ; displays the name, damage, and energy cost of an attack or Pokemon power.
 ; used in the Attack menu and in the card page of a Pokemon.
@@ -3875,35 +3875,41 @@ DisplayCardPage_PokemonDescription:
 	lb de, 1, 10
 	ld hl, wLoadedCard1Category
 	call InitTextPrinting_ProcessTextFromPointerToID
-	call SetKatakana
+	ld a, TX_KATAKANA
+	call ProcessSpecialTextCharacter
 	ldtx hl, PokemonText
 	call ProcessTextFromID
-	; print the length at 3, 11
-	lb bc, 3, 11
-	ld a, [wLoadedCard1Length]
-	ld l, a
-	ld h, $00
-	call PrintNumberAsMeasurement
-	call InitTextPrinting
-	ldtx hl, LengthUnitMetresText
-	call ProcessTextFromID
-	; print the weight at 3, 12
-	lb bc, 3, 12
+	; print the length at 5, 11
+	lb bc, 5, 11
+	ld hl, wLoadedCard1Length
+	ld a, [hli]
+	ld l, [hl]
+	ld h, a
+	call PrintPokemonCardLength
+	; print the weight at 5, 12
+	lb bc, 5, 12
 	ld hl, wLoadedCard1Weight
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
 	call PrintNumberAsMeasurement
-	ldtx hl, WeightUnitKilogramsText
+	ldtx hl, WeightUnitEndText
 	call InitTextPrinting_ProcessTextFromID
 	call SetNoLineSeparation
-	ld a, 19
-	lb de, 1, 14
+	lb de, 1, 13
+	ld a, 19 ; line length
 	call InitTextPrintingInTextbox
 	ld hl, wLoadedCard1Description
 	call ProcessTextFromPointerToID
 	call SetOneLineSeparation
 	ret
+REPT $2 ; dummy NOPs here to pad space freed
+	nop
+ENDR
+
+WriteSymColorlessToBGMap0:
+	ld a, SYM_COLORLESS
+	jp JPWriteByteToBGMap0
 
 ; given a card rarity constant in a, and CardRarityTextIDs in hl,
 ; print the text character associated to it at d,e
@@ -5173,7 +5179,7 @@ WriteTwoDigitNumberInTxSymbol_PadSpace:
 ; convert two-byte number in hl to TX_SYMBOL format,
 ; and write it to wStringBuffer
 ; replace leading zeros with SYM_SPACE
-TwoByteNumberToTxSymbol_PadSpace_Bank01:
+TwoByteNumberToTxSymbol_PadSpace_Bank01::
 	ld de, wStringBuffer
 	ld bc, -10000
 	call .get_digit

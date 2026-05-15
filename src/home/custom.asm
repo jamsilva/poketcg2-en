@@ -16,6 +16,52 @@ CheckIfCardIDIsDarkPokemon_Implementation::
 	pop hl
 	ret
 
-REPT $fb ; dummy NOPs here to pad space freed
+; given a number in h and another in l, print them formatted as <l><LengthUnitSeparatorText><h><LengthUnitEndText> at b,c.
+; used to print the length (feet and inches or meters with decimal point) of a Pokemon card.
+PrintPokemonCardLength::
+	push bc
+	push hl
+	ld l, h
+	ldtx de, LengthUnitSeparatorText
+	call .print_number_and_suffix
+	pop hl
+	ldtx de, LengthUnitEndText
+	call .print_number_and_suffix
+	pop bc
+	ret
+
+.print_number_and_suffix
+; keep track how many digits each number consists of in wPokemonLengthPrintOffset,
+; in order to align the rest of the string. the text with id at de
+; is printed after the number.
+	push de
+	push bc
+	ld h, $00
+	call TwoByteNumberToTxSymbol_PadSpace_Bank01
+	ld a, b
+	inc a
+	ld [wPokemonLengthPrintOffset], a
+	pop bc
+	push bc
+	push hl
+	call BCCoordToBGMap0Address
+	ld a, [wPokemonLengthPrintOffset]
+	ld b, a
+	pop hl
+	call SafeCopyDataHLtoDE
+	pop bc
+	ld a, [wPokemonLengthPrintOffset]
+	add b
+	ld b, a
+	pop hl
+	push bc
+	ld e, c
+	ld d, b
+	call InitTextPrinting_ProcessTextFromID
+	pop bc
+	inc b
+	ret
+
+REPT $bf ; dummy NOPs here to pad space freed
 	nop
 ENDR

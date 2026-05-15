@@ -1306,9 +1306,9 @@ wPrinterNumberLineFeeds:: ; ce1d
 wPrintOnlyStarRarity:: ; ce1e
 	ds $1
 
-; only used in unreferenced function Func_1a14b
-; otherwise unused
-wce9d:: ; ce1f
+; Ported from the english release of Pokémon TCG
+; used to print a Pokemon card's length
+wPokemonLengthPrintOffset:: ; ce1f
 	ds $1
 
 wPrinterInitAttempts:: ; ce20

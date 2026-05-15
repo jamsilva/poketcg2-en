@@ -83,8 +83,8 @@ DEF CARD_DATA_WEAKNESS         RB ; $35
 DEF CARD_DATA_RESISTANCE       RB ; $36
 DEF CARD_DATA_CATEGORY         RW ; $37
 DEF CARD_DATA_POKEDEX_NUMBER   RB ; $39
-DEF CARD_DATA_DARKNESS_LEVEL   RB ; $3a
-DEF CARD_DATA_LENGTH           RW ; $3b
+DEF CARD_DATA_DARKNESS_LEVEL   RB ; $3a ; The Japanese game has separate bytes for each, we use the top bit of the level byte to save space...
+DEF CARD_DATA_LENGTH           RW ; $3b ; ...and then use the saved byte to extend the length so it can store 2 values (feet and inches or meters with decimals)
 DEF CARD_DATA_WEIGHT           RW ; $3d
 DEF CARD_DATA_PKMN_DESCRIPTION RW ; $3f
 DEF CARD_DATA_UNKNOWN2         RB ; $41
