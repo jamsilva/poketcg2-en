@@ -13,7 +13,7 @@ CharmanderLv12Description:
 	done
 
 CharmeleonName:
-	textfw "リザード"
+	text "Charmeleon"
 	done
 
 FlamethrowerName:
@@ -31,7 +31,7 @@ CharmeleonDescription:
 	done
 
 DarkCharmeleonName:
-	textfw "わるいリザード"
+	text "Dark Charmeleon"
 	done
 
 TailSlapName:
@@ -57,7 +57,7 @@ DarkCharmeleonDescription:
 	done
 
 CharizardName:
-	textfw "リザードン"
+	text "Charizard"
 	done
 
 EnergyBurnName:
@@ -96,7 +96,7 @@ CharizardAltDescription:
 	done
 
 DarkCharizardName:
-	textfw "わるいリザードン"
+	text "Dark Charizard"
 	done
 
 NailFlickName:
@@ -123,7 +123,7 @@ DarkCharizardDescription:
 	done
 
 VulpixName:
-	textfw "ロコン"
+	text "Vulpix"
 	done
 
 ConfuseRayName:
@@ -158,7 +158,7 @@ VulpixLv13Description:
 	done
 
 NinetalesName:
-	textfw "キュウコン"
+	text "Ninetales"
 	done
 
 FireBlastName:
@@ -200,7 +200,7 @@ NinetalesLv35Description:
 	done
 
 DarkNinetalesName:
-	textfw "わるいキュウコン"
+	text "Dark Ninetales"
 	done
 
 PerplexName:
@@ -229,7 +229,7 @@ DarkNinetalesDescription:
 	done
 
 GrowlitheName:
-	textfw "ガーディ"
+	text "Growlithe"
 	done
 
 LungeName:
@@ -281,7 +281,7 @@ GrowlitheLv18Description:
 	done
 
 ArcanineName:
-	textfw "ウィンディ"
+	text "Arcanine"
 	done
 
 QuickAttackName:
@@ -339,7 +339,7 @@ ArcanineLv45Description:
 	done
 
 PonytaName:
-	textfw "ポニータ"
+	text "Ponyta"
 	done
 
 SmashKickName:
@@ -379,7 +379,7 @@ PonytaLv15Description:
 	done
 
 RapidashName:
-	textfw "ギャロップ"
+	text "Rapidash"
 	done
 
 FlameInfernoName:
@@ -436,7 +436,7 @@ RapidashLv33Description:
 	done
 
 DarkRapidashName:
-	textfw "わるいギャロップ"
+	text "Dark Rapidash"
 	done
 
 RearKickName:
@@ -461,7 +461,7 @@ DarkRapidashDescription:
 	done
 
 MagmarName:
-	textfw "ブーバー"
+	text "Magmar"
 	done
 
 FirePunchName:
@@ -522,11 +522,11 @@ MagmarLv31Description:
 	done
 
 FlareonName:
-	textfw "ブースター"
+	text "Flareon"
 	done
 
 EeveeName:
-	textfw "イーブイ"
+	text "Eevee"
 	done
 
 RageName:
@@ -550,7 +550,7 @@ FlareonLv28Description:
 	done
 
 DarkFlareonName:
-	textfw "わるいブースター"
+	text "Dark Flareon"
 	done
 
 PlayingWithFireName:
@@ -572,7 +572,7 @@ DarkFlareonDescription:
 	done
 
 MoltresName:
-	textfw "ファイヤー"
+	text "Moltres"
 	done
 
 WildfireName:
@@ -638,7 +638,7 @@ FiregiverDescriptionCont:
 	done
 
 SquirtleName:
-	textfw "ゼニガメ"
+	text "Squirtle"
 	done
 
 BubbleName:
@@ -697,7 +697,7 @@ SquirtleLv16Description:
 	done
 
 WartortleName:
-	textfw "カメール"
+	text "Wartortle"
 	done
 
 TurtleName:
@@ -721,7 +721,7 @@ WartortleLv24Description:
 	done
 
 DarkWartortleName:
-	textfw "わるいカメール"
+	text "Dark Wartortle"
 	done
 
 DoubleSlapName:
@@ -752,7 +752,7 @@ DarkWartortleDescription:
 	done
 
 BlastoiseName:
-	textfw "カメックス"
+	text "Blastoise"
 	done
 
 RainDanceName:
@@ -797,7 +797,7 @@ BlastoiseAltDescription:
 	done
 
 DarkBlastoiseName:
-	textfw "わるいカメックス"
+	text "Dark Blastoise"
 	done
 
 HydrocannonName:
@@ -830,7 +830,7 @@ DarkBlastoiseDescription:
 	done
 
 PsyduckName:
-	textfw "コダック"
+	text "Psyduck"
 	done
 
 HeadacheName:
@@ -873,7 +873,7 @@ PsyduckLv16Description:
 	done
 
 GolduckName:
-	textfw "ゴルダック"
+	text "Golduck"
 	done
 
 PsyshockName:
@@ -914,7 +914,7 @@ GolduckLv28Description:
 	done
 
 DarkGolduckName:
-	textfw "わるいゴルダック"
+	text "Dark Golduck"
 	done
 
 ThirdEyeName:
@@ -938,7 +938,7 @@ DarkGolduckDescription:
 	done
 
 PoliwagName:
-	textfw "ニョロモ"
+	text "Poliwag"
 	done
 
 Do20DamagePlus10WaterEnergyAltDescription1:
@@ -964,7 +964,7 @@ PoliwagLv15Description:
 	done
 
 PoliwhirlName:
-	textfw "ニョロゾ"
+	text "Poliwhirl"
 	done
 
 AmnesiaName:
@@ -1002,7 +1002,7 @@ PoliwhirlLv30Description:
 	done
 
 PoliwrathName:
-	textfw "ニョロボン"
+	text "Poliwrath"
 	done
 
 PoliwrathLv40Description:
@@ -1022,7 +1022,7 @@ PoliwrathLv48Description:
 	done
 
 TentacoolName:
-	textfw "メノクラゲ"
+	text "Tentacool"
 	done
 
 CowardiceName:
@@ -1049,7 +1049,7 @@ TentacoolDescription:
 	done
 
 TentacruelName:
-	textfw "ドククラゲ"
+	text "Tentacruel"
 	done
 
 JellyfishStingName:
@@ -1063,7 +1063,7 @@ TentacruelDescription:
 	done
 
 SeelName:
-	textfw "パウワウ"
+	text "Seel"
 	done
 
 GrowlAltDescription1:
@@ -1096,7 +1096,7 @@ SeelLv12Description:
 	done
 
 DewgongName:
-	textfw "ジュゴン"
+	text "Dewgong"
 	done
 
 RestName:
@@ -1130,7 +1130,7 @@ DewgongLv42Description:
 	done
 
 ShellderName:
-	textfw "シェルダー"
+	text "Shellder"
 	done
 
 HideInShellName:
@@ -1164,7 +1164,7 @@ ShellderLv16Description:
 	done
 
 CloysterName:
-	textfw "パルシェン"
+	text "Cloyster"
 	done
 
 ClampName:
@@ -1188,7 +1188,7 @@ CloysterDescription:
 	done
 
 KrabbyName:
-	textfw "クラブ"
+	text "Krabby"
 	done
 
 RiverCrabName:
@@ -1215,7 +1215,7 @@ KrabbyLv20Description:
 	done
 
 KinglerName:
-	textfw "キングラー"
+	text "Kingler"
 	done
 
 FlailName:
@@ -1267,7 +1267,7 @@ KinglerLv33Description:
 	done
 
 HorseaName:
-	textfw "タッツー"
+	text "Horsea"
 	done
 
 DragonName:
@@ -1297,7 +1297,7 @@ HorseaLv20Description:
 	done
 
 SeadraName:
-	textfw "シードラ"
+	text "Seadra"
 	done
 
 SeadraLv23Description:
@@ -1331,7 +1331,7 @@ SeadraLv26Description:
 	done
 
 GoldeenName:
-	textfw "トサキント"
+	text "Goldeen"
 	done
 
 HornAttackName:
@@ -1349,7 +1349,7 @@ GoldeenDescription:
 	done
 
 SeakingName:
-	textfw "アズマオウ"
+	text "Seaking"
 	done
 
 WaterfallName:
@@ -1363,7 +1363,7 @@ SeakingDescription:
 	done
 
 StaryuName:
-	textfw "ヒトデマン"
+	text "Staryu"
 	done
 
 SlapName:
@@ -1399,7 +1399,7 @@ StaryuLv17Description:
 	done
 
 StarmieName:
-	textfw "スターミー"
+	text "Starmie"
 	done
 
 RecoverName:
@@ -1429,7 +1429,7 @@ StarmieDescription:
 	done
 
 DarkStarmieName:
-	textfw "わるいスターミー"
+	text "Dark Starmie"
 	done
 
 RebirthName:
@@ -1475,7 +1475,7 @@ DarkStarmieDescription:
 	done
 
 MagikarpName:
-	textfw "コイキング"
+	text "Magikarp"
 	done
 
 FlopName:
@@ -1534,7 +1534,7 @@ MagikarpLv10Description:
 	done
 
 GyaradosName:
-	textfw "ギャラドス"
+	text "Gyarados"
 	done
 
 BubblebeamName:
@@ -1552,7 +1552,7 @@ GyaradosDescription:
 	done
 
 DarkGyaradosName:
-	textfw "わるいギャラドス"
+	text "Dark Gyarados"
 	done
 
 FinalBeamName:
@@ -1581,7 +1581,7 @@ DarkGyaradosDescription:
 	done
 
 LaprasName:
-	textfw "ラプラス"
+	text "Lapras"
 	done
 
 SingName:
@@ -1608,7 +1608,7 @@ LaprasLv31Description:
 	done
 
 VaporeonName:
-	textfw "シャワーズ"
+	text "Vaporeon"
 	done
 
 FocusEnergyBiteDescription:
@@ -1633,7 +1633,7 @@ VaporeonLv42Description:
 	done
 
 DarkVaporeonName:
-	textfw "わるいシャワーズ"
+	text "Dark Vaporeon"
 	done
 
 WhirlpoolDescription:
@@ -1648,11 +1648,11 @@ DarkVaporeonDescription:
 	done
 
 OmanyteName:
-	textfw "オムナイト"
+	text "Omanyte"
 	done
 
 MysteriousFossilName:
-	textfw "なにかの化石"
+	text "Mysterious Fossil"
 	done
 
 ClairvoyanceName:
@@ -1719,7 +1719,7 @@ FossilGuidanceDescription:
 	done
 
 OmastarName:
-	textfw "オムスター"
+	text "Omastar"
 	done
 
 OmastarLv32Description:
@@ -1757,7 +1757,7 @@ OmastarLv36Description:
 	done
 
 ArticunoName:
-	textfw "フリーザー"
+	text "Articuno"
 	done
 
 AuroraVeilName:
@@ -1833,7 +1833,7 @@ ArticunoLv37Description:
 	done
 
 MarillName:
-	textfw "マリル"
+	text "Marill"
 	done
 
 AquamouseName:
@@ -1846,7 +1846,7 @@ MarillDescription:
 	done
 
 PikachuName:
-	textfw "ピカチュウ"
+	text "Pikachu"
 	done
 
 ThundershockName:
@@ -1923,7 +1923,7 @@ PikachuLv14Description:
 	done
 
 FlyingPikachuName:
-	textfw "そらをとぶピカチュウ"
+	text "Flying Pikachu"
 	done
 
 FlyName:
@@ -1943,7 +1943,7 @@ FlyingPikachuDescription:
 	done
 
 SurfingPikachuName:
-	textfw "なみのりピカチュウ"
+	text "Surfing Pikachu"
 	done
 
 SurfingPikachuDescription:
@@ -1953,7 +1953,7 @@ SurfingPikachuDescription:
 	done
 
 RaichuName:
-	textfw "ライチュウ"
+	text "Raichu"
 	done
 
 ShortCircuitName:
@@ -2018,7 +2018,7 @@ GigashockDescription:
 	done
 
 DarkRaichuName:
-	textfw "わるいライチュウ"
+	text "Dark Raichu"
 	done
 
 SurpriseThunderName:
@@ -2037,7 +2037,7 @@ DarkRaichuDescription:
 	done
 
 MagnemiteName:
-	textfw "コイル"
+	text "Magnemite"
 	done
 
 MagnetismName:
@@ -2122,7 +2122,7 @@ MagnemiteLv15Description:
 	done
 
 MagnetonName:
-	textfw "レアコイル"
+	text "Magneton"
 	done
 
 Selfdestruct80DamageDescription:
@@ -2173,7 +2173,7 @@ Selfdestruct100DamageDescription:
 	done
 
 DarkMagnetonName:
-	textfw "わるいレアコイル"
+	text "Dark Magneton"
 	done
 
 SonicboomAltDescription:
@@ -2201,7 +2201,7 @@ DarkMagnetonDescription:
 	done
 
 VoltorbName:
-	textfw "ビリリダマ"
+	text "Voltorb"
 	done
 
 GroupSparkName:
@@ -2239,7 +2239,7 @@ VoltorbLv13Description:
 	done
 
 ElectrodeName:
-	textfw "マルマイン"
+	text "Electrode"
 	done
 
 EnergySpikeName:
@@ -2277,7 +2277,7 @@ ElectrodeLv42Description:
 	done
 
 DarkElectrodeName:
-	textfw "わるいマルマイン"
+	text "Dark Electrode"
 	done
 
 EnergyBombName:
@@ -2299,7 +2299,7 @@ DarkElectrodeDescription:
 	done
 
 ElectabuzzName:
-	textfw "エレブー"
+	text "Electabuzz"
 	done
 
 LightScreenName:
@@ -2339,7 +2339,7 @@ ElectabuzzLv35Description:
 	done
 
 JolteonName:
-	textfw "サンダース"
+	text "Jolteon"
 	done
 
 Do20DamageNumberOfHeadsDescription:
@@ -2379,7 +2379,7 @@ JolteonLv29Description:
 	done
 
 DarkJolteonName:
-	textfw "わるいサンダース"
+	text "Dark Jolteon"
 	done
 
 LightningFlashName:
@@ -2409,7 +2409,7 @@ DarkJolteonDescription:
 	done
 
 ZapdosName:
-	textfw "サンダー"
+	text "Zapdos"
 	done
 
 RagingThunderName:
@@ -2501,7 +2501,7 @@ ZapdosLv68Description:
 	done
 
 SandshrewName:
-	textfw "サンド"
+	text "Sandshrew"
 	done
 
 SandAttackName:
@@ -2532,7 +2532,7 @@ SandshrewLv15Description:
 	done
 
 SandslashName:
-	textfw "サンドパン"
+	text "Sandslash"
 	done
 
 FurySwipes20DamageDescription:
@@ -2567,7 +2567,7 @@ SandslashLv35Description:
 	done
 
 DiglettName:
-	textfw "ディグダ"
+	text "Diglett"
 	done
 
 DigName:

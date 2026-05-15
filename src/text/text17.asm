@@ -36,7 +36,7 @@ FarfetchdAltDescription:
 	done
 
 DoduoName:
-	textfw "ドードー"
+	text "Doduo"
 	done
 
 GrowlAltDescription2:
@@ -61,7 +61,7 @@ DoduoLv10Description:
 	done
 
 DodrioName:
-	textfw "ドードリオ"
+	text "Dodrio"
 	done
 
 TriAttackName:
@@ -95,7 +95,7 @@ DodrioLv28Description:
 	done
 
 LickitungName:
-	textfw "ベロリンガ"
+	text "Lickitung"
 	done
 
 LickingName:
@@ -119,7 +119,7 @@ LickitungLv26Description:
 	done
 
 ChanseyName:
-	textfw "ラッキー"
+	text "Chansey"
 	done
 
 ChanseyLv40Description:
@@ -142,7 +142,7 @@ ChanseyLv55Description:
 	done
 
 KangaskhanName:
-	textfw "ガルーラ"
+	text "Kangaskhan"
 	done
 
 TailDropName:
@@ -189,7 +189,7 @@ KangaskhanLv40Description:
 	done
 
 TaurosName:
-	textfw "ケンタロス"
+	text "Tauros"
 	done
 
 RampageName:
@@ -233,7 +233,7 @@ TaurosLv35Description:
 	done
 
 DittoName:
-	textfw "メタモン"
+	text "Ditto"
 	done
 
 MorphName:
@@ -292,7 +292,7 @@ EeveeLv12Description:
 	done
 
 PorygonName:
-	textfw "ポリゴン"
+	text "Porygon"
 	done
 
 Conversion1Name:
@@ -358,7 +358,7 @@ PorygonLv20Description:
 	done
 
 CoolPorygonName:
-	textfw "かっこいいポリゴン"
+	text "Cool Porygon"
 	done
 
 TextureMagicName:
@@ -381,7 +381,7 @@ Porygon3DAttack20DamageDescription:
 	done
 
 SnorlaxName:
-	textfw "カビゴン"
+	text "Snorlax"
 	done
 
 ThickSkinnedName:
@@ -435,7 +435,7 @@ SnorlaxLv35Description:
 	done
 
 HungrySnorlaxName:
-	textfw "くいしんぼカビゴン"
+	text "Hungry Snorlax"
 	done
 
 EatName:
@@ -463,7 +463,7 @@ HungrySnorlaxDescription:
 	done
 
 DratiniName:
-	textfw "ミニリュウ"
+	text "Dratini"
 	done
 
 DratiniLv10Description:
@@ -477,7 +477,7 @@ DratiniLv12Description:
 	done
 
 DragonairName:
-	textfw "ハクリュー"
+	text "Dragonair"
 	done
 
 SlamName:
@@ -491,7 +491,7 @@ DragonairDescription:
 	done
 
 DarkDragonairName:
-	textfw "わるいハクリュー"
+	text "Dark Dragonair"
 	done
 
 EvolutionaryLightName:
@@ -519,7 +519,7 @@ DarkDragonairDescription:
 	done
 
 DragoniteName:
-	textfw "カイリュー"
+	text "Dragonite"
 	done
 
 HealingWindName:
@@ -577,7 +577,7 @@ SlamDescription:
 	done
 
 DarkDragoniteName:
-	textfw "わるいカイリュー"
+	text "Dark Dragonite"
 	done
 
 SummonMinionsName:
@@ -603,7 +603,7 @@ DarkDragoniteDescription:
 	done
 
 TogepiName:
-	textfw "トゲピー"
+	text "Togepi"
 	done
 
 SnivelAltDescription:
@@ -631,7 +631,7 @@ TogepiDescription:
 	done
 
 LugiaName:
-	textfw "ルギア"
+	text "Lugia"
 	done
 
 AeroblastName:
@@ -653,7 +653,7 @@ LugiaDescription:
 	done
 
 SuperPotionName:
-	textfw "いいきずぐすり"
+	text "Super Potion"
 	done
 
 SuperPotionDescription:
@@ -666,7 +666,7 @@ SuperPotionDescription:
 	done
 
 ImakuniCardName:
-	textfw "イマクニ?"
+	text "Imakuni?"
 	done
 
 ImakuniCardDescription:
@@ -676,7 +676,7 @@ ImakuniCardDescription:
 	done
 
 EnergyRemovalName:
-	textfw "エネルギー・リムーブ"
+	text "Energy Removal"
 	done
 
 EnergyRemovalDescription:
@@ -686,7 +686,7 @@ EnergyRemovalDescription:
 	done
 
 EnergyRetrievalName:
-	textfw "エネルギー回収"
+	text "Energy Retrieval"
 	done
 
 EnergyRetrievalDescription:
@@ -700,7 +700,7 @@ EnergyRetrievalDescription:
 	done
 
 EnergySearchName:
-	textfw "エネルギー転送"
+	text "Energy Search"
 	done
 
 EnergySearchDescription:
@@ -711,7 +711,7 @@ EnergySearchDescription:
 	done
 
 ProfessorOakName:
-	textfw "オーキドはかせ"
+	text "Professor Oak"
 	done
 
 ProfessorOakDescription:
@@ -721,7 +721,7 @@ ProfessorOakDescription:
 	done
 
 FossilExcavationName:
-	textfw "化石の発掘"
+	text "Fossil Excavation"
 	done
 
 FossilExcavationDescription:
@@ -733,7 +733,7 @@ FossilExcavationDescription:
 	done
 
 PotionName:
-	textfw "きずぐすり"
+	text "Potion"
 	done
 
 PotionDescription:
@@ -743,7 +743,7 @@ PotionDescription:
 	done
 
 GamblerName:
-	textfw "ギャンブラー"
+	text "Gambler"
 	done
 
 GamblerDescription:
@@ -755,7 +755,7 @@ GamblerDescription:
 	done
 
 ReviveName:
-	textfw "元気のかけら"
+	text "Revive"
 	done
 
 ReviveDescription:
@@ -769,7 +769,7 @@ ReviveDescription:
 	done
 
 MaxReviveName:
-	textfw "元気のかたまり"
+	text "Max Revive"
 	done
 
 MaxReviveDescription:
@@ -788,7 +788,7 @@ MaxReviveDescriptionCont:
 	done
 
 SuperScoopUpName:
-	textfw "スーパーポケモン回収"
+	text "Super Scoop Up"
 	done
 
 SuperScoopUpDescription:
@@ -800,7 +800,7 @@ SuperScoopUpDescription:
 	done
 
 DevolutionSprayName:
-	textfw "退化スプレー"
+	text "Devolution Spray"
 	done
 
 DevolutionSprayDescription:
@@ -811,7 +811,7 @@ DevolutionSprayDescription:
 	done
 
 ItemFinderName:
-	textfw "ダウジングマシーン"
+	text "Item Finder"
 	done
 
 ItemFinderDescription:
@@ -823,7 +823,7 @@ ItemFinderDescription:
 	done
 
 ChallengeName:
-	textfw "たたきつけろ!挑戦状"
+	text "Challenge!"
 	done
 
 ChallengeDescription:
@@ -843,7 +843,7 @@ ChallengeDescriptionCont:
 	done
 
 SuperEnergyRetrievalName:
-	textfw "超エネルギー回収"
+	text "Super Energy Retrieval"
 	done
 
 SuperEnergyRetrievalDescription:
@@ -857,7 +857,7 @@ SuperEnergyRetrievalDescription:
 	done
 
 SuperEnergyRemovalName:
-	textfw "超エネルギーリムーブ"
+	text "Super Energy Removal"
 	done
 
 SuperEnergyRemovalDescription:
@@ -870,7 +870,7 @@ SuperEnergyRemovalDescription:
 	done
 
 MoonStoneName:
-	textfw "月の石"
+	text "Moon Stone"
 	done
 
 MoonStoneDescription:
@@ -882,7 +882,7 @@ MoonStoneDescription:
 	done
 
 DefenderName:
-	textfw "ディフェンダー"
+	text "Defender"
 	done
 
 DefenderDescription:
@@ -895,7 +895,7 @@ DefenderDescription:
 	done
 
 GustOfWindName:
-	textfw "突風"
+	text "Gust of Wind"
 	done
 
 GustOfWindDescription:
@@ -924,7 +924,7 @@ MysteriousFossilDescriptionCont:
 	done
 
 FullHealName:
-	textfw "なんでもなおし"
+	text "Full Heal"
 	done
 
 FullHealDescription:
@@ -934,7 +934,7 @@ FullHealDescription:
 	done
 
 ImposterOaksRevengeName:
-	textfw "にせオーキドの逆襲"
+	text "Imposter Oak's Revenge"
 	done
 
 ImposterOaksRevengeDescription:
@@ -946,7 +946,7 @@ ImposterOaksRevengeDescription:
 	done
 
 ImposterProfessorOakName:
-	textfw "にせオーキドはかせ"
+	text "Imposter Professor Oak"
 	done
 
 ImposterProfessorOakDescription:
@@ -957,7 +957,7 @@ ImposterProfessorOakDescription:
 	done
 
 SleepName:
-	textfw "ねむれ!ねむれ!"
+	text "Sleep!"
 	done
 
 SleepDescription:
@@ -967,7 +967,7 @@ SleepDescription:
 	done
 
 ComputerErrorName:
-	textfw "パソコン大暴走!"
+	text "Computer Error"
 	done
 
 ComputerErrorDescription:
@@ -981,7 +981,7 @@ ComputerErrorDescription:
 	done
 
 ComputerSearchName:
-	textfw "パソコン通信"
+	text "Computer Search"
 	done
 
 ComputerSearchDescription:
@@ -993,7 +993,7 @@ ComputerSearchDescription:
 	done
 
 DiggerName:
-	textfw "バトル場は穴だらけ!"
+	text "Digger"
 	done
 
 DiggerDescription:
@@ -1007,7 +1007,7 @@ DiggerDescription:
 	done
 
 ClefairyDollName:
-	textfw "ピッピ人形"
+	text "Clefairy Doll"
 	done
 
 ClefairyDollDescription:
@@ -1028,7 +1028,7 @@ ClefairyDollDescriptionCont:
 	done
 
 MrFujiName:
-	textfw "フジろうじん"
+	text "Mr.Fuji"
 	done
 
 MrFujiDescription:
@@ -1039,7 +1039,7 @@ MrFujiDescription:
 	done
 
 PlusPowerName:
-	textfw "プラスパワー"
+	text "PlusPower"
 	done
 
 PlusPowerDescription:
@@ -1052,7 +1052,7 @@ PlusPowerDescription:
 	done
 
 SwitchName:
-	textfw "ポケモンいれかえ"
+	text "Switch"
 	done
 
 SwitchDescription:
@@ -1061,7 +1061,7 @@ SwitchDescription:
 	done
 
 ScoopUpName:
-	textfw "ポケモン回収"
+	text "Scoop Up"
 	done
 
 ScoopUpDescription:
@@ -1073,7 +1073,7 @@ ScoopUpDescription:
 	done
 
 PokemonTraderName:
-	textfw "ポケモン交換おじさん"
+	text "Pokémon Trader"
 	done
 
 PokemonTraderDescription:
@@ -1092,7 +1092,7 @@ PokemonTraderDescriptionCont:
 	done
 
 PokemonRecallName:
-	textfw "ポケモン再転送"
+	text "Pokémon Retransfer"
 	done
 
 PokemonRecallDescription:
@@ -1102,7 +1102,7 @@ PokemonRecallDescription:
 	done
 
 PokedexName:
-	textfw "ポケモン図鑑"
+	text "Pokédex"
 	done
 
 PokedexDescription:
@@ -1112,7 +1112,7 @@ PokedexDescription:
 	done
 
 PokemonCenterName:
-	textfw "ポケモンセンター"
+	text "Pokémon Center"
 	done
 
 PokemonCenterDescription:
@@ -1124,7 +1124,7 @@ PokemonCenterDescription:
 	done
 
 PokemonBreederName:
-	textfw "ポケモン育て屋さん"
+	text "Pokémon Breeder"
 	done
 
 PokemonBreederDescription:
@@ -1136,7 +1136,7 @@ PokemonBreederDescription:
 	done
 
 PokemonFluteName:
-	textfw "ポケモンの笛"
+	text "Pokémon Flute"
 	done
 
 PokemonFluteDescription:
@@ -1147,7 +1147,7 @@ PokemonFluteDescription:
 	done
 
 TheBosssWayName:
-	textfw "ボスのやりかた"
+	text "The Boss's Way"
 	done
 
 TheBosssWayDescription:
@@ -1158,7 +1158,7 @@ TheBosssWayDescription:
 	done
 
 GoopGasAttackName:
-	textfw "まきちらせ!ベトベトガス"
+	text "Goop Gas Attack"
 	done
 
 GoopGasAttackDescription:
@@ -1168,7 +1168,7 @@ GoopGasAttackDescription:
 	done
 
 BillName:
-	textfw "マサキ"
+	text "Bill"
 	done
 
 BillDescription:
@@ -1177,7 +1177,7 @@ BillDescription:
 	done
 
 BillsTeleporterName:
-	textfw "マサキの転送装置"
+	text "Bill's Teleporter"
 	done
 
 BillsTeleporterDescription:
@@ -1187,7 +1187,7 @@ BillsTeleporterDescription:
 	done
 
 BillsComputerName:
-	textfw "マサキのパソコン"
+	text "Bill's PC"
 	done
 
 BillsComputerDescription:
@@ -1207,7 +1207,7 @@ BillsComputerDescriptionCont:
 	done
 
 MasterBallName:
-	textfw "マスターボール"
+	text "Master Ball"
 	done
 
 MasterBallDescription:
@@ -1220,7 +1220,7 @@ MasterBallDescription:
 	done
 
 LassName:
-	textfw "ミニスカート"
+	text "Lass"
 	done
 
 LassDescription:
@@ -1231,7 +1231,7 @@ LassDescription:
 	done
 
 MaintenanceName:
-	textfw "メンテナンス"
+	text "Maintenance"
 	done
 
 MaintenanceDescription:
@@ -1241,7 +1241,7 @@ MaintenanceDescription:
 	done
 
 PokeballName:
-	textfw "モンスターボール"
+	text "Poké Ball"
 	done
 
 PokeballDescription:
@@ -1253,7 +1253,7 @@ PokeballDescription:
 	done
 
 NightlyGarbageRunName:
-	textfw "夜の廃品回収"
+	text "Nightly Garbage Run"
 	done
 
 NightlyGarbageRunDescription:
@@ -1266,7 +1266,7 @@ NightlyGarbageRunDescription:
 	done
 
 RecycleName:
-	textfw "リサイクル"
+	text "Recycle"
 	done
 
 RecycleDescription:
@@ -1276,7 +1276,7 @@ RecycleDescription:
 	done
 
 RocketsSneakAttackName:
-	textfw "ロケット団のおねーさん"
+	text "Rocket's Sneak Attack"
 	done
 
 RocketsSneakAttackDescription:
@@ -1287,7 +1287,7 @@ RocketsSneakAttackDescription:
 	done
 
 HereComesTeamRocketName:
-	textfw "ロケット団参上!"
+	text "Here Comes Team Rocket!"
 	done
 
 HereComesTeamRocketDescription:
@@ -1299,7 +1299,7 @@ HereComesTeamRocketDescription:
 	done
 
 TheRocketsTrapName:
-	textfw "ロケット団のワナ"
+	text "The Rocket's Trap"
 	done
 
 TheRocketsTrapDescription:
