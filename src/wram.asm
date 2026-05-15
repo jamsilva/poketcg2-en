@@ -162,8 +162,8 @@ wcab2:: ; cab2
 wInitialA:: ; cab3
 	ds $1
 
-; what console we are playing on, either 0 (DMG), 1 (SGB) or 2 (CGB)
-; use constants CONSOLE_DMG, CONSOLE_SGB and CONSOLE_CGB for checks
+; what console we are playing on, either 0 (DMG) or 1 (CGB)
+; use constants CONSOLE_DMG and CONSOLE_CGB for checks
 wConsole:: ; cab4
 	ds $1
 
@@ -1053,8 +1053,7 @@ wDeckCheckCurStage2Count:: ; cd5a
 
 SECTION "WRAM0 3", WRAM0
 
-; on CGB, attributes of the text box borders. (values 0-7 seem to be used, which only affect palette)
-; on SGB, colorize text box border with SGB1 if non-0
+; Attributes of the text box borders. (values 0-7 seem to be used, which only affect palette)
 wTextBoxFrameType:: ; cd5b
 	ds $1
 
