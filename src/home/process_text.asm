@@ -796,11 +796,11 @@ Func_235e::
 	scf                  ; set carry to indicate success
 	ret                  ; (return new linked-list head in a)
 
-; uppercases e if [wUppercaseHalfWidthLetters] is nonzero
+; uppercases e if [wDontUppercaseHalfWidthLetters] is 0
 CaseHalfWidthLetter::
-	ld a, [wUppercaseHalfWidthLetters]
+	ld a, [wDontUppercaseHalfWidthLetters]
 	or a
-	ret z
+	ret nz
 	ld a, e
 	cp $60
 	ret c
