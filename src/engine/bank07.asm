@@ -761,10 +761,10 @@ TextBoxFrameColorSettingMenuBoxParams:
 	menubox_params FALSE, 18, 1, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		NONE, PAD_B | PAD_UP | PAD_DOWN, TRUE, 0, SaveAndApplyNewTextBoxFrameColor, NULL
-	textitem  1, 0, ConfigFrameColorRedText
-	textitem  6, 0, ConfigFrameColorBlueText
-	textitem 11, 0, ConfigFrameColorGreenText
-	textitem 16, 0, ConfigFrameColorBlackText
+	textitem  1, 0, ConfigFrameColorBlackText
+	textitem  6, 0, ConfigFrameColorRedText
+	textitem 10, 0, ConfigFrameColorBlueText
+	textitem 14, 0, ConfigFrameColorGreenText
 	textitems_end
 
 ConfigExitMenuBoxParams:
