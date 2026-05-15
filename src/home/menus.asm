@@ -706,12 +706,13 @@ CopyCardNameAndLevel::
 	ld a, [wLoadedCard1Type]
 	cp TYPE_ENERGY
 	jr nc, .level_done ; jump if energy or trainer
-	ld a, [wLoadedCard1Level]
-	or a
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
+	push af
 	jr z, .level_done
 	inc c
 	inc c
-	ld a, [wLoadedCard1Level]
+	pop af
 	cp 10
 	jr c, .level_done
 	inc c ; second digit
@@ -741,14 +742,15 @@ CopyCardNameAndLevel::
 	ld a, [wLoadedCard1Type]
 	cp TYPE_ENERGY
 	jr nc, .done
-	ld a, [wLoadedCard1Level]
-	or a
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
+	push af
 	jr z, .done
 	ld a, TX_SYMBOL
 	ld [hli], a
 	ld [hl], SYM_Lv
 	inc hl
-	ld a, [wLoadedCard1Level]
+	pop af
 	cp 10
 	jr c, .one_digit
 	ld [hl], TX_SYMBOL

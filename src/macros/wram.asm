@@ -18,9 +18,8 @@ MACRO card_data_struct
 \1Resistance::    ds 1
 \1Category::      ds 2
 \1PokedexNumber:: ds 1
-\1Dark::          ds 1
-\1Level::         ds 1
-\1Length::        ds 1
+\1DarknessLevel:: ds 1
+\1Length::        ds 2
 \1Weight::        ds 2
 \1Description::   ds 2
 \1AIInfo::        ds 1

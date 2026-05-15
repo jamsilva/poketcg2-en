@@ -6564,9 +6564,9 @@ DarkSong_BenchDamageEffect:
 	push hl
 	push bc
 	call LoadCardDataToBuffer1_FromDeckIndex
-	ld a, [wLoadedCard1Dark]
-	or a
-	jr nz, .is_dark
+	ld a, [wLoadedCard1DarknessLevel] ; we got the darkness and level...
+	rla ; ...now set the carry flag based on the darkness
+	jr c, .is_dark
 	ld de, 10
 	bank1call ApplyDarkWaveDamageBoost
 	call DealDamageToPlayAreaPokemon_RegularAnim
@@ -7112,9 +7112,9 @@ GetNumberOfDarkPokemonInTurnDuelistsPlayArea:
 .loop_play_area
 	ld a, [hli]
 	call LoadCardDataToBuffer1_FromDeckIndex
-	ld a, [wLoadedCard1Dark]
-	or a
-	jr z, .next
+	ld a, [wLoadedCard1DarknessLevel] ; we got the darkness and level...
+	rla ; ...now set the carry flag based on the darkness
+	jr nc, .next
 	inc b
 .next
 	dec c

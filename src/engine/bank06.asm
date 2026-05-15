@@ -4136,11 +4136,12 @@ RequestToPrintCard:
 	ld a, SYM_Lv
 	lb bc, 11, 66
 	call WriteByteToBGMap0
-	ld a, [wLoadedCard1Level]
-	lb bc, 12, 66
+	ld a, [wLoadedCard1DarknessLevel]
+	and $7f ; drop the darkness bit
+	ld b, 12 ; bc is now 12, 66
 	bank1call WriteTwoDigitNumberInTxSymbolFormat
 	ld a, SYM_HP
-	lb bc, 15, 66
+	ld b, 15 ; bc is now 15, 66
 	call WriteByteToBGMap0
 	ld a, [wLoadedCard1HP]
 	inc b
