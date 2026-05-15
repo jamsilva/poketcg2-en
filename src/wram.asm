@@ -2284,8 +2284,7 @@ wNamingScreenCursorX:: ; d3e8
 wNamingScreenNamePosition:: ; d3e9
 	ds $2
 
-; NAME_MODE_* constant
-wNamingScreenMode:: ; d3eb
+; unused / free to use
 	ds $1
 
 ; see also: sUnnamedDeckCounter

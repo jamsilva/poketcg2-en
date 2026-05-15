@@ -2576,48 +2576,11 @@ InitSaveData:
 	ld l, a
 	; fallthrough
 .PrintName:
-	ld de, wDuelTempList
-	call CopyText
-	ld c, $0f
-	ld hl, wDuelTempList
 	ld de, wDefaultText
-.loop_chars
-	ld a, [hl]
-	or a
-	jr z, .terminating_byte
-	cp $0f
-	jr nz, .asm_199dc
-	ld c, a
-	jr .next_char
-.asm_199dc
-	cp $0e
-	jr nz, .asm_199e3
-	ld c, a
-	jr .next_char
-.asm_199e3
-	cp $06
-	jr c, .copy_2_bytes
-	ld a, c
-	ld [de], a
-	inc de
-	ld a, [hl]
-	ld [de], a
-	inc de
-.next_char
-	inc hl
-	jr .loop_chars
-.copy_2_bytes
-	ld a, [hli]
-	ld [de], a
-	inc de
-	ld a, [hli]
-	ld [de], a
-	inc de
-	jr .loop_chars
-
-.terminating_byte
-	ld [de], a
-	ret
+	jp CopyText
+REPT $31 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 INCLUDE "engine/link/ir_functions.asm"
 
@@ -5541,28 +5504,27 @@ WhatIsYourNameData:
 
 Deck1RenameText:
 	textitem  2, 1, Deck1Text
-	textitem 14, 1, DeckText
+	textitem 15, 1, DeckText
 	textitems_end
 
 Deck2RenameText:
 	textitem  2, 1, Deck2Text
-	textitem 14, 1, DeckText
+	textitem 15, 1, DeckText
 	textitems_end
 
 Deck3RenameText:
 	textitem  2, 1, Deck3Text
-	textitem 14, 1, DeckText
+	textitem 15, 1, DeckText
 	textitems_end
 
 Deck4RenameText:
 	textitem  2, 1, Deck4Text
-	textitem 14, 1, DeckText
+	textitem 15, 1, DeckText
 	textitems_end
 
-Deck5RenameText:
-	textitem  2, 1, Deck5Text
-	textitem 14, 1, DeckText
-	textitems_end
+REPT $9 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; dupe of PlaySFXConfirmOrCancel in bank 2
 ; if a = MENU_CANCEL (-1), play SFX_CANCEL (usually following B button)
@@ -5609,8 +5571,6 @@ InputName:
 	lb de, $38, $bf
 	call SetupText
 	call LoadFullWidthTextCursorTile
-	xor a ; NAME_MODE_HIRAGANA
-	ld [wNamingScreenMode], a
 
 	call UpdateNamingScreenUI
 
@@ -5620,7 +5580,7 @@ InputName:
 
 	ld a, 9
 	ld [wNamingScreenNumColumns], a
-	ld a, 7
+	ld a, 6
 	ld [wNamingScreenNumRows], a
 	ld a, SYM_CURSOR_R
 	ld [wMenuVisibleCursorTile], a
@@ -5635,50 +5595,38 @@ InputName:
 
 	ldh a, [hDPadHeld]
 	and PAD_START
-	jr z, .check_select
+	jr z, .else
+
+	; the Start button was pressed.
 	ld a, MENU_CONFIRM
 	call PlaySFXConfirmOrCancel_Bank06
 	call HideCursorAtCharPosition
 	ld a, 6
-	ld [wNamingScreenCursorY], a
-	inc a ; 7
 	ld [wNamingScreenCursorX], a
+	dec a ; 5
+	ld [wNamingScreenCursorY], a
 	call ShowCursorAtCharPosition
 	jr .loop
 
-.check_select
-	ldh a, [hDPadHeld]
-	and PAD_SELECT
-	jr z, .asm_1af3b
-	ld a, MENU_CONFIRM
-	call PlaySFXConfirmOrCancel_Bank06
-	ld a, [wNamingScreenMode]
-	inc a
-	cp NUM_NAME_MODES
-	jr c, .got_mode
-	xor a ; NAME_MODE_HIRAGANA
-.got_mode
-	ld [wNamingScreenMode], a
-	xor a
-	ld [wNamingScreenCursorX], a
-	ld [wNamingScreenCursorY], a
-	call UpdateNamingScreenUI
-	jr .loop
-
-.asm_1af3b
+.else
 	call HandleNamingScreenInput
-	jr nc, .loop
+	jr nc, .loop ; if not pressed, go back to the loop.
+
 	cp MENU_CANCEL
 	jr z, .remove_last_char
+
+	; on A button
 	call SelectKeyboardItem
 	jr nc, .loop
-	call FinalizeInputName
-	ret
+
+	; Player selected the "End" button.
+	jp FinalizeInputName
 
 .remove_last_char
 	ld a, [wNamingScreenBufferLength]
 	or a
-	jr z, .loop
+	jr z, .loop ; empty string?
+	; erase one character.
 	ld e, a
 	ld d, $00
 	ld hl, wNamingScreenBuffer
@@ -5686,17 +5634,44 @@ InputName:
 	dec hl
 	dec hl
 	ld [hl], TX_END
-	ld hl, wNamingScreenBufferLength
+	ld hl, wNamingScreenBufferLength ; note that its unit is byte, not word.
 	dec [hl]
 	dec [hl]
 	call ProcessTextWithUnderbar
 	jr .loop
 
-; called when naming (either player's or deck's) starts.
-; a = maximum length of name (depending on whether player's or deck's).
-; bc = position of name.
-; de = dest. pointer.
-; hl = pointer to text item of the question.
+; loads, to the first tile of v0Tiles0, the graphics for the
+; blinking black square used in name input screens for inputting half width text.
+; this function is very similar to 'LoadFullWidthTextCursorTile'.
+LoadHalfWidthTextCursorTile:
+	ld hl, v0Tiles0
+	ld de, .black_tile
+	ld b, $00
+.loop
+	ld a, TILE_SIZE
+	cp b
+	ret z
+	inc b
+	ld a, [de]
+	inc de
+	ld [hli], a
+	jr .loop
+
+.black_tile
+REPT TILE_SIZE
+	db $f0
+ENDR
+
+ShowCursorAtCharPosition_HalfWidth:
+	ld a, [wMenuVisibleCursorTile]
+	jp DrawSymbolAtCharPosition_HalfWidth
+
+; called when the Player is asked to name something (either the protagonist or a deck)
+; input:
+;	a = maximum length of a name
+;	bc = coordinates at which to begin printing the name
+;	de = where to store the name
+;	hl = pointer for text items
 InitializeInputName:
 	ld [wNamingScreenBufferMaxLength], a
 
@@ -5711,41 +5686,42 @@ InitializeInputName:
 	; wNamingScreenQuestionPointer = hl
 	ld b, h
 	ld c, l
+
+	; set the question string.
 	ld hl, wNamingScreenQuestionPointer
 	ld [hl], c
 	inc hl
 	ld [hl], b
 
-	; wNamingScreenDestPointer = de
+	; set the destination buffer.
 	ld hl, wNamingScreenDestPointer
 	ld [hl], e
 	inc hl
 	ld [hl], d
 
-	; clear the name buffer
+	; clear the name buffer.
 	ld a, NAMING_SCREEN_BUFFER_LENGTH
 	ld hl, wNamingScreenBuffer
 	farcall ClearNBytesFromHL
-
-	ld a, [de]
-	cp $06
-	jr z, .get_length
 	ld hl, wNamingScreenBuffer
 	ld a, [wNamingScreenBufferMaxLength]
 	ld b, a
 	inc b
 .loop
+	; copy b bytes of data from de to hl.
 	ld a, [de]
 	inc de
 	ld [hli], a
 	dec b
 	jr nz, .loop
-.get_length
 	ld hl, wNamingScreenBuffer
 	call GetTextLengthInTiles
 	ld a, c
 	ld [wNamingScreenBufferLength], a
 	ret
+REPT $5 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 FinalizeInputName:
 	ld hl, wNamingScreenDestPointer
@@ -5760,9 +5736,10 @@ FinalizeInputName:
 	inc b
 	jr InitializeInputName.loop
 
-; draws textbox around keyboard,
-; the naming question and the actual
-; items in the keyboard
+; draws the player naming keyboard and prints the question, if it exists.
+; this function is very similar to 'UpdateNamingScreenUI_HalfWidth'.
+; input:
+;	[wNamingScreenQuestionPointer] = pointer for text data (2 bytes)
 UpdateNamingScreenUI:
 	call DrawTextboxForKeyboard
 	call ProcessTextWithUnderbar
@@ -5772,84 +5749,83 @@ UpdateNamingScreenUI:
 	ld a, [hl]
 	ld h, a
 	or c
-	jr z, .print
+	jr z, .put_text_end
 	; print the question string.
+	; ex) "What is your name?"
 	ld l, c
 	call PlaceTextItems
-.print
+.put_text_end
+	; print "End".
 	ld hl, .end_text
 	call PlaceTextItems
-
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .asm_1afe5
-; NAME_MODE_HIRAGANA
-	ld hl, .switches_from_hiragana
-	call PlaceTextItems
-	ldtx hl, HiraganaKeyboardText
-	jr .asm_1b00a
-.asm_1afe5
-	dec a
-	jr nz, .asm_1aff3
-; NAME_MODE_KATAKANA
-	ld hl, .switches_from_katakana
-	call PlaceTextItems
-	ldtx hl, KatakanaKeyboardText
-	jr .asm_1b00a
-.asm_1aff3
-	dec a
-	jr nz, .asm_1b001
-; NAME_MODE_UPPER_ABC
-	ld hl, .switches_from_uppercase
-	call PlaceTextItems
-	ldtx hl, UppercaseKeyboardText
-	jr .asm_1b00a
-.asm_1b001
-; NAME_MODE_LOWER_ABC
-	ld hl, .switches_from_lowercase
-	call PlaceTextItems
-	ldtx hl, LowercaseKeyboardText
-.asm_1b00a
+	; print the keyboard characters.
+	ldtx hl, PlayerNameKeyboardText
 	lb de, 2, 4
 	call InitTextPrinting
 	call ProcessTextFromID
-	call EnableLCD
-	ret
-
+	jp EnableLCD
 .end_text
-	textitem 16, 16, EndText
+	textitem $0f, $10, EndText ; "End"
 	textitems_end
 
-.switches_from_hiragana
-	textitem  2, 16, KatakanaOptionText
-	textitem  7, 16, UppercaseOptionText
-	textitem 12, 16, LowercaseOptionText
-	textitems_end
+; this is called when naming a deck.
+; it's similar to 'ProcessTextWithUnderbar'.
+; preserves bc
+; input:
+;	[wNamingScreenNamePosition] = screen coordinates for printing (2 bytes)
+;	[wNamingScreenBuffer] = name generated from keyboard input (up to 24 bytes)
+ProcessTextWithUnderbar_HalfWidth:
+	ld hl, wNamingScreenNamePosition
+	ld d, [hl]
+	inc hl
+	ld e, [hl]
+	call InitTextPrinting
+	ld hl, .underbar_chars
+	ld de, wDefaultText
+.loop
+; copy the underbar string to wDefaultText
+	ld a, [hli]
+	ld [de], a
+	inc de
+	or a
+	jr nz, .loop
 
-.switches_from_katakana
-	textitem  2, 16, HiraganaOptionText
-	textitem  7, 16, UppercaseOptionText
-	textitem 12, 16, LowercaseOptionText
-	textitems_end
+	ld hl, wNamingScreenBuffer
+	ld de, wDefaultText
+.loop2
+; copy the input from the user to wDefaultText
+	ld a, [hli]
+	or a
+	jr z, .print_name
+	ld [de], a
+	inc de
+	jr .loop2
 
-.switches_from_uppercase
-	textitem  2, 16, HiraganaOptionText
-	textitem  7, 16, KatakanaOptionText
-	textitem 12, 16, LowercaseOptionText
-	textitems_end
+.print_name
+	ld hl, wDefaultText
+	jp ProcessText
+.underbar_chars
+	text "____________________"
+	done
 
-.switches_from_lowercase
-	textitem  2, 16, HiraganaOptionText
-	textitem  7, 16, KatakanaOptionText
-	textitem 12, 16, UppercaseOptionText
-	textitems_end
+REPT $29 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
+; draws the keyboard frame
 DrawTextboxForKeyboard:
-	lb de, 0, 3
-	lb bc, 20, 15
-	call DrawRegularTextBox
-	ret
+	lb de, 0, 3 ; x, y
+	lb bc, 20, 15 ; w, h
+	jp DrawRegularTextBox
+	nop ; dummy NOP here to pad space freed
 
+; this is called when naming the player character.
+; it's similar to 'ProcessTextWithUnderbar_HalfWidth'.
+; preserves bc
+; input:
+;	[wNamingScreenNamePosition] = screen coordinates for printing (2 bytes)
+;	[wNamingScreenBufferMaxLength] = MAX_PLAYER_NAME_LENGTH
+;	[wNamingScreenBuffer] = name generated from keyboard input (up to 24 bytes)
 ProcessTextWithUnderbar:
 	ld hl, wNamingScreenNamePosition
 	ld d, [hl]
@@ -5864,14 +5840,16 @@ ProcessTextWithUnderbar:
 	inc a
 	ld e, a ; = $14 - wNamingScreenBufferMaxLength + 1
 	ld d, $00
+	; print the underbars before the input information.
 	ld hl, .underbar_chars
 	add hl, de
 	call ProcessText
 	pop de
 	call InitTextPrinting
+	; print the input from the user.
 	ld hl, wNamingScreenBuffer
-	call ProcessText
-	ret
+	jp ProcessText
+	nop ; dummy NOP here to pad space freed
 
 .underbar_chars
 PUSHC fullwidth
@@ -5880,13 +5858,16 @@ POPC
 	textfw "__________"
 	done
 
+; checks if any buttons were pressed and handles the input.
+; returns carry if either the A button or the B button were pressed.
+; this function is similar to 'HandleNamingScreenInput_HalfWidth'.
 HandleNamingScreenInput:
-.start
 	xor a
 	ld [wMenuInputSFX], a
 	ldh a, [hDPadHeld]
 	or a
 	jp z, .check_btns
+	; detected any button press
 	ld b, a
 	ld a, [wNamingScreenNumRows]
 	ld c, a
@@ -5898,7 +5879,7 @@ HandleNamingScreenInput:
 	jr z, .check_d_down
 	; move cursor down
 	dec a
-	bit 7, a
+	bit B_PAD_DOWN, a
 	jr z, .apply_y_value
 	; wrap around
 	ld a, c
@@ -5928,7 +5909,6 @@ HandleNamingScreenInput:
 	jr nz, .move_left
 	; handle last row movement
 	push hl
-	push bc
 	push af
 	call GetCharInfoFromPos
 	inc hl
@@ -5940,7 +5920,6 @@ HandleNamingScreenInput:
 	dec a
 	ld d, a
 	pop af
-	pop bc
 	pop hl
 	sub d ; cursor_x - d
 	cp -1
@@ -5959,7 +5938,7 @@ HandleNamingScreenInput:
 
 .move_left
 	dec a
-	bit 7, a
+	bit B_PAD_DOWN, a
 	jr z, .apply_x_value
 	ld a, c
 	dec a
@@ -5974,7 +5953,6 @@ HandleNamingScreenInput:
 	ld a, d
 	jr nz, .move_right
 	push hl
-	push bc
 	push af
 	call GetCharInfoFromPos
 	inc hl
@@ -5985,7 +5963,6 @@ HandleNamingScreenInput:
 	dec a
 	ld d, a
 	pop af
-	pop bc
 	pop hl
 	add d ; cursor_x + d
 .move_right
@@ -6020,12 +5997,6 @@ HandleNamingScreenInput:
 	inc hl
 	inc hl
 	inc hl
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_LOWER_ABC
-	jr nz, .asm_1b14a
-	inc hl
-	inc hl
-.asm_1b14a
 	ld d, [hl]
 	push de
 	call HideCursorAtCharPosition
@@ -6039,7 +6010,7 @@ HandleNamingScreenInput:
 	ld [wNamingScreenCursorBlinkCounter], a
 	ld a, KEYBOARD_UNKNOWN
 	cp d
-	jp z, .start
+	jp z, HandleNamingScreenInput
 	ld a, SFX_CURSOR
 	ld [wMenuInputSFX], a
 
@@ -6049,6 +6020,7 @@ HandleNamingScreenInput:
 	jr z, .no_pressed_btns
 	and PAD_A
 	jr nz, .got_sfx ; MENU_CONFIRM
+	; the B button was pressed.
 	ld a, MENU_CANCEL
 .got_sfx
 	call PlaySFXConfirmOrCancel_Bank06
@@ -6061,8 +6033,7 @@ HandleNamingScreenInput:
 .no_pressed_btns
 	ld a, [wMenuInputSFX]
 	or a
-	jr z, .skip_sfx
-	call PlaySFX
+	call nz, PlaySFX
 .skip_sfx
 	ld hl, wNamingScreenCursorBlinkCounter
 	ld a, [hl]
@@ -6072,12 +6043,20 @@ HandleNamingScreenInput:
 	ld a, [wMenuVisibleCursorTile]
 	bit 4, [hl]
 	jr z, DrawSymbolAtCharPosition
-; fallthrough
+;	fallthrough
+REPT $f ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 HideCursorAtCharPosition:
 	ld a, [wMenuInvisibleCursorTile]
-; fallthrough
+;	fallthrough
 
+; this function is very similar to 'DrawSymbolAtCharPosition_HalfWidth'.
+; input:
+;	a = which tile to draw
+;	[wNamingScreenCursorX] = cursor's x position on the keyboard screen
+;	[wNamingScreenCursorY] = cursor's y position on the keyboard screen
 DrawSymbolAtCharPosition:
 	ld e, a
 	ld a, [wNamingScreenCursorX]
@@ -6104,7 +6083,13 @@ ShowCursorAtCharPosition:
 	ld a, [wMenuVisibleCursorTile]
 	jr DrawSymbolAtCharPosition
 
-; a = tile of cursor
+; returns after calling ZeroObjectPositions if a = [wMenuInvisibleCursorTile].
+; otherwise, uses [wNamingScreenBufferLength], [wNamingScreenBufferMaxLength], and
+; [wNamingScreenNamePosition] to determine x/y positions and calls SetOneObjectAttributes.
+; this function is similar to 'UpdateNameTextCursor_HalfWidth'.
+; preserves all registers
+; input:
+;	a = cursor tile
 UpdateNameTextCursor:
 	push af
 	push bc
@@ -6178,8 +6163,9 @@ UpdateNameTextCursor:
 	call SetOneObjectAttributes
 	jr .done
 
-; load, to the first tile of v0Tiles0, the graphics for the
-; blinking black square used in name input screens
+; loads, to the first tile of v0Tiles0, the graphics for the blinking black square
+; used in name input screens for inputting full width text.
+; this function is very similar to 'LoadHalfWidthTextCursorTile'.
 LoadFullWidthTextCursorTile:
 	ld hl, v0Tiles0
 	ld de, .black_tile
@@ -6199,7 +6185,7 @@ REPT TILE_SIZE
 	db $ff
 ENDR
 
-; return carry if player selected "Done"
+; returns carry if "End" was selected on the keyboard
 SelectKeyboardItem:
 	ld a, [wNamingScreenCursorX]
 	ld h, a
@@ -6208,127 +6194,8 @@ SelectKeyboardItem:
 	call GetCharInfoFromPos
 	inc hl
 	inc hl
-	ld e, [hl]
-	inc hl
-	ld a, [hli]
-	ld d, a
-	cp KEYBOARD_DONE
-	jp z, .set_carry
 
-; toggle 1
-	cp KEYBOARD_TOGGLE_1
-	jr nz, .check_toggle_2
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .to_hiragana_mode
-; to katakana mode
-	ld a, NAME_MODE_KATAKANA
-	jp .set_mode
-.to_hiragana_mode
-	xor a ; NAME_MODE_HIRAGANA
-	jp .set_mode
-
-.check_toggle_2
-	cp KEYBOARD_TOGGLE_2
-	jr nz, .check_toggle_3
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_UPPER_ABC
-	jr c, .to_upper_abc_mode
-; to katakana mode
-	ld a, NAME_MODE_KATAKANA
-	jr .set_mode
-.to_upper_abc_mode
-	ld a, NAME_MODE_UPPER_ABC
-	jr .set_mode
-
-.check_toggle_3
-	cp KEYBOARD_TOGGLE_3
-	jr nz, .character_item
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_LOWER_ABC
-	jr nz, .to_lower_abc_mode
-; to upper abc mode
-	ld a, NAME_MODE_UPPER_ABC
-	jr .set_mode
-.to_lower_abc_mode
-	ld a, NAME_MODE_LOWER_ABC
-
-.set_mode
-	ld [wNamingScreenMode], a
-	call UpdateNamingScreenUI
-	or a
-	ret
-
-.character_item
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_UPPER_ABC
-	jr z, .upper_abc
-	cp NAME_MODE_LOWER_ABC
-	jr z, .lower_abc
-
-	; handle diacritics
-	ldfw bc, "゛"
-	ld a, d
-	cp b
-	jr nz, .check_handakuten
-	ld a, e
-	cp c
-	jr nz, .check_handakuten
-	push hl
-	ld hl, DakutenTable
-	call GetDiacriticCharacter
-	pop hl
-	jr c, .no_carry
-	jr .apply_diacritic
-
-.check_handakuten
-	ldfw bc, "゜"
-	ld a, d
-	cp b
-	jr nz, .not_diacritic
-	ld a, e
-	cp c
-	jr nz, .not_diacritic
-	push hl
-	ld hl, HandakutenTable
-	call GetDiacriticCharacter
-	pop hl
-	jr c, .no_carry
-
-.apply_diacritic
-; decrease length by 2
-	ld a, [wNamingScreenBufferLength]
-	dec a
-	dec a
-	ld [wNamingScreenBufferLength], a
-; get pointer to last character in buffer
-	ld hl, wNamingScreenBuffer
-	push de
-	ld d, $00
-	ld e, a
-	add hl, de
-	pop de
-	ld a, [hl]
-	jr .add_character
-
-.not_diacritic
-	ld a, d
-	or a
-	jr nz, .add_character
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .katakana
-; NAME_MODE_HIRAGANA
-	ld a, TX_HIRAGANA
-	jr .add_character
-.katakana
-; NAME_MODE_KATAKANA
-	ld a, TX_KATAKANA
-	jr .add_character
-.lower_abc
-	inc hl
-	inc hl
-.upper_abc
+	; load character
 	ld e, [hl]
 	inc hl
 	ld a, [hl]
@@ -6339,7 +6206,11 @@ SelectKeyboardItem:
 ; a = TX_* constant
 ; e = character byte
 .add_character
-	ld d, a
+	ld d, a ; de = character code
+
+	cp KEYBOARD_DONE ; selected "End" option
+	jp z, .set_carry
+
 	ld hl, wNamingScreenBufferLength
 	ld a, [hl]
 	ld c, a
@@ -6354,10 +6225,17 @@ SelectKeyboardItem:
 	dec hl
 ; hl = wNamingScreenBuffer - 2
 	jr .got_char_position
+
+; increase name length before adding the character.
 .not_last_character
 	inc [hl]
 	inc [hl]
 	ld hl, wNamingScreenBuffer
+
+; write 2 byte character codes to the name buffer.
+; input:
+;	de = 2 byte character code
+;	hl = copy destination
 .got_char_position
 	ld b, $00
 	add hl, bc
@@ -6365,10 +6243,8 @@ SelectKeyboardItem:
 	inc hl
 	ld [hl], e
 	inc hl
-	ld [hl], TX_END
+	ld [hl], TX_END ; null terminator.
 	call ProcessTextWithUnderbar
-
-.no_carry
 	or a
 	ret
 
@@ -6376,60 +6252,165 @@ SelectKeyboardItem:
 	scf
 	ret
 
+; gets a deck name from user input and stores it in [de].
+; this function is similar to 'InputPlayerName'.
 ; input:
-;  hl = pointer to either DakutenTable or HandakutenTable
-; output:
-;  d = $00
-;  e = new character byte
-GetDiacriticCharacter:
-	ld a, [wNamingScreenBufferLength]
+;	a = maximum length of a name (MAX_DECK_NAME_LENGTH)
+;	bc = coordinates at which to begin printing the name
+;	de = where to store the name (wCurDeckName)
+;	hl = pointer for text items (Deck*Data)
+InputName_HalfWidth:
+	push af
+	; check if the buffer is empty.
+	ld a, [de]
 	or a
-	jr z, .set_carry
-	dec a
-	dec a
-	push hl
-	ld hl, wNamingScreenBuffer
-	ld d, $00
-	ld e, a
-	add hl, de
-	ld e, [hl] ; TX_*
-	inc hl
-	ld d, [hl] ; character
-	ld a, TX_KATAKANA
-	cp e
-	jr nz, .not_katakana
-	dec e ; change to hiragana
-.not_katakana
-	pop hl
+	jr nz, .not_empty
+	; this buffer will contain half-width characters.
+	ld a, TX_HALFWIDTH
+	ld [de], a
+.not_empty
+	pop af
+	inc a
+	call InitializeInputName
+	call Set_OBJ_8x8
+
+	xor a ; FALSE
+	ld [wTileMapFill], a
+	call EmptyScreen
+	call ZeroObjectPositions
+	ld a, TRUE
+	ld [wVBlankOAMCopyToggle], a
+	call LoadSymbolsFont
+	lb de, $38, $bf
+	call SetupText
+	call LoadHalfWidthTextCursorTile
+
+	call UpdateNamingScreenUI_HalfWidth
+
+	xor a
+	ld [wNamingScreenCursorX], a
+	ld [wNamingScreenCursorY], a
+
+	ld a, 9
+	ld [wNamingScreenNumColumns], a
+	ld a, 7
+	ld [wNamingScreenNumRows], a
+	ld a, SYM_CURSOR_R
+	ld [wMenuVisibleCursorTile], a
+	ld a, SYM_SPACE
+	ld [wMenuInvisibleCursorTile], a
 .loop
-	ld a, [hli]
-	or a
-	jr z, .set_carry ; not in table
-	cp d
-	jr nz, .next
-	ld a, [hl]
-	cp e
-	jr nz, .next
-	inc hl
-	ld e, [hl] ; new character byte
-	inc hl
-	ld d, [hl] ; unused byte
-	or a
-	ret
-.next
-	inc hl
-	inc hl
-	inc hl
+	ld a, TRUE
+	ld [wVBlankOAMCopyToggle], a
+	call DoFrame
+
+	call UpdateRNGSources
+
+	ldh a, [hDPadHeld]
+	and PAD_START
+	jr z, .else
+
+	; the Start button was pressed.
+	ld a, MENU_CONFIRM
+	call PlaySFXConfirmOrCancel_Bank06
+	call HideCursorAtCharPosition_HalfWidth
+
+	ld a, 6
+	ld [wNamingScreenCursorX], a
+	ld [wNamingScreenCursorY], a
+	call ShowCursorAtCharPosition_HalfWidth
 	jr .loop
 
-.set_carry
-	scf
+.else
+	call HandleNamingScreenInput_HalfWidth
+	jr nc, .loop ; if not pressed, go back to the loop.
+
+	cp MENU_CANCEL
+	jr z, .remove_last_char
+
+	; on A button
+	call SelectKeyboardItem_HalfWidth
+	jr nc, .loop
+
+	; Player selected the "End" button.
+	call FinalizeInputName
+
+	ld hl, wNamingScreenDestPointer
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	inc hl
+
+	ld a, [hl]
+	or a
+	jr nz, .return ; can be ret nz
+
+	dec hl
+	ld [hl], TX_END
+.return
 	ret
 
-; given the position of the current cursor,
-; it returns the pointer to the proper information.
-; h: position x.
-; l: position y.
+.remove_last_char
+	ld a, [wNamingScreenBufferLength]
+	cp $02
+	jr c, .loop
+
+	; erase one character.
+	ld e, a
+	ld d, $00
+	ld hl, wNamingScreenBuffer
+	add hl, de
+	dec hl
+	ld [hl], TX_END
+
+	ld hl, wNamingScreenBufferLength
+	dec [hl]
+	call ProcessTextWithUnderbar_HalfWidth
+	jr .loop
+
+; given the cursor position, returns the pointer to the character information.
+; this function is very similar to 'GetCharInfoFromPos',
+; except that the data structure has a different unit size (3 bytes instead of 6).
+; preserves bc and de
+; input:
+;	h = x position
+;	l = y position
+; output:
+;	hl = KeyboardData_HalfWidth pointer
+GetCharInfoFromPos_HalfWidth:
+	push de
+	; (information index) = (x) * (height) + (y)
+	ld e, l
+	ld d, h
+	ld a, [wNamingScreenNumRows]
+	ld l, a
+	call HtimesL
+	ld a, l
+	add e
+	ld hl, KeyboardData_HalfWidth
+	pop de
+	or a
+	ret z
+.loop
+REPT 3
+	inc hl
+ENDR
+	dec a
+	jr nz, .loop
+	ret
+REPT $12 ; dummy NOPs here to pad space freed
+	nop
+ENDR
+
+; given the cursor position, returns the pointer to the character information.
+; this function is very similar to 'GetCharInfoFromPos_HalfWidth',
+; except that the data structure has a different unit size (6 bytes instead of 3).
+; preserves bc and de
+; input:
+;	h = x position
+;	l = y position
+; output:
+;	hl = KeyboardData pointer
 GetCharInfoFromPos:
 	push de
 	; (information index) = (x) * (height) + (y)
@@ -6445,181 +6426,343 @@ GetCharInfoFromPos:
 	or a
 	ret z
 .loop
-REPT 8
+REPT 4
 	inc hl
 ENDR
 	dec a
 	jr nz, .loop
 	ret
+REPT $4 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
-; a set of keyboard datum
-; \1 = absolute y coordinate
-; \2 = absolute x coordinate
-; \3 = hiragana character (must coincide with the
-;      katakana character with the same byte value)
-; \4 = uppercase alphabet character
-; \5 = lowercase alphabet character
-MACRO kbchar
-	db \1, \2
-	PUSHC fullwidth
-	REPT 3
-		get_charset \3
-		IF charset == TX_KATAKANA
-			db \3, charset
-		ELIF charset == TX_HIRAGANA
-			db \3, 0
-		ELSE
-			dwfw \3
-		ENDC
-		SHIFT
-	ENDR
-	POPC
-ENDM
-
-; \1 = absolute y coordinate
-; \2 = absolute x coordinate
-; \3 = keyboard function (KEYBOARD_* constant)
-; \4 = cursor x offset to right
-; \5 = cursor x offset to left
+; a set of keyboard datum.
+; unit: 4 bytes.
+; structure:
+; abs. y pos. (1) / abs. x pos. (1) / char. code (2)
 MACRO kbitem
 	db \1, \2
-	db $01 ; unused
-	db \3
-	db \4, \5
-	db \4, \5 ; unused
+	IF (_NARG == 3)
+		PUSHC fullwidth
+		dwfw \3
+		POPC
+	ELSE
+		db \3, \4
+	ENDC
 ENDM
 
 KeyboardData:
 	; col 0
-	kbchar  4,  2, "あ", "A", "a"
-	kbchar  6,  2, "い", "J", "j"
-	kbchar  8,  2, "う", "S", "s"
-	kbchar 10,  2, "え", "?", "@"
-	kbchar 12,  2, "お", "4", ":"
-	kbchar 14,  2, "ゃ", "ぃ", "<LIGHTNING>"
-	kbitem 16,  2, KEYBOARD_TOGGLE_1, 3, 2
+	kbitem  4,  2, "A"
+	kbitem  6,  2, "J"
+	kbitem  8,  2, "S"
+	kbitem 10,  2, "?"
+	kbitem 12,  2, "4"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 1
-	kbchar  4,  4, "か", "B", "b"
-	kbchar  6,  4, "き", "K", "k"
-	kbchar  8,  4, "く", "T", "t"
-	kbchar 10,  4, "け", "&", "&"
-	kbchar 12,  4, "こ", "5", ";"
-	kbchar 14,  4, "ゅ", "ぅ", "<GRASS>"
-	kbitem 16,  2, KEYBOARD_TOGGLE_1, 2, 2
+	kbitem  4,  4, "B"
+	kbitem  6,  4, "K"
+	kbitem  8,  4, "T"
+	kbitem 10,  4, "&"
+	kbitem 12,  4, "5"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 2
-	kbchar  4,  6, "さ", "C", "c"
-	kbchar  6,  6, "し", "L", "l"
-	kbchar  8,  6, "す", "U", "u"
-	kbchar 10,  6, "せ", "+", "/"
-	kbchar 12,  6, "そ", "6", "_"
-	kbchar 14,  6, "ょ", "ぇ", "<FIRE>"
-	kbitem 16,  2, KEYBOARD_TOGGLE_1, 2, 3
+	kbitem  4,  6, "C"
+	kbitem  6,  6, "L"
+	kbitem  8,  6, "U"
+	kbitem 10,  6, "+"
+	kbitem 12,  6, "6"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 3
-	kbchar  4,  8, "た", "D", "d"
-	kbchar  6,  8, "ち", "M", "m"
-	kbchar  8,  8, "つ", "V", "v"
-	kbchar 10,  8, "て", "-", "*"
-	kbchar 12,  8, "と", "7", "<"
-	kbchar 14,  8, "っ", "ぉ", "<WATER>"
-	kbitem 16,  7, KEYBOARD_TOGGLE_2, 2, 3
+	kbitem  4,  8, "D"
+	kbitem  6,  8, "M"
+	kbitem  8,  8, "V"
+	kbitem 10,  8, "-"
+	kbitem 12,  8, "7"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 4
-	kbchar  4, 10, "な", "E", "e"
-	kbchar  6, 10, "に", "N", "n"
-	kbchar  8, 10, "ぬ", "W", "w"
-	kbchar 10, 10, "ね", "・", "+"
-	kbchar 12, 10, "の", "8", ">"
-	kbchar 14, 10, "を", "ァ", "<PSYCHIC>"
-	kbitem 16,  7, KEYBOARD_TOGGLE_2, 2, 2
+	kbitem  4, 10, "E"
+	kbitem  6, 10, "N"
+	kbitem  8, 10, "W"
+	kbitem 10, 10, "・"
+	kbitem 12, 10, "8"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 5
-	kbchar  4, 12, "は", "F", "f"
-	kbchar  6, 12, "ひ", "O", "о"
-	kbchar  8, 12, "ふ", "X", "x"
-	kbchar 10, 12, "へ", "0", "-"
-	kbchar 12, 12, "ほ", "9", " "
-	kbchar 14, 12, "゛", "ィ", "<FIGHTING>"
-	kbitem 16, 12, KEYBOARD_TOGGLE_3, 2, 2
+	kbitem  4, 12, "F"
+	kbitem  6, 12, "O"
+	kbitem  8, 12, "X"
+	kbitem 10, 12, "0"
+	kbitem 12, 12, "9"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 6
-	kbchar  4, 14, "ま", "G", "g"
-	kbchar  6, 14, "み", "P", "p"
-	kbchar  8, 14, "む", "Y", "y"
-	kbchar 10, 14, "め", "1", "="
-	kbchar 12, 14, "も", "<No>", " "
-	kbchar 14, 14, "゜", "ゥ", "<COLORLESS>"
-	kbitem 16, 12, KEYBOARD_TOGGLE_3, 2, 2
+	kbitem  4, 14, "G"
+	kbitem  6, 14, "P"
+	kbitem  8, 14, "Y"
+	kbitem 10, 14, "1"
+	kbitem 12, 14, "<No>"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 7
-	kbchar  4, 16, "や", "H", "h"
-	kbchar  6, 16, "ゆ", "Q", "q"
-	kbchar  8, 16, "よ", "Z", "z"
-	kbchar 10, 16, "わ", "2", "・"
-	kbchar 12, 16, "ん", "<Lv>", " "
-	kbchar 14, 16, "ー", "ェ", "<RAINBOW>"
-	kbitem 16, 16, KEYBOARD_DONE, 2, 2
+	kbitem  4, 16, "H"
+	kbitem  6, 16, "Q"
+	kbitem  8, 16, "Z"
+	kbitem 10, 16, "2"
+	kbitem 12, 16, "<Lv>"
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
 	; col 8
-	kbchar  4, 18, "ら", "I", "i"
-	kbchar  6, 18, "り", "R", "r"
-	kbchar  8, 18, "る", "!", " "
-	kbchar 10, 18, "れ", "3", "ˍ"
-	kbchar 12, 18, "ろ", "ぁ", " "
-	kbchar 14, 18, " ", "ォ", " "
-	kbitem 16, 16, KEYBOARD_DONE, 3, 3
+	kbitem  4, 18, "I"
+	kbitem  6, 18, "R"
+	kbitem  8, 18, "!"
+	kbitem 10, 18, "3"
+	kbitem 12, 18, " "
+	kbitem 16, 15,  0, KEYBOARD_DONE
 
-	db  0,  0, $00, $00, $00, $00, $00, $00
+	kbitem  0,  0,  0, 0
 
-MACRO diacritic
-	PUSHC hiragana
-	db \1, TX_HIRAGANA
-	db \2, 0
-	POPC
-ENDM
+; a set of keyboard datum.
+; unit: 3 bytes.
+; structure:
+; abs. y pos. (1) / abs. x pos. (1) / char. code (1)
+KeyboardData_HalfWidth:
+	; col 0
+	db  4,  2, "A"
+	db  6,  2, "J"
+	db  8,  2, "S"
+	db 10,  2, "?"
+	db 12,  2, "4"
+	db 14,  2, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
 
-DakutenTable:
-	diacritic "か", "が" ; katakana カ, ガ
-	diacritic "き", "ぎ" ; katakana キ, ギ
-	diacritic "く", "ぐ" ; katakana ク, グ
-	diacritic "け", "げ" ; katakana ケ, ゲ
-	diacritic "こ", "ご" ; katakana コ, ゴ
-	diacritic "さ", "ざ" ; katakana サ, ザ
-	diacritic "し", "じ" ; katakana シ, ジ
-	diacritic "す", "ず" ; katakana ス, ズ
-	diacritic "せ", "ぜ" ; katakana セ, ゼ
-	diacritic "そ", "ぞ" ; katakana ソ, ゾ
-	diacritic "た", "だ" ; katakana タ, ダ
-	diacritic "ち", "ぢ" ; katakana チ, ヂ
-	diacritic "つ", "づ" ; katakana ツ, ヅ
-	diacritic "て", "で" ; katakana テ, デ
-	diacritic "と", "ど" ; katakana ト, ド
-	diacritic "は", "ば" ; katakana ハ, バ
-	diacritic "ひ", "び" ; katakana ヒ, ビ
-	diacritic "ふ", "ぶ" ; katakana フ, ブ
-	diacritic "へ", "べ" ; katakana ヘ, ベ
-	diacritic "ほ", "ぼ" ; katakana ホ, ボ
-	diacritic "ぱ", "ば" ; katakana パ, バ
-	diacritic "ぴ", "び" ; katakana ピ, ビ
-	diacritic "ぷ", "ぶ" ; katakana プ, ブ
-	diacritic "ぺ", "べ" ; katakana ペ, ベ
-	diacritic "ぽ", "ぼ" ; katakana ポ, ボ
-	dw 0 ; end
+	; col 1
+	db  4,  4, "B"
+	db  6,  4, "K"
+	db  8,  4, "T"
+	db 10,  4, "&"
+	db 12,  4, "5"
+	db 14,  4, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
 
-HandakutenTable:
-	diacritic "は", "ぱ" ; katakana ハ, パ
-	diacritic "ひ", "ぴ" ; katakana ヒ, ピ
-	diacritic "ふ", "ぷ" ; katakana フ, プ
-	diacritic "へ", "ぺ" ; katakana ヘ, ペ
-	diacritic "ほ", "ぽ" ; katakana ホ, ポ
-	diacritic "ば", "ぱ" ; katakana バ, パ
-	diacritic "び", "ぴ" ; katakana ビ, ピ
-	diacritic "ぶ", "ぷ" ; katakana ブ, プ
-	diacritic "べ", "ぺ" ; katakana ベ, ペ
-	diacritic "ぼ", "ぽ" ; katakana ボ, ポ
-	dw 0 ; end
+	; col 2
+	db  4,  6, "C"
+	db  6,  6, "L"
+	db  8,  6, "U"
+	db 10,  6, "+"
+	db 12,  6, "6"
+	db 14,  6, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 3
+	db  4,  8, "D"
+	db  6,  8, "M"
+	db  8,  8, "V"
+	db 10,  8, "-"
+	db 12,  8, "7"
+	db 14,  8, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 4
+	db  4, 10, "E"
+	db  6, 10, "N"
+	db  8, 10, "W"
+	db 10, 10, "'"
+	db 12, 10, "8"
+	db 14, 10, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 5
+	db  4, 12, "F"
+	db  6, 12, "O"
+	db  8, 12, "X"
+	db 10, 12, "0"
+	db 12, 12, "9"
+	db 14, 12, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 6
+	db  4, 14, "G"
+	db  6, 14, "P"
+	db  8, 14, "Y"
+	db 10, 14, "1"
+	db 12, 14, " "
+	db 14, 14, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 7
+	db  4, 16, "H"
+	db  6, 16, "Q"
+	db  8, 16, "Z"
+	db 10, 16, "2"
+	db 12, 16, " "
+	db 14, 16, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	; col 8
+	db  4, 18, "I"
+	db  6, 18, "R"
+	db  8, 18, "!"
+	db 10, 18, "3"
+	db 12, 18, " "
+	db 14, 18, KEYBOARD_UNKNOWN
+	db 16, 15, KEYBOARD_DONE
+
+	db  0,  0, 0
+
+; checks if any buttons were pressed and handles the input.
+; returns carry if either the A button or the B button were pressed.
+; this function is similar to 'HandleNamingScreenInput'.
+HandleNamingScreenInput_HalfWidth:
+	xor a
+	ld [wMenuInputSFX], a
+	ldh a, [hDPadHeld]
+	or a
+	jr z, .check_btns
+	; detected any button press
+	ld b, a
+	ld a, [wNamingScreenNumRows]
+	ld c, a
+	ld a, [wNamingScreenCursorX]
+	ld h, a
+	ld a, [wNamingScreenCursorY]
+	ld l, a
+	bit B_PAD_UP, b
+	jr z, .check_d_down
+	; move cursor down
+	dec a
+	bit B_PAD_DOWN, a
+	jr z, .apply_y_value
+	; wrap around
+	ld a, c
+	dec a
+	jr .apply_y_value
+.check_d_down
+	bit B_PAD_DOWN, b
+	jr z, .horizontal_directions
+	; move cursor up
+	inc a
+	cp c
+	jr c, .apply_y_value
+	; wrap around
+	xor a
+	jr .apply_y_value
+
+.horizontal_directions
+	cp $06
+	jr z, .check_btns
+	ld a, [wNamingScreenNumColumns]
+	ld c, a
+	ld a, h
+	bit B_PAD_LEFT, b
+	jr z, .check_d_right
+	dec a
+	bit B_PAD_DOWN, a
+	jr z, .apply_x_value
+	ld a, c
+	dec a
+	jr .apply_x_value
+.check_d_right
+	bit B_PAD_RIGHT, b
+	jr z, .check_btns
+	inc a
+	cp c
+	jr c, .apply_x_value
+	xor a
+	jr .apply_x_value
+
+.apply_y_value
+	ld l, a
+	jr .got_new_cursor_position
+
+.apply_x_value
+	ld h, a
+
+.got_new_cursor_position
+	push hl
+	call GetCharInfoFromPos_HalfWidth
+	inc hl
+	inc hl
+	ld d, [hl]
+	push de
+	call HideCursorAtCharPosition_HalfWidth
+	pop de
+	pop hl
+	ld a, l
+	ld [wNamingScreenCursorY], a
+	ld a, h
+	ld [wNamingScreenCursorX], a
+	xor a
+	ld [wNamingScreenCursorBlinkCounter], a
+	ld a, KEYBOARD_UNKNOWN
+	cp d
+	jr z, HandleNamingScreenInput_HalfWidth
+	ld a, SFX_CURSOR
+	ld [wMenuInputSFX], a
+
+.check_btns
+	ldh a, [hKeysPressed]
+	and PAD_A | PAD_B
+	jr z, .no_pressed_btns
+	and PAD_A
+	jr nz, .got_sfx ; MENU_CONFIRM
+	; the B button was pressed.
+	ld a, MENU_CANCEL
+.got_sfx
+	call PlaySFXConfirmOrCancel_Bank06
+	push af
+	call ShowCursorAtCharPosition_HalfWidth
+	pop af
+	scf
+	ret
+
+.no_pressed_btns
+	ld a, [wMenuInputSFX]
+	or a
+	call nz, PlaySFX
+.skip_sfx
+	ld hl, wNamingScreenCursorBlinkCounter
+	ld a, [hl]
+	inc [hl]
+	and $0f
+	ret nz
+	ld a, [wMenuVisibleCursorTile]
+	bit 4, [hl]
+	jr z, DrawSymbolAtCharPosition_HalfWidth
+;	fallthrough
+
+HideCursorAtCharPosition_HalfWidth:
+	ld a, [wMenuInvisibleCursorTile]
+;	fallthrough
+
+; this function is very similar to 'DrawSymbolAtCharPosition'.
+; input:
+;	a = which tile to draw
+;	[wNamingScreenCursorX] = cursor's x position on the keyboard screen
+;	[wNamingScreenCursorY] = cursor's y position on the keyboard screen
+DrawSymbolAtCharPosition_HalfWidth:
+	ld e, a
+	ld a, [wNamingScreenCursorX]
+	ld h, a
+	ld a, [wNamingScreenCursorY]
+	ld l, a
+	call GetCharInfoFromPos_HalfWidth
+	ld a, [hli] ; y
+	ld c, a
+	ld b, [hl] ; x
+	dec b
+	ld a, e ; tile
+	call UpdateNameTextCursor_HalfWidth
+	call WriteByteToBGMap0
+	or a
+	ret
+REPT $36 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 InitInputMultilineText:
 	ld a, MAX_MULTILINE_INPUT_LENGTH
@@ -6646,8 +6789,6 @@ InputMultilineText:
 	lb de, $38, $bf
 	call SetupText
 	call LoadFullWidthTextCursorTile
-	xor a ; NAME_MODE_HIRAGANA
-	ld [wNamingScreenMode], a
 
 	call UpdateMultilineInputScreenUI
 
@@ -6657,7 +6798,7 @@ InputMultilineText:
 
 	ld a, 9
 	ld [wNamingScreenNumColumns], a
-	ld a, 7
+	ld a, 6
 	ld [wNumMenuItems], a
 	ld a, SYM_CURSOR_R
 	ld [wMenuVisibleCursorTile], a
@@ -6671,37 +6812,17 @@ InputMultilineText:
 
 	ldh a, [hDPadHeld]
 	and PAD_START
-	jr z, .check_select
+	jr z, .handle_input
+
+	; the Start button was pressed.
 	ld a, MENU_CONFIRM
 	call PlaySFXConfirmOrCancel_Bank06
 	call HideCursorAtCharPosition
 	ld a, 6
-	ld [wNamingScreenCursorY], a
-	inc a ; 7
 	ld [wNamingScreenCursorX], a
+	dec a ; 5
+	ld [wNamingScreenCursorY], a
 	call ShowCursorAtCharPosition
-	jr .loop
-
-.check_select
-	ldh a, [hDPadHeld]
-	and PAD_SELECT
-	jr z, .handle_input
-	ld a, MENU_CONFIRM
-	call PlaySFXConfirmOrCancel_Bank06
-	ld a, [wNamingScreenMode]
-	inc a
-	cp NUM_NAME_MODES
-	jr c, .got_mode
-	xor a ; NAME_MODE_HIRAGANA
-.got_mode
-	ld [wNamingScreenMode], a
-	ld a, MENU_CONFIRM
-	call PlaySFXConfirmOrCancel_Bank06
-	call HideCursorAtCharPosition
-	xor a
-	ld [wNamingScreenCursorX], a
-	ld [wNamingScreenCursorY], a
-	call UpdateMultilineInputScreenUI
 	jr .loop
 
 .handle_input
@@ -6709,10 +6830,12 @@ InputMultilineText:
 	jr nc, .loop
 	cp MENU_CANCEL
 	jr z, .remove_last_char
+	; on A button
 	call SelectKeyboardItem_Multiline
 	jr nc, .loop
-	call FinalizeInputName
-	ret
+	; if the player selected the end button,
+	; end its naming.
+	jp FinalizeInputName
 
 .remove_last_char
 	ld a, [wNamingScreenBufferLength]
@@ -6730,6 +6853,38 @@ InputMultilineText:
 	dec [hl]
 	call ProcessMultilineInputWithUnderbar
 	jr .loop
+
+; draws the deck naming keyboard and prints the question, if it exists.
+; this function is very similar to 'UpdateNamingScreenUI'.
+; input:
+;	[wNamingScreenQuestionPointer] = pointer for text data (2 bytes)
+UpdateNamingScreenUI_HalfWidth:
+	call DrawTextboxForKeyboard
+	call ProcessTextWithUnderbar_HalfWidth
+	ld hl, wNamingScreenQuestionPointer
+	ld c, [hl]
+	inc hl
+	ld a, [hl]
+	ld h, a
+	or c
+	jr z, .put_text_end
+	; print the question string.
+	ld l, c
+	call PlaceTextItems
+.put_text_end
+	; print "End".
+	ld hl, UpdateNamingScreenUI.end_text
+	call PlaceTextItems
+	; print the keyboard characters.
+	ldtx hl, DeckNameKeyboardText
+	lb de, 2, 4
+	call InitTextPrinting
+	call ProcessTextFromID
+	jp EnableLCD
+
+REPT $7 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ; stray ret
 	ret
@@ -6759,8 +6914,8 @@ Func_1b6f2:
 	ld b, SCREEN_WIDTH
 	call BankswitchVRAM1
 	call WriteBBytesToDE_Bank06
-	call BankswitchVRAM0
-	ret
+	jp BankswitchVRAM0
+	nop ; dummy NOP here to pad space freed
 
 UpdateMultilineInputScreenUI:
 	ld c, 4 ; y
@@ -6768,74 +6923,18 @@ UpdateMultilineInputScreenUI:
 	call ProcessMultilineInputWithUnderbar
 	ld hl, .end_text
 	call PlaceTextItems
-
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .not_hiragana
-; NAME_MODE_HIRAGANA
-	ld hl, .switches_from_hiragana
-	call PlaceTextItems
-	ldtx hl, HiraganaKeyboardText
-	jr .process
-
-.not_hiragana
-	dec a
-	jr nz, .not_katakana
-; NAME_MODE_KATAKANA
-	ld hl, .switches_from_katakana
-	call PlaceTextItems
-	ldtx hl, KatakanaKeyboardText
-	jr .process
-
-.not_katakana
-	dec a
-	jr nz, .lower_abc
-; NAME_MODE_UPPER_ABC
-	ld hl, .switches_from_uppercase
-	call PlaceTextItems
-	ldtx hl, UppercaseKeyboardText
-	jr .process
-
-.lower_abc
-; NAME_MODE_LOWER_ABC
-	ld hl, .switches_from_lowercase
-	call PlaceTextItems
-	ldtx hl, LowercaseKeyboardText
-
-.process
+	ldtx hl, PlayerNameKeyboardText
 	lb de, 2, 5
 	call InitTextPrinting
 	call ProcessTextFromID
-	call EnableLCD
-	ret
+	jp EnableLCD
 
 .end_text
 	textitem 16, 17, EndText
 	textitems_end
-
-.switches_from_hiragana
-	textitem  2, 17, KatakanaOptionText
-	textitem  7, 17, UppercaseOptionText
-	textitem 12, 17, LowercaseOptionText
-	textitems_end
-
-.switches_from_katakana
-	textitem  2, 17, HiraganaOptionText
-	textitem  7, 17, UppercaseOptionText
-	textitem 12, 17, LowercaseOptionText
-	textitems_end
-
-.switches_from_uppercase
-	textitem  2, 17, HiraganaOptionText
-	textitem  7, 17, KatakanaOptionText
-	textitem 12, 17, LowercaseOptionText
-	textitems_end
-
-.switches_from_lowercase
-	textitem  2, 17, HiraganaOptionText
-	textitem  7, 17, KatakanaOptionText
-	textitem 12, 17, UppercaseOptionText
-	textitems_end
+REPT $68 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 SelectKeyboardItem_Multiline:
 	ld a, [wNamingScreenCursorX]
@@ -6852,120 +6951,6 @@ SelectKeyboardItem_Multiline:
 	cp KEYBOARD_DONE
 	jp z, .set_carry
 
-; toggle 1
-	cp KEYBOARD_TOGGLE_1
-	jr nz, .check_toggle_2
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .to_hiragana_mode
-; to katakana mode
-	ld a, NAME_MODE_KATAKANA
-	jp .set_mode
-.to_hiragana_mode
-	xor a ; NAME_MODE_HIRAGANA
-	jp .set_mode
-
-.check_toggle_2
-	cp KEYBOARD_TOGGLE_2
-	jr nz, .check_toggle_3
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_UPPER_ABC
-	jr c, .to_upper_abc_mode
-; to katakana mode
-	ld a, NAME_MODE_KATAKANA
-	jr .set_mode
-.to_upper_abc_mode
-	ld a, NAME_MODE_UPPER_ABC
-	jr .set_mode
-
-.check_toggle_3
-	cp KEYBOARD_TOGGLE_3
-	jr nz, .character_item
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_LOWER_ABC
-	jr nz, .to_lower_abc_mode
-; to upper abc mode
-	ld a, NAME_MODE_UPPER_ABC
-	jr .set_mode
-.to_lower_abc_mode
-	ld a, NAME_MODE_LOWER_ABC
-
-.set_mode
-	ld [wNamingScreenMode], a
-	call UpdateMultilineInputScreenUI
-	or a
-	ret
-
-.character_item
-	ld a, [wNamingScreenMode]
-	cp NAME_MODE_UPPER_ABC
-	jr z, .upper_abc
-	cp NAME_MODE_LOWER_ABC
-	jr z, .lower_abc
-
-; handle diacritics
-	ldfw bc, "゛"
-	ld a, d
-	cp b
-	jr nz, .check_handakuten
-	ld a, e
-	cp c
-	jr nz, .check_handakuten
-	push hl
-	ld hl, DakutenTable
-	call GetDiacriticCharacter
-	pop hl
-	jr c, .no_carry
-	jr .apply_diacritic
-
-.check_handakuten
-	ldfw bc, "゜"
-	ld a, d
-	cp b
-	jr nz, .not_diacritic
-	ld a, e
-	cp c
-	jr nz, .not_diacritic
-	push hl
-	ld hl, HandakutenTable
-	call GetDiacriticCharacter
-	pop hl
-	jr c, .no_carry
-
-.apply_diacritic
-; decrease length by 2
-	ld a, [wNamingScreenBufferLength]
-	dec a
-	dec a
-	ld [wNamingScreenBufferLength], a
-; get pointer to last character in buffer
-	ld hl, wNamingScreenBuffer
-	push de
-	ld d, $00
-	ld e, a
-	add hl, de
-	pop de
-	ld a, [hl]
-	jr .add_character
-
-.not_diacritic
-	ld a, d
-	or a
-	jr nz, .add_character
-	ld a, [wNamingScreenMode]
-	or a
-	jr nz, .katakana
-; NAME_MODE_HIRAGANA
-	ld a, TX_HIRAGANA
-	jr .add_character
-.katakana
-; NAME_MODE_KATAKANA
-	ld a, TX_KATAKANA
-	jr .add_character
-.lower_abc
-	inc hl
-	inc hl
-.upper_abc
 	ld e, [hl]
 	inc hl
 	ld a, [hl]
@@ -7011,6 +6996,107 @@ SelectKeyboardItem_Multiline:
 .set_carry
 	scf
 	ret
+
+; returns after calling ZeroObjectPositions if a = [wMenuInvisibleCursorTile].
+; otherwise, uses [wNamingScreenBufferLength], [wNamingScreenBufferMaxLength], and
+; [wNamingScreenNamePosition] to determine x/y positions and calls SetOneObjectAttributes.
+; this function is similar to 'UpdateNameTextCursor'.
+; preserves all registers
+; input:
+;	a = cursor tile
+UpdateNameTextCursor_HalfWidth:
+	push af
+	push bc
+	push de
+	push hl
+	push af
+	call ZeroObjectPositions
+	pop af
+	ld b, a
+	ld a, [wMenuInvisibleCursorTile]
+	cp b
+	jr z, .done ; cursor is invisible, done
+
+; place text cursor on the next name character position
+	ld a, [wNamingScreenBufferLength]
+	ld d, a
+	ld a, [wNamingScreenBufferMaxLength]
+	ld e, a
+	ld a, d
+	cp e
+	jr nz, .name_not_full
+	dec a
+.name_not_full
+	dec a
+	ld d, a
+	ld hl, wNamingScreenNamePosition
+	ld a, [hl]
+	sla a
+	add d
+	ld d, a
+	ld h, 4
+	ld l, d
+	call HtimesL
+	ld a, l
+	add 8
+	ld d, a ; x
+	ld e, 24 ; y
+	lb bc, $0, $0 ; attributes, tile number
+	call SetOneObjectAttributes
+.done
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+
+; returns carry if "End" was selected on the keyboard
+SelectKeyboardItem_HalfWidth:
+	ld a, [wNamingScreenCursorX]
+	ld h, a
+	ld a, [wNamingScreenCursorY]
+	ld l, a
+	call GetCharInfoFromPos_HalfWidth
+	inc hl
+	inc hl
+	ld a, [hl]
+	cp KEYBOARD_DONE
+	jr nz, .add_character
+	scf
+	ret
+
+.add_character
+	ld d, a
+	ld hl, wNamingScreenBufferLength
+	ld a, [hl]
+	ld c, a
+	push hl
+	ld hl, wNamingScreenBufferMaxLength
+	cp [hl]
+	pop hl
+	jr nz, .not_last_character
+; overwrite last character
+	ld hl, wNamingScreenBuffer
+	dec hl
+; hl = wNamingScreenBuffer - 1
+	jr .got_char_position
+
+; increase name length before adding the character.
+.not_last_character
+	inc [hl]
+	ld hl, wNamingScreenBuffer
+.got_char_position
+	ld b, $00
+	add hl, bc
+	ld [hl], d
+	inc hl
+	ld [hl], TX_END ; null terminator.
+	call ProcessTextWithUnderbar_HalfWidth
+	or a
+	ret
+REPT $28 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 ProcessMultilineInputWithUnderbar:
 	ld a, [wNamingScreenBufferLength]

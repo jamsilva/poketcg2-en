@@ -617,7 +617,7 @@ DebugLectureDuelText:
 	done
 
 ThunderboltDeckName:
-	textfw "10まんボルト"
+	text "Thunderbolt"
 	done
 
 DuelistGR1Name:
@@ -641,7 +641,7 @@ DuelistGRXName:
 	done
 
 MaxEnergyDeckName:
-	textfw "MAXエナジー"
+	text "Max Energy"
 	done
 
 DuelistMrIshiharaName:
@@ -649,19 +649,19 @@ DuelistMrIshiharaName:
 	done
 
 DemonicForestDeckName:
-	textfw "あくまのもり"
+	text "Dark Forest"
 	done
 
 GatheringNidoranDeckName:
-	textfw "あつまれニドラン"
+	text "Gathering Nidoran"
 	done
 
 RunningWildDeckName:
-	textfw "あばれんぼう"
+	text "Running Wild"
 	done
 
 RainDanceConfusionDeckName:
-	textfw "あまごいこんらん"
+	text "Rain Dance Confusion"
 	done
 
 DuelistAaronName:
@@ -669,259 +669,259 @@ DuelistAaronName:
 	done
 
 AaronsStep1DeckName:
-	textfw "あらいモンステップ1"
+	text "Aaron's Step 1"
 	done
 
 AaronsStep2DeckName:
-	textfw "あらいモンステップ2"
+	text "Aaron's Step 2"
 	done
 
 AaronsStep3DeckName:
-	textfw "あらいモンステップ3"
+	text "Aaron's Step 3"
 	done
 
 PowerOfDarknessDeckName:
-	textfw "あんこくのパワー"
+	text "Power of Darkness"
 	done
 
 ChokeDeckName:
-	textfw "いきのねとめろ!"
+	text "Choking!"
 	done
 
 ThreeYearsOnRockDeckName:
-	textfw "いわのうえにも3ねん"
+	text "3 Years on a Rock"
 	done
 
 WhirlpoolShowerDeckName:
-	textfw "うずしおのシャワー"
+	text "Whirlpool Shower"
 	done
 
 TestYourLuckDeckName:
-	textfw "うんだめし"
+	text "Test your Luck"
 	done
 
 TorrentialFloodDeckName:
-	textfw "おおあめこうずい"
+	text "Torrential Flood"
 	done
 
 GlitteringScalesDeckName:
-	textfw "かがやくりんぷん"
+	text "Glittering Scales"
 	done
 
 SpiritedAwayDeckName:
-	textfw "かみかくし"
+	text "Spirited Away"
 	done
 
 RiversideWalkDeckName:
-	textfw "かわらのおさんぽ"
+	text "Riverside Walk"
 	done
 
 CompleteCombustionDeckName:
-	textfw "かんぜんねんしょう"
+	text "Complete Combustion"
 	done
 
 YouCanDoItMachopDeckName:
-	textfw "がんばれ!ワンリキー"
+	text "You can do it Machop"
 	done
 
 DangerousBenchDeckName:
-	textfw "きけんなベンチ"
+	text "Dangerous Bench"
 	done
 
 StrangeDeckName:
-	textfw "きみょうな"
+	text "Strange"
 	done
 
 SuddenGrowthDeckName:
-	textfw "きゅうせいちょう"
+	text "Sudden Growth"
 	done
 
 PowerfulPokemonDeckName:
-	textfw "きょうりょくポケモン"
+	text "Powerful Pokémon"
 	done
 
 MadPetalsDeckName:
-	textfw "くるえるはなびら"
+	text "Mad Petals"
 	done
 
 ProtohistoricDeckName:
-	textfw "げんしじだい"
+	text "Protohistoric"
 	done
 
 InsectCollectionDeckName:
-	textfw "こんちゅうさいしゅう"
+	text "Insect Collection"
 	done
 
 StarterDeckName:
-	textfw "さいしょの"
+	text "Starter"
 	done
 
 VengefulAntiGR3DeckName:
-	textfw "しかえしGR3ごう"
+	text "GR3's Punishment"
 	done
 
 NaturalScienceDeckName:
-	textfw "しぜんかがく"
+	text "Natural Science"
 	done
 
 BenchTrapDeckName:
-	textfw "じごくのベンチ"
+	text "Bench Trap"
 	done
 
 EyeOfTheStormDeckName:
-	textfw "たいふうのめ"
+	text "Eye of the Storm"
 	done
 
 SweatAntiGR1DeckName:
-	textfw "たおせ!GR1ごう"
+	text "GR1's Defeat"
 	done
 
 SmashDeckName:
-	textfw "たたきつぶせ!"
+	text "Smash!"
 	done
 
 GreatEarthquakeDeckName:
-	textfw "だいじしん"
+	text "Great Earthquake"
 	done
 
 GreatDragonDeckName:
-	textfw "だいドラゴン"
+	text "Great Dragon"
 	done
 
 FullStrengthDeckName:
-	textfw "ちからまかせ"
+	text "Full Strength"
 	done
 
 SuperDestructivePowerDeckName:
-	textfw "ちょうはかいりょく"
+	text "Destructive Power"
 	done
 
 PsychicEliteDeckName:
-	textfw "ちょうエリート"
+	text "Psychic Elite"
 	done
 
 DirectHitDeckName:
-	textfw "ちょくげき"
+	text "Direct Hit"
 	done
 
 ThrowOutDeckName:
-	textfw "つまみだせ!"
+	text "Throw Out!"
 	done
 
 ThisIsThePowerOfElectricityDeckName:
-	textfw "でんきのチカラだ"
+	text "Power of Electricity"
 	done
 
 QuickAttackDeckName:
-	textfw "でんこうせっか"
+	text "Quick Attack"
 	done
 
 LegendaryFossilDeckName:
-	textfw "でんせつのかせき"
+	text "Legendary Fossil"
 	done
 
 ElectricCurrentShockDeckName:
-	textfw "でんりゅうひばな"
+	text "Electric Current"
 	done
 
 VeryRareCardDeckName:
-	textfw "とってもレアカード"
+	text "Rare Card Exhibition"
 	done
 
 PoisonousSwampDeckName:
-	textfw "どくのぬまち"
+	text "Poisonous Swamp"
 	done
 
 PoisonGoopGasDeckName:
-	textfw "どくのベトベトガス"
+	text "Poison Goop Gas"
 	done
 
 PoisonVespidsDeckName:
-	textfw "どくばち"
+	text "Poisonous Bees"
 	done
 
 BeachDeckName:
-	textfw "なみうちぎわの"
+	text "Beach"
 	done
 
 PuppetMasterDeckName:
-	textfw "にんぎょうつかい"
+	text "Puppet Master"
 	done
 
 SurvivingWaterDeckName:
-	textfw "のこされたみずの"
+	text "Surviving Water"
 	done
 
 SurvivingGreenDeckName:
-	textfw "のこされたみどりの"
+	text "Surviving Grass"
 	done
 
 ImmortalPokemonDeckName:
-	textfw "ふじみのポケモン"
+	text "Immortal Pokémon"
 	done
 
 ImmortalFlameDeckName:
-	textfw "ふめつのほのお"
+	text "Immortal Flame"
 	done
 
 WeirdDeckName:
-	textfw "へんな"
+	text "Weird"
 	done
 
 FlameFestivalDeckName:
-	textfw "ほのおのおまつり"
+	text "Flame Festival"
 	done
 
 GiveInAntiGR2DeckName:
-	textfw "まけろ!GR2ごう"
+	text "GR2's Surrender"
 	done
 
 SplashingAboutDeckName:
-	textfw "みずあそび"
+	text "Splashing About"
 	done
 
 GazeUponThePowerOfFireDeckName:
-	textfw "みよ!ほのおのパワー"
+	text "Power of Fire"
 	done
 
 EverybodysFriendDeckName:
-	textfw "みんなともだち"
+	text "Everybody's Friend"
 	done
 
 SkilledWarriorDeckName:
-	textfw "むしゃしゅぎょう"
+	text "Skilled Warrior"
 	done
 
 ColorlessEnergyDeckName:
-	textfw "むしょくエネルギー"
+	text "Colorless Energy"
 	done
 
 BlazingFlameDeckName:
-	textfw "もえさかるほのお"
+	text "Blazing Flame"
 	done
 
 IncinerateDeckName:
-	textfw "やきつくせ!"
+	text "Incinerate!"
 	done
 
 GhostDeckName:
-	textfw "ゆうれい"
+	text "Ghost"
 	done
 
 GoArcanineDeckName:
-	textfw "ゆけ!ウィンディ"
+	text "Go Arcanine!"
 	done
 
 UnforgivingAntiGR4DeckName:
-	textfw "ゆるさんGR4ごう"
+	text "GR4's Comeuppance"
 	done
 
 HandedOverGRDeckName:
-	textfw "わたされたGR"
+	text "GR Handover"
 	done
 
 BadGuysDeckName:
-	textfw "わるいやつら"
+	text "Bad Guys"
 	done
 
 DuelistAiraName:
@@ -941,7 +941,7 @@ DuelistAnnaName:
 	done
 
 EeveeShowdownDeckName:
-	textfw "イーブイたいけつ"
+	text "Eevee Showdown"
 	done
 
 DuelistIshiiName:
@@ -957,11 +957,11 @@ DuelistImakuniName:
 	done
 
 WaterStreamDeckName:
-	textfw "ウォーターストリーム"
+	text "Water Stream"
 	done
 
 WaterLegendDeckName:
-	textfw "ウォーターレジェンド"
+	text "Water Legend"
 	done
 
 DuelistAmyName:
@@ -969,7 +969,7 @@ DuelistAmyName:
 	done
 
 UltraRemovalDeckName:
-	textfw "ウルトラリムーブ"
+	text "Ultra Removal"
 	done
 
 DuelistEijiName:
@@ -977,11 +977,11 @@ DuelistEijiName:
 	done
 
 EnergyRemovalDeckName:
-	textfw "エネルギー・リムーブ"
+	text "Energy Removal"
 	done
 
 OverflowDeckName:
-	textfw "オーバーフロー"
+	text "Overflow"
 	done
 
 DuelistJackName:
@@ -993,7 +993,7 @@ DuelistKanokoName:
 	done
 
 SnorlaxGuardDeckName:
-	textfw "カビゴンとおせんぼ"
+	text "Snorlax Guard"
 	done
 
 DuelistKamiyaName:
@@ -1021,7 +1021,7 @@ DuelistRickName:
 	done
 
 GrandFireDeckName:
-	textfw "グランドファイヤー"
+	text "Grand Fire"
 	done
 
 DuelistGraceName:
@@ -1029,19 +1029,19 @@ DuelistGraceName:
 	done
 
 GreatRocket1DeckName:
-	textfw "グレートロケット1"
+	text "Great Rocket 1"
 	done
 
 GreatRocket2DeckName:
-	textfw "グレートロケット2"
+	text "Great Rocket 2"
 	done
 
 GreatRocket3DeckName:
-	textfw "グレートロケット3"
+	text "Great Rocket 3"
 	done
 
 GreatRocket4DeckName:
-	textfw "グレートロケット4"
+	text "Great Rocket 4"
 	done
 
 DuelistDanielName:
@@ -1061,11 +1061,11 @@ DuelistGodaName:
 	done
 
 PsychicBattleDeckName:
-	textfw "サイキックバトル"
+	text "Psychic Battle"
 	done
 
 PsychicDeckName:
-	textfw "サイコキネシス"
+	text "Psychic"
 	done
 
 DuelistSamejimaName:
@@ -1073,7 +1073,7 @@ DuelistSamejimaName:
 	done
 
 AwesomeFossilDeckName:
-	textfw "シブイかせき"
+	text "Awesome Fossil"
 	done
 
 DuelistShokoName:
@@ -1093,7 +1093,7 @@ DuelistAndrewName:
 	done
 
 SkySparkDeckName:
-	textfw "スカイスパーク"
+	text "Sky Spark"
 	done
 
 DuelistSteveName:
@@ -1129,15 +1129,15 @@ DuelistChrisName:
 	done
 
 DarkScienceDeckName:
-	textfw "ダークサイエンス"
+	text "Dark Science"
 	done
 
 DamageChaosDeckName:
-	textfw "ダメージだいこんらん"
+	text "Damage Chaos"
 	done
 
 TextureTuner7DeckName:
-	textfw "テクスチャー7へんげ"
+	text "Texture Tuner 7"
 	done
 
 DuelistDeeName:
@@ -1157,11 +1157,11 @@ DuelistTobichanName:
 	done
 
 TripleZapdosDeckName:
-	textfw "トリプルサンダー"
+	text "Triple Zapdos"
 	done
 
 TrainerImprisonDeckName:
-	textfw "トレーナーふういん"
+	text "Trainer Imprison"
 	done
 
 YourPracticeDeck1Name:
@@ -1177,11 +1177,11 @@ YourPracticeDeck3Name:
 	done
 
 RagingBillowOfFistsDeckName:
-	textfw "ドトウのてっけん"
+	text "Raging Wave of Fists"
 	done
 
 SteadyIncreaseDeckName:
-	textfw "ドンドンぞうしょく"
+	text "Steady Increase"
 	done
 
 DuelistKnightName:
@@ -1197,7 +1197,7 @@ DuelistNishijimaName:
 	done
 
 NewMachokeDeckName:
-	textfw "ニューゴーリキー"
+	text "New Machoke"
 	done
 
 DuelistRyanName:
@@ -1211,11 +1211,11 @@ DuelistKristinName:
 SECTION "Text 6", ROMX
 
 BadDreamDeckName:
-	textfw "バッドドリーム"
+	text "Bad Dream"
 	done
 
 LoveToBattleDeckName:
-	textfw "バトルだいすき"
+	text "Love to Battle"
 	done
 
 DuelistHideroName:
@@ -1235,11 +1235,11 @@ DuelistBishopName:
 	done
 
 BigThunderDeckName:
-	textfw "ビッグサンダー"
+	text "Big Thunder"
 	done
 
 ElectricSelfDestructDeckName:
-	textfw "ビリビリじばく"
+	text "Electric Explosion"
 	done
 
 DuelistBiruritchiName:
@@ -1251,19 +1251,19 @@ DuelistPierrotName:
 	done
 
 ILovePikachuDeckName:
-	textfw "ピカチュウだいすき"
+	text "I Love Pikachu"
 	done
 
 ChainLightningByPikachuDeckName:
-	textfw "ピカチュウでビリビリ"
+	text "Pikachu's Lightning"
 	done
 
 FireballDeckName:
-	textfw "ファイヤーボール"
+	text "Fireball"
 	done
 
 BenchCallDeckName:
-	textfw "ベンチよびだし"
+	text "Bench Call"
 	done
 
 DuelistPawnName:
@@ -1271,15 +1271,15 @@ DuelistPawnName:
 	done
 
 PoisonStormDeckName:
-	textfw "ポイズンストーム"
+	text "Poison Storm"
 	done
 
 PoisonMistDeckName:
-	textfw "ポイズンミスト"
+	text "Poison Mist"
 	done
 
 PokemonsPowerDeckName:
-	textfw "ポケモンパワー"
+	text "Pokémon Power"
 	done
 
 DuelistErikName:
@@ -1303,7 +1303,7 @@ DuelistMasqueradeName:
 	done
 
 ParalyzedParalyzedDeckName:
-	textfw "マヒ!マヒ!"
+	text "Paralyzed!Paralyzed!"
 	done
 
 DuelistMamiName:
@@ -1323,7 +1323,7 @@ DuelistSamName:
 	done
 
 SamsPracticeDeckName:
-	textfw "ミカサのレクチャー"
+	text "Sam's Practice"
 	done
 
 DuelistHeatherName:
@@ -1391,23 +1391,23 @@ DuelistRonaldName:
 	done
 
 RonaldsGRXDeckName:
-	textfw "ランドのGRX"
+	text "Ronald's GRX"
 	done
 
 RonaldsUncoolDeckName:
-	textfw "ランドのイケてない"
+	text "Ronald's Uncool"
 	done
 
 RonaldsUltraDeckName:
-	textfw "ランドのウルトラ"
+	text "Ronald's Ultra"
 	done
 
 RonaldsSuperDeckName:
-	textfw "ランドのスーパー"
+	text "Ronald's Super"
 	done
 
 RonaldsPowerDeckName:
-	textfw "ランドのパワー"
+	text "Ronald's Power"
 	done
 
 DuelistStephanieName:
@@ -1431,7 +1431,7 @@ DuelistRuiName:
 	done
 
 PracticeDeckName:
-	textfw "レクチャー"
+	text "Practice"
 	done
 
 DuelistRennaName:
@@ -1439,11 +1439,11 @@ DuelistRennaName:
 	done
 
 RollingStoneDeckName:
-	textfw "ローリングストーン"
+	text "Rolling Stone"
 	done
 
 RockBlastDeckName:
-	textfw "ロックブラスト!"
+	text "Rock Blast!"
 	done
 
 DuelistAdamName:

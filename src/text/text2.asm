@@ -1548,22 +1548,6 @@ DeckText:
 	textfw "デッキ"
 	done
 
-HiraganaOptionText:
-	textfw "ひらがな"
-	done
-
-KatakanaOptionText:
-	textfw "カタカナ"
-	done
-
-UppercaseOptionText:
-	textfw "ABC "
-	done
-
-LowercaseOptionText:
-	textfw "abc "
-	done
-
 EndText:
 	textfw "おわる"
 	done
@@ -1572,40 +1556,20 @@ WhatIsYourNameText:
 	textfw "あなたのなまえは?"
 	done
 
-HiraganaKeyboardText:
-	textfw "あ か さ た な は ま や ら"
-	linefw "い き し ち に ひ み ゆ り"
-	linefw "う く す つ ぬ ふ む よ る"
-	linefw "え け せ て ね へ め わ れ"
-	linefw "お こ そ と の ほ も ん ろ"
-	linefw "ゃ ゅ ょ っ を ゛ ゜ ー  "
-	done
-
-KatakanaKeyboardText:
-	textfw "ア カ サ タ ナ ハ マ ヤ ラ"
-	linefw "イ キ シ チ ニ ヒ ミ ユ リ"
-	linefw "ウ ク ス ツ ヌ フ ム ヨ ル"
-	linefw "エ ケ セ テ ネ ヘ メ ワ レ"
-	linefw "オ コ ソ ト ノ ホ モ ン ロ"
-	linefw "ャ ュ ョ ッ ヲ ゛ ゜ ー  "
-	done
-
-UppercaseKeyboardText:
+PlayerNameKeyboardText:
 	textfw "A B C D E F G H I"
 	linefw "J K L M N O P Q R"
 	linefw "S T U V W X Y Z !"
 	linefw "? & + - ・ 0 1 2 3"
-	linefw "4 5 6 7 8 9 <No> <Lv> ぁ"
-	linefw "ぃ ぅ ぇ ぉ ァ ィ ゥ ェ ォ"
+	linefw "4 5 6 7 8 9 <No> <Lv>"
 	done
 
-LowercaseKeyboardText:
-	textfw "a b c d e f g h i"
-	linefw "j k l m n о p q r"
-	linefw "s t u v w x y z  "
-	linefw "@ & / * + - = ・ ˍ"
-	linefw ": ; _ < >        "
-	linefw "<LIGHTNING> <GRASS> <FIRE> <WATER> <PSYCHIC> <FIGHTING> <COLORLESS> <RAINBOW>  "
+DeckNameKeyboardText:
+	textfw "A B C D E F G H I"
+	linefw "J K L M N O P Q R"
+	linefw "S T U V W X Y Z !"
+	linefw "? & + - ' 0 1 2 3"
+	linefw "4 5 6 7 8 9"
 	done
 
 NewDeckText:
@@ -2249,83 +2213,83 @@ AutoDeckMachine2MysteriousCardDecksTextPadded:
 	done
 
 MachineElectricFireDeckName:
-	textfw "エレキファイヤー"
+	text "Lightning & Fire"
 	done
 
 MachineBattleWaterDeckName:
-	textfw "バトルウォーター"
+	text "Water & Fighting"
 	done
 
 MachineEsperGreenDeckName:
-	textfw "エスパーグリーン"
+	text "Grass & Psychic"
 	done
 
 MachineAwesomeFossilsDeckName:
-	textfw "シブイかせき"
+	text "Awesome Fossils"
 	done
 
 MachineRockFestivalDeckName:
-	textfw "ロックフェスティバル"
+	text "Rock Party"
 	done
 
 MachineJabHookDeckName:
-	textfw "ジャブだフックだ!"
+	text "Jab & Hook!"
 	done
 
 MachineNationalParkDeckName:
-	textfw "しんりんこうえん"
+	text "National Park"
 	done
 
 MachineSelectiveBreedingDeckName:
-	textfw "ひんしゅかいりょう"
+	text "Selective Breeding"
 	done
 
 MachineInsulationDeckName:
-	textfw "ぜつえんたい"
+	text "Insulation"
 	done
 
 MachineAntarcticDeckName:
-	textfw "なんきょく"
+	text "Antarctic"
 	done
 
 MachineRiskyBlazeDeckName:
-	textfw "すてみのほのお"
+	text "Risky Blaze"
 	done
 
 MachineRagingCharizardDeckName:
-	textfw "リザードンおおあばれ"
+	text "Raging Charizard"
 	done
 
 MachineZapdosPowerPlantDeckName:
-	textfw "サンダーはつでんしょ"
+	text "Zapdos Power Plant"
 	done
 
 MachineElectricShockDeckName:
-	textfw "でんきショック"
+	text "Electric Shock"
 	done
 
 MachineSpecialBarrierDeckName:
-	textfw "とくしゅバリヤー"
+	text "Special Barrier"
 	done
 
 MachineEvolutionProhibitedDeckName:
-	textfw "しんかふのう"
+	text "Evolution Prohibited"
 	done
 
 MachineMewLv15DeckName:
-	textfw "ミュウ<Lv>15"
+	text "Mew Lv15"
 	done
 
 MachineVenusaurLv64DeckName:
-	textfw "フシギバナ<Lv>64"
+	text "Venusaur Lv64"
 	done
 
 MachineMutualDestructionDeckName:
-	textfw "ともだおれ"
+	text "Mutual Destruction"
 	done
 
 MachineEverybodySurfDeckName:
-	textfw "みんなでなみのり"
+	text "Everybody Surf"
 	done
 
 MachineStarterDeckDescriptionText:
@@ -2529,124 +2493,124 @@ MachineGreatDragonDeckDescriptionText:
 	done
 
 MachineCaveExplorationDeckName:
-	textfw "どうくつたんけん"
+	text "Cave Exploration"
 	done
 
 MachineOminousMeadowDeckName:
-	textfw "あやしいはなばたけ"
+	text "Ominous Meadow"
 	done
 
 MachineAtrociousWeezingDeckName:
-	textfw "きょうあくマタドガス"
+	text "Atrocious Weezing"
 	done
 
 MachineTheBenchIsAlsoASurpriseDeckName:
-	textfw "ベンチもビックリ"
+	text "Bench Surprise"
 	done
 
 MachineEnergyConservationDeckName:
-	textfw "しょうエネルギー"
+	text "Energy Conservation"
 	done
 
 MachineSonicboomDeckName:
-	textfw "ソニックブーム"
+	text "Sonicboom"
 	done
 
 MachineRageOfTheHeavensDeckName:
-	textfw "てんくうのいかり"
+	text "Rage of the Skies"
 	done
 
 MachineDarkWaterDeckName:
-	textfw "ダークウォーター"
+	text "Dark Water"
 	done
 
 MachineQuickFreezeDeckName:
-	textfw "きゅうそくれいとう"
+	text "Quickfreeze"
 	done
 
 MachineWaterGangDeckName:
-	textfw "みずのギャングだん"
+	text "Water Gang"
 	done
 
 MachineOminousSpiritFlamesDeckName:
-	textfw "あやしいヒトダマ"
+	text "Ominous Flames"
 	done
 
 MachineEternalFireDeckName:
-	textfw "えいえんのファイヤー"
+	text "Eternal Fire"
 	done
 
 MachineBewareTheTrapDeckName:
-	textfw "ワナにごちゅうい!"
+	text "Beware the Trap!"
 	done
 
 MachineOgresKickDeckName:
-	textfw "キックのオニ"
+	text "Angry Kick"
 	done
 
 MachineHeavyWorkDeckName:
 	; the same as Full Strength Deck but renamed for Machine
-	textfw "ちからわざ"
+	text "Heavy Work"
 	done
 
 MachineSlowbrosFishingDeckName:
-	textfw "ヤドランともづり"
+	text "Slowbro's Fishing"
 	done
 
 MachineBenchPanicDeckName:
-	textfw "ベンチはパニック!"
+	text "Bench Panic!"
 	done
 
 MachineKingDragoniteDeckName:
-	textfw "おうじゃカイリュー"
+	text "King Dragonite"
 	done
 
 MachineDarkCharizardDeckName:
-	textfw "わるいリザードン!"
+	text "Dark Charizard!"
 	done
 
 MachineDarkBlastoiseDeckName:
-	textfw "わるいカメックス!"
+	text "Dark Blastoise!"
 	done
 
 MachineDarkVenusaurDeckName:
-	textfw "わるいフシギバナ!"
+	text "Dark Venusaur!"
 	done
 
 MachineDarkDragoniteDeckName:
-	textfw "わるいカイリュー!"
+	text "Dark Dragonite!"
 	done
 
 MachinePerfectHealthDeckName:
-	textfw "けんこうゆうりょう"
+	text "Perfect Health"
 	done
 
 MachineSuperSoakerDeckName:
-	textfw "スーパーみずでっぽう"
+	text "Super Soaker"
 	done
 
 MachineHellsDemonDeckName:
-	textfw "ちていのあくま"
+	text "Underworld Fight"
 	done
 
 MachinePremiumThunderDeckName:
-	textfw "プレミアムサンダー"
+	text "Premium Thunder"
 	done
 
 MachineMysteriousMewtwoDeckName:
-	textfw "なぞのミュウツー"
+	text "Mysterious Mewtwo"
 	done
 
 MachineHeavenlyLugiaDeckName:
-	textfw "てんくうのルギア"
+	text "Soaring Lugia"
 	done
 
 MachineBrutalTrainersDeckName:
-	textfw "きょうあくトレーナー"
+	text "Brutal Trainers"
 	done
 
 MachineDreadfulParalysisDeckName:
-	textfw "きょうふのかなしばり"
+	text "Dreadful Paralysis"
 	done
 
 MachineInsectCollectionDeckDescriptionText:
