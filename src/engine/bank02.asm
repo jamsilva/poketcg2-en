@@ -1285,7 +1285,7 @@ DrawInPlayArea_Icons:
 	call DrawPlayArea_IconWithValue
 	ret
 
-; print HandText_2 with decimal value of b = hand count
+; print HandText with decimal value of b = hand count
 ; unlike in English, no SYM_CROSS in Japanese (lacking space)
 DrawPlayArea_HandText:
 	ld d, [hl]
@@ -1296,7 +1296,7 @@ DrawPlayArea_HandText:
 	push hl
 	push bc
 	call InitTextPrinting
-	ldtx hl, HandText_2
+	ldtx hl, HandText
 	call ProcessTextFromID
 	pop bc
 ; decimal value
@@ -4286,7 +4286,7 @@ DrawCardTypeIcons:
 DeckBuildMenuTextItems:
 	textitem  2, 2, DeckBuildingConfirmText
 	textitem  9, 2, DeckBuildingContinueModifyingText
-	textitem 16, 2, DeckBuildingNameText
+	textitem 16, 2, NameText
 	textitem  2, 4, DeckBuildingSaveText
 	textitem  9, 4, DeckBuildingDismantleText
 	textitem 16, 4, CancelDeckText

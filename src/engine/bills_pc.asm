@@ -9,7 +9,7 @@ _BillsPC:
 	ldtx hl, GameCenterBillsPCTitleText
 	call Func_2c4b
 	lb de, 13, 0
-	ldtx hl, GameCenterBillsPC20ChipsPerPlayText
+	ldtx hl, GameCenter20ChipsPerPlayText
 	call Func_2c4b
 	lb de, 2, 2
 	ldtx hl, GameCenterBillsPCDescriptionText

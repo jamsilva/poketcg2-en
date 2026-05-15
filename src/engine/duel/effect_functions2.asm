@@ -55,7 +55,7 @@ ImposterOaksRevenge_ReturnHandAndDrawEffect:
 	ret
 
 SleepCardEffect:
-	ldtx de, IfHeadsInflictSleepText
+	ldtx de, SleepInflictionCheckText
 	farcall TossCoin_Bank1a
 	ret nc ; got tails
 
@@ -233,7 +233,7 @@ RocketsSneakAttack_PlayerSelectEffect:
 	jr .done
 .has_hand_cards
 	bank1call InitAndDrawCardListScreenLayout_WithSelectCheckMenu
-	ldtx hl, ChooseATrainerCardText_2
+	ldtx hl, ChooseATrainerCardText
 	ldtx de, DuelistHandText
 	bank1call SetCardListHeaderAndInfoText
 .loop_selection
@@ -867,7 +867,7 @@ ScatterSpores_CheckDeckAndBench:
 ScatterSpores_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseAParasFromDeckText
-	ldtx bc, EffectTargetParasText
+	ldtx bc, ParasName
 	ld de, DEX_PARAS
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -1420,7 +1420,7 @@ FossilExcavation_PlayerSelectEffect:
 	call CreateDeckCardList
 	jr c, .select_deck_or_discard_pile
 	ldtx hl, ChooseAFossilFromDeckText
-	ldtx bc, EffectTargetFossilText
+	ldtx bc, MysteriousFossilName
 	ld de, MYSTERIOUS_FOSSIL
 	xor a ; CARDSEARCH_CARD_ID
 	farcall LookForCardsInDeck
@@ -2258,7 +2258,7 @@ MagnetMove_PlayerSelectEffect:
 .successful
 	call CreateDeckCardList
 	ldtx hl, ChooseAMagnemiteFromDeckText
-	ldtx bc, EffectTargetMagnemiteText
+	ldtx bc, MagnemiteName
 	ld de, DEX_MAGNEMITE
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -5791,7 +5791,7 @@ Recharge_DeckCheck:
 Recharge_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseALightningEnergyFromDeckText
-	ldtx bc, EffectTargetLightningEnergyText
+	ldtx bc, LightningEnergyName
 	ld a, CARDSEARCH_LIGHTNING_ENERGY
 	farcall LookForCardsInDeck
 	jr c, .got_selection
@@ -7242,7 +7242,7 @@ SuperPotion_DamageEnergyCheck:
 	ret
 
 SuperPotion_PlayerSelectEffect:
-	ldtx hl, ChoosePokemonToRemoveDamageCounterFromText_2
+	ldtx hl, ChoosePokemonToRemoveDamageCounterFromText
 	call DrawWideTextBox_WaitForInput
 .start
 	bank1call HasAlivePokemonInPlayArea

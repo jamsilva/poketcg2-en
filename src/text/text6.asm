@@ -892,7 +892,7 @@ MapFireClubText:
 	textfw "ファイアクラブ"
 	done
 
-MapTCGAirportText:
+MapAirportText:
 	textfw "エアポート"
 	done
 
@@ -902,10 +902,6 @@ MapTCGChallengeHallText:
 
 MapPokemonDomeText:
 	textfw "ポケモンドーム"
-	done
-
-MapGRAirportText:
-	textfw "エアポート"
 	done
 
 MapIshiharasVillaText:
@@ -956,166 +952,6 @@ MapGRCastleText:
 	textfw "GR団のキャッスル"
 	done
 
-DialogDrMasonText:
-	textfw "D<RDOT>オーヤマ"
-	done
-
-DialogSamText:
-	textfw "ミカサ"
-	done
-
-DialogAaronText:
-	textfw "あらいモン"
-	done
-
-DialogMrIshiharaText:
-	textfw "M<RDOT>イシハラ"
-	done
-
-DialogGeneText:
-	textfw "ゲンゾウ"
-	done
-
-DialogMatthewText:
-	textfw "ヤストモ"
-	done
-
-DialogRyanText:
-	textfw "ノリオ"
-	done
-
-DialogAndrewText:
-	textfw "ジョータ"
-	done
-
-DialogMitchText:
-	textfw "ヤマグチ"
-	done
-
-DialogMichaelText:
-	textfw "マサヒロ"
-	done
-
-DialogChrisText:
-	textfw "タツロー"
-	done
-
-DialogJessicaText:
-	textfw "ナツキ"
-	done
-
-DialogNikkiText:
-	textfw "クニミ"
-	done
-
-DialogBrittanyText:
-	textfw "アヤコ"
-	done
-
-DialogKristinText:
-	textfw "ハルナ"
-	done
-
-DialogHeatherText:
-	textfw "ミサオ"
-	done
-
-DialogRickText:
-	textfw "クルシマ"
-	done
-
-DialogDavidText:
-	textfw "ヤスユキ"
-	done
-
-DialogJosephText:
-	textfw "ソウタ"
-	done
-
-DialogErikText:
-	textfw "マサシ"
-	done
-
-DialogAmyText:
-	textfw "ウッチー"
-	done
-
-DialogJoshuaText:
-	textfw "シンタロー"
-	done
-
-DialogSaraText:
-	textfw "マリ"
-	done
-
-DialogAmandaText:
-	textfw "メグミ"
-	done
-
-DialogIsaacText:
-	textfw "タカハシ"
-	done
-
-DialogJenniferText:
-	textfw "ユカ"
-	done
-
-DialogNicholasText:
-	textfw "ソウスケ"
-	done
-
-DialogBrandonText:
-	textfw "トシヒコ"
-	done
-
-DialogKenText:
-	textfw "アカバネ"
-	done
-
-DialogJohnText:
-	textfw "タカシ"
-	done
-
-DialogAdamText:
-	textfw "ワタルン"
-	done
-
-DialogJonathanText:
-	textfw "マサトシ"
-	done
-
-DialogMurrayText:
-	textfw "ミウラ"
-	done
-
-DialogRobertText:
-	textfw "ヒロ"
-	done
-
-DialogDanielText:
-	textfw "ケイタ"
-	done
-
-DialogStephanieText:
-	textfw "リエ"
-	done
-
-DialogSteveText:
-	textfw "スティーブ"
-	done
-
-DialogCourtneyText:
-	textfw "ヒロコ"
-	done
-
-DialogJackText:
-	textfw "カネコウジ"
-	done
-
-DialogRodText:
-	textfw "リュウドー"
-	done
-
 DialogPlateOfLegendsText:
 	textfw "伝説のプレート"
 	done
@@ -1132,213 +968,9 @@ DialogChipSecurityText:
 	textfw "チェックマン"
 	done
 
-DialogPawnText:
-	textfw "ポーン"
-	done
-
-DialogKnightText:
-	textfw "ナイト"
-	done
-
-DialogBishopText:
-	textfw "ビショップ"
-	done
-
-DialogRookText:
-	textfw "ルーク"
-	done
-
-DialogQueenText:
-	textfw "クィーン"
-	done
-
-DialogTobichanText:
-	textfw "とびちゃん"
-	done
-
-DialogEijiText:
-	textfw "エイジ"
-	done
-
-DialogMagicianText:
-	textfw "マジシャン"
-	done
-
-DialogToshironText:
-	textfw "トシロン"
-	done
-
-DialogPierrotText:
-	textfw "ピエロ"
-	done
-
-DialogDeeText:
-	textfw "ディー"
-	done
-
-DialogAnnaText:
-	textfw "アンナ"
-	done
-
-DialogMasqueradeText:
-	textfw "マスカレード"
-	done
-
-DialogYuiText:
-	textfw "ユイ"
-	done
-
-DialogMidoriText:
-	textfw "ミドリ"
-	done
-
-DialogYutaText:
-	textfw "ユウタ"
-	done
-
-DialogMiyukiText:
-	textfw "ミユキ"
-	done
-
-DialogMorinoText:
-	textfw "モリノ"
-	done
-
-DialogRennaText:
-	textfw "レンナ"
-	done
-
-DialogIchikawaText:
-	textfw "イチカワ"
-	done
-
-DialogCatherineText:
-	textfw "キャサリン"
-	done
-
-DialogTapText:
-	textfw "タップ"
-	done
-
-DialogJesText:
-	textfw "ジェス"
-	done
-
-DialogYukiText:
-	textfw "ユウキ"
-	done
-
-DialogShokoText:
-	textfw "ショウコ"
-	done
-
-DialogHideroText:
-	textfw "ヒデロウ"
-	done
-
-DialogMiyajimaText:
-	textfw "ミヤジマ"
-	done
-
-DialogSentaText:
-	textfw "センタ"
-	done
-
-DialogAiraText:
-	textfw "アイラ"
-	done
-
-DialogKanokoText:
-	textfw "カノコ"
-	done
-
-DialogKamiyaText:
-	textfw "カミヤ"
-	done
-
-DialogGodaText:
-	textfw "ゴウダ"
-	done
-
-DialogGraceText:
-	textfw "グレース"
-	done
-
-DialogMiwaText:
-	textfw "ミワ"
-	done
-
-DialogKevinText:
-	textfw "ケビン"
-	done
-
-DialogYosukeText:
-	textfw "ヨウスケ"
-	done
-
-DialogRyokoText:
-	textfw "リョウコ"
-	done
-
-DialogMamiText:
-	textfw "マミ"
-	done
-
-DialogNishijimaText:
-	textfw "ニシジマ"
-	done
-
-DialogSamejimaText:
-	textfw "サメジマ"
-	done
-
-DialogIshiiText:
-	textfw "イシイ"
-	done
-
-DialogKanzakiText:
-	textfw "カンザキ"
-	done
-
-DialogRuiText:
-	textfw "ルイ"
-	done
-
-DialogBiruritchiText:
-	textfw "ビルリッチ"
-	done
-
-DialogGR1Text:
-	textfw "GR1号"
-	done
-
-DialogGR2Text:
-	textfw "GR2号"
-	done
-
-DialogGR3Text:
-	textfw "GR3号"
-	done
-
-DialogGR4Text:
-	textfw "GR4号"
-	done
-
 ; a non-opponent clerk-like character
 DialogGR5Text:
 	textfw "GR5号"
-	done
-
-DialogRonaldText:
-	textfw "ランド"
-	done
-
-DialogGRXText:
-	textfw "GRX"
-	done
-
-DialogImakuniText:
-	textfw "イマクニ?"
 	done
 
 DialogLadText:
@@ -1726,14 +1358,6 @@ PromotionalGRMewtwoLv35Text:
 	textfw "GR団のミュウツー<Lv>35"
 	done
 
-PromotionalGRMewtwoText:
-	textfw "GR団のミュウツー"
-	done
-
-PromotionalImakuniText:
-	textfw "イマクニ?"
-	done
-
 PromotionalArcanineLv34Text:
 	textfw "ウィンディ<Lv>34"
 	done
@@ -1758,10 +1382,6 @@ PromotionalCoolPorygonLv15Text:
 	textfw "かっこいいポリゴン<Lv>15"
 	done
 
-PromotionalCoolPorygonText:
-	textfw "かっこいいポリゴン"
-	done
-
 PromotionalBlastoiseLv52Text:
 	textfw "カメックス<Lv>52"
 	done
@@ -1774,16 +1394,8 @@ PromotionalKangaskhanLv38Text:
 	textfw "ガルーラ<Lv>38"
 	done
 
-NotPromotionalPotionEnergyText:
-	textfw "きずぐすり配合E"
-	done
-
 PromotionalHungrySnorlaxLv50Text:
 	textfw "くいしんぼカビゴン<Lv>50"
-	done
-
-PromotionalHungrySnorlaxText:
-	textfw "くいしんぼカビゴン"
 	done
 
 PromotionalMagikarpLv10Text:
@@ -1796,10 +1408,6 @@ PromotionalZapdosLv68Text:
 
 PromotionalFlyingPikachuLv12Text:
 	textfw "そらをとぶピカチュウ<Lv>12"
-	done
-
-PromotionalFlyingPikachuText:
-	textfw "そらをとぶピカチュウ"
 	done
 
 PromotionalDugtrioLv40Text:
@@ -1818,16 +1426,8 @@ PromotionalSurfingPikachuLv13Text:
 	textfw "なみのりピカチュウ<Lv>13"
 	done
 
-PromotionalSurfingPikachuText:
-	textfw "なみのりピカチュウ"
-	done
-
 PromotionalMeowthLv14Text:
 	textfw "ニャース<Lv>14"
-	done
-
-PromotionalComputerErrorText:
-	textfw "パソコン大暴走!"
 	done
 
 PromotionalPikachuLv13Text:
@@ -1852,10 +1452,6 @@ PromotionalArticunoLv37Text:
 
 PromotionalJigglypuffLv12Text:
 	textfw "プリン<Lv>12"
-	done
-
-PromotionalBillsComputerText:
-	textfw "マサキのパソコン"
 	done
 
 PromotionalMarillLv17Text:
@@ -1890,40 +1486,6 @@ PromotionalDarkPersianLv28Text:
 	textfw "わるいペルシアン<Lv>28"
 	done
 
-PromotionalSuperEnergyRetrievalText:
-	textfw "超エネルギー回収"
-	done
-
-ReceivedPromotionalCardText_2:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「<RAMTEXT>」を ゲット!"
-	done
-
-ReceivedPromotionalCardText_3:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「<RAMTEXT>」を ゲット"
-	done
-
-ReceivedLegendaryCardText_2:
-	textfw "<RAMNAME>は 伝説のカード"
-	linefw "「<RAMTEXT>」を ゲット!"
-	done
-
-ReceivedCardText_2:
-	textfw "<RAMNAME>は"
-	linefw "「<RAMTEXT>」を ゲット!"
-	done
-
-ReceivedCardText_3:
-	textfw "<RAMNAME>は"
-	linefw "「<RAMTEXT>」を ゲット"
-	done
-
-ReceivedCardText_4:
-	textfw "<RAMNAME>は"
-	linefw "「<RAMTEXT>」 ゲット"
-	done
-
 ReceivedPromotionalGRMewtwoText:
 	textfw "<RAMNAME>は プロモーションカード"
 	linefw "「GR団のミュウツー」を ゲット!"
@@ -1939,16 +1501,6 @@ ReceivedPromotionalHungrySnorlaxText:
 	linefw "「くいしんぼカビゴン」を ゲット!"
 	done
 
-ReceivedPromotionalFlyingPikachuText_2:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「そらをとぶピカチュウ」を ゲット!"
-	done
-
-ReceivedPromotionalSurfingPikachuText_2:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「なみのりピカチュウ」を ゲット!"
-	done
-
 ReceivedNotPromotionalPotionEnergyText:
 	textfw "<RAMNAME>は"
 	linefw "「きずぐすり配合E」を ゲット!"
@@ -1958,32 +1510,8 @@ CombosBookName:
 	textfw "「コンボ」"
 	done
 
-EnergyTransBookName:
-	textfw "「エナジートランス」"
-	done
-
-ToxicGasBookName:
-	textfw "「かがくへんかガス」"
-	done
-
-RainDanceBookName:
-	textfw "「あまごい」"
-	done
-
-SelfdestructBookName:
-	textfw "「じばく」"
-	done
-
-DamageSwapBookName:
-	textfw "「ダメージスワップ」"
-	done
-
 RemoveEnergiesBookName:
 	textfw "「エネルギーをはがせ」"
-	done
-
-PrehistoricPowerBookName:
-	textfw "「げんしのちから」"
 	done
 
 WeaknessResistanceBookName:
@@ -2038,20 +1566,12 @@ FightingPokemonFormidableOpponentsBookName:
 	textfw "にがてなポケモン"
 	done
 
-FightingPokemonBookName:
-	textfw "かくとうポケモン"
-	done
-
 FightingPokemonCombosBookName:
 	textfw "かくとうポケモンとコンボ"
 	done
 
 FightingPokemonDeckBuildingBookName:
 	textfw "かくとうポケモンのデッキ"
-	done
-
-PlantlikePokemonBookName:
-	textfw "しょくぶつポケモン"
 	done
 
 GrassPokemonBreederBookName:
@@ -2074,20 +1594,12 @@ SciencePokemonDeckBuildingBookName:
 	textfw "かがくポケモンのデッキ"
 	done
 
-WaterPokemonBookName:
-	textfw "水ポケモン"
-	done
-
 WaterPokemonAttacksBookName:
 	textfw "水ポケモンのワザ"
 	done
 
 PsyduckGolduckBookName:
 	textfw "「コダック」「ゴルダック」"
-	done
-
-FirePokemonBookName:
-	textfw "炎ポケモンについて"
 	done
 
 FirePokemonAttacksBookName:
@@ -2098,10 +1610,6 @@ FirePokemonDeckBuildingBookName:
 	textfw "炎ポケモンのデッキ"
 	done
 
-LightningPokemonBookName:
-	textfw "雷ポケモン"
-	done
-
 LightningPokemonDeckBuildingBookName:
 	textfw "雷ポケモンのデッキ"
 	done
@@ -2110,20 +1618,12 @@ BirdPokemonBookName:
 	textfw "とりポケモン"
 	done
 
-PsychicPokemonBookName:
-	textfw "超ポケモン"
-	done
-
 PsychicPokemonPokemonPowerBookName:
 	textfw "超ポケモンと特殊能力"
 	done
 
 UsefulButtonsBookName:
 	textfw "べんりなボタン"
-	done
-
-ColorlessPokemonBookName:
-	textfw "無色のポケモン"
 	done
 
 CardPopBookName:

@@ -498,22 +498,6 @@ EffectTargetNidoranMNidoranFText:
 	textfw "ニドラン♂とニドラン♀"
 	done
 
-EffectTargetOddishText:
-	textfw "ナゾノクサ"
-	done
-
-EffectTargetBellsproutText:
-	textfw "マダツボミ"
-	done
-
-EffectTargetKrabbyText:
-	textfw "クラブ"
-	done
-
-EffectTargetFightingPokemonText:
-	textfw "「闘」ポケモン"
-	done
-
 EffectTargetBasicEnergyText:
 	textfw "基本エネルギー"
 	done
@@ -596,10 +580,6 @@ ChooseEvolutionCardForMagikarpFromDeckText:
 	linefw "進化カードを えらんでください"
 	done
 
-EffectTargetGyaradosText:
-	textfw "ギャラドス"
-	done
-
 ChooseAGyaradosText:
 	textfw "ギャラドスを"
 	linefw "えらんでください"
@@ -617,10 +597,6 @@ SwitchOutDarkAlakazamPromptText:
 ChooseAPsychicEnergyCardFromDeckText:
 	textfw "山札から 超エネルギーカードを"
 	linefw "えらんでください"
-	done
-
-EffectTargetPsychicEnergyText:
-	textfw "超エネルギー"
 	done
 
 ChooseAPsychicEnergyCardText:
@@ -650,10 +626,6 @@ ChooseAnEvolutionCardText:
 ChooseAParasFromDeckText:
 	textfw "山札から パラスを"
 	linefw "えらんでください"
-	done
-
-EffectTargetParasText:
-	textfw "パラス"
 	done
 
 ChooseAParasText:
@@ -691,10 +663,6 @@ ChooseALightningEnergyFromDeckText:
 	linefw "えらんでください"
 	done
 
-EffectTargetLightningEnergyText:
-	textfw "雷エネルギー"
-	done
-
 ChooseALightningEnergyText:
 	textfw "「雷」エネルギーを"
 	linefw "えらんでください"
@@ -703,10 +671,6 @@ ChooseALightningEnergyText:
 ChooseAMagnemiteFromDeckText:
 	textfw "山札から コイルを"
 	linefw "えらんでください"
-	done
-
-EffectTargetMagnemiteText:
-	textfw "コイル"
 	done
 
 ChooseAMagnemiteText:
@@ -759,11 +723,6 @@ EffectTargetGeneralUnitText: ; for Energy, Counters, etc.
 DuelistDrawCardsText:
 	textfw "<RAMNAME>は カードを"
 	linefw "<RAMNUM>枚 ひきます"
-	done
-
-ClefairyDollMindShockName:
-	; redundant/dupe of MindShockName
-	textfw "マインドショック"
 	done
 
 ClefairyDollMindShockDescription:
@@ -863,11 +822,6 @@ SwitchedOutDueToVinePullText:
 RemoveDamageCountersOneByOneText:
 	textfw "Aボタンで ダメージカウンターが"
 	linefw "1つずつへります Bボタンでおわり"
-	done
-
-ChoosePokemonToRemoveDamageCounterFromText_2:
-	textfw "ダメージカウンターを とりのぞく"
-	linefw "ポケモンを えらんでください"
 	done
 
 ChooseCardFromHandToDiscardText:
@@ -1199,10 +1153,6 @@ CheckDiscardPilePromptText:
 	textfw "トラッシュを かくにんしますか?"
 	done
 
-EffectTargetFossilText:
-	textfw "なにかの化石"
-	done
-
 ChooseAFossilFromDeckText:
 	textfw "山札から なにかの化石を"
 	linefw "えらんでください"
@@ -1281,11 +1231,6 @@ ReceivedPromotionalSurfingPikachuText:
 	linefw "「なみのりピカチュウ」を ゲット!"
 	done
 
-UnusedText023a: ; unused
-	textfw "ブースターを ゲット!!" ; Flareon? a booster pack?
-	linefw "カードいちらんを見たつもり" ; "I 'meant to' browse the card list"
-	done
-
 NowPrintingPleaseWaitText:
 	textfw "プリント中です"
 	linefw "しばらく おまちください"
@@ -1350,19 +1295,9 @@ NowPrintingText:
 	linefw "プリント中です"
 	done
 
-IfHeadsInflictSleepText:
-	textfw "「おもて」なら"
-	linefw "[相手]を「ねむり」状態"
-	done
-
 UnableDueToGoopGasAttackText:
 	textfw "「まきちらせ!ベトベトガス」の効果で"
 	linefw "特殊能力は つかえない"
-	done
-
-ChooseATrainerCardText_2:
-	textfw "トレーナーカードを"
-	linefw "えらんでください"
 	done
 
 NightlyGarbageRunPromptText:
@@ -1528,24 +1463,11 @@ CardPopFriendDeckNameText:
 	textfw "<RAMTEXT>デッキ"
 	done
 
-CardPopImakuniText:
-	textfw "イマクニ?"
-	done
-
-CardPopRonaldText:
-	textfw "ランド"
-	done
-
 GameCenterBillsPCTitleText:
 	textfw "マサキのパソコン"
 	done
 
 SECTION "Text 4", ROMX
-
-GameCenterBillsPC20ChipsPerPlayText:
-	; dupe of GameCenter20ChipsPerPlayText
-	textfw "チップ20枚"
-	done
 
 GameCenterBillsPCDescriptionText:
 	textfw "オムナイト > オムスター<Lv>36"
@@ -1759,10 +1681,6 @@ DeckBuildingSaveText:
 	textfw "ほぞん"
 	done
 
-DeckBuildingNameText:
-	textfw "なまえ"
-	done
-
 DeckBuildingWarningTheOnlyDeckNotDismantleableText:
 	textfw "デッキが 1つしかありませんので"
 	linefw "このデッキは くずせません"
@@ -1884,18 +1802,6 @@ PleaseChooseAPrizeText:
 	textfw "サイドカードを えらんでください"
 	done
 
-HandText_2:
-	textfw "てふだ"
-	done
-
-DuelistHandText_2:
-	textfw "<RAMNAME>のてふだ"
-	done
-
-DuelistDiscardPileText_2:
-	textfw "<RAMNAME>のトラッシュ"
-	done
-
 EmptyLineText:
 	textfw "                  "
 	done
@@ -1994,11 +1900,6 @@ BuildDeckText:
 
 ChooseDeckToSaveToMachineText:
 	textfw "きろくするデッキを えらんでください"
-	done
-
-CannotSaveDeckToMachine60FullText: ; unused (was 60 in tcg1 but 50 in tcg2)
-	textfw "きろくできるデッキの数は 60です"
-	linefw "けしてから きろくしてください"
 	done
 
 ParticleNOText: ; unused?
@@ -2347,10 +2248,6 @@ AutoDeckMachine2MysteriousCardDecksTextPadded:
 	textfw "なぞのカードデッキ  "
 	done
 
-MachineStarterDeckName:
-	textfw "さいしょの"
-	done
-
 MachineElectricFireDeckName:
 	textfw "エレキファイヤー"
 	done
@@ -2363,28 +2260,8 @@ MachineEsperGreenDeckName:
 	textfw "エスパーグリーン"
 	done
 
-MachineSweatAntiGR1DeckName:
-	textfw "たおせ!GR1ごう"
-	done
-
-MachineGiveInAntiGR2DeckName:
-	textfw "まけろ!GR2ごう"
-	done
-
-MachineVengefulAntiGR3DeckName:
-	textfw "しかえしGR3ごう"
-	done
-
-MachineUnforgivingAntiGR4DeckName:
-	textfw "ゆるさんGR4ごう"
-	done
-
 MachineAwesomeFossilsDeckName:
 	textfw "シブイかせき"
-	done
-
-MachineNewMachokeDeckName:
-	textfw "ニューゴーリキー"
 	done
 
 MachineRockFestivalDeckName:
@@ -2395,14 +2272,6 @@ MachineJabHookDeckName:
 	textfw "ジャブだフックだ!"
 	done
 
-MachineSteadyIncreaseDeckName:
-	textfw "ドンドンぞうしょく"
-	done
-
-MachineGatheringNidoranDeckName:
-	textfw "あつまれニドラン"
-	done
-
 MachineNationalParkDeckName:
 	textfw "しんりんこうえん"
 	done
@@ -2411,28 +2280,12 @@ MachineSelectiveBreedingDeckName:
 	textfw "ひんしゅかいりょう"
 	done
 
-MachineSplashingAboutDeckName:
-	textfw "みずあそび"
-	done
-
-MachineBeachDeckName:
-	textfw "なみうちぎわ"
-	done
-
 MachineInsulationDeckName:
 	textfw "ぜつえんたい"
 	done
 
 MachineAntarcticDeckName:
 	textfw "なんきょく"
-	done
-
-MachineFlameFestivalDeckName:
-	textfw "ほのおのおまつり"
-	done
-
-MachineElectricCurrentShockDeckName:
-	textfw "でんりゅうひばな"
 	done
 
 MachineRiskyBlazeDeckName:
@@ -2451,28 +2304,12 @@ MachineElectricShockDeckName:
 	textfw "でんきショック"
 	done
 
-MachineOverflowDeckName:
-	textfw "オーバーフロー"
-	done
-
-MachineTripleZapdosDeckName:
-	textfw "トリプルサンダー"
-	done
-
 MachineSpecialBarrierDeckName:
 	textfw "とくしゅバリヤー"
 	done
 
 MachineEvolutionProhibitedDeckName:
 	textfw "しんかふのう"
-	done
-
-MachineGhostDeckName:
-	textfw "ゆうれい"
-	done
-
-MachinePuppetMasterDeckName:
-	textfw "にんぎょうつかい"
 	done
 
 MachineMewLv15DeckName:
@@ -2489,22 +2326,6 @@ MachineMutualDestructionDeckName:
 
 MachineEverybodySurfDeckName:
 	textfw "みんなでなみのり"
-	done
-
-MachineGrandFireDeckName:
-	textfw "グランドファイヤー"
-	done
-
-MachineLegendaryFossilDeckName:
-	textfw "でんせつのかせき"
-	done
-
-MachineWaterLegendDeckName:
-	textfw "ウォーターレジェンド"
-	done
-
-MachineGreatDragonDeckName:
-	textfw "レジェンドドラゴン"
 	done
 
 MachineStarterDeckDescriptionText:
@@ -2707,10 +2528,6 @@ MachineGreatDragonDeckDescriptionText:
 	linefw "きょうりょくポケモンで トドメだ!"
 	done
 
-MachineInsectCollectionDeckName:
-	textfw "こんちゅうさいしゅう"
-	done
-
 MachineCaveExplorationDeckName:
 	textfw "どうくつたんけん"
 	done
@@ -2747,20 +2564,8 @@ MachineQuickFreezeDeckName:
 	textfw "きゅうそくれいとう"
 	done
 
-MachineWhirlpoolShowerDeckName:
-	textfw "うずしおのシャワー"
-	done
-
 MachineWaterGangDeckName:
 	textfw "みずのギャングだん"
-	done
-
-MachineFireballDeckName:
-	textfw "ファイヤーボール"
-	done
-
-MachineCompleteCombustionDeckName:
-	textfw "かんぜんねんしょう"
 	done
 
 MachineOminousSpiritFlamesDeckName:
@@ -2779,10 +2584,6 @@ MachineOgresKickDeckName:
 	textfw "キックのオニ"
 	done
 
-MachineRockBlastDeckName:
-	textfw "ロックブラスト!"
-	done
-
 MachineHeavyWorkDeckName:
 	; the same as Full Strength Deck but renamed for Machine
 	textfw "ちからわざ"
@@ -2792,28 +2593,8 @@ MachineSlowbrosFishingDeckName:
 	textfw "ヤドランともづり"
 	done
 
-MachineDirectHitDeckName:
-	textfw "ちょくげき"
-	done
-
-MachineBadDreamDeckName:
-	textfw "バッドドリーム"
-	done
-
 MachineBenchPanicDeckName:
 	textfw "ベンチはパニック!"
-	done
-
-MachineSnorlaxGuardDeckName:
-	textfw "カビゴンとおせんぼ"
-	done
-
-MachineEyeOfTheStormDeckName:
-	textfw "たいふうのめ"
-	done
-
-MachineSuddenGrowthDeckName:
-	textfw "きゅうせいちょう"
 	done
 
 MachineKingDragoniteDeckName:
@@ -3126,22 +2907,6 @@ GlossarySpecialRulesMenuText:
 ChooseWordAndPressAButtonText:
 	textfw "しりたい こうもくを えらんで"
 	linefw "Aボタンを おしてください"
-	done
-
-GlossaryGameBasicsTitleText:
-	textfw "「ポケモンカードのきほんようご」"
-	done
-
-GlossaryCardTypesAndKeywordsTitleText:
-	textfw "「カードのしゅるいと せつめい」"
-	done
-
-GlossaryStatusesAndDecisionTitleText:
-	textfw "「特殊状態と 勝ちまけの決定」"
-	done
-
-GlossarySpecialRulesTitleText:
-	textfw "「特別ルール対戦」"
 	done
 
 GlossaryDeckTitleText:

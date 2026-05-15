@@ -909,11 +909,11 @@ GetReceivedCardText:
 	call LoadTxRam2
 	pop hl
 	call LoadCardDataToBuffer1_FromCardID
-	ldtx bc, ReceivedPromotionalCardText_2
+	ldtx bc, ReceivedPromotionalCardText
 	ld a, [wLoadedCard1Set]
 	cp PROMOTIONAL
 	jr z, .got_text
-	ldtx bc, ReceivedCardText_2
+	ldtx bc, ReceivedCardText
 	jr .got_text
 .load_received_text
 REPT CARD_RECEIVE_STRUCT_RECEIVED_TEXT - CARD_RECEIVE_STRUCT_TEXTS
@@ -1093,14 +1093,14 @@ TCGIslandLocationNamePointers:
 	tx MapScienceClubText      ; OWMAP_SCIENCE_CLUB
 	tx MapWaterClubText        ; OWMAP_WATER_CLUB
 	tx MapFireClubText         ; OWMAP_FIRE_CLUB
-	tx MapTCGAirportText       ; OWMAP_TCG_AIRPORT
+	tx MapAirportText          ; OWMAP_TCG_AIRPORT
 	tx MapTCGChallengeHallText ; OWMAP_TCG_CHALLENGE_HALL
 	tx MapPokemonDomeText      ; OWMAP_POKEMON_DOME
 	dw NULL
 	tx MapOpeningText
 
 GRIslandLocationNamePointers:
-	tx MapGRAirportText           ; OWMAP_GR_AIRPORT
+	tx MapAirportText             ; OWMAP_GR_AIRPORT
 	tx MapIshiharasVillaText      ; OWMAP_ISHIHARAS_VILLA
 	tx MapGameCenterText          ; OWMAP_GAME_CENTER
 	tx MapSealedFortText          ; OWMAP_SEALED_FORT
@@ -5332,22 +5332,22 @@ DebugSendMailScreen:
 	menubox_params TRUE, 20, 18, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, (TRUE << 4), 1, NULL, DebugSendMailText
-	textitem 2,  1, MailBlackBoxOutputSenderText
-	textitem 2,  2, MailBillsPCOutputSenderText
-	textitem 2,  3, MailMailboxIntroSenderText
-	textitem 2,  4, MailDeckDiagnosis1SenderText
-	textitem 2,  5, MailDeckDiagnosis2SenderText
-	textitem 2,  6, MailDeckDiagnosis3SenderText
-	textitem 2,  7, MailDeckDiagnosis4SenderText
-	textitem 2,  8, MailAutoDeckMachine1SenderText
-	textitem 2,  9, MailAutoDeckMachine2SenderText
-	textitem 2, 10, MailAutoDeckMachine3SenderText
-	textitem 2, 11, MailAutoDeckMachine4SenderText
-	textitem 2, 12, MailAutoDeckMachine5SenderText
-	textitem 2, 13, MailChallengeMachineSenderText
-	textitem 2, 14, MailGRChallengeMachineSenderText
-	textitem 2, 15, MailGrandMasterCupSenderText
-	textitem 2, 16, MailRonaldsScoutGR1SenderText
+	textitem 2,  1, GameCenterBookName
+	textitem 2,  2, GameCenterBookName
+	textitem 2,  3, DrMasonText
+	textitem 2,  4, DrMasonText
+	textitem 2,  5, DrMasonText
+	textitem 2,  6, DrMasonText
+	textitem 2,  7, DrMasonText
+	textitem 2,  8, DrMasonText
+	textitem 2,  9, DrMasonText
+	textitem 2, 10, DrMasonText
+	textitem 2, 11, DrMasonText
+	textitem 2, 12, DrMasonText
+	textitem 2, 13, DrMasonText
+	textitem 2, 14, DuelistBiruritchiName
+	textitem 2, 15, DuelistRodName
+	textitem 2, 16, DuelistRonaldName
 	textitems_end
 
 DebugAdjustChips:

@@ -161,10 +161,6 @@ NinetalesName:
 	textfw "キュウコン"
 	done
 
-LureAltName:
-	textfw "かどわかす"
-	done
-
 FireBlastName:
 	textfw "だいもんじ"
 	done
@@ -1195,10 +1191,6 @@ KrabbyName:
 	textfw "クラブ"
 	done
 
-GuillotineAltName:
-	textfw "はさみギロチン"
-	done
-
 RiverCrabName:
 	textfw "さわがに"
 	done
@@ -1214,10 +1206,6 @@ CallForFamilyKrabbyDescription:
 	linefw "その後、その山札をよく切る。"
 	linefw "(ベンチに空きがないとき、このワザは"
 	linefw "使えない)"
-	done
-
-IrongripAltName:
-	textfw "はさむ"
 	done
 
 KrabbyLv20Description:
@@ -2105,10 +2093,6 @@ MagnemiteLv14Description:
 	textfw "反重力で浮いてるらしい。"
 	linefw "どこからともなく現われて電磁波などを"
 	linefw "放射する。"
-	done
-
-MagnetMoveName:
-	textfw "マグネット"
 	done
 
 MagnetMoveDescription:

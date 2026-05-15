@@ -930,7 +930,7 @@ CreateEnergyCardListFromDiscardPile:
 CheckNonTurnDuelistHasBench:
 	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
 	call GetNonTurnDuelistVariable
-	ldtx hl, EffectNoBenchedPokemonText
+	ldtx hl, NoBenchedPokemonText
 	cp 2
 	ret
 
@@ -939,7 +939,7 @@ CheckNonTurnDuelistHasBench:
 CheckIfTurnDuelistHasBench:
 	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
 	get_turn_duelist_var
-	ldtx hl, EffectNoBenchedPokemonText
+	ldtx hl, NoBenchedPokemonText
 	cp 2
 	ret
 
@@ -1841,7 +1841,7 @@ Sprout_CheckDeckAndPlayArea:
 Sprout_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseAnOddishFromDeckText
-	ldtx bc, EffectTargetOddishText
+	ldtx bc, OddishName
 	ld de, DEX_ODDISH
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -2461,7 +2461,7 @@ BellsproutCallForFamily_CheckDeckAndPlayArea:
 BellsproutCallForFamily_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseABellsproutFromDeckText
-	ldtx bc, EffectTargetBellsproutText
+	ldtx bc, BellsproutName
 	ld de, DEX_BELLSPROUT
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -2955,7 +2955,7 @@ KrabbyCallForFamily_CheckDeckAndPlayArea:
 KrabbyCallForFamily_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseAKrabbyFromDeckText
-	ldtx bc, EffectTargetKrabbyText
+	ldtx bc, KrabbyName
 	ld de, DEX_KRABBY
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -5935,7 +5935,7 @@ MarowakCallForFamily_CheckDeckAndPlayArea:
 MarowakCallForFamily_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseBasicFightingPokemonFromDeckText
-	ldtx bc, EffectTargetFightingPokemonText
+	ldtx bc, FightingPokemonText
 	ld a, CARDSEARCH_BASIC_FIGHTING_POKEMON
 	farcall LookForCardsInDeck
 	jr c, .got_selection
@@ -8995,7 +8995,7 @@ RapidEvolution_CheckEvolutionAndDeck:
 RapidEvolution_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseEvolutionCardForMagikarpFromDeckText
-	ldtx bc, EffectTargetGyaradosText
+	ldtx bc, GyaradosName
 	ld de, DEX_GYARADOS
 	ld a, CARDSEARCH_POKEDEX_NUMBER
 	farcall LookForCardsInDeck
@@ -9718,7 +9718,7 @@ AfternoonNap_CheckDeck:
 AfternoonNap_PlayerSelectEffect:
 	call CreateDeckCardList
 	ldtx hl, ChooseAPsychicEnergyCardFromDeckText
-	ldtx bc, EffectTargetPsychicEnergyText
+	ldtx bc, PsychicEnergyName
 	ld a, CARDSEARCH_PSYCHIC_ENERGY
 	farcall LookForCardsInDeck
 	jr c, .got_selection

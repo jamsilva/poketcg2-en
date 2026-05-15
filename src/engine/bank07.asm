@@ -837,8 +837,8 @@ DrawDiaryStatusBox:
 	ret
 
 .TextItems:
-	textitem  7,  4, PlayerDiaryNameText
-	textitem  7,  6, PlayerDiaryEventCoinText
+	textitem  7,  4, NameText
+	textitem  7,  6, EventCoinText
 	textitem 18,  6, CardsAndChipsUnitText
 	textitem  7,  8, PlayerDiaryAlbumText
 	textitem  7, 10, PlayerDiaryPlayTimeText
@@ -944,7 +944,7 @@ DrawStatusScreenTopBox:
 	ret
 
 .TextItems:
-	textitem 7, 2, PlayerDiaryNameText
+	textitem 7, 2, NameText
 	textitem 7, 4, PlayerDiaryAlbumText
 	textitem 7, 6, PlayerDiaryPlayTimeText
 	textitems_end
@@ -980,7 +980,7 @@ DrawStatusScreenBottomBox:
 	ret
 
 .TextItems:
-	textitem 1,  8, PlayerStatusEventCoinTitleText
+	textitem 1,  8, EventCoinText
 	textitem 4, 10, PlayerStatusCurrentCoinText
 	textitems_end
 
@@ -2531,7 +2531,7 @@ _StartMenuBoxUpdate::
 	ret
 
 .TextItems:
-	textitem  3, 12, PlayerDiaryEventCoinText
+	textitem  3, 12, EventCoinText
 	textitem 15, 12, CardsAndChipsUnitText
 	textitem  3, 14, PlayerDiaryAlbumText
 	textitem  3, 16, PlayerDiaryPlayTimeText
@@ -2684,12 +2684,12 @@ ConfirmPlayerNameAndGender:
 	ret
 
 .TextItems:
-	textitem 2, 2, PlayerDiaryNameText
+	textitem 2, 2, NameText
 	textitem 2, 6, PlayerGenderText
 	textitems_end
 
 .ShowYesOrNoMenu:
-	ldtx hl, IsThisOKText_2
+	ldtx hl, IsThisOKText
 	ld a, $1
 	farcall DrawWideTextBox_PrintTextWithYesOrNoMenu
 	ret
@@ -6921,7 +6921,7 @@ MailboxYesNoPrompt:
 	menubox_params TRUE, 20, 5, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, TRUE, 0, NULL, NULL
-	textitem  7, 3, PlayerDiaryPromptYesText
+	textitem  7, 3, YesText
 	textitem 11, 3, PlayerDiaryPromptNoText
 	textitems_end
 
@@ -7770,7 +7770,7 @@ BillsPC:
 	farcall SetFrameFuncAndFadeFromWhite
 	farcall _BillsPC
 	jr c, .done ; cancelled, error, etc.
-	ldtx hl, GameCenterToBeMailedText_2
+	ldtx hl, GameCenterToBeMailedText
 	farcall PrintScrollableText_NoTextBoxLabelVRAM0
 	call SetBillsPCCard
 	ld a, $82 ; priority bill's PC mail

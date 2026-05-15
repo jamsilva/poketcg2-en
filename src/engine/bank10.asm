@@ -13,7 +13,7 @@ Script_CombosBook:
 	ret
 
 Script_EnergyTransBook:
-	ldtx hl, EnergyTransBookName
+	ldtx hl, EnergyTransName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -27,7 +27,7 @@ Script_EnergyTransBook:
 	ret
 
 Script_ToxicGasBook:
-	ldtx hl, ToxicGasBookName
+	ldtx hl, ToxicGasName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -41,7 +41,7 @@ Script_ToxicGasBook:
 	ret
 
 Script_RainDanceBook:
-	ldtx hl, RainDanceBookName
+	ldtx hl, RainDanceName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -55,7 +55,7 @@ Script_RainDanceBook:
 	ret
 
 Script_SelfdestructBook:
-	ldtx hl, SelfdestructBookName
+	ldtx hl, SelfdestructName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -69,7 +69,7 @@ Script_SelfdestructBook:
 	ret
 
 Script_DamageSwapBook:
-	ldtx hl, DamageSwapBookName
+	ldtx hl, DamageSwapName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -97,7 +97,7 @@ Script_RemoveEnergiesBook:
 	ret
 
 Script_PrehistoricPowerBook:
-	ldtx hl, PrehistoricPowerBookName
+	ldtx hl, PrehistoricPowerName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -209,7 +209,7 @@ Script_FightingPokemonFormidableOpponentsBook:
 	ret
 
 Script_FightingPokemonBook:
-	ldtx hl, FightingPokemonBookName
+	ldtx hl, FightingPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -251,7 +251,7 @@ Script_FightingPokemonDeckBuildingBook:
 	ret
 
 Script_PlantlikePokemonBook:
-	ldtx hl, PlantlikePokemonBookName
+	ldtx hl, GrassPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -335,7 +335,7 @@ Script_SciencePokemonDeckBuildingBook:
 	ret
 
 Script_WaterPokemonBook:
-	ldtx hl, WaterPokemonBookName
+	ldtx hl, WaterPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -377,7 +377,7 @@ Script_PsyduckGolduckBook:
 	ret
 
 Script_FirePokemonBook:
-	ldtx hl, FirePokemonBookName
+	ldtx hl, FirePokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -419,7 +419,7 @@ Script_FirePokemonDeckBuildingBook:
 	ret
 
 Script_LightningPokemonBook:
-	ldtx hl, LightningPokemonBookName
+	ldtx hl, LightningPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -461,7 +461,7 @@ Script_BirdPokemonBook:
 	ret
 
 Script_PsychicPokemonBook:
-	ldtx hl, PsychicPokemonBookName
+	ldtx hl, PsychicPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -503,7 +503,7 @@ Script_UsefulButtonsBook:
 	ret
 
 Script_ColorlessPokemonBook:
-	ldtx hl, ColorlessPokemonBookName
+	ldtx hl, ColorlessPokemonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1041,7 +1041,7 @@ PrintTCGIslandLocationName:
 	textitem 1, 2, MapScienceClubText      ; OWMAP_SCIENCE_CLUB
 	textitem 1, 3, MapWaterClubText        ; OWMAP_WATER_CLUB
 	textitem 1, 3, MapFireClubText         ; OWMAP_FIRE_CLUB
-	textitem 1, 4, MapTCGAirportText       ; OWMAP_TCG_AIRPORT
+	textitem 1, 4, MapAirportText          ; OWMAP_TCG_AIRPORT
 	textitem 1, 2, MapTCGChallengeHallText ; OWMAP_TCG_CHALLENGE_HALL
 	textitem 1, 3, MapPokemonDomeText      ; OWMAP_POKEMON_DOME
 	; no sentinels
@@ -1477,7 +1477,7 @@ Func_40f46:
 	script_callfar Script_34000
 	move_player .NPCMovement_40f80, TRUE
 	wait_for_player_animation
-	set_active_npc NPC_DR_MASON, DialogDrMasonText
+	set_active_npc NPC_DR_MASON, DrMasonText
 	start_dialog
 	send_mail $03
 	send_mail $04
@@ -1535,7 +1535,7 @@ Func_40f46:
 Func_40fbc:
 	ld a, NPC_DR_MASON
 	ld [wScriptNPC], a
-	ldtx hl, DialogDrMasonText
+	ldtx hl, DrMasonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1747,7 +1747,7 @@ Script_DrMason_50WinStreak:
 	check_event EVENT_GOT_DUGTRIO_COIN
 	script_jump_if_b0z .done
 	set_event EVENT_GOT_DUGTRIO_COIN
-	set_active_npc NPC_DR_MASON, DialogDrMasonText
+	set_active_npc NPC_DR_MASON, DrMasonText
 	set_active_npc_direction NORTH
 	set_player_direction SOUTH
 	start_dialog
@@ -1763,7 +1763,7 @@ Script_DrMason_50WinStreak:
 Func_41188:
 	ld a, NPC_DR_MASON
 	ld [wScriptNPC], a
-	ldtx hl, DialogDrMasonText
+	ldtx hl, DrMasonText
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1816,7 +1816,7 @@ Func_41188:
 Func_411f2:
 	ld a, NPC_RONALD
 	ld [wScriptNPC], a
-	ldtx hl, DialogRonaldText
+	ldtx hl, DuelistRonaldName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1855,7 +1855,7 @@ Func_4121d:
 Func_41233:
 	ld a, NPC_SAM
 	ld [wScriptNPC], a
-	ldtx hl, DialogSamText
+	ldtx hl, DuelistSamName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -1971,15 +1971,15 @@ Script_412f8:
 	set_active_npc_direction EAST
 	script_call Script_41499
 	start_dialog
-	set_active_npc NPC_DR_MASON, DialogDrMasonText
+	set_active_npc NPC_DR_MASON, DrMasonText
 	print_npc_text Text0f22
-	set_active_npc NPC_SAM, DialogSamText
+	set_active_npc NPC_SAM, DuelistSamName
 	print_npc_text Text0f23
 .ows_41323
 	script_call Script_41408
 	npc_ask_question Text0f24, TRUE
 	script_jump_if_b0z .ows_41323
-	set_active_npc NPC_DR_MASON, DialogDrMasonText
+	set_active_npc NPC_DR_MASON, DrMasonText
 	print_npc_text Text0f25
 	end_dialog
 	start_duel SAMS_PRACTICE_DECK_ID, MUSIC_MATCH_START_MEMBER
@@ -2008,7 +2008,7 @@ Func_4133e:
 	move_active_npc .NPCMovement_41369
 	wait_for_player_animation
 	start_dialog
-	set_active_npc NPC_SAM, DialogSamText
+	set_active_npc NPC_SAM, DuelistSamName
 	print_npc_text Text0f2a
 	end_dialog
 	end_script
@@ -2925,7 +2925,7 @@ Script_TCGCupRound3Start:
 	ld a, $01
 	start_script
 	print_npc_text CupHostTCGCup3Round3ChallengerRonaldText
-	set_active_npc NPC_RONALD, DialogRonaldText
+	set_active_npc NPC_RONALD, DuelistRonaldName
 	print_npc_text RonaldTCGCup3ChallengerText
 	set_active_npc NPC_CUP_HOST, DialogCupHostText
 .prep
@@ -3563,7 +3563,7 @@ SealedFort_AfterDuelScripts:
 Script_TobichanWelcome:
 	ld a, NPC_TOBICHAN
 	ld [wScriptNPC], a
-	ldtx hl, DialogTobichanText
+	ldtx hl, DuelistTobichanName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3624,7 +3624,7 @@ Script_TobichanWelcome:
 Script_StatueTobichan:
 	ld a, NPC_TOBICHAN
 	ld [wScriptNPC], a
-	ldtx hl, DialogTobichanText
+	ldtx hl, DuelistTobichanName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3632,7 +3632,7 @@ Script_StatueTobichan:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogTobichanText
+	set_text_ram2 DuelistTobichanName
 	set_text_ram2b StatuePoisonStormDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -3704,7 +3704,7 @@ Script_TobichanAfterDuel:
 Script_StatueEiji:
 	ld a, NPC_EIJI
 	ld [wScriptNPC], a
-	ldtx hl, DialogEijiText
+	ldtx hl, DuelistEijiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3712,7 +3712,7 @@ Script_StatueEiji:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogEijiText
+	set_text_ram2 DuelistEijiName
 	set_text_ram2b StatueEverybodysFriendDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -3783,7 +3783,7 @@ Script_EijiAfterDuel:
 Script_StatueMagician:
 	ld a, NPC_MAGICIAN
 	ld [wScriptNPC], a
-	ldtx hl, DialogMagicianText
+	ldtx hl, DuelistMagicianName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3791,7 +3791,7 @@ Script_StatueMagician:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogMagicianText
+	set_text_ram2 DuelistMagicianName
 	set_text_ram2b StatueImmortalPokemonDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -3862,7 +3862,7 @@ Script_MagicianAfterDuel:
 Script_StatueToshiron:
 	ld a, NPC_TOSHIRON
 	ld [wScriptNPC], a
-	ldtx hl, DialogToshironText
+	ldtx hl, DuelistToshironName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3870,7 +3870,7 @@ Script_StatueToshiron:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogToshironText
+	set_text_ram2 DuelistToshironName
 	set_text_ram2b StatueTrainerImprisonDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -3941,7 +3941,7 @@ Script_ToshironAfterDuel:
 Script_StatuePierrot:
 	ld a, NPC_PIERROT
 	ld [wScriptNPC], a
-	ldtx hl, DialogPierrotText
+	ldtx hl, DuelistPierrotName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -3949,7 +3949,7 @@ Script_StatuePierrot:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogPierrotText
+	set_text_ram2 DuelistPierrotName
 	set_text_ram2b StatueBlazingFlameDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -4021,7 +4021,7 @@ Script_PierrotAfterDuel:
 Script_StatueAnna:
 	ld a, NPC_ANNA
 	ld [wScriptNPC], a
-	ldtx hl, DialogAnnaText
+	ldtx hl, DuelistAnnaName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4029,7 +4029,7 @@ Script_StatueAnna:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogAnnaText
+	set_text_ram2 DuelistAnnaName
 	set_text_ram2b StatueDamageChaosDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -4100,7 +4100,7 @@ Script_AnnaAfterDuel:
 Script_StatueDee:
 	ld a, NPC_DEE
 	ld [wScriptNPC], a
-	ldtx hl, DialogDeeText
+	ldtx hl, DuelistDeeName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4108,7 +4108,7 @@ Script_StatueDee:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogDeeText
+	set_text_ram2 DuelistDeeName
 	set_text_ram2b StatueBigThunderDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -4180,7 +4180,7 @@ Script_DeeAfterDuel:
 Script_StatueMasquerade:
 	ld a, NPC_MASQUERADE
 	ld [wScriptNPC], a
-	ldtx hl, DialogMasqueradeText
+	ldtx hl, DuelistMasqueradeName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4188,7 +4188,7 @@ Script_StatueMasquerade:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogMasqueradeText
+	set_text_ram2 DuelistMasqueradeName
 	set_text_ram2b StatuePowerOfDarknessDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -4259,7 +4259,7 @@ Script_MasqueradeAfterDuel:
 Script_StatueYui:
 	ld a, NPC_YUI
 	ld [wScriptNPC], a
-	ldtx hl, DialogYuiText
+	ldtx hl, DuelistYuiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -4267,7 +4267,7 @@ Script_StatueYui:
 	xor a
 	start_script
 	start_dialog
-	set_text_ram2 DialogYuiText
+	set_text_ram2 DuelistYuiName
 	set_text_ram2b StatueTorrentialFloodDeckName
 	print_text GhostMasterStatueInscriptionText
 	check_event EVENT_GHOST_MASTER_STATUES_STATE
@@ -5679,7 +5679,7 @@ Func_42fcd:
 Func_42fe1:
 	ld a, NPC_BIRURITCHI
 	ld [wScriptNPC], a
-	ldtx hl, DialogBiruritchiText
+	ldtx hl, DuelistBiruritchiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h
@@ -5743,20 +5743,20 @@ Func_43050:
 	wait_for_player_animation
 	do_frames 30
 	start_dialog
-	set_active_npc NPC_KANZAKI, DialogKanzakiText
+	set_active_npc NPC_KANZAKI, DuelistKanzakiName
 	print_npc_text Text092a
 	end_dialog
 	animate_active_npc_movement $82, $01
 	start_dialog
-	set_active_npc NPC_RUI, DialogRuiText
+	set_active_npc NPC_RUI, DuelistRuiName
 	print_npc_text Text092b
 	end_dialog
 	animate_active_npc_movement $82, $01
 	start_dialog
-	set_active_npc NPC_BIRURITCHI, DialogBiruritchiText
+	set_active_npc NPC_BIRURITCHI, DuelistBiruritchiName
 	print_npc_text Text092c
 	end_dialog
-	set_active_npc NPC_KANZAKI, DialogKanzakiText
+	set_active_npc NPC_KANZAKI, DuelistKanzakiName
 	animate_active_npc_movement $00, $01
 	set_active_npc_direction WEST
 	start_dialog
@@ -5764,7 +5764,7 @@ Func_43050:
 	end_dialog
 	move_active_npc .NPCMovement_4311a
 	wait_for_player_animation
-	set_active_npc NPC_RUI, DialogRuiText
+	set_active_npc NPC_RUI, DuelistRuiName
 	animate_active_npc_movement $00, $01
 	set_active_npc_direction EAST
 	start_dialog
@@ -5774,7 +5774,7 @@ Func_43050:
 	wait_for_player_animation
 	unload_npc NPC_KANZAKI
 	unload_npc NPC_RUI
-	set_active_npc NPC_BIRURITCHI, DialogBiruritchiText
+	set_active_npc NPC_BIRURITCHI, DuelistBiruritchiName
 	animate_active_npc_movement $02, $01
 	start_dialog
 	print_npc_text Text092f
@@ -5853,7 +5853,7 @@ Func_43050:
 Func_43136:
 	ld a, NPC_BIRURITCHI
 	ld [wScriptNPC], a
-	ldtx hl, DialogBiruritchiText
+	ldtx hl, DuelistBiruritchiName
 	ld a, l
 	ld [wScriptNPCName], a
 	ld a, h

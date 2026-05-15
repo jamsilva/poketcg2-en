@@ -105,7 +105,7 @@ OpenInPlayAreaScreen::
 
 	ld hl, hffbb
 	ld [hl], $01
-	ldtx hl, HandText_2
+	ldtx hl, HandText
 	call ProcessTextFromID
 
 	ld hl, hffbb
@@ -408,11 +408,11 @@ OpenInPlayAreaScreen_TextTable:
 	dw PLAY_AREA_BENCH_4        ; INPLAYAREA_PLAYER_BENCH_4
 	dw PLAY_AREA_BENCH_5        ; INPLAYAREA_PLAYER_BENCH_5
 	dw PLAY_AREA_ARENA          ; INPLAYAREA_PLAYER_ACTIVE
-	tx DuelistHandText_2        ; INPLAYAREA_PLAYER_HAND
-	tx DuelistDiscardPileText_2 ; INPLAYAREA_PLAYER_DISCARD_PILE
+	tx DuelistHandText          ; INPLAYAREA_PLAYER_HAND
+	tx DuelistDiscardPileText   ; INPLAYAREA_PLAYER_DISCARD_PILE
 	dw PLAY_AREA_ARENA          ; INPLAYAREA_OPP_ACTIVE
-	tx DuelistHandText_2        ; INPLAYAREA_OPP_HAND
-	tx DuelistDiscardPileText_2 ; INPLAYAREA_OPP_DISCARD_PILE
+	tx DuelistHandText          ; INPLAYAREA_OPP_HAND
+	tx DuelistDiscardPileText   ; INPLAYAREA_OPP_DISCARD_PILE
 	dw PLAY_AREA_BENCH_1        ; INPLAYAREA_OPP_BENCH_1
 	dw PLAY_AREA_BENCH_2        ; INPLAYAREA_OPP_BENCH_2
 	dw PLAY_AREA_BENCH_3        ; INPLAYAREA_OPP_BENCH_3

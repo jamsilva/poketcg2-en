@@ -616,10 +616,6 @@ DebugLectureDuelText:
 	textfw "レクチャー対戦"
 	done
 
-FirstStrikeDeckText: ; left over from tcg1
-	textfw "せんせいこうげきデッキ"
-	done
-
 ThunderboltDeckName:
 	textfw "10まんボルト"
 	done
