@@ -24,7 +24,7 @@ TextOffsets::
 	textpointer CircleRarityText                                      ; 0x0012
 	textpointer DiamondRarityText                                     ; 0x0013
 	textpointer StarRarityText                                        ; 0x0014
-	textpointer WhitestarRarityText                                   ; 0x0015
+	textpointer UNUSED_0015                                           ; 0x0015
 	textpointer AllCardsOwnedText                                     ; 0x0016
 	textpointer TotalCardsCountText                                   ; 0x0017
 	textpointer TotalUniqueCardsCountText                             ; 0x0018

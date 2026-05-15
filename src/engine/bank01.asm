@@ -3956,7 +3956,9 @@ CardRarityTextIDs:
 	tx CircleRarityText    ; CIRCLE
 	tx DiamondRarityText   ; DIAMOND
 	tx StarRarityText      ; STAR
-	tx WhitestarRarityText ; WHITESTAR
+REPT $2 ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 DisplayCardPage_TrainerPage1:
 	xor a ; HEADER_TRAINER
