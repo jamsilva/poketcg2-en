@@ -3,11 +3,11 @@ GBCOnlyDisclaimer:
 	ld [wTileMapFill], a
 	call EmptyScreen
 	ld a, SCENE_GBC_ONLY_DISCLAIMER
-	lb bc, 0, 0
+	lb bc, 0, 2
 	call LoadScene
 	lb de, $30, $5f
 	call SetupText
-	lb de, 3, 9
+	lb de, 2, 9
 	ldtx hl, GBCOnlyText
 	call InitTextPrinting_ProcessTextFromID
 	bank1call ZeroObjectPositionsAndToggleOAMCopy
