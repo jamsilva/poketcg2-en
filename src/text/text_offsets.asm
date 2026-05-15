@@ -651,10 +651,10 @@ TextOffsets::
 	textpointer LowercaseOptionText                                   ; 0x0285
 	textpointer EndText                                               ; 0x0286
 	textpointer WhatIsYourNameText                                    ; 0x0287
-	textpointer HiraganaKeyboardText                                  ; 0x0288
-	textpointer KatakanaKeyboardText                                  ; 0x0289
-	textpointer UppercaseKeyboardText                                 ; 0x028a
-	textpointer LowercaseKeyboardText                                 ; 0x028b
+	textpointer UNUSED_0288                                           ; 0x0288
+	textpointer UNUSED_0289                                           ; 0x0289
+	textpointer PlayerNameKeyboardText                                ; 0x028a
+	textpointer DeckNameKeyboardText                                  ; 0x028b
 	textpointer NewDeckText                                           ; 0x028c
 	textpointer PleaseSelectDeckText                                  ; 0x028d
 	textpointer ModifyDeckText                                        ; 0x028e

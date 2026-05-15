@@ -125,7 +125,7 @@ WriteTwoByteNumber:
 	ret
 
 ; convert the number at hl to text (ascii) format and write it to de
-TwoByteNumberToText:
+TwoByteNumberToText::
 	push bc
 	ld bc, -10000
 	call .get_digit
