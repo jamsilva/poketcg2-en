@@ -1,7 +1,6 @@
 ; console types (wConsole)
 DEF CONSOLE_DMG EQU $00
-DEF CONSOLE_SGB EQU $01
-DEF CONSOLE_CGB EQU $02
+DEF CONSOLE_CGB EQU $01
 
 ; wReentrancyFlag bits
 DEF IN_VBLANK EQU 0
