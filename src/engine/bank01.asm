@@ -3595,7 +3595,7 @@ DisplayCardPage_PokemonOverview:
 	; print the retreat cost (some amount of colorless energies) at 8,14
 	inc c
 	inc c ; 14
-	ld b, 5
+	ld b, 8
 	ld a, [wLoadedCard1RetreatCost]
 	ld e, a
 	inc e
@@ -3610,11 +3610,11 @@ DisplayCardPage_PokemonOverview:
 	; print the colors (energies) of the weakness(es) and resistance(s)
 	inc c ; 15
 	ld a, [wCardPageType]
-	ld b, a
-	ld a, [wCurPlayAreaSlot]
-	cpl
-	or b
+	or a
 	jr z, .wr_from_loaded_card
+	ld a, [wCurPlayAreaSlot]
+	or a
+	jr nz, .wr_from_loaded_card
 	call GetArenaCardWeakness
 	ld d, a
 	call GetArenaCardResistance
@@ -3627,7 +3627,7 @@ DisplayCardPage_PokemonOverview:
 	ld e, a
 .got_wr
 	ld a, d
-	ld b, 5
+	ld b, 8
 	call PrintCardPageWeaknessesOrResistances
 	inc c
 	ld a, e
@@ -3879,27 +3879,25 @@ DisplayCardPage_PokemonDescription:
 	call ProcessSpecialTextCharacter
 	ldtx hl, PokemonText
 	call ProcessTextFromID
-	; print the length at 3, 11
-	lb bc, 3, 11
-	ld a, [wLoadedCard1Length]
-	ld l, a
-	ld h, $00
-	call PrintNumberAsMeasurement
-	call InitTextPrinting
-	ldtx hl, LengthUnitMetresText
-	call ProcessTextFromID
-	; print the weight at 3, 12
-	lb bc, 3, 12
+	; print the length at 5, 11
+	lb bc, 5, 11
+	ld hl, wLoadedCard1Length
+	ld a, [hli]
+	ld l, [hl]
+	ld h, a
+	call PrintPokemonCardLength
+	; print the weight at 5, 12
+	lb bc, 5, 12
 	ld hl, wLoadedCard1Weight
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
 	call PrintNumberAsMeasurement
-	ldtx hl, WeightUnitKilogramsText
+	ldtx hl, WeightUnitEndText
 	call InitTextPrinting_ProcessTextFromID
 	call SetNoLineSeparation
-	ld a, 19
-	lb de, 1, 14
+	lb de, 1, 13
+	ld a, 19 ; line length
 	call InitTextPrintingInTextbox
 	ld hl, wLoadedCard1Description
 	call ProcessTextFromPointerToID
@@ -4093,6 +4091,52 @@ PrintNumberAsMeasurement:
 	ld a, b
 	add d
 	ld d, a
+	ret
+
+; given a number in h and another in l, print them formatted as <l><LengthUnitSeparatorText><h><LengthUnitEndText> at b,c.
+; used to print the length (feet and inches or meters with decimal point) of a Pokemon card.
+PrintPokemonCardLength::
+	push bc
+	push hl
+	ld l, h
+	ldtx de, LengthUnitSeparatorText
+	call .print_number_and_suffix
+	pop hl
+	ldtx de, LengthUnitEndText
+	call .print_number_and_suffix
+	pop bc
+	ret
+
+.print_number_and_suffix
+; keep track how many digits each number consists of in wPokemonLengthPrintOffset,
+; in order to align the rest of the string. the text with id at de
+; is printed after the number.
+	push de
+	push bc
+	ld h, $00
+	call TwoByteNumberToTxSymbol_PadSpace_Bank01
+	ld a, b
+	inc a
+	ld [wPokemonLengthPrintOffset], a
+	pop bc
+	push bc
+	push hl
+	call BCCoordToBGMap0Address
+	ld a, [wPokemonLengthPrintOffset]
+	ld b, a
+	pop hl
+	call SafeCopyDataHLtoDE
+	pop bc
+	ld a, [wPokemonLengthPrintOffset]
+	add b
+	ld b, a
+	pop hl
+	push bc
+	ld e, c
+	ld d, b
+	call InitTextPrinting_ProcessTextFromID
+	pop bc
+	inc b
 	ret
 
 ; return carry if the turn holder has any Pokemon with non-zero HP on the bench.

@@ -85,7 +85,7 @@ MACRO? darkness_level
 ENDM
 
 MACRO? length
-	dw ROUND(\1 * 10) >> 16
+	db \1, \2
 ENDM
 
 MACRO? weight

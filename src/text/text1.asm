@@ -60,13 +60,31 @@ PokemonText:
 	textfw "ポケモン"
 	done
 
-LengthUnitMetresText:
+IF METRIC
+LengthUnitSeparatorText:
+	textfw "."
+	done
+
+LengthUnitEndText:
 	textfw "m"
 	done
 
-WeightUnitKilogramsText:
+WeightUnitEndText:
 	textfw "Kg"
 	done
+ELSE
+LengthUnitSeparatorText:
+	textfw "'"
+	done
+
+LengthUnitEndText:
+	textfw "”"
+	done
+
+WeightUnitEndText:
+	text "lbs."
+	done
+ENDC
 
 PromostarRarityText:
 	textfw " "
@@ -631,10 +649,6 @@ MenuPutOutCheckText:
 MenuSelectCheckText:
 	textfw " えらぶ"
 	linefw " しらべる"
-	done
-
-UnusedText008c: ; unused
-	textfw "B<RAMNUM>S<RAMNUM>"
 	done
 
 DuelistIsThinkingText:

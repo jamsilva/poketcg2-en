@@ -44,8 +44,13 @@ BulbasaurLv12Card:
 	tx SeedName ; category
 	db DEX_BULBASAUR ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 6.9 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx BulbasaurLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -95,8 +100,13 @@ BulbasaurLv13Card:
 	tx SeedName ; category
 	db DEX_BULBASAUR ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 6.9 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx BulbasaurLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -146,8 +156,13 @@ BulbasaurLv15Card:
 	tx SeedName ; category
 	db DEX_BULBASAUR ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 6.9 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx BulbasaurLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -197,8 +212,13 @@ IvysaurLv20Card:
 	tx SeedName ; category
 	db DEX_IVYSAUR ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 13.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 29.0 ; weight
+ENDC
 	tx IvysaurLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -248,8 +268,13 @@ IvysaurLv26Card:
 	tx SeedName ; category
 	db DEX_IVYSAUR ; Pokedex number
 	darkness_level FALSE, 26 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 13.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 29.0 ; weight
+ENDC
 	tx IvysaurLv26Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -299,8 +324,13 @@ DarkIvysaurCard:
 	tx SeedName ; category
 	db DEX_IVYSAUR ; Pokedex number
 	darkness_level TRUE, 16 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 13.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 29.0 ; weight
+ENDC
 	tx DarkIvysaurDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -350,8 +380,13 @@ VenusaurLv64Card:
 	tx SeedName ; category
 	db DEX_VENUSAUR ; Pokedex number
 	darkness_level FALSE, 64 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 100.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 221.0 ; weight
+ENDC
 	tx VenusaurLv64Description ; description
 	db NONE ; AI info
 
@@ -401,8 +436,13 @@ VenusaurLv67Card:
 	tx SeedName ; category
 	db DEX_VENUSAUR ; Pokedex number
 	darkness_level FALSE, 67 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 100.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 221.0 ; weight
+ENDC
 	tx VenusaurLv67Description ; description
 	db NONE ; AI info
 
@@ -452,8 +492,13 @@ VenusaurAltLv67Card:
 	tx SeedName ; category
 	db DEX_VENUSAUR ; Pokedex number
 	darkness_level FALSE, 67 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 100.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 221.0 ; weight
+ENDC
 	tx VenusaurLv67Description ; description
 	db NONE ; AI info
 
@@ -503,8 +548,13 @@ DarkVenusaurCard:
 	tx SeedName ; category
 	db DEX_VENUSAUR ; Pokedex number
 	darkness_level TRUE, 37 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 100.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 221.0 ; weight
+ENDC
 	tx DarkVenusaurDescription ; description
 	db NONE ; AI info
 
@@ -554,8 +604,13 @@ CaterpieCard:
 	tx WormName ; category
 	db DEX_CATERPIE ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 2.9 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 6.0 ; weight
+ENDC
 	tx CaterpieDescription ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -605,8 +660,13 @@ MetapodLv20Card:
 	tx CocoonName ; category
 	db DEX_METAPOD ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 9.9 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 22.0 ; weight
+ENDC
 	tx MetapodLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -656,8 +716,13 @@ MetapodLv21Card:
 	tx CocoonName ; category
 	db DEX_METAPOD ; Pokedex number
 	darkness_level FALSE, 21 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 9.9 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 22.0 ; weight
+ENDC
 	tx MetapodLv21Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -707,8 +772,13 @@ ButterfreeCard:
 	tx ButterflyName ; category
 	db DEX_BUTTERFREE ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 32.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 71.0 ; weight
+ENDC
 	tx ButterfreeDescription ; description
 	db NONE ; AI info
 
@@ -758,8 +828,13 @@ WeedleLv12Card:
 	tx HairyBugName ; category
 	db DEX_WEEDLE ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 3.2 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 7.0 ; weight
+ENDC
 	tx WeedleLv12Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -809,8 +884,13 @@ WeedleLv15Card:
 	tx HairyBugName ; category
 	db DEX_WEEDLE ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 3.2 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 7.0 ; weight
+ENDC
 	tx WeedleLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -860,8 +940,13 @@ KakunaLv20Card:
 	tx CocoonName ; category
 	db DEX_KAKUNA ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 10.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 22.0 ; weight
+ENDC
 	tx KakunaLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -911,8 +996,13 @@ KakunaLv23Card:
 	tx CocoonName ; category
 	db DEX_KAKUNA ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 10.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 22.0 ; weight
+ENDC
 	tx KakunaLv23Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -962,8 +1052,13 @@ BeedrillCard:
 	tx PoisonBeeName ; category
 	db DEX_BEEDRILL ; Pokedex number
 	darkness_level FALSE, 32 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 65.0 ; weight
+ENDC
 	tx BeedrillDescription ; description
 	db NONE ; AI info
 
@@ -1013,8 +1108,13 @@ EkansLv10Card:
 	tx SnakeName ; category
 	db DEX_EKANS ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 6.9 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 15.0 ; weight
+ENDC
 	tx EkansLv10Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -1064,8 +1164,13 @@ EkansLv15Card:
 	tx SnakeName ; category
 	db DEX_EKANS ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 6.9 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 15.0 ; weight
+ENDC
 	tx EkansLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1115,8 +1220,13 @@ ArbokLv27Card:
 	tx CobraName ; category
 	db DEX_ARBOK ; Pokedex number
 	darkness_level FALSE, 27 ; is Dark?, level
-	length 3.5 ; length
+IF METRIC
+	length 3, 5 ; length
 	weight 65.0 ; weight
+ELSE
+	length 11, 6 ; length
+	weight 143.0 ; weight
+ENDC
 	tx ArbokLv27Description ; description
 	db NONE ; AI info
 
@@ -1166,8 +1276,13 @@ ArbokLv30Card:
 	tx CobraName ; category
 	db DEX_ARBOK ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
-	length 3.5 ; length
+IF METRIC
+	length 3, 5 ; length
 	weight 65.0 ; weight
+ELSE
+	length 11, 6 ; length
+	weight 143.0 ; weight
+ENDC
 	tx ArbokLv30Description ; description
 	db NONE ; AI info
 
@@ -1217,8 +1332,13 @@ DarkArbokCard:
 	tx CobraName ; category
 	db DEX_ARBOK ; Pokedex number
 	darkness_level TRUE, 25 ; is Dark?, level
-	length 3.5 ; length
+IF METRIC
+	length 3, 5 ; length
 	weight 65.0 ; weight
+ELSE
+	length 11, 6 ; length
+	weight 143.0 ; weight
+ENDC
 	tx DarkArbokDescription ; description
 	db NONE ; AI info
 
@@ -1268,8 +1388,13 @@ NidoranFLv12Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORAN_F ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 7.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx NidoranFLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1319,8 +1444,13 @@ NidoranFLv13Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORAN_F ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 7.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx NidoranFLv13Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -1370,8 +1500,13 @@ NidorinaLv22Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORINA ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 20.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 44.0 ; weight
+ENDC
 	tx NidorinaLv22Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1421,8 +1556,13 @@ NidorinaLv24Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORINA ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 20.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 44.0 ; weight
+ENDC
 	tx NidorinaLv24Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1472,8 +1612,13 @@ NidoqueenCard:
 	tx DrillName ; category
 	db DEX_NIDOQUEEN ; Pokedex number
 	darkness_level FALSE, 43 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 60.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx NidoqueenDescription ; description
 	db NONE ; AI info
 
@@ -1523,8 +1668,13 @@ NidoranMLv20Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORAN_M ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx NidoranMLv20Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -1574,8 +1724,13 @@ NidoranMLv22Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORAN_M ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 15.0 ; weight
+ENDC
 	tx NidoranMLv22Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1625,8 +1780,13 @@ NidorinoLv23Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORINO ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 19.5 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 43.0 ; weight
+ENDC
 	tx NidorinoLv23Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1676,8 +1836,13 @@ NidorinoLv25Card:
 	tx PoisonStingName ; category
 	db DEX_NIDORINO ; Pokedex number
 	darkness_level FALSE, 25 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 19.5 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 43.0 ; weight
+ENDC
 	tx NidorinoLv25Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1727,8 +1892,13 @@ NidokingCard:
 	tx DrillName ; category
 	db DEX_NIDOKING ; Pokedex number
 	darkness_level FALSE, 48 ; is Dark?, level
-	length 1.4 ; length
+IF METRIC
+	length 1, 4 ; length
 	weight 62.0 ; weight
+ELSE
+	length 4, 7 ; length
+	weight 137.0 ; weight
+ENDC
 	tx NidokingDescription ; description
 	db NONE ; AI info
 
@@ -1778,8 +1948,13 @@ ZubatLv9Card:
 	tx BatName ; category
 	db DEX_ZUBAT ; Pokedex number
 	darkness_level FALSE, 9 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 7.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 17.0 ; weight
+ENDC
 	tx ZubatLv9Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1829,8 +2004,13 @@ ZubatLv10Card:
 	tx BatName ; category
 	db DEX_ZUBAT ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 7.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 17.0 ; weight
+ENDC
 	tx ZubatLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1880,8 +2060,13 @@ ZubatLv12Card:
 	tx BatName ; category
 	db DEX_ZUBAT ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 7.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 17.0 ; weight
+ENDC
 	tx ZubatLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -1931,8 +2116,13 @@ GolbatLv25Card:
 	tx BatName ; category
 	db DEX_GOLBAT ; Pokedex number
 	darkness_level FALSE, 25 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 55.0 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 121.0 ; weight
+ENDC
 	tx GolbatLv25Description ; description
 	db NONE ; AI info
 
@@ -1982,8 +2172,13 @@ GolbatLv29Card:
 	tx BatName ; category
 	db DEX_GOLBAT ; Pokedex number
 	darkness_level FALSE, 29 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 55.0 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 121.0 ; weight
+ENDC
 	tx GolbatLv29Description ; description
 	db NONE ; AI info
 
@@ -2033,8 +2228,13 @@ DarkGolbatCard:
 	tx BatName ; category
 	db DEX_GOLBAT ; Pokedex number
 	darkness_level TRUE, 25 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 55.0 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 121.0 ; weight
+ENDC
 	tx DarkGolbatDescription ; description
 	db NONE ; AI info
 
@@ -2084,8 +2284,13 @@ OddishLv8Card:
 	tx WeedName ; category
 	db DEX_ODDISH ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 5.4 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 12.0 ; weight
+ENDC
 	tx OddishLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2135,8 +2340,13 @@ OddishLv21Card:
 	tx WeedName ; category
 	db DEX_ODDISH ; Pokedex number
 	darkness_level FALSE, 21 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 5.4 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 12.0 ; weight
+ENDC
 	tx OddishLv21Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2186,8 +2396,13 @@ GloomCard:
 	tx WeedName ; category
 	db DEX_GLOOM ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 8.6 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 19.0 ; weight
+ENDC
 	tx GloomDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2237,8 +2452,13 @@ DarkGloomCard:
 	tx WeedName ; category
 	db DEX_GLOOM ; Pokedex number
 	darkness_level TRUE, 21 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 8.6 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 19.0 ; weight
+ENDC
 	tx DarkGloomDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2288,8 +2508,13 @@ VileplumeCard:
 	tx FlowerName ; category
 	db DEX_VILEPLUME ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 18.6 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 41.0 ; weight
+ENDC
 	tx VileplumeDescription ; description
 	db NONE ; AI info
 
@@ -2339,8 +2564,13 @@ DarkVileplumeCard:
 	tx FlowerName ; category
 	db DEX_VILEPLUME ; Pokedex number
 	darkness_level TRUE, 29 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 18.6 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 41.0 ; weight
+ENDC
 	tx DarkVileplumeDescription ; description
 	db NONE ; AI info
 
@@ -2390,8 +2620,13 @@ ParasLv8Card:
 	tx MushroomName ; category
 	db DEX_PARAS ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 5.4 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 12.0 ; weight
+ENDC
 	tx ParasLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2441,8 +2676,13 @@ ParasLv15Card:
 	tx MushroomName ; category
 	db DEX_PARAS ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 5.4 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 12.0 ; weight
+ENDC
 	tx ParasLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2492,8 +2732,13 @@ ParasectLv28Card:
 	tx MushroomName ; category
 	db DEX_PARASECT ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 65.0 ; weight
+ENDC
 	tx ParasectLv28Description ; description
 	db NONE ; AI info
 
@@ -2543,8 +2788,13 @@ ParasectLv29Card:
 	tx MushroomName ; category
 	db DEX_PARASECT ; Pokedex number
 	darkness_level FALSE, 29 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 65.0 ; weight
+ENDC
 	tx ParasectLv29Description ; description
 	db NONE ; AI info
 
@@ -2594,8 +2844,13 @@ VenonatLv12Card:
 	tx InsectName ; category
 	db DEX_VENONAT ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 66.0 ; weight
+ENDC
 	tx VenonatLv12Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -2645,8 +2900,13 @@ VenonatLv15Card:
 	tx InsectName ; category
 	db DEX_VENONAT ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 66.0 ; weight
+ENDC
 	tx VenonatLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2696,8 +2956,13 @@ VenomothLv22Card:
 	tx PoisonMothName ; category
 	db DEX_VENOMOTH ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 12.5 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 28.0 ; weight
+ENDC
 	tx VenomothLv22Description ; description
 	db NONE ; AI info
 
@@ -2747,8 +3012,13 @@ VenomothLv28Card:
 	tx PoisonMothName ; category
 	db DEX_VENOMOTH ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 12.5 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 28.0 ; weight
+ENDC
 	tx VenomothLv28Description ; description
 	db NONE ; AI info
 
@@ -2798,8 +3068,13 @@ BellsproutLv10Card:
 	tx FlowerName ; category
 	db DEX_BELLSPROUT ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 4.0 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 9.0 ; weight
+ENDC
 	tx BellsproutLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2849,8 +3124,13 @@ BellsproutLv11Card:
 	tx FlowerName ; category
 	db DEX_BELLSPROUT ; Pokedex number
 	darkness_level FALSE, 11 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 4.0 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 9.0 ; weight
+ENDC
 	tx BellsproutLv11Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -2900,8 +3180,13 @@ WeepinbellLv23Card:
 	tx FlycatcherName ; category
 	db DEX_WEEPINBELL ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 6.4 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 14.0 ; weight
+ENDC
 	tx WeepinbellLv23Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -2951,8 +3236,13 @@ WeepinbellLv28Card:
 	tx FlycatcherName ; category
 	db DEX_WEEPINBELL ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 6.4 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 14.0 ; weight
+ENDC
 	tx WeepinbellLv28Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -3002,8 +3292,13 @@ VictreebelCard:
 	tx FlycatcherName ; category
 	db DEX_VICTREEBEL ; Pokedex number
 	darkness_level FALSE, 42 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 15.5 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 34.0 ; weight
+ENDC
 	tx VictreebelDescription ; description
 	db NONE ; AI info
 
@@ -3053,8 +3348,13 @@ GrimerLv10Card:
 	tx SludgeCategoryName ; category
 	db DEX_GRIMER ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 66.0 ; weight
+ENDC
 	tx GrimerLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -3104,8 +3404,13 @@ GrimerLv17Card:
 	tx SludgeCategoryName ; category
 	db DEX_GRIMER ; Pokedex number
 	darkness_level FALSE, 17 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 66.0 ; weight
+ENDC
 	tx GrimerLv17Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -3155,8 +3460,13 @@ MukCard:
 	tx SludgeCategoryName ; category
 	db DEX_MUK ; Pokedex number
 	darkness_level FALSE, 34 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 66.0 ; weight
+ENDC
 	tx MukDescription ; description
 	db NONE ; AI info
 
@@ -3206,8 +3516,13 @@ DarkMukCard:
 	tx SludgeCategoryName ; category
 	db DEX_MUK ; Pokedex number
 	darkness_level TRUE, 25 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 66.0 ; weight
+ENDC
 	tx DarkMukDescription ; description
 	db NONE ; AI info
 
@@ -3257,8 +3572,13 @@ ExeggcuteCard:
 	tx EggName ; category
 	db DEX_EXEGGCUTE ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 2.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 6.0 ; weight
+ENDC
 	tx ExeggcuteDescription ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -3308,8 +3628,13 @@ ExeggutorCard:
 	tx CoconutName ; category
 	db DEX_EXEGGUTOR ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 120.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 265.0 ; weight
+ENDC
 	tx ExeggutorDescription ; description
 	db NONE ; AI info
 
@@ -3359,8 +3684,13 @@ KoffingLv12Card:
 	tx PoisonGasName ; category
 	db DEX_KOFFING ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 1.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 2.0 ; weight
+ENDC
 	tx KoffingLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -3410,8 +3740,13 @@ KoffingLv13Card:
 	tx PoisonGasName ; category
 	db DEX_KOFFING ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 1.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 2.0 ; weight
+ENDC
 	tx KoffingLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -3461,8 +3796,13 @@ KoffingLv14Card:
 	tx PoisonGasName ; category
 	db DEX_KOFFING ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 1.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 2.0 ; weight
+ENDC
 	tx KoffingLv14Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -3512,8 +3852,13 @@ WeezingLv26Card:
 	tx PoisonGasName ; category
 	db DEX_WEEZING ; Pokedex number
 	darkness_level FALSE, 26 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 9.5 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 21.0 ; weight
+ENDC
 	tx WeezingLv26Description ; description
 	db NONE ; AI info
 
@@ -3563,8 +3908,13 @@ WeezingLv27Card:
 	tx PoisonGasName ; category
 	db DEX_WEEZING ; Pokedex number
 	darkness_level FALSE, 27 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 9.5 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 21.0 ; weight
+ENDC
 	tx WeezingLv27Description ; description
 	db NONE ; AI info
 
@@ -3614,8 +3964,13 @@ DarkWeezingCard:
 	tx PoisonGasName ; category
 	db DEX_WEEZING ; Pokedex number
 	darkness_level TRUE, 24 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 9.5 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 21.0 ; weight
+ENDC
 	tx DarkWeezingDescription ; description
 	db NONE ; AI info
 
@@ -3665,8 +4020,13 @@ TangelaLv8Card:
 	tx VineName ; category
 	db DEX_TANGELA ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 35.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 77.0 ; weight
+ENDC
 	tx TangelaLv8Description ; description
 	db NONE ; AI info
 
@@ -3716,8 +4076,13 @@ TangelaLv12Card:
 	tx VineName ; category
 	db DEX_TANGELA ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 35.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 77.0 ; weight
+ENDC
 	tx TangelaLv12Description ; description
 	db NONE ; AI info
 
@@ -3767,8 +4132,13 @@ ScytherLv23Card:
 	tx MantisName ; category
 	db DEX_SCYTHER ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 56.0 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 123.0 ; weight
+ENDC
 	tx ScytherLv23Description ; description
 	db NONE ; AI info
 
@@ -3818,8 +4188,13 @@ ScytherLv25Card:
 	tx MantisName ; category
 	db DEX_SCYTHER ; Pokedex number
 	darkness_level FALSE, 25 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 56.0 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 123.0 ; weight
+ENDC
 	tx ScytherLv25Description ; description
 	db NONE ; AI info
 
@@ -3869,8 +4244,13 @@ PinsirLv15Card:
 	tx StagbeetleName ; category
 	db DEX_PINSIR ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 55.0 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 121.0 ; weight
+ENDC
 	tx PinsirLv15Description ; description
 	db NONE ; AI info
 
@@ -3920,8 +4300,13 @@ PinsirLv24Card:
 	tx StagbeetleName ; category
 	db DEX_PINSIR ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 55.0 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 121.0 ; weight
+ENDC
 	tx PinsirLv24Description ; description
 	db NONE ; AI info
 
@@ -3971,8 +4356,13 @@ CharmanderLv9Card:
 	tx LizardName ; category
 	db DEX_CHARMANDER ; Pokedex number
 	darkness_level FALSE, 9 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 8.5 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 19.0 ; weight
+ENDC
 	tx CharmanderLv9Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4022,8 +4412,13 @@ CharmanderLv10Card:
 	tx LizardName ; category
 	db DEX_CHARMANDER ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 8.5 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 19.0 ; weight
+ENDC
 	tx CharmanderLv10Description ; description
 	db AI_INFO_UNK_05 | HAS_EVOLUTION ; AI info
 
@@ -4073,8 +4468,13 @@ CharmanderLv12Card:
 	tx LizardName ; category
 	db DEX_CHARMANDER ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 8.5 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 19.0 ; weight
+ENDC
 	tx CharmanderLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4124,8 +4524,13 @@ CharmeleonCard:
 	tx FlameName ; category
 	db DEX_CHARMELEON ; Pokedex number
 	darkness_level FALSE, 32 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 19.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 42.0 ; weight
+ENDC
 	tx CharmeleonDescription ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -4175,8 +4580,13 @@ DarkCharmeleonCard:
 	tx FlameName ; category
 	db DEX_CHARMELEON ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 19.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 42.0 ; weight
+ENDC
 	tx DarkCharmeleonDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4226,8 +4636,13 @@ CharizardLv76Card:
 	tx FlameName ; category
 	db DEX_CHARIZARD ; Pokedex number
 	darkness_level FALSE, 76 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 90.5 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 200.0 ; weight
+ENDC
 	tx CharizardDescription ; description
 	db NONE ; AI info
 
@@ -4277,8 +4692,13 @@ CharizardAltLv76Card:
 	tx FlameName ; category
 	db DEX_CHARIZARD ; Pokedex number
 	darkness_level FALSE, 76 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 90.5 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 200.0 ; weight
+ENDC
 	tx CharizardAltDescription ; description
 	db NONE ; AI info
 
@@ -4328,8 +4748,13 @@ DarkCharizardCard:
 	tx FlameName ; category
 	db DEX_CHARIZARD ; Pokedex number
 	darkness_level TRUE, 38 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 90.5 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 200.0 ; weight
+ENDC
 	tx DarkCharizardDescription ; description
 	db NONE ; AI info
 
@@ -4379,8 +4804,13 @@ VulpixLv11Card:
 	tx FoxName ; category
 	db DEX_VULPIX ; Pokedex number
 	darkness_level FALSE, 11 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 9.9 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 22.0 ; weight
+ENDC
 	tx VulpixLv11Description ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -4430,8 +4860,13 @@ VulpixLv13Card:
 	tx FoxName ; category
 	db DEX_VULPIX ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 9.9 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 22.0 ; weight
+ENDC
 	tx VulpixLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4481,8 +4916,13 @@ NinetalesLv32Card:
 	tx FoxName ; category
 	db DEX_NINETALES ; Pokedex number
 	darkness_level FALSE, 32 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 19.9 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 44.0 ; weight
+ENDC
 	tx NinetalesLv32Description ; description
 	db NONE ; AI info
 
@@ -4532,8 +4972,13 @@ NinetalesLv35Card:
 	tx FoxName ; category
 	db DEX_NINETALES ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 19.9 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 44.0 ; weight
+ENDC
 	tx NinetalesLv35Description ; description
 	db NONE ; AI info
 
@@ -4583,8 +5028,13 @@ DarkNinetalesCard:
 	tx FoxName ; category
 	db DEX_NINETALES ; Pokedex number
 	darkness_level TRUE, 28 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 19.9 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 44.0 ; weight
+ENDC
 	tx DarkNinetalesDescription ; description
 	db NONE ; AI info
 
@@ -4634,8 +5084,13 @@ GrowlitheLv12Card:
 	tx PuppyName ; category
 	db DEX_GROWLITHE ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 19.0 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 42.0 ; weight
+ENDC
 	tx GrowlitheLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4685,8 +5140,13 @@ GrowlitheLv16Card:
 	tx PuppyName ; category
 	db DEX_GROWLITHE ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 19.0 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 42.0 ; weight
+ENDC
 	tx GrowlitheLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4736,8 +5196,13 @@ GrowlitheLv18Card:
 	tx PuppyName ; category
 	db DEX_GROWLITHE ; Pokedex number
 	darkness_level FALSE, 18 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 19.0 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 42.0 ; weight
+ENDC
 	tx GrowlitheLv18Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4787,8 +5252,13 @@ ArcanineLv34Card:
 	tx LegendaryName ; category
 	db DEX_ARCANINE ; Pokedex number
 	darkness_level FALSE, 34 ; is Dark?, level
-	length 1.9 ; length
+IF METRIC
+	length 1, 9 ; length
 	weight 155.0 ; weight
+ELSE
+	length 6, 3 ; length
+	weight 342.0 ; weight
+ENDC
 	tx ArcanineLv34Description ; description
 	db NONE ; AI info
 
@@ -4838,8 +5308,13 @@ ArcanineLv35Card:
 	tx LegendaryName ; category
 	db DEX_ARCANINE ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.9 ; length
+IF METRIC
+	length 1, 9 ; length
 	weight 155.0 ; weight
+ELSE
+	length 6, 3 ; length
+	weight 342.0 ; weight
+ENDC
 	tx ArcanineLv35Description ; description
 	db NONE ; AI info
 
@@ -4889,8 +5364,13 @@ ArcanineLv45Card:
 	tx LegendaryName ; category
 	db DEX_ARCANINE ; Pokedex number
 	darkness_level FALSE, 45 ; is Dark?, level
-	length 1.9 ; length
+IF METRIC
+	length 1, 9 ; length
 	weight 155.0 ; weight
+ELSE
+	length 6, 3 ; length
+	weight 342.0 ; weight
+ENDC
 	tx ArcanineLv45Description ; description
 	db NONE ; AI info
 
@@ -4940,8 +5420,13 @@ PonytaLv8Card:
 	tx FireHorseName ; category
 	db DEX_PONYTA ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 66.0 ; weight
+ENDC
 	tx PonytaLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -4991,8 +5476,13 @@ PonytaLv10Card:
 	tx FireHorseName ; category
 	db DEX_PONYTA ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 66.0 ; weight
+ENDC
 	tx PonytaLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -5042,8 +5532,13 @@ PonytaLv15Card:
 	tx FireHorseName ; category
 	db DEX_PONYTA ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 66.0 ; weight
+ENDC
 	tx PonytaLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -5093,8 +5588,13 @@ RapidashLv30Card:
 	tx FireHorseName ; category
 	db DEX_RAPIDASH ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 95.0 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 209.0 ; weight
+ENDC
 	tx RapidashLv30Description ; description
 	db NONE ; AI info
 
@@ -5144,8 +5644,13 @@ RapidashLv33Card:
 	tx FireHorseName ; category
 	db DEX_RAPIDASH ; Pokedex number
 	darkness_level FALSE, 33 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 95.0 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 209.0 ; weight
+ENDC
 	tx RapidashLv33Description ; description
 	db NONE ; AI info
 
@@ -5195,8 +5700,13 @@ DarkRapidashCard:
 	tx FireHorseName ; category
 	db DEX_RAPIDASH ; Pokedex number
 	darkness_level TRUE, 24 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 95.0 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 209.0 ; weight
+ENDC
 	tx DarkRapidashDescription ; description
 	db NONE ; AI info
 
@@ -5246,8 +5756,13 @@ MagmarLv18Card:
 	tx SpitfireName ; category
 	db DEX_MAGMAR ; Pokedex number
 	darkness_level FALSE, 18 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 44.5 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 98.0 ; weight
+ENDC
 	tx MagmarLv18Description ; description
 	db NONE ; AI info
 
@@ -5297,8 +5812,13 @@ MagmarLv24Card:
 	tx SpitfireName ; category
 	db DEX_MAGMAR ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 44.5 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 98.0 ; weight
+ENDC
 	tx MagmarLv24Description ; description
 	db NONE ; AI info
 
@@ -5348,8 +5868,13 @@ MagmarLv27Card:
 	tx SpitfireName ; category
 	db DEX_MAGMAR ; Pokedex number
 	darkness_level FALSE, 27 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 44.5 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 98.0 ; weight
+ENDC
 	tx MagmarLv27Description ; description
 	db NONE ; AI info
 
@@ -5399,8 +5924,13 @@ MagmarLv31Card:
 	tx SpitfireName ; category
 	db DEX_MAGMAR ; Pokedex number
 	darkness_level FALSE, 31 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 44.5 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 98.0 ; weight
+ENDC
 	tx MagmarLv31Description ; description
 	db AI_INFO_UNK_03 ; AI info
 
@@ -5450,8 +5980,13 @@ FlareonLv22Card:
 	tx FlareName ; category
 	db DEX_FLAREON ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 25.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 55.0 ; weight
+ENDC
 	tx FlareonLv22Description ; description
 	db NONE ; AI info
 
@@ -5501,8 +6036,13 @@ FlareonLv28Card:
 	tx FlareName ; category
 	db DEX_FLAREON ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 25.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 55.0 ; weight
+ENDC
 	tx FlareonLv28Description ; description
 	db NONE ; AI info
 
@@ -5552,8 +6092,13 @@ DarkFlareonCard:
 	tx FlareName ; category
 	db DEX_FLAREON ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 25.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 55.0 ; weight
+ENDC
 	tx DarkFlareonDescription ; description
 	db NONE ; AI info
 
@@ -5603,8 +6148,13 @@ MoltresLv35Card:
 	tx FlameName ; category
 	db DEX_MOLTRES ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MoltresLv35Description ; description
 	db NONE ; AI info
 
@@ -5654,8 +6204,13 @@ MoltresLv37Card:
 	tx FlameName ; category
 	db DEX_MOLTRES ; Pokedex number
 	darkness_level FALSE, 37 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MoltresSharedDescription ; description
 	db NONE ; AI info
 
@@ -5705,8 +6260,13 @@ MoltresLv40Card:
 	tx FlameName ; category
 	db DEX_MOLTRES ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
-	length 2.0 ; length
+IF METRIC
+	length 2, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 6, 7 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MoltresSharedDescription ; description
 	db NONE ; AI info
 
@@ -5756,8 +6316,13 @@ SquirtleLv8Card:
 	tx TinyTurtleName ; category
 	db DEX_SQUIRTLE ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 20.0 ; weight
+ENDC
 	tx SquirtleLv8Description ; description
 	db AI_INFO_UNK_05 | HAS_EVOLUTION ; AI info
 
@@ -5807,8 +6372,13 @@ SquirtleLv14Card:
 	tx TinyTurtleName ; category
 	db DEX_SQUIRTLE ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 20.0 ; weight
+ENDC
 	tx SquirtleLv14Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -5858,8 +6428,13 @@ SquirtleLv15Card:
 	tx TinyTurtleName ; category
 	db DEX_SQUIRTLE ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 20.0 ; weight
+ENDC
 	tx SquirtleLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -5909,8 +6484,13 @@ SquirtleLv16Card:
 	tx TinyTurtleName ; category
 	db DEX_SQUIRTLE ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 9.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 20.0 ; weight
+ENDC
 	tx SquirtleLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -5960,8 +6540,13 @@ WartortleLv22Card:
 	tx TurtleName ; category
 	db DEX_WARTORTLE ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 22.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 50.0 ; weight
+ENDC
 	tx WartortleLv22Description ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -6011,8 +6596,13 @@ WartortleLv24Card:
 	tx TurtleName ; category
 	db DEX_WARTORTLE ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 22.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 50.0 ; weight
+ENDC
 	tx WartortleLv24Description ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -6062,8 +6652,13 @@ DarkWartortleCard:
 	tx TurtleName ; category
 	db DEX_WARTORTLE ; Pokedex number
 	darkness_level TRUE, 21 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 22.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 50.0 ; weight
+ENDC
 	tx DarkWartortleDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6113,8 +6708,13 @@ BlastoiseLv52Card:
 	tx ShellfishName ; category
 	db DEX_BLASTOISE ; Pokedex number
 	darkness_level FALSE, 52 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 85.5 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 189.0 ; weight
+ENDC
 	tx BlastoiseDescription ; description
 	db NONE ; AI info
 
@@ -6164,8 +6764,13 @@ BlastoiseAltLv52Card:
 	tx ShellfishName ; category
 	db DEX_BLASTOISE ; Pokedex number
 	darkness_level FALSE, 52 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 85.5 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 189.0 ; weight
+ENDC
 	tx BlastoiseAltDescription ; description
 	db NONE ; AI info
 
@@ -6215,8 +6820,13 @@ DarkBlastoiseCard:
 	tx ShellfishName ; category
 	db DEX_BLASTOISE ; Pokedex number
 	darkness_level TRUE, 28 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 85.5 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 189.0 ; weight
+ENDC
 	tx DarkBlastoiseDescription ; description
 	db NONE ; AI info
 
@@ -6266,8 +6876,13 @@ PsyduckLv15Card:
 	tx DuckName ; category
 	db DEX_PSYDUCK ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 19.6 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 43.0 ; weight
+ENDC
 	tx PsyduckLv15Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -6317,8 +6932,13 @@ PsyduckLv16Card:
 	tx DuckName ; category
 	db DEX_PSYDUCK ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 19.6 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 43.0 ; weight
+ENDC
 	tx PsyduckLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6368,8 +6988,13 @@ GolduckLv27Card:
 	tx DuckName ; category
 	db DEX_GOLDUCK ; Pokedex number
 	darkness_level FALSE, 27 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 76.6 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 169.0 ; weight
+ENDC
 	tx GolduckLv27Description ; description
 	db AI_INFO_UNK_03 ; AI info
 
@@ -6419,8 +7044,13 @@ GolduckLv28Card:
 	tx DuckName ; category
 	db DEX_GOLDUCK ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 76.6 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 169.0 ; weight
+ENDC
 	tx GolduckLv28Description ; description
 	db NONE ; AI info
 
@@ -6470,8 +7100,13 @@ DarkGolduckCard:
 	tx DuckName ; category
 	db DEX_GOLDUCK ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 76.6 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 169.0 ; weight
+ENDC
 	tx DarkGolduckDescription ; description
 	db NONE ; AI info
 
@@ -6521,8 +7156,13 @@ PoliwagLv13Card:
 	tx TadpoleName ; category
 	db DEX_POLIWAG ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 12.4 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 27.0 ; weight
+ENDC
 	tx PoliwagLv13Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -6572,8 +7212,13 @@ PoliwagLv15Card:
 	tx TadpoleName ; category
 	db DEX_POLIWAG ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 12.4 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 27.0 ; weight
+ENDC
 	tx PoliwagLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6623,8 +7268,13 @@ PoliwhirlLv28Card:
 	tx TadpoleName ; category
 	db DEX_POLIWHIRL ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 20.0 ; weight
+ELSE
+	length 3, 4 ; length
+	weight 44.0 ; weight
+ENDC
 	tx PoliwhirlLv28Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6674,8 +7324,13 @@ PoliwhirlLv30Card:
 	tx TadpoleName ; category
 	db DEX_POLIWHIRL ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 20.0 ; weight
+ELSE
+	length 3, 4 ; length
+	weight 44.0 ; weight
+ENDC
 	tx PoliwhirlLv30Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6725,8 +7380,13 @@ PoliwrathLv40Card:
 	tx TadpoleName ; category
 	db DEX_POLIWRATH ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 54.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 119.0 ; weight
+ENDC
 	tx PoliwrathLv40Description ; description
 	db NONE ; AI info
 
@@ -6776,8 +7436,13 @@ PoliwrathLv48Card:
 	tx TadpoleName ; category
 	db DEX_POLIWRATH ; Pokedex number
 	darkness_level FALSE, 48 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 54.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 119.0 ; weight
+ENDC
 	tx PoliwrathLv48Description ; description
 	db NONE ; AI info
 
@@ -6827,8 +7492,13 @@ TentacoolCard:
 	tx JellyfishName ; category
 	db DEX_TENTACOOL ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 45.5 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 100.0 ; weight
+ENDC
 	tx TentacoolDescription ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -6878,8 +7548,13 @@ TentacruelCard:
 	tx JellyfishName ; category
 	db DEX_TENTACRUEL ; Pokedex number
 	darkness_level FALSE, 21 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 55.0 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 121.0 ; weight
+ENDC
 	tx TentacruelDescription ; description
 	db NONE ; AI info
 
@@ -6929,8 +7604,13 @@ SeelLv10Card:
 	tx SeaLionName ; category
 	db DEX_SEEL ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 90.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 198.0 ; weight
+ENDC
 	tx SeelLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -6980,8 +7660,13 @@ SeelLv12Card:
 	tx SeaLionName ; category
 	db DEX_SEEL ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 90.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 198.0 ; weight
+ENDC
 	tx SeelLv12Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -7031,8 +7716,13 @@ DewgongLv24Card:
 	tx SeaLionName ; category
 	db DEX_DEWGONG ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 120.0 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 265.0 ; weight
+ENDC
 	tx DewgongLv24Description ; description
 	db NONE ; AI info
 
@@ -7082,8 +7772,13 @@ DewgongLv42Card:
 	tx SeaLionName ; category
 	db DEX_DEWGONG ; Pokedex number
 	darkness_level FALSE, 42 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 120.0 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 265.0 ; weight
+ENDC
 	tx DewgongLv42Description ; description
 	db NONE ; AI info
 
@@ -7133,8 +7828,13 @@ ShellderLv8Card:
 	tx BivalveName ; category
 	db DEX_SHELLDER ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 4.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 9.0 ; weight
+ENDC
 	tx ShellderLv8Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -7184,8 +7884,13 @@ ShellderLv16Card:
 	tx BivalveName ; category
 	db DEX_SHELLDER ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 4.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 9.0 ; weight
+ENDC
 	tx ShellderLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -7235,8 +7940,13 @@ CloysterCard:
 	tx BivalveName ; category
 	db DEX_CLOYSTER ; Pokedex number
 	darkness_level FALSE, 25 ; is Dark?, level
-	length 1.5 ; length
+IF METRIC
+	length 1, 5 ; length
 	weight 132.5 ; weight
+ELSE
+	length 4, 11 ; length
+	weight 292.0 ; weight
+ENDC
 	tx CloysterDescription ; description
 	db NONE ; AI info
 
@@ -7286,8 +7996,13 @@ KrabbyLv17Card:
 	tx RiverCrabName ; category
 	db DEX_KRABBY ; Pokedex number
 	darkness_level FALSE, 17 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 14.0 ; weight
+ENDC
 	tx KrabbyLv17Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -7337,8 +8052,13 @@ KrabbyLv20Card:
 	tx RiverCrabName ; category
 	db DEX_KRABBY ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 14.0 ; weight
+ENDC
 	tx KrabbyLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -7388,8 +8108,13 @@ KinglerLv27Card:
 	tx PincerName ; category
 	db DEX_KINGLER ; Pokedex number
 	darkness_level FALSE, 27 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 60.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx KinglerLv27Description ; description
 	db NONE ; AI info
 
@@ -7439,8 +8164,13 @@ KinglerLv33Card:
 	tx PincerName ; category
 	db DEX_KINGLER ; Pokedex number
 	darkness_level FALSE, 33 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 60.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx KinglerLv33Description ; description
 	db NONE ; AI info
 
@@ -7490,8 +8220,13 @@ HorseaLv19Card:
 	tx DragonName ; category
 	db DEX_HORSEA ; Pokedex number
 	darkness_level FALSE, 19 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 8.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 18.0 ; weight
+ENDC
 	tx HorseaLv19Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -7541,8 +8276,13 @@ HorseaLv20Card:
 	tx DragonName ; category
 	db DEX_HORSEA ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 8.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 18.0 ; weight
+ENDC
 	tx HorseaLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -7592,8 +8332,13 @@ SeadraLv23Card:
 	tx DragonName ; category
 	db DEX_SEADRA ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 25.0 ; weight
+ELSE
+	length 3, 1 ; length
+	weight 55.0 ; weight
+ENDC
 	tx SeadraLv23Description ; description
 	db NONE ; AI info
 
@@ -7643,8 +8388,13 @@ SeadraLv26Card:
 	tx DragonName ; category
 	db DEX_SEADRA ; Pokedex number
 	darkness_level FALSE, 26 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 25.0 ; weight
+ELSE
+	length 3, 1 ; length
+	weight 55.0 ; weight
+ENDC
 	tx SeadraLv26Description ; description
 	db NONE ; AI info
 
@@ -7694,8 +8444,13 @@ GoldeenCard:
 	tx GoldfishName ; category
 	db DEX_GOLDEEN ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 15.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 33.0 ; weight
+ENDC
 	tx GoldeenDescription ; description
 	db AI_INFO_UNK_05 | HAS_EVOLUTION ; AI info
 
@@ -7745,8 +8500,13 @@ SeakingCard:
 	tx GoldfishName ; category
 	db DEX_SEAKING ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.3 ; length
+IF METRIC
+	length 1, 3 ; length
 	weight 39.0 ; weight
+ELSE
+	length 4, 3 ; length
+	weight 86.0 ; weight
+ENDC
 	tx SeakingDescription ; description
 	db NONE ; AI info
 
@@ -7796,8 +8556,13 @@ StaryuLv15Card:
 	tx StarshapeName ; category
 	db DEX_STARYU ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 34.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 76.0 ; weight
+ENDC
 	tx StaryuLv15Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -7847,8 +8612,13 @@ StaryuLv17Card:
 	tx StarshapeName ; category
 	db DEX_STARYU ; Pokedex number
 	darkness_level FALSE, 17 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 34.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 76.0 ; weight
+ENDC
 	tx StaryuLv17Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -7898,8 +8668,13 @@ StarmieCard:
 	tx MysteriousName ; category
 	db DEX_STARMIE ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 80.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 176.0 ; weight
+ENDC
 	tx StarmieDescription ; description
 	db NONE ; AI info
 
@@ -7949,8 +8724,13 @@ DarkStarmieCard:
 	tx MysteriousName ; category
 	db DEX_STARMIE ; Pokedex number
 	darkness_level TRUE, 27 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 80.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 176.0 ; weight
+ENDC
 	tx DarkStarmieDescription ; description
 	db NONE ; AI info
 
@@ -8000,8 +8780,13 @@ MagikarpLv6Card:
 	tx FishName ; category
 	db DEX_MAGIKARP ; Pokedex number
 	darkness_level FALSE, 6 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 10.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 22.0 ; weight
+ENDC
 	tx MagikarpLv6Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -8051,8 +8836,13 @@ MagikarpLv8Card:
 	tx FishName ; category
 	db DEX_MAGIKARP ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 10.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 22.0 ; weight
+ENDC
 	tx MagikarpLv8Description ; description
 	db AI_INFO_ENCOURAGE_EVO | HAS_EVOLUTION ; AI info
 
@@ -8102,8 +8892,13 @@ MagikarpLv10Card:
 	tx FishName ; category
 	db DEX_MAGIKARP ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.9 ; length
+IF METRIC
+	length 0, 9 ; length
 	weight 10.0 ; weight
+ELSE
+	length 2, 11 ; length
+	weight 22.0 ; weight
+ENDC
 	tx MagikarpLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -8153,8 +8948,13 @@ GyaradosCard:
 	tx AtrociousName ; category
 	db DEX_GYARADOS ; Pokedex number
 	darkness_level FALSE, 41 ; is Dark?, level
-	length 6.5 ; length
+IF METRIC
+	length 6, 5 ; length
 	weight 235.0 ; weight
+ELSE
+	length 21, 4 ; length
+	weight 518.0 ; weight
+ENDC
 	tx GyaradosDescription ; description
 	db NONE ; AI info
 
@@ -8204,8 +9004,13 @@ DarkGyaradosCard:
 	tx AtrociousName ; category
 	db DEX_GYARADOS ; Pokedex number
 	darkness_level TRUE, 31 ; is Dark?, level
-	length 6.5 ; length
+IF METRIC
+	length 6, 5 ; length
 	weight 235.0 ; weight
+ELSE
+	length 21, 4 ; length
+	weight 518.0 ; weight
+ENDC
 	tx DarkGyaradosDescription ; description
 	db NONE ; AI info
 
@@ -8255,8 +9060,13 @@ LaprasLv24Card:
 	tx TransportName ; category
 	db DEX_LAPRAS ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 2.5 ; length
+IF METRIC
+	length 2, 5 ; length
 	weight 220.0 ; weight
+ELSE
+	length 8, 2 ; length
+	weight 485.0 ; weight
+ENDC
 	tx LaprasLv24Description ; description
 	db NONE ; AI info
 
@@ -8306,8 +9116,13 @@ LaprasLv31Card:
 	tx TransportName ; category
 	db DEX_LAPRAS ; Pokedex number
 	darkness_level FALSE, 31 ; is Dark?, level
-	length 2.5 ; length
+IF METRIC
+	length 2, 5 ; length
 	weight 220.0 ; weight
+ELSE
+	length 8, 2 ; length
+	weight 485.0 ; weight
+ENDC
 	tx LaprasLv31Description ; description
 	db NONE ; AI info
 
@@ -8357,8 +9172,13 @@ VaporeonLv29Card:
 	tx BubbleJetName ; category
 	db DEX_VAPOREON ; Pokedex number
 	darkness_level FALSE, 29 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 64.0 ; weight
+ENDC
 	tx VaporeonLv29Description ; description
 	db NONE ; AI info
 
@@ -8408,8 +9228,13 @@ VaporeonLv42Card:
 	tx BubbleJetName ; category
 	db DEX_VAPOREON ; Pokedex number
 	darkness_level FALSE, 42 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 64.0 ; weight
+ENDC
 	tx VaporeonLv42Description ; description
 	db NONE ; AI info
 
@@ -8459,8 +9284,13 @@ DarkVaporeonCard:
 	tx BubbleJetName ; category
 	db DEX_VAPOREON ; Pokedex number
 	darkness_level TRUE, 28 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 64.0 ; weight
+ENDC
 	tx DarkVaporeonDescription ; description
 	db NONE ; AI info
 
@@ -8510,8 +9340,13 @@ OmanyteLv19Card:
 	tx SpiralName ; category
 	db DEX_OMANYTE ; Pokedex number
 	darkness_level FALSE, 19 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 7.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 17.0 ; weight
+ENDC
 	tx OmanyteLv19Description ; description
 	db AI_INFO_BENCH_UTILITY | HAS_EVOLUTION ; AI info
 
@@ -8561,8 +9396,13 @@ OmanyteLv20Card:
 	tx SpiralName ; category
 	db DEX_OMANYTE ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 7.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 17.0 ; weight
+ENDC
 	tx OmanyteSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -8612,8 +9452,13 @@ OmanyteLv22Card:
 	tx SpiralName ; category
 	db DEX_OMANYTE ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 7.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 17.0 ; weight
+ENDC
 	tx OmanyteSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -8663,8 +9508,13 @@ OmastarLv32Card:
 	tx SpiralName ; category
 	db DEX_OMASTAR ; Pokedex number
 	darkness_level FALSE, 32 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 35.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 77.0 ; weight
+ENDC
 	tx OmastarLv32Description ; description
 	db NONE ; AI info
 
@@ -8714,8 +9564,13 @@ OmastarLv36Card:
 	tx SpiralName ; category
 	db DEX_OMASTAR ; Pokedex number
 	darkness_level FALSE, 36 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 35.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 77.0 ; weight
+ENDC
 	tx OmastarLv36Description ; description
 	db NONE ; AI info
 
@@ -8765,8 +9620,13 @@ ArticunoLv34Card:
 	tx FreezeName ; category
 	db DEX_ARTICUNO ; Pokedex number
 	darkness_level FALSE, 34 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 55.4 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 122.0 ; weight
+ENDC
 	tx ArticunoLv34Description ; description
 	db NONE ; AI info
 
@@ -8816,8 +9676,13 @@ ArticunoLv35Card:
 	tx FreezeName ; category
 	db DEX_ARTICUNO ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 55.4 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 122.0 ; weight
+ENDC
 	tx ArticunoLv35Description ; description
 	db NONE ; AI info
 
@@ -8867,8 +9732,13 @@ ArticunoLv37Card:
 	tx FreezeName ; category
 	db DEX_ARTICUNO ; Pokedex number
 	darkness_level FALSE, 37 ; is Dark?, level
-	length 1.7 ; length
+IF METRIC
+	length 1, 7 ; length
 	weight 55.4 ; weight
+ELSE
+	length 5, 7 ; length
+	weight 122.0 ; weight
+ENDC
 	tx ArticunoLv37Description ; description
 	db NONE ; AI info
 
@@ -8918,8 +9788,13 @@ MarillCard:
 	tx AquamouseName ; category
 	db DEX_MARILL ; Pokedex number
 	darkness_level FALSE, 17 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 8.5 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 19.0 ; height
+ENDC
 	tx MarillDescription ; description
 	db NONE ; AI info
 
@@ -8969,8 +9844,13 @@ PikachuLv5Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 5 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuLv5Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9020,8 +9900,13 @@ PikachuLv12Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuSharedDescription ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -9071,8 +9956,13 @@ PikachuLv13Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9122,8 +10012,13 @@ PikachuLv14Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuLv14Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9173,8 +10068,13 @@ PikachuLv16Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9224,8 +10124,13 @@ PikachuAltLv16Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx PikachuSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9275,8 +10180,13 @@ FlyingPikachuLv12Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx FlyingPikachuDescription ; description
 	db AI_INFO_UNK_03 ; AI info
 
@@ -9326,8 +10236,13 @@ FlyingPikachuAltLv12Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx FlyingPikachuDescription ; description
 	db AI_INFO_UNK_03 ; AI info
 
@@ -9377,8 +10292,13 @@ SurfingPikachuLv13Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx SurfingPikachuDescription ; description
 	db NONE ; AI info
 
@@ -9428,8 +10348,13 @@ SurfingPikachuAltLv13Card:
 	tx MouseName ; category
 	db DEX_PIKACHU ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.4 ; length
+IF METRIC
+	length 0, 4 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 4 ; length
+	weight 13.0 ; weight
+ENDC
 	tx SurfingPikachuDescription ; description
 	db NONE ; AI info
 
@@ -9479,8 +10404,13 @@ RaichuLv32Card:
 	tx MouseName ; category
 	db DEX_RAICHU ; Pokedex number
 	darkness_level FALSE, 32 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx RaichuLv32Description ; description
 	db NONE ; AI info
 
@@ -9530,8 +10460,13 @@ RaichuLv33Card:
 	tx MouseName ; category
 	db DEX_RAICHU ; Pokedex number
 	darkness_level FALSE, 33 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx RaichuLv33Description ; description
 	db NONE ; AI info
 
@@ -9581,8 +10516,13 @@ RaichuLv40Card:
 	tx MouseName ; category
 	db DEX_RAICHU ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx RaichuSharedDescription ; description
 	db NONE ; AI info
 
@@ -9632,8 +10572,13 @@ RaichuLv45Card:
 	tx MouseName ; category
 	db DEX_RAICHU ; Pokedex number
 	darkness_level FALSE, 45 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx RaichuSharedDescription ; description
 	db NONE ; AI info
 
@@ -9683,8 +10628,13 @@ DarkRaichuCard:
 	tx MouseName ; category
 	db DEX_RAICHU ; Pokedex number
 	darkness_level TRUE, 31 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 30.0 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx DarkRaichuDescription ; description
 	db NONE ; AI info
 
@@ -9734,8 +10684,13 @@ MagnemiteLv12Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNEMITE ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 13.0 ; weight
+ENDC
 	tx MagnemiteLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9785,8 +10740,13 @@ MagnemiteLv13Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNEMITE ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 13.0 ; weight
+ENDC
 	tx MagnemiteLv13Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -9836,8 +10796,13 @@ MagnemiteLv14Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNEMITE ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 13.0 ; weight
+ENDC
 	tx MagnemiteLv14Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -9887,8 +10852,13 @@ MagnemiteLv15Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNEMITE ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.3 ; length
+IF METRIC
+	length 0, 3 ; length
 	weight 6.0 ; weight
+ELSE
+	length 1, 0 ; length
+	weight 13.0 ; weight
+ENDC
 	tx MagnemiteLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -9938,8 +10908,13 @@ MagnetonLv28Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNETON ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MagnetonSharedDescription ; description
 	db NONE ; AI info
 
@@ -9989,8 +10964,13 @@ MagnetonLv30Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNETON ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MagnetonLv30Description ; description
 	db NONE ; AI info
 
@@ -10040,8 +11020,13 @@ MagnetonLv35Card:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNETON ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx MagnetonSharedDescription ; description
 	db NONE ; AI info
 
@@ -10091,8 +11076,13 @@ DarkMagnetonCard:
 	tx MagnetCategoryName ; category
 	db DEX_MAGNETON ; Pokedex number
 	darkness_level TRUE, 26 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 60.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 132.0 ; weight
+ENDC
 	tx DarkMagnetonDescription ; description
 	db NONE ; AI info
 
@@ -10142,8 +11132,13 @@ VoltorbLv8Card:
 	tx BallName ; category
 	db DEX_VOLTORB ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 10.4 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 23.0 ; weight
+ENDC
 	tx VoltorbLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -10193,8 +11188,13 @@ VoltorbLv10Card:
 	tx BallName ; category
 	db DEX_VOLTORB ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 10.4 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 23.0 ; weight
+ENDC
 	tx VoltorbLv10Description ; description
 	db AI_INFO_UNK_05 | HAS_EVOLUTION ; AI info
 
@@ -10244,8 +11244,13 @@ VoltorbLv13Card:
 	tx BallName ; category
 	db DEX_VOLTORB ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 10.4 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 23.0 ; weight
+ENDC
 	tx VoltorbLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -10295,8 +11300,13 @@ ElectrodeLv35Card:
 	tx BallName ; category
 	db DEX_ELECTRODE ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 66.6 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 147.0 ; weight
+ENDC
 	tx ElectrodeLv35Description ; description
 	db NONE ; AI info
 
@@ -10346,8 +11356,13 @@ ElectrodeLv42Card:
 	tx BallName ; category
 	db DEX_ELECTRODE ; Pokedex number
 	darkness_level FALSE, 42 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 66.6 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 147.0 ; weight
+ENDC
 	tx ElectrodeLv42Description ; description
 	db NONE ; AI info
 
@@ -10397,8 +11412,13 @@ DarkElectrodeCard:
 	tx BallName ; category
 	db DEX_ELECTRODE ; Pokedex number
 	darkness_level TRUE, 24 ; is Dark?, level
-	length 1.2 ; length
+IF METRIC
+	length 1, 2 ; length
 	weight 66.6 ; weight
+ELSE
+	length 3, 11 ; length
+	weight 147.0 ; weight
+ENDC
 	tx DarkElectrodeDescription ; description
 	db NONE ; AI info
 
@@ -10448,8 +11468,13 @@ ElectabuzzLv20Card:
 	tx ThunderJoltName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx ElectabuzzLv20Description ; description
 	db NONE ; AI info
 
@@ -10499,8 +11524,13 @@ ElectabuzzLv30Card:
 	tx ThunderJoltName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx ElectabuzzLv30Description ; description
 	db NONE ; AI info
 
@@ -10550,8 +11580,13 @@ ElectabuzzLv35Card:
 	tx ThunderJoltName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.1 ; length
+IF METRIC
+	length 1, 1 ; length
 	weight 30.0 ; weight
+ELSE
+	length 3, 7 ; length
+	weight 66.0 ; weight
+ENDC
 	tx ElectabuzzLv35Description ; description
 	db NONE ; AI info
 
@@ -10601,8 +11636,13 @@ JolteonLv24Card:
 	tx ThunderName ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 24.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 54.0 ; weight
+ENDC
 	tx JolteonLv24Description ; description
 	db NONE ; AI info
 
@@ -10652,8 +11692,13 @@ JolteonLv29Card:
 	tx ThunderName ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level FALSE, 29 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 24.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 54.0 ; weight
+ENDC
 	tx JolteonLv29Description ; description
 	db NONE ; AI info
 
@@ -10703,8 +11748,13 @@ DarkJolteonCard:
 	tx ThunderName ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 24.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 54.0 ; weight
+ENDC
 	tx DarkJolteonDescription ; description
 	db NONE ; AI info
 
@@ -10754,8 +11804,13 @@ ZapdosLv28Card:
 	tx ThunderJoltName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 52.6 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 116.0 ; weight
+ENDC
 	tx ZapdosLv28Description ; description
 	db NONE ; AI info
 
@@ -10805,8 +11860,13 @@ ZapdosLv40Card:
 	tx ThunderJoltName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 52.6 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 116.0 ; weight
+ENDC
 	tx ZapdosLv40Description ; description
 	db NONE ; AI info
 
@@ -10856,8 +11916,13 @@ ZapdosLv64Card:
 	tx ThunderJoltName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 64 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 52.6 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 116.0 ; weight
+ENDC
 	tx ZapdosLv64Description ; description
 	db NONE ; AI info
 
@@ -10907,8 +11972,13 @@ ZapdosLv68Card:
 	tx ThunderJoltName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 68 ; is Dark?, level
-	length 1.6 ; length
+IF METRIC
+	length 1, 6 ; length
 	weight 52.6 ; weight
+ELSE
+	length 5, 3 ; length
+	weight 116.0 ; weight
+ENDC
 	tx ZapdosLv68Description ; description
 	db NONE ; AI info
 
@@ -10958,8 +12028,13 @@ SandshrewLv12Card:
 	tx MouseName ; category
 	db DEX_SANDSHREW ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 12.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 26.0 ; weight
+ENDC
 	tx SandshrewLv12Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -11009,8 +12084,13 @@ SandshrewLv15Card:
 	tx MouseName ; category
 	db DEX_SANDSHREW ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.6 ; length
+IF METRIC
+	length 0, 6 ; length
 	weight 12.0 ; weight
+ELSE
+	length 2, 0 ; length
+	weight 26.0 ; weight
+ENDC
 	tx SandshrewLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -11060,8 +12140,13 @@ SandslashLv33Card:
 	tx MouseName ; category
 	db DEX_SANDSLASH ; Pokedex number
 	darkness_level FALSE, 33 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 65.0 ; weight
+ENDC
 	tx SandslashLv33Description ; description
 	db NONE ; AI info
 
@@ -11111,8 +12196,13 @@ SandslashLv35Card:
 	tx MouseName ; category
 	db DEX_SANDSLASH ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 29.5 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 65.0 ; weight
+ENDC
 	tx SandslashLv35Description ; description
 	db NONE ; AI info
 
@@ -11162,8 +12252,13 @@ DiglettLv8Card:
 	tx MoleName ; category
 	db DEX_DIGLETT ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
-	length 0.2 ; length
+IF METRIC
+	length 0, 2 ; length
 	weight 0.8 ; weight
+ELSE
+	length 0, 8 ; length
+	weight 2.0 ; weight
+ENDC
 	tx DiglettLv8Description ; description
 	db AI_INFO_UNK_03 | HAS_EVOLUTION ; AI info
 
@@ -11213,8 +12308,13 @@ DiglettLv15Card:
 	tx MoleName ; category
 	db DEX_DIGLETT ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
-	length 0.2 ; length
+IF METRIC
+	length 0, 2 ; length
 	weight 0.8 ; weight
+ELSE
+	length 0, 8 ; length
+	weight 2.0 ; weight
+ENDC
 	tx DiglettLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -11264,8 +12364,13 @@ DiglettLv16Card:
 	tx MoleName ; category
 	db DEX_DIGLETT ; Pokedex number
 	darkness_level FALSE, 16 ; is Dark?, level
-	length 0.2 ; length
+IF METRIC
+	length 0, 2 ; length
 	weight 0.8 ; weight
+ELSE
+	length 0, 8 ; length
+	weight 2.0 ; weight
+ENDC
 	tx DiglettLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -11315,8 +12420,13 @@ DugtrioLv36Card:
 	tx MoleName ; category
 	db DEX_DUGTRIO ; Pokedex number
 	darkness_level FALSE, 36 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 33.3 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 73.0 ; weight
+ENDC
 	tx DugtrioLv36Description ; description
 	db NONE ; AI info
 
@@ -11366,8 +12476,13 @@ DugtrioLv40Card:
 	tx MoleName ; category
 	db DEX_DUGTRIO ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 33.3 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 73.0 ; weight
+ENDC
 	tx DugtrioLv40Description ; description
 	db NONE ; AI info
 
@@ -11417,8 +12532,13 @@ DarkDugtrioCard:
 	tx MoleName ; category
 	db DEX_DUGTRIO ; Pokedex number
 	darkness_level TRUE, 18 ; is Dark?, level
-	length 0.7 ; length
+IF METRIC
+	length 0, 7 ; length
 	weight 33.3 ; weight
+ELSE
+	length 2, 4 ; length
+	weight 73.0 ; weight
+ENDC
 	tx DarkDugtrioDescription ; description
 	db NONE ; AI info
 
@@ -11468,8 +12588,13 @@ MankeyLv7Card:
 	tx PigMonkeyName ; category
 	db DEX_MANKEY ; Pokedex number
 	darkness_level FALSE, 7 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 28.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 62.0 ; weight
+ENDC
 	tx MankeyLv7Description ; description
 	db AI_INFO_BENCH_UTILITY | HAS_EVOLUTION ; AI info
 
@@ -11519,8 +12644,13 @@ MankeyAltLv7Card:
 	tx PigMonkeyName ; category
 	db DEX_MANKEY ; Pokedex number
 	darkness_level FALSE, 7 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 28.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 62.0 ; weight
+ENDC
 	tx MankeyLv7Description ; description
 	db AI_INFO_BENCH_UTILITY | HAS_EVOLUTION ; AI info
 
@@ -11570,8 +12700,13 @@ MankeyLv14Card:
 	tx PigMonkeyName ; category
 	db DEX_MANKEY ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
-	length 0.5 ; length
+IF METRIC
+	length 0, 5 ; length
 	weight 28.0 ; weight
+ELSE
+	length 1, 8 ; length
+	weight 62.0 ; weight
+ENDC
 	tx MankeyLv14Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -11621,8 +12756,13 @@ PrimeapeCard:
 	tx PigMonkeyName ; category
 	db DEX_PRIMEAPE ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 32.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 71.0 ; weight
+ENDC
 	tx PrimeapeDescription ; description
 	db NONE ; AI info
 
@@ -11672,8 +12812,13 @@ DarkPrimeapeCard:
 	tx PigMonkeyName ; category
 	db DEX_PRIMEAPE ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
-	length 1.0 ; length
+IF METRIC
+	length 1, 0 ; length
 	weight 32.0 ; weight
+ELSE
+	length 3, 3 ; length
+	weight 71.0 ; weight
+ENDC
 	tx DarkPrimeapeDescription ; description
 	db NONE ; AI info
 
@@ -11723,8 +12868,13 @@ MachopLv18Card:
 	tx SuperpowerName ; category
 	db DEX_MACHOP ; Pokedex number
 	darkness_level FALSE, 18 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 19.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 43.0 ; weight
+ENDC
 	tx MachopLv18Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
@@ -11774,8 +12924,13 @@ MachopLv20Card:
 	tx SuperpowerName ; category
 	db DEX_MACHOP ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 19.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 43.0 ; weight
+ENDC
 	tx MachopLv20Description ; description
 	db AI_INFO_UNK_05 | HAS_EVOLUTION ; AI info
 
@@ -11825,7 +12980,12 @@ MachopLv24Card:
 	tx SuperpowerName ; category
 	db DEX_MACHOP ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
-	length 0.8 ; length
+IF METRIC
+	length 0, 8 ; length
 	weight 19.5 ; weight
+ELSE
+	length 2, 7 ; length
+	weight 43.0 ; weight
+ENDC
 	tx MachopLv24Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
