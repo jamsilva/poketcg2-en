@@ -88,44 +88,7 @@ ROMX $1b
 ROMX $1d
 	"Card Gfx 1"
 ; ROMX $1e-$36 not started
-ROMX $37
-	"Text Offsets"
-ROMX $38
-	"Text Offsets 2"
-	"Text 1"
-ROMX $39
-	"Text 2"
-ROMX $3a
-	"Text 3"
-ROMX $3b
-	"Text 4"
-ROMX $3c
-	"Text 5"
-ROMX $3d
-	"Text 6"
-ROMX $3e
-	"Text 7"
-ROMX $3f
-	"Text 8"
-ROMX $40
-	"Text 9"
-ROMX $41
-	"Text 10"
-ROMX $42
-	"Text 11"
-ROMX $43
-	"Text 12"
-ROMX $44
-	"Text 13"
-ROMX $45
-	"Text 14"
-ROMX $46
-	"Text 15"
-ROMX $47
-	"Text 16"
-ROMX $48
-	"Text 17"
-; ROMX $49 and $4a are empty
+; ROMX $37-$4a are now empty. Latin languages need way more space than Japanese for text...
 ROMX $4b
 	"Bank 4b"
 	"Tilemaps 1"
@@ -240,6 +203,78 @@ ROMX $7e
 	"Audio 8"
 ROMX $7f
 	"Audio 9"
+ROMX $80
+	"Text Offsets"
+ROMX $81
+	"Text Offsets 2"
+ROMX $82
+	"Text 1"
+ROMX $83
+	"Text 2"
+ROMX $84
+	"Text 3"
+ROMX $85
+	"Text 4"
+ROMX $86
+	"Text 5"
+ROMX $87
+	"Text 6"
+ROMX $88
+	"Text 7"
+ROMX $89
+	"Text 8"
+ROMX $8a
+	"Text 9"
+ROMX $8b
+	"Text 10"
+ROMX $8c
+	"Text 11"
+ROMX $8d
+	"Text 12"
+ROMX $8e
+	"Text 13"
+ROMX $8f
+	"Text 14"
+ROMX $90
+	"Text 15"
+ROMX $91
+	"Text 16"
+ROMX $92
+	"Text 17"
+ROMX $93
+	"Text 18"
+ROMX $94
+	"Text 19"
+ROMX $95
+	"Text 20"
+ROMX $96
+	"Text 21"
+ROMX $97
+	"Text 22"
+ROMX $98
+	"Text 23"
+ROMX $99
+	"Text 24"
+ROMX $9a
+	"Text 25"
+ROMX $9b
+	"Text 26"
+ROMX $9c
+	"Text 27"
+ROMX $9d
+	"Text 28"
+ROMX $9e
+	"Text 29"
+ROMX $9f
+	"Text 30"
+ROMX $a0
+	"Text 31"
+ROMX $a1
+	"Text 32"
+ROMX $a2
+	"Text 33"
+ROMX $a3
+	"Text 34"
 WRAM0
 	"WRAM0"
 	org $c200

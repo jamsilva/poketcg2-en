@@ -1,3 +1,5 @@
+SECTION "Text 15", ROMX
+
 Text0c95:
 	textfw "さあ つぎは"
 	linefw "水のGR団のトリデに むかうといい"
@@ -1067,6 +1069,8 @@ GameCenterCoinFlipAttendant9HeadsPrizeText:
 	linefw "けいひんは なんと!"
 	linefw "チップ 3000枚でーす!"
 	done
+
+SECTION "Text 16", ROMX
 
 GameCenterCoinFlipAttendantAlmostCompleteTryAgainText:
 	textfw "10回も ユメじゃないですよ!"

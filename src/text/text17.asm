@@ -1,3 +1,5 @@
+SECTION "Text 34", ROMX
+
 LeekSlapDescription:
 	textfw "このワザは、このカードが場に出てから"
 	linefw "1回しか使えない。コインを投げて"

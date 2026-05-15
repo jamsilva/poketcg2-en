@@ -1,3 +1,5 @@
+SECTION "Text 11", ROMX
+
 Text093f:
 	textfw "これで きさまが 1勝"
 	linefw "わたしが 1勝だ・・・"
@@ -855,7 +857,7 @@ MapMasonLabText:
 	done
 
 MapIshiharasHouseText:
-	textfw "Mr.イシハラの家"
+	textfw "M<RDOT>イシハラの家"
 	done
 
 MapLightningClubText:
@@ -907,7 +909,7 @@ MapGRAirportText:
 	done
 
 MapIshiharasVillaText:
-	textfw "Mr.イシハラの別莊"
+	textfw "M<RDOT>イシハラの別莊"
 	done
 
 MapGameCenterText:
@@ -955,7 +957,7 @@ MapGRCastleText:
 	done
 
 DialogDrMasonText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 DialogSamText:
@@ -967,7 +969,7 @@ DialogAaronText:
 	done
 
 DialogMrIshiharaText:
-	textfw "Mr.イシハラ"
+	textfw "M<RDOT>イシハラ"
 	done
 
 DialogGeneText:
@@ -1633,6 +1635,8 @@ OpponentPsychicClubMasterBracketedText:
 OpponentPsychicClubMemberBracketedText:
 	textfw "クラブメンバー【<PSYCHIC>】"
 	done
+
+SECTION "Text 12", ROMX
 
 OpponentFireClubMasterBracketedText:
 	textfw "クラブマスター【<FIRE>】"

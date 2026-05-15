@@ -1,3 +1,5 @@
+SECTION "Text 21", ROMX
+
 RodFinalCupRound2NextOpponentText:
 	textfw "さすがだな <RAMNAME>くん"
 	linefw "つぎは カネコウジと対戦だ!"
@@ -1047,6 +1049,8 @@ Text1034:
 	linefw "おいわいもかねて 対戦しませんか?"
 	done
 
+SECTION "Text 22", ROMX
+
 Text1035:
 	textfw "ずっと かんがえていたのです"
 	linefw "なぜ GR団に まけたのか・・・"
@@ -1143,7 +1147,7 @@ Text1043:
 Text1044:
 	textfw "ぼくらは このデッキマシンで"
 	linefw "ポケモンカードを 研究しているんだ"
-	linefw "Dr.オーヤマのデッキマシンとちがって"
+	linefw "D<RDOT>オーヤマのデッキマシンとちがって"
 	linefw "ぼくらにしか つかえないけどね"
 	linefw "でも どういうことだろう?"
 	linefw "マシンは こわされてなかった"

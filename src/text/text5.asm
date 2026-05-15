@@ -1,3 +1,5 @@
+SECTION "Text 9", ROMX
+
 DebugSwapPlayerGenderText:
 	textfw "プレイヤーの性別を入れ替える"
 	done
@@ -986,6 +988,8 @@ Text08ad:
 	linefw "おたがいに しゅぎょうして"
 	linefw "また 対戦しようぜ"
 	done
+
+SECTION "Text 10", ROMX
 
 Text08ae:
 	textfw "あたし ナツキ"

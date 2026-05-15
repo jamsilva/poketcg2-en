@@ -1,3 +1,5 @@
+SECTION "Text 5", ROMX
+
 GlossaryPrizesTitleText:
 	textfw "「サイドカード」について"
 	done
@@ -647,7 +649,7 @@ MaxEnergyDeckName:
 	done
 
 DuelistMrIshiharaName:
-	textfw "Mr.イシハラ"
+	textfw "M<RDOT>イシハラ"
 	done
 
 DemonicForestDeckName:
@@ -1210,6 +1212,8 @@ DuelistKristinName:
 	textfw "ハルナ"
 	done
 
+SECTION "Text 6", ROMX
+
 BadDreamDeckName:
 	textfw "バッドドリーム"
 	done
@@ -1455,7 +1459,7 @@ DuelistMainCharacterName:
 	done
 
 DrMasonText:
-	textfw "Dr.オーヤマ"
+	textfw "D<RDOT>オーヤマ"
 	done
 
 PracticeDuelHeaderPlayersTurnNumberText:
@@ -1866,7 +1870,7 @@ DeckDiagnosisPsychicText:
 	done
 
 DeckDiagnosisDialogInitialText:
-	textfw "Dr.オーヤマの デッキしんだんじゃ"
+	textfw "D<RDOT>オーヤマの デッキしんだんじゃ"
 	linefw "メニューを えらぶんじゃ"
 	done
 

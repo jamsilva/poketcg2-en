@@ -1,3 +1,5 @@
+SECTION "Text 29", ROMX
+
 GrowlDescription:
 	textfw "次の相手の番、"
 	linefw "このワザを受けた[相手]が、"
@@ -862,6 +864,8 @@ DizzinessName:
 DizzinessDescription:
 	textfw "山札からカードを1枚引く。"
 	done
+
+SECTION "Text 30", ROMX
 
 WaterGunName:
 	textfw "みずでっぽう"
@@ -1744,6 +1748,8 @@ TentacleGripDescription:
 	linefw "数ぶんコインを投げ、「おもて」の数"
 	linefw "×2枚のカードを、自分の山札から引く"
 	done
+
+SECTION "Text 31", ROMX
 
 CorrosiveAcidName:
 	textfw "ふしょくえき"

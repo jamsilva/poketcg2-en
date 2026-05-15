@@ -1,3 +1,5 @@
+SECTION "Text 32", ROMX
+
 DigUnderDescription:
 	textfw "相手の場のポケモンを1匹選び、"
 	linefw "「弱点・抵抗力」に関係なく、"
@@ -1235,6 +1237,8 @@ SlowbroLv35Description:
 DarkSlowbroName:
 	textfw "わるいヤドラン"
 	done
+
+SECTION "Text 33", ROMX
 
 ReelInName:
 	textfw "つりあげる"

@@ -1,3 +1,5 @@
+SECTION "Text 13", ROMX
+
 Text0b76:
 	textfw "そうか・・・ざんねんだな"
 	linefw " "
@@ -1069,6 +1071,8 @@ Text0c10:
 	linefw "くやしいけど てめぇにこそ"
 	linefw "ふさわしいよ"
 	done
+
+SECTION "Text 14", ROMX
 
 Text0c11:
 	textfw "よく きたな <RAMNAME>くん!"

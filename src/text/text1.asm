@@ -1,3 +1,5 @@
+SECTION "Text 1", ROMX
+
 HandText:
 	textfw "てふだ"
 	done
@@ -531,6 +533,8 @@ ChooseBenchedPokemonText:
 YouDrewText:
 	textfw "<RAMTEXT>を ひいた"
 	done
+
+SECTION "Text 2", ROMX
 
 YouCannotSelectThisCardText:
 	textfw "このカードは えらべません"

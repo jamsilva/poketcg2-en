@@ -1,3 +1,5 @@
+SECTION "Text 3", ROMX
+
 PrehistoricDreamCheckText:
 	textfw "「おもて」なら 「なにかの化石」から"
 	linefw "進化したポケモンの ダメージが+10"
@@ -1538,6 +1540,8 @@ GameCenterBillsPCTitleText:
 	textfw "マサキのパソコン"
 	done
 
+SECTION "Text 4", ROMX
+
 GameCenterBillsPC20ChipsPerPlayText:
 	; dupe of GameCenter20ChipsPerPlayText
 	textfw "チップ20枚"
@@ -2504,7 +2508,7 @@ MachineGreatDragonDeckName:
 	done
 
 MachineStarterDeckDescriptionText:
-	textfw "Dr.オーヤマから もらったデッキ"
+	textfw "D<RDOT>オーヤマから もらったデッキ"
 	linefw "炎と 闘エネルギーで つくられている"
 	done
 

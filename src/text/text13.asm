@@ -1,3 +1,5 @@
+SECTION "Text 25", ROMX
+
 Text11f3:
 	textfw "うふふ・・・うれしいなぁ"
 	linefw "こうかんしてくれて ありがとー"
@@ -713,6 +715,8 @@ Text1251:
 	linefw "対戦いたしましょう"
 	done
 
+SECTION "Text 26", ROMX
+
 Text1252:
 	textfw "あと アイラさんのヘヤへの"
 	linefw "はしを かけるね"
@@ -853,7 +857,7 @@ Text1263:
 	linefw "オレは ひとあしさきに"
 	linefw "ヤツらのうごきを しらべておくぜ!"
 	linefw "くわしい はなしは"
-	linefw "Dr.オーヤマに きいてくれ!"
+	linefw "D<RDOT>オーヤマに きいてくれ!"
 	linefw "じゃあな! <RAMNAME>!"
 	done
 

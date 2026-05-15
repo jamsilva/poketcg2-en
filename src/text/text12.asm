@@ -1,3 +1,5 @@
+SECTION "Text 23", ROMX
+
 Text10d3:
 	textfw "ストーンクラブマスター ゲンゾウ!!"
 	linefw "きょうは これで ひきさがってやる"
@@ -6,7 +8,7 @@ Text10d3:
 	done
 
 Text10d4:
-	textfw "おお <RAMNAME>か Dr.オーヤマに"
+	textfw "おお <RAMNAME>か D<RDOT>オーヤマに"
 	linefw "はなしは きいているな"
 	linefw "みてのとおりだ!"
 	linefw "<RAMNAME>!"
@@ -308,7 +310,7 @@ Text10ff:
 Text1100:
 	textfw "この「デッキのつくりかた」は"
 	linefw "オートデッキマシンに おくっておく"
-	linefw "Dr.オーヤマ研究所に ある"
+	linefw "D<RDOT>オーヤマ研究所に ある"
 	linefw "オートデッキマシンで つくるといい"
 	done
 
@@ -441,7 +443,7 @@ Text1112:
 
 Text1113:
 	textfw "とりもどされた カードは"
-	linefw "Dr.オーヤマが コピーしてるんだ"
+	linefw "D<RDOT>オーヤマが コピーしてるんだ"
 	linefw "それで みんなのところに"
 	linefw "カードが くばられるのさっ!"
 	done
@@ -964,6 +966,8 @@ Text1160:
 	linefw "かわるっす おぼえてるっすか?"
 	linefw "それじゃ 対戦するっすか?"
 	done
+
+SECTION "Text 24", ROMX
 
 Text1161:
 	textfw "ケビンと 対戦しますか?"
