@@ -506,9 +506,9 @@ GrassEnergyName:
 	done
 
 GrassEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「草」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <GRASS> Energy."
 	done
 
 FireEnergyName:
@@ -516,9 +516,9 @@ FireEnergyName:
 	done
 
 FireEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「炎」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <FIRE> Energy."
 	done
 
 WaterEnergyName:
@@ -526,9 +526,9 @@ WaterEnergyName:
 	done
 
 WaterEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「水」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <WATER> Energy."
 	done
 
 LightningEnergyName:
@@ -536,9 +536,9 @@ LightningEnergyName:
 	done
 
 LightningEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「雷」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <LIGHTNING> Energy."
 	done
 
 FightingEnergyName:
@@ -546,9 +546,9 @@ FightingEnergyName:
 	done
 
 FightingEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「闘」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <FIGHTING> Energy."
 	done
 
 PsychicEnergyName:
@@ -556,9 +556,9 @@ PsychicEnergyName:
 	done
 
 PsychicEnergyDescription:
-	textfw "【基本エネルギーカード】"
-	linefw "このカードは「超」エネルギー1個ぶん"
-	linefw "としてあつかう。"
+	text "Basic Energy Card"
+	line ""
+	line "Provides <PSYCHIC> Energy."
 	done
 
 DoubleColorlessEnergyName:
@@ -566,13 +566,13 @@ DoubleColorlessEnergyName:
 	done
 
 DoubleColorlessEnergyDescription:
-	textfw "【特殊エネルギーカード】"
-	linefw "このカードは「無色」エネルギー2個"
-	linefw "ぶんとしてあつかう。(「無色」エネ"
-	linefw "ルギーは、ほかの色のエネルギーのか"
-	linefw "わりにはならない。ほかの色のエネル"
-	linefw "ギーは「無色」エネルギーのかわりに"
-	linefw "なる)"
+	text "Special Energy Card"
+	line ""
+	line "Provides <COLORLESS><COLORLESS> Energy."
+	line "Colorless Energy can't be used to"
+	line "pay colored Energy costs. (Any type"
+	line "of Energy can be used to pay"
+	line "Colorless Energy costs)."
 	done
 
 PotionEnergyName:
@@ -580,19 +580,13 @@ PotionEnergyName:
 	done
 
 PotionEnergyDescription:
-	textfw "【特殊エネルギーカード】"
-	linefw "このカードは「無色」エネルギー1個"
-	linefw "ぶんとしてあつかう。このカードを手札"
-	linefw "から出してポケモンにつけるとき、その"
-	linefw "ポケモンのダメージカウンターを1つ"
-	linefw "とりのぞく。"
-	done
-
-PotionEnergyDescriptionCont:
-	textfw "「無色」エネルギーは、ほかの色のエネ"
-	linefw "ルギーのかわりにはならない。ほかの色"
-	linefw "のエネルギーは「無色」エネルギーのか"
-	linefw "わりになる。"
+	text "Special Energy Card"
+	line ""
+	line "Provides <COLORLESS> Energy."
+	line "If you play this card from your"
+	line "hand, remove 1 damage counter from"
+	line "the Pokémon you attach it to, if it"
+	line "has any."
 	done
 
 FullHealEnergyName:
@@ -600,12 +594,13 @@ FullHealEnergyName:
 	done
 
 FullHealEnergyDescription:
-	textfw "【特殊エネルギーカード】"
-	linefw "このカードは「無色」エネルギー1個"
-	linefw "ぶんとしてあつかう。このカードを手札"
-	linefw "から出してポケモンにつけるとき、その"
-	linefw "ポケモンの「どく・ねむり・マヒ・こん"
-	linefw "らん」状態をすべて回復させる。"
+	text "Special Energy Card"
+	line ""
+	line "Provides <COLORLESS> Energy."
+	line "If you play this card from your"
+	line "hand, the Pokémon you attach it to"
+	line "is no longer Asleep, Confused,"
+	line "Paralyzed, or Poisoned."
 	done
 
 RainbowEnergyName:
@@ -613,13 +608,13 @@ RainbowEnergyName:
 	done
 
 RainbowEnergyDescription:
-	textfw "【特殊エネルギーカード】"
-	linefw "場にある限り、「草・炎・水・雷・超・"
-	linefw "闘」の、どのエネルギーカードとしても"
-	linefw "あつかわれる。このカードを手札から出"
-	linefw "してポケモンにつけるとき、そのポケモ"
-	linefw "ンに、「弱点・抵抗力」に関係なく10"
-	linefw "ダメージ。"
+	text "Special Energy Card"
+	line ""
+	line "Provides one type of Basic Energy"
+	line "at any given time."
+	line "When you attach this card from your"
+	line "hand to 1 of your Pokémon, put 1"
+	line "damage counter on that Pokémon."
 	done
 
 RecycleEnergyName:
@@ -627,11 +622,11 @@ RecycleEnergyName:
 	done
 
 RecycleEnergyDescription:
-	textfw "【特殊エネルギーカード】"
-	linefw "このカードは「無色」エネルギー1個"
-	linefw "ぶんとしてあつかう。このカードが、"
-	linefw "場からトラッシュにおかれたとき、"
-	linefw "このカードを持ち主の手札に戻す。"
+	text "Special Energy Card"
+	line ""
+	line "Provides <COLORLESS> Energy."
+	line "If this card is discarded from play,"
+	line "return it to your hand."
 	done
 
 BulbasaurName:
