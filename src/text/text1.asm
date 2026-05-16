@@ -1,7 +1,7 @@
 SECTION "Text 1", ROMX
 
 ; UNUSED
-UNUSED_0015:
+UNUSED_0089:
 UNUSED_00C0:
 UNUSED_00F8:
 UNUSED_0197:
@@ -288,21 +288,23 @@ TypeText:
 	done
 
 RetreatText:
-	textfw "にげる"
+	text "Retreat"
+	done
+
+RetreatCostText:
+	text "Retreat Cost"
 	done
 
 WeaknessText:
-	textfw "弱点"
+	text "Weakness"
 	done
 
 ResistanceText:
-	textfw "抵抗力"
+	text "Resistance"
 	done
 
 PokemonPowerKanjiText:
-	; The formal term for Pokémon Power
-	; but was "PKMN PWR" in tcg1-en
-	textfw "特殊能力"
+	text "PKMN PWR"
 	done
 
 PokemonTCGText:
@@ -310,15 +312,15 @@ PokemonTCGText:
 	done
 
 LengthText:
-	textfw "身長"
+	text "Length"
 	done
 
 WeightText:
-	textfw "体重"
+	text "Weight"
 	done
 
 PokemonText:
-	textfw "ポケモン"
+	text " Pokémon"
 	done
 
 IF METRIC
@@ -895,19 +897,14 @@ HavePokemonPowerButUnableDueToStareText:
 	linefw "の効果で 特殊能力は つかえない"
 	done
 
-MenuUseCheckText:
-	textfw " つかう"
-	linefw " しらべる"
-	done
-
-MenuPutOutCheckText:
-	textfw " だす"
-	linefw " しらべる"
+MenuPlayCheckText:
+	text "  Play"
+	line "  Check"
 	done
 
 MenuSelectCheckText:
-	textfw " えらぶ"
-	linefw " しらべる"
+	text "  Select"
+	line "  Check"
 	done
 
 DuelistIsThinkingText:
