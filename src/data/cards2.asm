@@ -8436,7 +8436,7 @@ PotionEnergyCard:
 	dw POTION_ENERGY
 	dw PotionEnergyEffectCommands ; effect commands
 	tx PotionEnergyDescription ; description
-	tx PotionEnergyDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 
 FullHealEnergyCard:
 	db TYPE_ENERGY_UNUSED ; type
@@ -8448,7 +8448,7 @@ FullHealEnergyCard:
 	dw FULLHEAL_ENERGY
 	dw FullHealEnergyEffectCommands ; effect commands
 	tx FullHealEnergyDescription ; description
-	tx PotionEnergyDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 
 RainbowEnergyCard:
 	db TYPE_ENERGY_UNUSED ; type

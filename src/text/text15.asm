@@ -1007,6 +1007,8 @@ PoliwrathLv40Description:
 	linefw "抜いてゆく。"
 	done
 
+SECTION "Text 21", ROMX
+
 WhirlpoolName:
 	textfw "うずしお"
 	done
@@ -1418,8 +1420,6 @@ StarFreezeName:
 MysteriousName:
 	textfw "なぞの"
 	done
-
-SECTION "Text 22", ROMX
 
 StarmieDescription:
 	textfw "幾何学的なボディから宇宙生物では"
@@ -2293,6 +2293,8 @@ DarkElectrodeDescription:
 	linefw "エネルギー体ではないかと考えられて"
 	linefw "いるようだ。"
 	done
+
+SECTION "Text 22", ROMX
 
 ElectabuzzName:
 	text "Electabuzz"

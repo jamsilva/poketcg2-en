@@ -4877,7 +4877,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DoubleColorlessEnergyDescription                      ; 0x12fa
 	textpointer PotionEnergyName                                      ; 0x12fb
 	textpointer PotionEnergyDescription                               ; 0x12fc
-	textpointer PotionEnergyDescriptionCont                           ; 0x12fd
+	textpointer UNUSED_12FD                                           ; 0x12fd
 	textpointer FullHealEnergyName                                    ; 0x12fe
 	textpointer FullHealEnergyDescription                             ; 0x12ff
 	textpointer RainbowEnergyName                                     ; 0x1300

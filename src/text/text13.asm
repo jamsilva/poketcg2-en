@@ -462,6 +462,8 @@ Text122b:
 	linefw "でなおして らっしゃい!"
 	done
 
+SECTION "Text 18", ROMX
+
 Text122c:
 	textfw "アタシは 4が スキなの"
 	linefw "だから サイドカードは 4枚よ!"
@@ -856,8 +858,6 @@ Text1263:
 	linefw "D<RDOT>オーヤマに きいてくれ!"
 	linefw "じゃあな! <RAMNAME>!"
 	done
-
-SECTION "Text 19", ROMX
 
 Text1264:
 	textfw "おっ!"

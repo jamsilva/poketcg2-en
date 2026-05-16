@@ -327,8 +327,6 @@ DarkMachokeDescription:
 	linefw "突然暴れ始めた。"
 	done
 
-SECTION "Text 23", ROMX
-
 MachampName:
 	text "Machamp"
 	done
@@ -1073,6 +1071,8 @@ AlakazamLv42Description:
 	textfw "力ワザをあまり好まず、"
 	linefw "超能力を自在にあやつって相手を倒す。"
 	done
+
+SECTION "Text 23", ROMX
 
 TransDamageName:
 	textfw "トランスダメージ"
@@ -1827,8 +1827,6 @@ DarkAmplificationDescription:
 	linefw "×20のダメージを追加する。"
 	done
 
-SECTION "Text 24", ROMX
-
 GRsMewtwoDescription:
 	textfw "わるいポケモンをコントロールする力を"
 	linefw "もつという。なかなか、その姿をみる"
@@ -2443,6 +2441,8 @@ PounceDescription:
 	linefw "がこのカードに与えるダメージは"
 	linefw "「-10」される。"
 	done
+
+SECTION "Text 24", ROMX
 
 ClassyCatName:
 	textfw "シャムネコ"

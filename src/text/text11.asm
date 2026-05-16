@@ -348,8 +348,6 @@ CupHostGrandMasterCupGrandFinalsCallRodText:
 	linefw "リュウドーさんが あいてです!"
 	done
 
-SECTION "Text 16", ROMX
-
 RodGrandMasterCupGrandFinalsText:
 	textfw "さあ わたし このリュウドーが"
 	linefw "みずから あいてになろう!"
@@ -620,6 +618,8 @@ JackWantsToDuelInitialText:
 	linefw "いかがです わたしの"
 	linefw "ゴージャスなデッキと 対戦しますか?"
 	done
+
+SECTION "Text 16", ROMX
 
 JackWantsToDuelRepeatText:
 	textfw "おや"
@@ -1854,8 +1854,6 @@ PierrotPlayerLostText:
 StatueDamageChaosDeckName:
 	textfw "ダメージだいこんらんデッキ"
 	done
-
-SECTION "Text 17", ROMX
 
 AnnaWantsToDuelText:
 	textfw "いらっしゃいませー!"

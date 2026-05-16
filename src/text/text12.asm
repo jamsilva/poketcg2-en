@@ -531,6 +531,8 @@ Text111e:
 	linefw "すこしは やくに たつはずだ"
 	done
 
+SECTION "Text 17", ROMX
+
 Text111f:
 	textfw "ポケモンドームに"
 	linefw "もどると しよう"
@@ -1307,8 +1309,6 @@ Text1195:
 	textfw "あら また まけてしまいましたわ"
 	linefw "いったい なにが わるいのかしら?"
 	done
-
-SECTION "Text 18", ROMX
 
 Text1196:
 	textfw "じぶんの すきなように"
