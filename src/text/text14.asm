@@ -2270,48 +2270,50 @@ CharmanderName:
 	done
 
 GatherFireName:
-	textfw "ほのおをもらう"
+	text "Gather Fire"
 	done
 
 GatherFireDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "自分の場のポケモンについている「炎」"
-	linefw "エネルギーカードを1枚はがし、"
-	linefw "このカードにつける。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may take 1 <FIRE> Energy"
+	line "card attached to 1 of your other"
+	line "Pokémon and attach it to Charmander."
+	line "This Power can't be used if"
+	line "Charmander is Asleep, Confused,"
+	line "or Paralyzed."
 	done
 
 FireTailName:
-	textfw "ほのおのしっぽ"
+	text "Fire Tail"
 	done
 
 LizardName:
-	textfw "とかげ"
+	text "Lizard"
 	done
 
 CharmanderLv9Description:
-	textfw "かわいいので、つい抱きしめようとして"
-	linefw "やけどをしてしまう人が多いらしい。"
+	text "Many people find it cute and try to"
+	line "hold it, only to be burned by its"
+	line "tail."
 	done
 
 EmberName:
-	textfw "ひのこ"
+	text "Ember"
 	done
 
-DiscardOneFireEnergyDescription:
-	textfw "[自分]についている「炎」エネルギーカ"
-	linefw "ードを1枚トラッシュする。トラッシュ"
-	linefw "できないとき、このワザのダメージは"
-	linefw "なくなる。"
+CharmandersEmberDescription:
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Charmander in order to use this"
+	line "attack."
 	done
 
 CharmanderLv10Description:
-	textfw "生まれたときから"
-	linefw "尻尾に炎がともっている。"
-	linefw "炎が消えたとき、その命はつきてしまう"
+	text "Obviously prefers hot places. If it"
+	line "gets caught in the rain, steam is"
+	line "said to spout from the tip of its"
+	line "tail."
 	done
 
 GrowlName:
-	textfw "なきごえ"
+	text "Growl"
 	done

@@ -4395,7 +4395,7 @@ CharmanderLv10Card:
 	; attack 2
 	energy FIRE, 1, COLORLESS, 1 ; energies
 	tx EmberName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx CharmandersEmberDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4437,7 +4437,7 @@ CharmanderLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx GrowlName ; name
-	tx GrowlDescription ; description
+	tx CharmandersGrowlDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4475,7 +4475,7 @@ ELSE
 	length 2, 0 ; length
 	weight 19.0 ; weight
 ENDC
-	tx CharmanderLv12Description ; description
+	tx CharmanderLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 CharmeleonCard:
@@ -4507,7 +4507,7 @@ CharmeleonCard:
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
 	tx FlamethrowerName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx CharmeleonsFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4699,7 +4699,7 @@ ELSE
 	length 5, 7 ; length
 	weight 200.0 ; weight
 ENDC
-	tx CharizardAltDescription ; description
+	tx CharizardDescription ; description
 	db NONE ; AI info
 
 DarkCharizardCard:
@@ -4867,7 +4867,7 @@ ELSE
 	length 2, 0 ; length
 	weight 22.0 ; weight
 ENDC
-	tx VulpixLv13Description ; description
+	tx VulpixLv11Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 NinetalesLv32Card:
@@ -4899,7 +4899,7 @@ NinetalesLv32Card:
 	; attack 2
 	energy FIRE, 4 ; energies
 	tx FireBlastName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx FireBlastDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4942,7 +4942,7 @@ NinetalesLv35Card:
 	energy FIRE, 2 ; energies
 	tx MixUpName ; name
 	tx MixUpDescription ; description
-	dw NONE ; description (cont)
+	tx MixUpDescriptionCont ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
 	dw NinetalesMixUpEffectCommands ; effect commands
@@ -5067,7 +5067,7 @@ GrowlitheLv12Card:
 	; attack 2
 	energy FIRE, 1, COLORLESS, 1 ; energies
 	tx EmberName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx DiscardOneFireEnergyAltDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5147,7 +5147,7 @@ ELSE
 	length 2, 4 ; length
 	weight 42.0 ; weight
 ENDC
-	tx GrowlitheLv16Description ; description
+	tx GrowlitheLv18Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GrowlitheLv18Card:
@@ -5333,7 +5333,7 @@ ArcanineLv45Card:
 	; attack 1
 	energy FIRE, 2, COLORLESS, 1 ; energies
 	tx FlamethrowerName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx ArcaninesFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5427,7 +5427,7 @@ ELSE
 	length 3, 3 ; length
 	weight 66.0 ; weight
 ENDC
-	tx PonytaLv8Description ; description
+	tx PonytaLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PonytaLv10Card:
@@ -5458,7 +5458,7 @@ PonytaLv10Card:
 
 	; attack 2
 	energy FIRE, 2 ; energies
-	tx FireTailName ; name
+	tx FlameTailName ; name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5501,7 +5501,7 @@ PonytaLv15Card:
 	; attack 1
 	energy FIRE, 1, COLORLESS, 1 ; energies
 	tx EmberName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx PonytasEmberDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5571,7 +5571,7 @@ RapidashLv30Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx KickAwayName ; name
-	tx SwitchWithBenchedMonDescription ; description
+	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5595,7 +5595,7 @@ ELSE
 	length 5, 7 ; length
 	weight 209.0 ; weight
 ENDC
-	tx RapidashLv30Description ; description
+	tx RapidashLv33Description ; description
 	db NONE ; AI info
 
 RapidashLv33Card:
@@ -5627,7 +5627,7 @@ RapidashLv33Card:
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
 	tx AgilityName ; name
-	tx AgilityDescription ; description
+	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5795,7 +5795,7 @@ MagmarLv24Card:
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
 	tx FlamethrowerName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx MagmarsFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5875,7 +5875,7 @@ ELSE
 	length 4, 3 ; length
 	weight 98.0 ; weight
 ENDC
-	tx MagmarLv27Description ; description
+	tx MagmarLv24Description ; description
 	db NONE ; AI info
 
 MagmarLv31Card:
@@ -5963,7 +5963,7 @@ FlareonLv22Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx RageName ; name
-	tx RageDescription ; description
+	tx FlareonsRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -6019,7 +6019,7 @@ FlareonLv28Card:
 	; attack 2
 	energy FIRE, 2, COLORLESS, 2 ; energies
 	tx FlamethrowerName ; name
-	tx DiscardOneFireEnergyDescription ; description
+	tx FlareonsFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6061,7 +6061,7 @@ DarkFlareonCard:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx RageName ; name
-	tx RageDescription ; description
+	tx DarkFlareonsRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -6230,7 +6230,7 @@ MoltresLv40Card:
 	energy 0 ; energies
 	tx FiregiverName ; name
 	tx FiregiverDescription ; description
-	tx FiregiverDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw MoltresFiregiverEffectCommands ; effect commands
@@ -8315,7 +8315,7 @@ SeadraLv23Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
 	tx AgilityName ; name
-	tx AgilityDescription ; description
+	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9827,7 +9827,7 @@ PikachuLv5Card:
 	; attack 2
 	energy LIGHTNING, 2 ; energies
 	tx AgilityName ; name
-	tx AgilityDescription ; description
+	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10485,7 +10485,7 @@ RaichuLv40Card:
 	; attack 1
 	energy LIGHTNING, 1, COLORLESS, 2 ; energies
 	tx AgilityName ; name
-	tx AgilityDescription ; description
+	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category

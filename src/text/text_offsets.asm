@@ -5221,11 +5221,11 @@ SECTION "Text Offsets 2", ROMX
 	textpointer LizardName                                            ; 0x1452
 	textpointer CharmanderLv9Description                              ; 0x1453
 	textpointer EmberName                                             ; 0x1454
-	textpointer DiscardOneFireEnergyDescription                       ; 0x1455
+	textpointer CharmandersEmberDescription                           ; 0x1455
 	textpointer CharmanderLv10Description                             ; 0x1456
 	textpointer GrowlName                                             ; 0x1457
-	textpointer GrowlDescription                                      ; 0x1458
-	textpointer CharmanderLv12Description                             ; 0x1459
+	textpointer CharmandersGrowlDescription                           ; 0x1458
+	textpointer CharmeleonsFlamethrowerDescription                    ; 0x1459
 	textpointer CharmeleonName                                        ; 0x145a
 	textpointer FlamethrowerName                                      ; 0x145b
 	textpointer FlameName                                             ; 0x145c
@@ -5241,7 +5241,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer FireSpinName                                          ; 0x1466
 	textpointer FireSpinDescription                                   ; 0x1467
 	textpointer CharizardDescription                                  ; 0x1468
-	textpointer CharizardAltDescription                               ; 0x1469
+	textpointer MixUpDescriptionCont                                  ; 0x1469
 	textpointer DarkCharizardName                                     ; 0x146a
 	textpointer NailFlickName                                         ; 0x146b
 	textpointer ContinuousFireballName                                ; 0x146c
@@ -5253,9 +5253,9 @@ SECTION "Text Offsets 2", ROMX
 	textpointer VulpixLv11Description                                 ; 0x1472
 	textpointer FoxFireName                                           ; 0x1473
 	textpointer FoxFireDescription                                    ; 0x1474
-	textpointer VulpixLv13Description                                 ; 0x1475
+	textpointer FireBlastDescription                                  ; 0x1475
 	textpointer NinetalesName                                         ; 0x1476
-	textpointer UNUSED_1477                                           ; 0x1477
+	textpointer ArcaninesFlamethrowerDescription                      ; 0x1477
 	textpointer FireBlastName                                         ; 0x1478
 	textpointer NinetalesLv32Description                              ; 0x1479
 	textpointer MixUpName                                             ; 0x147a
@@ -5276,7 +5276,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ErrandRunningName                                     ; 0x1489
 	textpointer ErrandRunningDescription                              ; 0x148a
 	textpointer DiscardOneFireEnergyAltDescription                    ; 0x148b
-	textpointer GrowlitheLv16Description                              ; 0x148c
+	textpointer FlameTailName                                         ; 0x148c
 	textpointer FlareName                                             ; 0x148d
 	textpointer GrowlitheLv18Description                              ; 0x148e
 	textpointer ArcanineName                                          ; 0x148f
@@ -5296,19 +5296,19 @@ SECTION "Text Offsets 2", ROMX
 	textpointer FireworksName                                         ; 0x149d
 	textpointer FireworksDescription                                  ; 0x149e
 	textpointer FireHorseName                                         ; 0x149f
-	textpointer PonytaLv8Description                                  ; 0x14a0
+	textpointer PonytasEmberDescription                               ; 0x14a0
 	textpointer PonytaLv10Description                                 ; 0x14a1
 	textpointer PonytaLv15Description                                 ; 0x14a2
 	textpointer RapidashName                                          ; 0x14a3
 	textpointer FlameInfernoName                                      ; 0x14a4
 	textpointer FlameInfernoDescription                               ; 0x14a5
 	textpointer KickAwayName                                          ; 0x14a6
-	textpointer SwitchWithBenchedMonDescription                       ; 0x14a7
-	textpointer RapidashLv30Description                               ; 0x14a8
+	textpointer RapidashsAgilityDescription                           ; 0x14a7
+	textpointer MagmarsFlamethrowerDescription                        ; 0x14a8
 	textpointer StompName                                             ; 0x14a9
 	textpointer StompDescription                                      ; 0x14aa
 	textpointer AgilityName                                           ; 0x14ab
-	textpointer AgilityDescription                                    ; 0x14ac
+	textpointer FlareonsRageDescription                               ; 0x14ac
 	textpointer RapidashLv33Description                               ; 0x14ad
 	textpointer DarkRapidashName                                      ; 0x14ae
 	textpointer RearKickName                                          ; 0x14af
@@ -5323,14 +5323,14 @@ SECTION "Text Offsets 2", ROMX
 	textpointer BurningFireName                                       ; 0x14b8
 	textpointer BurningFireDescription                                ; 0x14b9
 	textpointer MagmaPunchName                                        ; 0x14ba
-	textpointer MagmarLv27Description                                 ; 0x14bb
+	textpointer FlareonsFlamethrowerDescription                       ; 0x14bb
 	textpointer SmokescreenName                                       ; 0x14bc
 	textpointer SmokescreenDescription                                ; 0x14bd
 	textpointer MagmarLv31Description                                 ; 0x14be
 	textpointer FlareonName                                           ; 0x14bf
 	textpointer EeveeName                                             ; 0x14c0
 	textpointer RageName                                              ; 0x14c1
-	textpointer RageDescription                                       ; 0x14c2
+	textpointer DarkFlareonsRageDescription                           ; 0x14c2
 	textpointer FlareonLv22Description                                ; 0x14c3
 	textpointer FlareonLv28Description                                ; 0x14c4
 	textpointer DarkFlareonName                                       ; 0x14c5
@@ -5348,7 +5348,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MoltresSharedDescription                              ; 0x14d1
 	textpointer FiregiverName                                         ; 0x14d2
 	textpointer FiregiverDescription                                  ; 0x14d3
-	textpointer FiregiverDescriptionCont                              ; 0x14d4
+	textpointer UNUSED_14D4                                           ; 0x14d4
 	textpointer SquirtleName                                          ; 0x14d5
 	textpointer BubbleName                                            ; 0x14d6
 	textpointer WithdrawName                                          ; 0x14d7
