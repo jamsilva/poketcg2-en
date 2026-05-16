@@ -24,7 +24,7 @@ TextOffsets::
 	textpointer CircleRarityText                                      ; 0x0012
 	textpointer DiamondRarityText                                     ; 0x0013
 	textpointer StarRarityText                                        ; 0x0014
-	textpointer UNUSED_0015                                           ; 0x0015
+	textpointer RetreatCostText                                       ; 0x0015
 	textpointer AllCardsOwnedText                                     ; 0x0016
 	textpointer TotalCardsCountText                                   ; 0x0017
 	textpointer TotalUniqueCardsCountText                             ; 0x0018
@@ -140,8 +140,8 @@ TextOffsets::
 	textpointer HavePokemonPowerButUnableDueToToxicGasText            ; 0x0086
 	textpointer HavePokemonPowerButUnableDueToGoopGasAttackText       ; 0x0087
 	textpointer HavePokemonPowerButUnableDueToStareText               ; 0x0088
-	textpointer MenuUseCheckText                                      ; 0x0089
-	textpointer MenuPutOutCheckText                                   ; 0x008a
+	textpointer UNUSED_0089                                           ; 0x0089
+	textpointer MenuPlayCheckText                                     ; 0x008a
 	textpointer MenuSelectCheckText                                   ; 0x008b
 	textpointer LengthUnitSeparatorText                               ; 0x008c
 	textpointer DuelistIsThinkingText                                 ; 0x008d

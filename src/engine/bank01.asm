@@ -2815,7 +2815,7 @@ PrintCardListHeaderAndInfoBoxTexts:
 	call PrintTextNoDelay_Init
 	ret
 
-; display the SELECT|CHECK or PLAY|CHECK menu when a card of a list is selected
+; display the PLAY|CHECK menu when a card of a list is selected
 ; and handle input. return carry if b is pressed.
 ; input: wCardListItemSelectionMenuType
 CardListItemSelectionMenu:
@@ -2828,13 +2828,8 @@ CardListItemSelectionMenu:
 	jr nz, .got_text
 	ldh a, [hTempCardIndex_ff98]
 	call LoadCardDataToBuffer1_FromDeckIndex
-; handle verbs
-; redundant in English, where both are just "PLAY"
-	ldtx hl, MenuPutOutCheckText
+	ldtx hl, MenuPlayCheckText
 	ld a, [wLoadedCard1Type]
-	cp TYPE_TRAINER
-	jr nz, .got_text
-	ldtx hl, MenuUseCheckText
 .got_text
 	call DrawNarrowTextBox_PrintTextNoDelay
 	ld hl, ItemSelectionMenuParameters
@@ -3791,7 +3786,7 @@ DrawCardPageBoxAndCardGfx:
 	ret
 
 CardPageRetreatWRTextData:
-	textitem 1, 14, RetreatText
+	textitem 1, 14, RetreatCostText
 	textitem 1, 15, WeaknessText
 	textitem 1, 16, ResistanceText
 	textitems_end
@@ -3864,11 +3859,12 @@ DisplayCardPage_PokemonDescription:
 	lb de, 3, 2
 	call DrawCardSymbol
 	; print the Level and HP numbers at 12,2 and 16,2 respectively
-	lb bc, 12, 2
+	ld b, 12
+	ld c, e
 	ld a, [wLoadedCard1DarknessLevel]
 	and $7f ; drop the darkness bit
 	call WriteTwoDigitNumberInTxSymbol_PadSpace
-	lb bc, 16, 2
+	ld b, 16 ; c is already set to 2
 	ld a, [wLoadedCard1HP]
 	call WriteOneByteNumberInTxSymbol_PadSpace
 	; print the Pokemon's category at 1,10 (just above the length and weight texts)
@@ -3887,7 +3883,7 @@ DisplayCardPage_PokemonDescription:
 	ld h, a
 	call PrintPokemonCardLength
 	; print the weight at 5, 12
-	lb bc, 5, 12
+	inc c
 	ld hl, wLoadedCard1Weight
 	ld a, [hli]
 	ld h, [hl]
@@ -3896,11 +3892,20 @@ DisplayCardPage_PokemonDescription:
 	ldtx hl, WeightUnitEndText
 	call InitTextPrinting_ProcessTextFromID
 	call SetNoLineSeparation
-	lb de, 1, 13
-	ld a, 19 ; line length
-	call InitTextPrintingInTextbox
 	ld hl, wLoadedCard1Description
-	call ProcessTextFromPointerToID
+	push hl
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	call CountLinesOfTextFromID
+	pop hl
+	lb de, 1, 13
+	cp 4
+	jr nc, .print_description
+	inc e ; move a line down, as the description is short enough to fit in three lines
+.print_description
+	ld a, 19 ; line length
+	call InitTextPrinting_ProcessTextFromPointerToID
 	call SetOneLineSeparation
 	ret
 
