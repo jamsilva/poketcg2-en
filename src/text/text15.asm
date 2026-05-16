@@ -666,82 +666,93 @@ SquirtleName:
 	done
 
 BubbleName:
-	textfw "あわ"
+	text "Bubble"
 	done
 
 WithdrawName:
-	textfw "からにこもる"
+	text "Withdraw"
+	done
+
+SquirtlesWithdrawDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Squirtle during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 TinyTurtleName:
-	textfw "かめのこ"
+	text "Tiny Turtle"
 	done
 
 SquirtleLv8Description:
-	textfw "長い首を甲羅の中に引っ込める時、"
-	linefw "勢いよく水を発射する。"
+	text "After birth, its back swells and"
+	line "hardens into a shell. It powerfully"
+	line "sprays foam from its mouth."
 	done
 
 SkullBashName:
-	textfw "ロケットずつき"
+	text "Skull Bash"
 	done
 
 SquirtleLv14Description:
-	textfw "水面から水を噴射して、エサをとる。"
-	linefw "危なくなると甲羅に手足をひっこめて"
-	linefw "身を守る。"
+	text "Shoots water at prey while in the"
+	line "water. Withdraws into its shell when"
+	line "in danger."
 	done
 
 WaterPowerName:
-	textfw "ウォーターパワー"
+	text "Water Power"
 	done
 
 WaterPowerDescription:
-	textfw "次の自分の番、このカードが使う"
-	linefw "「はたく」のダメージは3倍になる。"
+	text "During your next turn, Squirtle's"
+	line "Pound attack's base damage is"
+	line "30 instead of 10."
 	done
 
 PoundName:
-	textfw "はたく"
-	done
-
-SquirtleLv15Description:
-	textfw "生まれた後、背中がふくらみ、"
-	linefw "固い甲羅ができる。口から強力な"
-	linefw "あわをだす。"
+	text "Pound"
 	done
 
 ShellAttackName:
-	textfw "こうらアタック"
+	text "Shell Attack"
 	done
 
 SquirtleLv16Description:
-	textfw "つぶらな瞳が魅力的なポケモンだ。"
-	linefw "水の中で泳ぐのが好きらしい。"
+	text "Cute Pokémon that charms people with"
+	line "its innocent eyes. Loves swimming"
+	line "all day long."
 	done
 
 WartortleName:
 	text "Wartortle"
 	done
 
+WartortlesWithdrawDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Wartortle during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
+	done
+
 TurtleName:
-	textfw "かめ"
+	text "Turtle"
 	done
 
 WartortleLv22Description:
-	textfw "ペットとして人気が高い。"
-	linefw "また毛で覆われたしっぽは"
-	linefw "長生きするシンボルだ。"
+	text "Often hides in water to stalk unwary"
+	line "prey. When swimming quickly, it"
+	line "moves its ears to maintain balance."
 	done
 
 SurfName:
-	textfw "なみのり"
+	text "Surf"
 	done
 
 WartortleLv24Description:
-	textfw "ポカンと頭をたたかれるとき、甲羅に"
-	linefw "ひっこんでよける。でも、ちょっとだけ"
-	linefw "シッポがでているよ。"
+	text "When tapped, this Pokémon will pull"
+	line "in its head, but its tail will still"
+	line "stick out a little bit."
 	done
 
 DarkWartortleName:
@@ -749,30 +760,31 @@ DarkWartortleName:
 	done
 
 DoubleSlapName:
-	textfw "おうふくびんた"
+	text "Doubleslap"
 	done
 
 Do10DamageNumberOfHeadsDescription:
-	textfw "コインを2枚投げて「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Flip 2 coins. This attack does 10"
+	line "damage times the number of Heads."
 	done
 
 MirrorShellName:
-	textfw "こうらがえし"
+	text "Mirror Shell"
 	done
 
 MirrorShellDescription:
-	textfw "次の相手の番、このカードがワザによる"
-	linefw "ダメージを受けたとき(このカードが「"
-	linefw "きぜつ」しても)、ダメージを与えたポ"
-	linefw "ケモンにも、同じダメージを与える。"
-	linefw "(ダメージ以外の効果は与えない)"
+	text "If an attack does damage to Dark"
+	line "Wartortle during your opponent's"
+	line "next turn (even if Dark Wartortle is"
+	line "Knocked Out), Dark Wartortle attacks"
+	line "the Defending Pokémon for an equal"
+	line "amount of damage."
 	done
 
 DarkWartortleDescription:
-	textfw "機嫌が悪いとすぐに甲羅の中に身を"
-	linefw "隠してしまう。少し、性格がひねて"
-	linefw "しまったようだ。"
+	text "A Pokémon with a negative attitude,"
+	line "it hides in its shell whenever it's"
+	line "in a bad mood - which is often."
 	done
 
 BlastoiseName:
@@ -780,44 +792,44 @@ BlastoiseName:
 	done
 
 RainDanceName:
-	textfw "あまごい"
+	text "Rain Dance"
 	done
 
 RainDanceDescription:
-	textfw "この力は、自分の番の中で何度でも使え"
-	linefw "る。自分の手札から「水」エネルギーカ"
-	linefw "ードを出して、自分の場の「水」ポケモ"
-	linefw "ンにつける。このカードが「ねむり・"
-	linefw "マヒ・こんらん」状態のとき、この力は"
-	linefw "使えない。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "attach 1 <WATER> Energy card to 1 of"
+	line "your <WATER> Pokémon. (This doesn't use"
+	line "up your 1 Energy card attachment"
+	line "for the turn)."
+	done
+
+RainDanceDescriptionCont:
+	text "This Power can't be used if"
+	line "Blastoise is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 HydroPumpName:
-	textfw "ハイドロポンプ"
+	text "Hydro Pump"
 	done
 
-Do20DamagePlus10WaterEnergyDescription:
-	textfw "ワザに必要なエネルギーよりも多く"
-	linefw "「水」エネルギーがついているとき、"
-	linefw "多い「水」エネルギー1個につき、"
-	linefw "10ダメージを追加する。"
-	linefw "ダメージ追加は2個ぶんまで。"
+BlastoisesHydroPumpDescription:
+	text "Does 40 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Blastoise but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 ShellfishName:
-	textfw "こうら"
+	text "Shellfish"
 	done
 
 BlastoiseDescription:
-	textfw "体が重たく、のしかかって相手を"
-	linefw "気絶させる。"
-	linefw "ピンチのときは、カラにかくれる。"
-	done
-
-BlastoiseAltDescription:
-	textfw "体が重たく、のしかかって相手を"
-	linefw "気絶させる。ピンチのときは、カラに"
-	linefw "かくれる。"
+	text "A brutal Pokémon with pressurized"
+	line "water jets on its shell. They are"
+	line "used for high-speed tackles."
 	done
 
 DarkBlastoiseName:
@@ -825,32 +837,34 @@ DarkBlastoiseName:
 	done
 
 HydrocannonName:
-	textfw "ハイドロキャノン"
+	text "Hydrocannon"
 	done
 
 HydrocannonDescription:
-	textfw "ワザに必要なエネルギーよりも多く"
-	linefw "「水」エネルギーがついているとき、"
-	linefw "多い「水」エネルギー1個につき、20"
-	linefw "ダメージを追加する。ダメージ追加は"
-	linefw "2個ぶんまで。"
+	text "Does 30 damage plus 20 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Dark Blastoise but not used to pay"
+	line "for this attack's Energy cost. You"
+	line "can't add more than 40 damage in"
+	line "this way."
 	done
 
 RocketTackleName:
-	textfw "ロケットタックル"
+	text "Rocket Tackle"
 	done
 
 RocketTackleDescription:
-	textfw "[自分]にも10ダメージ。"
-	linefw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このカードはダメージを"
-	linefw "受けない。(ダメージ以外の効果は"
-	linefw "そのまま)"
+	text "Dark Blastoise does 10 damage to"
+	line "itself. Flip a coin. If Heads,"
+	line "prevent all damage done to Dark"
+	line "Blastoise during your opponent's"
+	line "next turn. (Any other effects of"
+	line "attacks still happen)."
 	done
 
 DarkBlastoiseDescription:
-	textfw "好戦的な性格で、相手がなんであれ、"
-	linefw "タックルしてくる。"
+	text "An aggressive Pokémon that tackles"
+	line "anything it sees."
 	done
 
 PsyduckName:
@@ -858,40 +872,48 @@ PsyduckName:
 	done
 
 HeadacheName:
-	textfw "ずつう"
+	text "Headache"
 	done
 
 HeadacheDescription:
-	textfw "次の相手の番の終わりまで、"
-	linefw "相手プレイヤーは「トレーナーカード」"
-	linefw "を使うことができない。"
+	text "Your opponent can't play Trainer"
+	line "cards during his or her next turn."
 	done
 
 DuckName:
-	textfw "あひる"
+	text "Duck"
 	done
 
 PsyduckLv15Description:
-	textfw "いつも頭痛に悩まされている。"
-	linefw "この頭痛が激しくなると"
-	linefw "不思議な力を使い始める。"
+	text "While lulling its enemies with its"
+	line "vacant look, this wily Pokémon will"
+	line "use psychokinetic powers."
 	done
 
 DizzinessName:
-	textfw "めまい"
+	text "Dizziness"
 	done
 
 DizzinessDescription:
-	textfw "山札からカードを1枚引く。"
+	text "Draw a card."
+	done
+
+PsyducksWaterGunDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Psyduck but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 WaterGunName:
-	textfw "みずでっぽう"
+	text "Water Gun"
 	done
 
 PsyduckLv16Description:
-	textfw "頭痛に悩まされるためか、頭をかかえて"
-	linefw "いることが多い。"
+	text "It is often seen holding its head in"
+	line "its paws, as if it were suffering"
+	line "from a headache."
 	done
 
 GolduckName:
@@ -899,40 +921,37 @@ GolduckName:
 	done
 
 PsyshockName:
-	textfw "ねんりき"
+	text "Psyshock"
 	done
 
 HyperBeamName:
-	textfw "はかいこうせん"
+	text "Hyper Beam"
 	done
 
 HyperBeamDescription:
-	textfw "[相手]についている「エネルギーカード"
-	linefw "」を1枚選び、トラッシュする。"
+	text "If the Defending Pokémon has any"
+	line "Energy cards attached to it, choose"
+	line "1 of them and discard it."
 	done
 
 GolduckLv27Description:
-	textfw "手のひらが水かきになっていて"
-	linefw "泳ぐのが得意。"
-	linefw "湖などで優雅な姿が見かけられる。"
+	text "Often seen swimming elegantly by"
+	line "lake shores. It is often mistaken"
+	line "for the Japanese monster, Kappa."
 	done
 
 PsychicName:
-	textfw "サイコキネシス"
+	text "Psychic"
 	done
 
 PsychicDescription:
-	textfw "[相手]についているエネルギーカード"
-	linefw "×10のダメージを追加する。"
+	text "Does 10 damage plus 10 more damage"
+	line "for each Energy card attached to the"
+	line "Defending Pokémon."
 	done
 
 WaveSplashName:
-	textfw "スプラッシュ"
-	done
-
-GolduckLv28Description:
-	textfw "夕方、湖のほとりをかれいに泳ぐ姿を"
-	linefw "カッパと間違える人がいる。"
+	text "Wave Splash"
 	done
 
 DarkGolduckName:
@@ -940,49 +959,46 @@ DarkGolduckName:
 	done
 
 ThirdEyeName:
-	textfw "だい3のめ"
+	text "Third Eye"
 	done
 
 ThirdEyeDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」を1枚選び、トラッシュする。"
-	linefw "その後、自分の山札からカードを3枚"
-	linefw "引く。"
+	text "Discard 1 Energy card attached to"
+	line "Dark Golduck in order to draw up to"
+	line "3 cards."
 	done
 
 SuperPsyName:
-	textfw "ちょうねんりき"
+	text "Super Psy"
 	done
 
 DarkGolduckDescription:
-	textfw "コダック時代の頭痛がウソのように消え"
-	linefw "いつのまにか強力な超能力を身につけた"
+	text "When Psyduck evolve, their headaches"
+	line "disappear and they find themselves"
+	line "in possession of formidable mental"
+	line "powers."
 	done
 
 PoliwagName:
 	text "Poliwag"
 	done
 
-Do20DamagePlus10WaterEnergyAltDescription1:
-	textfw "ワザに必要なエネルギーよりも多く"
-	linefw "「水」エネルギーがついているとき、"
-	linefw "多い「水」エネルギー1個につき、10"
-	linefw "ダメージを追加する。ダメージ追加は"
-	linefw "2個ぶんまで。"
+PoliwagsWaterGunDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwag but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 TadpoleName:
-	textfw "おたま"
+	text "Tadpole"
 	done
 
 PoliwagLv13Description:
-	textfw "スベスベした黑い皮膚は薄く湿っている"
-	linefw "内臓の一部が透けて渦巻状にみえる。"
-	done
-
-PoliwagLv15Description:
-	textfw "まだ足がはえたばかりでうまく歩けない"
-	linefw "水の中を歩いているほうが好きなようだ"
+	text "Its newly grown legs prevent it"
+	line "from running. It appears to prefer"
+	line "swimming over trying to stand."
 	done
 
 PoliwhirlName:
@@ -990,59 +1006,66 @@ PoliwhirlName:
 	done
 
 AmnesiaName:
-	textfw "ドわすれ"
+	text "Amnesia"
 	done
 
 AmnesiaDescription:
-	textfw "[相手]のワザを1つ選ぶ。次の相手の番"
-	linefw "そのポケモンは、そのワザを使えない。"
+	text "Choose 1 of the Defending Pokémon's"
+	line "attacks. That Pokémon can't use that"
+	line "attack during your opponent's next"
+	line "turn."
 	done
 
 PoliwhirlLv28Description:
-	textfw "2本の足は発達しており地上で"
-	linefw "暮らせるのに、なぜか水中生活が好き。"
+	text "Capable of living in or out of"
+	line "water. When out of water, it sweats"
+	line "to keep its body slimy."
 	done
 
 TwiddleName:
-	textfw "ぐるぐる"
+	text "Twiddle"
 	done
 
 TwiddleDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「こんらん」状態に、"
-	linefw "「うら」なら「ねむり」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Confused; if Tails,"
+	line "it is now Asleep."
 	done
 
 BodySlamName:
-	textfw "のしかかり"
-	done
-
-PoliwhirlLv30Description:
-	textfw "陸でも水中でも暮らせる。地上では"
-	linefw "いつも汗をかき、皮膚をぬめぬめ"
-	linefw "させている。"
+	text "Body Slam"
 	done
 
 PoliwrathName:
 	text "Poliwrath"
 	done
 
-PoliwrathLv40Description:
-	textfw "クロールやバタフライが得意で、"
-	linefw "オリンピックの選手でもぐんぐん追い"
-	linefw "抜いてゆく。"
+PoliwrathsWaterGunDescription:
+	text "Does 30 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwrath but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 SECTION "Text 21", ROMX
 
 WhirlpoolName:
-	textfw "うずしお"
+	text "Whirlpool"
+	done
+
+PoliwrathsHydroPumpDescription:
+	text "Does 40 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwrath but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 PoliwrathLv48Description:
-	textfw "泳ぎが得意でクロールやバタフライが"
-	linefw "できる。オリンピックの選手も"
-	linefw "かなわないほど速い。"
+	text "An adept swimmer at both the front"
+	line "crawl and breaststroke. Easily"
+	line "overtakes the best human swimmers."
 	done
 
 TentacoolName:
@@ -1050,26 +1073,27 @@ TentacoolName:
 	done
 
 CowardiceName:
-	textfw "おくびょう"
+	text "Cowardice"
 	done
 
 CowardiceDescription:
-	textfw "この力は、自分の番で使える。"
-	linefw "このカードについているカードをすべて"
-	linefw "トラッシュして、このカードを手札に"
-	linefw "もどす。このカードを場に出した番には"
-	linefw "この力は使えない。また、このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "にも、この力は使えない。"
+	text "At any time during your turn"
+	line "(before your attack), you may return"
+	line "Tentacool to your hand. (Discard all"
+	line "cards attached to Tentacool). This"
+	line "power can't be used the turn you put"
+	line "Tentacool into play or if Tentacool"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 JellyfishName:
-	textfw "くらげ"
+	text "Jellyfish"
 	done
 
 TentacoolDescription:
-	textfw "水晶のように透き通った頭部から、"
-	linefw "不思議なビームを発射する。"
+	text "Drifts in shallow seas. Anglers who"
+	line "hook them by accident are often"
+	line "punished by its stinging acid."
 	done
 
 TentacruelName:
@@ -1077,13 +1101,13 @@ TentacruelName:
 	done
 
 JellyfishStingName:
-	textfw "クラゲばり"
+	text "Jellyfish Sting"
 	done
 
 TentacruelDescription:
-	textfw "80本の触手が自由に動く。"
-	linefw "刺されると毒におかされ、"
-	linefw "鋭い痛みがはしる。"
+	text "The tentacles are normally kept"
+	line "short. On hunts, they are extended"
+	line "to ensnare and immobilize prey."
 	done
 
 SeelName:
@@ -1091,32 +1115,31 @@ SeelName:
 	done
 
 GrowlAltDescription1:
-	textfw "次の相手の番、このワザを受けた"
-	linefw "[相手]がこのカードに与えるダメージは"
-	linefw "「-10」される。"
+	text "If the Defending Pokémon attacks"
+	line "Seel during your opponent's next"
+	line "turn, any damage done by the attack"
+	line "is reduced by 10 (after applying"
+	line "Weakness and Resistance)."
+	line "(Benching or evolving either Pokémon"
+	line "ends this effect)."
 	done
 
 IceBeamName:
-	textfw "れいとうビーム"
+	text "Ice Beam"
 	done
 
 SeaLionName:
-	textfw "あしか"
-	done
-
-SeelLv10Description:
-	textfw "頭にでっぱりがあって非常にかたい。"
-	linefw "頭つきで氷山を割って進む。"
+	text "Sea Lion"
 	done
 
 HeadbuttName:
-	textfw "ずつき"
+	text "Headbutt"
 	done
 
 SeelLv12Description:
-	textfw "水色の体毛に覆われた皮膚は、"
-	linefw "ぶあつくて丈夫。"
-	linefw "零下40℃でも活動できる。"
+	text "The protruding horn on its head is"
+	line "very hard. This horn is used for"
+	line "bashing through thick ice."
 	done
 
 DewgongName:
@@ -1124,33 +1147,28 @@ DewgongName:
 	done
 
 RestName:
-	textfw "ねむる"
+	text "Rest"
 	done
 
 RestDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "をすべてとりのぞき、[自分]の「どく・"
-	linefw "ねむり・マヒ・こんらん」状態を、"
-	linefw "すべて回復させる。その後、[自分]を"
-	linefw "「ねむり」状態にする。"
+	text "Remove all damage counters from"
+	line "Dewgong. Dewgong is no longer"
+	line "Confused, Paralyzed, or Poisoned."
+	line "Dewgong is now Asleep."
 	done
 
 AuroraWaveName:
-	textfw "オーロラウェーブ"
-	done
-
-DewgongLv24Description:
-	textfw "寒さに勝つため、体の中に熱エネルギー"
-	linefw "をたくわえる。寒い海も8ノットで進む"
+	text "Aurora Wave"
 	done
 
 AuroraBeamName:
-	textfw "オーロラビーム"
+	text "Aurora Beam"
 	done
 
 DewgongLv42Description:
-	textfw "全身が真っ白な毛で覆われている。"
-	linefw "寒さに強くむしろ寒いほど元気になる。"
+	text "Stores thermal energy in its body."
+	line "Swims at a steady 8 knots even in"
+	line "intensely cold waters."
 	done
 
 ShellderName:
@@ -1158,33 +1176,36 @@ ShellderName:
 	done
 
 HideInShellName:
-	textfw "からをとじる"
+	text "Hide in Shell"
+	done
+
+HideInShellDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Shellder during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 BivalveName:
-	textfw "2まいがい"
+	text "Bivalve"
 	done
 
 ShellderLv8Description:
-	textfw "ダイヤモンドより固い殻に覆われている"
-	linefw "しかし、中身は意外とやわらかい。"
+	text "Its hard shell repels any kind of"
+	line "attack. It is vulnerable only when"
+	line "its shell is open."
 	done
 
 WaterSpoutName:
-	textfw "しおふき"
+	text "Water Spout"
 	done
 
-Do20DamagePlus10WaterEnergyAltDescription2:
-	textfw "ワザに必要なエネルギーよりも多く"
-	linefw "「水」エネルギーがついているとき、"
-	linefw "多い「水」エネルギー1個につき、10"
-	linefw "ダメージを追加する。"
-	linefw "ダメージ追加は2個ぶんまで。"
-	done
-
-ShellderLv16Description:
-	textfw "かたいカラはどんな攻げきもはね返す。"
-	linefw "開いた時に中を攻げきされると弱い。"
+WaterSpoutDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Shellder but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 CloysterName:
@@ -1192,23 +1213,24 @@ CloysterName:
 	done
 
 ClampName:
-	textfw "からではさむ"
+	text "Clamp"
 	done
 
 ClampDescription:
-	textfw "コインを投げて「うら」なら、このワザ"
-	linefw "は失敗する。「おもて」なら、[相手]を"
-	linefw "「マヒ」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Paralyzed. If Tails,"
+	line "this attack does nothing (not even"
+	line "damage)."
 	done
 
 SpikeCannonName:
-	textfw "とげキャノン"
+	text "Spike Cannon"
 	done
 
 CloysterDescription:
-	textfw "殻が非常に固く、"
-	linefw "ナパーム彈でも壊せない。"
-	linefw "攻擊するときだけ開く。"
+	text "When attacked, it launches its horns"
+	line "in quick volleys. Its innards have"
+	line "never been seen."
 	done
 
 KrabbyName:
@@ -1216,26 +1238,21 @@ KrabbyName:
 	done
 
 RiverCrabName:
-	textfw "さわがに"
-	done
-
-KrabbyLv17Description:
-	textfw "ハサミは強力な武器であり、横に歩く時"
-	linefw "体のバランスをとる役目もはたす。"
+	text "River Crab"
 	done
 
 CallForFamilyKrabbyDescription:
-	textfw "自分の山札から「クラブ」を1枚"
-	linefw "選び出し、自分のベンチに出す。"
-	linefw "その後、その山札をよく切る。"
-	linefw "(ベンチに空きがないとき、このワザは"
-	linefw "使えない)"
+	text "Search your deck for a Basic Pokémon"
+	line "named Krabby and put it onto your"
+	line "Bench. Shuffle your deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full)."
 	done
 
 KrabbyLv20Description:
-	textfw "海の近くで見つかる。"
-	linefw "大きなハサミはもぎとっても"
-	linefw "後からまたはえてくる。"
+	text "Its pincers are not only powerful"
+	line "weapons, they are used for balance"
+	line "when walking sideways."
 	done
 
 KinglerName:
@@ -1243,51 +1260,47 @@ KinglerName:
 	done
 
 FlailName:
-	textfw "じたばた"
+	text "Flail"
 	done
 
-FlailDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "の数×10のダメージ。"
+KinglersFlailDescription:
+	text "Does 10 damage times the number of"
+	line "damage counters on Kingler."
 	done
 
 CrabhammerName:
-	textfw "クラブハンマー"
+	text "Crabhammer"
 	done
 
 PincerName:
-	textfw "はさみ"
+	text "Pincer"
 	done
 
 KinglerLv27Description:
-	textfw "固いハサミは1万馬力のパワーを"
-	linefw "持っているが、大きすぎて動きが鈍い。"
+	text "The large pincer has 10,000"
+	line "horsepower of crushing power."
+	line "However, its huge size makes it"
+	line "unwieldy to use."
 	done
 
 SaltWaterName:
-	textfw "しおまねき"
+	text "Salt Water"
 	done
 
 SaltWaterDescription:
-	textfw "コインを投げて「おもて」なら、自分の"
-	linefw "山札から「水」エネルギーカードを3枚"
-	linefw "選び出し、このカードにつける。"
-	linefw "その後、その山札をよく切る。"
+	text "Flip a coin. If Heads, search your"
+	line "deck for up to 3 <WATER> Energy cards"
+	line "and attach them to Kingler."
 	done
 
 DoubleEdgedPincersName:
-	textfw "もろばバサミ"
+	text "Double-Edged Pincers"
 	done
 
 DoubleEdgedPincersDescription:
-	textfw "次の相手の番、このカードが受ける"
-	linefw "ダメージは2倍になる。"
-	done
-
-KinglerLv33Description:
-	textfw "ハサミは1万馬力のスーパーパワーを"
-	linefw "ひめているのだが、大きすぎてうまく"
-	linefw "動かない。"
+	text "All damage done by attacks to"
+	line "Kingler during your opponent's next"
+	line "turn is doubled."
 	done
 
 HorseaName:
@@ -1295,63 +1308,71 @@ HorseaName:
 	done
 
 DragonName:
-	textfw "ドラゴン"
+	text "Dragon"
 	done
 
 HorseaLv19Description:
-	textfw "ぜんまいのようにクルクル巻かれた"
-	linefw "尻尾で体のバランスをとる。"
-	linefw "口からスミをはくことがある。"
+	text "Known to shoot down flying bugs with"
+	line "precision blasts of ink from the"
+	line "surface of the water."
 	done
 
 HideName:
-	textfw "かくれる"
+	text "Hide"
 	done
 
 HideDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このカードはワザに"
-	linefw "よるダメージや効果を受けない。"
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Horsea."
 	done
 
-HorseaLv20Description:
-	textfw "水面から勢いよくスミを発射して、"
-	linefw "飛んでいるムシをうち落とすことがある"
-	linefw "という。"
+HorseasWaterGunDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Horsea but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
 	done
 
 SeadraName:
 	text "Seadra"
 	done
 
+SeadrasWaterGunDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Seadra but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
+	done
+
+SeadrasAgilityDescription:
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Seadra."
+	done
+
 SeadraLv23Description:
-	textfw "うかつにさわろうとすると"
-	linefw "体中にはえるトゲに刺されて"
-	linefw "気絶することもある。"
+	text "Capable of swimming backward by"
+	line "rapidly flapping its wing-like"
+	line "pectoral fins and stout tail."
 	done
 
 WaterBombName:
-	textfw "ウォーターボム"
+	text "Water Bomb"
 	done
 
 WaterBombDescription:
-	textfw "ワザに必要なエネルギーよりも多く"
-	linefw "「水」エネルギーがついているとき、"
-	linefw "多い「水」エネルギー1個につき10"
-	linefw "ダメージを、相手の控えポケモンに"
-	linefw "好きなようにわりふって与える。"
-	done
-
-WaterBombDescriptionCont:
-	textfw "(控えへのダメージ追加は2個ぶんまで"
-	linefw "また、控えへのダメージは「弱点・"
-	linefw "抵抗力」の影響を受けない)"
-	done
-
-SeadraLv26Description:
-	textfw "ハネとしっぽをすばやく動かし、"
-	linefw "前を向いたまま後ろへ泳ぐこともできる"
-	linefw "ポケモン。"
+	text "Does 10 damage for each <WATER> Energy"
+	line "attached to Seadra but not used to"
+	line "pay for this attack's Energy cost to"
+	line "your opponent's Benched Pokémon. You"
+	line "can't do more than 20 damage in this"
+	line "way. (Don't apply Weakness and"
+	line "Resistance for Benched Pokémon)."
 	done
 
 GoldeenName:
@@ -1359,17 +1380,17 @@ GoldeenName:
 	done
 
 HornAttackName:
-	textfw "つのでつく"
+	text "Horn Attack"
 	done
 
 GoldfishName:
-	textfw "きんぎょ"
+	text "Goldfish"
 	done
 
 GoldeenDescription:
-	textfw "泳ぐ時、尾びれがドレスのように"
-	linefw "しなやかに揺れるので、"
-	linefw "水中の女王と呼ばれる。"
+	text "Its tail fin billows like an elegant"
+	line "ballroom dress, giving it the"
+	line "nickname ”Water Queen.”"
 	done
 
 SeakingName:
@@ -1377,13 +1398,13 @@ SeakingName:
 	done
 
 WaterfallName:
-	textfw "たきのぼり"
+	text "Waterfall"
 	done
 
 SeakingDescription:
-	textfw "角がドリルのようにとがっていて、"
-	linefw "岩肌を角でくりぬき自分の巣を"
-	linefw "つくっている。"
+	text "In the autumn spawning season, they"
+	line "can be seen swimming powerfully up"
+	line "rivers and creeks."
 	done
 
 StaryuName:
@@ -1391,35 +1412,31 @@ StaryuName:
 	done
 
 SlapName:
-	textfw "ひらてうち"
+	text "Slap"
 	done
 
 StarshapeName:
-	textfw "ほしがた"
+	text "Starshape"
 	done
 
 StaryuLv15Description:
-	textfw "海辺に多くあらわれ、"
-	linefw "夜になると中心が赤く点滅する。"
+	text "An enigmatic Pokémon that can"
+	line "effortlessly regenerate any"
+	line "appendage it loses in battle."
 	done
 
 StrangeBeamName:
-	textfw "なぞのこうせん"
+	text "Strange Beam"
 	done
 
 StrangeBeamDescription:
-	textfw "次の相手の番、"
-	linefw "自分の場の「水」ポケモンは「弱点」の"
-	linefw "影響を受けない。"
+	text "During your opponent's next turn,"
+	line "your <WATER> Pokémon that have damage"
+	line "counters on them have no Weakness."
 	done
 
 SpinningAttackName:
-	textfw "かいてんアタック"
-	done
-
-StaryuLv17Description:
-	textfw "体の一部を切り取られても、自己再生"
-	linefw "して元に戻るなぞの多い生きものだ。"
+	text "Spinning Attack"
 	done
 
 StarmieName:
@@ -1427,29 +1444,28 @@ StarmieName:
 	done
 
 RecoverName:
-	textfw "じこさいせい"
+	text "Recover"
 	done
 
 RecoverWaterDescription:
-	textfw "[自分]についている「水」エネルギー"
-	linefw "カードを1枚トラッシュして、[自分]に"
-	linefw "のっているダメージカウンターを、"
-	linefw "すべてとりのぞく。「水」エネルギー"
-	linefw "カードをトラッシュできないとき、"
-	linefw "このワザの効果はなくなる。"
+	text "Discard 1 <WATER> Energy card attached to"
+	line "Starmie in order to use this attack."
+	line "Remove all damage counters from"
+	line "Starmie."
 	done
 
 StarFreezeName:
-	textfw "スターフリーズ"
+	text "Star Freeze"
 	done
 
 MysteriousName:
-	textfw "なぞの"
+	text "Mysterious"
 	done
 
 StarmieDescription:
-	textfw "幾何学的なボディから宇宙生物では"
-	linefw "ないかと地元では疑われている。"
+	text "Its central core glows with the"
+	line "seven colors of the rainbow. Some"
+	line "people value this core as a gem."
 	done
 
 DarkStarmieName:
@@ -1457,45 +1473,46 @@ DarkStarmieName:
 	done
 
 RebirthName:
-	textfw "うまれかわる"
+	text "Rebirth"
 	done
 
 RebirthDescription:
-	textfw "この力は、自分の番に使える。このカー"
-	linefw "ドにのっているダメージカウンターをす"
-	linefw "べてとりのぞき、このカードとこのカー"
-	linefw "ドについてるすべてのカードをトラッシ"
-	linefw "ュする。その後、自分の山札から、自動"
-	linefw "的に「ヒトデマン」が1匹選ばれ、場に"
-	linefw "出される。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "use this Power. If you don't have"
+	line "any Staryu in your deck, this Power"
+	line "does nothing. Discard Dark Starmie"
+	line "and all cards attached to it."
 	done
 
 RebirthDescriptionCont:
-	textfw "山札に「ヒトデマン」がなかった場合、"
-	linefw "「うまれかわる」は失敗する。"
-	linefw "自分に控えがいないとき、または、この"
-	linefw "カードが「ねむり・マヒ・こんらん」"
-	linefw "状態のとき、この力は使えない。"
+	text "Then 1 random Staryu in your deck"
+	line "is chosen and put onto the same"
+	line "place. Shuffle your deck afterward."
+	line "This Power can't be used if Dark"
+	line "Starmie is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 SpinningShowerName:
-	textfw "スピニングシャワー"
+	text "Spinning Shower"
 	done
 
 SpinningShowerDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の場のポケモンからランダムに"
-	linefw "「1、2」匹えらばれ、そのポケモンに"
-	linefw "「弱点・抵抗力」に関係なく、20ダメ"
-	linefw "ージを与え、「エネルギーカード」が"
-	linefw "ついていれば、ランダムで1枚"
-	linefw "トラッシュされる。"
+	text "Flip a coin. If Heads, 1 or 2 of"
+	line "your opponent's Pokémon are chosen"
+	line "at random and this attack does 20"
+	line "damage to each of them. (Don't apply"
+	line "Weakness and Resistance). Then, 1"
+	line "random Energy card attached to each"
+	line "of them is discarded."
 	done
 
 DarkStarmieDescription:
-	textfw "その生態がいまだつかめていない"
-	linefw "ポケモン。不思議な力で生まれか"
-	linefw "わることがあるという。"
+	text "This Pokémon has not yet taken hold"
+	line "in the ecosystem. This is because"
+	line "its birth and transformation take"
+	line "place through a mysterious power."
 	done
 
 MagikarpName:
@@ -1503,58 +1520,53 @@ MagikarpName:
 	done
 
 FlopName:
-	textfw "はねまわる"
+	text "Flop"
 	done
 
 RapidEvolutionName:
-	textfw "たきのぼりしんか"
+	text "Rapid Evolution"
 	done
 
 RapidEvolutionDescription:
-	textfw "「コイキング」から進化するカードを"
-	linefw "自分の山札から1枚選び出し、"
-	linefw "このコイキングにつける。その後、"
-	linefw "その山札をよく切る。"
+	text "Search your deck for an Evolution"
+	line "card named Gyarados or Dark Gyarados"
+	line "and put it on Magikarp. (This counts"
+	line "as evolving Magikarp). Shuffle your"
+	line "deck afterward."
+	done
+
+MagikarpsFlailDescription:
+	text "Does 10 damage times the number of"
+	line "damage counters on Magikarp."
 	done
 
 FishName:
-	textfw "さかな"
+	text "Fish"
 	done
 
 MagikarpLv6Description:
-	textfw "最新の研究で、コイキングの体から"
-	linefw "竜のDNAが検出されることが判明した"
-	linefw "らしい。"
+	text "Recent research has revealed the"
+	line "presence of dragon DNA in this"
+	line "species of Pokémon."
 	done
 
 MagikarpLv8Description:
-	textfw "力もスピードもほとんどダメ。"
-	linefw "世界で一番弱くて、"
-	linefw "なさけないポケモンだ。"
+	text "In the distant past, it was stronger"
+	line "than its horribly weak descendants"
+	line "that exist today."
 	done
 
 TrickleName:
-	textfw "びちびち"
-	done
-
-Plus10DamagePerHeadsDescription:
-	textfw "コインを2枚投げ、「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Trickle"
 	done
 
 DragonRageName:
-	textfw "りゅうのいかり"
+	text "Dragon Rage"
 	done
 
 IfEitherTailsDoNothingDescription:
-	textfw "コインを2枚投げ、1つでも「うら」"
-	linefw "なら、このワザは失敗する。"
-	done
-
-MagikarpLv10Description:
-	textfw "最新の研究で、コイキングの体から、"
-	linefw "竜のDNAが検出されることが判明した"
-	linefw "らしい。"
+	text "Flip 2 coins. If either of them is"
+	line "Tails, this attack does nothing."
 	done
 
 GyaradosName:
@@ -1562,17 +1574,17 @@ GyaradosName:
 	done
 
 BubblebeamName:
-	textfw "バブルこうせん"
+	text "Bubblebeam"
 	done
 
 AtrociousName:
-	textfw "きょうあく"
+	text "Atrocious"
 	done
 
 GyaradosDescription:
-	textfw "非常に狂暴な性格。"
-	linefw "「りゅうのいかり」は全てのものを"
-	linefw "破壊しつくす。"
+	text "Rarely seen in the wild. Huge and"
+	line "vicious, it is capable of destroying"
+	line "entire cities in a rage."
 	done
 
 DarkGyaradosName:
@@ -1580,28 +1592,29 @@ DarkGyaradosName:
 	done
 
 FinalBeamName:
-	textfw "ファイナルビーム"
+	text "Final Beam"
 	done
 
 FinalBeamDescription:
-	textfw "この力は、このカードが相手のワザに"
-	linefw "よって「きぜつ」するとき、1度だけ"
-	linefw "使える。コインを投げて「おもて」なら"
-	linefw "このカードを「きぜつ」させたポケモン"
-	linefw "に、このカードについている「水」エネ"
-	linefw "ルギーの数×20のダメージ。"
+	text "When Dark Gyarados is Knocked Out by"
+	line "an attack, flip a coin. If Heads,"
+	line "this Power does 20 damage for each"
+	line "Water Energy attached to Dark"
+	line "Gyarados to the Pokémon that Knocked"
+	line "Out Dark Gyarados. (Apply Weakness"
+	line "and Resistance)."
 	done
 
 FinalBeamDescriptionCont:
-	textfw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のまま「きぜつ」するとき、"
-	linefw "この力は使えない。"
+	text "This Power doesn't work if Dark"
+	line "Gyarados is Asleep, Confused,"
+	line "or Paralyzed."
 	done
 
 DarkGyaradosDescription:
-	textfw "深海に生息しているので滅多に見かける"
-	linefw "ことがなかったが、ついに浅瀬に姿を"
-	linefw "現した。"
+	text "Normally found only in the deep"
+	line "ocean, it has recently been seen in"
+	line "shallow waters as well."
 	done
 
 LaprasName:
@@ -1609,26 +1622,30 @@ LaprasName:
 	done
 
 SingName:
-	textfw "うたう"
+	text "Sing"
 	done
 
 MayInflictSleepDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「ねむり」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Asleep."
+	done
+
+LaprasWaterGunDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Lapras but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
 	done
 
 TransportName:
-	textfw "のりもの"
-	done
-
-LaprasLv24Description:
-	textfw "かつてたくさんつかまえたため、絶めつ"
-	linefw "寸前になっている。人を乗せて進む。"
+	text "Transport"
 	done
 
 LaprasLv31Description:
-	textfw "人の言葉を理解する、高い知能を持つ。"
-	linefw "海の上を人を乗せて進むのが好き。"
+	text "A Pokémon that has been overhunted"
+	line "almost to extinction. It can ferry"
+	line "people across water."
 	done
 
 VaporeonName:
@@ -1636,39 +1653,43 @@ VaporeonName:
 	done
 
 FocusEnergyBiteDescription:
-	textfw "次の自分の番、このカードが使う"
-	linefw "「かみつく」のダメージは2倍になる。"
+	text "During your next turn, Vaporeon's"
+	line "Bite attack's base damage is"
+	line "60 instead of 30."
 	done
 
 BubbleJetName:
-	textfw "あわはき"
+	text "Bubble Jet"
 	done
 
 VaporeonLv29Description:
-	textfw "水辺に住むが、しっぽには魚のような"
-	linefw "ひれが残っていて、人魚と間違う人も"
-	linefw "いる。"
+	text "Its cell structure is similar to"
+	line "water molecules. It will melt away"
+	line "and become invisible in water."
+	done
+
+VaporeonsWaterGunDescription:
+	text "Does 30 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Vaporeon but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
 	done
 
 VaporeonLv42Description:
-	textfw "体の細胞のつくりが、"
-	linefw "水の分子と似ている。"
-	linefw "水にとけると見えなくなる。"
+	text "Lives close to water. Its long tail"
+	line "is ridged with a fin that is often"
+	line "mistaken for a mermaid's."
 	done
 
 DarkVaporeonName:
 	text "Dark Vaporeon"
 	done
 
-WhirlpoolDescription:
-	textfw "相手の対戦ポケモンについている"
-	linefw "エネルギーカードを1枚選び、"
-	linefw "トラッシュさせる。"
-	done
-
 DarkVaporeonDescription:
-	textfw "水を自在にコントロールして、巨大な"
-	linefw "うずしおを作ることができるらしい。"
+	text "A Pokémon capable of controlling"
+	line "water, so it is capable of creating"
+	line "giant whirlpools."
 	done
 
 OmanyteName:
@@ -1680,102 +1701,109 @@ MysteriousFossilName:
 	done
 
 ClairvoyanceName:
-	textfw "おみとおし"
+	text "Clairvoyance"
 	done
 
 ClairvoyanceDescription:
-	textfw "このカードが場にある限り、"
-	linefw "相手プレイヤーは、手札がこのカードの"
-	linefw "持ち主にも見えるようにしておく。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "Your opponent plays with his or her"
+	line "hand face up. This Power stops"
+	line "working while Omanyte is Asleep,"
+	line "Confused, or Paralyzed."
+	done
+
+OmanytesWaterGunDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Omanyte but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
 	done
 
 SpiralName:
-	textfw "うずまき"
+	text "Spiral"
 	done
 
 OmanyteLv19Description:
-	textfw "大昔、海に住んでいた古代のポケモン。"
-	linefw "10本の足をくねらせて泳ぐ。"
+	text "Although long extinct, in rare"
+	line "cases, it can be genetically"
+	line "resurrected from fossils."
 	done
 
 PrehistoricDreamName:
-	textfw "げんしのゆめ"
+	text "Prehistoric Dream"
 	done
 
 PrehistoricDreamDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、"
-	linefw "「なにかの化石」から進化したポケモン"
-	linefw "が、相手の対戦ポケモンに与えるワザの"
-	linefw "ダメージは、この番だけ「+10」"
-	linefw "される。(控えポケモンへのダメージは"
-	linefw "そのまま)。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, for the rest of the turn, if"
+	line "a Pokémon that evolves from"
+	line "Mysterious Fossil attacks the"
+	line "Defending Pokémon, that attack does"
+	line "its base damage plus 10 more damage."
 	done
 
-PowerCantBeUsedIfStatusDescription:
-	textfw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えない。"
+PrehistoricDreamDescriptionCont:
+	text "This Power can't be used if Omanyte"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 RollingTackleName:
-	textfw "ころがりタックル"
-	done
-
-OmanyteSharedDescription:
-	textfw "絶めつしたポケモンだが、まれに化石が"
-	linefw "発見され、そこから生き返らせることが"
-	linefw "できる。"
+	text "Rolling Tackle"
 	done
 
 FossilGuidanceName:
-	textfw "かせきのみちびき"
+	text "Fossil Guidance"
 	done
 
 FossilGuidanceDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、自分の"
-	linefw "トラッシュから「なにかの化石」を1枚"
-	linefw "選び出し、手札に加える。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, put a Trainer Card named"
+	line "Mysterious Fossil from your Discard"
+	line "Pile into your hand. This Power"
+	line "can't be used if Omanyte is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 OmastarName:
 	text "Omastar"
 	done
 
+OmastarsWaterGunDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Omastar but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
+	done
+
 OmastarLv32Description:
-	textfw "触手が手足のように発達している。"
-	linefw "しがみつくと同時にかみついてくる。"
+	text "A prehistoric Pokémon that died out"
+	line "when its heavy shell made it"
+	line "impossible for it to catch prey."
 	done
 
 TentacleGripName:
-	textfw "しょくしゅをつかう"
+	text "Tentacle Grip"
 	done
 
 TentacleGripDescription:
-	textfw "[自分]についている「水」エネルギーの"
-	linefw "数ぶんコインを投げ、「おもて」の数"
-	linefw "×2枚のカードを、自分の山札から引く"
+	text "Flip a number of coins equal to the"
+	line "number of <WATER> Energy cards attached"
+	line "to Omastar. For each Heads, draw 2"
+	line "cards."
 	done
 
 CorrosiveAcidName:
-	textfw "ふしょくえき"
+	text "Corrosive Liquid"
 	done
 
 CorrosiveAcidDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「マヒ」状態にする。"
-	linefw "「うら」なら、次の自分の番、"
-	linefw "このカードはこのワザを使えない。"
-	done
-
-OmastarLv36Description:
-	textfw "するどいキバとしょくしゅを持ちながら"
-	linefw "カラが大きすぎてエサをとれず、全滅"
-	linefw "したらしい。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Paralyzed. If Tails,"
+	line "you can't use this attack during"
+	line "your next turn."
 	done
 
 ArticunoName:
@@ -1783,75 +1811,75 @@ ArticunoName:
 	done
 
 AuroraVeilName:
-	textfw "オーロラヴェール"
+	text "Aurora Veil"
 	done
 
 AuroraVeilDescription:
-	textfw "このカードがバトル場にいる限り、"
-	linefw "自分のベンチにいるすべてのポケモンは"
-	linefw "ワザによるダメージや効果を受けない。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "As long as Articuno is your Active"
+	line "Pokémon, your Benched Pokémon do not"
+	line "take damage from and are not"
+	line "affected by attacks. This Power"
+	line "cannot be used if Articuno is"
+	line "Asleep, Confused, or Paralyzed."
 	done
 
 FreezeName:
-	textfw "れいとう"
-	done
-
-ArticunoLv34Description:
-	textfw "雪山で寒くて死にそうな時、"
-	linefw "目の前に現れるといわれる伝説の"
-	linefw "れいとうポケモン。"
+	text "Freeze"
 	done
 
 FreezeDryName:
-	textfw "フリーズドライ"
+	text "Freeze Dry"
 	done
 
 BlizzardName:
-	textfw "ふぶき"
+	text "Blizzard"
 	done
 
 BlizzardDescription:
-	textfw "コインを投げ、「おもて」なら相手の"
-	linefw "控えポケモン全員にも、「うら」なら"
-	linefw "自分の控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "10ダメージ。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 10 damage to each of your"
+	line "opponent's Benched Pokémon."
+	line "If Tails, this attack does 10 damage"
+	line "to each of your own Benched Pokémon."
+	line "(Don't apply Weakness and Resistance"
+	line "for Benched Pokémon)."
 	done
 
 ArticunoLv35Description:
-	textfw "伝説の鳥ポケモンの一匹。"
-	linefw "長い尻尾がたなびいて飛んでいく姿は"
-	linefw "すばらしい。"
+	text "A legendary bird Pokémon that is"
+	line "said to appear to doomed people who"
+	line "are lost in icy mountains."
 	done
 
 QuickfreezeName:
-	textfw "こおりつかせる"
+	text "Quickfreeze"
 	done
 
 QuickfreezeDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。(対戦の"
-	linefw "初めに場に出したときには、使えない)"
-	linefw "コインを投げて「おもて」なら、相手の"
-	linefw "対戦ポケモンを「マヒ」状態にする。"
+	text "When you put Articuno into play"
+	line "during your turn (not during"
+	line "set-up), flip a coin. If Heads, the"
+	line "Defending Pokémon is now Paralyzed."
 	done
 
 IceBreathName:
-	textfw "こおりのいき"
+	text "Ice Breath"
 	done
 
 IceBreathDescription:
-	textfw "相手の場のポケモン1匹に、「弱点・抵"
-	linefw "抗力」に関係なく、40ダメージ。ダメ"
-	linefw "ージを受けるポケモンは、自動的に選ば"
-	linefw "れる。"
+	text "Does 40 damage to 1 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
 ArticunoLv37Description:
-	textfw "雪山で寒くて死にそうなとき、目の前"
-	linefw "に現れるという伝説の冷凍ポケモン。"
+	text "A legendary bird Pokémon. It freezes"
+	line "water that is contained in winter"
+	line "air and makes it snow."
 	done
 
 MarillName:
@@ -1859,12 +1887,21 @@ MarillName:
 	done
 
 AquamouseName:
-	textfw "みずねずみ"
+	text "Aquamouse"
+	done
+
+MarillsWaterGunDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Marill but not used to pay for this"
+	line "attack's Energy cost. You can't add"
+	line "more than 20 damage in this way."
 	done
 
 MarillDescription:
-	textfw "全身の体毛は水をはじくので、"
-	linefw "水遊びのあとでも体はふかふかしている"
+	text "The tip of its tail, which contains"
+	line "oil that is lighter than water, lets"
+	line "it swim without drowning."
 	done
 
 PikachuName:

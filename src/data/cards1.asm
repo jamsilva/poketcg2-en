@@ -6299,7 +6299,7 @@ SquirtleLv8Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WithdrawName ; name
-	tx MetapodsStiffenDescription ; description
+	tx SquirtlesWithdrawDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -6435,7 +6435,7 @@ ELSE
 	length 1, 8 ; length
 	weight 20.0 ; weight
 ENDC
-	tx SquirtleLv15Description ; description
+	tx SquirtleLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SquirtleLv16Card:
@@ -6509,7 +6509,7 @@ WartortleLv22Card:
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WithdrawName ; name
-	tx MetapodsStiffenDescription ; description
+	tx WartortlesWithdrawDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -6678,7 +6678,7 @@ BlastoiseLv52Card:
 	energy 0 ; energies
 	tx RainDanceName ; name
 	tx RainDanceDescription ; description
-	dw NONE ; description (cont)
+	tx RainDanceDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw BlastoiseRainDanceEffectCommands ; effect commands
@@ -6691,7 +6691,7 @@ BlastoiseLv52Card:
 	; attack 2
 	energy WATER, 3 ; energies
 	tx HydroPumpName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx BlastoisesHydroPumpDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_PLUS ; category
@@ -6734,7 +6734,7 @@ BlastoiseAltLv52Card:
 	energy 0 ; energies
 	tx RainDanceName ; name
 	tx RainDanceDescription ; description
-	dw NONE ; description (cont)
+	tx RainDanceDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw BlastoiseAltRainDanceEffectCommands ; effect commands
@@ -6747,7 +6747,7 @@ BlastoiseAltLv52Card:
 	; attack 2
 	energy WATER, 3 ; energies
 	tx HydroPumpName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx BlastoisesHydroPumpDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_PLUS ; category
@@ -6771,7 +6771,7 @@ ELSE
 	length 5, 3 ; length
 	weight 189.0 ; weight
 ENDC
-	tx BlastoiseAltDescription ; description
+	tx BlastoiseDescription ; description
 	db NONE ; AI info
 
 DarkBlastoiseCard:
@@ -6915,7 +6915,7 @@ PsyduckLv16Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx PsyducksWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -7051,7 +7051,7 @@ ELSE
 	length 5, 7 ; length
 	weight 169.0 ; weight
 ENDC
-	tx GolduckLv28Description ; description
+	tx GolduckLv27Description ; description
 	db NONE ; AI info
 
 DarkGolduckCard:
@@ -7125,7 +7125,7 @@ PoliwagLv13Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription1 ; description
+	tx PoliwagsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -7219,7 +7219,7 @@ ELSE
 	length 2, 0 ; length
 	weight 27.0 ; weight
 ENDC
-	tx PoliwagLv15Description ; description
+	tx PoliwagLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PoliwhirlLv28Card:
@@ -7331,7 +7331,7 @@ ELSE
 	length 3, 4 ; length
 	weight 44.0 ; weight
 ENDC
-	tx PoliwhirlLv30Description ; description
+	tx PoliwhirlLv28Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PoliwrathLv40Card:
@@ -7363,7 +7363,7 @@ PoliwrathLv40Card:
 	; attack 2
 	energy WATER, 3 ; energies
 	tx HydroPumpName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx PoliwrathsHydroPumpDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_PLUS ; category
@@ -7387,7 +7387,7 @@ ELSE
 	length 4, 3 ; length
 	weight 119.0 ; weight
 ENDC
-	tx PoliwrathLv40Description ; description
+	tx PoliwrathLv48Description ; description
 	db NONE ; AI info
 
 PoliwrathLv48Card:
@@ -7405,7 +7405,7 @@ PoliwrathLv48Card:
 	; attack 1
 	energy WATER, 2, COLORLESS, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription1 ; description
+	tx PoliwrathsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -7611,7 +7611,7 @@ ELSE
 	length 3, 7 ; length
 	weight 198.0 ; weight
 ENDC
-	tx SeelLv10Description ; description
+	tx SeelLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SeelLv12Card:
@@ -7723,7 +7723,7 @@ ELSE
 	length 5, 7 ; length
 	weight 265.0 ; weight
 ENDC
-	tx DewgongLv24Description ; description
+	tx DewgongLv42Description ; description
 	db NONE ; AI info
 
 DewgongLv42Card:
@@ -7811,7 +7811,7 @@ ShellderLv8Card:
 	; attack 2
 	energy WATER, 1 ; energies
 	tx HideInShellName ; name
-	tx MetapodsStiffenDescription ; description
+	tx HideInShellDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -7853,7 +7853,7 @@ ShellderLv16Card:
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WaterSpoutName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription2 ; description
+	tx WaterSpoutDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -7891,7 +7891,7 @@ ELSE
 	length 1, 0 ; length
 	weight 9.0 ; weight
 ENDC
-	tx ShellderLv16Description ; description
+	tx ShellderLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 CloysterCard:
@@ -8003,7 +8003,7 @@ ELSE
 	length 1, 4 ; length
 	weight 14.0 ; weight
 ENDC
-	tx KrabbyLv17Description ; description
+	tx KrabbyLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 KrabbyLv20Card:
@@ -8077,7 +8077,7 @@ KinglerLv27Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx FlailName ; name
-	tx FlailDescription ; description
+	tx KinglersFlailDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -8171,7 +8171,7 @@ ELSE
 	length 4, 3 ; length
 	weight 132.0 ; weight
 ENDC
-	tx KinglerLv33Description ; description
+	tx KinglerLv27Description ; description
 	db NONE ; AI info
 
 HorseaLv19Card:
@@ -8259,7 +8259,7 @@ HorseaLv20Card:
 	; attack 2
 	energy WATER, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription2 ; description
+	tx HorseasWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -8283,7 +8283,7 @@ ELSE
 	length 1, 4 ; length
 	weight 18.0 ; weight
 ENDC
-	tx HorseaLv20Description ; description
+	tx HorseaLv19Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SeadraLv23Card:
@@ -8301,7 +8301,7 @@ SeadraLv23Card:
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx SeadrasWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -8315,7 +8315,7 @@ SeadraLv23Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
 	tx AgilityName ; name
-	tx RapidashsAgilityDescription ; description
+	tx SeadrasAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -8358,7 +8358,7 @@ SeadraLv26Card:
 	energy WATER, 2 ; energies
 	tx WaterBombName ; name
 	tx WaterBombDescription ; description
-	tx WaterBombDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
 	dw SeadraWaterBombEffectCommands ; effect commands
@@ -8395,7 +8395,7 @@ ELSE
 	length 3, 1 ; length
 	weight 55.0 ; weight
 ENDC
-	tx SeadraLv26Description ; description
+	tx SeadraLv23Description ; description
 	db NONE ; AI info
 
 GoldeenCard:
@@ -8619,7 +8619,7 @@ ELSE
 	length 2, 7 ; length
 	weight 76.0 ; weight
 ENDC
-	tx StaryuLv17Description ; description
+	tx StaryuLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 StarmieCard:
@@ -8819,7 +8819,7 @@ MagikarpLv8Card:
 	; attack 2
 	energy WATER, 1 ; energies
 	tx FlailName ; name
-	tx FlailDescription ; description
+	tx MagikarpsFlailDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -8861,7 +8861,7 @@ MagikarpLv10Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx TrickleName ; name
-	tx Plus10DamagePerHeadsDescription ; description
+	tx Do10DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -8899,7 +8899,7 @@ ELSE
 	length 2, 11 ; length
 	weight 22.0 ; weight
 ENDC
-	tx MagikarpLv10Description ; description
+	tx MagikarpLv6Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GyaradosCard:
@@ -9067,7 +9067,7 @@ ELSE
 	length 8, 2 ; length
 	weight 485.0 ; weight
 ENDC
-	tx LaprasLv24Description ; description
+	tx LaprasLv31Description ; description
 	db NONE ; AI info
 
 LaprasLv31Card:
@@ -9085,7 +9085,7 @@ LaprasLv31Card:
 	; attack 1
 	energy WATER, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx LaprasWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -9211,7 +9211,7 @@ VaporeonLv42Card:
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription1 ; description
+	tx VaporeonsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -9267,7 +9267,7 @@ DarkVaporeonCard:
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
 	tx WhirlpoolName ; name
-	tx WhirlpoolDescription ; description
+	tx HyperBeamDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9323,7 +9323,7 @@ OmanyteLv19Card:
 	; attack 2
 	energy WATER, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx OmanytesWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -9366,7 +9366,7 @@ OmanyteLv20Card:
 	energy 0 ; energies
 	tx PrehistoricDreamName ; name
 	tx PrehistoricDreamDescription ; description
-	tx PowerCantBeUsedIfStatusDescription ; description (cont)
+	tx PrehistoricDreamDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw OmanytePrehistoricDreamEffectCommands ; effect commands
@@ -9403,7 +9403,7 @@ ELSE
 	length 1, 4 ; length
 	weight 17.0 ; weight
 ENDC
-	tx OmanyteSharedDescription ; description
+	tx OmanyteLv19Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 OmanyteLv22Card:
@@ -9459,7 +9459,7 @@ ELSE
 	length 1, 4 ; length
 	weight 17.0 ; weight
 ENDC
-	tx OmanyteSharedDescription ; description
+	tx OmanyteLv19Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 OmastarLv32Card:
@@ -9477,7 +9477,7 @@ OmastarLv32Card:
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyDescription ; description
+	tx OmastarsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -9571,7 +9571,7 @@ ELSE
 	length 3, 3 ; length
 	weight 77.0 ; weight
 ENDC
-	tx OmastarLv36Description ; description
+	tx OmastarLv32Description ; description
 	db NONE ; AI info
 
 ArticunoLv34Card:
@@ -9627,7 +9627,7 @@ ELSE
 	length 5, 7 ; length
 	weight 122.0 ; weight
 ENDC
-	tx ArticunoLv34Description ; description
+	tx ArticunoLv35Description ; description
 	db NONE ; AI info
 
 ArticunoLv35Card:
@@ -9757,7 +9757,7 @@ MarillCard:
 	; attack 1
 	energy WATER, 2 ; energies
 	tx WaterGunName ; name
-	tx Do20DamagePlus10WaterEnergyAltDescription2 ; description
+	tx MarillsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
