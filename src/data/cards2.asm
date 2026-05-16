@@ -1707,7 +1707,7 @@ KabutopsCard:
 	; attack 2
 	energy FIGHTING, 4 ; energies
 	tx AbsorbName ; name
-	tx MegaDrainDescription ; description
+	tx VenusaursMegaDrainDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4843,7 +4843,7 @@ RattataLv12Card:
 	; attack 2
 	energy COLORLESS, 1 ; energies
 	tx QuickAttackName ; name
-	tx IfHeadsDo10DamageDescription ; description
+	tx IfHeadsAdd10Do10DamageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -4899,7 +4899,7 @@ RattataLv15Card:
 	; attack 2
 	energy COLORLESS, 1 ; energies
 	tx TailWhipName ; name
-	tx TailWhipDescription ; description
+	tx NidoransTailWhipDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5613,7 +5613,7 @@ JigglypuffLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FirstAidName ; name
-	tx FirstAidDescription ; description
+	tx BulbasaursFirstAidDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -6691,7 +6691,7 @@ LickitungLv20Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx StompName ; name
-	tx IfHeadsDo10DamageDescription ; description
+	tx IfHeadsAdd10Do10DamageDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -6845,7 +6845,7 @@ ChanseyLv55Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx ScrunchName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category

@@ -634,58 +634,56 @@ BulbasaurName:
 	done
 
 TackleName:
-	textfw "たいあたり"
+	text "Tackle"
 	done
 
 RazorLeafName:
-	textfw "はっぱカッター"
+	text "Razor Leaf"
 	done
 
 SeedName:
-	textfw "たね"
+	text "Seed"
 	done
 
 BulbasaurLv12Description:
-	textfw "何日だって、何も食べなくても元気。"
-	linefw "背中のタネにたくさんの栄養があるから"
-	linefw "平気だ。"
+	text "It can go for days without eating a"
+	line "single morsel. In the bulb on its"
+	line "back, it stores energy."
 	done
 
 LeechSeedName:
-	textfw "やどりぎのタネ"
+	text "Leech Seed"
 	done
 
-LeechSeedDescription:
-	textfw "[相手]にダメージを与えたら、[自分]に"
-	linefw "のっているダメージカウンターを1個"
-	linefw "とりのぞく。"
+BulbasaursLeechSeedDescription:
+	text "Unless all damage from this attack"
+	line "is prevented, you may remove 1"
+	line "damage counter from Bulbasaur."
 	done
 
 BulbasaurLv13Description:
-	textfw "生まれたときから背中に植物の"
-	linefw "タネがあって少しづつ大きく育つ。"
+	text "A strange seed was planted on its"
+	line "back at birth. Thus, a plant"
+	line "sprouted and now grows with this"
+	line "Pokémon."
 	done
 
 FirstAidName:
-	textfw "かいふく"
+	text "First Aid"
 	done
 
-FirstAidDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "を、1個とりのぞく。"
+BulbasaursFirstAidDescription:
+	text "Remove 1 damage counter from"
+	line "Bulbasaur."
 	done
 
 PoisonSeedName:
-	textfw "どくのたね"
+	text "Poison Seed"
 	done
 
 InflictPoisonDescription:
-	textfw "[相手]を「どく」状態にする。"
-	done
-
-BulbasaurLv15Description:
-	textfw "生まれた時から背中に不思議なタネが"
-	linefw "植えてあって、身体とともに育つという"
+	text "The Defending Pokémon is now"
+	line "Poisoned."
 	done
 
 IvysaurName:
@@ -693,28 +691,29 @@ IvysaurName:
 	done
 
 VineWhipName:
-	textfw "つるのむち"
+	text "Vine Whip"
 	done
 
 PoisonPowderName:
-	textfw "どくのこな"
+	text "Poisonpowder"
 	done
 
 IvysaurLv20Description:
-	textfw "つぼみが背中についていて養分を"
-	linefw "吸収していくと、大きな花が咲くという"
+	text "When the bulb on its back grows"
+	line "large, the Pokémon seems to lose the"
+	line "ability to stand on its hind legs."
 	done
 
 IvysaursLeechSeedDescription:
-	textfw "[相手]にダメージを与えたら、[自分]に"
-	linefw "のっているダメージカウンターを"
-	linefw "1個とりのぞく。"
+	text "Unless all damage from this attack"
+	line "is prevented, you may remove 1"
+	line "damage counter from Ivysaur."
 	done
 
 IvysaurLv26Description:
-	textfw "養分をとって大きくなったつぼみから、"
-	linefw "香りがただよいだすと、もうすぐ花が"
-	linefw "ひらくしょうこだよ。"
+	text "The bulb on its back grows by"
+	line "drawing energy. It gives off an"
+	line "aroma when it is ready to bloom."
 	done
 
 DarkIvysaurName:
@@ -722,32 +721,36 @@ DarkIvysaurName:
 	done
 
 VinePullName:
-	textfw "つるでひっぱる"
+	text "Vine Pull"
 	done
 
 VinePullDescription:
-	textfw "この力は、自分の番ごとに1回、この"
-	linefw "カードが「にげる」とき、はたらく。"
-	linefw "相手の控えポケモンがランダムで1匹"
-	linefw "選ばれ、[相手]と入れ替わる。"
-	linefw "相手に控えがいないとき、この力は、"
-	linefw "はたらかない。"
+	text "Once during your turn when Dark"
+	line "Ivysaur retreats, if your opponent"
+	line "has any Benched Pokémon, he or she"
+	line "chooses 1 of them and switches it"
+	line "with the Defending Pokémon."
 	done
 
 FuryStrikesName:
-	textfw "みだれうち"
+	text "Fury Strikes"
 	done
 
 FuryStrikesDescription:
-	textfw "自動的にえらばれた相手の場のポケモン"
-	linefw "に「弱点・抵抗力」に関係なく、10"
-	linefw "ダメージ。これを3回くりかえす。"
+	text "Does 10 damage to 3 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
 DarkIvysaurDescription:
-	textfw "背中からのびる、よく発達した"
-	linefw "つるを自在に操り、相手をむやみに"
-	linefw "ひっぱったりすることがある。"
+	text "It uses well-developed vines, which"
+	line "extend from its back, to freely"
+	line "manipulate and pull opponents"
+	line "without looking."
 	done
 
 VenusaurName:
@@ -755,54 +758,71 @@ VenusaurName:
 	done
 
 SolarPowerName:
-	textfw "ソーラーパワー"
+	text "Solar Power"
 	done
 
 SolarPowerDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "おたがいの対戦ポケモンの「どく・ねむ"
-	linefw "り・マヒ・こんらん」状態を、すべて"
-	linefw "回復させる。このカードが「ねむり・"
-	linefw "マヒ・こんらん」状態のとき、この力は"
-	linefw "使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may use this Power."
+	line "Your Active Pokémon and the"
+	line "Defending Pokémon are no longer"
+	line "Asleep, Confused, Paralyzed, or"
+	line "Poisoned."
+	done
+
+SolarPowerDescriptionCont:
+	text "This Power can't be used if"
+	line "Venusaur is Asleep, Confused,"
+	line "or Paralyzed."
 	done
 
 MegaDrainName:
-	textfw "メガドレイン"
+	text "Mega Drain"
 	done
 
-MegaDrainDescription:
-	textfw "[相手]にダメージを与えたら、その半分"
-	linefw "(切り上げ)のダメージカウンターを、"
-	linefw "[自分]からとりのぞく。"
+VenusaursMegaDrainDescription:
+	text "Remove a number of damage counters"
+	line "from Venusaur equal to half the"
+	line "damage done to the Defending Pokémon"
+	line "(after applying Weakness and"
+	line "Resistance) (rounded up to the"
+	line "nearest 10)."
+	done
+
+VenusaursMegaDrainDescriptionCont:
+	text "If Venusaur has fewer damage"
+	line "counters than that, remove all of"
+	line "them."
 	done
 
 VenusaurLv64Description:
-	textfw "太陽エネルギーを栄養にして大きな花が"
-	linefw "開く。ひなたに引き寄せられるように移"
-	linefw "動する。"
+	text "The flower on its back catches"
+	line "the sun's rays. The sunlight is then"
+	line "absorbed and used for energy."
 	done
 
 EnergyTransName:
-	textfw "エナジートランス"
+	text "Energy Trans"
 	done
 
 EnergyTransDescription:
-	textfw "この力は、自分の番の中で何度でも使え"
-	linefw "る。自分の場のポケモンについている"
-	linefw "「草」エネルギーを、自分の場の別の"
-	linefw "ポケモンにつけかえる。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "take 1 <GRASS> Energy card attached to 1"
+	line "of your Pokémon and attach it to a"
+	line "different one. This Power can't be"
+	line "used if Venusaur is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 SolarbeamName:
-	textfw "ソーラービーム"
+	text "Solarbeam"
 	done
 
 VenusaurLv67Description:
-	textfw "花からうっとりする香りがただよい、"
-	linefw "戦う者の気持ちをなだめてしまう。"
+	text "This plant blooms when it is"
+	line "absorbing solar energy. It stays on"
+	line "the move to seek sunlight."
 	done
 
 DarkVenusaurName:
@@ -810,20 +830,21 @@ DarkVenusaurName:
 	done
 
 HorridPollenName:
-	textfw "いやなかふん"
+	text "Horrid Pollen"
 	done
 
 HorridPollenDescription:
-	textfw "このワザを受けた[相手]は、ランダム"
-	linefw "で、「どく」+「こんらん」、「どく」"
-	linefw "+「ねむり」、「どく」+「マヒ」の"
-	linefw "いずれかの状態になる。"
+	text "The Defending Pokémon is now"
+	line "randomly Asleep and Poisoned,"
+	line "Confused and Poisoned, or"
+	line "Paralyzed and Poisoned."
 	done
 
 DarkVenusaurDescription:
-	textfw "大きな花が開いたとき、100万分の1"
-	linefw "の確率で、花粉をまき散らし、相手を"
-	linefw "特殊状態にする。"
+	text "When its large flower opens, there"
+	line "is a million-to-one chance that the"
+	line "pollen it spreads will inflict a"
+	line "status ailment on the opponent."
 	done
 
 CaterpieName:
@@ -831,22 +852,22 @@ CaterpieName:
 	done
 
 StringShotName:
-	textfw "いとをはく"
+	text "String Shot"
 	done
 
 MayInflictParalysisDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を「マヒ」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Paralyzed."
 	done
 
 WormName:
-	textfw "いもむし"
+	text "Worm"
 	done
 
 CaterpieDescription:
-	textfw "緑の皮膚に覆われている。"
-	linefw "脱皮して成長すると糸をかけて"
-	linefw "サナギにかわる。"
+	text "Its short feet are tipped with"
+	line "suction pads that enable it to"
+	line "tirelessly climb slopes and walls."
 	done
 
 MetapodName:
@@ -854,54 +875,49 @@ MetapodName:
 	done
 
 GreenShieldName:
-	textfw "グリーンシールド"
+	text "Green Shield"
 	done
 
 GreenShieldDescription:
-	textfw "このカードが場にいる限り、自分の場の"
-	linefw "「草」ポケモンがダメージを受けるとき"
-	linefw "「弱点」の影響を受けない。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "As long as Metapod is in play,"
+	line "ignore Weakness when any of your"
+	line "<GRASS> Pokémon are damaged. This Power"
+	line "stops working while Metapod is"
+	line "Asleep, Confused, or Paralyzed."
 	done
 
 MysteriousPowerName:
-	textfw "ふしぎなこな"
+	text "Mysterious Powder"
 	done
 
 MayInflictConfusionDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「こんらん」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Confused."
 	done
 
 CocoonName:
-	textfw "さなぎ"
-	done
-
-MetapodLv20Description:
-	textfw "カラが固くなる前に、強い衝擊を"
-	linefw "受けると、中身が出てしまうので注意。"
+	text "Cocoon"
 	done
 
 StiffenName:
-	textfw "かたまる"
+	text "Stiffen"
 	done
 
-PreventDamageCardEffectDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このカードはダメージを"
-	linefw "受けない。"
-	linefw "(ダメージ以外の効果はそのまま)"
+MetapodsStiffenDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Metapod during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 StunSporeName:
-	textfw "しびれごな"
+	text "Stun Spore"
 	done
 
 MetapodLv21Description:
-	textfw "硬いカラに包まれているが"
-	linefw "中身はやわらかいので、"
-	linefw "強い攻擊には耐えられない。"
+	text "It is vulnerable to attack because"
+	line "its shell is soft, exposing its weak"
+	line "and tender body."
 	done
 
 ButterfreeName:
@@ -909,23 +925,40 @@ ButterfreeName:
 	done
 
 WhirlwindName:
-	textfw "ふきとばし"
+	text "Whirlwind"
 	done
 
 WhirlwindDescription:
-	textfw "[相手]を、控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは、相手が選ぶ。"
-	linefw "(相手に控えがいないとき、入れ替えは"
-	linefw "おこらない)"
+	text "If your opponent has any Benched"
+	line "Pokémon, he or she chooses 1 of them"
+	line "and switches it with the Defending"
+	line "Pokémon. (Do the damage before"
+	line "switching the Pokémon)."
+	done
+
+ButterfreesMegaDrainDescription:
+	text "Remove a number of damage counters"
+	line "from Butterfree equal to half the"
+	line "damage done to the Defending Pokémon"
+	line "(after applying Weakness and"
+	line "Resistance) (rounded up to the"
+	line "nearest 10)."
+	done
+
+ButterfreesMegaDrainDescriptionCont:
+	text "If Butterfree has fewer damage"
+	line "counters than that, remove all of"
+	line "them."
 	done
 
 ButterflyName:
-	textfw "ちょうちょ"
+	text "Butterfly"
 	done
 
 ButterfreeDescription:
-	textfw "羽は水をはじくリンプンに守られている"
-	linefw "雨の日でも空を飛ぶことができる。"
+	text "In battle, it flaps its wings at"
+	line "high speed to release highly toxic"
+	line "dust into the air."
 	done
 
 WeedleName:
@@ -933,36 +966,30 @@ WeedleName:
 	done
 
 PoisonStingName:
-	textfw "どくばり"
+	text "Poison Sting"
 	done
 
 MayInflictPoisonDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を「どく」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Poisoned."
 	done
 
 HairyBugName:
-	textfw "けむし"
+	text "Hairy Bug"
 	done
 
 WeedleLv12Description:
-	textfw "森や草地に多く生息する。"
-	linefw "頭の先に5センチぐらいの"
-	linefw "小さく鋭い毒バリをもつ。"
+	text "Often found in forests, eating"
+	line "leaves. It has a sharp, venomous"
+	line "stinger on its head."
 	done
 
 PeckName:
-	textfw "つつく"
+	text "Peck"
 	done
 
 PoisonHornName:
-	textfw "どくのつの"
-	done
-
-WeedleLv15Description:
-	textfw "葉っぱが大好物で、森の中で見つける"
-	linefw "ことができる。毒を持っているので"
-	linefw "注意が必要。"
+	text "Poison Horn"
 	done
 
 KakunaName:
@@ -970,32 +997,33 @@ KakunaName:
 	done
 
 PoisonFluidName:
-	textfw "どくのたいえき"
+	text "Poison Fluid"
 	done
 
 PoisonFluidDescription:
-	textfw "このカードが相手のワザによってダメー"
-	linefw "ジを受けたとき、(このカードが「きぜ"
-	linefw "つ」しても)、そのダメージを与えたポ"
-	linefw "ケモンを「どく」状態にする。ダメージ"
-	linefw "を受けるとき、すでにこのカードが"
-	linefw "「ねむり・マヒ・こんらん」状態だった"
-	linefw "なら、この力は、はたらかない。"
+	text "If Kakuna is damaged by an"
+	line "opponent's attack (even if Kakuna is"
+	line "Knocked Out), the Attacking Pokémon"
+	line "is now Poisoned. This Power stops"
+	line "working while Kakuna is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 RolloutName:
-	textfw "ころがる"
+	text "Rollout"
 	done
 
-KakunaLv20Description:
-	textfw "自分ではほとんど動けないが、"
-	linefw "危ない時は固くなって身を護っている"
-	linefw "ようだ。"
+KakunasStiffenDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Kakuna during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 KakunaLv23Description:
-	textfw "大人の体をつくるための一時的な状態。"
-	linefw "自分ではほとんど動けない。"
+	text "Almost incapable of moving, this"
+	line "Pokémon can only harden its shell to"
+	line "protect itself from predators."
 	done
 
 BeedrillName:
@@ -1003,22 +1031,22 @@ BeedrillName:
 	done
 
 TwineedleName:
-	textfw "ダブルニードル"
+	text "Twineedle"
 	done
 
 Do30DamageNumberOfHeadsDescription:
-	textfw "コインを2枚投げ、「おもて」の数"
-	linefw "×30のダメージ。"
+	text "Flip 2 coins. This attack does 30"
+	line "damage times the number of Heads."
 	done
 
 PoisonBeeName:
-	textfw "どくばち"
+	text "Poison Bee"
 	done
 
 BeedrillDescription:
-	textfw "集団で現れることもある。"
-	linefw "猛スピードで飛び回りおしりの"
-	linefw "毒バリで刺しまくる。"
+	text "Flies at high speed and attacks"
+	line "using the large, venomous stingers"
+	line "on its forelegs and tail."
 	done
 
 EkansName:
@@ -1026,31 +1054,31 @@ EkansName:
 	done
 
 SpitPoisonName:
-	textfw "どくえき"
+	text "Spit Poison"
 	done
 
 WrapName:
-	textfw "まきつく"
+	text "Wrap"
 	done
 
 SnakeName:
-	textfw "へび"
+	text "Snake"
 	done
 
 EkansLv10Description:
-	textfw "墓地などに棲息する。"
-	linefw "舌をチロチロさせて、"
-	linefw "まわりの危険を感じ取る。"
+	text "Moves silently and stealthily. Eats"
+	line "the eggs of birds, such as Pidgey"
+	line "and Spearow, whole."
 	done
 
 BiteName:
-	textfw "かみつく"
+	text "Bite"
 	done
 
 EkansLv15Description:
-	textfw "肉食でなんでも噛まずに飲み込んで"
-	linefw "しまう。ポッポやオニスズメの卵が"
-	linefw "大好物。"
+	text "A carnivore that swallows its prey"
+	line "whole. Pidgey and Spearow are its"
+	line "favorite food."
 	done
 
 ArbokName:
@@ -1058,45 +1086,41 @@ ArbokName:
 	done
 
 TerrorStrikeName:
-	textfw "いかくこうげき"
+	text "Terror Strike"
 	done
 
 TerrorStrikeDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは、相手が選ぶ。"
-	linefw "(相手に控えがいないとき、入れ替えは"
-	linefw "おこらない)"
+	text "Flip a coin. If Heads and if your"
+	line "opponent has any Benched Pokémon,"
+	line "he or she chooses 1 of them and"
+	line "switches it with the Defending"
+	line "Pokémon. (Do the damage before"
+	line "switching the Pokémon)."
 	done
 
 PoisonFangName:
-	textfw "どくのきば"
+	text "Poison Fang"
 	done
 
 CobraName:
-	textfw "コブラ"
+	text "Cobra"
 	done
 
 ArbokLv27Description:
-	textfw "お腹の模様がこわい顏に見える。"
-	linefw "弱い敵はその模様を見ただけで"
-	linefw "逃げ出してしまう。"
+	text "It is rumored that the ferocious"
+	line "warning markings on its belly differ"
+	line "from area to area."
 	done
 
 DeadlyPoisonName:
-	textfw "もうどく"
+	text "Deadly Poison"
 	done
 
 DeadlyPoisonDescription:
-	textfw "[相手]を「どく」状態にする。"
-	linefw "このワザを受ける前から[相手]が"
-	linefw "「どく」状態なら、10ダメージを"
-	linefw "追加する。"
-	done
-
-ArbokLv30Description:
-	textfw "おなかの恐ろしい模様は、地域によって"
-	linefw "何種類かパターンがあるといううわさだ"
+	text "The Defending Pokémon is now"
+	line "Poisoned. If the Defending Pokémon"
+	line "was already Poisoned, this attack"
+	line "does 30 damage plus 10 more damage."
 	done
 
 DarkArbokName:
@@ -1104,32 +1128,35 @@ DarkArbokName:
 	done
 
 StareName:
-	textfw "ショックアイ"
+	text "Stare"
 	done
 
 StareDescription:
-	textfw "相手の場にいるポケモンを1匹選び、"
-	linefw "「弱点・抵抗力」に関係なく、10"
-	linefw "ダメージ。次の相手の番の終わりまで、"
-	linefw "そのポケモンは特殊能力を使うことが"
-	linefw "できず、その力も消える。"
+	text "Choose 1 of your opponent's Pokémon."
+	line "This attack does 10 damage to that"
+	line "Pokémon. Don't apply Weakness and"
+	line "Resistance for this attack. If that"
+	line "Pokémon has a Pokémon Power, that"
+	line "power stops working until the end of"
+	line "your opponent's next turn."
 	done
 
 PoisonVaporName:
-	textfw "どくのきり"
+	text "Poison Vapor"
 	done
 
 PoisonVaporDescription:
-	textfw "[相手]を「どく」状態にする。"
-	linefw "相手の控えポケモン全員にも、「弱点・"
-	linefw "抵抗力」に関係なく、それぞれ10"
-	linefw "ダメージ。"
+	text "The Defending Pokémon is now"
+	line "Poisoned. This attack does 10 damage"
+	line "to each of your opponent's Benched"
+	line "Pokémon. (Don't apply Weakness and"
+	line "Resistance for Benched Pokémon)."
 	done
 
 DarkArbokDescription:
-	textfw "にらまれるだけで、カラダがかたまって"
-	linefw "しまう。出会ったら、まず目をそらした"
-	linefw "方がよい。"
+	text "Freezes its prey with its stare. If"
+	line "you should encounter one, remember"
+	line "not to look into its eyes."
 	done
 
 NidoranFName:
@@ -1137,46 +1164,46 @@ NidoranFName:
 	done
 
 TailWhipName:
-	textfw "しっぽをふる"
+	text "Tail Wag"
 	done
 
-TailWhipDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このワザを受けた"
-	linefw "[相手]はこのカードがバトル場にいる"
-	linefw "限り、ワザを使えない。"
-	done
-
-NidoranFLv12Description:
-	textfw "身体は小さくても毒バリを持つので"
-	linefw "注意が必要だ。メスのほうが角が小さい"
+NidoransTailWhipDescription:
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon can't attack Nidoran♀ during"
+	line "your opponent's next turn. (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
 	done
 
 FurySwipesName:
-	textfw "みだれひっかき"
+	text "Fury Swipes"
 	done
 
 FurySwipes10DamageDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Flip 3 coins. This attack does 10"
+	line "damage times the number of Heads."
 	done
 
 CallForFamilyName:
-	textfw "なかまをよぶ"
+	text "Call for Family"
 	done
 
 CallForFamilyNidoranDescription:
-	textfw "自分の山札から「ニドラン♂」または"
-	linefw "「ニドラン♀」を1枚選び出し、自分の"
-	linefw "ベンチに出す。その後、その山札をよく"
-	linefw "切る。(ベンチに空きがないとき、この"
-	linefw "ワザは使えない)"
+	text "Search your deck for a Basic Pokémon"
+	line "named Nidoran♀ or Nidoran♂ and put"
+	line "it onto your Bench. Shuffle your"
+	line "deck afterward. (You can't use this"
+	line "attack if your Bench is full)."
+	done
+
+PoisonPinName:
+	text "Poison Pin"
 	done
 
 NidoranFLv13Description:
-	textfw "小さくても毒バリの威力は強烈で"
-	linefw "注意が必要。"
-	linefw "メスのほうが角が小さい。"
+	text "Although small, its venomous barbs"
+	line "make this Pokémon dangerous."
+	line "The female has smaller horns."
 	done
 
 NidorinaName:
@@ -1184,41 +1211,36 @@ NidorinaName:
 	done
 
 StrengthInNumbersName:
-	textfw "なかまのちから"
+	text "Strength in Numbers"
 	done
 
 SECTION "Text 28", ROMX
 
 StrengthInNumbersDescription:
-	textfw "自分のベンチにいる「ニドラン♂」「ニ"
-	linefw "ドラン♀」「ニドリーノ」「ニドリーナ"
-	linefw "」「ニドキング」「ニドクイン」の数"
-	linefw "×10のダメージを追加する。"
+	text "This attack does 10 damage plus"
+	text "10 more damage for each Nidoran♀,"
+	line "Nidorina, Nidoqueen, Nidoran♂,"
+	line "Nidorino, and Nidoking on your"
+	line "Bench."
 	done
 
 FurySwipes30DamageDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×30のダメージ。"
-	done
-
-NidorinaLv22Description:
-	textfw "メスなのでツノの育ちが遅い。"
-	linefw "ひっかいたりかみついたりと、"
-	linefw "肉だん戦を好む。"
+	text "Flip 3 coins. This attack does 30"
+	line "damage times the number of Heads."
 	done
 
 SupersonicName:
-	textfw "ちょうおんぱ"
+	text "Supersonic"
 	done
 
 DoubleKickName:
-	textfw "にどげり"
+	text "Double Kick"
 	done
 
 NidorinaLv24Description:
-	textfw "メスなので性格は温厚。"
-	linefw "口から出す超音波は相手を惑わす力が"
-	linefw "ある。"
+	text "The female's horn develops slowly."
+	line "Prefers physical attacks such as"
+	line "clawing and biting."
 	done
 
 NidoqueenName:
@@ -1226,26 +1248,26 @@ NidoqueenName:
 	done
 
 BoyfriendsName:
-	textfw "ラブラブアタック"
+	text "Boyfriends"
 	done
 
 BoyfriendsDescription:
-	textfw "自分の場にいる「ニドキング」の数"
-	linefw "×20のダメージを追加する。"
+	text "Does 20 damage plus 20 more damage"
+	line "for each Nidoking you have in play."
 	done
 
 MegaPunchName:
-	textfw "メガトンパンチ"
+	text "Mega Punch"
 	done
 
 DrillName:
-	textfw "ドリル"
+	text "Drill"
 	done
 
 NidoqueenDescription:
-	textfw "固くて針のようなウロコが"
-	linefw "腹を覆っている。"
-	linefw "興奮すると針が逆立つ。"
+	text "Its hard scales provide strong"
+	line "protection. It uses its hefty bulk"
+	line "to execute powerful moves."
 	done
 
 NidoranMName:
@@ -1253,37 +1275,32 @@ NidoranMName:
 	done
 
 HornHazardName:
-	textfw "つのでつつく"
+	text "Horn Hazard"
 	done
 
 IfTailsDoNothingDescription:
-	textfw "コインを投げて「うら」なら、このワザ"
-	linefw "は失敗する。"
+	text "Flip a coin. If Tails, this attack"
+	line "does nothing."
 	done
 
 NidoranMLv20Description:
-	textfw "耳が大きく、遠くの音を聞くときに、"
-	linefw "耳がはばたく様に動く。"
-	linefw "怒ると毒バリをだす。"
+	text "Stiffens its ears to sense danger."
+	line "The larger, more powerful of its"
+	line "horns secretes venom."
 	done
 
 FocusEnergyName:
-	textfw "きあいだめ"
+	text "Focus Energy"
 	done
 
 FocusEnergyHornRushDescription:
-	textfw "次の自分の番、このカードが使う"
-	linefw "「つのでとっしん」のダメージは2倍に"
-	linefw "なる。"
+	text "During your next turn, Nidoran♂'s"
+	line "Horn Rush attack's base damage is"
+	line "80 instead of 40."
 	done
 
 HornRushName:
-	textfw "つのでとっしん"
-	done
-
-NidoranMLv22Description:
-	textfw "耳を立てて危険を感じとる。身体の"
-	linefw "トゲが大きいほど強い毒をだす。"
+	text "Horn Rush"
 	done
 
 NidorinoName:
@@ -1291,29 +1308,23 @@ NidorinoName:
 	done
 
 SwiftLungeName:
-	textfw "こうそくづき"
+	text "Swift Lunge"
 	done
 
 SwiftLungeDescription:
-	textfw "コインを投げて「うら」なら、[相手]に"
-	linefw "ダメージを与えられず、[自分]に20"
-	linefw "ダメージ。"
-	done
-
-NidorinoLv23Description:
-	textfw "すぐに怒って戦おうとする。"
-	linefw "しかも頭のツノはささると強れつな"
-	linefw "毒素を出すしくみ。"
+	text "Flip a coin. If Tails, this attack"
+	line "does nothing and Nidorino does 20"
+	line "damage to itself."
 	done
 
 HornDrillName:
-	textfw "つのドリル"
+	text "Horn Drill"
 	done
 
 NidorinoLv25Description:
-	textfw "怒りやすい性格。"
-	linefw "発達した角をふりまわして"
-	linefw "ダイヤモンドも串刺しにする。"
+	text "An aggressive Pokémon that is quick"
+	line "to attack. The horn on its head"
+	line "secretes a powerful venom."
 	done
 
 NidokingName:
@@ -1321,30 +1332,33 @@ NidokingName:
 	done
 
 ThrashName:
-	textfw "あばれる"
+	text "Thrash"
 	done
 
 ThrashDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "10ダメージを追加する。「うら」なら"
-	linefw "[自分]にも10ダメージ。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 30 damage plus 10 more damage;"
+	line "if Tails, this attack does 30 damage"
+	line "and Nidoking does 10 damage to"
+	line "itself."
 	done
 
 ToxicName:
-	textfw "どくどく"
+	text "Toxic"
 	done
 
 ToxicDescription:
-	textfw "[相手]を「どく」状態にする。このワザ"
-	linefw "によって「どく」状態になったポケモン"
-	linefw "がポケモンチェックで受ける「どく」の"
-	linefw "ダメージは、20ダメージ。"
+	text "The Defending Pokémon is now"
+	line "Poisoned. It now takes 20 Poison"
+	line "damage instead of 10 after each"
+	line "player's turn (even if it was"
+	line "already Poisoned)."
 	done
 
 NidokingDescription:
-	textfw "石のように固い皮膚と"
-	linefw "長く伸びた角が特徵。"
-	linefw "角には毒もあるので注意が必要だ。"
+	text "Uses its powerful tail in battle to"
+	line "smash, constrict, then break its"
+	line "prey's bones."
 	done
 
 ZubatName:
@@ -1352,76 +1366,72 @@ ZubatName:
 	done
 
 RamName:
-	textfw "ぶつかる"
+	text "Ram"
 	done
 
 BatName:
-	textfw "こうもり"
+	text "Bat"
 	done
 
 ZubatLv9Description:
-	textfw "暗い洞窟に生息する。夜になると、"
-	linefw "まれに飛んでいく姿が目擊されることも"
-	linefw "ある。"
+	text "Lives in dark caves. Can"
+	line "occasionally be seen at night,"
+	line "when it flies in search of food."
 	done
 
 LeechLifeName:
-	textfw "きゅうけつ"
+	text "Leech Life"
 	done
 
-LeechLifeDescription:
-	textfw "[相手]にダメージを与えたら、与えたぶ"
-	linefw "んのダメージカウンターを、[自分]から"
-	linefw "とりのぞく。"
+ZubatsLeechLifeDescription:
+	text "Remove a number of damage counters"
+	line "from Zubat equal to the damage done"
+	line "to the Defending Pokémon (after"
+	line "applying Weakness and Resistance)."
+	line "If Zubat has fewer damage counters"
+	line "than that, remove all of them."
 	done
 
 ZubatLv10Description:
-	textfw "両方の眼が存在しない。"
-	linefw "口から超音波を出して暗闇を飛び回る。"
+	text "Forms colonies in perpetually dark"
+	line "places. Uses ultrasonic waves to"
+	line "identify and approach targets."
 	done
 
 SuspiciousSoundwaveName:
-	textfw "あやしいおんぱ"
-	done
-
-ZubatLv12Description:
-	textfw "暗い場所に集団で発生する。超音波を"
-	linefw "出して、ターゲットに近づいていく。"
+	text "Suspicious Soundwave"
 	done
 
 GolbatName:
 	text "Golbat"
 	done
 
-LeechLifeAltDescription:
-	textfw "[相手]にダメージを与えたら、"
-	linefw "与えたぶんのダメージカウンターを、"
-	linefw "[自分]からとりのぞく。"
+GolbatsLeechLifeDescription:
+	text "Remove a number of damage counters"
+	line "from Golbat equal to the damage done"
+	line "to the Defending Pokémon (after"
+	line "applying Weakness and Resistance)."
+	line "If Golbat has fewer damage counters"
+	line "than that, remove all of them."
 	done
 
 NosediveName:
-	textfw "きゅうこうか"
+	text "Nosedive"
 	done
 
 NosediveDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "[自分]にも40ダメージ。"
-	done
-
-GolbatLv25Description:
-	textfw "かみついたら最後、血を吸いまくるので"
-	linefw "重たくなって、自分で飛べなくなること"
-	linefw "もある。"
+	text "Flip a coin. If Tails, Golbat does"
+	line "40 damage to itself."
 	done
 
 WingAttackName:
-	textfw "つばさでうつ"
+	text "Wing Attack"
 	done
 
 GolbatLv29Description:
-	textfw "鋭い牙でかみついて、"
-	linefw "1度に300ccの血を吸い取って"
-	linefw "しまう。"
+	text "Once it strikes, it will not stop"
+	line "draining energy from the victim even"
+	line "if it gets too heavy to fly."
 	done
 
 DarkGolbatName:
@@ -1429,31 +1439,36 @@ DarkGolbatName:
 	done
 
 SneakAttackName:
-	textfw "こっそりかみつく"
+	text "Sneak Attack"
 	done
 
 SneakAttackDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。"
-	linefw "相手の場のポケモンを1匹選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージ。"
+	text "When you play Dark Golbat from your"
+	line "hand, you may choose 1 of your"
+	line "opponent's Pokémon. If you do, Dark"
+	line "Golbat does 10 damage to that"
+	line "Pokémon. (Don't apply Weakness and"
+	line "Resistance)."
 	done
 
 FlitterName:
-	textfw "ふらふらとぶ"
+	text "Flitter"
 	done
 
 FlitterDescription:
-	textfw "相手の場のポケモンを1匹選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "20ダメージ。"
+	text "Does 20 damage to 1 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
 DarkGolbatDescription:
-	textfw "物音をたてずに背後にしのびより、"
-	linefw "かみつく。時には、致命傷になりかね"
-	linefw "ない。"
+	text "Sneaks up silently on its prey and"
+	line "attacks it from behind, sometimes"
+	line "killing it with one bite."
 	done
 
 OddishName:
@@ -1461,39 +1476,38 @@ OddishName:
 	done
 
 SproutName:
-	textfw "ふえる"
+	text "Sprout"
 	done
 
 SproutDescription:
-	textfw "自分の山札から「ナゾノクサ」を1枚"
-	linefw "選び出し、自分のベンチに出す。"
-	linefw "その後、その山札をよく切る。"
-	linefw "(ベンチに空きがないとき、このワザは"
-	linefw "使えない)"
+	text "Search your deck for a Basic Pokémon"
+	line "named Oddish and put it onto your"
+	line "Bench. Shuffle your deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full)."
 	done
 
 WeedName:
-	textfw "ざっそう"
+	text "Weed"
 	done
 
 OddishLv8Description:
-	textfw "別名アルキメンデス。"
-	linefw "夜になると2本の根っこで"
-	linefw "300メートルも歩くという。"
+	text "During the day, it keeps its face"
+	line "buried in the ground. At night, it"
+	line "wanders around sowing its seeds."
 	done
 
 SleepPowderName:
-	textfw "ねむりごな"
+	text "Sleep Powder"
 	done
 
 InflictSleepDescription:
-	textfw "[相手]を「ねむり」状態にする。"
+	text "The Defending Pokémon is now Asleep."
 	done
 
 OddishLv21Description:
-	textfw "「種の保存」のため、夜になると"
-	linefw "歩きまわり、花粉を撒き散らしている"
-	linefw "という。"
+	text "It wanders around at night sowing"
+	line "its seeds to create more Oddish."
 	done
 
 GloomName:
@@ -1501,17 +1515,19 @@ GloomName:
 	done
 
 FoulOdorName:
-	textfw "くさいにおい"
+	text "Foul Odor"
 	done
 
 FoulOdorDescription:
-	textfw "ダメージを与えた後、[自分]と[相手]を"
-	linefw "それぞれ「こんらん」状態にする。"
+	text "Both the Defending Pokémon and"
+	line "Gloom are now Confused (after doing"
+	line "damage)."
 	done
 
 GloomDescription:
-	textfw "めしべが放つとてつもなく臭い匂いは、"
-	linefw "2キロ先までとどき、気を失わせる。"
+	text "The fluid that oozes from its mouth"
+	line "isn't drool; it is a nectar that is"
+	line "used to attract prey."
 	done
 
 DarkGloomName:
@@ -1519,23 +1535,23 @@ DarkGloomName:
 	done
 
 PollenStenchName:
-	textfw "くさいかふん"
+	text "Pollen Stench"
 	done
 
 PollenStenchDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、相手の"
-	linefw "対戦ポケモンを「こんらん」状態にする"
-	linefw "「うら」なら、自分の対戦ポケモンを"
-	linefw "「こんらん」状態にする。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, the Defending Pokémon is now"
+	line "Confused; if Tails, your Active"
+	line "Pokémon is now Confused. This Power"
+	line "can't be used if Dark Gloom is"
+	line "Asleep, Confused, or Paralyzed."
 	done
 
 DarkGloomDescription:
-	textfw "あまりにも強烈な匂いなのか、"
-	linefw "自分の花粉で混乱してしまうこともある"
-	linefw "という。"
+	text "Its pollen has such a strong smell"
+	line "that it even confuses itself at"
+	line "times."
 	done
 
 VileplumeName:
@@ -1543,36 +1559,37 @@ VileplumeName:
 	done
 
 HealName:
-	textfw "ヒーリング"
+	text "Heal"
 	done
 
 HealDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、自分の"
-	linefw "場のポケモン1匹から、ダメージカウン"
-	linefw "ターを1個とりのぞく。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "heads, remove 1 damage counter from"
+	line "1 of your Pokémon. This Power can't"
+	line "be used if Vileplume is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 PetalDanceName:
-	textfw "はなびらのまい"
+	text "Petal Dance"
 	done
 
 PetalDanceDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×40のダメージ。その後、[自分]を"
-	linefw "「こんらん」状態にする。"
+	text "Flip 3 coins. This attack does 40"
+	line "damage times the number of Heads."
+	line "Vileplume is now Confused (after"
+	line "doing damage)."
 	done
 
 FlowerName:
-	textfw "フラワー"
+	text "Flower"
 	done
 
 VileplumeDescription:
-	textfw "世界一大きい花びらから"
-	linefw "アレルギーを起こす花粉をオニのように"
-	linefw "ばらまく。"
+	text "The larger its petals, the more"
+	line "toxic pollen it contains. Its big"
+	line "head is heavy and hard to hold up."
 	done
 
 DarkVileplumeName:
@@ -1580,33 +1597,33 @@ DarkVileplumeName:
 	done
 
 HayFeverName:
-	textfw "アレルギーかふん"
+	text "Hay Fever"
 	done
 
 HayFeverDescription:
-	textfw "このカードが場にいる限り、お互いの"
-	linefw "プレイヤーは、トレーナーカードを使う"
-	linefw "ことができない。(すでに場に出ている"
-	linefw "トレーナーカードには影響がない)。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "No Trainer cards can be played. This"
+	line "power stops working while Dark"
+	line "Vileplume is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 PetalWhirlwindName:
-	textfw "はなびらのうず"
+	text "Petal Whirlwind"
 	done
 
 PetalWhirlwindDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×30のダメージ。"
-	linefw "2枚以上が「おもて」なら、[自分]を"
-	linefw "「こんらん」状態にする。"
+	text "Flip 3 coins. This attack does 30"
+	line "damage times the number of Heads."
+	line "If you get 2 or more Heads, Dark"
+	line "Vileplume is now Confused (after"
+	line "doing damage)."
 	done
 
 DarkVileplumeDescription:
-	textfw "強烈な花粉のためか、ラフレシアの生息"
-	linefw "する場所に他のポケモンは近づくことが"
-	linefw "できない。"
+	text "Perhaps because of their"
+	line "strong-smelling pollen, other"
+	line "Pokémon do not approach areas"
+	line "where Vileplume live."
 	done
 
 ParasName:
@@ -1614,96 +1631,99 @@ ParasName:
 	done
 
 ScratchName:
-	textfw "ひっかく"
+	text "Scratch"
 	done
 
 SporeName:
-	textfw "キノコのほうし"
+	text "Spore"
 	done
 
 MushroomName:
-	textfw "きのこ"
+	text "Mushroom"
 	done
 
 ParasLv8Description:
-	textfw "虫の背中にはえているのは"
-	linefw "トウチュウカソウというキノコ。"
-	linefw "育つとキノコも大きくなる。"
+	text "Burrows to suck tree roots."
+	line "The mushrooms on its back grow by"
+	line "drawing nutrients from the bug host."
 	done
 
 ScatterSporesName:
-	textfw "ほうしをとばす"
+	text "Scatter Spores"
 	done
 
 ScatterSporesDescription:
-	textfw "自分の山札から「パラス」を選び出し、"
-	linefw "ベンチに出す。その後、その山札をよく"
-	linefw "切る。(自分のベンチに空きがないとき"
-	linefw "このワザは使えない)"
-	done
-
-ParasLv15Description:
-	textfw "穴を掘って、木の根っこを吸う。"
-	linefw "背中のキノコは身体からエキスをもらい"
-	linefw "成長する。"
+	text "Search your deck for a Basic Pokémon"
+	line "named Paras and put it onto your"
+	line "Bench. Shuffle your deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full)."
 	done
 
 ParasectName:
 	text "Parasect"
 	done
 
+LeechLifeAltDescription:
+	text "Remove a number of damage counters"
+	line "from Parasect equal to the damage"
+	line "done to the Defending Pokémon (after"
+	line "applying Weakness and Resistance)."
+	line "If Parasect has fewer damage"
+	line "counters than that, remove all of"
+	line "them."
+	done
+
 SlashName:
-	textfw "きりさく"
+	text "Slash"
 	done
 
 ParasectLv28Description:
-	textfw "キノコのカサから毒胞子を巻き散らす。"
-	linefw "しかし中国ではこの胞子を漢方薬にする"
+	text "A host-parasite pair in which the"
+	line "parasite mushroom has taken over"
+	line "the host bug. Prefers damp places."
 	done
 
 ToxicSporeName:
-	textfw "どくのほうし"
-	done
-
-ParasectLv29Description:
-	textfw "虫の身体より大きくなったキノコの"
-	linefw "意思で活動する。湿った場所を好む"
-	linefw "という。"
+	text "Toxic Spore"
 	done
 
 VenonatName:
 	text "Venonat"
 	done
 
+VenonatLeechLifeDescription:
+	text "Remove a number of damage counters"
+	line "from Venonat equal to the damage"
+	line "done to the Defending Pokémon (after"
+	line "applying Weakness and Resistance)."
+	line "If Venonat has fewer damage counters"
+	line "than that, remove all of them."
+	done
+
 InsectName:
-	textfw "こんちゅう"
+	text "Insect"
 	done
 
 VenonatLv12Description:
-	textfw "暗闇でも目がレーダーの役割をして、"
-	linefw "活動できる。"
-	linefw "目からビームを発射する。"
+	text "Lives in the shadows of tall trees"
+	line "where it eats insects."
+	line "It is attracted by light at night."
 	done
 
 DisableName:
-	textfw "かなしばり"
+	text "Disable"
 	done
 
 DisableDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]のワザを1つ選ぶ。"
-	linefw "次の相手の番、そのポケモンは、"
-	linefw "そのワザを使えない。"
+	text "Flip a coin. If Heads, choose 1 of"
+	line "the Defending Pokémon's attacks."
+	line "That Pokémon can't use that attack"
+	line "during your opponent's next turn."
 	done
 
 PsybeamName:
-	textfw "サイケこうせん"
-	done
-
-VenonatLv15Description:
-	textfw "大きな木の下にすんでいて虫などを"
-	linefw "食べているらしい。夜は明かりのそばに"
-	linefw "やって来る。"
+	text "Psybeam"
 	done
 
 VenomothName:
@@ -1711,72 +1731,60 @@ VenomothName:
 	done
 
 StirUpTwisterName:
-	textfw "たつまきおこし"
+	text "Stir Up Twister"
 	done
 
 StirUpTwisterDescription:
-	textfw "[相手]を控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは相手が選ぶ。"
-	linefw "その後、自分の控えポケモンから1匹を"
-	linefw "選び、[自分]と入れ替える。"
-	linefw "(控えがいない側は、入れ替えをしない"
-	linefw ")"
+	text "If your opponent has any Benched"
+	line "Pokémon, he or she chooses 1 of them"
+	line "and switches it with the Defending"
+	line "Pokémon. (Do the damage before"
+	line "switching the Pokémon). Then, if you"
+	line "have any Benched Pokémon, switch"
+	line "Venomoth with one of them."
 	done
 
 RainbowPowderName:
-	textfw "レインボーパウダー"
+	text "Rainbow Powder"
 	done
 
 RainbowPowderDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「マヒ」状態に、"
-	linefw "「うら」なら「どく」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Paralyzed; if Tails,"
+	line "it is now Poisoned."
 	done
 
 PoisonMothName:
-	textfw "どくが"
-	done
-
-VenomothLv22Description:
-	textfw "ハネをおおっているりんぷんは、"
-	linefw "色の違いによってさまざまな毒を"
-	linefw "持っているらしい。"
+	text "Poisonmoth"
 	done
 
 ShiftName:
-	textfw "へんしょく"
+	text "Shift"
 	done
 
 ShiftDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "このカードの「色(タイプ)」を、"
-	linefw "おたがいの場にいるポケモンどれかと"
-	linefw "同じ「色(タイプ)」に変える。"
-	linefw "このカードが場をはなれるまで、"
-	linefw "この効果はつづく。"
-	done
-
-ShiftDescriptionCont:
-	textfw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えず、"
-	linefw "このカードはもとの「色(タイプ)」に"
-	linefw "もどる。"
+	text "Once during your turn (before your"
+	line "attack), you may change the type of"
+	line "Venomoth to the type of any other"
+	line "Pokémon in play other than <COLORLESS>."
+	line "This Power can't be used if Venomoth"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 VenomPowderName:
-	textfw "りんぷん"
+	text "Venom Powder"
 	done
 
 VenomPowderDescription:
-	textfw "コインを投げて「おもて」なら、[相手]"
-	linefw "を「どく」と「こんらん」の両方の状態"
-	linefw "にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Confused and"
+	line "Poisoned."
 	done
 
 VenomothLv28Description:
-	textfw "羽にリンプンがついていて、"
-	linefw "ヒラヒラとはばたくたびに"
-	linefw "猛毒の粉をばらまく。"
+	text "The dust-like scales covering its"
+	line "wings are color coded to indicate"
+	line "the kinds of poison it has."
 	done
 
 BellsproutName:
@@ -1784,27 +1792,29 @@ BellsproutName:
 	done
 
 SwayName:
-	textfw "ゆれる"
+	text "Sway"
 	done
 
-BellsproutLv10Description:
-	textfw "小さい虫をとらえて食べる。"
-	linefw "足のねっこを使い、水分をほきゅうする"
-	linefw "こともあるらしい。"
+SwayDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Bellsprout during"
+	line "your opponent's next turn. (Any"
+	line "other effects of attacks still"
+	line "happen)."
 	done
 
 CallForFamilyBellsproutDescription:
-	textfw "自分の山札から「マダツボミ」を1枚"
-	linefw "選び出し、自分のベンチに出す。"
-	linefw "その後、その山札をよく切る。"
-	linefw "(ベンチに空きがないとき、このワザは"
-	linefw "使えない)"
+	text "Search your deck for a Basic Pokémon"
+	line "named Bellsprout and put it onto"
+	line "your Bench. Shuffle your deck"
+	line "afterward. (You can't use this"
+	line "attack if your Bench is full)."
 	done
 
 BellsproutLv11Description:
-	textfw "人の顏のようなツボミから、"
-	linefw "伝説のマンドラゴラの1種ではないかと"
-	linefw "ささやかれている。"
+	text "A carnivorous Pokémon that traps and"
+	line "eats bugs. It uses its root feet to"
+	line "soak up needed moisture."
 	done
 
 WeepinbellName:
@@ -1812,41 +1822,35 @@ WeepinbellName:
 	done
 
 RegenerationName:
-	textfw "さいせい"
+	text "Regeneration"
 	done
 
 RegenerationDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "をすべてとりのぞく。その後、[自分]に"
-	linefw "ついている「進化カード」と「エネルギ"
-	linefw "ーカード」をすべてトラッシュして、"
-	linefw "「たねポケモン」にもどる。"
+	text "Remove all damage counters and"
+	line "Energy cards attached to Weepinbell."
+	line "Then, discard this Evolution card."
 	done
 
 DissolveName:
-	textfw "ようかい"
+	text "Dissolve"
 	done
 
 DissolveDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]についている「エネルギーカード"
-	linefw "」を1枚選び、トラッシュする。"
+	text "Flip a coin. If Heads, and if the"
+	line "Defending Pokémon has any Energy"
+	line "cards attached to it, choose 1"
+	line "of them and discard it."
 	done
 
 FlycatcherName:
-	textfw "ハエとり"
-	done
-
-WeepinbellLv23Description:
-	textfw "まず毒の粉をはき、相手の動きを"
-	linefw "止めてしまってから、ようかいえきで"
-	linefw "とどめをさす。"
+	text "Flycatcher"
 	done
 
 WeepinbellLv28Description:
-	textfw "葉っぱの部分はカッターになって"
-	linefw "相手を切り裂く。"
-	linefw "口からはなんでもとかす液体をはく。"
+	text "It spits out Poisonpowder to"
+	line "immobilize the enemy, and then"
+	line "finishes the enemy with a spray"
+	line "of Acid."
 	done
 
 VictreebelName:
@@ -1854,30 +1858,29 @@ VictreebelName:
 	done
 
 LureName:
-	textfw "さそうかおり"
+	text "Lure"
 	done
 
 LureDescription:
-	textfw "相手の控えポケモンを1匹選び、"
-	linefw "[相手]と入れ替える。"
-	linefw "(相手に控えがいないとき、このワザは"
-	linefw "使えない)"
+	text "If your opponent has any Benched"
+	line "Pokémon, choose 1 of them and switch"
+	line "it with his or her Active Pokémon."
 	done
 
 AcidName:
-	textfw "ようかいえき"
+	text "Acid"
 	done
 
 AcidDescription:
-	textfw "コインを投げて「おもて」なら、次の"
-	linefw "相手の番、このワザを受けた[相手]は"
-	linefw "「にげる」ことができない。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon can't retreat during your"
+	line "opponent's next turn."
 	done
 
 VictreebelDescription:
-	textfw "蜜のような香りで、"
-	linefw "口の中に誘いこまれたら最期。"
-	linefw "溶解液で溶かされてしまう。"
+	text "Said to live in huge colonies deep"
+	line "in jungles, although no one has ever"
+	line "returned from there."
 	done
 
 GrimerName:
@@ -1885,47 +1888,51 @@ GrimerName:
 	done
 
 PoisonGasName:
-	textfw "どくガス"
+	text "Poison Gas"
 	done
 
 StickyHandsName:
-	textfw "ねばりつく"
+	text "Sticky Hands"
 	done
 
 StickyHandsDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "20ダメージを追加して、[相手]を"
-	linefw "「マヒ」状態にする。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 10 damage plus 20 more damage"
+	line "and the Defending Pokémon is now"
+	line "Paralyzed; if Tails, this attack"
+	line "does 10 damage."
 	done
 
 SludgeCategoryName:
-	textfw "ヘドロ"
+	text "Sludge"
 	done
 
 GrimerLv10Description:
-	textfw "汚水処理場で発生し、下水道を移動して"
-	linefw "町に出没することが、最近確認された。"
+	text "It has recently been found that"
+	line "Grimer are formed in"
+	line "waste-processing plants, and can"
+	line "move into towns via the sewers."
 	done
 
 NastyGooName:
-	textfw "ベトベト"
+	text "Nasty Goo"
 	done
 
 MinimizeName:
-	textfw "ちいさくなる"
+	text "Minimize"
 	done
 
 MinimizeDescription:
-	textfw "次の相手の番、このカードがワザに"
-	linefw "よって受けるダメージは「-20」"
-	linefw "される。"
-	linefw "(ダメージ以外の効果はそのまま)"
+	text "All damage done by attacks to Grimer"
+	line "during your opponent's next turn is"
+	line "reduced by 20 (after applying"
+	line "Weakness and Resistance)."
 	done
 
 GrimerLv17Description:
-	textfw "月からのエックス線をあびた"
-	linefw "ヘドロがベトベターに変化した。"
-	linefw "汚いモノが大好物。"
+	text "Appears in filthy areas. Thrives by"
+	line "sucking up polluted sludge that is"
+	line "pumped out of factories."
 	done
 
 MukName:
@@ -1933,20 +1940,20 @@ MukName:
 	done
 
 ToxicGasName:
-	textfw "かがくへんかガス"
+	text "Toxic Gas"
 	done
 
 ToxicGasDescription:
-	textfw "このカードが場にある限り、"
-	linefw "「かがくへんかガス」以外のすべての"
-	linefw "特殊能力は使えず、その力も消える。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "Ignore all Pokémon Powers other"
+	line "than Toxic Gases. This Power stops"
+	line "working while Muk is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 MukDescription:
-	textfw "普段は地面にまざっていてわからない。"
-	linefw "体にさわると猛毒におかされる。"
+	text "Thickly covered with a filthy, vile"
+	line "sludge. It is so toxic, even its"
+	line "footprints contain poison."
 	done
 
 DarkMukName:
@@ -1954,26 +1961,26 @@ DarkMukName:
 	done
 
 StickyGooName:
-	textfw "ねんちゃくえき"
+	text "Sticky Goo"
 	done
 
 StickyGooDescription:
-	textfw "このカードがバトル場にいる限り、"
-	linefw "相手の対戦ポケモンは、「にげる」とき"
-	linefw "トラッシュするエネルギーが2個ぶん"
-	linefw "多く必要になる。このカードが「ねむり"
-	linefw "・マヒ・こんらん」状態のとき、この力"
-	linefw "は消える。"
+	text "As long as Dark Muk is your Active"
+	line "Pokémon, your opponent pays <COLORLESS><COLORLESS>"
+	line "more to retreat his or her Active"
+	line "Pokémon. This Power stops working"
+	line "while Dark Muk is Asleep, Confused,"
+	line "or Paralyzed."
 	done
 
 SludgePunchName:
-	textfw "ヘドロパンチ"
+	text "Sludge Punch"
 	done
 
 DarkMukDescription:
-	textfw "突然現れ、ヘドロをまき散らす。"
-	linefw "ベトベトンが現れると町中がパニックに"
-	linefw "なる。"
+	text "Muk appear suddenly, spreading"
+	line "sludge everywhere. Whenever one"
+	line "appears in a city, panic ensues."
 	done
 
 ExeggcuteName:
@@ -1981,16 +1988,23 @@ ExeggcuteName:
 	done
 
 HypnosisMoveName:
-	textfw "さいみんじゅつ"
+	text "Hypnosis"
+	done
+
+ExeggcutesLeechSeedDescription:
+	text "Unless all damage from this attack"
+	line "is prevented, you may remove 1"
+	line "damage counter from Exeggcute."
 	done
 
 EggName:
-	textfw "たまご"
+	text "Egg"
 	done
 
 ExeggcuteDescription:
-	textfw "何かの卵のようだが、実は植物の種に"
-	linefw "近い生き物であることがわかった。"
+	text "Often mistaken for eggs."
+	line "When disturbed, they quickly gather"
+	line "and attack in swarms."
 	done
 
 ExeggutorName:
@@ -1998,32 +2012,34 @@ ExeggutorName:
 	done
 
 TeleportName:
-	textfw "テレポート"
+	text "Teleport"
 	done
 
 TeleportDescription:
-	textfw "自分の控えポケモンを1匹選び、"
-	linefw "[自分]と入れ替える。"
+	text "Switch Exeggutor with 1 of your"
+	line "Benched Pokémon."
 	done
 
 BigEggsplosionName:
-	textfw "たまなげMAX"
+	text "Big Eggsplosion"
 	done
 
 BigEggsplosionDescription:
-	textfw "[自分]についているエネルギーの数だけ"
-	linefw "コインを投げ、「おもて」の数×20の"
-	linefw "ダメージ。"
+	text "Flip a number of coins equal to the"
+	line "number of Energy attached to"
+	line "Exeggutor. This attack does 20"
+	line "damage times the number of Heads."
 	done
 
 CoconutName:
-	textfw "やしのみ"
+	text "Coconut"
 	done
 
 ExeggutorDescription:
-	textfw "歩く熱帶雨林と呼ばれる。"
-	linefw "実の1つ1つに顏があって"
-	linefw "それぞれ意志を持っている。"
+	text "Legend has it that on rare"
+	line "occasions, one of its heads will"
+	line "drop off and continue on as an"
+	line "Exeggcute."
 	done
 
 KoffingName:
@@ -2031,34 +2047,35 @@ KoffingName:
 	done
 
 KoffingLv12Description:
-	textfw "第一発見場所は兵器工場であったが、"
-	linefw "近年、生息地が広まってきているらしい"
+	text "First discovered in a weapons"
+	line "factory, this Pokémon can now be"
+	line "found almost everywhere."
 	done
 
 FoulGasName:
-	textfw "くさいガス"
+	text "Foul Gas"
 	done
 
 FoulGasDescription:
-	textfw "コインを投げ、"
-	linefw "「おもて」なら[相手]を「どく」状態に"
-	linefw "「うら」なら「こんらん」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Poisoned; if Tails,"
+	line "it is now Confused."
 	done
 
 KoffingLv13Description:
-	textfw "うすいバルーン状の体に"
-	linefw "猛毒のガスがつまっている。"
-	linefw "ちかくに来ると臭い。"
+	text "Because it stores several kinds of"
+	line "toxic gases in its body, it is prone"
+	line "to exploding without warning."
 	done
 
 ConfusionGasName:
-	textfw "こんらんガス"
+	text "Confusion Gas"
 	done
 
 KoffingLv14Description:
-	textfw "暑いところでは、体の中のガスが"
-	linefw "ふくらんで破裂する危険もあるので"
-	linefw "注意だ。"
+	text "In hot places, its internal gases"
+	line "could expand and explode without any"
+	line "warning. Be very careful!"
 	done
 
 WeezingName:
@@ -2066,60 +2083,57 @@ WeezingName:
 	done
 
 PoisonMistName:
-	textfw "ポイズンミスト"
+	text "Poison Mist"
 	done
 
 PoisonMistDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、次の"
-	linefw "自分の番の始めまで、「どく」状態に"
-	linefw "なったポケモンがポケモンチェックで"
-	linefw "受ける「どく」のダメージは、20"
-	linefw "ダメージになる。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, until the end of your next"
+	line "turn, all Poisoned Pokémon take 20"
+	line "damage instead of 10 damage from"
+	line "Poison after each player's turn."
 	done
 
 PoisonMistDescriptionCont:
-	textfw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えず、"
-	linefw "その効果も消える。"
+	text "This Power can't be used and stops"
+	line "working while Weezing is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 GasExplosionName:
-	textfw "ガスばくはつ"
+	text "Gas Explosion"
 	done
 
 GasExplosionDescription:
-	textfw "[自分]にも30ダメージ。"
-	linefw "このワザによって[相手]が「きぜつ」"
-	linefw "したなら、そのかわりに出てくる相手の"
-	linefw "対戦ポケモンを「どく」状態にする。"
-	done
-
-WeezingLv26Description:
-	textfw "2つの毒ガスの成分が長い時間"
-	linefw "ふきだまる場所で、双子のドガースが"
-	linefw "でるらしい。"
+	text "Weezing does 30 damage to itself."
+	line "If this attack Knocks Out the"
+	line "Defending Pokémon and your opponent"
+	line "chooses a new Active Pokémon, your"
+	line "opponent's new Active Pokémon"
+	line "becomes Poisoned."
 	done
 
 SmogName:
-	textfw "スモッグ"
+	text "Smog"
 	done
 
 SelfdestructName:
-	textfw "じばく"
+	text "Selfdestruct"
 	done
 
 Selfdestruct60DamageDescription:
-	textfw "[自分]にも60ダメージ。"
-	linefw "おたがいの控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "10ダメージ。"
+	text "Does 10 damage to each Pokémon on"
+	line "each player's Bench. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). Weezing does 60 damage to"
+	line "itself."
 	done
 
 WeezingLv27Description:
-	textfw "ごくまれに突然変異で"
-	linefw "双子の小さいドガースが連結したまま"
-	linefw "出ることがある。"
+	text "Where two kinds of poison gases"
+	line "meet, two Koffing can fuse into a"
+	line "Weezing over many years."
 	done
 
 DarkWeezingName:
@@ -2127,31 +2141,33 @@ DarkWeezingName:
 	done
 
 MassExplosionName:
-	textfw "みんなでばくはつ"
+	text "Mass Explosion"
 	done
 
 MassExplosionDescription:
-	textfw "おたがいの場にいるすべての「ドガース"
-	linefw "」「マタドガス」「わるいマタドガス」"
-	linefw "の数×20のダメージ。その後、お互い"
-	linefw "の場にいるすべての「ドガース」「マタ"
-	linefw "ドガス」「わるいマタドガス」に、それ"
-	linefw "ぞれ20ダメージ。"
+	text "Does 20 damage times the number"
+	line "of Koffing, Weezing, and Dark"
+	line "Weezing in play (Apply Weakness"
+	line "and Resistance). Then, this attack"
+	line "does 20 damage to each Koffing,"
+	line "Weezing, and Dark Weezing (Don't"
+	line "apply Weakness and Resistance)."
 	done
 
 StunGasName:
-	textfw "しびれガス"
+	text "Stun Gas"
 	done
 
 StunGasDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手を「どく」状態に、"
-	linefw "「うら」なら「マヒ」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Poisoned; if Tails,"
+	line "it is now Paralyzed."
 	done
 
 DarkWeezingDescription:
-	textfw "産業廃棄物の放置場所で増殖している"
-	linefw "ところを目擊された。"
+	text "Researchers have observed these"
+	line "Pokémon reproducing in industrial"
+	line "waste sites."
 	done
 
 TangelaName:
@@ -2159,26 +2175,27 @@ TangelaName:
 	done
 
 BindName:
-	textfw "しめつける"
+	text "Bind"
 	done
 
 VineName:
-	textfw "ツルじょう"
+	text "Vine"
 	done
 
 TangelaLv8Description:
-	textfw "ブルーのツル植物がからみあい、"
-	linefw "正体は見えない。"
-	linefw "近づくものにからみついてくる。"
+	text "Its whole body is swathed with wide"
+	line "vines that are similar to seaweed."
+	line "These vines shake as it walks."
 	done
 
 PoisonWhipName:
-	textfw "どくのむち"
+	text "Poison Whip"
 	done
 
 TangelaLv12Description:
-	textfw "全身が海草のようなツルに覆われていて"
-	linefw "歩くたびにゆらゆら揺れる。"
+	text "Its identity is obscured by masses"
+	line "of thick, blue vines. The vines are"
+	line "said to never stop growing."
 	done
 
 ScytherName:
@@ -2186,38 +2203,33 @@ ScytherName:
 	done
 
 SlashingStrikeName:
-	textfw "スラッシュダウン"
+	text "Slashing Strike"
 	done
 
 SlashingStrikeDescription:
-	textfw "次の自分の番、"
-	linefw "このカードは「スラッシュダウン」を"
-	linefw "使えない。"
+	text "Scyther can't use this attack during"
+	line "your next turn. (Benching Scyther"
+	line "ends this effect)."
 	done
 
 MantisName:
-	textfw "かまきり"
-	done
-
-ScytherLv23Description:
-	textfw "忍者のようなすばやさ。"
-	linefw "あまりに速く動いた時は何匹もいる様に"
-	linefw "見える。"
+	text "Mantis"
 	done
 
 SwordsDanceName:
-	textfw "つるぎのまい"
+	text "Swords Dance"
 	done
 
 SwordsDanceDescription:
-	textfw "次の自分の番、このカードが使う"
-	linefw "「きりさく」のダメージは2倍になる。"
+	text "During your next turn, Scyther's"
+	line "Slash attack's base damage is"
+	line "60 instead of 30."
 	done
 
 ScytherLv25Description:
-	textfw "鋭い鎌で獲物を切り裂き、"
-	linefw "息の根をとめる。"
-	linefw "ごくまれに羽を使って飛ぶ。"
+	text "With ninja-like agility and speed,"
+	line "it can create the illusion that"
+	line "there is more than one of it."
 	done
 
 PinsirName:
@@ -2225,36 +2237,32 @@ PinsirName:
 	done
 
 SlicingThrowName:
-	textfw "はさんでなげる"
+	text "Slicing Throw"
 	done
 
-IfHeadsDo10DamageDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "10ダメージを追加する。"
+IfHeadsAdd10Do10DamageDescription:
+	text "Flip a coin. If Heads, this attack"
+	line "does 10 damage plus 10 more damage;"
+	line "if Tails, this attack does 10"
+	line "damage."
 	done
 
 StagbeetleName:
-	textfw "くわがた"
-	done
-
-PinsirLv15Description:
-	textfw "ツノではさんでもちぎれない場合は"
-	linefw "はさんだまま振り回し、投げ飛ばす戦法"
-	linefw "を使う。"
+	text "Stagbeetle"
 	done
 
 IrongripName:
-	textfw "まんりきばさみ"
+	text "Irongrip"
 	done
 
 GuillotineName:
-	textfw "ハサミギロチン"
+	text "Guillotine"
 	done
 
 PinsirLv24Description:
-	textfw "2本の長い角はパワフル。"
-	linefw "1度はさまれてしまったらちぎれるまで"
-	linefw "離さない。"
+	text "If it fails to crush the victim in"
+	line "its pincers, it will swing its"
+	line "victim around and toss it hard."
 	done
 
 CharmanderName:
