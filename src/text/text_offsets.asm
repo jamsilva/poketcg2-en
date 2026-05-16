@@ -6371,7 +6371,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ReviveDescription                                     ; 0x18d0
 	textpointer MaxReviveName                                         ; 0x18d1
 	textpointer MaxReviveDescription                                  ; 0x18d2
-	textpointer MaxReviveDescriptionCont                              ; 0x18d3
+	textpointer DevolutionSprayDescriptionCont                        ; 0x18d3
 	textpointer SuperScoopUpName                                      ; 0x18d4
 	textpointer SuperScoopUpDescription                               ; 0x18d5
 	textpointer DevolutionSprayName                                   ; 0x18d6
@@ -6420,7 +6420,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ScoopUpDescription                                    ; 0x1901
 	textpointer PokemonTraderName                                     ; 0x1902
 	textpointer PokemonTraderDescription                              ; 0x1903
-	textpointer PokemonTraderDescriptionCont                          ; 0x1904
+	textpointer UNUSED_1904                                           ; 0x1904
 	textpointer PokemonRecallName                                     ; 0x1905
 	textpointer PokemonRecallDescription                              ; 0x1906
 	textpointer PokedexName                                           ; 0x1907
