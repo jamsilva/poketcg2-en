@@ -5348,7 +5348,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MoltresSharedDescription                              ; 0x14d1
 	textpointer FiregiverName                                         ; 0x14d2
 	textpointer FiregiverDescription                                  ; 0x14d3
-	textpointer UNUSED_14D4                                           ; 0x14d4
+	textpointer SquirtlesWithdrawDescription                          ; 0x14d4
 	textpointer SquirtleName                                          ; 0x14d5
 	textpointer BubbleName                                            ; 0x14d6
 	textpointer WithdrawName                                          ; 0x14d7
@@ -5359,7 +5359,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer WaterPowerName                                        ; 0x14dc
 	textpointer WaterPowerDescription                                 ; 0x14dd
 	textpointer PoundName                                             ; 0x14de
-	textpointer SquirtleLv15Description                               ; 0x14df
+	textpointer WartortlesWithdrawDescription                         ; 0x14df
 	textpointer ShellAttackName                                       ; 0x14e0
 	textpointer SquirtleLv16Description                               ; 0x14e1
 	textpointer WartortleName                                         ; 0x14e2
@@ -5377,10 +5377,10 @@ SECTION "Text Offsets 2", ROMX
 	textpointer RainDanceName                                         ; 0x14ee
 	textpointer RainDanceDescription                                  ; 0x14ef
 	textpointer HydroPumpName                                         ; 0x14f0
-	textpointer Do20DamagePlus10WaterEnergyDescription                ; 0x14f1
+	textpointer BlastoisesHydroPumpDescription                        ; 0x14f1
 	textpointer ShellfishName                                         ; 0x14f2
 	textpointer BlastoiseDescription                                  ; 0x14f3
-	textpointer BlastoiseAltDescription                               ; 0x14f4
+	textpointer RainDanceDescriptionCont                              ; 0x14f4
 	textpointer DarkBlastoiseName                                     ; 0x14f5
 	textpointer HydrocannonName                                       ; 0x14f6
 	textpointer HydrocannonDescription                                ; 0x14f7
@@ -5404,17 +5404,17 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PsychicName                                           ; 0x1509
 	textpointer PsychicDescription                                    ; 0x150a
 	textpointer WaveSplashName                                        ; 0x150b
-	textpointer GolduckLv28Description                                ; 0x150c
+	textpointer PsyducksWaterGunDescription                           ; 0x150c
 	textpointer DarkGolduckName                                       ; 0x150d
 	textpointer ThirdEyeName                                          ; 0x150e
 	textpointer ThirdEyeDescription                                   ; 0x150f
 	textpointer SuperPsyName                                          ; 0x1510
 	textpointer DarkGolduckDescription                                ; 0x1511
 	textpointer PoliwagName                                           ; 0x1512
-	textpointer Do20DamagePlus10WaterEnergyAltDescription1            ; 0x1513
+	textpointer PoliwagsWaterGunDescription                           ; 0x1513
 	textpointer TadpoleName                                           ; 0x1514
 	textpointer PoliwagLv13Description                                ; 0x1515
-	textpointer PoliwagLv15Description                                ; 0x1516
+	textpointer UNUSED_1516                                           ; 0x1516
 	textpointer PoliwhirlName                                         ; 0x1517
 	textpointer AmnesiaName                                           ; 0x1518
 	textpointer AmnesiaDescription                                    ; 0x1519
@@ -5422,9 +5422,9 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TwiddleName                                           ; 0x151b
 	textpointer TwiddleDescription                                    ; 0x151c
 	textpointer BodySlamName                                          ; 0x151d
-	textpointer PoliwhirlLv30Description                              ; 0x151e
+	textpointer PoliwrathsWaterGunDescription                         ; 0x151e
 	textpointer PoliwrathName                                         ; 0x151f
-	textpointer PoliwrathLv40Description                              ; 0x1520
+	textpointer PoliwrathsHydroPumpDescription                        ; 0x1520
 	textpointer WhirlpoolName                                         ; 0x1521
 	textpointer PoliwrathLv48Description                              ; 0x1522
 	textpointer TentacoolName                                         ; 0x1523
@@ -5439,14 +5439,14 @@ SECTION "Text Offsets 2", ROMX
 	textpointer GrowlAltDescription1                                  ; 0x152c
 	textpointer IceBeamName                                           ; 0x152d
 	textpointer SeaLionName                                           ; 0x152e
-	textpointer SeelLv10Description                                   ; 0x152f
+	textpointer UNUSED_152F                                           ; 0x152f
 	textpointer HeadbuttName                                          ; 0x1530
 	textpointer SeelLv12Description                                   ; 0x1531
 	textpointer DewgongName                                           ; 0x1532
 	textpointer RestName                                              ; 0x1533
 	textpointer RestDescription                                       ; 0x1534
 	textpointer AuroraWaveName                                        ; 0x1535
-	textpointer DewgongLv24Description                                ; 0x1536
+	textpointer UNUSED_1536                                           ; 0x1536
 	textpointer AuroraBeamName                                        ; 0x1537
 	textpointer DewgongLv42Description                                ; 0x1538
 	textpointer ShellderName                                          ; 0x1539
@@ -5454,8 +5454,8 @@ SECTION "Text Offsets 2", ROMX
 	textpointer BivalveName                                           ; 0x153b
 	textpointer ShellderLv8Description                                ; 0x153c
 	textpointer WaterSpoutName                                        ; 0x153d
-	textpointer Do20DamagePlus10WaterEnergyAltDescription2            ; 0x153e
-	textpointer ShellderLv16Description                               ; 0x153f
+	textpointer WaterSpoutDescription                                 ; 0x153e
+	textpointer HideInShellDescription                                ; 0x153f
 	textpointer CloysterName                                          ; 0x1540
 	textpointer ClampName                                             ; 0x1541
 	textpointer ClampDescription                                      ; 0x1542
@@ -5464,13 +5464,13 @@ SECTION "Text Offsets 2", ROMX
 	textpointer KrabbyName                                            ; 0x1545
 	textpointer UNUSED_1546                                           ; 0x1546
 	textpointer RiverCrabName                                         ; 0x1547
-	textpointer KrabbyLv17Description                                 ; 0x1548
+	textpointer UNUSED_1548                                           ; 0x1548
 	textpointer CallForFamilyKrabbyDescription                        ; 0x1549
 	textpointer UNUSED_154A                                           ; 0x154a
 	textpointer KrabbyLv20Description                                 ; 0x154b
 	textpointer KinglerName                                           ; 0x154c
 	textpointer FlailName                                             ; 0x154d
-	textpointer FlailDescription                                      ; 0x154e
+	textpointer KinglersFlailDescription                              ; 0x154e
 	textpointer CrabhammerName                                        ; 0x154f
 	textpointer PincerName                                            ; 0x1550
 	textpointer KinglerLv27Description                                ; 0x1551
@@ -5478,19 +5478,19 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SaltWaterDescription                                  ; 0x1553
 	textpointer DoubleEdgedPincersName                                ; 0x1554
 	textpointer DoubleEdgedPincersDescription                         ; 0x1555
-	textpointer KinglerLv33Description                                ; 0x1556
+	textpointer UNUSED_1556                                           ; 0x1556
 	textpointer HorseaName                                            ; 0x1557
 	textpointer DragonName                                            ; 0x1558
 	textpointer HorseaLv19Description                                 ; 0x1559
 	textpointer HideName                                              ; 0x155a
 	textpointer HideDescription                                       ; 0x155b
-	textpointer HorseaLv20Description                                 ; 0x155c
+	textpointer HorseasWaterGunDescription                            ; 0x155c
 	textpointer SeadraName                                            ; 0x155d
 	textpointer SeadraLv23Description                                 ; 0x155e
 	textpointer WaterBombName                                         ; 0x155f
 	textpointer WaterBombDescription                                  ; 0x1560
-	textpointer WaterBombDescriptionCont                              ; 0x1561
-	textpointer SeadraLv26Description                                 ; 0x1562
+	textpointer SeadrasWaterGunDescription                            ; 0x1561
+	textpointer SeadrasAgilityDescription                             ; 0x1562
 	textpointer GoldeenName                                           ; 0x1563
 	textpointer HornAttackName                                        ; 0x1564
 	textpointer GoldfishName                                          ; 0x1565
@@ -5505,7 +5505,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer StrangeBeamName                                       ; 0x156e
 	textpointer StrangeBeamDescription                                ; 0x156f
 	textpointer SpinningAttackName                                    ; 0x1570
-	textpointer StaryuLv17Description                                 ; 0x1571
+	textpointer UNUSED_1571                                           ; 0x1571
 	textpointer StarmieName                                           ; 0x1572
 	textpointer RecoverName                                           ; 0x1573
 	textpointer RecoverWaterDescription                               ; 0x1574
@@ -5527,10 +5527,10 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MagikarpLv6Description                                ; 0x1584
 	textpointer MagikarpLv8Description                                ; 0x1585
 	textpointer TrickleName                                           ; 0x1586
-	textpointer Plus10DamagePerHeadsDescription                       ; 0x1587
+	textpointer MagikarpsFlailDescription                             ; 0x1587
 	textpointer DragonRageName                                        ; 0x1588
 	textpointer IfEitherTailsDoNothingDescription                     ; 0x1589
-	textpointer MagikarpLv10Description                               ; 0x158a
+	textpointer LaprasWaterGunDescription                             ; 0x158a
 	textpointer GyaradosName                                          ; 0x158b
 	textpointer BubblebeamName                                        ; 0x158c
 	textpointer AtrociousName                                         ; 0x158d
@@ -5544,7 +5544,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SingName                                              ; 0x1595
 	textpointer MayInflictSleepDescription                            ; 0x1596
 	textpointer TransportName                                         ; 0x1597
-	textpointer LaprasLv24Description                                 ; 0x1598
+	textpointer UNUSED_1598                                           ; 0x1598
 	textpointer LaprasLv31Description                                 ; 0x1599
 	textpointer VaporeonName                                          ; 0x159a
 	textpointer FocusEnergyBiteDescription                            ; 0x159b
@@ -5552,7 +5552,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer VaporeonLv29Description                               ; 0x159d
 	textpointer VaporeonLv42Description                               ; 0x159e
 	textpointer DarkVaporeonName                                      ; 0x159f
-	textpointer WhirlpoolDescription                                  ; 0x15a0
+	textpointer VaporeonsWaterGunDescription                          ; 0x15a0
 	textpointer DarkVaporeonDescription                               ; 0x15a1
 	textpointer OmanyteName                                           ; 0x15a2
 	textpointer MysteriousFossilName                                  ; 0x15a3
@@ -5562,9 +5562,9 @@ SECTION "Text Offsets 2", ROMX
 	textpointer OmanyteLv19Description                                ; 0x15a7
 	textpointer PrehistoricDreamName                                  ; 0x15a8
 	textpointer PrehistoricDreamDescription                           ; 0x15a9
-	textpointer PowerCantBeUsedIfStatusDescription                    ; 0x15aa
+	textpointer PrehistoricDreamDescriptionCont                       ; 0x15aa
 	textpointer RollingTackleName                                     ; 0x15ab
-	textpointer OmanyteSharedDescription                              ; 0x15ac
+	textpointer OmanytesWaterGunDescription                           ; 0x15ac
 	textpointer FossilGuidanceName                                    ; 0x15ad
 	textpointer FossilGuidanceDescription                             ; 0x15ae
 	textpointer OmastarName                                           ; 0x15af
@@ -5573,12 +5573,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TentacleGripDescription                               ; 0x15b2
 	textpointer CorrosiveAcidName                                     ; 0x15b3
 	textpointer CorrosiveAcidDescription                              ; 0x15b4
-	textpointer OmastarLv36Description                                ; 0x15b5
+	textpointer OmastarsWaterGunDescription                           ; 0x15b5
 	textpointer ArticunoName                                          ; 0x15b6
 	textpointer AuroraVeilName                                        ; 0x15b7
 	textpointer AuroraVeilDescription                                 ; 0x15b8
 	textpointer FreezeName                                            ; 0x15b9
-	textpointer ArticunoLv34Description                               ; 0x15ba
+	textpointer MarillsWaterGunDescription                            ; 0x15ba
 	textpointer FreezeDryName                                         ; 0x15bb
 	textpointer BlizzardName                                          ; 0x15bc
 	textpointer BlizzardDescription                                   ; 0x15bd

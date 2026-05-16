@@ -1638,7 +1638,7 @@ KabutoLv22Card:
 	energy 0 ; energies
 	tx FossilizeName ; name
 	tx FossilizeDescription ; description
-	tx PowerCantBeUsedIfStatusDescription ; description (cont)
+	tx PrehistoricDreamDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw KabutoFossilizeEffectCommands ; effect commands
@@ -3765,7 +3765,7 @@ JynxLv23Card:
 	; attack 1
 	energy PSYCHIC, 1 ; energies
 	tx DoubleSlapName ; name
-	tx Plus10DamagePerHeadsDescription ; description
+	tx Do10DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -5109,7 +5109,7 @@ SpearowLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FuryAttackName ; name
-	tx Plus10DamagePerHeadsDescription ; description
+	tx Do10DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -6509,7 +6509,7 @@ DoduoLv10Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FuryAttackName ; name
-	tx Plus10DamagePerHeadsDescription ; description
+	tx Do10DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -6957,7 +6957,7 @@ KangaskhanLv38Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx DizzyPunchName ; name
-	tx Plus10DamagePerHeadsDescription ; description
+	tx Do10DamageNumberOfHeadsDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -7013,7 +7013,7 @@ KangaskhanLv40Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FetchName ; name
-	tx FetchDescription ; description
+	tx DizzinessDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
