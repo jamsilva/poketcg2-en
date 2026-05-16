@@ -195,7 +195,7 @@ DarkMachokeCard:
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
 	tx KnockBackName ; name
-	tx SwitchWithBenchedMonDescription ; description
+	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -251,7 +251,7 @@ MachampLv54Card:
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 2 ; energies
 	tx FlingName ; name
-	tx SwitchWithBenchedMonDescription ; description
+	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -923,7 +923,7 @@ CuboneLv13Card:
 	; attack 2
 	energy FIGHTING, 2 ; energies
 	tx RageName ; name
-	tx RageDescription ; description
+	tx FlareonsRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -5277,7 +5277,7 @@ FearowLv27Card:
 	; attack 1
 	energy COLORLESS, 3 ; energies
 	tx AgilityName ; name
-	tx AgilityDescription ; description
+	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6635,7 +6635,7 @@ DodrioLv28Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx RageName ; name
-	tx RageDescription ; description
+	tx FlareonsRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category

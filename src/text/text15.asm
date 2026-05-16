@@ -1,15 +1,13 @@
 SECTION "Text 29", ROMX
 
-GrowlDescription:
-	textfw "次の相手の番、"
-	linefw "このワザを受けた[相手]が、"
-	linefw "このカードに与えるダメージは"
-	linefw "「-10」される。"
-	done
-
-CharmanderLv12Description:
-	textfw "熱いものを好む性格。雨に濡れると"
-	linefw "尻尾の先から煙が出るという。"
+CharmandersGrowlDescription:
+	text "If the Defending Pokémon attacks"
+	line "Charmander during your opponent's"
+	line "next turn, any damage done by the"
+	line "attack is reduced by 10 (after"
+	line "applying Weakness and Resistance)."
+	line "(Benching or evolving either Pokémon"
+	line "ends this effect)."
 	done
 
 CharmeleonName:
@@ -17,17 +15,23 @@ CharmeleonName:
 	done
 
 FlamethrowerName:
-	textfw "かえんほうしゃ"
+	text "Flamethrower"
+	done
+
+CharmeleonsFlamethrowerDescription:
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Charmeleon in order to use this"
+	line "attack."
 	done
 
 FlameName:
-	textfw "かえん"
+	text "Flame"
 	done
 
 CharmeleonDescription:
-	textfw "しっぽをふりまわして"
-	linefw "相手をなぎ倒し、鋭いツメで"
-	linefw "ズタズタに引き裂いてしまう。"
+	text "When it swings its burning tail, it"
+	line "raises the temperature to unbearably"
+	line "high levels."
 	done
 
 DarkCharmeleonName:
@@ -35,25 +39,23 @@ DarkCharmeleonName:
 	done
 
 TailSlapName:
-	textfw "しっぽでたたく"
+	text "Tail Slap"
 	done
 
 FireballName:
-	textfw "ファイヤーボール"
+	text "Fireball"
 	done
 
 FireballDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "このワザは失敗する。「おもて」なら、"
-	linefw "[自分]についている「炎」エネルギー"
-	linefw "カードを1枚トラッシュする。"
-	linefw "トラッシュできないときも、このワザの"
-	linefw "ダメージはなくなる。"
+	text "Flip a coin. If Heads, discard 1"
+	line "<FIRE> Energy card attached to Dark"
+	line "Charmeleon. If Tails, this attack"
+	line "does nothing (not even damage)."
 	done
 
 DarkCharmeleonDescription:
-	textfw "しっぽの力は、大人5人を持ち上げて"
-	linefw "しまうほど強い。"
+	text "Its tail is incredibly strong, able"
+	line "to lift up to 5 adult men."
 	done
 
 CharizardName:
@@ -61,38 +63,33 @@ CharizardName:
 	done
 
 EnergyBurnName:
-	textfw "エナジーバーン"
+	text "Energy Burn"
 	done
 
 EnergyBurnDescription:
-	textfw "この力は、自分の番の中で何度でも使え"
-	linefw "る。このカードについているすべての"
-	linefw "エネルギーは「炎」エネルギーになり、"
-	linefw "自分の番の終わりにもとにもどる。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えない。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "turn all Energy attached to"
+	line "Charizard into <FIRE> Energy for the"
+	line "rest of the turn. This Power can't"
+	line "be used if Charizard is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 FireSpinName:
-	textfw "ほのおのうず"
+	text "Fire Spin"
 	done
 
 FireSpinDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」を2枚トラッシュする。トラッシュ"
-	linefw "できないとき、このワザのダメージは"
-	linefw "なくなる。"
+	text "Discard 2 Energy cards attached to"
+	line "Charizard in order to use this"
+	line "attack."
 	done
 
 CharizardDescription:
-	textfw "地上1400メートルまで"
-	linefw "羽をつかって飛ぶことができる。"
-	linefw "高熱の炎をはく。"
-	done
-
-CharizardAltDescription:
-	textfw "地上1400メートルまで翼をつかって"
-	linefw "飛ぶことができる。高熱の炎をはく。"
+	text "Spits fire that is hot enough to"
+	line "melt boulders. Known to"
+	line "unintentionally cause forest fires."
 	done
 
 DarkCharizardName:
@@ -100,26 +97,27 @@ DarkCharizardName:
 	done
 
 NailFlickName:
-	textfw "つめではじく"
+	text "Nail Flick"
 	done
 
 ContinuousFireballName:
-	textfw "れんぞくファイヤーボール"
+	text "Continuous Fireball"
 	done
 
 ContinuousFireballDescription:
-	textfw "[自分]についている「炎」エネルギーカ"
-	linefw "ードの数だけコインを投げ、「おもて」"
-	linefw "の数×50のダメージ。その後、「おも"
-	linefw "て」の数ぶんの「炎」エネルギーカード"
-	linefw "を、[自分]からはがしてトラッシュする"
-	linefw "トラッシュできないとき、このワザの"
-	linefw "ダメージはなくなる。"
+	text "Flip a number of coins equal to the"
+	line "number of <FIRE> Energy cards attached"
+	line "to Dark Charizard. This attack does"
+	line "50 damage times the number of Heads."
+	line "Discard a number of <FIRE> Energy cards"
+	line "attached to Dark Charizard equal to"
+	line "the number of Heads."
 	done
 
 DarkCharizardDescription:
-	textfw "とりつかれたように炎の塊を吐き出して"
-	linefw "あらゆるものを焼きつくそうとする。"
+	text "Seemingly possessed, it spews fire"
+	line "like a volcano, trying to burn all"
+	line "it sees."
 	done
 
 VulpixName:
@@ -127,34 +125,30 @@ VulpixName:
 	done
 
 ConfuseRayName:
-	textfw "あやしいひかり"
+	text "Confuse Ray"
 	done
 
 FoxName:
-	textfw "きつね"
+	text "Fox"
 	done
 
 VulpixLv11Description:
-	textfw "子どもだが6本の尻尾が美しい。"
-	linefw "成長するとさらに尻尾が増える。"
+	text "At the time of birth, it has just"
+	line "one tail. Its tail splits from the"
+	line "tip as it grows older."
 	done
 
 FoxFireName:
-	textfw "きつねび"
+	text "Foxfire"
 	done
 
 FoxFireDescription:
-	textfw "のぞむなら、ダメージを与える前に"
-	linefw "相手の控えポケモンを1匹選び、"
-	linefw "[相手]と入れ替えてよい。"
-	linefw "(ダメージは、新しい対戦ポケモンに"
-	linefw "あたえる)"
-	done
-
-VulpixLv13Description:
-	textfw "生まれた時、しっぽは真っ白で1本"
-	linefw "しかない。育つと、やがて先が分れて"
-	linefw "しっぽが増える。"
+	text "Before doing damage, if your"
+	line "opponent has any Benched Pokémon,"
+	line "you may choose 1 of them and switch"
+	line "it with the Defending Pokémon. Do"
+	line "the damage to the new Defending"
+	line "Pokémon."
 	done
 
 NinetalesName:
@@ -162,41 +156,54 @@ NinetalesName:
 	done
 
 FireBlastName:
-	textfw "だいもんじ"
+	text "Fire Blast"
+	done
+
+FireBlastDescription:
+	text "Discard 1 <FIRE> Energy card attached"
+	line "to Ninetales in order to use this"
+	line "attack."
 	done
 
 NinetalesLv32Description:
-	textfw "黃金に輝く体毛と9本の長い尻尾を持つ"
-	linefw "1000年は生きると言われている。"
+	text "Very smart and very vengeful."
+	line "Grabbing one of its many tails could"
+	line "result in a 1,000-year curse."
 	done
 
 MixUpName:
-	textfw "かきみだす"
+	text "Mix-Up"
 	done
 
 MixUpDescription:
-	textfw "相手の手札に「たねポケモン」または「"
-	linefw "進化カード」があれば、それらはすべて"
-	linefw "山札にもどる。その後、相手の山札から"
-	linefw "同じ数の「たねポケモン」または「進化"
-	linefw "カード」が自動的に選び出され、相手の"
-	linefw "手札に加わる。最後に、その山札をよく"
-	linefw "切る。"
+	text "If your opponent has any Basic"
+	line "Pokémon or Evolution cards in his"
+	line "or her hand, your opponent shuffles"
+	line "them into his or her deck."
+	done
+
+MixUpDescriptionCont:
+	text "Then, your opponent puts an equal"
+	line "number of Basic Pokémon or Evolution"
+	line "cards chosen at random from his or"
+	line "her deck into his or her hand. Your"
+	line "opponent shuffles his or her deck"
+	line "afterward."
 	done
 
 DancingEmbersName:
-	textfw "ひのこのまい"
+	text "Dancing Embers"
 	done
 
 DancingEmbersDescription:
-	textfw "コインを8枚投げ、「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Flip 8 coins. This attack does 10"
+	line "damage times the number of Heads."
 	done
 
 NinetalesLv35Description:
-	textfw "頭が良くて執念深い。"
-	linefw "ふざけてしっぽを掴むと1000年"
-	linefw "祟られるという。"
+	text "According to an enduring legend,"
+	line "9 noble heroes were united and"
+	line "reincarnated as this."
 	done
 
 DarkNinetalesName:
@@ -204,28 +211,28 @@ DarkNinetalesName:
 	done
 
 PerplexName:
-	textfw "まどわす"
+	text "Perplex"
 	done
 
 PerplexDescription:
-	textfw "相手プレイヤーは、コインを投げ「うら"
-	linefw "」がでたら、次の相手プレイヤーの番の"
-	linefw "最初、山札からカードを引くことができ"
-	linefw "ない。"
+	text "Your opponent flips a coin. If"
+	line "Tails, your opponent doesn't draw a"
+	line "card at the beginning of his or her"
+	line "next turn."
 	done
 
 NineTailsName:
-	textfw "9ほんのしっぽ"
+	text "Nine Tails"
 	done
 
 NineTailsDescription:
-	textfw "コインを9枚投げ、「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Flip 9 coins. This attack does 10"
+	line "damage times the number of Heads."
 	done
 
 DarkNinetalesDescription:
-	textfw "不思議な妖力で、ときにはトレーナーを"
-	linefw "幻惑させることがある。"
+	text "Occasionally bewitches trainers with"
+	line "its mysterious alluring powers."
 	done
 
 GrowlitheName:
@@ -233,51 +240,44 @@ GrowlitheName:
 	done
 
 LungeName:
-	textfw "とびかかる"
+	text "Lunge"
 	done
 
 PuppyName:
-	textfw "こいぬ"
+	text "Puppy"
 	done
 
 GrowlitheLv12Description:
-	textfw "ひとなつっこい性格だが、なわばりに"
-	linefw "入ってきた敵に対しては、激しく吠える"
+	text "A Pokémon with a friendly nature."
+	line "However, it will bark fiercely at"
+	line "anything invading its territory."
 	done
 
 ErrandRunningName:
-	textfw "おつかい"
+	text "Errand-Running"
 	done
 
 ErrandRunningDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "自分の山札から「トレーナーカード」を"
-	linefw "1枚選び出し、相手プレイヤーに見せて"
-	linefw "から、手札に加える。"
-	linefw "その後、その山札をよく切る。"
+	text "Flip a coin. If Heads, search your"
+	line "deck for a Trainer card, reveal it,"
+	line "and put it into your hand. Shuffle"
+	line "your deck afterwards."
 	done
 
 DiscardOneFireEnergyAltDescription:
-	textfw "[自分]についている「炎」エネルギーカ"
-	linefw "ードを1枚トラッシュする。トラッシュ"
-	linefw "できないとき、このワザのダメージは"
-	linefw "なくなる"
-	done
-
-GrowlitheLv16Description:
-	textfw "なわばり意識がとても強い。"
-	linefw "ゆだんして近づくとほえられ、"
-	linefw "かみつかれ、痛い目にあう。"
+	text "Discard 1 <FIRE> Energy card attached"
+	line "to Growlithe in order to use this"
+	line "attack."
 	done
 
 FlareName:
-	textfw "ほのお"
+	text "Flare"
 	done
 
 GrowlitheLv18Description:
-	textfw "ひとなつこく誠実な性格。"
-	linefw "敵には吠えてかみつき、追いはらおうと"
-	linefw "する。"
+	text "Very protective of its territory."
+	line "It will bark and bite to repel"
+	line "intruders from its space."
 	done
 
 ArcanineName:
@@ -285,57 +285,66 @@ ArcanineName:
 	done
 
 QuickAttackName:
-	textfw "でんこうせっか"
+	text "Quick Attack"
 	done
 
 QuickAttackDescription:
-	textfw "コインを投げて「おもて」なら、20ダ"
-	linefw "メージを追加する。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 10 damage plus 20 more damage;"
+	line "if Tails, this attack does 10"
+	line "damage."
 	done
 
 FlamesOfRageName:
-	textfw "いかりのほのお"
+	text "Flames of Rage"
 	done
 
 FlamesOfRageDescription:
-	textfw "[自分]についている「炎」エネルギーカ"
-	linefw "ードを2枚トラッシュして、[自分]に"
-	linefw "のっているダメージカウンターの数"
-	linefw "×10のダメージを追加する。"
-	linefw "トラッシュできないとき、このワザの"
-	linefw "ダメージはなくなる。"
+	text "Discard 2 <FIRE> Energy cards attached"
+	line "to Arcanine in order to use this"
+	line "attack. This attack does 40 damage"
+	line "plus 10 more damage for each damage"
+	line "counter on Arcanine."
 	done
 
 LegendaryName:
-	textfw "でんせつ"
+	text "Legendary"
 	done
 
 ArcanineLv34Description:
-	textfw "昔から多くの人をとりこにした、"
-	linefw "美しいポケモン。"
-	linefw "跳ぶように、軽やかに走る。"
+	text "A legendary Pokémon famous for its"
+	line "beauty. It looks almost as if it"
+	line "flies when it runs."
+	done
+
+ArcaninesFlamethrowerDescription:
+	text "Discard 1 <FIRE> Energy card attached"
+	line "to Arcanine in order to use this"
+	line "attack."
 	done
 
 TakeDownName:
-	textfw "とっしん"
+	text "Take Down"
 	done
 
 Do20DamageToSelfDescription:
-	textfw "[自分]にも20ダメージ。"
+	text "Arcanine does 20 damage to itself."
 	done
 
 ArcanineLv35Description:
-	textfw "中国で伝説のポケモン。かろやかに走る"
-	linefw "その姿に、とりこにされる者も多い。"
+	text "A legendary Pokémon in China. Many"
+	line "people are charmed by its grace and"
+	line "beauty while running."
 	done
 
 Do30DamageToSelfDescription:
-	textfw "[自分]にも30ダメージ。"
+	text "Arcanine does 30 damage to itself."
 	done
 
 ArcanineLv45Description:
-	textfw "中国の言い伝えのある伝説のポケモン。"
-	linefw "ものすごいスピードで走るという。"
+	text "A Pokémon that has been long admired"
+	line "for its beauty. It runs gracefully,"
+	line "as if on wings."
 	done
 
 PonytaName:
@@ -343,39 +352,42 @@ PonytaName:
 	done
 
 SmashKickName:
-	textfw "けとばす"
+	text "Smash Kick"
 	done
 
 FireworksName:
-	textfw "ひばな"
+	text "Fireworks"
 	done
 
 FireworksDescription:
-	textfw "コインを投げて「うら」なら、[自分]に"
-	linefw "ついている「エネルギーカード」を1枚"
-	linefw "選び、トラッシュする。"
+	text "Flip a coin. If Tails, discard 1"
+	line "Energy card attached to Ponyta."
 	done
 
 FireHorseName:
-	textfw "ひのうま"
+	text "Fire Horse"
 	done
 
-PonytaLv8Description:
-	textfw "足のヒヅメはダイヤモンドの10倍"
-	linefw "かたい。どんなものでもペチャンコに"
-	linefw "ふみつぶしてしまう。"
+FlameTailName:	
+	text "Flame Tail"
 	done
 
 PonytaLv10Description:
-	textfw "体が軽く足の力がものすごい。"
-	linefw "1回のジャンプで東京タワーも"
-	linefw "飛び越える。"
+	text "Its hooves are 10 times harder than"
+	line "diamonds. It can trample anything"
+	line "flat in moments."
+	done
+
+PonytasEmberDescription:
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Ponyta in order to use this attack."
 	done
 
 PonytaLv15Description:
-	textfw "草食性で温厚な性格なので、やけどに"
-	linefw "さえ気をつければ、背中に乗ることも"
-	linefw "できる。"
+	text "A gentle grass-eater, it will allow"
+	line "riders on its back. However, anyone"
+	line "attempting to do so must be careful"
+	line "to not get burned."
 	done
 
 RapidashName:
@@ -383,56 +395,56 @@ RapidashName:
 	done
 
 FlameInfernoName:
-	textfw "かえんじごく"
+	text "Flame Inferno"
 	done
 
 FlameInfernoDescription:
-	textfw "のぞむなら、[自分]についている"
-	linefw "「炎」エネルギーカードを2枚まで"
-	linefw "トラッシュし、トラッシュした"
-	linefw "「炎」エネルギーカードの数×20の"
-	linefw "ダメージを追加してよい。"
+	text "You may discard up to 2 <FIRE> Energy"
+	line "cards attached to Rapidash when you"
+	line "use this attack. This attack does 10"
+	line "damage plus 20 more damage for each"
+	line "<FIRE> Energy card you discarded in this"
+	line "way."
 	done
 
 KickAwayName:
-	textfw "けりとばす"
+	text "Kick Away"
 	done
 
 SwitchWithBenchedMonDescription:
-	textfw "[相手]を控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは相手が選ぶ。"
-	linefw "(相手に控えがいないとき、入れ替えは"
-	linefw "おこらない)"
-	done
-
-RapidashLv30Description:
-	textfw "速く動く物体をみると競争したくなり、"
-	linefw "猛烈なスピードで追いかけ始める。"
+	text "If your opponent has any Benched"
+	line "Pokémon, he or she chooses 1 of them"
+	line "and switches it with the Defending"
+	line "Pokémon. (Do the damage before"
+	line "switching the Pokémon)."
 	done
 
 StompName:
-	textfw "ふみつけ"
+	text "Stomp"
 	done
 
 StompDescription:
-	textfw "コインを投げて「おもて」なら、10ダ"
-	linefw "メージを追加する。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 20 damage plus 10 more damage;"
+	line "if Tails, this attack does 20"
+	line "damage."
 	done
 
 AgilityName:
-	textfw "こうそくいどう"
+	text "Agility"
 	done
 
-AgilityDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このカードはワザによる"
-	linefw "ダメージや効果を受けない。"
+RapidashsAgilityDescription:
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Rapidash."
 	done
 
 RapidashLv33Description:
-	textfw "時速は最高240キロ。"
-	linefw "メラメラ燃えながら新幹線と"
-	linefw "同じスピードでかけぬける。"
+	text "Very competitive, this Pokémon will"
+	line "chase anything that moves fast in"
+	line "the hopes of racing it."
 	done
 
 DarkRapidashName:
@@ -440,24 +452,27 @@ DarkRapidashName:
 	done
 
 RearKickName:
-	textfw "うしろげり"
+	text "Rear Kick"
 	done
 
 FlamePillarName:
-	textfw "ひばしら"
+	text "Flame Pillar"
 	done
 
 FlamePillarDescription:
-	textfw "のぞむなら、[自分]についている「炎」"
-	linefw "エネルギーカードを1枚トラッシュし、"
-	linefw "その後、相手の控えポケモンを1匹"
-	linefw "選んで「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージを与えてもよい。"
+	text "You may discard 1 <FIRE> Energy card"
+	line "attached to Dark Rapidash when you"
+	line "use this attack. If you do, choose 1"
+	line "of your opponent's Benched Pokémon"
+	line "and this attack does 10 damage to"
+	line "it. (Don't apply Weakness and"
+	line "Resistance for Benched Pokémon)."
 	done
 
 DarkRapidashDescription:
-	textfw "気性が激しく、暴れると手がつけられ"
-	linefw "ない。高速で走る姿は赤い彗星のようだ"
+	text "A wild, uncontrollable Pokémon. When"
+	line "running, it looks like a comet"
+	line "streaking through the sky."
 	done
 
 MagmarName:
@@ -465,60 +480,63 @@ MagmarName:
 	done
 
 FirePunchName:
-	textfw "ほのおパンチ"
+	text "Fire Punch"
+	done
+
+MagmarsFlamethrowerDescription:
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Magmar in order to use this attack."
 	done
 
 SpitfireName:
-	textfw "ひふき"
+	text "Spitfire"
 	done
 
 MagmarLv18Description:
-	textfw "火山の火口から生まれた。全身が"
-	linefw "燃えているため、火の玉と見分けが"
-	linefw "つかない。"
+	text "Born in an active volcano. Its body"
+	line "is always cloaked in flames, so it"
+	line "looks like a big ball of fire."
 	done
 
 MagmarLv24Description:
-	textfw "火山の火口近くでみつかった。"
-	linefw "口から炎をはく。"
-	linefw "体温は1200℃もある。"
+	text "Its body always burns with an orange"
+	line "glow that enables it to hide"
+	line "perfectly among flames."
 	done
 
 BurningFireName:
-	textfw "ファイヤーバーン"
+	text "Burning Fire"
 	done
 
 BurningFireDescription:
-	textfw "のぞむなら、[自分]や自分の控え"
-	linefw "ポケモンについている「炎」エネルギー"
-	linefw "カードを好きなだけトラッシュして、"
-	linefw "トラッシュした数×10のダメージを"
-	linefw "追加してよい。"
+	text "You may discard any number of <FIRE>"
+	line "Energy cards attached to Magmar when"
+	line "you use this attack. This attack"
+	line "does 10 damage plus 10 more damage"
+	line "for each <FIRE> Energy card you"
+	line "discarded in this way."
 	done
 
 MagmaPunchName:
-	textfw "マグマパンチ"
-	done
-
-MagmarLv27Description:
-	textfw "自らオレンジ色に燃えていて、炎の中に"
-	linefw "かくれると、全く見分けがつかなくなる"
+	text "Magma Punch"
 	done
 
 SmokescreenName:
-	textfw "えんまく"
+	text "Smokescreen"
 	done
 
 SmokescreenDescription:
-	textfw "次の相手の番、このワザを受けた[相手]"
-	linefw "は、ワザを使うときにコインを投げ、"
-	linefw "「うら」なら、そのワザは失敗する。"
+	text "If the Defending Pokémon tries to"
+	line "attack during your opponent's next"
+	line "turn, your opponent flips a coin."
+	line "If Tails, that attack does nothing."
 	done
 
 MagmarLv31Description:
-	textfw "火山の火口の近くで見つかった。"
-	linefw "非常に見つけにくいポケモンで、"
-	linefw "捕獲例は少ない。"
+	text "Found at the mouths of volcanoes and"
+	line "extremely hard to spot. There are"
+	line "very few instances of capturing this"
+	line "Pokémon."
 	done
 
 FlareonName:
@@ -530,23 +548,29 @@ EeveeName:
 	done
 
 RageName:
-	textfw "いかり"
+	text "Rage"
 	done
 
-RageDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "の数×10のダメージを追加する。"
+FlareonsRageDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on Flareon."
 	done
 
 FlareonLv22Description:
-	textfw "体に炎をためてるとき、"
-	linefw "体温が900度以上に上がるので"
-	linefw "非常に危険。"
+	text "It has a flame chamber inside its"
+	line "body. It inhales, then blows out"
+	line "fire that is over 3,000 degrees."
+	done
+
+FlareonsFlamethrowerDescription:
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Flareon in order to use this attack."
 	done
 
 FlareonLv28Description:
-	textfw "体内に炎袋があり深く息を吸いこんだ後"
-	linefw "1700℃の火をはく。"
+	text "When storing thermal energy in its"
+	line "body, its temperature could soar to"
+	line "over 1,600 degrees."
 	done
 
 DarkFlareonName:
@@ -554,21 +578,28 @@ DarkFlareonName:
 	done
 
 PlayingWithFireName:
-	textfw "ひあそび"
+	text "Playing with Fire"
+	done
+
+DarkFlareonsRageDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on Dark"
+	line "Flareon."
 	done
 
 PlayingWithFireDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[自分]についている「炎」エネルギー"
-	linefw "カードをトラッシュして、20ダメージ"
-	linefw "を追加する。トラッシュできないとき、"
-	linefw "このワザのダメージはなくなる。"
+	text "Flip a coin. If Heads, discard 1"
+	line "<FIRE> Energy card attached to Dark"
+	line "Flareon and this attack does 30"
+	line "damage plus 20 more damage; if"
+	line "Tails, this attack does 30 damage."
 	done
 
 DarkFlareonDescription:
-	textfw "一度怒りはじめたら、手をつけられなく"
-	linefw "なる。深く息を吸い込んだ後、1700"
-	linefw "℃の火を吐く。"
+	text "A Pokémon with a hot temper that"
+	line "can't be controlled once it's"
+	line "angered. Capable of breathing flames"
+	line "hotter than 3,000 degrees."
 	done
 
 MoltresName:
@@ -576,65 +607,60 @@ MoltresName:
 	done
 
 WildfireName:
-	textfw "やまやき"
+	text "Wildfire"
 	done
 
 WildfireDescription:
-	textfw "[自分]についている「炎」エネルギー"
-	linefw "カードを、好きなだけトラッシュする。"
-	linefw "その後、トラッシュしたのと同じ枚数の"
-	linefw "カードを、相手の山札の上から"
-	linefw "トラッシュする。"
+	text "You may discard any number of <FIRE>"
+	line "Energy cards attached to Moltres"
+	line "when you use this attack. If you do,"
+	line "discard that many cards from the top"
+	line "of your opponent's deck."
 	done
 
 DiveBombName:
-	textfw "ゴットバード"
+	text "Dive Bomb"
 	done
 
 MoltresLv35Description:
-	textfw "伝説の鳥ポケモンの一匹。"
-	linefw "オレンジ色の燃えるような翼は"
-	linefw "見るものを圧倒する。"
+	text "Known as the legendary bird of fire."
+	line "Every flap of its wings creates a"
+	line "dazzling flash of flames."
 	done
 
 DryUpName:
-	textfw "ドライアップ"
+	text "Dry Up"
 	done
 
 DryUpDescription:
-	textfw "相手の場のポケモンを1匹選ぶ。"
-	linefw "その後、「うら」が出るまでコインを"
-	linefw "投げ続け、「おもて」の数ぶんの「水」"
-	linefw "エネルギーカードを、そのポケモンから"
-	linefw "はがしてトラッシュする。"
+	text "Choose 1 of your opponent's Pokémon"
+	line "and flip a coin until you get Tails."
+	line "For each Heads, discard 1 <WATER> Energy"
+	line "card attached to that Pokémon, if"
+	line "any."
 	done
 
 FireWingName:
-	textfw "ほのおのつばさ"
+	text "Fire Wing"
 	done
 
 MoltresSharedDescription:
-	textfw "昔から火の鳥伝説として知られる。"
-	linefw "はばたくたびにハネが明るく燃え上がり"
-	linefw "美しい。"
+	text "A legendary bird Pokémon. As it"
+	line "flaps its flaming wings, even the"
+	line "night sky will turn red."
 	done
 
 FiregiverName:
-	textfw "ほのおをもたらす"
+	text "Firegiver"
 	done
 
 FiregiverDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。(対戦の"
-	linefw "初めに場に出したときには、使えない)"
-	linefw "自分の山札に「炎」エネルギーカードが"
-	linefw "あれば、最大4枚が選ばれ、手札に加わ"
-	linefw "る。手札に加わる「炎」エネルギーカー"
-	linefw "ドの枚数は、自動的に決まる。"
-	done
-
-FiregiverDescriptionCont:
-	textfw "その後、その山札をよく切る。"
+	text "When you put Moltres into play"
+	line "during your turn (not during"
+	line "set-up), put from 1 to 4 (chosen at"
+	line "random) <FIRE> Energy cards from your"
+	line "deck into your hand. Shuffle your"
+	line "deck afterward."
 	done
 
 SquirtleName:
