@@ -1,5 +1,3 @@
-SECTION "Text 6", ROMX
-
 Text093f:
 	textfw "これで きさまが 1勝"
 	linefw "わたしが 1勝だ・・・"
@@ -2323,6 +2321,8 @@ Text0b52:
 	linefw "グランドマスターをたおした きみは"
 	linefw "ぜったいに つよいんだから"
 	done
+
+SECTION "Text 7", ROMX
 
 Text0b53:
 	textfw "オレたちは カードが ないから"

@@ -1,5 +1,3 @@
-SECTION "Text 13", ROMX
-
 Text11f3:
 	textfw "うふふ・・・うれしいなぁ"
 	linefw "こうかんしてくれて ありがとー"
@@ -1474,6 +1472,8 @@ PlantlikePokemonBookText:
 	linefw "「ワザ」を つかうには"
 	linefw "草エネルギーカードが ひつよう"
 	done
+
+SECTION "Text 14", ROMX
 
 GrassPokemonBreederBookText:
 	textfw "草ポケモンには 2進化する"

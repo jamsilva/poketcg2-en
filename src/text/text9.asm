@@ -1,5 +1,3 @@
-SECTION "Text 9", ROMX
-
 Text0dc8:
 	textfw "イラストがちがう めずらしい"
 	linefw "「フシギバナ<Lv>67」を やるぜ!"
@@ -1742,6 +1740,8 @@ NikkiCountingOnYouRepeatText:
 	textfw "グリーンクラブの みんなのためにも"
 	linefw "がんばってください"
 	done
+
+SECTION "Text 10", ROMX
 
 IshiharaMyVillaText:
 	textfw "やあ <RAMNAME>くんですか"

@@ -1,3 +1,5 @@
+SECTION "Text 18", ROMX
+
 DigUnderDescription:
 	textfw "相手の場のポケモンを1匹選び、"
 	linefw "「弱点・抵抗力」に関係なく、"
@@ -886,6 +888,8 @@ KabutopsDescription:
 	linefw "鋭い鎌で獲物をとらえ、"
 	linefw "体液をすいとってしまう。"
 	done
+
+SECTION "Text 19", ROMX
 
 AerodactylName:
 	text "Aerodactyl"
@@ -2392,8 +2396,6 @@ MeowthLv13Description:
 ClearProfitName:
 	textfw "まるもうけ"
 	done
-
-SECTION "Text 17", ROMX
 
 ClearProfitDescription:
 	textfw "「うら」が出るまでコインを投げつづけ"

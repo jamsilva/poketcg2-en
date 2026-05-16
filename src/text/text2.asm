@@ -28,8 +28,6 @@ TwisterCheckText:
 	linefw "カードを すべて 手札にもどす"
 	done
 
-SECTION "Text 2", ROMX
-
 IfHeadsHeal1StatusOfYourActiveText:
 	textfw "「おもて」なら 自分の対戦ポケモンの"
 	linefw "「特殊状態」の 1つを かいふく!"
@@ -559,6 +557,8 @@ AffectedByMixUpText:
 	textfw "<RAMNAME>の 手札と 山札の"
 	linefw "ポケモンカードが かきみだされた!"
 	done
+
+SECTION "Text 2", ROMX
 
 ProcedureForGatherFireText:
 	textfw "  ほのおをもらうの操作説明"

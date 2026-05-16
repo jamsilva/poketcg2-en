@@ -1,5 +1,3 @@
-SECTION "Text 8", ROMX
-
 Text0c95:
 	textfw "さあ つぎは"
 	linefw "水のGR団のトリデに むかうといい"
@@ -1847,6 +1845,8 @@ Text0dac:
 	linefw "サイドカードは 4枚や"
 	linefw "ちゃっちゃと 対戦しようやないの"
 	done
+
+SECTION "Text 9", ROMX
 
 Text0dad:
 	textfw "じょうけんが きにいらへんかったら"

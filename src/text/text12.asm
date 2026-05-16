@@ -1,5 +1,3 @@
-SECTION "Text 12", ROMX
-
 Text10d3:
 	textfw "ストーンクラブマスター ゲンゾウ!!"
 	linefw "きょうは これで ひきさがってやる"
@@ -1755,6 +1753,8 @@ Text11d6:
 	textfw "オーノー!"
 	linefw "まけテ しまいましたでぇース"
 	done
+
+SECTION "Text 13", ROMX
 
 Text11d7:
 	textfw "ヘイ ヘイ ヘーイ!"

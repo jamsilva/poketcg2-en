@@ -1,5 +1,3 @@
-SECTION "Text 10", ROMX
-
 IshiharaWantsToTrade6InitialText:
 	textfw "やあ <RAMNAME>くんですか"
 	linefw "GR団との対戦 たのしんでますか?"
@@ -1502,6 +1500,8 @@ Text0f7f:
 	linefw "「<RAMTEXT>」だー"
 	linefw "しょうぶしたきゃ 4枚 いれてこーい"
 	done
+
+SECTION "Text 11", ROMX
 
 Text0f80:
 	textfw "うぃーす! ちゃんと カード"

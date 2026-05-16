@@ -1,3 +1,5 @@
+SECTION "Text 16", ROMX
+
 GrowlDescription:
 	textfw "次の相手の番、"
 	linefw "このワザを受けた[相手]が、"
@@ -1398,6 +1400,8 @@ StarmieName:
 	text "Starmie"
 	done
 
+SECTION "Text 17", ROMX
+
 RecoverName:
 	textfw "じこさいせい"
 	done
@@ -2511,8 +2515,6 @@ SandshrewLv12Description:
 SwiftName:
 	textfw "スピードスター"
 	done
-
-SECTION "Text 16", ROMX
 
 SwiftDescription:
 	textfw "このワザのダメージは、"

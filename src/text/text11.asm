@@ -1,5 +1,3 @@
-SECTION "Text 11", ROMX
-
 RodFinalCupRound2NextOpponentText:
 	textfw "さすがだな <RAMNAME>くん"
 	linefw "つぎは カネコウジと対戦だ!"
@@ -1778,6 +1776,8 @@ ToshironWantsToDuelText:
 	textfw "オレと 対戦したいんだ?"
 	linefw "ヘッ いいどきょうだぜ!"
 	done
+
+SECTION "Text 12", ROMX
 
 ToshironDuelStartInitialText:
 	textfw "オレは トシロン!"

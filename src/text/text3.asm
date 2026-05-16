@@ -141,8 +141,6 @@ GlossaryDeckPileDescriptionText:
 	linefw "なります。"
 	done
 
-SECTION "Text 3", ROMX
-
 GlossaryDiscardPileDescriptionText:
 	textfw "つかいおわったカードを おくところを"
 	linefw "「トラッシュ」と いいます。"
@@ -153,6 +151,8 @@ GlossaryDiscardPileDescriptionText:
 	linefw "ラッシュ」は もちろん あいての「ト"
 	linefw "ラッシュ」も しらべることができます"
 	done
+
+SECTION "Text 3", ROMX
 
 GlossaryHandDescriptionText:
 	textfw "かくプレイヤーが 手にもっているカー"
@@ -2268,6 +2268,8 @@ DeckDiagnosisStep4Advice3Description2Text:
 	linefw "「オーキドはかせ」は デッキに2枚は"
 	linefw "いれておきたいものじゃな"
 	done
+
+SECTION "Text 4", ROMX
 
 DeckDiagnosisStep4Advice4Description1Text:
 	textfw "そっこう型デッキ"

@@ -1,5 +1,3 @@
-SECTION "Text 7", ROMX
-
 Text0b76:
 	textfw "そうか・・・ざんねんだな"
 	linefw " "
@@ -1776,6 +1774,8 @@ Text0c7d:
 	textfw "GR団が いなくなったから"
 	linefw "かくしてた カードで あーそぼっと"
 	done
+
+SECTION "Text 8", ROMX
 
 Text0c7e:
 	textfw "GR団の いうことも ちょっと"

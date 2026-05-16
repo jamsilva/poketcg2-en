@@ -1,5 +1,3 @@
-SECTION "Text 4", ROMX
-
 DebugCharacterDisplayTestText:
 	textfw "人物の表示テスト"
 	done
@@ -2540,6 +2538,8 @@ ChallengeMachineLossDialogText:
 	textfw "<RAMNUM>人目"
 	linefw "「<RAMTEXT>」に まけました!"
 	done
+
+SECTION "Text 5", ROMX
 
 ChallengeMachineLossDialogWinStreakText:
 	textfw "<RAMNAME>の れんしょうきろくは"
