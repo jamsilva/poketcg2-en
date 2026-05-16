@@ -69,7 +69,7 @@ BulbasaurLv13Card:
 	; attack 1
 	energy GRASS, 2 ; energies
 	tx LeechSeedName ; name
-	tx LeechSeedDescription ; description
+	tx BulbasaursLeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -125,7 +125,7 @@ BulbasaurLv15Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FirstAidName ; name
-	tx FirstAidDescription ; description
+	tx BulbasaursFirstAidDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -163,7 +163,7 @@ ELSE
 	length 2, 4 ; length
 	weight 15.0 ; weight
 ENDC
-	tx BulbasaurLv15Description ; description
+	tx BulbasaurLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 IvysaurLv20Card:
@@ -350,7 +350,7 @@ VenusaurLv64Card:
 	energy 0 ; energies
 	tx SolarPowerName ; name
 	tx SolarPowerDescription ; description
-	dw NONE ; description (cont)
+	tx SolarPowerDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw VenusaurSolarPowerEffectCommands ; effect commands
@@ -363,8 +363,8 @@ VenusaurLv64Card:
 	; attack 2
 	energy GRASS, 4 ; energies
 	tx MegaDrainName ; name
-	tx MegaDrainDescription ; description
-	dw NONE ; description (cont)
+	tx VenusaursMegaDrainDescription ; description
+	tx VenusaursMegaDrainDescriptionCont ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
 	dw VenusaurMegaDrainEffectCommands ; effect commands
@@ -667,7 +667,7 @@ ELSE
 	length 2, 4 ; length
 	weight 22.0 ; weight
 ENDC
-	tx MetapodLv20Description ; description
+	tx MetapodLv21Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MetapodLv21Card:
@@ -685,7 +685,7 @@ MetapodLv21Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx StiffenName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -755,8 +755,8 @@ ButterfreeCard:
 	; attack 2
 	energy GRASS, 4 ; energies
 	tx MegaDrainName ; name
-	tx MegaDrainDescription ; description
-	dw NONE ; description (cont)
+	tx ButterfreesMegaDrainDescription ; description
+	tx ButterfreesMegaDrainDescriptionCont ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
 	dw ButterfreeMegaDrainEffectCommands ; effect commands
@@ -891,7 +891,7 @@ ELSE
 	length 1, 0 ; length
 	weight 7.0 ; weight
 ENDC
-	tx WeedleLv15Description ; description
+	tx WeedleLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 KakunaLv20Card:
@@ -947,7 +947,7 @@ ELSE
 	length 2, 0 ; length
 	weight 22.0 ; weight
 ENDC
-	tx KakunaLv20Description ; description
+	tx KakunaLv23Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 KakunaLv23Card:
@@ -965,7 +965,7 @@ KakunaLv23Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx StiffenName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx KakunasStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -1283,7 +1283,7 @@ ELSE
 	length 11, 6 ; length
 	weight 143.0 ; weight
 ENDC
-	tx ArbokLv30Description ; description
+	tx ArbokLv27Description ; description
 	db NONE ; AI info
 
 DarkArbokCard:
@@ -1357,7 +1357,7 @@ NidoranFLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx TailWhipName ; name
-	tx TailWhipDescription ; description
+	tx NidoransTailWhipDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1385,7 +1385,7 @@ NidoranFLv12Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORAN_F ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
 IF METRIC
@@ -1395,7 +1395,7 @@ ELSE
 	length 1, 4 ; length
 	weight 15.0 ; weight
 ENDC
-	tx NidoranFLv12Description ; description
+	tx NidoranFLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 NidoranFLv13Card:
@@ -1441,7 +1441,7 @@ NidoranFLv13Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORAN_F ; Pokedex number
 	darkness_level FALSE, 13 ; is Dark?, level
 IF METRIC
@@ -1497,7 +1497,7 @@ NidorinaLv22Card:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORINA ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
 IF METRIC
@@ -1507,7 +1507,7 @@ ELSE
 	length 2, 7 ; length
 	weight 44.0 ; weight
 ENDC
-	tx NidorinaLv22Description ; description
+	tx NidorinaLv24Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 NidorinaLv24Card:
@@ -1553,7 +1553,7 @@ NidorinaLv24Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORINA ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
 IF METRIC
@@ -1665,7 +1665,7 @@ NidoranMLv20Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORAN_M ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
 IF METRIC
@@ -1721,7 +1721,7 @@ NidoranMLv22Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORAN_M ; Pokedex number
 	darkness_level FALSE, 22 ; is Dark?, level
 IF METRIC
@@ -1731,7 +1731,7 @@ ELSE
 	length 1, 4 ; length
 	weight 15.0 ; weight
 ENDC
-	tx NidoranMLv22Description ; description
+	tx NidoranMLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 NidorinoLv23Card:
@@ -1777,7 +1777,7 @@ NidorinoLv23Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORINO ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
 IF METRIC
@@ -1787,7 +1787,7 @@ ELSE
 	length 2, 11 ; length
 	weight 43.0 ; weight
 ENDC
-	tx NidorinoLv23Description ; description
+	tx NidorinoLv25Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 NidorinoLv25Card:
@@ -1833,7 +1833,7 @@ NidorinoLv25Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PoisonStingName ; category
+	tx PoisonPinName ; category
 	db DEX_NIDORINO ; Pokedex number
 	darkness_level FALSE, 25 ; is Dark?, level
 IF METRIC
@@ -1987,7 +1987,7 @@ ZubatLv10Card:
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
 	tx LeechLifeName ; name
-	tx LeechLifeDescription ; description
+	tx ZubatsLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2067,7 +2067,7 @@ ELSE
 	length 2, 7 ; length
 	weight 17.0 ; weight
 ENDC
-	tx ZubatLv12Description ; description
+	tx ZubatLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GolbatLv25Card:
@@ -2085,7 +2085,7 @@ GolbatLv25Card:
 	; attack 1
 	energy GRASS, 2, COLORLESS, 1 ; energies
 	tx LeechLifeName ; name
-	tx LeechLifeAltDescription ; description
+	tx GolbatsLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2123,7 +2123,7 @@ ELSE
 	length 5, 3 ; length
 	weight 121.0 ; weight
 ENDC
-	tx GolbatLv25Description ; description
+	tx GolbatLv29Description ; description
 	db NONE ; AI info
 
 GolbatLv29Card:
@@ -2155,7 +2155,7 @@ GolbatLv29Card:
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
 	tx LeechLifeName ; name
-	tx LeechLifeDescription ; description
+	tx GolbatsLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2683,7 +2683,7 @@ ELSE
 	length 1, 0 ; length
 	weight 12.0 ; weight
 ENDC
-	tx ParasLv15Description ; description
+	tx ParasLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 ParasectLv28Card:
@@ -2795,7 +2795,7 @@ ELSE
 	length 3, 3 ; length
 	weight 65.0 ; weight
 ENDC
-	tx ParasectLv29Description ; description
+	tx ParasectLv28Description ; description
 	db NONE ; AI info
 
 VenonatLv12Card:
@@ -2827,7 +2827,7 @@ VenonatLv12Card:
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
 	tx LeechLifeName ; name
-	tx LeechLifeDescription ; description
+	tx VenonatLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2907,7 +2907,7 @@ ELSE
 	length 3, 3 ; length
 	weight 66.0 ; weight
 ENDC
-	tx VenonatLv15Description ; description
+	tx VenonatLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 VenomothLv22Card:
@@ -2963,7 +2963,7 @@ ELSE
 	length 4, 11 ; length
 	weight 28.0 ; weight
 ENDC
-	tx VenomothLv22Description ; description
+	tx VenomothLv28Description ; description
 	db NONE ; AI info
 
 VenomothLv28Card:
@@ -2982,7 +2982,7 @@ VenomothLv28Card:
 	energy 0 ; energies
 	tx ShiftName ; name
 	tx ShiftDescription ; description
-	tx ShiftDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw VenomothShiftEffectCommands ; effect commands
@@ -3037,7 +3037,7 @@ BellsproutLv10Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx SwayName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx SwayDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -3075,7 +3075,7 @@ ELSE
 	length 2, 4 ; length
 	weight 9.0 ; weight
 ENDC
-	tx BellsproutLv10Description ; description
+	tx BellsproutLv11Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 BellsproutLv11Card:
@@ -3187,7 +3187,7 @@ ELSE
 	length 3, 3 ; length
 	weight 14.0 ; weight
 ENDC
-	tx WeepinbellLv23Description ; description
+	tx WeepinbellLv28Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 WeepinbellLv28Card:
@@ -3555,7 +3555,7 @@ ExeggcuteCard:
 	; attack 2
 	energy GRASS, 2 ; energies
 	tx LeechSeedName ; name
-	tx LeechSeedDescription ; description
+	tx ExeggcutesLeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3859,7 +3859,7 @@ ELSE
 	length 3, 11 ; length
 	weight 21.0 ; weight
 ENDC
-	tx WeezingLv26Description ; description
+	tx WeezingLv27Description ; description
 	db NONE ; AI info
 
 WeezingLv27Card:
@@ -4139,7 +4139,7 @@ ELSE
 	length 4, 11 ; length
 	weight 123.0 ; weight
 ENDC
-	tx ScytherLv23Description ; description
+	tx ScytherLv25Description ; description
 	db NONE ; AI info
 
 ScytherLv25Card:
@@ -4213,7 +4213,7 @@ PinsirLv15Card:
 	; attack 1
 	energy GRASS, 1 ; energies
 	tx SlicingThrowName ; name
-	tx IfHeadsDo10DamageDescription ; description
+	tx IfHeadsAdd10Do10DamageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -4251,7 +4251,7 @@ ELSE
 	length 4, 11 ; length
 	weight 121.0 ; weight
 ENDC
-	tx PinsirLv15Description ; description
+	tx PinsirLv24Description ; description
 	db NONE ; AI info
 
 PinsirLv24Card:
@@ -6299,7 +6299,7 @@ SquirtleLv8Card:
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WithdrawName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -6509,7 +6509,7 @@ WartortleLv22Card:
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
 	tx WithdrawName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -7811,7 +7811,7 @@ ShellderLv8Card:
 	; attack 2
 	energy WATER, 1 ; energies
 	tx HideInShellName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -12165,7 +12165,7 @@ SandslashLv35Card:
 	; attack 1
 	energy FIGHTING, 1 ; energies
 	tx SandVeilName ; name
-	tx PreventDamageCardEffectDescription ; description
+	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -12347,7 +12347,7 @@ DiglettLv16Card:
 	; attack 2
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
 	tx TripOverName ; name
-	tx IfHeadsDo10DamageDescription ; description
+	tx IfHeadsAdd10Do10DamageDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category

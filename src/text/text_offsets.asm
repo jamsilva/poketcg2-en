@@ -4890,20 +4890,20 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SeedName                                              ; 0x1307
 	textpointer BulbasaurLv12Description                              ; 0x1308
 	textpointer LeechSeedName                                         ; 0x1309
-	textpointer LeechSeedDescription                                  ; 0x130a
+	textpointer BulbasaursLeechSeedDescription                        ; 0x130a
 	textpointer BulbasaurLv13Description                              ; 0x130b
 	textpointer FirstAidName                                          ; 0x130c
-	textpointer FirstAidDescription                                   ; 0x130d
+	textpointer BulbasaursFirstAidDescription                         ; 0x130d
 	textpointer PoisonSeedName                                        ; 0x130e
 	textpointer InflictPoisonDescription                              ; 0x130f
-	textpointer BulbasaurLv15Description                              ; 0x1310
+	textpointer UNUSED_1310                                           ; 0x1310
 	textpointer IvysaurName                                           ; 0x1311
 	textpointer VineWhipName                                          ; 0x1312
 	textpointer PoisonPowderName                                      ; 0x1313
 	textpointer IvysaurLv20Description                                ; 0x1314
-	textpointer UNUSED_1315                                           ; 0x1315
+	textpointer SolarPowerDescriptionCont                             ; 0x1315
 	textpointer IvysaursLeechSeedDescription                          ; 0x1316
-	textpointer UNUSED_1317                                           ; 0x1317
+	textpointer VenusaursMegaDrainDescriptionCont                     ; 0x1317
 	textpointer IvysaurLv26Description                                ; 0x1318
 	textpointer DarkIvysaurName                                       ; 0x1319
 	textpointer VinePullName                                          ; 0x131a
@@ -4915,7 +4915,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SolarPowerName                                        ; 0x1320
 	textpointer SolarPowerDescription                                 ; 0x1321
 	textpointer MegaDrainName                                         ; 0x1322
-	textpointer MegaDrainDescription                                  ; 0x1323
+	textpointer VenusaursMegaDrainDescription                         ; 0x1323
 	textpointer VenusaurLv64Description                               ; 0x1324
 	textpointer EnergyTransName                                       ; 0x1325
 	textpointer EnergyTransDescription                                ; 0x1326
@@ -4936,9 +4936,9 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MysteriousPowerName                                   ; 0x1335
 	textpointer MayInflictConfusionDescription                        ; 0x1336
 	textpointer CocoonName                                            ; 0x1337
-	textpointer MetapodLv20Description                                ; 0x1338
+	textpointer ButterfreesMegaDrainDescription                       ; 0x1338
 	textpointer StiffenName                                           ; 0x1339
-	textpointer PreventDamageCardEffectDescription                    ; 0x133a
+	textpointer MetapodsStiffenDescription                            ; 0x133a
 	textpointer StunSporeName                                         ; 0x133b
 	textpointer MetapodLv21Description                                ; 0x133c
 	textpointer ButterfreeName                                        ; 0x133d
@@ -4953,12 +4953,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer WeedleLv12Description                                 ; 0x1346
 	textpointer PeckName                                              ; 0x1347
 	textpointer PoisonHornName                                        ; 0x1348
-	textpointer WeedleLv15Description                                 ; 0x1349
+	textpointer ButterfreesMegaDrainDescriptionCont                   ; 0x1349
 	textpointer KakunaName                                            ; 0x134a
 	textpointer PoisonFluidName                                       ; 0x134b
 	textpointer PoisonFluidDescription                                ; 0x134c
 	textpointer RolloutName                                           ; 0x134d
-	textpointer KakunaLv20Description                                 ; 0x134e
+	textpointer KakunasStiffenDescription                             ; 0x134e
 	textpointer KakunaLv23Description                                 ; 0x134f
 	textpointer BeedrillName                                          ; 0x1350
 	textpointer TwineedleName                                         ; 0x1351
@@ -4982,7 +4982,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer UNUSED_1363                                           ; 0x1363
 	textpointer DeadlyPoisonName                                      ; 0x1364
 	textpointer DeadlyPoisonDescription                               ; 0x1365
-	textpointer ArbokLv30Description                                  ; 0x1366
+	textpointer UNUSED_1366                                           ; 0x1366
 	textpointer DarkArbokName                                         ; 0x1367
 	textpointer StareName                                             ; 0x1368
 	textpointer StareDescription                                      ; 0x1369
@@ -4991,8 +4991,8 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DarkArbokDescription                                  ; 0x136c
 	textpointer NidoranFName                                          ; 0x136d
 	textpointer TailWhipName                                          ; 0x136e
-	textpointer TailWhipDescription                                   ; 0x136f
-	textpointer NidoranFLv12Description                               ; 0x1370
+	textpointer NidoransTailWhipDescription                           ; 0x136f
+	textpointer PoisonPinName                                         ; 0x1370
 	textpointer FurySwipesName                                        ; 0x1371
 	textpointer FurySwipes10DamageDescription                         ; 0x1372
 	textpointer CallForFamilyName                                     ; 0x1373
@@ -5002,7 +5002,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer StrengthInNumbersName                                 ; 0x1377
 	textpointer StrengthInNumbersDescription                          ; 0x1378
 	textpointer FurySwipes30DamageDescription                         ; 0x1379
-	textpointer NidorinaLv22Description                               ; 0x137a
+	textpointer UNUSED_137A                                           ; 0x137a
 	textpointer SupersonicName                                        ; 0x137b
 	textpointer UNUSED_137C                                           ; 0x137c
 	textpointer DoubleKickName                                        ; 0x137d
@@ -5021,11 +5021,11 @@ SECTION "Text Offsets 2", ROMX
 	textpointer FocusEnergyHornRushDescription                        ; 0x138a
 	textpointer HornRushName                                          ; 0x138b
 	textpointer UNUSED_138C                                           ; 0x138c
-	textpointer NidoranMLv22Description                               ; 0x138d
+	textpointer UNUSED_138D                                           ; 0x138d
 	textpointer NidorinoName                                          ; 0x138e
 	textpointer SwiftLungeName                                        ; 0x138f
 	textpointer SwiftLungeDescription                                 ; 0x1390
-	textpointer NidorinoLv23Description                               ; 0x1391
+	textpointer UNUSED_1391                                           ; 0x1391
 	textpointer HornDrillName                                         ; 0x1392
 	textpointer NidorinoLv25Description                               ; 0x1393
 	textpointer NidokingName                                          ; 0x1394
@@ -5039,15 +5039,15 @@ SECTION "Text Offsets 2", ROMX
 	textpointer BatName                                               ; 0x139c
 	textpointer ZubatLv9Description                                   ; 0x139d
 	textpointer LeechLifeName                                         ; 0x139e
-	textpointer LeechLifeDescription                                  ; 0x139f
+	textpointer ZubatsLeechLifeDescription                            ; 0x139f
 	textpointer ZubatLv10Description                                  ; 0x13a0
 	textpointer SuspiciousSoundwaveName                               ; 0x13a1
-	textpointer ZubatLv12Description                                  ; 0x13a2
+	textpointer GolbatsLeechLifeDescription                           ; 0x13a2
 	textpointer GolbatName                                            ; 0x13a3
 	textpointer LeechLifeAltDescription                               ; 0x13a4
 	textpointer NosediveName                                          ; 0x13a5
 	textpointer NosediveDescription                                   ; 0x13a6
-	textpointer GolbatLv25Description                                 ; 0x13a7
+	textpointer UNUSED_13A7                                           ; 0x13a7
 	textpointer WingAttackName                                        ; 0x13a8
 	textpointer GolbatLv29Description                                 ; 0x13a9
 	textpointer DarkGolbatName                                        ; 0x13aa
@@ -5092,35 +5092,35 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ParasLv8Description                                   ; 0x13d1
 	textpointer ScatterSporesName                                     ; 0x13d2
 	textpointer ScatterSporesDescription                              ; 0x13d3
-	textpointer ParasLv15Description                                  ; 0x13d4
+	textpointer UNUSED_13D4                                           ; 0x13d4
 	textpointer ParasectName                                          ; 0x13d5
 	textpointer SlashName                                             ; 0x13d6
 	textpointer ParasectLv28Description                               ; 0x13d7
 	textpointer ToxicSporeName                                        ; 0x13d8
-	textpointer ParasectLv29Description                               ; 0x13d9
+	textpointer VenonatLeechLifeDescription                           ; 0x13d9
 	textpointer VenonatName                                           ; 0x13da
 	textpointer InsectName                                            ; 0x13db
 	textpointer VenonatLv12Description                                ; 0x13dc
 	textpointer DisableName                                           ; 0x13dd
 	textpointer DisableDescription                                    ; 0x13de
 	textpointer PsybeamName                                           ; 0x13df
-	textpointer VenonatLv15Description                                ; 0x13e0
+	textpointer UNUSED_13E0                                           ; 0x13e0
 	textpointer VenomothName                                          ; 0x13e1
 	textpointer StirUpTwisterName                                     ; 0x13e2
 	textpointer StirUpTwisterDescription                              ; 0x13e3
 	textpointer RainbowPowderName                                     ; 0x13e4
 	textpointer RainbowPowderDescription                              ; 0x13e5
 	textpointer PoisonMothName                                        ; 0x13e6
-	textpointer VenomothLv22Description                               ; 0x13e7
+	textpointer UNUSED_13E7                                           ; 0x13e7
 	textpointer ShiftName                                             ; 0x13e8
 	textpointer ShiftDescription                                      ; 0x13e9
-	textpointer ShiftDescriptionCont                                  ; 0x13ea
+	textpointer UNUSED_13EA                                           ; 0x13ea
 	textpointer VenomPowderName                                       ; 0x13eb
 	textpointer VenomPowderDescription                                ; 0x13ec
 	textpointer VenomothLv28Description                               ; 0x13ed
 	textpointer BellsproutName                                        ; 0x13ee
 	textpointer SwayName                                              ; 0x13ef
-	textpointer BellsproutLv10Description                             ; 0x13f0
+	textpointer SwayDescription                                       ; 0x13f0
 	textpointer CallForFamilyBellsproutDescription                    ; 0x13f1
 	textpointer BellsproutLv11Description                             ; 0x13f2
 	textpointer WeepinbellName                                        ; 0x13f3
@@ -5129,7 +5129,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DissolveName                                          ; 0x13f6
 	textpointer DissolveDescription                                   ; 0x13f7
 	textpointer FlycatcherName                                        ; 0x13f8
-	textpointer WeepinbellLv23Description                             ; 0x13f9
+	textpointer UNUSED_13F9                                           ; 0x13f9
 	textpointer WeepinbellLv28Description                             ; 0x13fa
 	textpointer VictreebelName                                        ; 0x13fb
 	textpointer LureName                                              ; 0x13fc
@@ -5150,7 +5150,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MukName                                               ; 0x140b
 	textpointer ToxicGasName                                          ; 0x140c
 	textpointer ToxicGasDescription                                   ; 0x140d
-	textpointer UNUSED_140E                                           ; 0x140e
+	textpointer ExeggcutesLeechSeedDescription                        ; 0x140e
 	textpointer MukDescription                                        ; 0x140f
 	textpointer DarkMukName                                           ; 0x1410
 	textpointer StickyGooName                                         ; 0x1411
@@ -5181,7 +5181,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PoisonMistDescriptionCont                             ; 0x142a
 	textpointer GasExplosionName                                      ; 0x142b
 	textpointer GasExplosionDescription                               ; 0x142c
-	textpointer WeezingLv26Description                                ; 0x142d
+	textpointer UNUSED_142D                                           ; 0x142d
 	textpointer SmogName                                              ; 0x142e
 	textpointer SelfdestructName                                      ; 0x142f
 	textpointer Selfdestruct60DamageDescription                       ; 0x1430
@@ -5202,15 +5202,15 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SlashingStrikeName                                    ; 0x143f
 	textpointer SlashingStrikeDescription                             ; 0x1440
 	textpointer MantisName                                            ; 0x1441
-	textpointer ScytherLv23Description                                ; 0x1442
+	textpointer UNUSED_1442                                           ; 0x1442
 	textpointer SwordsDanceName                                       ; 0x1443
 	textpointer SwordsDanceDescription                                ; 0x1444
 	textpointer ScytherLv25Description                                ; 0x1445
 	textpointer PinsirName                                            ; 0x1446
 	textpointer SlicingThrowName                                      ; 0x1447
-	textpointer IfHeadsDo10DamageDescription                          ; 0x1448
+	textpointer IfHeadsAdd10Do10DamageDescription                     ; 0x1448
 	textpointer StagbeetleName                                        ; 0x1449
-	textpointer PinsirLv15Description                                 ; 0x144a
+	textpointer UNUSED_144A                                           ; 0x144a
 	textpointer IrongripName                                          ; 0x144b
 	textpointer GuillotineName                                        ; 0x144c
 	textpointer PinsirLv24Description                                 ; 0x144d
