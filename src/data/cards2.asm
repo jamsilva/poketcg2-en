@@ -8604,7 +8604,7 @@ MaxReviveCard:
 	dw MAX_REVIVE
 	dw MaxReviveEffectCommands ; effect commands
 	tx MaxReviveDescription ; description
-	tx MaxReviveDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 
 SuperScoopUpCard:
 	db TYPE_TRAINER ; type
@@ -8628,7 +8628,7 @@ DevolutionSprayCard:
 	dw DEVOLUTION_SPRAY
 	dw DevolutionSprayEffectCommands ; effect commands
 	tx DevolutionSprayDescription ; description
-	dw NONE ; description (cont)
+	tx DevolutionSprayDescriptionCont ; description (cont)
 
 ItemFinderCard:
 	db TYPE_TRAINER ; type
@@ -8880,7 +8880,7 @@ PokemonTraderCard:
 	dw POKEMON_TRADER
 	dw PokemonTraderEffectCommands ; effect commands
 	tx PokemonTraderDescription ; description
-	tx PokemonTraderDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 
 PokemonRecallCard:
 	db TYPE_TRAINER ; type

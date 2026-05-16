@@ -655,12 +655,12 @@ SuperPotionName:
 	done
 
 SuperPotionDescription:
-	textfw "あなたの場にいる、「エネルギーカード"
-	linefw "」のついているポケモンを1匹選ぶ。"
-	linefw "そのポケモンについている「エネルギー"
-	linefw "カード」を1枚選んでトラッシュして、"
-	linefw "そのポケモンにのっているダメージ"
-	linefw "カウンターを、4個とりのぞく。"
+	text "Discard 1 Energy card attached to 1"
+	line "of your own Pokémon in order to"
+	line "remove 4 damage counters from that"
+	line "Pokémon. If the Pokémon has fewer"
+	line "damage counters than that, remove"
+	line "all of them."
 	done
 
 ImakuniCardName:
@@ -668,9 +668,12 @@ ImakuniCardName:
 	done
 
 ImakuniCardDescription:
-	textfw "あなたの対戦ポケモンは「こんらん」"
-	linefw "状態になる。(このカードをポケモン"
-	linefw "として場に出すことはできない)"
+	text "Your Active Pokémon is now Confused."
+	line "Imakuni wants you to play him as a"
+	line "Basic Pokémon, but you can't."
+	line "A mysterious creature not listed in"
+	line "the Pokédex. He asks kids around the"
+	line "world,”Who is cuter-Pikachu or me?”"
 	done
 
 EnergyRemovalName:
@@ -678,9 +681,9 @@ EnergyRemovalName:
 	done
 
 EnergyRemovalDescription:
-	textfw "相手の場のポケモンを1匹選び、"
-	linefw "そのポケモンについている「エネルギー"
-	linefw "カード」を1枚選んで、トラッシュする"
+	text "Choose 1 Energy card attached to 1"
+	line "of your opponent's Pokémon and"
+	line "discard it."
 	done
 
 EnergyRetrievalName:
@@ -688,13 +691,9 @@ EnergyRetrievalName:
 	done
 
 EnergyRetrievalDescription:
-	textfw "手札からカードを1枚選んでトラッシュ"
-	linefw "しなければ、このカードは使えない。"
-	linefw "あなたのトラッシュから「基本エネルギ"
-	linefw "ーカード」を2枚選び出し、手札に加え"
-	linefw "る。ただし、このカードを使うために"
-	linefw "トラッシュしたカードを選ぶことはでき"
-	linefw "ない。"
+	text "Trade 1 of the other cards in your"
+	line "hand for up to 2 basic Energy cards"
+	line "from your discard pile."
 	done
 
 EnergySearchName:
@@ -702,10 +701,9 @@ EnergySearchName:
 	done
 
 EnergySearchDescription:
-	textfw "あなたの山札から「基本エネルギーカー"
-	linefw "ド」を1枚選び出し、相手プレイヤーに"
-	linefw "見せてから、手札に加える。"
-	linefw "その後、その山札をよく切る。"
+	text "Search your deck for a basic Energy"
+	line "card and put it into your hand."
+	line "Shuffle your deck afterward."
 	done
 
 ProfessorOakName:
@@ -713,9 +711,8 @@ ProfessorOakName:
 	done
 
 ProfessorOakDescription:
-	textfw "あなたの手札をすべてトラッシュする。"
-	linefw "その後、山札からカードを7枚引いて、"
-	linefw "手札にする。"
+	text "Discard your hand, then draw 7"
+	line "cards."
 	done
 
 FossilExcavationName:
@@ -723,11 +720,13 @@ FossilExcavationName:
 	done
 
 FossilExcavationDescription:
-	textfw "あなたの山札かトラッシュのどちらかを"
-	linefw "選ぶ。その中から「なにかの化石」を"
-	linefw "1枚選び出し、相手プレイヤーに見せて"
-	linefw "から、手札に加える。(山札を見た場合"
-	linefw "は、その山札をよく切る)"
+	text "You may search your deck for a"
+	line "Mysterious Fossil or choose 1"
+	line "Mysterious Fossil in your discard"
+	line "pile. Show that card to your"
+	line "opponent and put it into your hand."
+	line "Either way, shuffle your deck"
+	line "afterward."
 	done
 
 PotionName:
@@ -735,9 +734,10 @@ PotionName:
 	done
 
 PotionDescription:
-	textfw "あなたの場にいるポケモンを1匹選び、"
-	linefw "そのポケモンにのっているダメージ"
-	linefw "カウンターを、2個とりのぞく。"
+	text "Remove 2 damage counters from 1 of"
+	line "your Pokémon. If that Pokémon has"
+	line "fewer damage counters than that,"
+	line "remove all of them."
 	done
 
 GamblerName:
@@ -745,11 +745,9 @@ GamblerName:
 	done
 
 GamblerDescription:
-	textfw "あなたの手札をすべて山札にもどし、"
-	linefw "その山札をよく切る。コインを投げ、"
-	linefw "「おもて」なら8枚、「うら」なら"
-	linefw "1枚のカードを山札から引いて、"
-	linefw "手札にする。"
+	text "Shuffle your hand into your deck."
+	line "Flip a coin. If heads, draw 8 cards."
+	line "If tails, draw 1 card."
 	done
 
 ReviveName:
@@ -757,13 +755,12 @@ ReviveName:
 	done
 
 ReviveDescription:
-	textfw "あなたのトラッシュから「たねポケモン"
-	linefw "」を1枚選び、あなたのベンチに出す。"
-	linefw "その後、そのポケモンに、HPの半分"
-	linefw "(切りすて)のダメージカウンターを"
-	linefw "のせる。"
-	linefw "(あなたのベンチに空きがないとき、"
-	linefw "このカードは使えない)"
+	text "Put 1 Basic Pokémon card from your"
+	line "discard pile onto your Bench."
+	line "Put damage counters on that Pokémon"
+	line "equal to half its HP (rounded down"
+	line "to the nearest 10). (You can't play"
+	line "Revive if your Bench is full)."
 	done
 
 MaxReviveName:
@@ -771,18 +768,11 @@ MaxReviveName:
 	done
 
 MaxReviveDescription:
-	textfw "手札からエネルギーカードを2枚選んで"
-	linefw "トラッシュしなければ、このカードは使"
-	linefw "えない。あなたのトラッシュから「たね"
-	linefw "ポケモン」を1枚選び出し、あなたのベ"
-	linefw "ンチに出す。"
-	done
-
-MaxReviveDescriptionCont:
-	textfw "(あなたのトラッシュに「たねポケモン"
-	linefw "」が1枚もないときや、あなたのベンチ"
-	linefw "に空きがないとき、このカードは使えな"
-	linefw "い)"
+	text "Discard 2 Energy cards from your"
+	line "hand in order to put 1 Basic Pokémon"
+	line "from your discard pile onto your"
+	line "Bench. (You can't play Max Revive if"
+	line "your Bench is full)."
 	done
 
 SuperScoopUpName:
@@ -790,11 +780,9 @@ SuperScoopUpName:
 	done
 
 SuperScoopUpDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "あなたの場にいるポケモンを1匹選び、"
-	linefw "そのポケモンと、そのポケモンについて"
-	linefw "いるすべてのカードを、あなたの手札に"
-	linefw "もどす。"
+	text "Flip a coin. If heads, return 1 of"
+	line "your Pokémon and all cards attached"
+	line "to it to your hand."
 	done
 
 DevolutionSprayName:
@@ -802,10 +790,18 @@ DevolutionSprayName:
 	done
 
 DevolutionSprayDescription:
-	textfw "あなたの場にいるポケモンを1匹選ぶ。"
-	linefw "そのポケモンにのっている「進化カード"
-	linefw "」を、好きなだけトラッシュして、"
-	linefw "そのポケモンを「退化」させる。"
+	text "Choose 1 of your own Pokémon in play"
+	line "and a Stage of Evolution. Discard"
+	line "all Evolution cards of that Stage or"
+	line "higher attached to that Pokémon."
+	done
+
+DevolutionSprayDescriptionCont:
+	text "That Pokémon is no longer Asleep,"
+	line "Confused, Paralyzed, Poisoned, or"
+	line "anything else that might be the"
+	line "result of an attack (just as if you"
+	line "had evolved it)."
 	done
 
 ItemFinderName:
@@ -813,11 +809,10 @@ ItemFinderName:
 	done
 
 ItemFinderDescription:
-	textfw "手札からカードを2枚選んでトラッシュ"
-	linefw "しなければ、このカードは使えない。"
-	linefw "あなたのトラッシュから「トレーナーカ"
-	linefw "ード」を1枚選び出し、相手プレイヤー"
-	linefw "に見せてから、手札に加える。"
+	text "Discard 2 of the other cards from"
+	line "your hand in order to put a Trainer"
+	line "card from your discard pile into"
+	line "your hand."
 	done
 
 ChallengeName:
@@ -825,19 +820,20 @@ ChallengeName:
 	done
 
 ChallengeDescription:
-	textfw "あなたの挑戦を受けるかどうか、相手プ"
-	linefw "レイヤーにたずねる。相手が挑戦を受け"
-	linefw "ないなら、あなたは山札からカードを2"
-	linefw "枚引く。相手が挑戦を受けるのなら、お"
-	linefw "たがいのプレイヤーは、それぞれの山札"
-	linefw "から好きなだけ「たねポケモン」のカー"
-	linefw "ドを選び出し、ベンチに出す。"
+	text "Ask your opponent for a challenge."
+	line "If your opponent declines (or if"
+	line "both Benches are full), draw 2"
+	line "cards. If your opponent accepts,"
+	line "each of you searches your decks for"
+	line "any number of Basic Pokémon cards"
+	line "and puts them onto your Benches."
 	done
 
 ChallengeDescriptionCont:
-	textfw "(おたがいが出し終わるまで、出したカ"
-	linefw "ードはうらにしておく)。その後、それ"
-	linefw "ぞれの山札をよく切る。"
+	text "(A player can't do this if his or"
+	line "her Bench is full). When you both"
+	line "have finished, shuffle your decks"
+	line "and turn those cards face up."
 	done
 
 SuperEnergyRetrievalName:
@@ -845,13 +841,9 @@ SuperEnergyRetrievalName:
 	done
 
 SuperEnergyRetrievalDescription:
-	textfw "手札からカードを2枚選んでトラッシュ"
-	linefw "しなければ、このカードは使えない。"
-	linefw "あなたのトラッシュから「基本エネルギ"
-	linefw "ーカード」を4枚選び出し、手札に加え"
-	linefw "る。ただし、このカードを使うために"
-	linefw "トラッシュしたカードを選ぶことはでき"
-	linefw "ない。"
+	text "Trade 2 of the other cards in your"
+	line "hand for up to 4 basic Energy cards"
+	line "from your discard pile."
 	done
 
 SuperEnergyRemovalName:
@@ -859,12 +851,11 @@ SuperEnergyRemovalName:
 	done
 
 SuperEnergyRemovalDescription:
-	textfw "あなたの場のポケモンについている「エ"
-	linefw "ネルギーカード」を1枚トラッシュしな"
-	linefw "ければ、このカードは使えない。相手の"
-	linefw "場のポケモンを1匹選び、そのポケモン"
-	linefw "についている「エネルギーカード」を2"
-	linefw "枚選んで、トラッシュする。"
+	text "Discard 1 Energy card attached to 1"
+	line "of your own Pokémon in order to"
+	line "choose 1 of your opponent's Pokémon"
+	line "and up to 2 Energy cards attached"
+	line "to it. Discard those Energy cards."
 	done
 
 MoonStoneName:
@@ -872,11 +863,10 @@ MoonStoneName:
 	done
 
 MoonStoneDescription:
-	textfw "あなたの山札から、「無色」ポケモン"
-	linefw "への「進化カード」を1枚選び出し、"
-	linefw "相手プレイヤーに見せてから、"
-	linefw "手札に加える。その後、その山札をよく"
-	linefw "切る。"
+	text "You may search your deck for a <COLORLESS>"
+	line "Evolution card, show it to your"
+	line "opponent, and put it into your hand."
+	line "Shuffle your deck afterward."
 	done
 
 DefenderName:
@@ -884,12 +874,13 @@ DefenderName:
 	done
 
 DefenderDescription:
-	textfw "このカードは、あなたの場にいるポケモ"
-	linefw "ンにつけて使い、次の相手の番の終わり"
-	linefw "にトラッシュする。このカードをつけて"
-	linefw "いるポケモンがワザによるダメージを受"
-	linefw "けるとき、そのダメージは「-20」さ"
-	linefw "れる。"
+	text "Attach Defender to 1 of your"
+	line "Pokémon. At the end of your"
+	line "opponent's next turn, discard"
+	line "Defender. Damage done to that"
+	line "Pokémon by attacks is reduced by 20"
+	line "(after applying Weakness and"
+	line "Resistance)."
 	done
 
 GustOfWindName:
@@ -897,28 +888,29 @@ GustOfWindName:
 	done
 
 GustOfWindDescription:
-	textfw "相手の控えポケモンを1匹選び、相手の"
-	linefw "対戦ポケモンと入れ替える。"
+	text "Choose 1 of your opponent's Benched"
+	line "Pokémon and switch it with his or"
+	line "her Active Pokémon."
 	done
 
 MysteriousFossilDescription:
-	textfw "このカードはポケモンとして場に出すこ"
-	linefw "とができ、場に出ている限り、ポケモン"
-	linefw "としてあつかわれる。"
-	linefw "このカードは「なにかの化石から進化」"
-	linefw "と書かれている進化カードによって、"
-	linefw "進化できる。このカードは「にげる」こ"
-	linefw "とができず、特殊状態にならない。"
+	text "Play Mysterious Fossil as if it were"
+	line "a Basic Pokémon. While in play,"
+	line "Mysterious Fossil counts as a"
+	line "Pokémon (instead of a Trainer card)."
+	line "Mysterious Fossil has no attacks,"
+	line "can't retreat, and can't be Asleep,"
+	line "Confused, Paralyzed, or Poisoned."
 	done
 
 MysteriousFossilDescriptionCont:
-	textfw "また、このカードが「きぜつ」しても、"
-	linefw "相手プレイヤーはサイドカードを取るこ"
-	linefw "とができない。"
-	linefw "あなたは、あなたの番の中で、いつでも"
-	linefw "このカードをトラッシュしてよい。"
-	linefw "(この「トラッシュする」は特殊能力"
-	linefw "としてあつかわない)"
+	text "If Mysterious Fossil is Knocked Out,"
+	line "it doesn't count as a Knocked Out"
+	line "Pokémon. (Discard it anyway). At any"
+	line "time during your turn before your"
+	line "attack, you may discard Mysterious"
+	line "Fossil from play. (Use GameBoy Poké-"
+	line "mon Power menu option to do this)."
 	done
 
 FullHealName:
@@ -926,9 +918,9 @@ FullHealName:
 	done
 
 FullHealDescription:
-	textfw "あなたの対戦ポケモンの「どく・ねむり"
-	linefw "・マヒ・こんらん」状態を、すべて回復"
-	linefw "させる。"
+	text "Your Active Pokémon is no longer"
+	line "Asleep, Confused, Paralyzed, or"
+	line "Poisoned."
 	done
 
 ImposterOaksRevengeName:
@@ -936,11 +928,11 @@ ImposterOaksRevengeName:
 	done
 
 ImposterOaksRevengeDescription:
-	textfw "手札からカードを1枚選んでトラッシュ"
-	linefw "しなければ、このカードは使えない。"
-	linefw "相手プレイヤーは手札をすべて山札に"
-	linefw "もどし、山札をよく切ってから、新たに"
-	linefw "4枚を引いて手札にする。"
+	text "Discard a card from your hand in"
+	line "order to play this card. Your"
+	line "opponent shuffles his or her hand"
+	line "into his or her deck, then draws 4"
+	line "cards."
 	done
 
 ImposterProfessorOakName:
@@ -948,10 +940,9 @@ ImposterProfessorOakName:
 	done
 
 ImposterProfessorOakDescription:
-	textfw "相手の手札をすべて山札にもどし、その"
-	linefw "山札をよく切る。その後、相手プレイヤ"
-	linefw "ーは山札からカードを7枚引いて、"
-	linefw "手札にする。"
+	text "Your opponent shuffles his or her"
+	line "hand into his or her deck, then"
+	line "draws 7 cards."
 	done
 
 SleepName:
@@ -959,9 +950,8 @@ SleepName:
 	done
 
 SleepDescription:
-	textfw "【ロケット団秘密メカ】"
-	linefw "コインを投げて「おもて」なら、相手の"
-	linefw "対戦ポケモンを「ねむり」状態にする。"
+	text "Flip a coin. If heads, the Defending"
+	line "Pokémon is now Asleep."
 	done
 
 ComputerErrorName:
@@ -969,13 +959,10 @@ ComputerErrorName:
 	done
 
 ComputerErrorDescription:
-	textfw "【ロケット団秘密メカ】"
-	linefw "このカードを使ったら、あなたの番は自"
-	linefw "動的に終わりになる。おたがいのプレイ"
-	linefw "ヤーは、のぞむなら、最大5枚までカー"
-	linefw "ドを引いてよい。(あなたがカードを引"
-	linefw "き終わってから、相手プレイヤーが引く"
-	linefw ")"
+	text "You may draw up to 5 cards, then"
+	line "your opponent may draw up to 5"
+	line "cards. Your turn is over now (you"
+	line "don't get to attack)."
 	done
 
 ComputerSearchName:
@@ -983,11 +970,11 @@ ComputerSearchName:
 	done
 
 ComputerSearchDescription:
-	textfw "手札からカードを2枚選んでトラッシュ"
-	linefw "しなければ、このカードは使えない。"
-	linefw "あなたの山札からカードを1枚選び出し"
-	linefw "手札に加える。その後、その山札をよく"
-	linefw "切る。"
+	text "Discard 2 of the other cards from"
+	line "your hand in order to search your"
+	line "deck for any card and put it into"
+	line "your hand. Shuffle your deck"
+	line "afterward."
 	done
 
 DiggerName:
@@ -995,13 +982,13 @@ DiggerName:
 	done
 
 DiggerDescription:
-	textfw "【ロケット団秘密メカ】"
-	linefw "おたがいのプレイヤーは交互にコインを"
-	linefw "投げ、先に「うら」を出したプレイヤー"
-	linefw "の対戦ポケモンに、「弱点・抵抗力」に"
-	linefw "関係なく10ダメージ。"
-	linefw "(最初にコインを投げるのは、"
-	linefw "このカードを使ったプレイヤー)"
+	text "Flip a coin. If tails, do 10 damage"
+	line "to your Active Pokémon. If heads,"
+	line "your opponent flips a coin. If"
+	line "tails, your opponent does 10 damage"
+	line "to his or her Active Pokémon. If"
+	line "heads, you flip a coin. Keep doing"
+	line "this until a player gets tails."
 	done
 
 ClefairyDollName:
@@ -1009,20 +996,23 @@ ClefairyDollName:
 	done
 
 ClefairyDollDescription:
-	textfw "このカードはポケモンとして場に出すこ"
-	linefw "とができ、場に出ている限り、ポケモン"
-	linefw "としてあつかわれる。"
-	linefw "このカードは「にげる」ことができず、"
-	linefw "特殊状態にならない。また、このカード"
-	linefw "が「きぜつ」しても、相手プレイヤーは"
-	linefw "サイドカードを取ることができない。"
+	text "Play Clefairy Doll as if it were a"
+	line "Basic Pokémon. While in play,"
+	line "Clefairy Doll counts as a Pokémon"
+	line "(instead of a Trainer card)."
+	line "Clefairy Doll has no attacks, can't"
+	line "retreat, and can't be Asleep,"
+	line "Confused, Paralyzed, or Poisoned."
 	done
 
 ClefairyDollDescriptionCont:
-	textfw "あなたは、あなたの番の中で、いつでも"
-	linefw "このカードをトラッシュしてよい。"
-	linefw "(この「トラッシュする」は、特殊能力"
-	linefw "としてあつかわない)"
+	text "If Clefairy Doll is Knocked Out, it"
+	line "doesn't count as a Knocked Out"
+	line "Pokémon. At any time during your"
+	line "turn before your attack, you may"
+	line "discard Clefairy Doll."
+	line "(Use GameBoy Pokémon Power menu"
+	line "option to do this)."
 	done
 
 MrFujiName:
@@ -1030,10 +1020,9 @@ MrFujiName:
 	done
 
 MrFujiDescription:
-	textfw "あなたの控えポケモンを1匹選び、その"
-	linefw "カードと、それについているすべてのカ"
-	linefw "ードを、あなたの山札にもどす。その後"
-	linefw "その山札をよく切る。"
+	text "Choose a Pokémon on your Bench."
+	line "Shuffle it and any cards attached"
+	line "to it into your deck."
 	done
 
 PlusPowerName:
@@ -1041,12 +1030,13 @@ PlusPowerName:
 	done
 
 PlusPowerDescription:
-	textfw "このカードはあなたの対戦ポケモンに"
-	linefw "つけて使い、あなたの番の終わりにトラ"
-	linefw "ッシュする。このカードをつけている"
-	linefw "ポケモンのワザが、対戦ポケモンにダメ"
-	linefw "ージを与えるとき、そのダメージは"
-	linefw "「+10」される。"
+	text "Attach PlusPower to your Active"
+	line "Pokémon. At the end of your turn,"
+	line "discard PlusPower. If this Pokémon's"
+	line "attack does damage to any Active"
+	line "Pokémon (after applying Weakness and"
+	line "Resistance), the attack does 10 more"
+	line "damage to that Active Pokémon."
 	done
 
 SwitchName:
@@ -1054,8 +1044,8 @@ SwitchName:
 	done
 
 SwitchDescription:
-	textfw "あなたの控えポケモンを1匹選び、あな"
-	linefw "たの対戦ポケモンと入れ替える。"
+	text "Switch 1 of your Benched Pokémon"
+	line "with your Active Pokémon."
 	done
 
 ScoopUpName:
@@ -1063,11 +1053,10 @@ ScoopUpName:
 	done
 
 ScoopUpDescription:
-	textfw "あなたの場にいるポケモンを1匹選び、"
-	linefw "その「たねポケモン」のカードだけを"
-	linefw "手札にもどす。(そのカードにのって"
-	linefw "いた「進化カード」や、ついていた"
-	linefw "カードは、すべてトラッシュする)"
+	text "Choose 1 of your Pokémon in play"
+	line "and return its Basic Pokémon card to"
+	line "your hand. (Discard all cards"
+	line "attached to that card)."
 	done
 
 PokemonTraderName:
@@ -1075,18 +1064,12 @@ PokemonTraderName:
 	done
 
 PokemonTraderDescription:
-	textfw "手札から「たねポケモン」または「進化"
-	linefw "カード」を1枚選び、相手プレイヤーに"
-	linefw "見せてから、あなたの山札にもどす。"
-	linefw "それができないとき、このカードは使え"
-	linefw "ない。"
-	done
-
-PokemonTraderDescriptionCont:
-	textfw "あなたの山札から「たねポケモン」"
-	linefw "または「進化カード」を1枚選び出し"
-	linefw "相手プレイヤーに見せてから、手札に"
-	linefw "加える。その後、その山札をよく切る。"
+	text "Trade 1 of the Basic Pokémon or"
+	line "Evolution cards in your hand for 1"
+	line "of the Basic Pokémon or Evolution"
+	line "cards from your deck. Show both"
+	line "cards to your opponent."
+	line "Shuffle your deck afterward."
 	done
 
 PokemonRecallName:
@@ -1094,9 +1077,8 @@ PokemonRecallName:
 	done
 
 PokemonRecallDescription:
-	textfw "あなたのトラッシュから「進化カード」"
-	linefw "を1枚選び出し、相手プレイヤーに"
-	linefw "見せてから、自分の山札の上に置く。"
+	text "Put an Evolution card from your"
+	line "discard pile on top of your deck."
 	done
 
 PokedexName:
@@ -1104,9 +1086,9 @@ PokedexName:
 	done
 
 PokedexDescription:
-	textfw "あなたの山札の上から5枚のカードを"
-	linefw "見て、好きな順番に入れ替えて、山札の"
-	linefw "上にもどす。"
+	text "Look at up to 5 cards from the top"
+	line "of your deck and rearrange them as"
+	line "you like."
 	done
 
 PokemonCenterName:
@@ -1114,11 +1096,11 @@ PokemonCenterName:
 	done
 
 PokemonCenterDescription:
-	textfw "あなたの場の、ダメージカウンターが"
-	linefw "のっているすべてのポケモンから、ダメ"
-	linefw "ージカウンターと「エネルギーカード」"
-	linefw "をすべてとりのぞく。(「エネルギー"
-	linefw "カード」はトラッシュする)"
+	text "Remove all damage counters from all"
+	line "of your own Pokémon with damage"
+	line "counters on them, then discard all"
+	line "Energy cards attached to those"
+	line "Pokémon."
 	done
 
 PokemonBreederName:
@@ -1126,11 +1108,11 @@ PokemonBreederName:
 	done
 
 PokemonBreederDescription:
-	textfw "このカードは、あなたが自分の場のポケ"
-	linefw "モンを進化させるときにだけ、使える。"
-	linefw "そのポケモンの上に「2進化カード」を"
-	linefw "直接のせ、1進化をとばして「2進化ポ"
-	linefw "ケモン」に進化させる。"
+	text "Put a Stage 2 Evolution card from"
+	line "your hand on the matching Basic"
+	line "Pokémon. You can only play this card"
+	line "when you would be allowed to evolve"
+	line "that Pokémon anyway."
 	done
 
 PokemonFluteName:
@@ -1138,10 +1120,11 @@ PokemonFluteName:
 	done
 
 PokemonFluteDescription:
-	textfw "相手のトラッシュから「たねポケモン」"
-	linefw "を1枚選び出し、相手のベンチに出す。"
-	linefw "(相手のベンチに空きがないとき、"
-	linefw "このカードは使えない)"
+	text "Choose 1 Basic Pokémon card from"
+	line "your opponent's discard pile and put"
+	line "it onto his or her Bench. (You can't"
+	line "play Pokémon Flute if your"
+	line "opponent's Bench is full)."
 	done
 
 TheBosssWayName:
@@ -1149,10 +1132,11 @@ TheBosssWayName:
 	done
 
 TheBosssWayDescription:
-	textfw "あなたの山札から、わるいポケモンへの"
-	linefw "「進化カード」を1枚選び出し、相手"
-	linefw "プレイヤーに見せてから、手札に加える"
-	linefw "その後、その山札をよく切る。"
+	text "Search your deck for an Evolution"
+	line "card with Dark in its name. Show it"
+	line "to your opponent and put it into"
+	line "your hand. Shuffle your deck"
+	line "afterward."
 	done
 
 GoopGasAttackName:
@@ -1160,9 +1144,9 @@ GoopGasAttackName:
 	done
 
 GoopGasAttackDescription:
-	textfw "次の相手の番が終わるまで、すべての"
-	linefw "ポケモンは特殊能力を使うことができず"
-	linefw "その力も消える。"
+	text "All Pokémon Powers stop working"
+	line "until the end of your opponent's"
+	line "next turn."
 	done
 
 BillName:
@@ -1170,8 +1154,7 @@ BillName:
 	done
 
 BillDescription:
-	textfw "山札からカードを2枚引いて、手札に加"
-	linefw "える。"
+	text "Draw 2 cards."
 	done
 
 BillsTeleporterName:
@@ -1179,9 +1162,7 @@ BillsTeleporterName:
 	done
 
 BillsTeleporterDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "山札からカードを4枚引いて、"
-	linefw "手札に加える。"
+	text "Flip a coin. If heads, draw 4 cards."
 	done
 
 BillsComputerName:
@@ -1189,19 +1170,19 @@ BillsComputerName:
 	done
 
 BillsComputerDescription:
-	textfw "このカードは、「オムナイト」、「ゴー"
-	linefw "スト」、「ゴーリキー」、「ゴローン」"
-	linefw "「ユンゲラー」、のうち1枚のカードを"
-	linefw "それぞれに対応した進化カードに交換す"
-	linefw "るのに必要となる。GR団ゲームセンタ"
-	linefw "ーの「マサキのパソコン」のコーナーで"
-	linefw "必要なカードです。"
+	text "This card is needed to exchange"
+	line "either an Omanyte, Haunter, Machoke,"
+	line "Graveler, or Kadabra for its"
+	line "corresponding Evolution card."
+	line "This card is required at Bill's PC"
+	line "in the corner of the Team GR Game"
+	line "Center."
 	done
 
 BillsComputerDescriptionCont:
-	textfw "くわしい内容は、ゲームセンターの"
-	linefw "かかりいんにおたずねください。(この"
-	linefw "カードは、ゲームでは使えません。)"
+	text "For more details, please ask"
+	line "the staff at the Game Center."
+	line "This card can't be used in the game."
 	done
 
 MasterBallName:
@@ -1209,12 +1190,12 @@ MasterBallName:
 	done
 
 MasterBallDescription:
-	textfw "あなたの山札の上から7枚を見る。"
-	linefw "その中に「たねポケモン」または「進化"
-	linefw "カード」があれば、1枚を選び、"
-	linefw "相手プレイヤーに見せてから、手札に"
-	linefw "加える。その後、残りのカードを山札に"
-	linefw "戻し、よく切る。"
+	text "Look at 7 cards from the top of your"
+	line "deck. You may choose a Basic Pokémon"
+	line "or Evolution card from those cards,"
+	line "show it your opponent, then put it"
+	line "into your hand. Shuffle the rest"
+	line "into your deck."
 	done
 
 LassName:
@@ -1222,10 +1203,10 @@ LassName:
 	done
 
 LassDescription:
-	textfw "おたがいのプレイヤーは手札を見せ合い"
-	linefw "それぞれの手札にあるすべての「トレー"
-	linefw "ナーカード」を、それぞれの山札にもど"
-	linefw "す。その後、それぞれの山札をよく切る"
+	text "You and your opponent show each"
+	line "other your hands, then shuffle all"
+	line "the Trainer cards from your hands"
+	line "into your decks."
 	done
 
 MaintenanceName:
@@ -1233,9 +1214,9 @@ MaintenanceName:
 	done
 
 MaintenanceDescription:
-	textfw "手札からカードを2枚選び、山札にもど"
-	linefw "す。その後、山札をよく切り、カードを"
-	linefw "1枚引いて、手札に加える。"
+	text "Shuffle 2 of the other cards from"
+	line "your hand into your deck in order"
+	line "to draw a card."
 	done
 
 PokeballName:
@@ -1243,11 +1224,12 @@ PokeballName:
 	done
 
 PokeballDescription:
-	textfw "コインを投げて「おもて」なら、あなた"
-	linefw "の山札から「たねポケモン」または"
-	linefw "「進化カード」を1枚選び出し、"
-	linefw "相手プレイヤーに見せてから、手札に"
-	linefw "加える。その後、その山札をよく切る。"
+	text "Flip a coin. If heads, you may"
+	line "search your deck for any Basic"
+	line "Pokémon or Evolution card. Show that"
+	line "card to your opponent, then put it"
+	line "into your hand. Shuffle your deck"
+	line "afterward."
 	done
 
 NightlyGarbageRunName:
@@ -1255,12 +1237,11 @@ NightlyGarbageRunName:
 	done
 
 NightlyGarbageRunDescription:
-	textfw "【ロケット団秘密メカ】"
-	linefw "あなたのトラッシュにある「たねポケモ"
-	linefw "ン」「進化カード」「基本エネルギーカ"
-	linefw "ード」から3枚を選び、相手プレイヤー"
-	linefw "に見せてから、山札にもどす。"
-	linefw "その後、その山札をよく切る。"
+	text "Choose up to 3 Basic Pokémon cards,"
+	line "Evolution cards, and/or basic"
+	line "Energy cards from your discard pile."
+	line "Show them to your opponent and"
+	line "shuffle them into your deck."
 	done
 
 RecycleName:
@@ -1268,9 +1249,9 @@ RecycleName:
 	done
 
 RecycleDescription:
-	textfw "コインを投げて「おもて」なら、あなた"
-	linefw "のトラッシュからカードを1枚選び出し"
-	linefw "あなたの山札の上に置く。"
+	text "Flip a coin. If heads, put a card"
+	line "in your discard pile on top of your"
+	line "deck."
 	done
 
 RocketsSneakAttackName:
@@ -1278,10 +1259,10 @@ RocketsSneakAttackName:
 	done
 
 RocketsSneakAttackDescription:
-	textfw "相手の手札を見る。その中にトレーナー"
-	linefw "カードがあれば、1枚を選び、それを"
-	linefw "相手の山札にもどす。"
-	linefw "その後、その山札をよく切る。"
+	text "Look at your opponent's hand. If he"
+	line "or she has any Trainer cards, choose"
+	line "1 of them. Your opponent shuffles"
+	line "that card into his or her deck."
 	done
 
 HereComesTeamRocketName:
@@ -1289,11 +1270,9 @@ HereComesTeamRocketName:
 	done
 
 HereComesTeamRocketDescription:
-	textfw "おたがいのプレイヤーのサイドカード"
-	linefw "全てをおもてにして、おたがいのプレイ"
-	linefw "ヤーに見えるようにする。"
-	linefw "(おもてになったサイドカードは、"
-	linefw "対戦が終わるまでそのまま)"
+	text "Each player plays with his or her"
+	line "Prize cards face up for the rest of"
+	line "the game."
 	done
 
 TheRocketsTrapName:
@@ -1301,8 +1280,9 @@ TheRocketsTrapName:
 	done
 
 TheRocketsTrapDescription:
-	textfw "コインを投げて「おもて」なら、相手の"
-	linefw "手札から3枚のカードを、おもてを見な"
-	linefw "いで選び、相手の山札にもどす。その後"
-	linefw "その山札をよく切る。"
+	text "Flip a coin. If heads, choose up to"
+	line "3 cards at random from your"
+	line "opponent's hand (don't look at"
+	line "them). Your opponent shuffles those"
+	line "cards into his or her deck."
 	done
