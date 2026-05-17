@@ -9827,7 +9827,7 @@ PikachuLv5Card:
 	; attack 2
 	energy LIGHTNING, 2 ; energies
 	tx AgilityName ; name
-	tx RapidashsAgilityDescription ; description
+	tx PikachusAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -9851,7 +9851,7 @@ ELSE
 	length 1, 4 ; length
 	weight 13.0 ; weight
 ENDC
-	tx PikachuLv5Description ; description
+	tx PikachuSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PikachuLv12Card:
@@ -9963,7 +9963,7 @@ ELSE
 	length 1, 4 ; length
 	weight 13.0 ; weight
 ENDC
-	tx PikachuLv13Description ; description
+	tx PikachuSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PikachuLv14Card:
@@ -10019,7 +10019,7 @@ ELSE
 	length 1, 4 ; length
 	weight 13.0 ; weight
 ENDC
-	tx PikachuLv14Description ; description
+	tx PikachuSharedDescription ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PikachuLv16Card:
@@ -10037,7 +10037,7 @@ PikachuLv16Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx GrowlName ; name
-	tx GrowlAltDescription1 ; description
+	tx PikachusGrowlDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10093,7 +10093,7 @@ PikachuAltLv16Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx GrowlName ; name
-	tx GrowlAltDescription1 ; description
+	tx PikachusGrowlDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10411,7 +10411,7 @@ ELSE
 	length 2, 7 ; length
 	weight 66.0 ; weight
 ENDC
-	tx RaichuLv32Description ; description
+	tx RaichuSharedDescription ; description
 	db NONE ; AI info
 
 RaichuLv33Card:
@@ -10429,7 +10429,7 @@ RaichuLv33Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx QuickAttackName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -10485,7 +10485,7 @@ RaichuLv40Card:
 	; attack 1
 	energy LIGHTNING, 1, COLORLESS, 2 ; energies
 	tx AgilityName ; name
-	tx RapidashsAgilityDescription ; description
+	tx RaichusAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10499,7 +10499,7 @@ RaichuLv40Card:
 	; attack 2
 	energy LIGHTNING, 3, COLORLESS, 1 ; energies
 	tx ThunderName ; name
-	tx ThunderDescription ; description
+	tx RaichusThunderDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
 	db DAMAGE_NORMAL ; category
@@ -10822,7 +10822,7 @@ MagnemiteLv15Card:
 	energy 0 ; energies
 	tx MagnetCategoryName ; name
 	tx MagnetMoveDescription ; description
-	dw NONE ; description (cont)
+	tx MagnetMoveDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw MagnemiteMagnetMoveEffectCommands ; effect commands
@@ -10859,7 +10859,7 @@ ELSE
 	length 1, 0 ; length
 	weight 13.0 ; weight
 ENDC
-	tx MagnemiteLv15Description ; description
+	tx MagnemiteLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MagnetonLv28Card:
@@ -10971,7 +10971,7 @@ ELSE
 	length 3, 3 ; length
 	weight 132.0 ; weight
 ENDC
-	tx MagnetonLv30Description ; description
+	tx MagnetonSharedDescription ; description
 	db NONE ; AI info
 
 MagnetonLv35Card:
@@ -11003,7 +11003,7 @@ MagnetonLv35Card:
 	; attack 2
 	energy LIGHTNING, 4 ; energies
 	tx SelfdestructName ; name
-	tx Selfdestruct100DamageDescription ; description
+	tx MagnetonLv35sSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
 	db DAMAGE_NORMAL ; category
@@ -11045,7 +11045,7 @@ DarkMagnetonCard:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx SonicboomName ; name
-	tx SonicboomAltDescription ; description
+	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -11139,7 +11139,7 @@ ELSE
 	length 1, 8 ; length
 	weight 23.0 ; weight
 ENDC
-	tx VoltorbLv8Description ; description
+	tx VoltorbLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 VoltorbLv10Card:
@@ -11438,7 +11438,7 @@ ElectabuzzLv20Card:
 	energy LIGHTNING, 1 ; energies
 	tx LightScreenName ; name
 	tx LightScreenDescription ; description
-	dw NONE ; description (cont)
+	tx LightScreenDescriptionCont ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
 	dw ElectabuzzLightScreenEffectCommands ; effect commands
@@ -11451,7 +11451,7 @@ ElectabuzzLv20Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx QuickAttackName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -11465,7 +11465,7 @@ ElectabuzzLv20Card:
 	db 2 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 20 ; is Dark?, level
 IF METRIC
@@ -11521,7 +11521,7 @@ ElectabuzzLv30Card:
 	db 2 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
 IF METRIC
@@ -11577,7 +11577,7 @@ ElectabuzzLv35Card:
 	db 2 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ELECTABUZZ ; Pokedex number
 	darkness_level FALSE, 35 ; is Dark?, level
 IF METRIC
@@ -11633,7 +11633,7 @@ JolteonLv24Card:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderName ; category
+	tx DeckDiagnosisLightningText ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level FALSE, 24 ; is Dark?, level
 IF METRIC
@@ -11661,7 +11661,7 @@ JolteonLv29Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx QuickAttackName ; name
-	tx QuickAttackAltDescription2 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -11689,7 +11689,7 @@ JolteonLv29Card:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderName ; category
+	tx DeckDiagnosisLightningText ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level FALSE, 29 ; is Dark?, level
 IF METRIC
@@ -11717,7 +11717,7 @@ DarkJolteonCard:
 	; attack 1
 	energy LIGHTNING, 1 ; energies
 	tx LightningFlashName ; name
-	tx LightningFlashDescription ; description
+	tx SmokescreenDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -11745,7 +11745,7 @@ DarkJolteonCard:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db NONE ; resistance
-	tx ThunderName ; category
+	tx DeckDiagnosisLightningText ; category
 	db DEX_JOLTEON ; Pokedex number
 	darkness_level TRUE, 23 ; is Dark?, level
 IF METRIC
@@ -11801,7 +11801,7 @@ ZapdosLv28Card:
 	db 2 ; retreat cost
 	db NONE ; weakness
 	db WR_FIGHTING ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 28 ; is Dark?, level
 IF METRIC
@@ -11811,7 +11811,7 @@ ELSE
 	length 5, 3 ; length
 	weight 116.0 ; weight
 ENDC
-	tx ZapdosLv28Description ; description
+	tx ZapdosLv64Description ; description
 	db NONE ; AI info
 
 ZapdosLv40Card:
@@ -11857,7 +11857,7 @@ ZapdosLv40Card:
 	db 2 ; retreat cost
 	db NONE ; weakness
 	db WR_FIGHTING ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 40 ; is Dark?, level
 IF METRIC
@@ -11885,7 +11885,7 @@ ZapdosLv64Card:
 	; attack 1
 	energy LIGHTNING, 3, COLORLESS, 1 ; energies
 	tx ThunderName ; name
-	tx ThunderDescription ; description
+	tx ZapdosThunderDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
 	db DAMAGE_NORMAL ; category
@@ -11913,7 +11913,7 @@ ZapdosLv64Card:
 	db 3 ; retreat cost
 	db NONE ; weakness
 	db WR_FIGHTING ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 64 ; is Dark?, level
 IF METRIC
@@ -11969,7 +11969,7 @@ ZapdosLv68Card:
 	db 2 ; retreat cost
 	db NONE ; weakness
 	db WR_FIGHTING ; resistance
-	tx ThunderJoltName ; category
+	tx ElectricName ; category
 	db DEX_ZAPDOS ; Pokedex number
 	darkness_level FALSE, 68 ; is Dark?, level
 IF METRIC
@@ -12683,7 +12683,7 @@ MankeyLv14Card:
 	; attack 2
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
 	tx AngerName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category

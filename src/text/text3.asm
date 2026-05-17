@@ -1848,7 +1848,7 @@ DeckDiagnosisWaterText:
 	done
 
 DeckDiagnosisLightningText:
-	textfw "雷"
+	text "Lightning"
 	done
 
 DeckDiagnosisFireText:

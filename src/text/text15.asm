@@ -1909,76 +1909,78 @@ PikachuName:
 	done
 
 ThundershockName:
-	textfw "でんきショック"
+	text "Thundershock"
 	done
 
 MouseName:
-	textfw "ねずみ"
+	text "Mouse"
 	done
 
-PikachuLv5Description:
-	textfw "トキワの森で見つけることができる。"
-	linefw "ただ、すばしっこいので捕まえるのが"
-	linefw "大変。"
+PikachusAgilityDescription:
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Pikachu."
 	done
 
 GnawName:
-	textfw "かじる"
+	text "Gnaw"
 	done
 
 ThunderJoltName:
-	textfw "でんげき"
+	text "Thunder Jolt"
 	done
 
 ThunderJoltDescription:
-	textfw "コインを投げて「うら」なら、[自分]に"
-	linefw "も10ダメージ。"
+	text "Flip a coin. If Tails, Pikachu does"
+	line "10 damage to itself."
 	done
 
 PikachuSharedDescription:
-	textfw "ほっぺたの両側に小さい電気袋をもつ。"
-	linefw "ピンチのときに放電する。"
+	text "When several of these Pokémon"
+	line "gather, their electricity could"
+	line "build and cause lightning storms."
 	done
 
 RechargeName:
-	textfw "じゅうでん"
+	text "Recharge"
 	done
 
 RechargeDescription:
-	textfw "自分の山札から「雷」エネルギーカード"
-	linefw "を1枚選び出し、[自分]につける。"
-	linefw "その後、その山札をよく切る。"
+	text "Search your deck for a <LIGHTNING> Energy"
+	line "card and attach it to Pikachu."
+	line "Shuffle your deck afterward."
 	done
 
 ThunderboltName:
-	textfw "10まんボルト"
+	text "Thunderbolt"
 	done
 
 ThunderboltDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」をすべてトラッシュする。"
-	done
-
-PikachuLv13Description:
-	textfw "何匹か集まっているとそこに猛烈な"
-	linefw "電気がたまり、稲妻が落ちることがある"
-	linefw "という。"
+	text "Discard all Energy cards attached to"
+	line "Pikachu in order to use this attack."
 	done
 
 SparkName:
-	textfw "スパーク"
+	text "Spark"
 	done
 
 Do10DamageToABenchedMonDescription:
-	textfw "相手の控えポケモンを1匹選び、"
-	linefw "そのポケモンにも、「弱点・抵抗力」に"
-	linefw "関係なく、10ダメージ。"
+	text "If your opponent has any Benched"
+	line "Pokémon, choose 1 of them and this"
+	line "attack does 10 damage to it. (Don't"
+	line "apply Weakness and Resistance for"
+	line "Benched Pokémon)."
 	done
 
-PikachuLv14Description:
-	textfw "優しい性格で知能が高く、"
-	linefw "愛敬もあるので、研究者の間でも"
-	linefw "人気ナンバー1のポケモンだ。"
+PikachusGrowlDescription:
+	text "If the Defending Pokémon attacks"
+	line "Pikachu during your opponent's next"
+	line "turn, any damage done by the attack"
+	line "is reduced by 10 (after applying"
+	line "Weakness and Resistance)."
+	line "(Benching or evolving either Pokémon"
+	line "ends this effect)."
 	done
 
 FlyingPikachuName:
@@ -1986,19 +1988,22 @@ FlyingPikachuName:
 	done
 
 FlyName:
-	textfw "そらをとぶ"
+	text "Fly"
 	done
 
 FlyDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "このワザは失敗する。「おもて」なら、"
-	linefw "次の相手の番、このカードはワザによる"
-	linefw "ダメージや効果を受けない。"
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Flying Pikachu."
+	line "If Tails, this attack does nothing"
+	line "(not even damage)."
 	done
 
 FlyingPikachuDescription:
-	textfw "空を飛ぶことによって自らの弱点を"
-	linefw "克服したピカチュウだ。"
+	text "By learning how to fly, Pikachu"
+	line "overcame its weakness to Fighting"
+	line "Pokémon."
 	done
 
 SurfingPikachuName:
@@ -2006,9 +2011,9 @@ SurfingPikachuName:
 	done
 
 SurfingPikachuDescription:
-	textfw "ある夏休み。波の高い海岸で、"
-	linefw "なみのりをしているピカチュウが発見"
-	linefw "された。"
+	text "One summer, a group of Pikachu"
+	line "was found riding the waves at the"
+	line "local beach."
 	done
 
 RaichuName:
@@ -2016,64 +2021,66 @@ RaichuName:
 	done
 
 ShortCircuitName:
-	textfw "ろうでん"
+	text "Short Circuit"
 	done
 
 ShortCircuitDescription:
-	textfw "相手の場のポケモンから1匹を選び、"
-	linefw "そのポケモンについている「水」エネル"
-	linefw "ギーの数×10ダメージを、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "そのポケモンに与える。"
+	text "Choose 1 of your opponent's Pokémon."
+	line "This attack does 10 damage to that"
+	line "Pokémon for each <WATER> Energy card"
+	line "attached to it. (Don't apply"
+	line "Weakness and Resistance)."
 	done
 
 SparkingKickName:
-	textfw "ビリビリキック"
-	done
-
-RaichuLv32Description:
-	textfw "長いしっぽがアースになって身を守る"
-	linefw "ため、自分自身は高電圧にもしびれない"
-	linefw "のだ。"
-	done
-
-QuickAttackAltDescription1:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "20ダメージを追加する。"
+	text "Sparking Kick"
 	done
 
 ThunderboltAltDescription1:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」を、すべてトラッシュする。"
+	text "Discard all Energy cards attached to"
+	line "Raichu in order to use this attack."
 	done
 
 RaichuLv33Description:
-	textfw "体に電気がたまってくると、攻擊的な"
-	linefw "性格に変る。暗いところで光って見える"
+	text "When electricity builds up inside"
+	line "its body, it becomes feisty. It also"
+	line "glows in the dark."
+	done
+
+RaichusAgilityDescription:
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Raichu."
 	done
 
 ThunderName:
-	textfw "かみなり"
+	text "Thunder"
 	done
 
-ThunderDescription:
-	textfw "コインを投げて「うら」なら、[自分]に"
-	linefw "も30ダメージ。"
+RaichusThunderDescription:
+	text "Flip a coin. If Tails, Raichu does"
+	line "30 damage to itself."
 	done
 
 RaichuSharedDescription:
-	textfw "電擊は10万ボルトに達することもあり"
-	linefw "ヘタにさわるとインドゾウでも気絶する"
+	text "Its long tail serves as a ground to"
+	line "protect itself from its own"
+	line "high-voltage power."
 	done
 
 GigashockName:
-	textfw "ギガスパーク"
+	text "Gigashock"
 	done
 
 GigashockDescription:
-	textfw "相手の控えポケモンを3匹選び、"
-	linefw "それらのポケモンにも、「弱点・抵抗力"
-	linefw "」に関係なく、それぞれ10ダメージ。"
+	text "Choose 3 of your opponent's Benched"
+	line "Pokémon and this attack does 10"
+	line "damage to each of them. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). If your opponent has fewer"
+	line "than 3 Benched Pokémon, do the"
+	line "damage to each of them."
 	done
 
 DarkRaichuName:
@@ -2081,18 +2088,21 @@ DarkRaichuName:
 	done
 
 SurpriseThunderName:
-	textfw "びっくりサンダー"
+	text "Surprise Thunder"
 	done
 
 SurpriseThunderDescription:
-	textfw "相手のベンチのポケモン全員に"
-	linefw "ランダムで「弱点・抵抗力」に関係なく"
-	linefw "「0、10、20」いずれかのダメージ"
+	text "This attack does 0, 10, or 20"
+	line "damage, chosen at random, to each of"
+	line "your opponent's Benched Pokémon."
+	line "(Don't apply Weakness and Resistance"
+	line "for Benched Pokémon)."
 	done
 
 DarkRaichuDescription:
-	textfw "身体にたまった電気を、いたずらに"
-	linefw "放電して、まわりをおどろかせる。"
+	text "Stores up electricity in its body,"
+	line "then suddenly releases it to"
+	line "surprise and shock everyone."
 	done
 
 MagnemiteName:
@@ -2100,84 +2110,87 @@ MagnemiteName:
 	done
 
 MagnetismName:
-	textfw "ちょくれつじりょく"
+	text "Magnetism"
 	done
 
 MagnetismDescription:
-	textfw "自分のベンチにいる「コイル」「レアコ"
-	linefw "イル」「わるいレアコイル」1匹につき"
-	linefw "10ダメージを追加する。"
+	text "Does 10 damage plus 10 more damage"
+	line "for each Magnemite, Magneton, and"
+	line "Dark Magneton on your Bench."
 	done
 
 MagnetCategoryName:
-	textfw "じしゃく"
+	text "Magnet"
 	done
 
 MagnemiteLv12Description:
-	textfw "複数のコイル、レアコイルが集まると"
-	linefw "強力な磁力結界が形成されるという。"
+	text "It is said that if enough Magnemite"
+	line "and Magneton gather in one place,"
+	line "they can create a powerful magnetic"
+	line "barrier."
 	done
 
 ThunderWaveName:
-	textfw "でんじは"
+	text "Thunder Wave"
 	done
 
 Selfdestruct40DamageDescription:
-	textfw "[自分]にも40ダメージ。"
-	linefw "おたがいの控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "10ダメージ。"
+	text "Does 10 damage to each Pokémon on"
+	line "each player's Bench. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). Magnemite does 40 damage"
+	line "to itself."
 	done
 
 MagnemiteLv13Description:
-	textfw "空中に浮いたまま移動して、"
-	linefw "左右のユニットから電磁波などを"
-	linefw "放射する。"
+	text "Uses anti-gravity to stay suspended."
+	line "Appears without warning and uses"
+	line "attacks like Thunder Wave."
 	done
 
 MagneticStormName:
-	textfw "じきあらし"
+	text "Magnetic Storm"
 	done
 
 MagneticStormDescription:
-	textfw "自分の場にいるポケモンについている"
-	linefw "「エネルギーカード」はすべてはがされ"
-	linefw "自分の場のポケモンにつけなおされる。"
-	linefw "どの「エネルギーカード」が、どの"
-	linefw "ポケモンにつけられるかは、自動的に"
-	linefw "決まる。"
+	text "Remove all Energy cards attached to"
+	line "all of your Pokémon, then randomly"
+	line "reattach each of them."
 	done
 
 MagnemiteLv14Description:
-	textfw "反重力で浮いてるらしい。"
-	linefw "どこからともなく現われて電磁波などを"
-	linefw "放射する。"
+	text "It is born with the ability to defy"
+	line "gravity. Floats in air on powerful"
+	line "electromagnetic waves."
 	done
 
 MagnetMoveDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、自分の"
-	linefw "山札から「コイル」を選び出し、ベンチ"
-	linefw "に出す。その後、その山札をよく切る。"
-	linefw "自分のベンチに空きがないときや、この"
-	linefw "カードが「ねむり・マヒ・こんらん」"
-	linefw "状態のとき、この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, search your deck for a Basic"
+	line "Pokémon named Magnemite and put it"
+	line "onto your Bench. Shuffle your deck"
+	line "afterward."
+	done
+
+MagnetMoveDescriptionCont:
+	text "This Power can't be used if your"
+	line "Bench is full or if Magnemite is"
+	line "Asleep, Confused, or Paralyzed."
 	done
 
 SuperconductivityName:
-	textfw "ちょうでんどう"
+	text "Superconductivity"
 	done
 
 SuperconductivityDescription:
-	textfw "相手の場のポケモンから1匹を選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージ。"
-	done
-
-MagnemiteLv15Description:
-	textfw "反重力で浮いているらしい。"
-	linefw "どこからともなく現れて電磁波などを"
-	linefw "放射する。"
+	text "Choose 1 of your opponent's Pokémon."
+	line "This attack does 10 damage to that"
+	line "Pokémon. Don't apply Weakness and" 
+	line "Resistance for this attack. (Any"
+	line "other effects that would happen" 
+	line "after applying Weakness and"
+	line "Resistance still happen)."
 	done
 
 MagnetonName:
@@ -2185,78 +2198,73 @@ MagnetonName:
 	done
 
 Selfdestruct80DamageDescription:
-	textfw "[自分]にも80ダメージ。"
-	linefw "おたがいの控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "20ダメージ。"
+	text "Does 20 damage to each Pokémon on"
+	line "each player's Bench. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). Magneton does 80 damage to"
+	line "itself."
 	done
 
 MagnetonSharedDescription:
-	textfw "複数のコイルが連結して"
-	linefw "強力な磁力線と高電圧を放射する。"
+	text "Formed by several Magnemite linked"
+	line "together. It frequently appears when"
+	line "sunspots flare up."
 	done
 
 MicrowaveName:
-	textfw "マイクロウェーブ"
+	text "Microwave"
 	done
 
 MicrowaveDescription:
-	textfw "相手の場のポケモンから1匹を選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "20ダメージ。コインを投げて"
-	linefw "「おもて」なら、そのポケモンに"
-	linefw "ついている「エネルギーカード」を"
-	linefw "1枚選び、トラッシュする。"
-	done
-
-MagnetonLv30Description:
-	textfw "連けつしたタイプのコイルは、"
-	linefw "太陽の黑点が多い時、たくさん現れると"
-	linefw "言われる。"
+	text "Choose 1 of your opponent's Pokémon."
+	line "This attack does 20 damage to that"
+	line "Pokémon. (Don't apply Weakness and" 
+	line "Resistance). Flip a coin. If Heads,"
+	line "discard 1 Energy card attached to"
+	line "that Pokémon."
 	done
 
 SonicboomName:
-	textfw "ソニックブーム"
+	text "Sonicboom"
 	done
 
 SonicboomDescription:
-	textfw "このワザのダメージは、[相手]の「弱点"
-	linefw "・抵抗力」の影響を受けない。"
+	text "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
-Selfdestruct100DamageDescription:
-	textfw "[自分]にも100ダメージ。"
-	linefw "おたがいの控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "20ダメージ。"
+MagnetonLv35sSelfdestructDescription:
+	text "Does 20 damage to each Pokémon on"
+	line "each player's Bench. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). Magneton does 100 damage"
+	line "to itself."
 	done
 
 DarkMagnetonName:
 	text "Dark Magneton"
 	done
 
-SonicboomAltDescription:
-	textfw "このワザのダメージは、[相手]の"
-	linefw "「弱点・抵抗力」の影響を受けない。"
-	done
-
 MagneticLinesName:
-	textfw "じりょくせん"
+	text "Magnetic Lines"
 	done
 
 MagneticLinesDescription:
-	textfw "[相手]についている「基本エネルギー"
-	linefw "カード」を1枚選んではがす。その後、"
-	linefw "相手の控えポケモンを1匹選び、"
-	linefw "はがした「基本エネルギーカード」を"
-	linefw "つける。相手に控えがいないとき、"
-	linefw "エネルギーのつけ替えはしない。"
+	text "If the Defending Pokémon has any"
+	line "basic Energy cards attached to it,"
+	line "choose 1 of them. If your opponent"
+	line "has any Benched Pokémon, choose 1 of"
+	line "them and attach that Energy card to"
+	line "it."
 	done
 
 DarkMagnetonDescription:
-	textfw "レアコイルの磁力線を利用して、"
-	linefw "パソコンのデータを破壊する事件が"
-	linefw "多発しているという。"
+	text "The number of incidents of hackers"
+	line "using Magneton to damage computer"
+	line "systems is steadily increasing."
 	done
 
 VoltorbName:
@@ -2264,37 +2272,34 @@ VoltorbName:
 	done
 
 GroupSparkName:
-	textfw "みんなでスパーク"
+	text "Group Spark"
 	done
 
 GroupSparkDescription:
-	textfw "おたがいの場にいる「ビリリダマ」の数"
-	linefw "×10のダメージを追加する。"
+	text "This attack does 20 damage plus 10"
+	line "more damage for each Voltorb in"
+	line "play."
 	done
 
 BallName:
-	textfw "ボール"
-	done
-
-VoltorbLv8Description:
-	textfw "発電所などに現れる。"
-	linefw "モンスターボールとまちがえてさわって"
-	linefw "しびれる人が多い。"
+	text "Ball"
 	done
 
 VoltorbLv10Description:
-	textfw "正体不明の生き物。いやな音をだしたり"
-	linefw "突然自爆したりすることもあるという。"
+	text "Usually found in power plants."
+	line "Easily mistaken for a Poké Ball, it"
+	line "has zapped many people."
 	done
 
 SpeedBallName:
-	textfw "スピードボール"
+	text "Speed Ball"
 	done
 
 VoltorbLv13Description:
-	textfw "発電所などに多く生息するが、"
-	linefw "電線などを伝わってくるのか、町でも"
-	linefw "見かけるようになった。"
+	text "Usually seen only in power plants,"
+	line "it is sometimes seen in towns,"
+	line "apparently using the power lines to"
+	line "travel."
 	done
 
 ElectrodeName:
@@ -2302,37 +2307,39 @@ ElectrodeName:
 	done
 
 EnergySpikeName:
-	textfw "エナジーコントロール"
+	text "Energy Spike"
 	done
 
 EnergySpikeDescription:
-	textfw "自分の山札から「基本エネルギーカード"
-	linefw "」を1枚選び出し、自分の場のポケモン"
-	linefw "1匹につける。その後、その山札をよく"
-	linefw "切る。"
+	text "Search your deck for a basic Energy"
+	line "card and attach it to 1 of your"
+	line "Pokémon. Shuffle your deck"
+	line "afterward."
 	done
 
 ElectrodeLv35Description:
-	textfw "膨大なエレクトンエネルギーを"
-	linefw "ためこんでおり、ちょっとした刺激で"
-	linefw "大爆発を起こす。"
+	text "Stores electrical energy inside its"
+	line "body. Even the slightest shock could"
+	line "trigger a huge explosion."
 	done
 
 ChainLightningName:
-	textfw "ビリビリ"
+	text "Chain Lightning"
 	done
 
 ChainLightningDescription:
-	textfw "おたがいの控えポケモンのうち、[相手]"
-	linefw "と同じ「色(タイプ)」のもの全員に、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "10ダメージ。"
+	text "If the Defending Pokémon isn't <COLORLESS>,"
+	line "this attack does 10 damage to each"
+	line "Benched Pokémon of the same type as"
+	line "the Defending Pokémon (including"
+	line "your own)."
 	done
 
 ElectrodeLv42Description:
-	textfw "帶電性でしかも、好戦的な性格のため、"
-	linefw "なるべく近くに寄らないほうが"
-	linefw "無難である。"
+	text "It stores electrical energy under"
+	line "very high pressure. It often"
+	line "explodes with little or no"
+	line "provocation."
 	done
 
 DarkElectrodeName:
@@ -2340,21 +2347,23 @@ DarkElectrodeName:
 	done
 
 EnergyBombName:
-	textfw "エナジーボム"
+	text "Energy Bomb"
 	done
 
 EnergyBombDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」をすべてはがし、自分の控えポケモン"
-	linefw "に好きなようにつける。(自分に控えが"
-	linefw "いないとき、「エネルギーカード」は"
-	linefw "トラッシュする)"
+	text "Remove all Energy cards attached to"
+	line "Dark Electrode, then reattach them"
+	line "to your Benched Pokémon (in any way"
+	line "you choose). If you have no Benched"
+	line "Pokémon, discard all Energy cards"
+	line "attached to Dark Electrode."
 	done
 
 DarkElectrodeDescription:
-	textfw "研究者の間で、マルマインは、ある種の"
-	linefw "エネルギー体ではないかと考えられて"
-	linefw "いるようだ。"
+	text "Some researchers hypothesize that"
+	line "Electrode may actually be a form of"
+	line "energy instead of having an actual"
+	line "body."
 	done
 
 SECTION "Text 22", ROMX
@@ -2364,39 +2373,56 @@ ElectabuzzName:
 	done
 
 LightScreenName:
-	textfw "ひかりのかべ"
+	text "Light Screen"
 	done
 
 LightScreenDescription:
-	textfw "次の相手の番、このカードが受ける"
-	linefw "ダメージは半分(切りすて)になる。"
-	linefw "(ダメージ以外の効果はそのまま)"
+	text "Whenever an attack does damage to"
+	line "Electabuzz (after applying Weakness"
+	line "and Resistance) during your"
+	line "opponent's next turn, that attack"
+	line "only does half the damage to"
+	line "Electabuzz (rounded down to the"
+	line "nearest 10)."
+	done
+
+LightScreenDescriptionCont:
+	text "(Any other effects of attacks still"
+	line "happen)."
+	done
+
+ElectricName:
+	text "Electric"
 	done
 
 ElectabuzzLv20Description:
-	textfw "捕獲することがとても難しいポケモン。"
-	linefw "色を識別する能力があり、赤色を好む。"
+	text "A wild Pokémon with a short temper."
+	line "It is able to distinguish colors"
+	line "and likes the color red."
 	done
 
 ElectabuzzLv30Description:
-	textfw "大きな停電がおきた時は、エレブーが"
-	linefw "発電所の電気を食べたにちがいない。"
+	text "If a major power outage occurs, it"
+	line "is certain that this Pokémon has"
+	line "eaten electricity at a power plant."
 	done
 
 ThunderpunchName:
-	textfw "かみなりパンチ"
+	text "Thunderpunch"
 	done
 
 ThunderpunchDescription:
-	textfw "コインを投げて「おもて」なら、10ダ"
-	linefw "メージを追加する。「うら」なら、"
-	linefw "[自分]にも10ダメージ。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 30 damage plus 10 more damage;"
+	line "if Tails, this attack does 30 damage"
+	line "and Electabuzz does 10 damage to"
+	line "itself."
 	done
 
 ElectabuzzLv35Description:
-	textfw "つよい電気が大好物で、"
-	linefw "大きな発電所などにしばしば"
-	linefw "あらわれる。"
+	text "Normally found near power plants,"
+	line "it can wander away and cause major"
+	line "blackouts in cities."
 	done
 
 JolteonName:
@@ -2404,39 +2430,33 @@ JolteonName:
 	done
 
 Do20DamageNumberOfHeadsDescription:
-	textfw "コインを2枚投げ、「おもて」の数"
-	linefw "×20のダメージ。"
+	text "Flip 2 coins. This attack does 20"
+	line "damage times the number of Heads."
 	done
 
 StunNeedleName:
-	textfw "しびればり"
+	text "Stun Needle"
 	done
 
 JolteonLv24Description:
-	textfw "怒ったり驚いたりすると、"
-	linefw "全身の毛が針のように逆立って"
-	linefw "相手を貫く。"
-	done
-
-QuickAttackAltDescription2:
-	textfw "コインを投げて「おもて」なら、20ダ"
-	linefw "メージを追加する。"
-	linefw ""
+	text "A sensitive Pokémon that easily"
+	line "becomes sad or angry. Every time"
+	line "its mood changes, it charges power."
 	done
 
 PinMissileName:
-	textfw "ミサイルばり"
+	text "Pin Missile"
 	done
 
 PinMissileDescription:
-	textfw "コインを4枚投げ、「おもて」の数"
-	linefw "×20のダメージ。"
+	text "Flip 4 coins. This attack does 20"
+	line "damage times the number of Heads."
 	done
 
 JolteonLv29Description:
-	textfw "怒ったり驚いたりすると、"
-	linefw "全身の毛が針の様に逆立って"
-	linefw "相手をつらぬく。"
+	text "It accumulates negative ions from"
+	line "the atmosphere to blast out 10,000-"
+	line "volt lightning bolts."
 	done
 
 DarkJolteonName:
@@ -2444,29 +2464,25 @@ DarkJolteonName:
 	done
 
 LightningFlashName:
-	textfw "サンダーフラッシュ"
-	done
-
-LightningFlashDescription:
-	textfw "次の相手の番、このワザを受けた"
-	linefw "[相手]は、ワザを使うときにコインを"
-	linefw "投げ、「うら」ならそのワザは失敗する"
+	text "Lightning Flash"
 	done
 
 ThunderAttackName:
-	textfw "サンダーアタック"
+	text "Thunder Attack"
 	done
 
 ThunderAttackDescription:
-	textfw "コインを投げて「おもて」なら[相手]を"
-	linefw "「マヒ」状態にする。「うら」なら"
-	linefw "自分に10ダメージ。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Paralyzed. If Tails,"
+	line "Dark Jolteon does 10 damage to"
+	line "itself."
 	done
 
 DarkJolteonDescription:
-	textfw "体内にためた電気をつかって、"
-	linefw "イタズラをすることがある。"
-	linefw "怒らせると恐いポケモンだ。"
+	text "A dangerous Pokémon when angered. It"
+	line "likes to playfully shock people with"
+	line "electricity it stores within its"
+	line "body."
 	done
 
 ZapdosName:
@@ -2474,91 +2490,94 @@ ZapdosName:
 	done
 
 RagingThunderName:
-	textfw "らくらい"
+	text "Raging Thunder"
 	done
 
 RagingThunderDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "自分の場のポケモンから1匹を選び、"
-	linefw "そのポケモンにも、「弱点・抵抗力」に"
-	linefw "関係なく、30ダメージ。"
+	text "Flip a coin. If Tails, this attack"
+	line "does 30 damage to 1 of your Pokémon."
+	line "(Don't apply Weakness and"
+	line "Resistance.)"
 	done
 
 ThunderCrashName:
-	textfw "サンダークラッシュ"
+	text "Thunder Crash"
 	done
 
 ThunderCrashDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "20ダメージを追加する。「うら」なら"
-	linefw "[自分]にも20ダメージ。"
-	done
-
-ZapdosLv28Description:
-	textfw "雲の上から巨大な稲妻を落としながら"
-	linefw "現れる伝説のとりポケモンである。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 50 damage plus 20 more damage;"
+	line "If Tails, this attack does 50 damage"
+	line "and Zapdos does 20 damage to itself."
 	done
 
 ThunderstormName:
-	textfw "サンダーストーム"
+	text "Thunderstorm"
 	done
 
 ThunderstormDescription:
-	textfw "相手の控えポケモンそれぞれに対して"
-	linefw "コインを投げ、「おもて」ならそのポケ"
-	linefw "モンに、「弱点・抵抗力」に関係なく、"
-	linefw "20ダメージ。相手の控えポケモン全員"
-	linefw "に対してコインを投げ終わったら、"
-	linefw "その間に出た「うら」の数×10ダメー"
-	linefw "ジを[自分]に与える。"
+	text "For each of your opponent's Benched"
+	line "Pokémon, flip a coin. If Heads,"
+	line "this attack does 20 damage to that"
+	line "Pokémon. (Don't apply Weakness and"
+	line "Resistance for Benched Pokémon)."
+	line "Then, Zapdos does 10 damage times"
+	line "the number of Tails to itself."
 	done
 
 ZapdosLv40Description:
-	textfw "天を司る神の鳥として、"
-	linefw "雲の上で数千年の時を過ごしている。"
-	linefw "雷はサンダーの怒りか?!"
+	text "A legendary thunderbird Pokémon"
+	line "whose anger is said to cause storms."
+	line "Some say it has lived above the"
+	line "clouds for thousands of years."
+	done
+
+ZapdosThunderDescription:
+	text "Flip a coin. If Tails, Zapdos does"
+	line "30 damage to itself."
 	done
 
 ThunderboltAltDescription2:
-	textfw "[自分]についているエネルギーカードを"
-	linefw "すべてトラッシュする。"
+	text "Discard all Energy cards attached to"
+	line "Zapdos in order to use this attack."
 	done
 
 ZapdosLv64Description:
-	textfw "伝説の鳥ポケモンのひとつ。"
-	linefw "飛ぶときにバチバチとなにかの"
-	linefw "はじけるような音がする。"
+	text "A legendary bird Pokémon said to"
+	line "appear from clouds while wielding"
+	line "enormous lightning bolts."
 	done
 
 PealOfThunderName:
-	textfw "カミングサンダー"
+	text "Peal of Thunder"
 	done
 
 PealOfThunderDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。(対戦の"
-	linefw "初めに場に出したときには、使えない)"
-	linefw "このカード以外の、場にいる全てのポケ"
-	linefw "モンの中から1匹に、「弱点・抵抗力」"
-	linefw "に関係なく、30ダメージ。ダメージを"
-	linefw "受けるポケモンは、自動的に選ばれる。"
+	text "When you put Zapdos into play during"
+	line "your turn (not during set-up), do"
+	line "30 damage to a Pokémon other than"
+	line "Zapdos chosen at random. (Don't"
+	line "apply Weakness and Resistance)."
 	done
 
 BigThunderName:
-	textfw "ビッグサンダー"
+	text "Big Thunder"
 	done
 
 BigThunderDescription:
-	textfw "場にいる全てのポケモンのうち、このカ"
-	linefw "ード以外の1匹に、「弱点・抵抗力」に"
-	linefw "関係なく、70ダメージ。"
-	linefw "ダメージを受けるポケモンは、自動的に"
-	linefw "選ばれる。"
+	text "Choose a Pokémon other than Zapdos"
+	line "at random. This attack does 70"
+	line "damage to that Pokémon. Don't apply"
+	line "Weakness and Resistance for this"
+	line "attack. (Any other effects that"
+	line "would happen after applying Weakness"
+	line "and Resistance still happen)."
 	done
 
 ZapdosLv68Description:
-	textfw "雲の上から巨大な稲妻を落としながら"
-	linefw "現れる、伝説の鳥ポケモンである。"
+	text "This legendary bird Pokémon is said"
+	line "to appear when the sky turns dark"
+	line "and lightning showers down."
 	done
 
 SandshrewName:
