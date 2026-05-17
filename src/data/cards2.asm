@@ -51,7 +51,7 @@ ELSE
 	length 4, 11 ; length
 	weight 155.0 ; weight
 ENDC
-	tx MachokeLv24Description ; description
+	tx MachokeLv40Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MachokeLv28Card:
@@ -83,7 +83,7 @@ MachokeLv28Card:
 	; attack 2
 	energy FIGHTING, 3 ; energies
 	tx SteadyPunchName ; name
-	tx QuickAttackDescription ; description
+	tx SteadyPunchDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -107,7 +107,7 @@ ELSE
 	length 4, 11 ; length
 	weight 155.0 ; weight
 ENDC
-	tx MachokeLv28Description ; description
+	tx MachokeLv40Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MachokeLv40Card:
@@ -139,7 +139,7 @@ MachokeLv40Card:
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 2 ; energies
 	tx SubmissionName ; name
-	tx Do20DamageToSelfDescription ; description
+	tx SubmissionDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
 	db DAMAGE_NORMAL ; category
@@ -275,7 +275,7 @@ ELSE
 	length 5, 3 ; length
 	weight 287.0 ; weight
 ENDC
-	tx MachampLv54Description ; description
+	tx MachampLv67Description ; description
 	db NONE ; AI info
 
 MachampLv67Card:
@@ -443,7 +443,7 @@ ELSE
 	length 1, 4 ; length
 	weight 44.0 ; weight
 ENDC
-	tx GeodudeLv15Description ; description
+	tx GeodudeLv16Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GeodudeLv16Card:
@@ -555,7 +555,7 @@ ELSE
 	length 3, 3 ; length
 	weight 232.0 ; weight
 ENDC
-	tx GravelerLv27Description ; description
+	tx GravelerLv29Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GravelerLv28Card:
@@ -587,7 +587,7 @@ GravelerLv28Card:
 	; attack 2
 	energy FIGHTING, 3 ; energies
 	tx EarthquakeName ; name
-	tx EarthquakeAltDescription ; description
+	tx EarthquakeDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
@@ -611,7 +611,7 @@ ELSE
 	length 3, 3 ; length
 	weight 232.0 ; weight
 ENDC
-	tx GravelerLv28Description ; description
+	tx GravelerLv29Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GravelerLv29Card:
@@ -699,7 +699,7 @@ GolemLv36Card:
 	; attack 2
 	energy FIGHTING, 4 ; energies
 	tx SelfdestructName ; name
-	tx MagnetonLv35sSelfdestructDescription ; description
+	tx GolemsSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
 	db DAMAGE_NORMAL ; category
@@ -756,7 +756,7 @@ GolemLv37Card:
 	energy FIGHTING, 3 ; energies
 	tx RockBlastName ; name
 	tx RockBlastDescription ; description
-	tx RockBlastDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
 	dw GolemRockBlastEffectCommands ; effect commands
@@ -779,7 +779,7 @@ ELSE
 	length 4, 7 ; length
 	weight 662.0 ; weight
 ENDC
-	tx GolemLv37Description ; description
+	tx GolemLv36Description ; description
 	db NONE ; AI info
 
 OnixLv12Card:
@@ -867,7 +867,7 @@ OnixLv25Card:
 	; attack 2
 	energy FIGHTING, 2 ; energies
 	tx RockSealName ; name
-	tx RockSealDescription ; description
+	tx AcidDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -891,7 +891,7 @@ ELSE
 	length 28, 10 ; length
 	weight 463.0 ; weight
 ENDC
-	tx OnixLv25Description ; description
+	tx OnixLv12Description ; description
 	db NONE ; AI info
 
 CuboneLv13Card:
@@ -923,7 +923,7 @@ CuboneLv13Card:
 	; attack 2
 	energy FIGHTING, 2 ; energies
 	tx RageName ; name
-	tx FlareonsRageDescription ; description
+	tx CubonesRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -1003,7 +1003,7 @@ ELSE
 	length 1, 4 ; length
 	weight 14.0 ; weight
 ENDC
-	tx CuboneLv14Description ; description
+	tx CuboneLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MarowakLv26Card:
@@ -1134,7 +1134,7 @@ DarkMarowakCard:
 	energy FIGHTING, 2 ; energies
 	tx BoneHeadbuttName ; name
 	tx BoneHeadbuttDescription ; description
-	dw NONE ; description (cont)
+	tx BoneHeadbuttDescriptionCont ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
 	dw DarkMarowakBoneHeadbuttEffectCommands ; effect commands
@@ -1217,7 +1217,7 @@ HitmonleeLv23Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx KickName ; category
+	tx KickingName ; category
 	db DEX_HITMONLEE ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
 IF METRIC
@@ -1227,7 +1227,7 @@ ELSE
 	length 4, 11 ; length
 	weight 110.0 ; weight
 ENDC
-	tx HitmonleeLv23Description ; description
+	tx HitmonleeLv30Description ; description
 	db NONE ; AI info
 
 HitmonleeLv30Card:
@@ -1273,7 +1273,7 @@ HitmonleeLv30Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx KickName ; category
+	tx KickingName ; category
 	db DEX_HITMONLEE ; Pokedex number
 	darkness_level FALSE, 30 ; is Dark?, level
 IF METRIC
@@ -1329,7 +1329,7 @@ HitmonchanLv23Card:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PunchName ; category
+	tx PunchingName ; category
 	db DEX_HITMONCHAN ; Pokedex number
 	darkness_level FALSE, 23 ; is Dark?, level
 IF METRIC
@@ -1339,7 +1339,7 @@ ELSE
 	length 4, 7 ; length
 	weight 111.0 ; weight
 ENDC
-	tx HitmonchanLv23Description ; description
+	tx HitmonchanLv33Description ; description
 	db NONE ; AI info
 
 HitmonchanLv33Card:
@@ -1385,7 +1385,7 @@ HitmonchanLv33Card:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PunchName ; category
+	tx PunchingName ; category
 	db DEX_HITMONCHAN ; Pokedex number
 	darkness_level FALSE, 33 ; is Dark?, level
 IF METRIC
@@ -1413,7 +1413,7 @@ RhyhornCard:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx LeerName ; name
-	tx LeerDescription ; description
+	tx RhyhornsLeerDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1483,7 +1483,7 @@ RhydonLv37Card:
 	; attack 2
 	energy FIGHTING, 3 ; energies
 	tx OneTwoStrikeName ; name
-	tx QuickAttackDescription ; description
+	tx SteadyPunchDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -1507,7 +1507,7 @@ ELSE
 	length 6, 3 ; length
 	weight 265.0 ; weight
 ENDC
-	tx RhydonLv37Description ; description
+	tx RhydonLv48Description ; description
 	db NONE ; AI info
 
 RhydonLv48Card:
@@ -1540,7 +1540,7 @@ RhydonLv48Card:
 	energy FIGHTING, 4 ; energies
 	tx RamName ; name
 	tx RamDescription ; description
-	dw NONE ; description (cont)
+	tx RamDescriptionCont ; description (cont)
 	db 50 ; damage
 	db DAMAGE_NORMAL ; category
 	dw RhydonRamEffectCommands ; effect commands
@@ -1582,7 +1582,7 @@ KabutoLv9Card:
 	energy 0 ; energies
 	tx KabutoArmorName ; name
 	tx KabutoArmorDescription ; description
-	dw NONE ; description (cont)
+	tx KabutoArmorDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw KabutoKabutoArmorEffectCommands ; effect commands
@@ -1638,7 +1638,7 @@ KabutoLv22Card:
 	energy 0 ; energies
 	tx FossilizeName ; name
 	tx FossilizeDescription ; description
-	tx PrehistoricDreamDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw KabutoFossilizeEffectCommands ; effect commands
@@ -1675,7 +1675,7 @@ ELSE
 	length 1, 8 ; length
 	weight 25.0 ; weight
 ENDC
-	tx KabutoLv22Description ; description
+	tx KabutoLv9Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 KabutopsCard:
@@ -1707,8 +1707,8 @@ KabutopsCard:
 	; attack 2
 	energy FIGHTING, 4 ; energies
 	tx AbsorbName ; name
-	tx VenusaursMegaDrainDescription ; description
-	dw NONE ; description (cont)
+	tx AbsorbDescription ; description
+	tx AbsorbDescriptionCont ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
 	dw KabutopsAbsorbEffectCommands ; effect commands
@@ -1843,7 +1843,7 @@ ELSE
 	length 5, 11 ; length
 	weight 130.0 ; weight
 ENDC
-	tx AerodactylLv30Description ; description
+	tx AerodactylLv28Description ; description
 	db NONE ; AI info
 
 AbraLv8Card:
@@ -7349,7 +7349,7 @@ EeveeLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx TailWhipName ; name
-	tx LeerDescription ; description
+	tx RhyhornsLeerDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category

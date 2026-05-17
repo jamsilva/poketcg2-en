@@ -2587,30 +2587,24 @@ SandshrewName:
 	done
 
 SandAttackName:
-	textfw "すなかけ"
+	text "Sand-attack"
 	done
 
 SandshrewLv12Description:
-	textfw "地面に穴を掘って住む。"
-	linefw "自分に危険が迫ると丸くなって"
-	linefw "身をまもる。"
+	text "Burrows deep underground in arid"
+	line "locations far from water. It only"
+	line "emerges to hunt for food."
 	done
 
 SwiftName:
-	textfw "スピードスター"
+	text "Swift"
 	done
 
 SwiftDescription:
-	textfw "このワザのダメージは、"
-	linefw "[相手]の持っている「弱点・抵抗力・"
-	linefw "特殊能力・その他の効果」の影響を"
-	linefw "受けない。"
-	done
-
-SandshrewLv15Description:
-	textfw "水気の少ない場所に、深い穴を掘って"
-	linefw "かくれる。えものをねらうときは出て"
-	linefw "くる。"
+	text "Don't apply Weakness and Resistance,"
+	line "Pokémon Powers, or any other effects"
+	line "to the Defending Pokémon for this"
+	line "attack."
 	done
 
 SandslashName:
@@ -2618,34 +2612,37 @@ SandslashName:
 	done
 
 FurySwipes20DamageDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×20のダメージ。"
+	text "Flip 3 coins. This attack does 20"
+	line "damage times the number of Heads."
 	done
 
 SandslashLv33Description:
-	textfw "すばしっこく走りまわり、"
-	linefw "背中の針と鋭い爪の攻擊が得意。"
+	text "Curls up into a spiny ball when"
+	line "threatened. It can roll while curled"
+	line "up to attack or escape."
 	done
 
 SandVeilName:
-	textfw "すながくれ"
+	text "Sand Veil"
+	done
+
+SandVeilDescription:
+	text "Flip a coin. If Heads, prevent all"
+	line "damage done to Sandslash during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 RollingNeedleName:
-	textfw "ローリングニードル"
+	text "Rolling Needle"
 	done
 
 RollingNeedleDescription:
-	textfw "コインを3枚投げ、「おもて」の数"
-	linefw "×10のダメージを追加する。"
-	linefw "その後、[自分]にも「おもて」の数"
-	linefw "×10のダメージ。"
-	done
-
-SandslashLv35Description:
-	textfw "背中を丸めるとトゲトゲのボールみたい"
-	linefw "だ。そのまま転がってぶつかってきたり"
-	linefw "逃げたりする。"
+	text "Flip 3 coins. This attack does 40"
+	line "damage plus 10 more damage for each"
+	line "Heads. Then, Sandslash does 10"
+	line "damage times the number of Heads to"
+	line "itself."
 	done
 
 DiglettName:
@@ -2653,23 +2650,23 @@ DiglettName:
 	done
 
 DigName:
-	textfw "あなをほる"
+	text "Dig"
 	done
 
 MudSlapName:
-	textfw "どろかけ"
+	text "Mud Slap"
 	done
 
 MoleName:
-	textfw "もぐら"
+	text "Mole"
 	done
 
 DiglettLv8Description:
-	textfw "地中の浅い所を移動。"
-	linefw "掘り進んでいった後は、地面が"
-	linefw "盛り上がっているのですぐにわかる。"
+	text "Lives about three feet underground,"
+	line "where it feeds on plant roots. It"
+	line "sometimes appears above ground."
 	done
 
 DigUnderName:
-	textfw "じめんにもぐる"
+	text "Dig Under"
 	done

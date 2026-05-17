@@ -5722,21 +5722,21 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SandshrewLv12Description                              ; 0x1647
 	textpointer SwiftName                                             ; 0x1648
 	textpointer SwiftDescription                                      ; 0x1649
-	textpointer SandshrewLv15Description                              ; 0x164a
+	textpointer SinkholeDescriptionCont                               ; 0x164a
 	textpointer SandslashName                                         ; 0x164b
 	textpointer FurySwipes20DamageDescription                         ; 0x164c
 	textpointer SandslashLv33Description                              ; 0x164d
 	textpointer SandVeilName                                          ; 0x164e
 	textpointer RollingNeedleName                                     ; 0x164f
 	textpointer RollingNeedleDescription                              ; 0x1650
-	textpointer SandslashLv35Description                              ; 0x1651
+	textpointer SandVeilDescription                                   ; 0x1651
 	textpointer DiglettName                                           ; 0x1652
 	textpointer DigName                                               ; 0x1653
 	textpointer MudSlapName                                           ; 0x1654
 	textpointer MoleName                                              ; 0x1655
 	textpointer DiglettLv8Description                                 ; 0x1656
 	textpointer DigUnderName                                          ; 0x1657
-	textpointer DigUnderDescription                                   ; 0x1658
+	textpointer PeekDescriptionCont                                   ; 0x1658
 	textpointer DiglettLv15Description                                ; 0x1659
 	textpointer TripOverName                                          ; 0x165a
 	textpointer DiglettLv16Description                                ; 0x165b
@@ -5779,7 +5779,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer FocusedOneShotDescription                             ; 0x1680
 	textpointer CorkscrewPunchName                                    ; 0x1681
 	textpointer SuperpowerName                                        ; 0x1682
-	textpointer MachopLv18Description                                 ; 0x1683
+	textpointer AngerDescription                                      ; 0x1683
 	textpointer LowKickName                                           ; 0x1684
 	textpointer MachopLv20Description                                 ; 0x1685
 	textpointer PunchName                                             ; 0x1686
@@ -5789,10 +5789,10 @@ SECTION "Text Offsets 2", ROMX
 	textpointer WickedJabName                                         ; 0x168a
 	textpointer FocusBlastName                                        ; 0x168b
 	textpointer FocusBlastDescription                                 ; 0x168c
-	textpointer MachokeLv24Description                                ; 0x168d
+	textpointer SteadyPunchDescription                                ; 0x168d
 	textpointer MegaKickName                                          ; 0x168e
 	textpointer SteadyPunchName                                       ; 0x168f
-	textpointer MachokeLv28Description                                ; 0x1690
+	textpointer SubmissionDescription                                 ; 0x1690
 	textpointer KarateChopName                                        ; 0x1691
 	textpointer KarateChopDescription                                 ; 0x1692
 	textpointer SubmissionName                                        ; 0x1693
@@ -5806,7 +5806,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SeethingAngerName                                     ; 0x169b
 	textpointer SeethingAngerDescription                              ; 0x169c
 	textpointer FlingName                                             ; 0x169d
-	textpointer MachampLv54Description                                ; 0x169e
+	textpointer UNUSED_169E                                           ; 0x169e
 	textpointer StrikesBackName                                       ; 0x169f
 	textpointer StrikesBackDescription                                ; 0x16a0
 	textpointer StrikesBackDescriptionCont                            ; 0x16a1
@@ -5820,18 +5820,18 @@ SECTION "Text Offsets 2", ROMX
 	textpointer HardenName                                            ; 0x16a9
 	textpointer Harden20DamageDescription                             ; 0x16aa
 	textpointer RockName                                              ; 0x16ab
-	textpointer GeodudeLv15Description                                ; 0x16ac
+	textpointer UNUSED_16AC                                           ; 0x16ac
 	textpointer StoneBarrageName                                      ; 0x16ad
 	textpointer StoneBarrage10DamageDescription                       ; 0x16ae
 	textpointer GeodudeLv16Description                                ; 0x16af
 	textpointer GravelerName                                          ; 0x16b0
 	textpointer BoulderSmashName                                      ; 0x16b1
 	textpointer BoulderSmashDescription                               ; 0x16b2
-	textpointer GravelerLv27Description                               ; 0x16b3
+	textpointer UNUSED_16B3                                           ; 0x16b3
 	textpointer UNUSED_16B4                                           ; 0x16b4
 	textpointer StoneBarrage20DamageDescription                       ; 0x16b5
-	textpointer EarthquakeAltDescription                              ; 0x16b6
-	textpointer GravelerLv28Description                               ; 0x16b7
+	textpointer UNUSED_16B6                                           ; 0x16b6
+	textpointer UNUSED_16B7                                           ; 0x16b7
 	textpointer Harden30DamageDescription                             ; 0x16b8
 	textpointer RockThrowName                                         ; 0x16b9
 	textpointer GravelerLv29Description                               ; 0x16ba
@@ -5841,15 +5841,15 @@ SECTION "Text Offsets 2", ROMX
 	textpointer GolemLv36Description                                  ; 0x16be
 	textpointer RockBlastName                                         ; 0x16bf
 	textpointer RockBlastDescription                                  ; 0x16c0
-	textpointer RockBlastDescriptionCont                              ; 0x16c1
-	textpointer GolemLv37Description                                  ; 0x16c2
+	textpointer GolemsSelfdestructDescription                         ; 0x16c1
+	textpointer UNUSED_16C2                                           ; 0x16c2
 	textpointer OnixName                                              ; 0x16c3
 	textpointer Harden30DamageAltDescription                          ; 0x16c4
 	textpointer RockSnakeName                                         ; 0x16c5
 	textpointer OnixLv12Description                                   ; 0x16c6
 	textpointer RockSealName                                          ; 0x16c7
-	textpointer RockSealDescription                                   ; 0x16c8
-	textpointer OnixLv25Description                                   ; 0x16c9
+	textpointer UNUSED_16C8                                           ; 0x16c8
+	textpointer CubonesRageDescription                                ; 0x16c9
 	textpointer CuboneName                                            ; 0x16ca
 	textpointer SnivelName                                            ; 0x16cb
 	textpointer SnivelDescription                                     ; 0x16cc
@@ -5857,7 +5857,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer CuboneLv13Description                                 ; 0x16ce
 	textpointer BoneTossName                                          ; 0x16cf
 	textpointer BoneTossDescription                                   ; 0x16d0
-	textpointer CuboneLv14Description                                 ; 0x16d1
+	textpointer BoneHeadbuttDescriptionCont                           ; 0x16d1
 	textpointer MarowakName                                           ; 0x16d2
 	textpointer BonemerangName                                        ; 0x16d3
 	textpointer CallForFriendName                                     ; 0x16d4
@@ -5875,7 +5875,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DarkMarowakDescription                                ; 0x16e0
 	textpointer HitmonleeName                                         ; 0x16e1
 	textpointer RollingKickName                                       ; 0x16e2
-	textpointer HitmonleeLv23Description                              ; 0x16e3
+	textpointer KickingName                                           ; 0x16e3
 	textpointer StretchKickName                                       ; 0x16e4
 	textpointer StretchKickDescription                                ; 0x16e5
 	textpointer HighJumpKick                                          ; 0x16e6
@@ -5883,22 +5883,22 @@ SECTION "Text Offsets 2", ROMX
 	textpointer HitmonchanName                                        ; 0x16e8
 	textpointer MatchPunchName                                        ; 0x16e9
 	textpointer MatchPunchDescription                                 ; 0x16ea
-	textpointer HitmonchanLv23Description                             ; 0x16eb
+	textpointer PunchingName                                          ; 0x16eb
 	textpointer JabName                                               ; 0x16ec
 	textpointer SpecialPunchName                                      ; 0x16ed
 	textpointer HitmonchanLv33Description                             ; 0x16ee
 	textpointer RhyhornName                                           ; 0x16ef
 	textpointer LeerName                                              ; 0x16f0
-	textpointer LeerDescription                                       ; 0x16f1
+	textpointer RhyhornsLeerDescription                               ; 0x16f1
 	textpointer SpikesName                                            ; 0x16f2
 	textpointer RhyhornDescription                                    ; 0x16f3
 	textpointer RhydonName                                            ; 0x16f4
 	textpointer MountainBreakName                                     ; 0x16f5
 	textpointer MountainBreakDescription                              ; 0x16f6
 	textpointer OneTwoStrikeName                                      ; 0x16f7
-	textpointer RhydonLv37Description                                 ; 0x16f8
-	textpointer UNUSED_16F9                                           ; 0x16f9
-	textpointer RamDescription                                        ; 0x16fa
+	textpointer AbsorbDescriptionCont                                 ; 0x16f8
+	textpointer RamDescription                                        ; 0x16f9
+	textpointer RamDescriptionCont                                    ; 0x16fa
 	textpointer RhydonLv48Description                                 ; 0x16fb
 	textpointer KabutoName                                            ; 0x16fc
 	textpointer KabutoArmorName                                       ; 0x16fd
@@ -5908,7 +5908,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer FossilizeDescription                                  ; 0x1701
 	textpointer SharpClawsName                                        ; 0x1702
 	textpointer SharpClawsDescription                                 ; 0x1703
-	textpointer KabutoLv22Description                                 ; 0x1704
+	textpointer KabutoArmorDescriptionCont                            ; 0x1704
 	textpointer KabutopsName                                          ; 0x1705
 	textpointer SharpSickleName                                       ; 0x1706
 	textpointer AbsorbName                                            ; 0x1707
@@ -5920,7 +5920,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer AerodactylLv28Description                             ; 0x170d
 	textpointer TailspinAttackName                                    ; 0x170e
 	textpointer TailspinAttackDescription                             ; 0x170f
-	textpointer AerodactylLv30Description                             ; 0x1710
+	textpointer AbsorbDescription                                     ; 0x1710
 	textpointer AbraName                                              ; 0x1711
 	textpointer PsychicBeamName                                       ; 0x1712
 	textpointer PsychicBeamDescription                                ; 0x1713
