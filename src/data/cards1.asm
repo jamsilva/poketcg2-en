@@ -12091,7 +12091,7 @@ ELSE
 	length 2, 0 ; length
 	weight 26.0 ; weight
 ENDC
-	tx SandshrewLv15Description ; description
+	tx SandshrewLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SandslashLv33Card:
@@ -12165,7 +12165,7 @@ SandslashLv35Card:
 	; attack 1
 	energy FIGHTING, 1 ; energies
 	tx SandVeilName ; name
-	tx MetapodsStiffenDescription ; description
+	tx SandVeilDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -12203,7 +12203,7 @@ ELSE
 	length 3, 3 ; length
 	weight 65.0 ; weight
 ENDC
-	tx SandslashLv35Description ; description
+	tx SandslashLv33Description ; description
 	db NONE ; AI info
 
 DiglettLv8Card:
@@ -12277,7 +12277,7 @@ DiglettLv15Card:
 	; attack 1
 	energy FIGHTING, 1 ; energies
 	tx DigUnderName ; name
-	tx DigUnderDescription ; description
+	tx SuperconductivityDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -12502,7 +12502,7 @@ DarkDugtrioCard:
 	energy 0 ; energies
 	tx SinkholeName ; name
 	tx SinkholeDescription ; description
-	dw NONE ; description (cont)
+	tx SinkholeDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw DarkDugtrioSinkholeEffectCommands ; effect commands
@@ -12558,7 +12558,7 @@ MankeyLv7Card:
 	energy 0 ; energies
 	tx PeekName ; name
 	tx PeekDescription ; description
-	dw NONE ; description (cont)
+	tx PeekDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw MankeyPeekEffectCommands ; effect commands
@@ -12683,7 +12683,7 @@ MankeyLv14Card:
 	; attack 2
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
 	tx AngerName ; name
-	tx QuickAttackDescription ; description
+	tx AngerDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -12875,7 +12875,7 @@ ELSE
 	length 2, 7 ; length
 	weight 43.0 ; weight
 ENDC
-	tx MachopLv18Description ; description
+	tx MachopLv20Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MachopLv20Card:

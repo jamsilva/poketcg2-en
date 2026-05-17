@@ -1,22 +1,18 @@
-DigUnderDescription:
-	textfw "相手の場のポケモンを1匹選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージ。"
-	done
-
 DiglettLv15Description:
-	textfw "エサの食べ残しを目当てに、イワークが"
-	linefw "通り過ぎた後に現れることがある。"
+	text "It follows Onix in their tunnels,"
+	line "looking for scraps of food they"
+	line "have left behind."
 	done
 
 TripOverName:
-	textfw "ころばす"
+	text "Trip Over"
 	done
 
 DiglettLv16Description:
-	textfw "地中の浅い所を移動。掘り進んでいった"
-	linefw "後は地面が盛り上がっているのですぐに"
-	linefw "わかる。"
+	text "It burrows through the ground at a"
+	line "shallow depth. It leaves raised"
+	line "earth in its wake, making it easy to"
+	line "spot."
 	done
 
 DugtrioName:
@@ -24,43 +20,48 @@ DugtrioName:
 	done
 
 EarthquakeName:
-	textfw "じしん"
+	text "Earthquake"
 	done
 
 EarthquakeDescription:
-	textfw "自分の控えポケモン全員にも、「弱点・"
-	linefw "抵抗力」に関係なく、それぞれ10ダメ"
-	linefw "ージ。"
+	text "Does 10 damage to each of your own"
+	line "Benched Pokémon. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon)."
 	done
 
 DugtrioLv36Description:
-	textfw "地中を掘り進んで相手が"
-	linefw "油断しているところを、"
-	linefw "別の場所から攻擊する。"
+	text "A team of Diglett triplets."
+	line "It triggers huge earthquakes by"
+	line "burrowing 60 miles underground."
 	done
 
 GoUndergroundName:
-	textfw "もぐる"
+	text "Go Underground"
 	done
 
 GoUndergroundDescription:
-	textfw "ベンチにいる限り、このカードは、"
-	linefw "ワザによるダメージを受けない。"
+	text "As long as Dugtrio is on your Bench,"
+	line "prevent all damage done by attacks"
+	line "to Dugtrio."
 	done
 
 EarthWaveName:
-	textfw "アースウェイブ"
+	text "Earth Wave"
 	done
 
 EarthWaveDescription:
-	textfw "相手の控えポケモンから2匹を選び、"
-	linefw "それぞれに、「弱点・抵抗力」に関係"
-	linefw "なく10ダメージ。"
+	text "Choose up to 2 of your opponent's"
+	line "Benched Pokémon. This attack does 10"
+	line "damage to each of them. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon)."
 	done
 
 DugtrioLv40Description:
-	textfw "地中を掘り進んで相手が油断している"
-	linefw "ところを、別の場所から攻擊する。"
+	text "In battle, it digs through the"
+	line "ground and strikes the unsuspecting"
+	line "foe from an unexpected direction."
 	done
 
 DarkDugtrioName:
@@ -68,32 +69,39 @@ DarkDugtrioName:
 	done
 
 SinkholeName:
-	textfw "おとしあな"
+	text "Sinkhole"
 	done
 
 SinkholeDescription:
-	textfw "相手の対戦ポケモンが「にげる」とき、"
-	linefw "相手プレイヤーにコインを投げさせ、"
-	linefw "「うら」ならそのポケモンに、「弱点・"
-	linefw "抵抗力」に関係なく、20ダメージ。("
-	linefw "「にげる」をできなくさせる効果はない"
-	linefw ")。このカードが「ねむり・マヒ・こん"
-	linefw "らん」状態のとき、この力は使えない。"
+	text "Whenever your opponent's Active"
+	line "Pokémon retreats, your opponent"
+	line "flips a coin. If Tails, this Power"
+	line "does 20 damage to that Pokémon."
+	line "(Don't apply Weakness and"
+	line "Resistance)."
+	done
+
+SinkholeDescriptionCont:
+	text "This Power stops working while Dark"
+	line "Dugtrio is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 KnockDownName:
-	textfw "つきおとす"
+	text "Knock Down"
 	done
 
 KnockDownDescription:
-	textfw "相手プレイヤーにコインを投げさせ、"
-	linefw "「うら」なら20ダメージを追加する。"
+	text "Your opponent flips a coin. If"
+	line "Tails, this attack does 20 damage"
+	line "plus 20 more damage; if Heads, this"
+	line "attack does 20 damage."
 	done
 
 DarkDugtrioDescription:
-	textfw "大きな落とし穴を掘り、敵を待ち受ける"
-	linefw "弱った敵を、その穴につきおとすことも"
-	linefw "ある。"
+	text "Digs large sinkholes in the ground"
+	line "and tries to trap its enemies in"
+	line "them."
 	done
 
 MankeyName:
@@ -101,44 +109,56 @@ MankeyName:
 	done
 
 PeekName:
-	textfw "スパイ"
+	text "Peek"
 	done
 
 PeekDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "どちらかの山札の上のカード1枚、"
-	linefw "またはどちらかのサイドカードの中の"
-	linefw "1枚、または相手の手札の中の1枚を"
-	linefw "見て、もとの場所にもどす。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may look at one of the"
+	line "following: the top card of either"
+	line "player's deck, a random card from"
+	line "your opponent's hand, or one of"
+	line "either player's Prizes."
+	done
+
+PeekDescriptionCont:
+	text "This Power can't be used if Mankey"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 PigMonkeyName:
-	textfw "ぶたざる"
+	text "Pig Monkey"
 	done
 
 MankeyLv7Description:
-	textfw "身のこなしが軽く、凶暴な性格。"
-	linefw "怒って暴れると手がつけられなくなる。"
+	text "Extremely quick to anger. It could"
+	line "be docile one moment, then thrashing"
+	line "away the next."
 	done
 
 MischiefName:
-	textfw "いたずら"
+	text "Mischief"
 	done
 
 MischiefDescription:
-	textfw "相手の山札をよく切る。"
+	text "Shuffle your opponent's deck."
 	done
 
 AngerName:
-	textfw "おこる"
+	text "Anger"
+	done
+
+AngerDescription:
+	text "Flip a coin. If Heads, this attack"
+	line "does 20 damage plus 20 more damage;"
+	line "if Tails, this attack does 20"
+	line "damage."
 	done
 
 MankeyLv14Description:
-	textfw "普段は機嫌がよいのだが、"
-	linefw "とるに足らないことで顏つきが一変し、"
-	linefw "狂暴化する。"
+	text "Normally friendly, it quickly"
+	line "becomes angry if it doesn't get"
+	line "what it wants."
 	done
 
 PrimeapeName:
@@ -146,18 +166,19 @@ PrimeapeName:
 	done
 
 TantrumName:
-	textfw "あばれまわる"
+	text "Tantrum"
 	done
 
 TantrumDescription:
-	textfw "コインを投げて「うら」なら、[自分]"
-	linefw "を「こんらん」状態にする。"
+	text "Flip a coin. If Tails, Primeape is"
+	line "now Confused (after doing damage)."
 	done
 
 PrimeapeDescription:
-	textfw "いつも猛烈に怒っており、"
-	linefw "逃げても逃げてもどこまでも"
-	linefw "追いかけてくる。"
+	text "Always furious and tenacious to"
+	line "boot. It will not abandon chasing"
+	line "its quarry until its quarry is"
+	line "caught."
 	done
 
 DarkPrimeapeName:
@@ -165,28 +186,29 @@ DarkPrimeapeName:
 	done
 
 FrenzyName:
-	textfw "きょうぼう"
+	text "Frenzy"
 	done
 
 FrenzyDescription:
-	textfw "このカードが「こんらん」状態のとき、"
-	linefw "このカードがポケモンに与えるダメージ"
-	linefw "は「+30」される。"
+	text "If Dark Primeape does any damage"
+	line "while it's Confused (even to"
+	line "itself), it does 30 more damage."
 	done
 
 FrenziedAttackName:
-	textfw "あれくるう"
+	text "Frenzied Attack"
 	done
 
 FrenziedAttackDescription:
-	textfw "ダメージを与えた後、"
-	linefw "[自分]は「こんらん」状態になる。"
+	text "Dark Primeape is now Confused"
+	line "(after doing damage)."
 	done
 
 DarkPrimeapeDescription:
-	textfw "もともと怒りっぽい性格だったが、"
-	linefw "最近、わをかけたように狂暴化しつつ"
-	linefw "あるようだ。"
+	text "Although Primeape have always been"
+	line "mean, lately they seem to be"
+	line "becoming even more vicious and"
+	line "frenzied."
 	done
 
 MachopName:
@@ -194,52 +216,46 @@ MachopName:
 	done
 
 FocusedOneShotName:
-	textfw "きあいいっぱつ"
+	text "Focused One Shot"
 	done
 
 FocusedOneShotDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の自分の番、このカードが使う"
-	linefw "「どつく」のダメージは2倍になる。"
-	linefw "「うら」なら、次の自分の番、"
-	linefw "このカードは「どつく」を使えない。"
+	text "Flip a coin. If Heads, during your"
+	line "next turn, Machop's Corkscrew Punch"
+	line "attack's base damage is 60 instead"
+	line "of 30. If Tails, you can't use"
+	line "Corkscrew Punch next turn."
 	done
 
 CorkscrewPunchName:
-	textfw "どつく"
+	text "Corkscrew Punch"
 	done
 
 SuperpowerName:
-	textfw "かいりき"
-	done
-
-MachopLv18Description:
-	textfw "筋肉をきたえるのが大好きで、"
-	linefw "様々な格闘技にいどみ、ますます強く"
-	linefw "育っていく。"
+	text "Superpower"
 	done
 
 LowKickName:
-	textfw "けたぐり"
+	text "Low Kick"
 	done
 
 MachopLv20Description:
-	textfw "全身が筋肉になっており、"
-	linefw "子供の大きさしかないのに、"
-	linefw "大人100人を投げ飛ばせる。"
+	text "Loves to build its muscles. It"
+	line "trains in all styles of martial arts"
+	line "to become even stronger."
 	done
 
 PunchName:
-	textfw "パンチ"
+	text "Punch"
 	done
 
 KickName:
-	textfw "キック"
+	text "Kick"
 	done
 
 MachopLv24Description:
-	textfw "プロレス界でもワンリキーをフォール"
-	linefw "できる人間はいないと言われている。"
+	text "It's said that not even pro"
+	line "wrestlers can take down a Machop."
 	done
 
 MachokeName:
@@ -247,58 +263,56 @@ MachokeName:
 	done
 
 WickedJabName:
-	textfw "じごくづき"
+	text "Wicked Jab"
 	done
 
 FocusBlastName:
-	textfw "きあいだま"
+	text "Focus Blast"
 	done
 
 FocusBlastDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の場のポケモンから1匹を選び、"
-	linefw "20ダメージ。"
-	linefw "(このワザによる控えへのダメージは"
-	linefw "「弱点・抵抗力」の影響を受ける)"
-	done
-
-MachokeLv24Description:
-	textfw "すごくきょうじんな肉体なので、"
-	linefw "パワーセーブベルトを着けて、強さを"
-	linefw "制ぎょしている。"
+	text "Flip a coin. If Heads, choose 1 of"
+	line "your opponent's Pokémon. This attack"
+	line "does 20 damage to that Pokémon."
+	line "(Apply Weakness and Resistance)."
 	done
 
 MegaKickName:
-	textfw "メガトンキック"
+	text "Mega Kick"
 	done
 
 SteadyPunchName:
-	textfw "ワンツーパンチ"
+	text "Steady Punch"
 	done
 
-MachokeLv28Description:
-	textfw "すごくきょうじんな肉体なので、"
-	linefw "パワーセーブベルトを着けて強さを"
-	linefw "制ぎょしている。"
+SteadyPunchDescription:
+	text "Flip a coin. If Heads, this attack"
+	line "does 30 damage plus 20 more damage;"
+	line "if Tails, this attack does 30"
+	line "damage."
 	done
 
 KarateChopName:
-	textfw "からてチョップ"
+	text "Karate Chop"
 	done
 
 KarateChopDescription:
-	textfw "このワザのダメージは、[自分]にのって"
-	linefw "いるダメージカウンターの数×10だけ"
-	linefw "小さくなる。"
+	text "Does 50 damage minus 10 damage for"
+	line "each damage counter on Machoke."
 	done
 
 SubmissionName:
-	textfw "じごくぐるま"
+	text "Submission"
+	done
+
+SubmissionDescription:
+	text "Machoke does 20 damage to itself."
 	done
 
 MachokeLv40Description:
-	textfw "疲れることのない強靱な肉体を持つ。"
-	linefw "重い荷物の運搬などの仕事を手伝う。"
+	text "Its muscular body is so powerful"
+	line "that it must wear a power-save belt"
+	line "to help regulate its motions."
 	done
 
 DarkMachokeName:
@@ -306,25 +320,27 @@ DarkMachokeName:
 	done
 
 DragOffName:
-	textfw "ひきずりだす"
+	text "Drag Off"
 	done
 
 DragOffDescription:
-	textfw "ダメージを与える前に、"
-	linefw "相手の控えポケモンを1匹選び、"
-	linefw "[相手]と入れ替える。"
-	linefw "(ダメージは新しい対戦ポケモンに"
-	linefw "与える。相手に控えがいないとき、"
-	linefw "このワザは使えない)"
+	text "Before doing damage, choose 1 of"
+	line "your opponent's Benched Pokémon"
+	line "and switch it with the Defending"
+	line "Pokémon. Do the damage to the new"
+	line "Defending Pokémon. This attack"
+	line "can't be used if your opponent has"
+	line "no Benched Pokémon."
 	done
 
 KnockBackName:
-	textfw "なぐりとばす"
+	text "Knock Back"
 	done
 
 DarkMachokeDescription:
-	textfw "人には従順なはずのゴーリキーが、"
-	linefw "突然暴れ始めた。"
+	text "While normally peaceful and"
+	line "friendly, the number of incidents"
+	line "involving cruel Machoke is rising."
 	done
 
 MachampName:
@@ -332,51 +348,48 @@ MachampName:
 	done
 
 SeethingAngerName:
-	textfw "いかりばくはつ"
+	text "Seething Anger"
 	done
 
 SeethingAngerDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "の数ぶんコインを投げ、「おもて」の数"
-	linefw "×10のダメージを追加する。"
+	text "Flip a number of coins equal to the"
+	line "number of damage counters on"
+	line "Machamp. This attack does 20 damage"
+	line "plus 10 more damage for each Heads."
 	done
 
 FlingName:
-	textfw "なげとばす"
-	done
-
-MachampLv54Description:
-	textfw "スーパーパワフルなパンチをくらった"
-	linefw "ものは地平線まで吹っ飛んでいって"
-	linefw "しまうという。"
+	text "Fling"
 	done
 
 StrikesBackName:
-	textfw "はんげき"
+	text "Strikes Back"
 	done
 
 StrikesBackDescription:
-	textfw "このカードが相手のワザによってダメー"
-	linefw "ジを受けたとき、(それによってこのカ"
-	linefw "ードが「きぜつ」しても、)ダメージを"
-	linefw "与えたポケモンに、「弱点・抵抗力」に"
-	linefw "関係なく、10ダメージ。"
+	text "Whenever your opponent's attack"
+	line "damages Machamp (even if Machamp is"
+	line "Knocked Out), this Power does 10"
+	line "damage to the attacking Pokémon."
+	line "(Don't apply Weakness and"
+	line "Resistance)."
 	done
 
 StrikesBackDescriptionCont:
-	textfw "ダメージを受けるとき、すでにこのカー"
-	linefw "ドが「ねむり・マヒ・こんらん」状態"
-	linefw "だったなら、この力は、はたらかない。"
+	text "This Power can't be used if Machamp"
+	line "is already Asleep, Confused, or"
+	line "Paralyzed when your opponent"
+	line "attacks."
 	done
 
 SeismicTossName:
-	textfw "ちきゅうなげ"
+	text "Seismic Toss"
 	done
 
 MachampLv67Description:
-	textfw "発達した4本の腕は、"
-	linefw "2秒間に1000発のパンチを"
-	linefw "くりだすことができる。"
+	text "Using its amazing muscles, it throws"
+	line "powerful punches that can knock its"
+	line "victim clear over the horizon."
 	done
 
 DarkMachampName:
@@ -384,15 +397,17 @@ DarkMachampName:
 	done
 
 FlingDescription:
-	textfw "[相手]と[相手]についているすべての"
-	linefw "カードを山札に戻し、その山札をよく"
-	linefw "切る。(相手に控えがいないとき、"
-	linefw "このワザは使えない)"
+	text "Your opponent shuffles his or her"
+	line "Active Pokémon and all cards"
+	line "attached to it into his or her deck."
+	line "This attack can't be used if your"
+	line "opponent has no Benched Pokémon."
 	done
 
 DarkMachampDescription:
-	textfw "強靭な4本の腕から繰り出されるワザを"
-	linefw "防ぐことは、不可能に近い。"
+	text "It is almost impossible to defend"
+	line "against a Machamp's four powerful"
+	line "arms."
 	done
 
 GeodudeName:
@@ -400,38 +415,36 @@ GeodudeName:
 	done
 
 HardenName:
-	textfw "かたくなる"
+	text "Harden"
 	done
 
 Harden20DamageDescription:
-	textfw "次の相手の番、このカードは「20」"
-	linefw "以下のダメージを受けない。"
-	linefw "(ダメージ以外の効果はそのまま)"
+	text "During your opponent's next turn,"
+	line "whenever 20 or less damage is done"
+	line "to Geodude (after applying Weakness"
+	line "and Resistance), prevent that"
+	line "damage. (Any other effects of"
+	line "attacks still happen)."
 	done
 
 RockName:
-	textfw "がんせき"
-	done
-
-GeodudeLv15Description:
-	textfw "石ころに似ているので、気がつかずに"
-	linefw "踏んだり、つまづいたりしてしまう。"
+	text "Rock"
 	done
 
 StoneBarrageName:
-	textfw "れんぞくいしなげ"
+	text "Stone Barrage"
 	done
 
 StoneBarrage10DamageDescription:
-	textfw "「うら」が出るまでコインを投げ続け、"
-	linefw "その間に出た「おもて」の数×10のダ"
-	linefw "メージ。"
+	text "Flip a coin until you get tails."
+	line "This attack does 10 damage times"
+	line "the number of Heads."
 	done
 
 GeodudeLv16Description:
-	textfw "丸くて持ちやすいので、"
-	linefw "つかんで相手に投げてぶつける"
-	linefw "イシツブテ合戦ができる。"
+	text "Found in fields and mountains."
+	line "Mistaking them for boulders, people"
+	line "often step or trip on them."
 	done
 
 GravelerName:
@@ -439,55 +452,41 @@ GravelerName:
 	done
 
 BoulderSmashName:
-	textfw "がんせきくだき"
+	text "Boulder Smash"
 	done
 
 BoulderSmashDescription:
-	textfw "コインを2枚投げ、「おもて」の数"
-	linefw "×10のダメージを、相手の控えポケモ"
-	linefw "ンに好きなようにわりふって与える。"
-	linefw "(控えへのダメージは「弱点・抵抗力」"
-	linefw "の影響を受けない)"
-	done
-
-GravelerLv27Description:
-	textfw "坂道を転がりながら移動。"
-	linefw "じゃまなものはどんどん押しつぶして"
-	linefw "進んでいく。"
+	text "Flip 2 coins. For each Heads,"
+	line "choose 1 of your opponent's Benched"
+	line "Pokémon. This attack does 10 damage"
+	line "to each of them. (Don't apply"
+	line "Weakness and Resistance for"
+	line "Benched Pokémon)."
 	done
 
 StoneBarrage20DamageDescription:
-	textfw "「うら」が出るまでコインを投げ続け、"
-	linefw "その間に出た「おもて」の数"
-	linefw "×20ダメージ。"
-	done
-
-EarthquakeAltDescription:
-	textfw "自分の控えポケモン全員にも、"
-	linefw "「弱点・抵抗力」に関係なく、それぞれ"
-	linefw "10ダメージ。"
-	done
-
-GravelerLv28Description:
-	textfw "坂道をころがりながら移動。"
-	linefw "じゃまなものはどんどん押しつぶして"
-	linefw "進んでいく。"
+	text "Flip a coin until you get tails."
+	line "This attack does 20 damage times"
+	line "the number of Heads."
 	done
 
 Harden30DamageDescription:
-	textfw "次の相手の番、このカードがダメージを"
-	linefw "受けるとき、そのダメージが30以下"
-	linefw "なら、このカードはダメージを受けない"
-	linefw "(ダメージ以外の効果は、そのまま)"
+	text "During your opponent's next turn,"
+	line "whenever 30 or less damage is done"
+	line "to Graveler (after applying Weakness"
+	line "and Resistance), prevent that"
+	line "damage. (Any other effects of"
+	line "attacks still happen)."
 	done
 
 RockThrowName:
-	textfw "いわおとし"
+	text "Rock Throw"
 	done
 
 GravelerLv29Description:
-	textfw "山の中の坂道を歩いていると"
-	linefw "ゴローンが転がってくることがある。"
+	text "Rolls down slopes to move. It rolls"
+	line "over any obstacle without slowing"
+	line "or changing its direction."
 	done
 
 GolemName:
@@ -495,40 +494,39 @@ GolemName:
 	done
 
 AvalancheName:
-	textfw "いわころがり"
+	text "Avalanche"
+	done
+
+GolemsSelfdestructDescription:
+	text "Does 20 damage to each Pokémon on"
+	line "each player's Bench. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon). Golem does 100 damage to"
+	line "itself."
 	done
 
 MegatonName:
-	textfw "メガトン"
+	text "Megaton"
 	done
 
 GolemLv36Description:
-	textfw "岩盤のような固い殻で覆われている。"
-	linefw "1年に1回脱皮して大きくなる。"
+	text "Its boulder-like body is extremely"
+	line "hard. It can easily withstand"
+	line "dynamite blasts without damage."
 	done
 
 RockBlastName:
-	textfw "ロックブラスト"
+	text "Rock Blast"
 	done
 
 RockBlastDescription:
-	textfw "[自分]についている「闘」エネルギーカ"
-	linefw "ードを最大5枚トラッシュして、トラッ"
-	linefw "シュした数ぶん、相手の場のポケモンを"
-	linefw "選ぶ。(同じポケモンを2回以上選んで"
-	linefw "もよい)。"
-	done
-
-RockBlastDescriptionCont:
-	textfw "その後、選んだポケモンのそれぞれに、"
-	linefw "それが選ばれた回数×20のダメージを"
-	linefw "「弱点・抵抗力」に関係なく与える。"
-	done
-
-GolemLv37Description:
-	textfw "岩石のようなかたい体でできている。"
-	linefw "ダイナマイトで爆破しても、ダメージを"
-	linefw "受けない。"
+	text "You may discard up to 5 <FIGHTING> Energy"
+	line "cards attached to Golem when you use"
+	line "this attack. For each <FIGHTING> Energy you"
+	line "discarded in this way, choose 1 of"
+	line "your opponent's Pokémon and this"
+	line "attack does 20 damage to it. (Don't"
+	line "apply Weakness and Resistance)."
 	done
 
 OnixName:
@@ -536,35 +534,26 @@ OnixName:
 	done
 
 Harden30DamageAltDescription:
-	textfw "次の相手の番、このカードがダメージを"
-	linefw "受けるとき、そのダメージが30以下な"
-	linefw "ら、このカードはダメージを受けない。"
-	linefw "(ダメージ以外の効果は、そのまま)"
+	text "During your opponent's next turn,"
+	line "whenever 30 or less damage is done"
+	line "to Onix (after applying Weakness and"
+	line "Resistance), prevent that damage."
+	line "(Any other effects of attacks still"
+	line "happen)."
 	done
 
 RockSnakeName:
-	textfw "いわへび"
+	text "Rock Snake"
 	done
 
 OnixLv12Description:
-	textfw "普段は土の中に住んでいる。"
-	linefw "地中を時速80キロで掘りながら"
-	linefw "エサをさがす。"
+	text "As it grows, the stone portions of"
+	line "its body harden to become similar"
+	line "to a diamond, though colored black."
 	done
 
 RockSealName:
-	textfw "いわふうじ"
-	done
-
-RockSealDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このワザを受けた"
-	linefw "[相手]は「にげる」ことができない。"
-	done
-
-OnixLv25Description:
-	textfw "成長すると、体の岩石成分が変化して、"
-	linefw "黑いダイヤモンドのようになる。"
+	text "Rock Seal"
 	done
 
 CuboneName:
@@ -572,39 +561,46 @@ CuboneName:
 	done
 
 SnivelName:
-	textfw "なきつく"
+	text "Snivel"
 	done
 
 SnivelDescription:
-	textfw "次の相手の番、このワザを受けた[相手]"
-	linefw "がこのカードに与えるダメージは"
-	linefw "「-20」される。"
+	text "If the Defending Pokémon attacks"
+	line "Cubone during your opponent's next"
+	line "turn, any damage done by the attack"
+	line "is reduced by 20 (after applying"
+	line "Weakness and Resistance). (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
+	done
+
+CubonesRageDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on Cubone."
 	done
 
 LonelyName:
-	textfw "こどく"
+	text "Lonely"
 	done
 
 CuboneLv13Description:
-	textfw "死に別れた母親の骨を頭にかぶっている"
-	linefw "寂しい時に大声で泣くという。"
+	text "Because it never removes its skull"
+	line "helmet, no one has ever seen this"
+	line "Pokémon's real face."
 	done
 
 BoneTossName:
-	textfw "ほねをなげる"
+	text "Bone Toss"
 	done
 
 BoneTossDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]に30ダメージ。「うら」なら"
-	linefw "相手の控えポケモンから1匹を選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージ。"
-	done
-
-CuboneLv14Description:
-	textfw "頭に骨のヘルメットをかぶっているので"
-	linefw "本当の顏を見たものはいない。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 30 damage to the Defending"
+	line "Pokémon. If Tails, choose 1 of your"
+	line "opponent's Benched Pokémon and this"
+	line "attack does 10 damage to it. (Don't"
+	line "apply Weakness and Resistance for"
+	line "Benched Pokémon)."
 	done
 
 MarowakName:
@@ -612,56 +608,59 @@ MarowakName:
 	done
 
 BonemerangName:
-	textfw "ほねブーメラン"
+	text "Bonemerang"
 	done
 
 CallForFriendName:
-	textfw "たすけをよぶ"
+	text "Call for Friend"
 	done
 
 CallForFriendDescription:
-	textfw "自分の山札から「闘」タイプの"
-	linefw "「たねポケモン」を1枚選び出し、"
-	linefw "自分のベンチに出す。その後、"
-	linefw "その山札をよく切る。(ベンチに空きが"
-	linefw "ないとき、このワザは使えない)"
+	text "Search your deck for a <FIGHTING> Basic"
+	line "Pokémon card and put it onto your"
+	line "Bench. Shuffle your deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full)."
 	done
 
 BoneKeeperName:
-	textfw "ほねずき"
+	text "Bonekeeper"
 	done
 
 MarowakLv26Description:
-	textfw "体も小さく、もともと弱かった。"
-	linefw "骨を使うようになり、性格が狂暴化した"
+	text "The bone it holds is its key weapon."
+	line "It throws the bone skillfully like"
+	line "a boomerang to K.O. targets."
 	done
 
 BoneAttackName:
-	textfw "ホネでたたく"
+	text "Bone Attack"
 	done
 
 BoneAttackDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このワザを受けた"
-	linefw "[相手]はワザを使えない。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon can't attack during your"
+	line "opponent's next turn."
 	done
 
 WailName:
-	textfw "なきわめく"
+	text "Wail"
 	done
 
 WailDescription:
-	textfw "それぞれの山札から「たねポケモン」が"
-	linefw "自動的に選ばれ、ベンチに空きがなくな"
-	linefw "るか、山札に「たねポケモン」がなくな"
-	linefw "るまで、ベンチに出る。その後、それぞ"
-	linefw "れの山札をよく切る。"
+	text "Each player fills his or her Bench"
+	line "with Basic Pokémon chosen at random"
+	line "from his or her deck. If a player"
+	line "has fewer Basic Pokémon than that in"
+	line "his or deck, he or she chooses all"
+	line "of them. Each player shuffles his"
+	line "or her deck afterward."
 	done
 
 MarowakLv32Description:
-	textfw "骨は大事な武器である。"
-	linefw "ブーメランのように投げて獲物にぶつけ"
-	linefw "気絶させる。"
+	text "Small and weak, this Pokémon is"
+	line "adept with its bone club. It has"
+	line "grown more vicious over the ages."
 	done
 
 DarkMarowakName:
@@ -669,21 +668,28 @@ DarkMarowakName:
 	done
 
 BoneHeadbuttName:
-	textfw "ほねずつき"
+	text "Bone Headbutt"
 	done
 
 BoneHeadbuttDescription:
-	textfw "相手のベンチのポケモン1匹が自動的に"
-	linefw "選ばれ、「弱点・抵抗力」に関係なく、"
-	linefw "ランダムで「0、10、20」のダメー"
-	linefw "ジ。その後、相手のベンチのポケモンが"
-	linefw "ランダムで1匹選ばれ、[相手]と入れ"
-	linefw "替わる。"
+	text "This attack does 0, 10, or 20"
+	line "damage, chosen at random, to each of"
+	line "your opponent's Benched Pokémon."
+	line "(Don't apply Weakness and Resistance"
+	line "for Benched Pokémon)."
+	done
+
+BoneHeadbuttDescriptionCont:
+	line "Then, if your opponent has any"
+	line "Benched Pokémon, he or she chooses"
+	text "1 of them and switches it with the"
+	line "Defending Pokémon."
 	done
 
 DarkMarowakDescription:
-	textfw "ずつきの衝擊は、はかりしれないものが"
-	linefw "あり、ベンチまでとばされてしまう。"
+	text "The impact of its headbutt was so"
+	line "immeasurable, it was flung all the"
+	line "way to the bench."
 	done
 
 HitmonleeName:
@@ -691,34 +697,33 @@ HitmonleeName:
 	done
 
 RollingKickName:
-	textfw "まわしげり"
-	done
-
-HitmonleeLv23Description:
-	textfw "急いで走る時、だんだん足が伸びて"
-	linefw "いって、ものすごい大またになって進む"
+	text "Rolling Kick"
 	done
 
 StretchKickName:
-	textfw "のびるキック"
+	text "Stretch Kick"
 	done
 
 StretchKickDescription:
-	textfw "相手の控えポケモンを1匹選び、"
-	linefw "そのポケモンに、「弱点・抵抗力」に"
-	linefw "関係なく、20ダメージ。"
-	linefw "(相手に控えがいないとき、このワザは"
-	linefw "使えない)"
+	text "If your opponent has any Benched"
+	line "Pokémon, choose 1 of them and this"
+	line "attack does 20 damage to it. (Don't"
+	line "apply Weakness and Resistance for"
+	line "Benched Pokémon)."
 	done
 
 HighJumpKick:
-	textfw "とびひざげり"
+	text "High Jump Kick"
+	done
+
+KickingName:
+	text "Kicking"
 	done
 
 HitmonleeLv30Description:
-	textfw "足が自由に伸び縮みし、"
-	linefw "遠く離れている場合でも"
-	linefw "相手を蹴りあげることができる。"
+	text "When in a hurry, its legs lengthen"
+	line "progressively. It runs smoothly with"
+	line "extra long, loping strides."
 	done
 
 HitmonchanName:
@@ -726,33 +731,35 @@ HitmonchanName:
 	done
 
 MatchPunchName:
-	textfw "マッハパンチ"
+	text "Mach Punch"
 	done
 
 MatchPunchDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の控えポケモンから1匹を選び、"
-	linefw "そのポケモンにも「弱点・抵抗力」に"
-	linefw "関係なく、10ダメージ。"
-	done
-
-HitmonchanLv23Description:
-	textfw "何にもしてないようでも、見えない"
-	linefw "スピードでパンチを出しまくっている"
-	linefw "から気をつけろ。"
+	text "This attack does 30 damage to the"
+	line "Defending Pokémon. Flip a coin. If"
+	line "Heads, choose 1 of your opponent's"
+	line "Benched Pokémon and this attack does"
+	line "10 damage to it. (Don't apply"
+	line "Weakness and Resistance for Benched"
+	line "Pokémon)."
 	done
 
 JabName:
-	textfw "ジャブ"
+	text "Jab"
 	done
 
 SpecialPunchName:
-	textfw "スペシャルパンチ"
+	text "Special Punch"
+	done
+
+PunchingName:
+	text "Punching"
 	done
 
 HitmonchanLv33Description:
-	textfw "プロボクサーの魂がのり移っている。"
-	linefw "パンチのスピードは新幹線よりも速い。"
+	text "While seeming to do nothing, it"
+	line "fires punches in lightning-fast"
+	line "volleys that are impossible to see."
 	done
 
 RhyhornName:
@@ -760,24 +767,25 @@ RhyhornName:
 	done
 
 LeerName:
-	textfw "にらみつける"
+	text "Leer"
 	done
 
-LeerDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "次の相手の番、このカードがバトル場に"
-	linefw "いる限り、このワザを受けた[相手]は、"
-	linefw "ワザを使えない。"
+RhyhornsLeerDescription:
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon can't attack Rhyhorn during"
+	line "your opponent's next turn. (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
 	done
 
 SpikesName:
-	textfw "とげとげ"
+	text "Spike"
 	done
 
 RhyhornDescription:
-	textfw "頭は悪いが力は強く、"
-	linefw "高層ビルも体当たりでコナゴナに"
-	linefw "粉砕する。"
+	text "Its massive bones are 1,000 times"
+	line "harder than human bones. It can"
+	line "easily knock a trailer flying."
 	done
 
 RhydonName:
@@ -785,39 +793,38 @@ RhydonName:
 	done
 
 MountainBreakName:
-	textfw "やまくずし"
+	text "Mountain Breaker"
 	done
 
 MountainBreakDescription:
-	textfw "自分の山札の上からカードを5枚"
-	linefw "トラッシュする。トラッシュした5枚の"
-	linefw "中に「闘」エネルギーカードがあれば、"
-	linefw "それらをすべてトラッシュから取り出し"
-	linefw "手札に加える。"
+	text "Discard the top 5 cards of your"
+	line "deck. If any of those cards are <FIGHTING>"
+	line "Energy cards, put them into your"
+	line "hand."
 	done
 
 OneTwoStrikeName:
-	textfw "にだんづき"
-	done
-
-RhydonLv37Description:
-	textfw "全身を、よろいのような皮膚で守って"
-	linefw "いる。2000度のマグマの中でも"
-	linefw "生きられる。"
+	text "One-Two Strike"
 	done
 
 RamDescription:
-	textfw "[相手]を、控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは、相手が選ぶ。"
-	linefw "(相手に控えがいないとき、入れ替えは"
-	linefw "おこらない)。その後、[自分]にも"
-	linefw "20ダメージ。"
+	text "Rhydon does 20 damage to itself."
+	line "If your opponent has any Benched"
+	line "Pokémon, he or she chooses 1 of them"
+	line "and switches it with the Defending"
+	line "Pokémon. (Do the damage before"
+	line "switching the Pokémon."
+	done
+
+RamDescriptionCont:
+	text "Switch the Pokémon even if Rhydon"
+	line "is Knocked Out)."
 	done
 
 RhydonLv48Description:
-	textfw "進化して後ろ足だけで立つようになった"
-	linefw "角で突かれると岩石にも"
-	linefw "穴が開いてしまう。"
+	text "Protected by an armor-like hide, it"
+	line "is capable of living in molten lava"
+	line "of 3600 degrees."
 	done
 
 KabutoName:
@@ -825,48 +832,54 @@ KabutoName:
 	done
 
 KabutoArmorName:
-	textfw "カブトアーマー"
+	text "Kabuto Armor"
 	done
 
 KabutoArmorDescription:
-	textfw "このカードがワザによって受ける"
-	linefw "ダメージは、半分(切りすて)になる。"
-	linefw "(ダメージ以外の効果は、そのまま)。"
-	linefw "ダメージを受けるとき、このカードが"
-	linefw "すでに「ねむり・マヒ・こんらん」状態"
-	linefw "だったなら、この力ははたらかない。"
+	text "Whenever an attack (even your own)"
+	line "does damage to Kabuto (after"
+	line "applying Weakness and Resistance),"
+	line "that attack only does half the"
+	line "damage to Kabuto (rounded down to"
+	line "the nearest 10)."
+	done
+
+KabutoArmorDescriptionCont:
+	text "(Any other effects of attacks still"
+	line "happen). This Power stops working"
+	line "while Kabuto is Asleep, Confused,"
+	line "or Paralyzed."
 	done
 
 KabutoLv9Description:
-	textfw "古代の生物の化石から再生したポケモン"
-	linefw "硬いからで身を護っている。"
+	text "A Pokémon that was resurrected from"
+	line "a fossil found in what was once the"
+	line "ocean floor eons ago."
 	done
 
 FossilizeName:
-	textfw "かせきか"
+	text "Fossilize"
 	done
 
 FossilizeDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "自分の場にいる「なにかの化石」から"
-	linefw "進化したポケモンを、1匹選ぶ。"
-	linefw "コインを投げて「おもて」なら、その"
-	linefw "選んだポケモンについているすべての"
-	linefw "「進化カード」を手札にもどす。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, return all Evolution cards"
+	line "from 1 of your Pokémon that evolves"
+	line "from Mysterious Fossil to your hand."
+	line "This power can't be used if Kabuto"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 SharpClawsName:
-	textfw "するどいツメ"
+	text "Sharp Claws"
 	done
 
 SharpClawsDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "30ダメージを追加する。"
-	done
-
-KabutoLv22Description:
-	textfw "遠い昔に海だった地層から化石が"
-	linefw "発見され、復活させたポケモンである。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 10 damage plus 30 more damage;"
+	line "if Tails, this attack does 10"
+	line "damage."
 	done
 
 KabutopsName:
@@ -874,17 +887,32 @@ KabutopsName:
 	done
 
 SharpSickleName:
-	textfw "するどいかま"
+	text "Sharp Sickle"
 	done
 
 AbsorbName:
-	textfw "すいとる"
+	text "Absorb"
+	done
+
+AbsorbDescription:
+	text "Remove a number of damage counters"
+	line "from Kabutops equal to half the"
+	line "damage done to the Defending"
+	line "Pokémon (after applying Weakness"
+	line "and Resistance)"
+	line "(rounded up to the nearest 10)."
+	done
+
+AbsorbDescriptionCont:
+	text "If Kabutops has fewer damage"
+	line "counters than that, remove all of"
+	line "them."
 	done
 
 KabutopsDescription:
-	textfw "水中を自由に泳ぎ、"
-	linefw "鋭い鎌で獲物をとらえ、"
-	linefw "体液をすいとってしまう。"
+	text "Its sleek shape is perfect for"
+	line "swimming. It slashes prey with its"
+	line "claws and drains the body fluids."
 	done
 
 AerodactylName:
@@ -892,41 +920,34 @@ AerodactylName:
 	done
 
 PrehistoricPowerName:
-	textfw "げんしのちから"
+	text "Prehistoric Power"
 	done
 
 PrehistoricPowerDescription:
-	textfw "このカードが場にある限り、おたがいの"
-	linefw "プレイヤーは、ポケモンを進化させる"
-	linefw "ことができない。(ワザや特殊能力に"
-	linefw "よる進化はできる。また、すでに進化"
-	linefw "しているポケモンに、影響はない)。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "No more Evolution cards can be"
+	line "played. This Power stops working"
+	line "while Aerodactyl is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 FossilName:
-	textfw "かせき"
+	text "Fossil"
 	done
 
 AerodactylLv28Description:
-	textfw "コハクに残された恐竜の遺伝子から"
-	linefw "復活させた。高い声で鳴きながら飛ぶ。"
+	text "A ferocious prehistoric Pokémon that"
+	line "goes for the enemy's throat with its"
+	line "serrated saw-like fangs."
 	done
 
 TailspinAttackName:
-	textfw "きりもみアタック"
+	text "Tailspin Attack"
 	done
 
 TailspinAttackDescription:
-	textfw "[自分]にも、「弱点・抵抗力」に"
-	linefw "関係なく、10ダメージ。"
-	done
-
-AerodactylLv30Description:
-	textfw "のこぎりのような形のキバで、相手の"
-	linefw "ノドをかみ切ってしまう。狂暴な古代の"
-	linefw "ポケモンだ。"
+	text "Aerodactyl does 10 damage to itself."
+	line "(Don't apply Weakness and"
+	line "Resistance)."
 	done
 
 AbraName:
