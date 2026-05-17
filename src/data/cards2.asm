@@ -83,7 +83,7 @@ MachokeLv28Card:
 	; attack 2
 	energy FIGHTING, 3 ; energies
 	tx SteadyPunchName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -699,7 +699,7 @@ GolemLv36Card:
 	; attack 2
 	energy FIGHTING, 4 ; energies
 	tx SelfdestructName ; name
-	tx Selfdestruct100DamageDescription ; description
+	tx MagnetonLv35sSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
 	db DAMAGE_NORMAL ; category
@@ -1483,7 +1483,7 @@ RhydonLv37Card:
 	; attack 2
 	energy FIGHTING, 3 ; energies
 	tx OneTwoStrikeName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_PLUS ; category
@@ -2323,7 +2323,7 @@ DarkAlakazamCard:
 	; attack 2
 	energy PSYCHIC, 3 ; energies
 	tx MindShockName ; name
-	tx SonicboomAltDescription ; description
+	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
@@ -3443,7 +3443,7 @@ HypnoLv30Card:
 	; attack 2
 	energy PSYCHIC, 2 ; energies
 	tx MindShockName ; name
-	tx SonicboomAltDescription ; description
+	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4507,7 +4507,7 @@ PidgeyLv10Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx QuickAttackName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -5221,7 +5221,7 @@ FearowLv24Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx QuickAttackName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -7979,7 +7979,7 @@ DarkDragonairCard:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx TailStrikeName ; name
-	tx QuickAttackAltDescription1 ; description
+	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category

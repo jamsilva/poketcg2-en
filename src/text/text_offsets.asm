@@ -5594,7 +5594,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PikachuName                                           ; 0x15c7
 	textpointer ThundershockName                                      ; 0x15c8
 	textpointer MouseName                                             ; 0x15c9
-	textpointer PikachuLv5Description                                 ; 0x15ca
+	textpointer PikachusAgilityDescription                            ; 0x15ca
 	textpointer GnawName                                              ; 0x15cb
 	textpointer ThunderJoltName                                       ; 0x15cc
 	textpointer ThunderJoltDescription                                ; 0x15cd
@@ -5603,10 +5603,10 @@ SECTION "Text Offsets 2", ROMX
 	textpointer RechargeDescription                                   ; 0x15d0
 	textpointer ThunderboltName                                       ; 0x15d1
 	textpointer ThunderboltDescription                                ; 0x15d2
-	textpointer PikachuLv13Description                                ; 0x15d3
+	textpointer PikachusGrowlDescription                              ; 0x15d3
 	textpointer SparkName                                             ; 0x15d4
 	textpointer Do10DamageToABenchedMonDescription                    ; 0x15d5
-	textpointer PikachuLv14Description                                ; 0x15d6
+	textpointer UNUSED_15D6                                           ; 0x15d6
 	textpointer FlyingPikachuName                                     ; 0x15d7
 	textpointer FlyName                                               ; 0x15d8
 	textpointer FlyDescription                                        ; 0x15d9
@@ -5617,12 +5617,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ShortCircuitName                                      ; 0x15de
 	textpointer ShortCircuitDescription                               ; 0x15df
 	textpointer SparkingKickName                                      ; 0x15e0
-	textpointer RaichuLv32Description                                 ; 0x15e1
-	textpointer QuickAttackAltDescription1                            ; 0x15e2
+	textpointer UNUSED_15E1                                           ; 0x15e1
+	textpointer RaichusAgilityDescription                             ; 0x15e2
 	textpointer ThunderboltAltDescription1                            ; 0x15e3
 	textpointer RaichuLv33Description                                 ; 0x15e4
 	textpointer ThunderName                                           ; 0x15e5
-	textpointer ThunderDescription                                    ; 0x15e6
+	textpointer RaichusThunderDescription                             ; 0x15e6
 	textpointer RaichuSharedDescription                               ; 0x15e7
 	textpointer GigashockName                                         ; 0x15e8
 	textpointer GigashockDescription                                  ; 0x15e9
@@ -5641,22 +5641,22 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MagneticStormName                                     ; 0x15f6
 	textpointer MagneticStormDescription                              ; 0x15f7
 	textpointer MagnemiteLv14Description                              ; 0x15f8
-	textpointer UNUSED_15F9                                           ; 0x15f9
-	textpointer MagnetMoveDescription                                 ; 0x15fa
+	textpointer MagnetMoveDescription                                 ; 0x15f9
+	textpointer MagnetMoveDescriptionCont                             ; 0x15fa
 	textpointer SuperconductivityName                                 ; 0x15fb
 	textpointer SuperconductivityDescription                          ; 0x15fc
-	textpointer MagnemiteLv15Description                              ; 0x15fd
+	textpointer UNUSED_15FD                                           ; 0x15fd
 	textpointer MagnetonName                                          ; 0x15fe
 	textpointer Selfdestruct80DamageDescription                       ; 0x15ff
 	textpointer MagnetonSharedDescription                             ; 0x1600
 	textpointer MicrowaveName                                         ; 0x1601
 	textpointer MicrowaveDescription                                  ; 0x1602
-	textpointer MagnetonLv30Description                               ; 0x1603
+	textpointer UNUSED_1603                                           ; 0x1603
 	textpointer SonicboomName                                         ; 0x1604
 	textpointer SonicboomDescription                                  ; 0x1605
-	textpointer Selfdestruct100DamageDescription                      ; 0x1606
+	textpointer MagnetonLv35sSelfdestructDescription                  ; 0x1606
 	textpointer DarkMagnetonName                                      ; 0x1607
-	textpointer SonicboomAltDescription                               ; 0x1608
+	textpointer UNUSED_1608                                           ; 0x1608
 	textpointer MagneticLinesName                                     ; 0x1609
 	textpointer MagneticLinesDescription                              ; 0x160a
 	textpointer DarkMagnetonDescription                               ; 0x160b
@@ -5664,7 +5664,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer GroupSparkName                                        ; 0x160d
 	textpointer GroupSparkDescription                                 ; 0x160e
 	textpointer BallName                                              ; 0x160f
-	textpointer VoltorbLv8Description                                 ; 0x1610
+	textpointer LightScreenDescriptionCont                            ; 0x1610
 	textpointer VoltorbLv10Description                                ; 0x1611
 	textpointer SpeedBallName                                         ; 0x1612
 	textpointer VoltorbLv13Description                                ; 0x1613
@@ -5691,13 +5691,13 @@ SECTION "Text Offsets 2", ROMX
 	textpointer Do20DamageNumberOfHeadsDescription                    ; 0x1628
 	textpointer StunNeedleName                                        ; 0x1629
 	textpointer JolteonLv24Description                                ; 0x162a
-	textpointer QuickAttackAltDescription2                            ; 0x162b
+	textpointer ElectricName                                          ; 0x162b
 	textpointer PinMissileName                                        ; 0x162c
 	textpointer PinMissileDescription                                 ; 0x162d
 	textpointer JolteonLv29Description                                ; 0x162e
 	textpointer DarkJolteonName                                       ; 0x162f
 	textpointer LightningFlashName                                    ; 0x1630
-	textpointer LightningFlashDescription                             ; 0x1631
+	textpointer UNUSED_1631                                           ; 0x1631
 	textpointer ThunderAttackName                                     ; 0x1632
 	textpointer ThunderAttackDescription                              ; 0x1633
 	textpointer DarkJolteonDescription                                ; 0x1634
@@ -5706,7 +5706,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer RagingThunderDescription                              ; 0x1637
 	textpointer ThunderCrashName                                      ; 0x1638
 	textpointer ThunderCrashDescription                               ; 0x1639
-	textpointer ZapdosLv28Description                                 ; 0x163a
+	textpointer ZapdosThunderDescription                              ; 0x163a
 	textpointer ThunderstormName                                      ; 0x163b
 	textpointer ThunderstormDescription                               ; 0x163c
 	textpointer ZapdosLv40Description                                 ; 0x163d
