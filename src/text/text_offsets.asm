@@ -6110,16 +6110,16 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TinyBirdName                                          ; 0x17cb
 	textpointer PidgeyLv8Description                                  ; 0x17cc
 	textpointer GustName                                              ; 0x17cd
-	textpointer PidgeyLv10Description                                 ; 0x17ce
+	textpointer UNUSED_17CE                                           ; 0x17ce
 	textpointer PidgeottoName                                         ; 0x17cf
 	textpointer MirrorMoveName                                        ; 0x17d0
-	textpointer MirrorMoveDescription                                 ; 0x17d1
+	textpointer PidgeottosMirrorMoveDescription                       ; 0x17d1
 	textpointer BirdName                                              ; 0x17d2
 	textpointer PidgeottoLv36Description                              ; 0x17d3
 	textpointer TwisterName                                           ; 0x17d4
 	textpointer TwisterDescription                                    ; 0x17d5
 	textpointer FlyAltDescription                                     ; 0x17d6
-	textpointer PidgeottoLv38Description                              ; 0x17d7
+	textpointer RatName                                               ; 0x17d7
 	textpointer PidgeotName                                           ; 0x17d8
 	textpointer SlicingWingName                                       ; 0x17d9
 	textpointer SlicingWingDescription                                ; 0x17da
@@ -6134,7 +6134,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TrickeryName                                          ; 0x17e3
 	textpointer TrickeryDescription                                   ; 0x17e4
 	textpointer RattataLv12Description                                ; 0x17e5
-	textpointer RattataLv15Description                                ; 0x17e6
+	textpointer RattatasTailWhipDescription                           ; 0x17e6
 	textpointer RaticateName                                          ; 0x17e7
 	textpointer SuperFangName                                         ; 0x17e8
 	textpointer SuperFangDescription                                  ; 0x17e9
@@ -6145,12 +6145,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SpearowName                                           ; 0x17ee
 	textpointer SpearowLv9Description                                 ; 0x17ef
 	textpointer FuryAttackName                                        ; 0x17f0
-	textpointer SpearowLv12Description                                ; 0x17f1
+	textpointer SpearowsMirrorMoveDescription                         ; 0x17f1
 	textpointer SpearowLv13Description                                ; 0x17f2
 	textpointer FearowName                                            ; 0x17f3
 	textpointer DrillDescentName                                      ; 0x17f4
 	textpointer BeakName                                              ; 0x17f5
-	textpointer FearowLv24Description                                 ; 0x17f6
+	textpointer FearowsAgilityDescription                             ; 0x17f6
 	textpointer DrillPeckName                                         ; 0x17f7
 	textpointer FearowLv27Description                                 ; 0x17f8
 	textpointer DarkFearowName                                        ; 0x17f9
@@ -6161,12 +6161,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DarkFearowDescription                                 ; 0x17fe
 	textpointer ClefairyName                                          ; 0x17ff
 	textpointer MetronomeName                                         ; 0x1800
-	textpointer MetronomeDescription                                  ; 0x1801
+	textpointer ClefairysMetronomeDescription                         ; 0x1801
 	textpointer FairyName                                             ; 0x1802
 	textpointer ClefairyLv14Description                               ; 0x1803
 	textpointer FollowMeName                                          ; 0x1804
 	textpointer ShiningFingersName                                    ; 0x1805
-	textpointer ClefairyLv15Description                               ; 0x1806
+	textpointer ClefablesMetronomeDescription                         ; 0x1806
 	textpointer ClefableName                                          ; 0x1807
 	textpointer MinimizeAltDescription                                ; 0x1808
 	textpointer ClefableDescription                                   ; 0x1809
@@ -6186,7 +6186,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ExpandDescription                                     ; 0x1817
 	textpointer JigglypuffLv13Description                             ; 0x1818
 	textpointer LullabyName                                           ; 0x1819
-	textpointer JigglypuffLv14Description                             ; 0x181a
+	textpointer JigglypuffsFirstAidDescription                        ; 0x181a
 	textpointer WigglytuffName                                        ; 0x181b
 	textpointer DoTheWaveName                                         ; 0x181c
 	textpointer DoTheWaveDescription                                  ; 0x181d
@@ -6194,7 +6194,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer HelpingHandName                                       ; 0x181f
 	textpointer HelpingHandDescription                                ; 0x1820
 	textpointer ExpandAltDescription                                  ; 0x1821
-	textpointer WigglytuffLv40Description                             ; 0x1822
+	textpointer JigglypuffsDoubleEdgeDescription                      ; 0x1822
 	textpointer MeowthName                                            ; 0x1823
 	textpointer CoinHurlName                                          ; 0x1824
 	textpointer CoinHurlDescription                                   ; 0x1825
@@ -6205,11 +6205,11 @@ SECTION "Text Offsets 2", ROMX
 	textpointer MeowthLv13Description                                 ; 0x182a
 	textpointer ClearProfitName                                       ; 0x182b
 	textpointer ClearProfitDescription                                ; 0x182c
-	textpointer MeowthLv14Description                                 ; 0x182d
+	textpointer UNUSED_182D                                           ; 0x182d
 	textpointer PayDayName                                            ; 0x182e
 	textpointer PayDayDescription                                     ; 0x182f
 	textpointer MeowthLv15Description                                 ; 0x1830
-	textpointer MeowthLv17Description                                 ; 0x1831
+	textpointer UNUSED_1831                                           ; 0x1831
 	textpointer PersianName                                           ; 0x1832
 	textpointer PounceName                                            ; 0x1833
 	textpointer PounceDescription                                     ; 0x1834
@@ -6226,40 +6226,40 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PotSmashName                                          ; 0x183f
 	textpointer WildDuckName                                          ; 0x1840
 	textpointer FarfetchdLv20Description                              ; 0x1841
-	textpointer LeekSlapAltDescription                                ; 0x1842
-	textpointer FarfetchdAltDescription                               ; 0x1843
+	textpointer UNUSED_1842                                           ; 0x1842
+	textpointer UNUSED_1843                                           ; 0x1843
 	textpointer DoduoName                                             ; 0x1844
 	textpointer GrowlAltDescription2                                  ; 0x1845
 	textpointer TwinBirdName                                          ; 0x1846
-	textpointer DoduoLv8Description                                   ; 0x1847
+	textpointer UNUSED_1847                                           ; 0x1847
 	textpointer DoduoLv10Description                                  ; 0x1848
 	textpointer DodrioName                                            ; 0x1849
 	textpointer TriAttackName                                         ; 0x184a
 	textpointer TripleBirdName                                        ; 0x184b
-	textpointer DodrioLv25Description                                 ; 0x184c
+	textpointer DodriosRageDescription                                ; 0x184c
 	textpointer RetreatAidName                                        ; 0x184d
 	textpointer RetreatAidDescription                                 ; 0x184e
 	textpointer DodrioLv28Description                                 ; 0x184f
 	textpointer LickitungName                                         ; 0x1850
 	textpointer UNUSED_1851                                           ; 0x1851
 	textpointer LickingName                                           ; 0x1852
-	textpointer LickitungLv20Description                              ; 0x1853
+	textpointer UNUSED_1853                                           ; 0x1853
 	textpointer TongueWrapName                                        ; 0x1854
 	textpointer LickitungLv26Description                              ; 0x1855
 	textpointer ChanseyName                                           ; 0x1856
 	textpointer UNUSED_1857                                           ; 0x1857
-	textpointer ChanseyLv40Description                                ; 0x1858
+	textpointer ScrunchDescription                                    ; 0x1858
 	textpointer ScrunchName                                           ; 0x1859
 	textpointer Do80DamageToSelfDescription                           ; 0x185a
 	textpointer ChanseyLv55Description                                ; 0x185b
 	textpointer KangaskhanName                                        ; 0x185c
 	textpointer TailDropName                                          ; 0x185d
 	textpointer ParentName                                            ; 0x185e
-	textpointer KangaskhanLv36Description                             ; 0x185f
+	textpointer UNUSED_185F                                           ; 0x185f
 	textpointer DizzyPunchName                                        ; 0x1860
-	textpointer KangaskhanLv38Description                             ; 0x1861
+	textpointer UNUSED_1861                                           ; 0x1861
 	textpointer FetchName                                             ; 0x1862
-	textpointer FetchDescription                                      ; 0x1863
+	textpointer UNUSED_1863                                           ; 0x1863
 	textpointer CometPunchName                                        ; 0x1864
 	textpointer KangaskhanLv40Description                             ; 0x1865
 	textpointer TaurosName                                            ; 0x1866
@@ -6269,7 +6269,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TaurosLv32Description                                 ; 0x186a
 	textpointer KickingAndStampingName                                ; 0x186b
 	textpointer KickingAndStampingDescription                         ; 0x186c
-	textpointer TaurosLv35Description                                 ; 0x186d
+	textpointer UNUSED_186D                                           ; 0x186d
 	textpointer DittoName                                             ; 0x186e
 	textpointer MorphName                                             ; 0x186f
 	textpointer MorphDescription                                      ; 0x1870
@@ -6277,8 +6277,8 @@ SECTION "Text Offsets 2", ROMX
 	textpointer TransformName                                         ; 0x1872
 	textpointer DittoDescription                                      ; 0x1873
 	textpointer EvolutionName                                         ; 0x1874
-	textpointer EeveeLv5Description                                   ; 0x1875
-	textpointer SandAttackDescription                                 ; 0x1876
+	textpointer UNUSED_1875                                           ; 0x1875
+	textpointer EeveesTailWhipDescription                             ; 0x1876
 	textpointer EeveeLv9Description                                   ; 0x1877
 	textpointer EeveeLv12Description                                  ; 0x1878
 	textpointer PorygonName                                           ; 0x1879
@@ -6289,14 +6289,14 @@ SECTION "Text Offsets 2", ROMX
 	textpointer VirtualName                                           ; 0x187e
 	textpointer PorygonLv12Description                                ; 0x187f
 	textpointer Porygon3DAttackName                                   ; 0x1880
-	textpointer Porygon3DAttack10DamageDescription                    ; 0x1881
+	textpointer UNUSED_1881                                           ; 0x1881
 	textpointer PorygonSharedDescription                              ; 0x1882
-	textpointer Conversion1AltDescription                             ; 0x1883
+	textpointer UNUSED_1883                                           ; 0x1883
 	textpointer PorygonLv20Description                                ; 0x1884
 	textpointer CoolPorygonName                                       ; 0x1885
 	textpointer TextureMagicName                                      ; 0x1886
 	textpointer TextureMagicDescription                               ; 0x1887
-	textpointer Porygon3DAttack20DamageDescription                    ; 0x1888
+	textpointer TextureMagicDescriptionCont                           ; 0x1888
 	textpointer SnorlaxName                                           ; 0x1889
 	textpointer ThickSkinnedName                                      ; 0x188a
 	textpointer ThickSkinnedDescription                               ; 0x188b
@@ -6306,7 +6306,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer GuardDescription                                      ; 0x188f
 	textpointer RollOverName                                          ; 0x1890
 	textpointer RollOverDescription                                   ; 0x1891
-	textpointer SnorlaxLv35Description                                ; 0x1892
+	textpointer EvolutionaryLightDescriptionCont                      ; 0x1892
 	textpointer HungrySnorlaxName                                     ; 0x1893
 	textpointer EatName                                               ; 0x1894
 	textpointer EatDescription                                        ; 0x1895
@@ -6420,7 +6420,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer ScoopUpDescription                                    ; 0x1901
 	textpointer PokemonTraderName                                     ; 0x1902
 	textpointer PokemonTraderDescription                              ; 0x1903
-	textpointer UNUSED_1904                                           ; 0x1904
+	textpointer MiniMetronomeName                                     ; 0x1904
 	textpointer PokemonRecallName                                     ; 0x1905
 	textpointer PokemonRecallDescription                              ; 0x1906
 	textpointer PokedexName                                           ; 0x1907

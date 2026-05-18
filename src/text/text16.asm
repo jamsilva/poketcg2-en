@@ -1883,22 +1883,17 @@ PidgeyName:
 	done
 
 TinyBirdName:
-	textfw "ことり"
+	text "Tiny Bird"
 	done
 
 PidgeyLv8Description:
-	textfw "戦いは好きではない。"
-	linefw "草むらの中に隠れて小さい虫などを"
-	linefw "とらえる。"
+	text "A common sight in forests and woods."
+	line "It flaps its wings at ground level"
+	line "to kick up blinding sand."
 	done
 
 GustName:
-	textfw "かぜおこし"
-	done
-
-PidgeyLv10Description:
-	textfw "森や林に多く分布。地上でも激しく"
-	linefw "羽ばたいて砂をかけたりする。"
+	text "Gust"
 	done
 
 PidgeottoName:
@@ -1906,49 +1901,46 @@ PidgeottoName:
 	done
 
 MirrorMoveName:
-	textfw "オウムがえし"
+	text "Mirror Move"
 	done
 
-MirrorMoveDescription:
-	textfw "前の相手の番に、このカードがワザに"
-	linefw "よって受けたダメージと効果を、"
-	linefw "[相手]に与える。"
+PidgeottosMirrorMoveDescription:
+	text "If Pidgeotto was attacked last turn,"
+	line "do the final result of that attack"
+	line "on Pidgeotto to the Defending"
+	line "Pokémon."
 	done
 
 BirdName:
-	textfw "とり"
+	text "Bird"
 	done
 
 PidgeottoLv36Description:
-	textfw "足のツメが発達している。"
-	linefw "エサのタマタマをつかんで"
-	linefw "100キロ先の巣まで運ぶ。"
+	text "Very protective of its sprawling"
+	line "territory, this Pokémon will"
+	line "fiercely peck at any intruder."
 	done
 
 TwisterName:
-	textfw "ツイスター"
+	text "Twister"
 	done
 
 TwisterDescription:
-	textfw "[相手]が「きぜつ」しなかったなら、"
-	linefw "コインを投げる。「おもて」なら、"
-	linefw "このワザを受けた[相手]についている"
-	linefw "すべての「エネルギーカード」と"
-	linefw "「トレーナーカード」を、持ち主の"
-	linefw "手札にもどす。"
+	text "Unless this attack Knocks Out the"
+	line "Defending Pokémon, flip a coin. If"
+	line "Heads, return all Energy cards and"
+	line "Trainer cards attached to the"
+	line "Defending Pokémon to your opponent's"
+	line "hand."
 	done
 
 FlyAltDescription:
-	textfw "コインを投げて「うら」なら、"
-	linefw "このワザは失敗する。「おもて」なら、"
-	linefw "次の相手の番、このカードは相手のワザ"
-	linefw "によるダメージや効果を受けない。"
-	done
-
-PidgeottoLv38Description:
-	textfw "広いなわばりを持っており、侵入する"
-	linefw "じゃま者は、てってい的に、つつかれて"
-	linefw "しまう。"
+	text "Flip a coin. If Heads, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Pidgeotto during"
+	line "your opponent's next turn; if Tails,"
+	line "this attack does nothing (not even"
+	line "damage)."
 	done
 
 PidgeotName:
@@ -1956,79 +1948,95 @@ PidgeotName:
 	done
 
 SlicingWingName:
-	textfw "かまいたち"
+	text "Slicing Wind"
 	done
 
 SlicingWingDescription:
-	textfw "相手の場にいるポケモン1匹に、"
-	linefw "「弱点・抵抗力」に関係なく、30"
-	linefw "ダメージ。ダメージを受けるポケモンは"
-	linefw "自動的に選ばれる。"
+	text "Does 30 damage to 1 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
 GaleName:
-	textfw "トルネード"
+	text "Gale"
 	done
 
 GaleDescription:
-	textfw "[自分]と[相手]を、それぞれ控えポケモ"
-	linefw "ンと入れ替える。(控えがいない側は、"
-	linefw "入れ替えをしない)。入れ替わる控えポ"
-	linefw "ケモンは、それぞれ自動的に選ばれる。"
+	text "Switch Pidgeot with 1 of your"
+	line "Benched Pokémon chosen at random."
+	line "If your opponent has any Benched"
+	line "Pokémon, switch the Defending"
+	line "Pokémon with 1 of them chosen at"
+	line "random. (Do the damage before"
+	line "switching the Pokémon)."
 	done
 
 PidgeotLv38Description:
-	textfw "美しいハネを広げて相手を威嚇する。"
-	linefw "マッハ2で空を飛び回る。"
+	text "This Pokémon flies at Mach 2 speed,"
+	line "seeking prey. Its large talons are"
+	line "feared as wicked weapons."
 	done
 
 HurricaneName:
-	textfw "ハリケーン"
+	text "Hurricane"
 	done
 
 HurricaneDescription:
-	textfw "[相手]が「きぜつ」しなかったなら、"
-	linefw "[相手]と[相手]についているすべての"
-	linefw "カードを、持ち主の手札にもどす。"
+	text "Unless this attack Knocks Out the"
+	line "Defending Pokémon, return the"
+	line "Defending Pokémon and all cards"
+	line "attached to it to your opponent's"
+	line "hand."
 	done
 
 PidgeotLv40Description:
-	textfw "美しい羽を広げて相手を威嚇する。"
-	linefw "マッハ2で空を飛び回る。"
+	text "When hunting, it skims the surface"
+	line "of water at high speed to pick off"
+	line "unwary prey such as Magikarp."
 	done
 
 RattataName:
 	text "Rattata"
 	done
 
+RatName:
+	text "Rat"
+	done
+
 RattataLv9Description:
-	textfw "キバは長くて鋭い。"
-	linefw "一生のびつづけるので"
-	linefw "固いモノをかじってけずる。"
+	text "Bites anything when it attacks."
+	line "Small and very quick, it is a common"
+	line "sight in many places."
 	done
 
 TrickeryName:
-	textfw "わるふざけ"
+	text "Trickery"
 	done
 
 TrickeryDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "自分のサイドカードから1枚を選び、"
-	linefw "自分の山札の一番上のカードと入れ"
-	linefw "替える。このカードが「ねむり・マヒ・"
-	linefw "こんらん」状態のとき、この力は"
-	linefw "使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may switch 1 of your"
+	line "Prizes with the top card of your"
+	line "deck. This power can't be used if"
+	line "Rattata is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 RattataLv12Description:
-	textfw "くるみやどんぐりなどの木の実、"
-	linefw "加工品では、チーズ、牛乳などを"
-	linefw "好んで食べる。"
+	text "Loves to eat walnuts, chestnuts,"
+	line "cheese, and milk."
 	done
 
-RattataLv15Description:
-	textfw "何でもかじって攻擊。小さいうえに"
-	linefw "動きがすばやく、いろんな所に出没する"
+RattatasTailWhipDescription:
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon can't attack Rattata during"
+	line "your opponent's next turn. (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
 	done
 
 RaticateName:
@@ -2036,18 +2044,20 @@ RaticateName:
 	done
 
 SuperFangName:
-	textfw "いかりのまえば"
+	text "Super Fang"
 	done
 
 SuperFangDescription:
-	textfw "[相手]の残りHPの半分(切り上げ)の"
-	linefw "ダメージを与える。"
+	text "Does damage to the Defending Pokémon"
+	line "equal to half the Defending"
+	line "Pokémon's remaining HP (rounded up"
+	line "to the nearest 10)."
 	done
 
 RaticateDescription:
-	textfw "後ろ足の指には、"
-	linefw "3本の小さなみずかきがついている。"
-	linefw "川を泳いでわたる。"
+	text "It uses its whiskers to maintain its"
+	line "balance. It seems to slow down if"
+	line "they are cut off."
 	done
 
 DarkRaticateName:
@@ -2055,12 +2065,14 @@ DarkRaticateName:
 	done
 
 HyperFangName:
-	textfw "ひっさつまえば"
+	text "Hyper Fang"
 	done
 
 DarkRaticateDescription:
-	textfw "ラッタの前歯は強力で、2階建ての"
-	linefw "木造家屋なら5分で倒壊してしまう。"
+	text "A Raticate's front teeth are"
+	line "incredibly powerful; it can destroy"
+	line "a two-story house with them in 5"
+	line "minutes."
 	done
 
 SpearowName:
@@ -2068,51 +2080,54 @@ SpearowName:
 	done
 
 SpearowLv9Description:
-	textfw "高く飛ぶのは苦手。"
-	linefw "なわばりを守るために、もうスピードで"
-	linefw "飛び回っている。"
+	text "Inept at flying high. However, it"
+	line "can fly around very fast to protect"
+	line "its territory."
 	done
 
 FuryAttackName:
-	textfw "みだれづき"
+	text "Fury Attack"
 	done
 
-SpearowLv12Description:
-	textfw "草むらの虫などを食べる。羽が短い"
-	linefw "ために、いつも忙しく羽ばたいている。"
+SpearowsMirrorMoveDescription:
+	text "If Spearow was attacked last turn,"
+	line "do the final result of that attack"
+	line "on Spearow to the Defending Pokémon."
 	done
 
 SpearowLv13Description:
-	textfw "忙しくあちこちを飛び回る。"
-	linefw "体力は少ないがオウムがえしを"
-	linefw "使うとてごわい。"
+	text "Eats bugs in grassy areas. It has to"
+	line "flap its short wings at high speed"
+	line "to stay airborne."
 	done
 
 FearowName:
 	text "Fearow"
 	done
 
+FearowsAgilityDescription:
+	text "Flip a coin. If Heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Fearow."
+	done
+
 DrillDescentName:
-	textfw "ドリルこうか"
+	text "Drill Descent"
 	done
 
 BeakName:
-	textfw "くちばし"
-	done
-
-FearowLv24Description:
-	textfw "大きな翼で大空を飛び続けることが"
-	linefw "できる。1回も降りなくても平気だ。"
+	text "Beak"
 	done
 
 DrillPeckName:
-	textfw "ドリルくちばし"
+	text "Drill Peck"
 	done
 
 FearowLv27Description:
-	textfw "大きな翼で大空を飛び続けることが"
-	linefw "できる。"
-	linefw "1日降りなくてもだいじょうぶ。"
+	text "With its huge and magnificent wings,"
+	line "it can keep aloft without ever"
+	line "having to land for rest."
 	done
 
 DarkFearowName:
@@ -2120,27 +2135,28 @@ DarkFearowName:
 	done
 
 FlyHighName:
-	textfw "たかくとぶ"
+	text "Fly High"
 	done
 
 FlyHighDescription:
-	textfw "次の自分の番、このカードが使う"
-	linefw "「ドリルダイブ」のダメージは2倍に"
-	linefw "なる。"
+	text "During your next turn, Dark Fearow's"
+	line "Drill Dive attack's base damage is"
+	line "80 instead of 40."
 	done
 
 DrillDiveName:
-	textfw "ドリルダイブ"
+	text "Drill Dive"
 	done
 
 DrillDiveDescription:
-	textfw "次の自分の番、このカードはワザを"
-	linefw "使えず、「にげる」こともできない。"
+	text "During your next turn, Dark Fearow"
+	line "can't attack or retreat."
 	done
 
 DarkFearowDescription:
-	textfw "雲間から、突然、急降下して"
-	linefw "くりだすワザをよけるのはむずかしい。"
+	text "It suddenly appears from the clouds"
+	line "with a swooping attack that is"
+	line "difficult to dodge."
 	done
 
 ClefairyName:
@@ -2148,53 +2164,60 @@ ClefairyName:
 	done
 
 MetronomeName:
-	textfw "ゆびをふる"
+	text "Metronome"
 	done
 
-MetronomeDescription:
-	textfw "[相手]のワザを1つ選び、それを、"
-	linefw "[自分]が持っているワザとして使う。"
-	linefw "(そのワザに必要なエネルギーがついて"
-	linefw "いなくても、かまわない)"
+ClefairysMetronomeDescription:
+	text "Choose 1 of the Defending Pokémon's"
+	line "attacks. Metronome copies that"
+	line "attack except for its Energy costs."
+	line "(No matter what type the Defending"
+	line "Pokémon is, Clefairy's type is"
+	line "still <COLORLESS>)."
 	done
 
 FairyName:
-	textfw "ようせい"
+	text "Fairy"
 	done
 
 ClefairyLv14Description:
-	textfw "愛くるしい姿からペット用に人気がある"
-	linefw "ただし、なかなか見つけられない。"
+	text "Its magical and cute appeal has many"
+	line "admirers. It is rare and found only"
+	line "in certain areas."
 	done
 
 FollowMeName:
-	textfw "このゆびとまれ"
+	text "Follow Me"
 	done
 
 ShiningFingersName:
-	textfw "ひかるゆび"
-	done
-
-ClefairyLv15Description:
-	textfw "不思議でかわいいので多くのファンが"
-	linefw "いる。ただし、生息地が限られ、"
-	linefw "見つけるのが大変。"
+	text "Shining Fingers"
 	done
 
 ClefableName:
 	text "Clefable"
 	done
 
+ClefablesMetronomeDescription:
+	text "Choose 1 of the Defending Pokémon's"
+	line "attacks. Metronome copies that"
+	line "attack except for its Energy costs."
+	line "(No matter what type the Defending"
+	line "Pokémon is, Clefable's type is"
+	line "still <COLORLESS>)."
+	done
+
 MinimizeAltDescription:
-	textfw "次の相手の番、このカードがワザに"
-	linefw "よって受けるダメージは「-20」され"
-	linefw "る。(ダメージ以外の効果はそのまま)"
+	text "All damage done by attacks to"
+	line "Clefable during your opponent's next"
+	line "turn is reduced by 20 (after"
+	line "applying Weakness and Resistance)."
 	done
 
 ClefableDescription:
-	textfw "耳が良くて、1キロ離れたところで"
-	linefw "落とした針の音をみごとに"
-	linefw "聞きわけられる。"
+	text "A timid Fairy Pokémon that is rarely"
+	line "seen. It will run and hide the"
+	line "moment it senses people."
 	done
 
 DarkClefableName:
@@ -2202,86 +2225,96 @@ DarkClefableName:
 	done
 
 DarknessVeilName:
-	textfw "ダークヴェール"
+	text "Darkness Veil"
 	done
 
 DarknessVeiDescription:
-	textfw "このカードが場にいる限り、自分のバト"
-	linefw "ル場の「わるいポケモン」は、相手の番"
-	linefw "に受けるワザによるダメージが、ランダ"
-	linefw "ムで「0、-10、-20」される。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "All damage done to Dark Pokémon is"
+	line "reduced by a 0, 10, or 20 damage,"
+	line "chosen at random, as long as that"
+	line "Pokémon is the Active Pokémon. This"
+	line "Power stops working if Dark Clefable"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 DarkSongName:
-	textfw "わるいうた"
+	text "Dark Song"
 	done
 
 DarkSongDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「ねむり」状態にして、"
-	linefw "相手のベンチの「わるいポケモン」以外"
-	linefw "のポケモン全員に、「弱点・抵抗力」に"
-	linefw "関係なく、10ダメージ。"
-	done
+    text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Asleep and this"
+	line "attack does 10 damage to each of"
+	line "your opponent's Benched Pokémon."
+	line "(Don't apply Weakness and Resistance"
+    line "for Benched Pokémon)."
+    done
 
 DarkClefableDescription:
-	textfw "あたりの気配を感じ取り、妖精だけが"
-	linefw "もつ不思議な力で仲間を守る。"
+	text "If it senses anyone nearby, it"
+	line "will protect its friends with a"
+	line "mysterious power that only fairies"
+	line "possess."
 	done
 
 JigglypuffName:
 	text "Jigglypuff"
 	done
 
+JigglypuffsFirstAidDescription:
+	text "Remove 1 damage counter from"
+	line "Jigglypuff."
+	done
+
 DoubleEdgeName:
-	textfw "すてみタックル"
+	text "Double-edge"
+	done
+
+JigglypuffsDoubleEdgeDescription:
+	text "Jigglypuff does 20 damage to itself."
 	done
 
 BalloonName:
-	textfw "ふうせん"
+	text "Balloon"
 	done
 
 JigglypuffLv12Description:
-	textfw "丸くて大きい瞳で誘いこみ、心地よい"
-	linefw "歌をうたい、相手を眠らせる。"
+	text "When its huge eyes light up, it"
+	line "sings a mysteriously soothing melody"
+	line "that lulls its enemies to sleep."
 	done
 
 FriendshipSongName:
-	textfw "ともだちのうた"
+	text "Friendship Song"
 	done
 
 FriendshipSongDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "自分の山札から「たねポケモン」の"
-	linefw "カードが1枚自動的に選ばれ、ベンチに"
-	linefw "出る。その後、その山札をよく切る。"
-	linefw "(ベンチに空きがないとき、このワザは"
-	linefw "使えない)"
+	text "Flip a coin. If Heads, put a Basic"
+	line "Pokémon card chosen at random from"
+	line "your deck onto your Bench. (You"
+	line "can't use this attack if your Bench"
+	line "is full)."
 	done
 
 ExpandName:
-	textfw "ふくらむ"
+	text "Expand"
 	done
 
 ExpandDescription:
-	textfw "次の相手の番、このカードが受けるダメ"
-	linefw "ージは「-10」される。"
+	text "All damage done to Jigglypuff during"
+	line "your opponent's next turn is reduced"
+	line "by 10 (after applying Weakness and"
+	line "Resistance)."
 	done
 
 JigglypuffLv13Description:
-	textfw "つぶらな瞳が揺れるとき、眠たくなる"
-	linefw "ような不思議で気持ちいい歌を歌う。"
+	text "Uses its alluring eyes to enrapture"
+	line "its foe. It then sings a pleasing"
+	line "melody that lulls the foe to sleep."
 	done
 
 LullabyName:
-	textfw "こもりうた"
-	done
-
-JigglypuffLv14Description:
-	textfw "気に食わないことがあると"
-	linefw "プーッと風船のように膨れる。"
+	text "Lullaby"
 	done
 
 WigglytuffName:
@@ -2289,41 +2322,38 @@ WigglytuffName:
 	done
 
 DoTheWaveName:
-	textfw "ともだちのわ"
+	text "Do the Wave"
 	done
 
 DoTheWaveDescription:
-	textfw "自分の控えポケモンの数×10のダメー"
-	linefw "ジを追加する。"
+	text "Does 10 damage plus 10 more damage"
+	line "for each of your Benched Pokémon."
 	done
 
 WigglytuffLv36Description:
-	textfw "キメ細かくしなやかな体毛は、"
-	linefw "うっとりするほど。"
-	linefw "毛皮は高級品だ。"
+	text "The body is soft and rubbery. When"
+	line "angered, it will suck in air and"
+	line "inflate itself to an enormous size."
 	done
 
 HelpingHandName:
-	textfw "てだすけ"
+	text "Helping Hand"
 	done
 
 HelpingHandDescription:
-	textfw "この力は、自分の番ごとに1回、この"
-	linefw "カードがベンチにいるとき、使える。"
-	linefw "コインを投げて「おもて」なら、"
-	linefw "自分の対戦ポケモンの「どく・ねむり・"
-	linefw "マヒ・こんらん」状態のうちの1つを"
-	linefw "回復させる。"
+	text "Once during your turn (before your"
+	line "attack), if Wigglytuff is on your"
+	line "Bench, you may flip a coin. If"
+	line "Heads, your Active Pokémon is no"
+	line "longer Asleep, Confused, Paralyzed,"
+	line "or Poisoned."
 	done
 
 ExpandAltDescription:
-	textfw "次の相手の番、このカードが受ける"
-	linefw "ダメージは「-10」される。"
-	done
-
-WigglytuffLv40Description:
-	textfw "ボディに彈力性があり、怒らせると息を"
-	linefw "吸い込んで、どんどん大きくふくらむ。"
+	text "All damage done to Wigglytuff during"
+	line "your opponent's next turn is reduced"
+	line "by 10 (after applying Weakness and"
+	line "Resistance)."
 	done
 
 MeowthName:
@@ -2331,77 +2361,68 @@ MeowthName:
 	done
 
 CoinHurlName:
-	textfw "こばんなげ"
+	text "Coin Hurl"
 	done
 
 CoinHurlDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の場のポケモンを1匹選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "20ダメージ。"
+	text "Choose 1 of your opponent's Pokémon"
+	line "and flip a coin. If heads, this"
+	line "attack does 20 damage to that"
+	line "Pokémon. Don't apply Weakness and"
+	line "Resistance for this attack."
 	done
 
 ScratchCatName:
-	textfw "ばけねこ"
+	text "Scratch Cat"
 	done
 
 MeowthLv10Description:
-	textfw "「ねこにこばん」というワザで、"
-	linefw "おこづかいを稼いでくれる、うれしい"
-	linefw "ポケモンでもある。"
+	text "A popular Pokémon that earns money"
+	line "for its owner with its ”Pay Day”"
+	line "ability."
 	done
 
 CatPunchName:
-	textfw "ねこパンチ"
+	text "Cat Punch"
 	done
 
 CatPunchDescription:
-	textfw "相手の場のポケモン1匹に、「弱点・抵"
-	linefw "抗力」に関係なく、20ダメージ。ダメ"
-	linefw "ージを受けるポケモンは、自動的に選ば"
-	linefw "れる。"
+	text "Does 20 damage to 1 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen)."
 	done
 
 MeowthLv13Description:
-	textfw "よなよな出かけては落ちているコインを"
-	linefw "拾い集めて帰ってくる。"
+	text "Appears to be more active at night."
+	line "It loves round and shiny things, so"
+	line "it can't stop from picking them up."
 	done
 
 ClearProfitName:
-	textfw "まるもうけ"
+	text "Clear Profit"
 	done
 
 ClearProfitDescription:
-	textfw "「うら」が出るまでコインを投げつづけ"
-	linefw "その間に出た「おもて」の数だけ、"
-	linefw "カードを引く。"
-	done
-
-MeowthLv14Description:
-	textfw "丸いものが大好き。夜な夜な出かけては"
-	linefw "落ちているコインを拾い集めて帰って"
-	linefw "くる。"
+	text "Flip a coin until you get Tails."
+	line "For each Heads, draw a card."
 	done
 
 PayDayName:
-	textfw "ねこにこばん"
+	text "Pay Day"
 	done
 
 PayDayDescription:
-	textfw "コインを投げて「おもて」なら、山札か"
-	linefw "らカードを1枚引いて、手札に加える。"
+	text "Flip a coin. If Heads, draw a card."
 	done
 
 MeowthLv15Description:
-	textfw "昼間は寝てばかりいる。"
-	linefw "夜になると目が輝き、"
-	linefw "なわばりを歩きまわる。"
-	done
-
-MeowthLv17Description:
-	textfw "夜のほうが元気があるようだ。丸くて"
-	linefw "光るものが好きで見つけるとひろわずに"
-	linefw "いられない。"
+	text "Adores circular objects. Wanders"
+	line "the streets on a nightly basis to"
+	line "look for dropped loose change."
 	done
 
 PersianName:
@@ -2409,23 +2430,27 @@ PersianName:
 	done
 
 PounceName:
-	textfw "いきなりかみつく"
+	text "Pounce"
 	done
 
 PounceDescription:
-	textfw "次の相手の番、このワザを受けた[相手]"
-	linefw "がこのカードに与えるダメージは"
-	linefw "「-10」される。"
+	text "If the Defending Pokémon attacks"
+	line "Persian during your opponent's next"
+	line "turn, any damage done by the attack"
+	line "is reduced by 10 (after applying"
+	line "Weakness and Resistance). (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
 	done
 
 ClassyCatName:
-	textfw "シャムネコ"
+	text "Classy Cat"
 	done
 
 PersianDescription:
-	textfw "気性が激しく、"
-	linefw "尻尾をまっすぐたてたら要注意。"
-	linefw "とびかかって噛みつくまえぶれだ。"
+	text "Although its fur has many admirers,"
+	line "it is tough to raise as a pet"
+	line "because of its fickle meanness."
 	done
 
 DarkPersianName:
@@ -2433,25 +2458,26 @@ DarkPersianName:
 	done
 
 FascinateName:
-	textfw "ゆうわく"
+	text "Fascinate"
 	done
 
 FascinateDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の控えポケモンを1匹選び、"
-	linefw "[相手]と入れ替える。"
-	linefw "(相手に控えがいないとき、このワザは"
-	linefw "使えない)"
+	text "Flip a coin. If Heads, choose 1 of"
+	line "your opponent's Benched Pokémon and"
+	line "switch it with the Defending"
+	line "Pokémon. This attack can't be used"
+	line "if your opponent has no Benched"
+	line "Pokémon."
 	done
 
 PoisonClawsName:
-	textfw "どくのつめ"
+	text "Poison Claws"
 	done
 
 DarkPersianDescription:
-	textfw "毛並の美しさから、鑑賞用として飼う"
-	linefw "女性も多い。ロケット団のボスのペット"
-	linefw "でもある。"
+	text "Popular with women because of its"
+	line "beautiful fur. The leader of the"
+	line "Rockets keeps one as a pet."
 	done
 
 FarfetchdName:
@@ -2459,5 +2485,5 @@ FarfetchdName:
 	done
 
 LeekSlapName:
-	textfw "ネギでたたく"
+	text "Leek Slap"
 	done
