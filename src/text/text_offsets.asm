@@ -466,7 +466,7 @@ TextOffsets::
 	textpointer EffectTargetGeneralUnitText                           ; 0x01cc
 	textpointer DuelistDrawCardsText                                  ; 0x01cd
 	textpointer UNUSED_01CE                                           ; 0x01ce
-	textpointer ClefairyDollMindShockDescription                      ; 0x01cf
+	textpointer UNUSED_01CF                                           ; 0x01cf
 	textpointer DiscardingXCardsPromptText                            ; 0x01d0
 	textpointer ProcedureForBurningFireText                           ; 0x01d1
 	textpointer ChooseHowManyFoodCountersToRemoveText                 ; 0x01d2
@@ -5923,8 +5923,8 @@ SECTION "Text Offsets 2", ROMX
 	textpointer AbsorbDescription                                     ; 0x1710
 	textpointer AbraName                                              ; 0x1711
 	textpointer PsychicBeamName                                       ; 0x1712
-	textpointer PsychicBeamDescription                                ; 0x1713
-	textpointer AbraLv8Description                                    ; 0x1714
+	textpointer UNUSED_1713                                           ; 0x1713
+	textpointer PsiName                                               ; 0x1714
 	textpointer AbraLv10Description                                   ; 0x1715
 	textpointer VanishName                                            ; 0x1716
 	textpointer VanishDescription                                     ; 0x1717
@@ -5936,12 +5936,12 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PsychoPanicDescription                                ; 0x171d
 	textpointer BlinkName                                             ; 0x171e
 	textpointer BlinkDescription                                      ; 0x171f
-	textpointer KadabraLv39Description                                ; 0x1720
+	textpointer UNUSED_1720                                           ; 0x1720
 	textpointer DarkKadabraName                                       ; 0x1721
 	textpointer MatterExchangeName                                    ; 0x1722
 	textpointer MatterExchangeDescription                             ; 0x1723
 	textpointer MindShockName                                         ; 0x1724
-	textpointer MindShockDescription                                  ; 0x1725
+	textpointer UNUSED_1725                                           ; 0x1725
 	textpointer DarkKadabraDescription                                ; 0x1726
 	textpointer AlakazamName                                          ; 0x1727
 	textpointer DamageSwapName                                        ; 0x1728
@@ -5949,7 +5949,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer AlakazamLv42Description                               ; 0x172a
 	textpointer TransDamageName                                       ; 0x172b
 	textpointer TransDamageDescription                                ; 0x172c
-	textpointer AlakazamLv45Description                               ; 0x172d
+	textpointer UNUSED_172D                                           ; 0x172d
 	textpointer DarkAlakazamName                                      ; 0x172e
 	textpointer TeleportBlastName                                     ; 0x172f
 	textpointer TeleportBlastDescription                              ; 0x1730
@@ -5964,7 +5964,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SpacingOutDescription                                 ; 0x1739
 	textpointer ScavengeName                                          ; 0x173a
 	textpointer ScavengeDescription                                   ; 0x173b
-	textpointer SlowpokeLv18Description                               ; 0x173c
+	textpointer UNUSED_173C                                           ; 0x173c
 	textpointer SlowbroName                                           ; 0x173d
 	textpointer StrangeBehaviorName                                   ; 0x173e
 	textpointer StrangeBehaviorDescription                            ; 0x173f
@@ -5974,7 +5974,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer BigYawnDescription                                    ; 0x1743
 	textpointer BigSnoreName                                          ; 0x1744
 	textpointer BigSnoreDescription                                   ; 0x1745
-	textpointer SlowbroLv35Description                                ; 0x1746
+	textpointer UNUSED_1746                                           ; 0x1746
 	textpointer DarkSlowbroName                                       ; 0x1747
 	textpointer ReelInName                                            ; 0x1748
 	textpointer ReelInDescription                                     ; 0x1749
@@ -5990,7 +5990,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer SpookifyName                                          ; 0x1753
 	textpointer SpookifyDescription                                   ; 0x1754
 	textpointer FadeToBlackName                                       ; 0x1755
-	textpointer GastlyLv13Description                                 ; 0x1756
+	textpointer UNUSED_1756                                           ; 0x1756
 	textpointer LickName                                              ; 0x1757
 	textpointer EnergyConversionName                                  ; 0x1758
 	textpointer EnergyConversionDescription                           ; 0x1759
@@ -6023,7 +6023,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PowerOfDarknessName                                   ; 0x1774
 	textpointer PowerOfDarknessDescription                            ; 0x1775
 	textpointer PsyHorrorName                                         ; 0x1776
-	textpointer GengarLv40Description                                 ; 0x1777
+	textpointer UNUSED_1777                                           ; 0x1777
 	textpointer DarkGengarName                                        ; 0x1778
 	textpointer PlayTricksName                                        ; 0x1779
 	textpointer PlayTricksDescription                                 ; 0x177a
@@ -6033,13 +6033,13 @@ SECTION "Text Offsets 2", ROMX
 	textpointer DrowzeeName                                           ; 0x177e
 	textpointer LongDistanceHypnosisName                              ; 0x177f
 	textpointer LongDistanceHypnosisDescription                       ; 0x1780
-	textpointer UNUSED_1781                                           ; 0x1781
+	textpointer InvisibleWallDescriptionCont                          ; 0x1781
 	textpointer DrowzeeLv10Description                                ; 0x1782
 	textpointer DrowzeeLv12Description                                ; 0x1783
 	textpointer HypnoName                                             ; 0x1784
 	textpointer PuppetMasterName                                      ; 0x1785
 	textpointer PuppetMasterDescription                               ; 0x1786
-	textpointer HypnoLv30Description                                  ; 0x1787
+	textpointer BenchManipulationDescriptionCont                      ; 0x1787
 	textpointer ProphecyName                                          ; 0x1788
 	textpointer ProphecyDescription                                   ; 0x1789
 	textpointer HypnoLv36Description                                  ; 0x178a
@@ -6058,7 +6058,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer InvisibleWallName                                     ; 0x1797
 	textpointer InvisibleWallDescription                              ; 0x1798
 	textpointer MeditateName                                          ; 0x1799
-	textpointer MeditateDescription                                   ; 0x179a
+	textpointer MrMimesMeditateDescription                            ; 0x179a
 	textpointer MrMimeLv28Description                                 ; 0x179b
 	textpointer JynxName                                              ; 0x179c
 	textpointer IcePunchName                                          ; 0x179d
@@ -6066,18 +6066,18 @@ SECTION "Text Offsets 2", ROMX
 	textpointer HumanShapeName                                        ; 0x179f
 	textpointer JynxLv18Description                                   ; 0x17a0
 	textpointer JynxLv23Description                                   ; 0x17a1
-	textpointer JynxLv27Description                                   ; 0x17a2
+	textpointer JynxsMeditateDescription                              ; 0x17a2
 	textpointer MewtwoName                                            ; 0x17a3
 	textpointer EnergyControlDescription                              ; 0x17a4
 	textpointer TelekinesisName                                       ; 0x17a5
 	textpointer TelekinesisDescription                                ; 0x17a6
 	textpointer GeneticName                                           ; 0x17a7
-	textpointer MewtwoLv30Description                                 ; 0x17a8
+	textpointer UNUSED_17A8                                           ; 0x17a8
 	textpointer BarrierDescription                                    ; 0x17a9
 	textpointer MewtwoLv53Description                                 ; 0x17aa
 	textpointer PsycrushName                                          ; 0x17ab
 	textpointer PsycrushDescription                                   ; 0x17ac
-	textpointer MewtwoLv54Description                                 ; 0x17ad
+	textpointer UNUSED_17AD                                           ; 0x17ad
 	textpointer EnergyAbsorptionName                                  ; 0x17ae
 	textpointer EnergyAbsorptionDescription                           ; 0x17af
 	textpointer PsyburnName                                           ; 0x17b0
@@ -6085,8 +6085,8 @@ SECTION "Text Offsets 2", ROMX
 	textpointer CompleteRecoveryName                                  ; 0x17b2
 	textpointer CompleteRecoveryDescription                           ; 0x17b3
 	textpointer PsychoBlastName                                       ; 0x17b4
-	textpointer PsychoBlastDescription                                ; 0x17b5
-	textpointer MewtwoLv67Description                                 ; 0x17b6
+	textpointer UNUSED_17B5                                           ; 0x17b5
+	textpointer UNUSED_17B6                                           ; 0x17b6
 	textpointer GRsMewtwoName                                         ; 0x17b7
 	textpointer DarkWaveName                                          ; 0x17b8
 	textpointer DarkWaveDescription                                   ; 0x17b9
@@ -6105,7 +6105,7 @@ SECTION "Text Offsets 2", ROMX
 	textpointer PsywaveDescription                                    ; 0x17c6
 	textpointer DevolutionBeamName                                    ; 0x17c7
 	textpointer DevolutionBeamDescription                             ; 0x17c8
-	textpointer MewLv23Description                                    ; 0x17c9
+	textpointer UNUSED_17C9                                           ; 0x17c9
 	textpointer PidgeyName                                            ; 0x17ca
 	textpointer TinyBirdName                                          ; 0x17cb
 	textpointer PidgeyLv8Description                                  ; 0x17cc

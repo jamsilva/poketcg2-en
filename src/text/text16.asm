@@ -954,43 +954,34 @@ AbraName:
 	text "Abra"
 	done
 
+PsiName:
+	text "Psi"
+	done
+
 PsychicBeamName:
-	textfw "サイキックビーム"
-	done
-
-PsychicBeamDescription:
-	textfw "相手の場のポケモン1匹を選び、"
-	linefw "「弱点・抵抗力」に関係なく、"
-	linefw "10ダメージ。"
-	done
-
-AbraLv8Description:
-	textfw "相手の考えていることを読みとって、"
-	linefw "ピンチになる前にテレポートで逃げて"
-	linefw "しまう。"
+	text "Psychic Beam"
 	done
 
 AbraLv10Description:
-	textfw "1日18時間は寝ている。"
-	linefw "眠っている間でも、"
-	linefw "さまざまな超能力をつかう。"
+	text "Using its ability to read minds, it"
+	line "will identify impending danger and"
+	line "teleport to safety."
 	done
 
 VanishName:
-	textfw "いなくなる"
+	text "Vanish"
 	done
 
 VanishDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "をすべてとりのぞき、ついているカード"
-	linefw "をすべてトラッシュする。その後、"
-	linefw "このカードを山札にもどし、その山札を"
-	linefw "よく切る。"
+	text "Shuffle Abra into your deck."
+	line "(Discard all cards attached to"
+	line "Abra)."
 	done
 
 AbraLv14Description:
-	textfw "危険が迫るとテレポートしてしまうので"
-	linefw "見つけても捕獲できない場合が多い。"
+	text "It teleports itself away from"
+	line "danger, making it difficult to"
+	line "capture."
 	done
 
 KadabraName:
@@ -998,45 +989,38 @@ KadabraName:
 	done
 
 RecoverPsychicDescription:
-	textfw "[自分]についている「超」エネルギー"
-	linefw "カードを1枚トラッシュして、[自分]に"
-	linefw "のっているダメージカウンターを、"
-	linefw "すべてとりのぞく。「超」エネルギー"
-	linefw "カードをトラッシュできないとき、"
-	linefw "このワザの効果はなくなる。"
+	text "Discard 1 <PSYCHIC> Energy card attached to"
+	line "Kadabra in order to use this attack."
+	line "Remove all damage counters from"
+	line "Kadabra."
 	done
 
 KadabraLv38Description:
-	textfw "ある朝のこと。"
-	linefw "超能力少年がベットから目覚めると"
-	linefw "ユンゲラーに変身していた。"
+	text "It emits special alpha waves from"
+	line "its body that induce headaches even"
+	line "to those just nearby."
 	done
 
 PsychoPanicName:
-	textfw "サイコパニック"
+	text "Psycho Panic"
 	done
 
 PsychoPanicDescription:
-	textfw "このワザを受ける[相手]が「超」ポケモ"
-	linefw "ンなら、このワザのダメージは「60」"
-	linefw "になる。"
+	text "If the Defending Pokémon's type is"
+	line "<PSYCHIC>, this attack's base damage is"
+	line "60 instead of 30."
 	done
 
 BlinkName:
-	textfw "ブリンク"
+	text "Blink"
 	done
 
 BlinkDescription:
-	textfw "次の相手の番、このカードがワザによる"
-	linefw "ダメージを受けるとき、コインを投げて"
-	linefw "「おもて」なら、このカードは"
-	linefw "そのダメージを受けない。"
-	linefw "(ダメージ以外の効果は受ける)"
-	done
-
-KadabraLv39Description:
-	textfw "体から特別なアルファ波が出ていて、"
-	linefw "そばに近よるだけで頭が痛くなってくる"
+	text "During your opponent's next turn,"
+	line "whenever an attack damages Kadabra,"
+	line "flip a coin. If Heads, prevent that"
+	line "damage. (Any other effects of"
+	line "attacks still happen)."
 	done
 
 DarkKadabraName:
@@ -1044,30 +1028,27 @@ DarkKadabraName:
 	done
 
 MatterExchangeName:
-	textfw "ぶっしつこうかん"
+	text "Matter Exchange"
 	done
 
 MatterExchangeDescription:
-	textfw "自分の番ごとに1回使える。手札からカ"
-	linefw "ードを1枚選んでトラッシュする。その"
-	linefw "後、山札からカードを1枚引く。「ねむ"
-	linefw "り・マヒ・こんらん」状態の時、この力"
-	linefw "は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may discard a card from"
+	line "your hand in order to draw a card."
+	line "This Power can't be used if Dark"
+	line "Kadabra is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 MindShockName:
-	textfw "マインドショック"
-	done
-
-MindShockDescription:
-	textfw "このワザのダメージは、相手の「弱点・"
-	linefw "抵抗力」に影響を受けない。"
+	text "Mind Shock"
 	done
 
 DarkKadabraDescription:
-	textfw "不可思議な事件の影にはユンゲラーの超"
-	linefw "能力が介在しているらしいという噂があ"
-	linefw "る。"
+	text "Some people say that Kadabra"
+	line "are responsible for many of"
+	line "the mysterious events reported"
+	line "in the news."
 	done
 
 AlakazamName:
@@ -1075,41 +1056,37 @@ AlakazamName:
 	done
 
 DamageSwapName:
-	textfw "ダメージスワップ"
+	text "Damage Swap"
 	done
 
 DamageSwapDescription:
-	textfw "この力は、自分の番の中で何度でも使え"
-	linefw "る。この力によってポケモンが「きぜつ"
-	linefw "」しない限り、自分の場のポケモンに"
-	linefw "のっているダメージカウンターを、自分"
-	linefw "の場の別のポケモンにのせかえる。この"
-	linefw "カードが「ねむり・マヒ・こんらん」"
-	linefw "状態のとき、この力は使えない。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "move 1 damage counter from 1 of your"
+	line "Pokémon to another as long as you"
+	line "don't Knock Out that Pokémon."
+	line "This Power can't be used if Alakazam"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 AlakazamLv42Description:
-	textfw "力ワザをあまり好まず、"
-	linefw "超能力を自在にあやつって相手を倒す。"
+	text "Its brain can outperform a"
+	line "supercomputer. Its intelligence"
+	line "quotient is said to be 5000."
 	done
 
 SECTION "Text 23", ROMX
 
 TransDamageName:
-	textfw "トランスダメージ"
+	text "Trans Damage"
 	done
 
 TransDamageDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」をすべてトラッシュする。その後、"
-	linefw "[自分]にのっているすべてのダメージ"
-	linefw "カウンターを、[相手]にのせかえる。"
-	done
-
-AlakazamLv45Description:
-	textfw "スーパーコンピュータよりすばやく"
-	linefw "検さくする頭腦を持つ。知能指数は"
-	linefw "だいたい5000。"
+	text "Discard all Energy cards attached to"
+	line "Alakazam. Switch the number of"
+	line "damage counters on Alakazam with"
+	line "the number of damage counters on"
+	line "the Defending Pokémon."
 	done
 
 DarkAlakazamName:
@@ -1117,19 +1094,21 @@ DarkAlakazamName:
 	done
 
 TeleportBlastName:
-	textfw "テレポートブラスト"
+	text "Teleport Blast"
 	done
 
 TeleportBlastDescription:
-	textfw "のぞむなら、ダメージを与えた後、"
-	linefw "自分の控えポケモンを1匹選び、"
-	linefw "[自分]と入れ替えてもよい。"
+	text "You may switch 1 of your Benched"
+	line "Pokémon with Dark Alakazam. (Do"
+	line "the damage before switching the"
+	line "Pokémon)."
 	done
 
 DarkAlakazamDescription:
-	textfw "何かに操られているかのように、"
-	linefw "戦闘中は表情ひとつ変えることがない"
-	linefw "という。"
+	text "Almost as if it were being"
+	line "controlled by something else, it"
+	line "never changes expressions, even in"
+	line "the middle of battle."
 	done
 
 SlowpokeName:
@@ -1137,58 +1116,51 @@ SlowpokeName:
 	done
 
 DopeyName:
-	textfw "まぬけ"
+	text "Dopey"
 	done
 
 SlowpokeLv9Description:
-	textfw "いつもボーっとして、なにを考えている"
-	linefw "のかわからない。尻尾でエサをつるのが"
-	linefw "得意。"
+	text "Incredibly slow and dopey. It takes"
+	line "5 seconds for it to feel pain when"
+	line "under attack."
 	done
 
 AfternoonNapName:
-	textfw "ひなたぼっこ"
+	text "Afternoon Nap"
 	done
 
 AfternoonNapDescription:
-	textfw "自分の山札から「超」エネルギーカード"
-	linefw "を1枚選び出し、[自分]につける。"
-	linefw "その後、その山札をよく切る。"
+	text "Search your deck for a <PSYCHIC> Energy"
+	line "card and attach it to Slowpoke."
+	line "Shuffle your deck afterward."
 	done
 
 SlowpokeLv16Description:
-	textfw "釣りをするぐらい知能があるのに、"
-	linefw "それ以上の知的な行動はみられない。"
+	text "Although it knows how to fish, no"
+	line "other intelligent behavior has been"
+	line "detected in it."
 	done
 
 SpacingOutName:
-	textfw "ぼーっとする"
+	text "Spacing Out"
 	done
 
 SpacingOutDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[自分]にのっているダメージカウンター"
-	linefw "を、1個とりのぞく。"
+	text "Flip a coin. If Heads, remove a"
+	line "damage counter from Slowpoke. This"
+	line "attack can't be used if Slowpoke"
+	line "has no damage counters on it."
 	done
 
 ScavengeName:
-	textfw "ゴミあさり"
+	text "Scavenge"
 	done
 
 ScavengeDescription:
-	textfw "[自分]についている「超」エネルギー"
-	linefw "カードを1枚トラッシュする。その後、"
-	linefw "自分のトラッシュから、「トレーナー"
-	linefw "カード」を1枚選び出し、手札に加える"
-	linefw "「超」エネルギーカードがトラッシュ"
-	linefw "できないとき、このワザの効果はなく"
-	linefw "なる。"
-	done
-
-SlowpokeLv18Description:
-	textfw "いつもボーッとしていて、"
-	linefw "何を考えているかわからない。"
-	linefw "尻尾でエサをつるのが得意。"
+	text "Discard 1 <PSYCHIC> Energy card attached"
+	line "to Slowpoke in order to use this"
+	line "attack. Put a Trainer card from your"
+	line "discard pile into your hand."
 	done
 
 SlowbroName:
@@ -1196,51 +1168,45 @@ SlowbroName:
 	done
 
 StrangeBehaviorName:
-	textfw "へんなこうどう"
+	text "Strange Behavior"
 	done
 
 StrangeBehaviorDescription:
-	textfw "この力は、自分の番の中で何度でも使え"
-	linefw "る。この力によってこのカードが「きぜ"
-	linefw "つ」しない限り、自分の場のポケモンに"
-	linefw "のっているダメージカウンターを、この"
-	linefw "カードに、好きなだけのせかえる。この"
-	linefw "カードが「ねむり・マヒ・こんらん」"
-	linefw "状態のとき、この力は使えない。"
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "move 1 damage counter from 1 of your"
+	line "Pokémon to Slowbro as long as you"
+	line "don't Knock Out Slowbro. This Power"
+	line "can't be used if Slowbro is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 HermitcrabName:
-	textfw "やどかり"
+	text "Hermitcrab"
 	done
 
 SlowbroLv26Description:
-	textfw "ヤドンが海にエサをとりに行ったとき、"
-	linefw "シェルダーにしっぽをかまれて"
-	linefw "ヤドランになった。"
+	text "The Shellder that is latched onto"
+	line "Slowpoke's tail is said to feed on"
+	line "the host's left-over scraps."
 	done
 
 BigYawnName:
-	textfw "おおあくび"
+	text "Big Yawn"
 	done
 
 BigYawnDescription:
-	textfw "[自分]と[相手]を、それぞれ「ねむり」"
-	linefw "状態にする。"
+	text "Both the Defending Pokémon and"
+	line "Slowbro are now Asleep."
 	done
 
 BigSnoreName:
-	textfw "おおいびき"
+	text "Big Snore"
 	done
 
 BigSnoreDescription:
-	textfw "このカードが「ねむり」状態でなければ"
-	linefw "このワザは使えない。"
-	done
-
-SlowbroLv35Description:
-	textfw "くっついているシェルダーは、ヤドンの"
-	linefw "食べ残したものをエサにして生きている"
-	linefw "という。"
+	text "You can't use this attack unless"
+	line "Slowbro is Asleep."
 	done
 
 DarkSlowbroName:
@@ -1248,25 +1214,26 @@ DarkSlowbroName:
 	done
 
 ReelInName:
-	textfw "つりあげる"
+	text "Reel In"
 	done
 
 ReelInDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。"
-	linefw "自分のトラッシュにある「たねポケモン"
-	linefw "」または「進化カード」を3枚選び出し"
-	linefw "相手プレイヤーに見せてから、手札に"
-	linefw "加える。"
+	text "When you play Dark Slowbro from your"
+	line "hand, choose up to 3 Basic Pokémon"
+	line "and/or Evolution cards from your"
+	line "discard pile and put them into your"
+	line "hand."
 	done
 
 FickleAttackName:
-	textfw "きまぐれこうげき"
+	text "Fickle Attack"
 	done
 
 DarkSlowbroDescription:
-	textfw "ぼーっとしているのが好きなだけに、"
-	linefw "人間に利用されてしまうことがある。"
+	text "It loves nothing better than to be"
+	line "left alone, and so sometimes ends"
+	line "up being manipulated by unscrupulous"
+	line "people."
 	done
 
 GastlyName:
@@ -1274,70 +1241,64 @@ GastlyName:
 	done
 
 SleepingGasName:
-	textfw "さいみんガス"
+	text "Sleeping Gas"
 	done
 
 DestinyBondName:
-	textfw "みちづれ"
+	text "Destiny Bond"
 	done
 
 DestinyBondDescription:
-	textfw "[自分]についている「超」エネルギーカ"
-	linefw "ードを1枚トラッシュする。次の相手の"
-	linefw "番、このカードがバトル場で「きぜつ」"
-	linefw "したら、[相手]も「きぜつ」させる。"
-	linefw "「超」エネルギーカードがトラッシュ"
-	linefw "できないとき、このワザの効果はなく"
-	linefw "なる。"
+	text "Discard 1 <PSYCHIC> Energy card attached to"
+	line "Gastly in order to use this attack."
+	line "If a Pokémon Knocks Out Gastly"
+	line "during your opponent's next turn,"
+	line "Knock Out that Pokémon."
 	done
 
 GasName:
-	textfw "ガスじょう"
+	text "Gas"
 	done
 
 GastlyLv8Description:
-	textfw "うすいガス状の生命体。"
-	linefw "ガスにつつまれるとインドゾウも"
-	linefw "2秒でたおれる。"
+	text "Almost invisible, this gaseous"
+	line "Pokémon cloaks the target and puts"
+	line "it to sleep without notice."
 	done
 
 SpookifyName:
-	textfw "こわがらせる"
+	text "Spookify"
 	done
 
 SpookifyDescription:
-	textfw "次の相手の番が終わるまで、"
-	linefw "相手プレイヤーは「トレーナーカード」"
-	linefw "を使うことができない。"
+	text "Your opponent can't play Trainer"
+	line "cards from his or her hand during"
+	line "his or her next turn."
 	done
 
 FadeToBlackName:
-	textfw "あんこく"
-	done
-
-GastlyLv13Description:
-	textfw "姿がほとんど見えない。知らない間に"
-	linefw "ガスにおかされて気を失う。"
+	text "Fade to Black"
 	done
 
 LickName:
-	textfw "したでなめる"
+	text "Lick"
 	done
 
 EnergyConversionName:
-	textfw "エナジーへんかん"
+	text "Energy Conversion"
 	done
 
 EnergyConversionDescription:
-	textfw "自分のトラッシュから、「エネルギーカ"
-	linefw "ード」を2枚選び出し、手札に加える。"
-	linefw "その後、[自分]に10ダメージ。"
+	text "Put up to 2 Energy cards from your"
+	line "discard pile into your hand. Gastly"
+	line "does 10 damage to itself."
 	done
 
 GastlyLv17Description:
-	textfw "謎のポケモン。"
-	linefw "光化学スモッグから発生したという説と"
-	linefw "超次元の生命体だという説がある。"
+	text "A mysterious Pokémon. Some say it is"
+	line "a lifeform from another dimension,"
+	line "while others believe it is formed"
+	line "from smog."
 	done
 
 HaunterName:
@@ -1345,75 +1306,77 @@ HaunterName:
 	done
 
 TransparencyName:
-	textfw "とうめい"
+	text "Transparency"
 	done
 
 TransparencyDescription:
-	textfw "このカードがワザによってダメージや"
-	linefw "効果を受けるとき、コインを投げて"
-	linefw "「おもて」なら、このカードはそのダメ"
-	linefw "ージと効果を受けない。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は消える。"
+	text "Whenever an attack does anything to"
+	line "Haunter, flip a coin. If Heads,"
+	line "prevent all effects of that attack,"
+	line "including damage, done to Haunter."
+	line "This Power stops working while"
+	line "Haunter is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 NightmareName:
-	textfw "あくむ"
+	text "Nightmare"
 	done
 
 HaunterSharedDescription1:
-	textfw "暗闇で誰もいないのに、"
-	linefw "見られているような気がしたら"
-	linefw "そこにゴーストがいるのだ。"
+	text "Because of its ability to slip"
+	line "through block walls, it is said to"
+	line "be from another dimension."
 	done
 
 DreamEaterName:
-	textfw "ゆめくい"
+	text "Dream Eater"
 	done
 
 DreamEaterDescription:
-	textfw "[相手]が「ねむり」状態でなければ、"
-	linefw "このワザは使えない。"
+	text "You can't use this attack unless"
+	line "the Defending Pokémon is Asleep."
 	done
 
 EerieLightName:
-	textfw "ぶきみなひかり"
+	text "Eerie Light"
 	done
 
 GrudgeName:
-	textfw "おんねん"
+	text "Grudge"
 	done
 
 GrudgeDescription:
-	textfw "相手プレイヤーがすでに取りおえた"
-	linefw "サイドカードの数×10のダメージを"
-	linefw "追加する。"
+	text "Does 20 damage plus 10 more damage"
+	line "for each Prize card your opponent"
+	line "has taken."
 	done
 
 HaunterSharedDescription2:
-	textfw "ブロックのかべもすり抜けるので、"
-	linefw "異次元空間の住人ではないかとうわさに"
-	linefw "なっている。"
+	text "By licking, it saps the victim's"
+	line "life. It causes shaking that won't"
+	line "stop until the victim's demise."
 	done
 
 PoltergeistName:
-	textfw "ポルターガイスト"
+	text "Poltergeist"
 	done
 
 PoltergeistDescription:
-	textfw "相手の手札を見て、その中にある"
-	linefw "「トレーナーカード」の枚数×10の"
-	linefw "ダメージ。"
+	text "Look at your opponent's hand. This"
+	line "attack does 10 damage for each"
+	line "Trainer card your opponent has in"
+	line "his or her hand."
 	done
 
 BadDreamsName:
-	textfw "ナイトメア"
+	text "Bad Dreams"
 	done
 
 BadDreamsDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]を「ねむり」状態に、「うら」"
-	linefw "なら「こんらん」状態にする。"
+	text "Flip a coin. If Heads, the Defending"
+	line "Pokémon is now Asleep; if Tails,"
+	line "it is now Confused."
 	done
 
 DarkHaunterName:
@@ -1421,20 +1384,20 @@ DarkHaunterName:
 	done
 
 BotherName:
-	textfw "いやがらせ"
+	text "Bother"
 	done
 
 BotherDescription:
-	textfw "コインを投げて「おもて」なら、相手の"
-	linefw "手札から、「トレーナーカード」が1枚"
-	linefw "自動的に選ばれ、相手の山札に戻される"
-	linefw "その後、その山札をよく切る。"
+	text "Flip a coin. If Heads, shuffle a"
+	line "Trainer card chosen at random from"
+	line "your opponent's hand back into his"
+	line "or her deck."
 	done
 
 DarkHaunterDescription:
-	textfw "暗闇にひそんでいるので、なかなか"
-	linefw "正体がわからない。トレーナーをも"
-	linefw "脅かすこともあるという。"
+	text "In total darkness, where nothing is"
+	line "visible, Haunter lurks, silently"
+	line "stalking its next victim."
 	done
 
 GengarName:
@@ -1442,52 +1405,48 @@ GengarName:
 	done
 
 CurseName:
-	textfw "のろい"
+	text "Curse"
 	done
 
 CurseDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "相手の場のポケモンにのっているダメー"
-	linefw "ジカウンターを1個選び、相手の場の別"
-	linefw "のポケモンにのせかえる。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may move 1 damage"
+	line "counter from 1 of your opponent's"
+	line "Pokémon to another (even if it would"
+	line "Knock Out the other Pokémon)."
+	line "This Power can't be used if Gengar"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 DarkMindName:
-	textfw "ナイトヘッド"
+	text "Dark Mind"
 	done
 
 ShadowName:
-	textfw "シャドー"
+	text "Shadow"
 	done
 
 GengarLv38Description:
-	textfw "山で遭難したときに、"
-	linefw "命をうばいに暗闇から現れることが"
-	linefw "あるという。"
+	text "Under a full moon, this Pokémon"
+	line "likes to mimic the shadows of people"
+	line "and laugh at their fright."
 	done
 
 PowerOfDarknessName:
-	textfw "やみのちから"
+	text "Power of Darkness"
 	done
 
 PowerOfDarknessDescription:
-	textfw "この力は、このカードを手札から場に"
-	linefw "出したとき、1度だけ使える。コインを"
-	linefw "投げて「おもて」なら、相手の場のポケ"
-	linefw "モンを1匹選び、そのカードと、それに"
-	linefw "ついているすべてのカードを、持ち主の"
-	linefw "手札にもどす。"
+	text "When you play Gengar from your"
+	line "hand, you may flip a coin. If Heads,"
+	line "choose 1 of your opponent's Pokémon."
+	line "Your opponent returns that Pokémon"
+	line "and all cards attached to it to his"
+	line "or her hand."
 	done
 
 PsyHorrorName:
-	textfw "サイコホラー"
-	done
-
-GengarLv40Description:
-	textfw "満月の夜、影が勝手に動きだして笑う"
-	linefw "のは、ゲンガーのしわざにちがいない。"
+	text "Psy Horror"
 	done
 
 DarkGengarName:
@@ -1495,32 +1454,34 @@ DarkGengarName:
 	done
 
 PlayTricksName:
-	textfw "もてあそぶ"
+	text "Play Tricks"
 	done
 
 PlayTricksDescription:
-	textfw "この力は、自分の番に1度だけ使える。"
-	linefw "相手の場のダメージカウンターが、"
-	linefw "「きぜつ」しない範囲でランダムに"
-	linefw "いれかわる。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may rearrange all"
+	line "damage counters on your opponent's"
+	line "Pokémon at random (your opponent's"
+	line "Pokémon cannot be Knocked Out). This"
+	line "Power can't be used if Dark Gengar"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 PushAsideName:
-	textfw "かみかくし"
+	text "Push Aside"
 	done
 
 PushAsideDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "相手の場のポケモンから自動的に1匹"
-	linefw "選ばれ、そのポケモンとそのポケモンに"
-	linefw "ついているカードをすべて山札にもどす"
+	text "Flip a coin. If Heads, your opponent"
+	line "shuffles a random Pokémon and all"
+	line "cards attached to it into his or her"
+	line "deck."
 	done
 
 DarkGengarDescription:
-	textfw "暗闇の中で、ポケモンがいなくなったら"
-	linefw "それはゲンガーの仕業にまちがいない。"
+	text "If a Pokémon was to disappear into"
+	line "darkness, it would certainly have to"
+	line "be the work of Gengar."
 	done
 
 DrowzeeName:
@@ -1528,27 +1489,29 @@ DrowzeeName:
 	done
 
 LongDistanceHypnosisName:
-	textfw "えんかくさいみん"
+	text "Long-Distance Hypnosis"
 	done
 
 LongDistanceHypnosisDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "コインを投げて「おもて」なら、相手の"
-	linefw "対戦ポケモンを「ねむり」状態にする。"
-	linefw "「うら」なら、自分の対戦ポケモンを"
-	linefw "「ねむり」状態にする。このカードが"
-	linefw "「ねむり・マヒ・こんらん」状態のとき"
-	linefw "この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may flip a coin. If"
+	line "Heads, the Defending Pokémon is now"
+	line "Asleep; if Tails, your Active"
+	line "Pokémon is now Asleep. This Power"
+	line "can't be used if Drowzee is Asleep,"
+	line "Confused, or Paralyzed."
 	done
 
 DrowzeeLv10Description:
-	textfw "その風貌から女性たちの人気は低い。"
-	linefw "小声で独り言をつぶやく癖がある。"
+	text "Not popular with girls because of"
+	line "its attitude. Can often be heard"
+	line "muttering to itself in a low voice."
 	done
 
 DrowzeeLv12Description:
-	textfw "ユメを食べるという伝説の生き物、"
-	linefw "バクの子孫。催眠術が得意だ。"
+	text "Puts enemies to sleep, then eats"
+	line "their dreams. Occasionally gets sick"
+	line "from eating bad dreams."
 	done
 
 HypnoName:
@@ -1556,39 +1519,33 @@ HypnoName:
 	done
 
 PuppetMasterName:
-	textfw "にんぎょうつかい"
+	text "Puppet Master"
 	done
 
 PuppetMasterDescription:
-	textfw "自分のバトル場にいる「ピッピ人形」は"
-	linefw "このカードが持っているワザを使って"
-	linefw "よい。ただし、そのワザに必要なエネル"
-	linefw "ギーがこのカードについていなければな"
-	linefw "らない。(「ピッピ人形」には、ワザに"
-	linefw "必要なエネルギーがついていなくても"
-	linefw "かまわない)"
-	done
-
-HypnoLv30Description:
-	textfw "相手と目が合った時に、さいみん術など"
-	linefw "数々の超能力を使うという。"
+	text "If a Clefairy Doll is your Active"
+	line "Pokémon, it may use any of Hypno's"
+	line "attacks as long as Hypno has enough"
+	line "Energy cards attached to it to pay"
+	line "for that attack's Energy cost. (The"
+	line "Clefairy Doll can attack even if it"
+	line "doesn't have any Energy cards)."
 	done
 
 ProphecyName:
-	textfw "みらいよち"
+	text "Prophecy"
 	done
 
 ProphecyDescription:
-	textfw "自分または相手の山札の上から3枚のカ"
-	linefw "ードを見る。その後、その3枚を好きな"
-	linefw "順番に入れ替えて、もとの山札の上にも"
-	linefw "どす。"
+	text "Look at up to 3 cards from the top"
+	line "of either player's deck and"
+	line "rearrange them as you like."
 	done
 
 HypnoLv36Description:
-	textfw "振り子のようなモノを持ち歩く。"
-	linefw "子どもに催眠術をかけ、"
-	linefw "どこかへ連れ去る事件があった。"
+	text "When it locks eyes with an enemy,"
+	line "it will use a mix of psi moves such"
+	line "as Hypnosis and Confusion."
 	done
 
 DarkHypnoName:
@@ -1596,25 +1553,32 @@ DarkHypnoName:
 	done
 
 PsypunchName:
-	textfw "サイコパンチ"
+	text "Psypunch"
 	done
 
 BenchManipulationName:
-	textfw "ベンチをあやつる"
+	text "Bench Manipulation"
 	done
 
 BenchManipulationDescription:
-	textfw "相手プレイヤーは、相手の控えポケモン"
-	linefw "の数ぶんコインを投げ、「うら」が"
-	linefw "出た数×20のダメージ。"
-	linefw "(このワザのダメージは[相手]の「弱点"
-	linefw "・抵抗力」の影響を受けない)"
+	text "Your opponent flips a number of"
+	line "coins equal to the number of Pokémon"
+	line "on his or her Bench. This attack"
+	line "does 20 damage for each Tails. Don't"
+	line "apply Weakness and Resistance for"
+	line "this attack."
+	done
+
+BenchManipulationDescriptionCont:
+	text "(Any other effects that would"
+	line "happen after applying Weakness"
+	line "and Resistance still happen)."
 	done
 
 DarkHypnoDescription:
-	textfw "振り子のようなものを持ち歩く。"
-	linefw "人通りの少ない道や夕暮れの学校にも"
-	linefw "現れるらしい。"
+	text "Carries a pendulum with it always."
+	line "Sometimes appears near less-traveled"
+	line "roads and schools at dusk."
 	done
 
 MrMimeName:
@@ -1622,62 +1586,67 @@ MrMimeName:
 	done
 
 DampeningShieldName:
-	textfw "ニュートラルダメージ"
+	text "Dampening Shield"
 	done
 
 DampeningShieldDescription:
-	textfw "このカードがベンチにいる限り、"
-	linefw "おたがいの対戦ポケモンは、ダメージを"
-	linefw "受けるとき「弱点・抵抗力」の影響を"
-	linefw "受けない。"
+	text "As long as Mr. Mime is on your"
+	line "Bench, Pokémon in play (both yours"
+	line "and your opponent's) have no"
+	line "Weakness and Resistance."
 	done
 
 JugglingName:
-	textfw "ジャグリング"
+	text "Juggling"
 	done
 
 JugglingDescription:
-	textfw "コインを4枚投げ、「おもて」の数"
-	linefw "×10のダメージ。"
+	text "Flip 4 coins. This attack does 10"
+	line "damage times the number of Heads."
 	done
 
 BarrierName:
-	textfw "バリアー"
+	text "Barrier"
 	done
 
 MrMimeLv20Description:
-	textfw "パントマイムの邪魔をすると、"
-	linefw "突然大きな掌でおうふくビンタをして"
-	linefw "くるという。"
+	text "If interrupted while miming, it will"
+	line "slap around the enemy with its broad"
+	line "hands."
 	done
 
 InvisibleWallName:
-	textfw "なぞのかべ"
+	text "Invisible Wall"
 	done
 
 InvisibleWallDescription:
-	textfw "このカードがワザによってダメージを"
-	linefw "受けるとき、そのダメージが30以上"
-	linefw "なら、このカードはダメージを受けない"
-	linefw "(ダメージ以外の効果は、そのまま)。"
-	linefw "ダメージを受けるとき、このカードが"
-	linefw "すでに「ねむり・マヒ・こんらん」状態"
-	linefw "だったなら、この力は、はたらかない。"
+	text "Whenever an attack (including your"
+	line "own) does 30 or more damage to Mr."
+	line "Mime (after applying Weakness and"
+	line "Resistance), prevent that damage."
+	line "(Any other effects of attacks still"
+	line "happen)."
+	done
+
+InvisibleWallDescriptionCont:
+	text "This Power can't be used if Mr. Mime"
+	line "is Asleep, Confused, or Paralyzed."
 	done
 
 MeditateName:
-	textfw "ヨガのポーズ"
+	text "Meditate"
 	done
 
-MeditateDescription:
-	textfw "[相手]にのっているダメージカウンター"
-	linefw "×10のダメージを追加する。"
+MrMimesMeditateDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on the"
+	line "Defending Pokémon."
 	done
 
 MrMimeLv28Description:
-	textfw "人を信じこませるのがうまい。"
-	linefw "パントマイムで作った壁が"
-	linefw "本当に現れるという。"
+	text "If interrupted while miming, it will"
+	line "slap around the enemy with its broad"
+	line "hands."
 	done
 
 JynxName:
@@ -1685,32 +1654,33 @@ JynxName:
 	done
 
 IcePunchName:
-	textfw "れいとうパンチ"
+	text "Ice Punch"
 	done
 
 ColdBreathName:
-	textfw "コールドブレス"
+	text "Cold Breath"
 	done
 
 HumanShapeName:
-	textfw "ひとがた"
+	text "Human Shape"
 	done
 
 JynxLv18Description:
-	textfw "腰を振るように歩いている。"
-	linefw "ゆだんをすると思わずつられて踊って"
-	linefw "しまうという。"
+	text "It seductively wiggles its hips as"
+	line "it walks. It can cause people to"
+	line "dance in unison with it."
+	done
+
+JynxsMeditateDescription:
+	text "Does 20 damage plus 10 more damage"
+	line "for each damage counter on the"
+	line "Defending Pokémon."
 	done
 
 JynxLv23Description:
-	textfw "人間のような言葉を話すが、"
-	linefw "まだ何を言っているのか不明で、"
-	linefw "現在研究されている。"
-	done
-
-JynxLv27Description:
-	textfw "独特のリズムをもつらしく、踊るように"
-	linefw "かろやかに、腰をふるようにして歩く。"
+	text "Merely by meditating, the Pokémon"
+	line "launches a powerful psychic energy"
+	line "attack."
 	done
 
 MewtwoName:
@@ -1718,106 +1688,91 @@ MewtwoName:
 	done
 
 EnergyControlDescription:
-	textfw "コインを投げて「うら」なら、このワザ"
-	linefw "は失敗する。相手の場の「基本エネルギ"
-	linefw "ーカード」を1枚選んではがす。その後"
-	linefw "相手の場のポケモンを1匹選び、はがし"
-	linefw "たエネルギーをそのポケモンにつける。"
+	text "Flip a coin. If Heads, choose a"
+	line "basic Energy card attached to 1 of"
+	line "your opponent's Pokémon and attach"
+	line "it to another of your opponent's"
+	line "Pokémon of your choice."
 	done
 
 TelekinesisName:
-	textfw "テレキネシス"
+	text "Telekinesis"
 	done
 
 TelekinesisDescription:
-	textfw "相手の場のポケモン1匹を選び、「弱点"
-	linefw "・抵抗力」に関係なく、30ダメージ。"
+	text "Choose 1 of your opponent's Pokémon."
+	line "This attack does 30 damage to that"
+	line "Pokémon. Don't apply Weakness and"
+	line "Resistance for this attack. (Any"
+	line "other effects that would happen"
+	line "after applying Weakness and"
+	line "Resistance still happen)."
 	done
 
 GeneticName:
-	textfw "いでんし"
-	done
-
-MewtwoLv30Description:
-	textfw "一人の科学者が何年も恐ろしい遺伝子"
-	linefw "研究を続けた結果、誕生した。"
+	text "Genetic"
 	done
 
 BarrierDescription:
-	textfw "[自分]についている「超」エネルギー"
-	linefw "カードを1枚トラッシュする。"
-	linefw "次の相手の番、このカードはワザによる"
-	linefw "ダメージや効果を受けない。「超」エネ"
-	linefw "ルギーカードがトラッシュできないとき"
-	linefw "このワザの効果はなくなる。"
+	text "Discard 1 <PSYCHIC> Energy card attached to"
+	line "Mewtwo in order to use this attack."
+	line "During your opponent's next turn,"
+	line "prevent all effects of attacks,"
+	line "including damage, done to Mewtwo."
 	done
 
 MewtwoLv53Description:
-	textfw "研究のために遺伝子を"
-	linefw "どんどん組み替えていった結果、"
-	linefw "狂暴なポケモンになった。"
+	text "A scientist created this Pokémon"
+	line "after years of horrific"
+	line "gene-splicing and DNA engineering"
+	line "experiments."
 	done
 
 PsycrushName:
-	textfw "サイコクラッシュ"
+	text "Psycrush"
 	done
 
 PsycrushDescription:
-	textfw "相手の場のポケモンについている"
-	linefw "「超」エネルギーカードの数×10の"
-	linefw "ダメージ。"
-	done
-
-MewtwoLv54Description:
-	textfw "一人の科学者が何年も恐ろしい"
-	linefw "遺伝子研究を続けた結果、誕生した。"
+	text "This attack does 10 damage for each"
+	line "<PSYCHIC> Energy card attached to Pokémon"
+	line "in your opponent's play area."
 	done
 
 EnergyAbsorptionName:
-	textfw "エネルギーきゅうしゅう"
+	text "Energy Absorption"
 	done
 
 EnergyAbsorptionDescription:
-	textfw "自分のトラッシュから、「エネルギーカ"
-	linefw "ード」を2枚選び出し、[自分]につける"
+	text "Choose up to 2 Energy cards from"
+	line "your discard pile and attach them"
+	line "to Mewtwo."
 	done
 
 PsyburnName:
-	textfw "サイコバーン"
+	text "Psyburn"
 	done
 
 MewtwoLv60Description:
-	textfw "ポケモンの遺伝子を組み替えていった"
-	linefw "結果、かつてない狂暴なポケモンを"
-	linefw "誕生させた。"
+	text "Years of genetic experiments"
+	line "resulted in the creation of this"
+	line "never-before-seen violent Pokémon."
 	done
 
 CompleteRecoveryName:
-	textfw "かんぜんかいふく"
+	text "Complete Recovery"
 	done
 
 CompleteRecoveryDescription:
-	textfw "[自分]についている「エネルギーカード"
-	linefw "」をすべてトラッシュする。その後、"
-	linefw "[自分]にのっているダメージカウンター"
-	linefw "やマーカーをすべて取りのぞき、「どく"
-	linefw "・こんらん」状態のすべてからも回復さ"
-	linefw "せる。"
+	text "Discard all Energy cards attached to"
+	line "Mewtwo in order to use this attack."
+	line "Then, remove all damage counters"
+	line "from Mewtwo. If Mewtwo was Poisoned"
+	line "or Confused, it is no longer"
+	line "Poisoned and Confused."
 	done
 
 PsychoBlastName:
-	textfw "サイコブラスト"
-	done
-
-PsychoBlastDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]についている「エネルギーカード"
-	linefw "」から1枚を選び、トラッシュする。"
-	done
-
-MewtwoLv67Description:
-	textfw "ひとりの科学者が何年も恐ろしい"
-	linefw "遺伝子研究を続けた結果、誕生した。"
+	text "Psycho Blast"
 	done
 
 GRsMewtwoName:
@@ -1825,33 +1780,34 @@ GRsMewtwoName:
 	done
 
 DarkWaveName:
-	textfw "わるいはどう"
+	text "Dark Wave"
 	done
 
 DarkWaveDescription:
-	textfw "このカードが場にいる限り、自分の場"
-	linefw "の「わるいポケモン」の与えることの"
-	linefw "できるワザによるダメージが、"
-	linefw "ランダムで「0、+10、+20」"
-	linefw "追加される。このカードが「ねむり・"
-	linefw "マヒ・こんらん」状態のとき、この力"
-	linefw "は消える。"
+	text "As long as Team GR's Mewtwo is in"
+	line "play, your Dark Pokémon's attacks do"
+	line "their base damage plus 0, 10, or 20"
+	line "more damage, chosen at random. This"
+	line "Power stops working while Team GR's"
+	line "Mewtwo is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 DarkAmplificationName:
-	textfw "わるいぞうふく"
+	text "Dark Amplification"
 	done
 
 DarkAmplificationDescription:
-	textfw "自分のベンチにいる「わるいポケモン」"
-	linefw "の数ぶんコインを投げ、「おもて」の数"
-	linefw "×20のダメージを追加する。"
+	text "Flip a number of coins equal to the"
+	line "number of Dark Pokémon on your"
+	line "Bench. This attack does 20 damage"
+	line "plus 20 more damage for each Heads."
 	done
 
 GRsMewtwoDescription:
-	textfw "わるいポケモンをコントロールする力を"
-	linefw "もつという。なかなか、その姿をみる"
-	linefw "ことはできない。"
+	text "It's said to possess the power to"
+	line "control Dark Pokémon. Consequently,"
+	line "its body is never seen."
 	done
 
 MewName:
@@ -1859,68 +1815,65 @@ MewName:
 	done
 
 NeutralShieldName:
-	textfw "ニュートラルシールド"
+	text "Neutralizing Shield"
 	done
 
 NeutralShieldDescription:
-	textfw "このカードは、相手の「進化ポケモン」"
-	linefw "のワザによるダメージや効果を受けない"
-	linefw "相手がワザを使うとき、このカードが"
-	linefw "すでに「ねむり・マヒ・こんらん」状態"
-	linefw "だったなら、この力は、はたらかない。"
+	text "Prevent all effects of attacks,"
+	line "including damage, done to Mew by"
+	line "evolved Pokémon (excluding your"
+	line "own). This Power stops working while"
+	line "Mew is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 NewSpeciesName:
-	textfw "しんしゅ"
+	text "New Species"
 	done
 
 MewLv8Description:
-	textfw "今でも幻のポケモンといわれる。"
-	linefw "その姿を見たものは全国でもほとんど"
-	linefw "いない。"
+	text "So rare that it is still said to be"
+	line "a mirage by many experts. Only a few"
+	line "people have seen it worldwide."
 	done
 
 MysteryAttackName:
-	textfw "みちのちから"
+	text "Mystery Attack"
 	done
 
 MysteryAttackDescription:
-	textfw "[相手]に、なんらかのダメージや効果を"
-	linefw "与える。(なにも与えないときもある)"
+	text "Does a random amount of damage to"
+	line "the Defending Pokémon and may cause"
+	line "a random effect to the Defending"
+	line "Pokémon."
 	done
 
 MewLv15Description:
-	textfw "南アメリカに生息する、絶滅したはずの"
-	linefw "ポケモン。"
-	linefw "知能が高く、何でも覚える。"
+	text "When viewed through a microscope, "
+	line "this Pokémon's short, fine, delicate"
+	line "hair can be seen."
 	done
 
 PsywaveName:
-	textfw "サイコウェーブ"
+	text "Psywave"
 	done
 
 PsywaveDescription:
-	textfw "[相手]についているエネルギーカード"
-	linefw "×10のダメージ。"
+	text "Does 10 damage times the number of"
+	line "Energy cards attached to the"
+	line "Defending Pokémon."
 	done
 
 DevolutionBeamName:
-	textfw "たいかビーム"
+	text "Devolution Beam"
 	done
 
 DevolutionBeamDescription:
-	textfw "自分または相手の場にいる"
-	linefw "「進化ポケモン」を1匹選ぶ。"
-	linefw "そのポケモンについている「進化カード"
-	linefw "」を上から1枚はがして、持ち主の"
-	linefw "手札にもどし、そのポケモンを「退化」"
-	linefw "させる。"
-	done
-
-MewLv23Description:
-	textfw "いまでも幻のポケモンといわれる。"
-	linefw "その姿を見たものは"
-	linefw "全国でもほとんどいない。"
+	text "Choose an evolved Pokémon (Your"
+	line "own or your opponent's). Return"
+	line "the highest stage evolution card"
+	line "on that Pokémon to Its player's"
+	line "hand."
 	done
 
 PidgeyName:

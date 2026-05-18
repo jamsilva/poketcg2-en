@@ -1943,7 +1943,7 @@ ConvertSpecialTrainerCardToPokemon::
 .mind_shock_attack_data
 	energy 0 ; energies
 	tx MindShockName ; name
-	tx ClefairyDollMindShockDescription ; description
+	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category

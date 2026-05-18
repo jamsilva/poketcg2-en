@@ -723,13 +723,6 @@ DuelistDrawCardsText:
 	linefw "<RAMNUM>枚 ひきます"
 	done
 
-ClefairyDollMindShockDescription:
-	; redundant, slightly different punctuation
-	; than SonicboomAltDescription (for Mind Shock etc.)
-	textfw "このワザのダメージは [相手]の"
-	linefw "「弱点・抵抗力」の影響を受けない"
-	done
-
 DiscardingXCardsPromptText:
 	textfw "<RAMNUM>枚 トラッシュで いいですか?"
 	done
