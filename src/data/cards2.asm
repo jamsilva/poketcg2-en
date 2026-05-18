@@ -3556,7 +3556,7 @@ DarkHypnoCard:
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
 	tx BenchManipulationName ; name
 	tx BenchManipulationDescription ; description
-	tx BenchManipulationDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_X ; category
 	dw DarkHypnoBenchManipulationEffectCommands ; effect commands
@@ -4531,7 +4531,7 @@ ELSE
 	length 1, 0 ; length
 	weight 4.0 ; weight
 ENDC
-	tx PidgeyLv10Description ; description
+	tx PidgeyLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PidgeottoLv36Card:
@@ -4563,7 +4563,7 @@ PidgeottoLv36Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx MirrorMoveName ; name
-	tx MirrorMoveDescription ; description
+	tx PidgeottosMirrorMoveDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4643,7 +4643,7 @@ ELSE
 	length 3, 7 ; length
 	weight 66.0 ; weight
 ENDC
-	tx PidgeottoLv38Description ; description
+	tx PidgeottoLv36Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PidgeotLv38Card:
@@ -4801,7 +4801,7 @@ RattataLv9Card:
 	db 0 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db WR_PSYCHIC ; resistance
-	tx MouseName ; category
+	tx RatName ; category
 	db DEX_RATTATA ; Pokedex number
 	darkness_level FALSE, 9 ; is Dark?, level
 IF METRIC
@@ -4857,7 +4857,7 @@ RattataLv12Card:
 	db 0 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db WR_PSYCHIC ; resistance
-	tx MouseName ; category
+	tx RatName ; category
 	db DEX_RATTATA ; Pokedex number
 	darkness_level FALSE, 12 ; is Dark?, level
 IF METRIC
@@ -4899,7 +4899,7 @@ RattataLv15Card:
 	; attack 2
 	energy COLORLESS, 1 ; energies
 	tx TailWhipName ; name
-	tx NidoransTailWhipDescription ; description
+	tx RattatasTailWhipDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4913,7 +4913,7 @@ RattataLv15Card:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db WR_PSYCHIC ; resistance
-	tx MouseName ; category
+	tx RatName ; category
 	db DEX_RATTATA ; Pokedex number
 	darkness_level FALSE, 15 ; is Dark?, level
 IF METRIC
@@ -4923,7 +4923,7 @@ ELSE
 	length 1, 0 ; length
 	weight 8.0 ; weight
 ENDC
-	tx RattataLv15Description ; description
+	tx RattataLv9Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 RaticateCard:
@@ -4969,7 +4969,7 @@ RaticateCard:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db WR_PSYCHIC ; resistance
-	tx MouseName ; category
+	tx RatName ; category
 	db DEX_RATICATE ; Pokedex number
 	darkness_level FALSE, 41 ; is Dark?, level
 IF METRIC
@@ -5025,7 +5025,7 @@ DarkRaticateCard:
 	db 1 ; retreat cost
 	db WR_FIGHTING ; weakness
 	db WR_PSYCHIC ; resistance
-	tx MouseName ; category
+	tx RatName ; category
 	db DEX_RATICATE ; Pokedex number
 	darkness_level TRUE, 25 ; is Dark?, level
 IF METRIC
@@ -5147,7 +5147,7 @@ ELSE
 	length 1, 0 ; length
 	weight 4.0 ; weight
 ENDC
-	tx SpearowLv12Description ; description
+	tx SpearowLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SpearowLv13Card:
@@ -5179,7 +5179,7 @@ SpearowLv13Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx MirrorMoveName ; name
-	tx MirrorMoveDescription ; description
+	tx SpearowsMirrorMoveDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5259,7 +5259,7 @@ ELSE
 	length 3, 11 ; length
 	weight 84.0 ; weight
 ENDC
-	tx FearowLv24Description ; description
+	tx FearowLv27Description ; description
 	db NONE ; AI info
 
 FearowLv27Card:
@@ -5277,7 +5277,7 @@ FearowLv27Card:
 	; attack 1
 	energy COLORLESS, 3 ; energies
 	tx AgilityName ; name
-	tx RapidashsAgilityDescription ; description
+	tx FearowsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5403,7 +5403,7 @@ ClefairyLv14Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx MetronomeName ; name
-	tx MetronomeDescription ; description
+	tx ClefairysMetronomeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -5483,7 +5483,7 @@ ELSE
 	length 2, 0 ; length
 	weight 17.0 ; weight
 ENDC
-	tx ClefairyLv15Description ; description
+	tx ClefairyLv14Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 ClefableCard:
@@ -5501,7 +5501,7 @@ ClefableCard:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx MetronomeName ; name
-	tx MetronomeDescription ; description
+	tx ClefablesMetronomeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -5613,7 +5613,7 @@ JigglypuffLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx FirstAidName ; name
-	tx BulbasaursFirstAidDescription ; description
+	tx JigglypuffsFirstAidDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -5627,7 +5627,7 @@ JigglypuffLv12Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx DoubleEdgeName ; name
-	tx Do20DamageToSelfDescription ; description
+	tx JigglypuffsDoubleEdgeDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
 	db DAMAGE_NORMAL ; category
@@ -5763,7 +5763,7 @@ ELSE
 	length 1, 8 ; length
 	weight 12.0 ; weight
 ENDC
-	tx JigglypuffLv14Description ; description
+	tx JigglypuffLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 WigglytuffLv36Card:
@@ -5875,7 +5875,7 @@ ELSE
 	length 3, 3 ; length
 	weight 26.0 ; weight
 ENDC
-	tx WigglytuffLv40Description ; description
+	tx WigglytuffLv36Description ; description
 	db NONE ; AI info
 
 MeowthLv10Card:
@@ -5894,7 +5894,7 @@ MeowthLv10Card:
 	energy COLORLESS, 2 ; energies
 	tx CoinHurlName ; name
 	tx CoinHurlDescription ; description
-	dw NONE ; description (cont)
+	tx BenchManipulationDescriptionCont ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
 	dw MeowthCoinHurlEffectCommands ; effect commands
@@ -6043,7 +6043,7 @@ ELSE
 	length 1, 4 ; length
 	weight 9.0 ; weight
 ENDC
-	tx MeowthLv14Description ; description
+	tx MeowthLv15Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 MeowthLv15Card:
@@ -6155,7 +6155,7 @@ ELSE
 	length 1, 4 ; length
 	weight 9.0 ; weight
 ENDC
-	tx MeowthLv17Description ; description
+	tx MeowthLv13Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 PersianCard:
@@ -6397,7 +6397,7 @@ FarfetchdAltLv20Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx LeekSlapName ; name
-	tx LeekSlapAltDescription ; description
+	tx LeekSlapDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -6435,7 +6435,7 @@ ELSE
 	length 2, 7 ; length
 	weight 33.0 ; weight
 ENDC
-	tx FarfetchdAltDescription ; description
+	tx FarfetchdLv20Description ; description
 	db NONE ; AI info
 
 DoduoLv8Card:
@@ -6491,7 +6491,7 @@ ELSE
 	length 4, 7 ; length
 	weight 86.0 ; weight
 ENDC
-	tx DoduoLv8Description ; description
+	tx DoduoLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 DoduoLv10Card:
@@ -6603,7 +6603,7 @@ ELSE
 	length 5, 11 ; length
 	weight 188.0 ; weight
 ENDC
-	tx DodrioLv25Description ; description
+	tx DodrioLv28Description ; description
 	db NONE ; AI info
 
 DodrioLv28Card:
@@ -6635,7 +6635,7 @@ DodrioLv28Card:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx RageName ; name
-	tx FlareonsRageDescription ; description
+	tx DodriosRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -6691,7 +6691,7 @@ LickitungLv20Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx StompName ; name
-	tx IfHeadsAdd10Do10DamageDescription ; description
+	tx StompDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -6715,7 +6715,7 @@ ELSE
 	length 3, 11 ; length
 	weight 144.0 ; weight
 ENDC
-	tx LickitungLv20Description ; description
+	tx LickitungLv26Description ; description
 	db NONE ; AI info
 
 LickitungLv26Card:
@@ -6827,7 +6827,7 @@ ELSE
 	length 3, 7 ; length
 	weight 76.0 ; weight
 ENDC
-	tx ChanseyLv40Description ; description
+	tx ChanseyLv55Description ; description
 	db NONE ; AI info
 
 ChanseyLv55Card:
@@ -6845,7 +6845,7 @@ ChanseyLv55Card:
 	; attack 1
 	energy COLORLESS, 2 ; energies
 	tx ScrunchName ; name
-	tx MetapodsStiffenDescription ; description
+	tx ScrunchDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -6939,7 +6939,7 @@ ELSE
 	length 7, 3 ; length
 	weight 176.0 ; weight
 ENDC
-	tx KangaskhanLv36Description ; description
+	tx KangaskhanLv40Description ; description
 	db NONE ; AI info
 
 KangaskhanLv38Card:
@@ -6995,7 +6995,7 @@ ELSE
 	length 7, 3 ; length
 	weight 176.0 ; weight
 ENDC
-	tx KangaskhanLv38Description ; description
+	tx KangaskhanLv40Description ; description
 	db NONE ; AI info
 
 KangaskhanLv40Card:
@@ -7163,7 +7163,7 @@ ELSE
 	length 4, 7 ; length
 	weight 195.0 ; weight
 ENDC
-	tx TaurosLv35Description ; description
+	tx TaurosLv32Description ; description
 	db NONE ; AI info
 
 DittoCard:
@@ -7275,7 +7275,7 @@ ELSE
 	length 1, 0 ; length
 	weight 14.0 ; weight
 ENDC
-	tx EeveeLv5Description ; description
+	tx EeveeLv12Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 EeveeLv9Card:
@@ -7307,7 +7307,7 @@ EeveeLv9Card:
 	; attack 2
 	energy COLORLESS, 2 ; energies
 	tx SandAttackName ; name
-	tx SandAttackDescription ; description
+	tx SmokescreenDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7349,7 +7349,7 @@ EeveeLv12Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx TailWhipName ; name
-	tx RhyhornsLeerDescription ; description
+	tx EeveesTailWhipDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7461,7 +7461,7 @@ PorygonLv18Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx Porygon3DAttackName ; name
-	tx Porygon3DAttack10DamageDescription ; description
+	tx FurySwipes10DamageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_X ; category
@@ -7517,7 +7517,7 @@ PorygonLv20Card:
 	; attack 1
 	energy COLORLESS, 1 ; energies
 	tx Conversion1Name ; name
-	tx Conversion1AltDescription ; description
+	tx Conversion1Description ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
@@ -7574,7 +7574,7 @@ CoolPorygonCard:
 	energy COLORLESS, 3 ; energies
 	tx TextureMagicName ; name
 	tx TextureMagicDescription ; description
-	dw NONE ; description (cont)
+	tx TextureMagicDescriptionCont ; description (cont)
 	db 0 ; damage
 	db DAMAGE_NORMAL ; category
 	dw CoolPorygonTextureMagicEffectCommands ; effect commands
@@ -7587,7 +7587,7 @@ CoolPorygonCard:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx Porygon3DAttackName ; name
-	tx Porygon3DAttack20DamageDescription ; description
+	tx FurySwipes20DamageDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_X ; category
@@ -7723,7 +7723,7 @@ ELSE
 	length 6, 11 ; length
 	weight 1014.0 ; weight
 ENDC
-	tx SnorlaxLv35Description ; description
+	tx SnorlaxLv20Description ; description
 	db NONE ; AI info
 
 HungrySnorlaxCard:
@@ -7966,7 +7966,7 @@ DarkDragonairCard:
 	energy 0 ; energies
 	tx EvolutionaryLightName ; name
 	tx EvolutionaryLightDescription ; description
-	dw NONE ; description (cont)
+	tx EvolutionaryLightDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw DarkDragonairEvolutionaryLightEffectCommands ; effect commands
@@ -7979,7 +7979,7 @@ DarkDragonairCard:
 	; attack 2
 	energy COLORLESS, 3 ; energies
 	tx TailStrikeName ; name
-	tx QuickAttackDescription ; description
+	tx AngerDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -8258,7 +8258,7 @@ TogepiCard:
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx MetronomeName ; name
+	tx MiniMetronomeName ; name
 	tx MetronomeCoinTossDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage

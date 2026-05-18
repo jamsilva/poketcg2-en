@@ -1,36 +1,24 @@
 LeekSlapDescription:
-	textfw "このワザは、このカードが場に出てから"
-	linefw "1回しか使えない。コインを投げて"
-	linefw "「うら」なら、このワザは失敗する。("
-	linefw "その場合も、ワザは使ったことになる)"
+	text "Flip a coin. If tails, this attack"
+	line "does nothing. Either way, you can't"
+	line "use this attack again as long as"
+	line "Farfetch'd stays in play (even"
+	line "putting Farfetch'd on the Bench"
+	line "won't let you use it again)."
 	done
 
 PotSmashName:
-	textfw "ナベでたたく"
+	text "Pot Smash"
 	done
 
 WildDuckName:
-	textfw "かるがも"
+	text "Wild Duck"
 	done
 
 FarfetchdLv20Description:
-	textfw "自分の巣を作るための"
-	linefw "植物のクキを一本"
-	linefw "いつも持って歩いている。"
-	done
-
-LeekSlapAltDescription:
-	textfw "このワザは、このカードが場に出てから"
-	linefw "1回しか使えない。コインを投げて"
-	linefw "「うら」なら、このワザのダメージは"
-	linefw "失敗する。"
-	linefw "(その場合もワザは使ったことになる)"
-	done
-
-FarfetchdAltDescription:
-	textfw "もっているクキは大切な武器であり、"
-	linefw "刀を振るようにいろんなものを切ること"
-	linefw "ができる。"
+	text "The sprig of green onions it holds"
+	line "is its weapon. This sprig is used"
+	line "much like a metal sword."
 	done
 
 DoduoName:
@@ -38,24 +26,23 @@ DoduoName:
 	done
 
 GrowlAltDescription2:
-	textfw "次の相手の番、このワザを受けた"
-	linefw "[相手]が、このカードに与える"
-	linefw "ダメージは「-10」される。"
+	text "If the Defending Pokémon attacks"
+	line "Doduo during your opponent's"
+	line "next turn, any damage done by the"
+	line "attack is reduced by 10 (after"
+	line "applying Weakness and Resistance)."
+	line "(Benching or evolving either Pokémon"
+	line "ends this effect)."
 	done
 
 TwinBirdName:
-	textfw "ふたごどり"
-	done
-
-DoduoLv8Description:
-	textfw "飛ぶのは苦手だが走るのは速い。"
-	linefw "巨大な足跡を残して大地を駆け抜ける。"
+	text "Twin Bird"
 	done
 
 DoduoLv10Description:
-	textfw "突然変異で見つかった"
-	linefw "ふたつの頭を持つポケモン。"
-	linefw "時速100キロで走る。"
+	text "A bird that makes up for its poor"
+	line "flying with its fast foot speed."
+	line "Leaves giant footprints."
 	done
 
 DodrioName:
@@ -63,33 +50,32 @@ DodrioName:
 	done
 
 TriAttackName:
-	textfw "トライアタック"
+	text "Tri Attack"
 	done
 
 TripleBirdName:
-	textfw "みつごどり"
-	done
-
-DodrioLv25Description:
-	textfw "3つの頭で高度な作戦をねる。寝る時も"
-	linefw "どれか、1つは起きているという。"
+	text "Triplebird"
 	done
 
 RetreatAidName:
-	textfw "にげるサポート"
+	text "Retreat Aid"
 	done
 
 RetreatAidDescription:
-	textfw "このカードが自分のベンチにいる限り、"
-	linefw "自分の対戦ポケモンが「にげる」ときに"
-	linefw "トラッシュするエネルギーの数は、"
-	linefw "1個ぶん少なくなる。"
+	text "As long as Dodrio is Benched, pay"
+	line "<COLORLESS> less to retreat your Active"
+	line "Pokémon."
+	done
+
+DodriosRageDescription:
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on Dodrio."
 	done
 
 DodrioLv28Description:
-	textfw "滅多に見つからない珍種。"
-	linefw "3つの頭は「喜び」「悲しみ」"
-	linefw "「怒り」の感情を表わす。"
+	text "Uses its three brains to execute"
+	line "complex plans. While two heads"
+	line "sleep, one head stays awake."
 	done
 
 LickitungName:
@@ -97,46 +83,42 @@ LickitungName:
 	done
 
 LickingName:
-	textfw "なめまわし"
-	done
-
-LickitungLv20Description:
-	textfw "ベロがカメレオンみたいにぐんぐん"
-	linefw "伸びてゆく。なめられるとなぜか"
-	linefw "ピリピリしびれてくる。"
+	text "Licking"
 	done
 
 TongueWrapName:
-	textfw "まきつくベロ"
+	text "Tongue Wrap"
 	done
 
 LickitungLv26Description:
-	textfw "舌が身長の2倍もある。"
-	linefw "エサをとったり、攻擊をしたりと、"
-	linefw "まるで手のように動かせる。"
+	text "Its tongue can be extended like a"
+	line "chameleon's. It leaves a stinging"
+	line "sensation when it licks enemies."
 	done
 
 ChanseyName:
 	text "Chansey"
 	done
 
-ChanseyLv40Description:
-	textfw "生息数がとても少ない。捕まえた人には"
-	linefw "幸せをもたらすといわれている。"
+ScrunchName:
+	text "Scrunch"
 	done
 
-ScrunchName:
-	textfw "まるまる"
+ScrunchDescription:
+	text "Flip a coin. If heads, prevent all"
+	line "damage done to Chansey during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen)."
 	done
 
 Do80DamageToSelfDescription:
-	textfw "[自分]にも80ダメージ。"
+	text "Chansey does 80 damage to itself."
 	done
 
 ChanseyLv55Description:
-	textfw "1日にいくつかタマゴを産む。"
-	linefw "そのタマゴは栄養満点で"
-	linefw "ものすごくおいしいらしい。"
+	text "A rare and elusive Pokémon that is"
+	line "said to bring happiness to those"
+	line "who manage to catch it."
 	done
 
 KangaskhanName:
@@ -144,46 +126,29 @@ KangaskhanName:
 	done
 
 TailDropName:
-	textfw "テールドロップ"
+	text "Tail Drop"
 	done
 
 ParentName:
-	textfw "おやこ"
-	done
-
-KangaskhanLv36Description:
-	textfw "子どもは母親のおなかにある袋から"
-	linefw "ほとんど出てこない。約3年で親ばなれ"
-	linefw "する。"
+	text "Parent"
 	done
 
 DizzyPunchName:
-	textfw "ピヨピヨパンチ"
-	done
-
-KangaskhanLv38Description:
-	textfw "子どもは、母親のおなかにある袋から"
-	linefw "ほとんど出てこない。約3年で親ばなれ"
-	linefw "する。"
+	text "Dizzy Punch"
 	done
 
 FetchName:
-	textfw "こどものおつかい"
-	done
-
-FetchDescription:
-	textfw "山札からカードを1枚引いて、手札に加"
-	linefw "える。"
+	text "Fetch"
 	done
 
 CometPunchName:
-	textfw "れんぞくパンチ"
+	text "Comet Punch"
 	done
 
 KangaskhanLv40Description:
-	textfw "メスはおなかの袋に"
-	linefw "子どもをいれて育てる。"
-	linefw "連続パンチ攻擊が得意。"
+	text "The infant rarely ventures out of"
+	line "its mother's protective pouch until"
+	line "it is three years old."
 	done
 
 TaurosName:
@@ -191,43 +156,38 @@ TaurosName:
 	done
 
 RampageName:
-	textfw "いかりくるう"
+	text "Rampage"
 	done
 
 RampageDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "の数×10のダメージを追加する。その"
-	linefw "後、コインを投げて「うら」なら、"
-	linefw "[自分]を「こんらん」状態にする。"
+	text "Does 20 damage plus 10 more damage"
+	line "for each damage counter on Tauros."
+	line "Flip a coin. If tails, Tauros is"
+	line "now Confused (after doing damage)."
 	done
 
 WildBullName:
-	textfw "あばれうし"
+	text "Wild Bull"
 	done
 
 TaurosLv32Description:
-	textfw "体当たりしてくるとき"
-	linefw "2本の尻尾で自分の体を"
-	linefw "ピシピシとたたく。"
+	text "When it targets an enemy, it charges"
+	line "furiously while whipping its body"
+	line "with its long tails."
 	done
 
 KickingAndStampingName:
-	textfw "ふんだりけったり"
+	text "Kicking and Stamping"
 	done
 
 KickingAndStampingDescription:
-	textfw "コインを投げて「おもて」なら、10"
-	linefw "ダメージを追加する。「うら」なら、"
-	linefw "[相手]を控えポケモンと入れ替える。"
-	linefw "入れ替わるポケモンは、相手が選ぶ。"
-	linefw "(相手に控えがいないとき、入れ替えは"
-	linefw "おこらない)"
-	done
-
-TaurosLv35Description:
-	textfw "えものにねらいをつけると、しっぽで"
-	linefw "体をたたきながらまっすぐつっこんで"
-	linefw "くる。"
+	text "Flip a coin. If Heads, this attack"
+	line "does 20 damage plus 10 more damage;"
+ 	line "if Tails, this attack does 20 damage"
+	line "and if your opponent has any Benched"
+	line "Pokémon, he or she chooses 1 of them"
+	line "and switches it with the Defending"
+	line "Pokémon."
 	done
 
 DittoName:
@@ -235,58 +195,57 @@ DittoName:
 	done
 
 MorphName:
-	textfw "ずっとへんしん"
+	text "Morph"
 	done
 
 MorphDescription:
-	textfw "[自分]にのっているダメージカウンター"
-	linefw "を、すべてとりのぞく。その後、自分の"
-	linefw "山札から「たねポケモン」(「メタモン"
-	linefw "」以外)が自動的に選ばれ、対戦が終わ"
-	linefw "るまで、このカードは、選ばれた「たね"
-	linefw "ポケモン」と同じカードとしてあつかわ"
-	linefw "れる。"
+	text "Remove all damage counters from"
+	line "Ditto. For the rest of the game,"
+	line "replace Ditto with a copy of a Basic"
+	line "Pokémon card (other than Ditto)"
+	line "chosen at random from your deck."
 	done
 
 MorphDescriptionCont:
-	textfw "(「たねポケモン」がいないとき、"
-	linefw "このワザは失敗する)"
+	text "Ditto is no longer Asleep, Confused,"
+	line "Paralyzed, Poisoned, or anything"
+	line "else that might be the result of an"
+	line "attack (just as if you had evolved"
+	line "it)."
 	done
 
 TransformName:
-	textfw "へんしん"
+	text "Transform"
 	done
 
 DittoDescription:
-	textfw "細胞組織を一瞬でコピーして、"
-	linefw "相手そっくりに変身する能力がある。"
+	text "When it spots an enemy, its body"
+	line "transfigures into an almost perfect"
+	line "copy of its opponent."
 	done
 
 EvolutionName:
-	textfw "しんか"
-	done
-
-EeveeLv5Description:
-	textfw "不規則な遺伝子を持つ。石からでる"
-	linefw "放射線によって、身体が突然変異を"
-	linefw "おこす。"
-	done
-
-SandAttackDescription:
-	textfw "次の相手の番、このワザを受けた"
-	linefw "[相手]は、ワザを使うときにコインを"
-	linefw "投げ、「うら」なら、そのワザは失敗"
-	linefw "する。"
+	text "Evolution"
 	done
 
 EeveeLv9Description:
-	textfw "捕獲例が非常に少なく、分類が難しい、"
-	linefw "特殊なポケモンだ。"
+	text "A rare and unique Pokémon about"
+	line "which little is known, as few have"
+	line "been captured."
+	done
+
+EeveesTailWhipDescription:
+	text "Flip a coin. If heads, the Defending"
+	line "Pokémon can't attack Eevee during"
+	line "your opponent's next turn. (Benching"
+	line "or evolving either Pokémon ends this"
+	line "effect)."
 	done
 
 EeveeLv12Description:
-	textfw "3種類のポケモンに進化する"
-	linefw "可能性をもつめずらしいポケモンだ。"
+	text "Its genetic code is irregular."
+	line "It may mutate if it is exposed to"
+	line "radiation from elemental stones."
 	done
 
 PorygonName:
@@ -294,65 +253,48 @@ PorygonName:
 	done
 
 Conversion1Name:
-	textfw "テクスチャー1"
+	text "Conversion 1"
 	done
 
 Conversion1Description:
-	textfw "[相手]に「弱点」があれば、それを"
-	linefw "「草・炎・水・雷・超・闘」の中の、"
-	linefw "好きな「色(タイプ)」に変える。"
-	linefw "(バトル場をはなれたポケモンからは、"
-	linefw "このワザの効果は消える)"
+	text "If the Defending Pokémon has a"
+	line "Weakness, you may change it to a"
+	line "type of your choice other than <COLORLESS>."
 	done
 
 Conversion2Name:
-	textfw "テクスチャー2"
+	text "Conversion 2"
 	done
 
 Conversion2Description:
-	textfw "[自分]の「抵抗力」を、"
-	linefw "「草・炎・水・雷・超・闘」の中の、"
-	linefw "好きな「色(タイプ)」に変える。"
-	linefw "(バトル場をはなれたポケモンからは、"
-	linefw "このワザの効果は消える)"
+	text "Change Porygon's Resistance to a"
+	line "type of your choice other than <COLORLESS>."
 	done
 
 VirtualName:
-	textfw "シージー"
+	text "Virtual"
 	done
 
 PorygonLv12Description:
-	textfw "最高の科学力をつかい、"
-	linefw "ついに人工のポケモンをつくることに"
-	linefw "成功した。"
+	text "A Pokémon that consists entirely of"
+	line "programming code. Capable of moving"
+	line "freely in cyberspace."
 	done
 
 Porygon3DAttackName:
-	textfw "3Dアタック"
-	done
-
-Porygon3DAttack10DamageDescription:
-	textfw "コインを3枚投げて「おもて」の数"
-	linefw "×10のダメージ。"
+	text "3-D Attack"
 	done
 
 PorygonSharedDescription:
-	textfw "身体がプログラムでできている。"
-	linefw "電子空間を自由自在に移動できる能力を"
-	linefw "持つ。"
-	done
-
-Conversion1AltDescription:
-	textfw "[相手]に「弱点」があれば、それを"
-	linefw "「草・炎・水・雷・超・闘」の中の、"
-	linefw "好きな「色(タイプ)」に変える。"
-	linefw "(バトル場をはなれたポケモンからは"
-	linefw "このワザの効果は消える)"
+	text "Using the most advanced"
+	line "technologies, scientists finally"
+	line "succeeded in making the first"
+	line "artificial Pokémon." 
 	done
 
 PorygonLv20Description:
-	textfw "ポリゴンを手に入れるため、日夜"
-	linefw "スロットに向かう大人が急増している。"
+	text "More and more people play the slots"
+	line "every day, trying to win a Porygon."
 	done
 
 CoolPorygonName:
@@ -360,22 +302,21 @@ CoolPorygonName:
 	done
 
 TextureMagicName:
-	textfw "テクスチャーマジック"
+	text "Texture Magic"
 	done
 
 TextureMagicDescription:
-	textfw "[相手]に弱点があれば、それを「草・炎"
-	linefw "・水・雷・超・闘」の中の、好きな色("
-	linefw "タイプ)に変える。[自分]の抵抗力も、"
-	linefw "「草・炎・水・雷・超・闘」の中の、"
-	linefw "好きな色(タイプ)に変える。"
-	linefw "バトル場をはなれたポケモンからは、"
-	linefw "このワザの効果は消える。"
+	text "You may change Cool Porygon's"
+	line "Resistance to a type of your choice"
+	line "other than <COLORLESS>. If the Defending"
+	line "Pokémon has a Weakness, you may"
+	line "change it to a type of your choice"
+	line "other than <COLORLESS>."
 	done
 
-Porygon3DAttack20DamageDescription:
-	textfw "コインを3枚投げて「おもて」の数"
-	linefw "×20のダメージ。"
+TextureMagicDescriptionCont:
+	text "(Benching or evolving either Pokémon"
+	line "ends this effect on that Pokémon)."
 	done
 
 SnorlaxName:
@@ -383,53 +324,47 @@ SnorlaxName:
 	done
 
 ThickSkinnedName:
-	textfw "めんえき"
+	text "Thick Skinned"
 	done
 
 ThickSkinnedDescription:
-	textfw "このカードを「どく・ねむり・マヒ・"
-	linefw "こんらん」状態にしようとする効果は、"
-	linefw "なくなる。このカードが「ねむり・マヒ"
-	linefw "・こんらん」状態になっているとき、"
-	linefw "この力は消える。"
+	text "Snorlax can't become Asleep,"
+	line "Confused, Paralyzed, or Poisoned."
+	line "This Power can't be used if Snorlax"
+	line "is already Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 SleepingName:
-	textfw "いねむり"
+	text "Sleeping"
 	done
 
 SnorlaxLv20Description:
-	textfw "1日に食べ物を400キロ"
-	linefw "食べないと気がすまない。"
-	linefw "食べおわると眠ってしまう。"
+	text "Very lazy. Just eats and sleeps."
+	line "As its rotund bulk builds,"
+	line "it becomes steadily more slothful."
 	done
 
 GuardName:
-	textfw "とおせんぼ"
+	text "Guard"
 	done
 
 GuardDescription:
-	textfw "このカードがバトル場にいる限り、"
-	linefw "相手の対戦ポケモンは「にげる」ことが"
-	linefw "できない。このカードが「ねむり・マヒ"
-	linefw "・こんらん」状態のとき、この力は"
-	linefw "消える。"
+	text "As long as Snorlax is your Active"
+	line "Pokémon, the Defending Pokémon can't"
+	line "retreat. This Power stops working"
+    line "while Snorlax is Asleep, Confused,"
+    line "or Paralyzed."
 	done
 
 RollOverName:
-	textfw "ねころぶ"
+	text "Roll Over"
 	done
 
 RollOverDescription:
-	textfw "ダメージを与えた後、[自分]を"
-	linefw "「ねむり」状態にする。コインを投げて"
-	linefw "「おもて」なら、[相手]も「ねむり」"
-	linefw "状態にする。"
-	done
-
-SnorlaxLv35Description:
-	textfw "いねむりが大好きで、道の真ん中で"
-	linefw "眠り込んでしまうことがある。"
+	text "Snorlax is now Asleep. Flip a coin."
+	line "If Heads, the Defending Pokémon is"
+	line "now Asleep."
 	done
 
 HungrySnorlaxName:
@@ -437,27 +372,30 @@ HungrySnorlaxName:
 	done
 
 EatName:
-	textfw "たべる"
+	text "Eat"
 	done
 
 EatDescription:
-	textfw "「たべものカウンター」を1つ、この"
-	linefw "カードの上にのせる。(このカードに"
-	linefw "「たべものカウンター」が2つ以上"
-	linefw "のっているとき、このワザは使えない)"
+	text "Put 1 Food counter on Hungry"
+	line "Snorlax. You can't use this attack"
+	line "if Hungry Snorlax already has 2 Food"
+	line "counters on it."
 	done
 
 RolloutDescription:
-	textfw "のぞむなら、このカードにのっている"
-	linefw "「たべものカウンター」を好きなだけ"
-	linefw "取りのぞき、取りのぞいた数×30"
-	linefw "ダメージを追加してもよい。"
+	text "You may remove any number of Food"
+	line "counters from Hungry Snorlax. If you"
+	line "do, this attack does 20 damage plus"
+	line "30 more damage for each Food counter"
+	line "you removed. If you don't, this"
+	line "attack does 20 damage."
 	done
 
 HungrySnorlaxDescription:
-	textfw "ぐうだらで食べて寝るだけ。だから"
-	linefw "どんどん太っていき、ますます怠けて"
-	linefw "しまうらしい。"
+	text "A lazy Pokémon that gets continually"
+	line "fatter by sticking to a cycle of"
+	line "sleeping and eating. Awake only when"
+	line "it eats."
 	done
 
 DratiniName:
@@ -465,13 +403,15 @@ DratiniName:
 	done
 
 DratiniLv10Description:
-	textfw "子どもでも身長は2メートル以上。"
-	linefw "脱皮をくりかえして大きくなる。"
+	text "Long considered a mythical Pokémon"
+	line "until recently, when a small colony"
+	line "was found living underwater."
 	done
 
 DratiniLv12Description:
-	textfw "ミニリュウの捕獲が、「伝説のポケモン"
-	linefw "」探しのきっかけとなった。"
+	text "The capture of the first Dratini"
+	line "inspired the search for other"
+	line "legendary Pokémon."
 	done
 
 DragonairName:
@@ -479,13 +419,13 @@ DragonairName:
 	done
 
 SlamName:
-	textfw "たたきつける"
+	text "Slam"
 	done
 
 DragonairDescription:
-	textfw "海や湖などに住むという。"
-	linefw "羽を持たないが、"
-	linefw "たまに空を飛ぶ姿が目擊される。"
+	text "A mystical Pokémon that exudes a"
+	line "gentle aura. Has the ability to"
+	line "change climate conditions."
 	done
 
 DarkDragonairName:
@@ -493,27 +433,32 @@ DarkDragonairName:
 	done
 
 EvolutionaryLightName:
-	textfw "しんかのひかり"
+	text "Evolutionary Light"
 	done
 
 EvolutionaryLightDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "自分の山札から「進化カード」を1枚"
-	linefw "選び出し、相手プレイヤーに見せてから"
-	linefw "手札に加える。その後、その山札を"
-	linefw "よく切る。このカードが「ねむり・マヒ"
-	linefw "・こんらん」状態のとき、この力は使え"
-	linefw "ない。"
+	text "Once during your turn (before your"
+	line "attack), you may search your deck"
+	line "for an Evolution card. Show it to"
+	line "your opponent and put it into your"
+	line "hand. Shuffle your deck afterward."
+	done
+
+EvolutionaryLightDescriptionCont:
+	text "This power can't be used if Dark"
+	line "Dragonair is Asleep, Confused, or"
+	line "Paralyzed."
 	done
 
 TailStrikeName:
-	textfw "しっぽでつく"
+	text "Tail Strike"
 	done
 
 DarkDragonairDescription:
-	textfw "自由に雨や雪を降らせたり、"
-	linefw "伝説のポケモンらしい不思議な力を"
-	linefw "使うことができるという。"
+	text "As is fitting for a legendary"
+	line "Pokémon, it has many strange powers,"
+	line "including the ability to make rain"
+	line "or snow fall."
 	done
 
 DragoniteName:
@@ -521,57 +466,61 @@ DragoniteName:
 	done
 
 HealingWindName:
-	textfw "いやしのかぜ"
+	text "Healing Wind"
 	done
 
 HealingWindDescription:
-	textfw "この力は、このカードを手札から場に出"
-	linefw "したとき、1度だけ使える。自分の場の"
-	linefw "ポケモン全員から、ダメージカウンター"
-	linefw "を、それぞれ2個ずつとりのぞいてよい"
+	text "When you put Dragonite into play,"
+	line "remove 2 damage counters from each"
+	line "of your Pokémon. If a Pokémon has"
+	line "fewer damage counters than that,"
+	line "remove all of them from that"
+	line "Pokémon."
 	done
 
 DragoniteLv41Description:
-	textfw "姿を見た人は少ないが実在する海の化身"
-	linefw "知能も人間に匹敵するらしい。"
+	text "It is said that this Pokémon lives"
+	line "somewhere in the sea and that it"
+	line "flies. However, it is only a rumor."
 	done
 
 SpecialDeliveryName:
-	textfw "トランスポート"
+	text "Special Delivery"
 	done
 
 SpecialDeliveryDescription:
-	textfw "この力は、自分の番ごとに1回使える。"
-	linefw "自分の山札からカードを1枚引いて、"
-	linefw "手札に加える。その後、自分の手札から"
-	linefw "カードを1枚選び、山札の上に置く。"
-	linefw "このカードが「ねむり・マヒ・こんらん"
-	linefw "」状態のとき、この力は使えない。"
+	text "Once during your turn (before your"
+	line "attack), you may draw a card. If you"
+	line "do, choose a card from your hand and"
+	line "put it on top of your deck. This"
+	line "power can't be used if Dragonite is"
+	line "Asleep, Confused, or Paralyzed."
 	done
 
 SupersonicFlightName:
-	textfw "マッハひこう"
+	text "Supersonic Flight"
 	done
 
 DragoniteSharedDescription:
-	textfw "大きな体格で空を飛ぶ。"
-	linefw "地球を約16時間で1周してしまう。"
+	text "An extremely rarely seen marine"
+	line "Pokémon. Its intelligence is said"
+	line "to match that of humans."
 	done
 
 StepInName:
-	textfw "かけつける"
+	text "Step In"
 	done
 
 StepInDescription:
-	textfw "この力は、自分の番ごとに1回、"
-	linefw "このカードがベンチにいるときに使える"
-	linefw "バトル場にいる自分の対戦ポケモンと、"
-	linefw "このカードを入れ替える。"
+	text "Once during your turn (before your"
+	line "attack), if Dragonite is on your"
+	line "Bench, you may switch it with your"
+	line "Active Pokémon."
 	done
 
 SlamDescription:
-	textfw "コインを2枚投げ、「おもて」の数"
-	linefw "×40のダメージ。"
+	text "Flip 2 coins. This attack does 40"
+	line "damage times the number of heads."
 	done
 
 DarkDragoniteName:
@@ -579,25 +528,26 @@ DarkDragoniteName:
 	done
 
 SummonMinionsName:
-	textfw "てしたをよぶ"
+	text "Summon Minions"
 	done
 
 SummonMinionsDescription:
-	textfw "この力は、このカードを手札から場に出"
-	linefw "したとき、1度だけ使える。"
-	linefw "自分の山札から「たねポケモン」を2枚"
-	linefw "選び出し、自分のベンチに出す。"
-	linefw "その後、その山札をよく切る。"
+	text "When you play Dark Dragonite from"
+	line "your hand, search your deck for up"
+	line "to 2 Basic Pokémon and put them"
+	line "onto your Bench. Shuffle your deck"
+	line "afterward."
 	done
 
 GiantTailName:
-	textfw "きょだいなしっぽ"
+	text "Giant Tail"
 	done
 
 DarkDragoniteDescription:
-	textfw "「破壊の神」の化身。200kgを"
-	linefw "越える重さだが、2つの翼で自由自在に"
-	linefw "空を飛ぶ。"
+	text "Sometimes called ”The God of"
+	line "Destruction”. Its wings are able to"
+	line "support it in spite of its massive"
+	line "weight."
 	done
 
 TogepiName:
@@ -605,27 +555,37 @@ TogepiName:
 	done
 
 SnivelAltDescription:
-	textfw "次の相手の番、このワザを受けた"
-	linefw "[相手]がこのカードに与えるダメージは"
-	linefw "「-20」される。"
+	text "If the Defending Pokémon attacks"
+	line "Togepi during your opponent's"
+	line "next turn, any damage done by the"
+	line "attack is reduced by 20 (after"
+	line "applying Weakness and Resistance)."
+	line "(Benching or evolving either Pokémon"
+	line "ends this effect)."
+	done
+
+MiniMetronomeName:
+	text "Mini-Metronome"
 	done
 
 MetronomeCoinTossDescription:
-	textfw "コインを投げて「おもて」なら、"
-	linefw "[相手]のワザを1つ選び、それを、"
-	linefw "[自分]が持っているワザとして使う。"
-	linefw "(そのワザに必要なエネルギーがついて"
-	linefw "いなくてもかまわない)"
+	text "Flip a coin. If Heads, choose 1 of"
+	line "the Defending Pokémon's attacks."
+	line "Mini-Metronome copies that attack"
+	line "except for its Energy costs."
+	line "(No matter what type the Defending"
+	line "Pokémon is, Togepi's type is"
+	line "still <COLORLESS>)."
 	done
 
 SpikeBallName:
-	textfw "とげたま"
+	text "Spike Ball"
 	done
 
 TogepiDescription:
-	textfw "赤んぼうなので、もしものときは、"
-	linefw "頭の先から毒を出して、敵を追い"
-	linefw "はらおうとがんばる。"
+	text "Still only a hatchling, it uses"
+	line "poison to chase off its enemies"
+	line "when threatened."
 	done
 
 LugiaName:
@@ -633,21 +593,24 @@ LugiaName:
 	done
 
 AeroblastName:
-	textfw "エアロブラスト"
+	text "Aeroblast"
 	done
 
 AeroblastDescription:
-	textfw "コインを2枚投げて、「おもて」の数"
-	linefw "×20のダメージを追加する"
+	text "Flip 2 coins. This attack does 20"
+	line "damage plus 20 more damage for each"
+	line "Heads."
 	done
 
 DivingName:
-	textfw "せんすい"
+	text "Diving"
 	done
 
 LugiaDescription:
-	textfw "強すぎる能力を持つため、深い海の底で"
-	linefw "静かに時を過ごすと伝えられる。"
+	text "It is said that it quietly spends"
+	line "its time deep at the bottom of the"
+	line "sea because its powers are too"
+	line "strong."
 	done
 
 SuperPotionName:
