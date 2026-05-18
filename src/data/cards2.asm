@@ -1861,7 +1861,7 @@ AbraLv8Card:
 	; attack 1
 	energy PSYCHIC, 1 ; energies
 	tx PsychicBeamName ; name
-	tx PsychicBeamDescription ; description
+	tx SuperconductivityDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
 	db RESIDUAL ; category
@@ -1889,7 +1889,7 @@ AbraLv8Card:
 	db 0 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ABRA ; Pokedex number
 	darkness_level FALSE, 8 ; is Dark?, level
 IF METRIC
@@ -1899,7 +1899,7 @@ ELSE
 	length 2, 11 ; length
 	weight 43.0 ; weight
 ENDC
-	tx AbraLv8Description ; description
+	tx AbraLv10Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 AbraLv10Card:
@@ -1945,7 +1945,7 @@ AbraLv10Card:
 	db 0 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ABRA ; Pokedex number
 	darkness_level FALSE, 10 ; is Dark?, level
 IF METRIC
@@ -2001,7 +2001,7 @@ AbraLv14Card:
 	db 1 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ABRA ; Pokedex number
 	darkness_level FALSE, 14 ; is Dark?, level
 IF METRIC
@@ -2057,7 +2057,7 @@ KadabraLv38Card:
 	db 3 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_KADABRA ; Pokedex number
 	darkness_level FALSE, 38 ; is Dark?, level
 IF METRIC
@@ -2113,7 +2113,7 @@ KadabraLv39Card:
 	db 3 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_KADABRA ; Pokedex number
 	darkness_level FALSE, 39 ; is Dark?, level
 IF METRIC
@@ -2123,7 +2123,7 @@ ELSE
 	length 4, 3 ; length
 	weight 125.0 ; weight
 ENDC
-	tx KadabraLv39Description ; description
+	tx KadabraLv38Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 DarkKadabraCard:
@@ -2155,7 +2155,7 @@ DarkKadabraCard:
 	; attack 2
 	energy PSYCHIC, 2 ; energies
 	tx MindShockName ; name
-	tx MindShockDescription ; description
+	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -2169,7 +2169,7 @@ DarkKadabraCard:
 	db 2 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_KADABRA ; Pokedex number
 	darkness_level TRUE, 24 ; is Dark?, level
 IF METRIC
@@ -2225,7 +2225,7 @@ AlakazamLv42Card:
 	db 3 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ALAKAZAM ; Pokedex number
 	darkness_level FALSE, 42 ; is Dark?, level
 IF METRIC
@@ -2281,7 +2281,7 @@ AlakazamLv45Card:
 	db 3 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ALAKAZAM ; Pokedex number
 	darkness_level FALSE, 45 ; is Dark?, level
 IF METRIC
@@ -2291,7 +2291,7 @@ ELSE
 	length 4, 11 ; length
 	weight 106.0 ; weight
 ENDC
-	tx AlakazamLv45Description ; description
+	tx AlakazamLv42Description ; description
 	db NONE ; AI info
 
 DarkAlakazamCard:
@@ -2337,7 +2337,7 @@ DarkAlakazamCard:
 	db 3 ; retreat cost
 	db WR_PSYCHIC ; weakness
 	db NONE ; resistance
-	tx PsyshockName ; category
+	tx PsiName ; category
 	db DEX_ALAKAZAM ; Pokedex number
 	darkness_level TRUE, 30 ; is Dark?, level
 IF METRIC
@@ -2515,7 +2515,7 @@ ELSE
 	length 3, 11 ; length
 	weight 79.0 ; weight
 ENDC
-	tx SlowpokeLv18Description ; description
+	tx SlowpokeLv9Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 SlowbroLv26Card:
@@ -2627,7 +2627,7 @@ ELSE
 	length 5, 3 ; length
 	weight 173.0 ; weight
 ENDC
-	tx SlowbroLv35Description ; description
+	tx SlowbroLv26Description ; description
 	db NONE ; AI info
 
 DarkSlowbroCard:
@@ -2795,7 +2795,7 @@ ELSE
 	length 4, 3 ; length
 	weight 0.2 ; weight
 ENDC
-	tx GastlyLv13Description ; description
+	tx GastlyLv8Description ; description
 	db NONE | HAS_EVOLUTION ; AI info
 
 GastlyLv17Card:
@@ -3243,7 +3243,7 @@ ELSE
 	length 4, 11 ; length
 	weight 89.0 ; weight
 ENDC
-	tx GengarLv40Description ; description
+	tx GengarLv38Description ; description
 	db NONE ; AI info
 
 DarkGengarCard:
@@ -3467,7 +3467,7 @@ ELSE
 	length 5, 3 ; length
 	weight 167.0 ; weight
 ENDC
-	tx HypnoLv30Description ; description
+	tx HypnoLv36Description ; description
 	db NONE ; AI info
 
 HypnoLv36Card:
@@ -3556,7 +3556,7 @@ DarkHypnoCard:
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
 	tx BenchManipulationName ; name
 	tx BenchManipulationDescription ; description
-	dw NONE ; description (cont)
+	tx BenchManipulationDescriptionCont ; description (cont)
 	db 20 ; damage
 	db DAMAGE_X ; category
 	dw DarkHypnoBenchManipulationEffectCommands ; effect commands
@@ -3654,7 +3654,7 @@ MrMimeLv28Card:
 	energy 0 ; energies
 	tx InvisibleWallName ; name
 	tx InvisibleWallDescription ; description
-	dw NONE ; description (cont)
+	tx InvisibleWallDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw MrMimeInvisibleWallEffectCommands ; effect commands
@@ -3667,7 +3667,7 @@ MrMimeLv28Card:
 	; attack 2
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
 	tx MeditateName ; name
-	tx MeditateDescription ; description
+	tx MrMimesMeditateDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
 	db DAMAGE_PLUS ; category
@@ -3779,7 +3779,7 @@ JynxLv23Card:
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
 	tx MeditateName ; name
-	tx MeditateDescription ; description
+	tx JynxsMeditateDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
 	db DAMAGE_PLUS ; category
@@ -3859,7 +3859,7 @@ ELSE
 	length 4, 7 ; length
 	weight 90.0 ; weight
 ENDC
-	tx JynxLv27Description ; description
+	tx JynxLv18Description ; description
 	db NONE ; AI info
 
 MewtwoLv30Card:
@@ -3915,7 +3915,7 @@ ELSE
 	length 6, 7 ; length
 	weight 269.0 ; weight
 ENDC
-	tx MewtwoLv30Description ; description
+	tx MewtwoLv53Description ; description
 	db NONE ; AI info
 
 MewtwoLv53Card:
@@ -4027,7 +4027,7 @@ ELSE
 	length 6, 7 ; length
 	weight 269.0 ; weight
 ENDC
-	tx MewtwoLv54Description ; description
+	tx MewtwoLv53Description ; description
 	db NONE ; AI info
 
 MewtwoLv60Card:
@@ -4171,7 +4171,7 @@ MewtwoLv67Card:
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
 	tx PsychoBlastName ; name
-	tx PsychoBlastDescription ; description
+	tx DissolveDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
 	db DAMAGE_NORMAL ; category
@@ -4195,7 +4195,7 @@ ELSE
 	length 6, 7 ; length
 	weight 269.0 ; weight
 ENDC
-	tx MewtwoLv67Description ; description
+	tx MewtwoLv53Description ; description
 	db NONE ; AI info
 
 GRsMewtwoCard:
@@ -4419,7 +4419,7 @@ ELSE
 	length 1, 4 ; length
 	weight 9.0 ; weight
 ENDC
-	tx MewLv23Description ; description
+	tx MewLv8Description ; description
 	db AI_INFO_UNK_08 ; AI info
 
 PidgeyLv8Card:
