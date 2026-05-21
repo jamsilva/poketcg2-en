@@ -103,6 +103,50 @@ Frameset081::
 	oamframe  0,  1,   0,   0
 	oamreset
 
+; Became bigger to accomodate the "Trading Card Game" badge under the Pokémon logo, moved here where there is some free space
+BoosterPackOAMGfx::
+	dw 32 ; length
+	INCBIN "gfx/booster_packs/pack_oam.2bpp"
+
+; New OAMData91 for the new logo
+OAMData91::
+	dw .frame_0
+
+.frame_0
+	db 32 ; size
+	dbsprite   0,   0, $00, 0
+	dbsprite   0,   8, $01, 0
+	dbsprite   0,  16, $02, 0
+	dbsprite   0,  24, $03, 0
+	dbsprite   0,  32, $04, 0
+	dbsprite   0,  40, $05, 0
+	dbsprite   0,  48, $06, 0
+	dbsprite   0,  56, $07, 0
+	dbsprite   8,   0, $08, 0
+	dbsprite   8,   8, $09, 0
+	dbsprite   8,  16, $0a, 0
+	dbsprite   8,  24, $0b, 0
+	dbsprite   8,  32, $0c, 0
+	dbsprite   8,  40, $0d, 0
+	dbsprite   8,  48, $0e, 0
+	dbsprite   8,  56, $0f, 0
+	dbsprite  16,   0, $10, 0
+	dbsprite  16,   8, $11, 0
+	dbsprite  16,  16, $12, 0
+	dbsprite  16,  24, $13, 0
+	dbsprite  16,  32, $14, 0
+	dbsprite  16,  40, $15, 0
+	dbsprite  16,  48, $16, 0
+	dbsprite  16,  56, $17, 0
+	dbsprite  24,   0, $18, 0
+	dbsprite  24,   8, $19, 0
+	dbsprite  24,  16, $1a, 0
+	dbsprite  24,  24, $1b, 0
+	dbsprite  24,  32, $1c, 0
+	dbsprite  24,  40, $1d, 0
+	dbsprite  24,  48, $1e, 0
+	dbsprite  24,  56, $1f, 0
+
 SECTION "Tilemaps 3", ROMX
 INCLUDE "data/maps/tilemaps3.asm"
 
@@ -2138,10 +2182,6 @@ MagmarCoinGfx::
 PsyduckCoinGfx::
 	dw 39 ; length
 	INCBIN "gfx/coins/psyduck.2bpp"
-
-BoosterPackOAMGfx::
-	dw 23 ; length
-	INCBIN "gfx/booster_packs/pack_oam.2bpp"
 
 MailboxCrossGfx::
 	dw 4 ; length
