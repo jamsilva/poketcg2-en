@@ -129,7 +129,6 @@ src/gfx/booster_packs/fossil_pack.2bpp: RGBGFXFLAGS += -x 2
 src/gfx/booster_packs/psychic_pack.2bpp: RGBGFXFLAGS += -x 1
 src/gfx/booster_packs/ambition_pack.2bpp: RGBGFXFLAGS += -x 2
 src/gfx/booster_packs/present_pack.2bpp: RGBGFXFLAGS += -x 2
-src/gfx/booster_packs/pack_oam.2bpp: RGBGFXFLAGS += -x 1
 src/gfx/titlescreen/title_screen.2bpp: RGBGFXFLAGS += -x 4
 src/gfx/titlescreen/gb_error.2bpp: RGBGFXFLAGS += -x 10
 src/gfx/black_box/black_box_bg.2bpp: RGBGFXFLAGS += -x 5

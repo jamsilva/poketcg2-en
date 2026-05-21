@@ -1414,7 +1414,7 @@ OAMData90::
 	dbsprite   0,  24, $01, 0
 	dbsprite   0,  16, $00, 0
 
-OAMData91::
+OAMData91_OldLogo:: ; Not used anymore, see OAMData91 in gfx.asm
 	dw .frame_0
 
 .frame_0

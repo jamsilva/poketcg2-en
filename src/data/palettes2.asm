@@ -2227,7 +2227,7 @@ Palette153::
 	rgb 18, 10,  0
 	rgb  0,  0,  0
 
-Palette154::
+Palette154:: ; Beginning booster pack palette
 	db 6 ; number of palettes
 
 	rgb 28, 28, 28
@@ -2260,7 +2260,7 @@ Palette154::
 	rgb 24,  0,  0
 	rgb  0,  0,  8
 
-Palette155::
+Palette155:: ; Legendary booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
@@ -2283,7 +2283,7 @@ Palette155::
 	rgb 31,  0,  0
 	rgb  5,  0,  0
 
-	rgb 28, 28, 28
+	rgb 31, 31, 31
 	rgb  4, 12,  0
 	rgb 31, 12,  0
 	rgb  5,  0,  0
@@ -2293,7 +2293,7 @@ Palette155::
 	rgb 31, 12,  0
 	rgb  5,  0,  0
 
-Palette156::
+Palette156:: ; Fossil booster pack palette
 	db 6 ; number of palettes
 
 	rgb 22, 29, 26
@@ -2302,7 +2302,7 @@ Palette156::
 	rgb  0,  0,  6
 
 	rgb 22, 29, 26
-	rgb 29, 10,  0
+	rgb 17, 18,  8
 	rgb 12, 13,  6
 	rgb  0,  0,  6
 
@@ -2326,7 +2326,7 @@ Palette156::
 	rgb  0,  0,  3
 	rgb  0,  0,  6
 
-Palette157::
+Palette157:: ; Psychic booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
@@ -2359,7 +2359,7 @@ Palette157::
 	rgb 30, 12, 21
 	rgb  0,  0,  0
 
-Palette158::
+Palette158:: ; Flying booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
@@ -2392,7 +2392,7 @@ Palette158::
 	rgb 31,  4,  0
 	rgb  0,  0,  8
 
-Palette159::
+Palette159:: ; Rocket booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
@@ -2425,7 +2425,7 @@ Palette159::
 	rgb 24, 24, 24
 	rgb 31, 31, 31
 
-Palette15A::
+Palette15A:: ; Ambition booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 29, 16
@@ -2458,7 +2458,7 @@ Palette15A::
 	rgb  0,  0,  0
 	rgb  2,  2,  2
 
-Palette15B::
+Palette15B:: ; Present booster pack palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
@@ -2472,12 +2472,12 @@ Palette15B::
 	rgb  0,  0,  0
 
 	rgb 31, 31, 31
-	rgb  5, 25,  0
+	rgb 28, 27,  0
 	rgb 22, 10,  0
 	rgb  0,  0,  0
 
 	rgb 31, 31, 31
-	rgb  0, 13, 31
+	rgb 28, 27,  0
 	rgb 22, 10,  0
 	rgb  0,  0,  0
 
@@ -2623,13 +2623,13 @@ Palette15F::
 	rgb 22,  2, 14
 	rgb  0,  0,  0
 
-Palette160::
+Palette160:: ; Pokémon Booster pack logo palette
 	db 8 ; number of palettes
 
-	rgb  0, 21,  0
-	rgb 31, 31, 31
-	rgb 28,  0,  0
-	rgb  4,  0,  0
+	rgb  0, 21,  0 ; unused / transparent color
+	rgb 31, 31,  0 ; Pokémon logo yellow
+	rgb 31,  0,  0 ; TCG badge red
+	rgb  0,  8, 19 ; Pokémon logo blue
 
 	rgb  0,  0,  0
 	rgb 28,  0,  0
