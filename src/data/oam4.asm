@@ -3836,26 +3836,26 @@ OAMData5E::
 	dbsprite -40,  64, $19, 0
 	dbsprite -40,  48, $22, 0
 	dbsprite -40,  56, $23, 0
-	dbsprite -16, -40, $09, 0
-	dbsprite -16, -80, $08, 0
-	dbsprite  -8, -80, $18, 0
-	dbsprite  -8, -40, $19, 0
-	dbsprite -24, -72, $04, 0
-	dbsprite -16, -72, $14, 0
-	dbsprite  -8, -72, $24, 0
-	dbsprite -24, -64, $05, 0
-	dbsprite -16, -64, $15, 0
-	dbsprite  -8, -64, $25, 0
-	dbsprite   0, -64, $35, 0
-	dbsprite   0, -72, $34, 0
-	dbsprite   0, -56, $28, 0
-	dbsprite  -8, -56, $26, 0
-	dbsprite -16, -56, $16, 0
-	dbsprite -24, -56, $06, 0
-	dbsprite -24, -48, $07, 0
-	dbsprite -16, -48, $17, 0
-	dbsprite  -8, -48, $27, 0
-	dbsprite   0, -48, $29, 0
+	dbsprite -16, -32, $09, 0
+	dbsprite -16, -72, $08, 0
+	dbsprite  -8, -72, $18, 0
+	dbsprite  -8, -32, $19, 0
+	dbsprite -24, -64, $04, 0
+	dbsprite -16, -64, $14, 0
+	dbsprite  -8, -64, $24, 0
+	dbsprite -24, -56, $05, 0
+	dbsprite -16, -56, $15, 0
+	dbsprite  -8, -56, $25, 0
+	dbsprite   0, -56, $35, 0
+	dbsprite   0, -64, $34, 0
+	dbsprite   0, -48, $28, 0
+	dbsprite  -8, -48, $26, 0
+	dbsprite -16, -48, $16, 0
+	dbsprite -24, -48, $06, 0
+	dbsprite -24, -40, $07, 0
+	dbsprite -16, -40, $17, 0
+	dbsprite  -8, -40, $27, 0
+	dbsprite   0, -40, $29, 0
 
 .frame_1
 	db 40 ; size
@@ -3879,26 +3879,26 @@ OAMData5E::
 	dbsprite -48,  56, $17, 0
 	dbsprite -40,  56, $27, 0
 	dbsprite -32,  56, $29, 0
-	dbsprite -24, -72, $00, 0
-	dbsprite -24, -64, $01, 0
-	dbsprite -24, -56, $02, 0
-	dbsprite -24, -48, $03, 0
-	dbsprite -16, -40, $09, 0
-	dbsprite -16, -48, $13, 0
-	dbsprite -16, -56, $12, 0
-	dbsprite -16, -64, $11, 0
-	dbsprite -16, -72, $10, 0
-	dbsprite -16, -80, $08, 0
-	dbsprite  -8, -80, $18, 0
-	dbsprite   0, -72, $30, 0
-	dbsprite  -8, -72, $20, 0
-	dbsprite  -8, -64, $21, 0
-	dbsprite   0, -64, $31, 0
-	dbsprite   0, -56, $32, 0
-	dbsprite   0, -48, $33, 0
-	dbsprite  -8, -40, $19, 0
-	dbsprite  -8, -56, $22, 0
-	dbsprite  -8, -48, $23, 0
+	dbsprite -24, -64, $00, 0
+	dbsprite -24, -56, $01, 0
+	dbsprite -24, -48, $02, 0
+	dbsprite -24, -40, $03, 0
+	dbsprite -16, -32, $09, 0
+	dbsprite -16, -40, $13, 0
+	dbsprite -16, -48, $12, 0
+	dbsprite -16, -56, $11, 0
+	dbsprite -16, -64, $10, 0
+	dbsprite -16, -72, $08, 0
+	dbsprite  -8, -72, $18, 0
+	dbsprite   0, -64, $30, 0
+	dbsprite  -8, -64, $20, 0
+	dbsprite  -8, -56, $21, 0
+	dbsprite   0, -56, $31, 0
+	dbsprite   0, -48, $32, 0
+	dbsprite   0, -40, $33, 0
+	dbsprite  -8, -32, $19, 0
+	dbsprite  -8, -48, $22, 0
+	dbsprite  -8, -40, $23, 0
 
 .frame_2
 	db 36 ; size
@@ -3920,24 +3920,24 @@ OAMData5E::
 	dbsprite -52,  64, $0f, 0
 	dbsprite -44,  64, $1f, 0
 	dbsprite -36,  64, $2f, 0
-	dbsprite -20, -80, $0a, 0
-	dbsprite -12, -80, $1a, 0
-	dbsprite  -4, -80, $2a, 0
-	dbsprite -20, -72, $0b, 0
-	dbsprite -12, -72, $1b, 0
-	dbsprite  -4, -72, $2b, 0
-	dbsprite -20, -64, $0c, 0
-	dbsprite -12, -64, $1c, 0
-	dbsprite  -4, -64, $2c, 0
-	dbsprite -20, -56, $0d, 0
-	dbsprite -12, -48, $1e, 0
-	dbsprite -12, -56, $1d, 0
-	dbsprite  -4, -56, $2d, 0
-	dbsprite  -4, -48, $2e, 0
-	dbsprite -20, -48, $0e, 0
-	dbsprite -20, -40, $0f, 0
-	dbsprite -12, -40, $1f, 0
-	dbsprite  -4, -40, $2f, 0
+	dbsprite -20, -72, $0a, 0
+	dbsprite -12, -72, $1a, 0
+	dbsprite  -4, -72, $2a, 0
+	dbsprite -20, -64, $0b, 0
+	dbsprite -12, -64, $1b, 0
+	dbsprite  -4, -64, $2b, 0
+	dbsprite -20, -56, $0c, 0
+	dbsprite -12, -56, $1c, 0
+	dbsprite  -4, -56, $2c, 0
+	dbsprite -20, -48, $0d, 0
+	dbsprite -12, -40, $1e, 0
+	dbsprite -12, -48, $1d, 0
+	dbsprite  -4, -48, $2d, 0
+	dbsprite  -4, -40, $2e, 0
+	dbsprite -20, -40, $0e, 0
+	dbsprite -20, -32, $0f, 0
+	dbsprite -12, -32, $1f, 0
+	dbsprite  -4, -32, $2f, 0
 
 OAMData5F::
 	dw .frame_0
