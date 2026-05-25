@@ -60,8 +60,8 @@ int main(int argc, char *argv[]) {
 
 	if (size != CARD_WIDTH * CARD_HEIGHT) {
 		fprintf(stderr, "File \"%s\" has invalid size %d", infile, size);
-		free(inbuffer);
-		exit(EXIT_FAILURE);
+		//free(inbuffer);
+		//exit(EXIT_FAILURE);
 	}
 
 	uint8_t *outbuffer = malloc(size);
