@@ -97,10 +97,10 @@
 	charmap "y", $79
 	charmap "z", $7a
 	charmap "\{", $7b
-	charmap "<PHALFDOT>", $7c
+	charmap "¦", $7c
 	charmap "}", $7d
 	charmap "|", $7e
-	charmap "<HALFDOTAPOSTROPHE>", $7f
+	charmap "‾", $7f
 
 NEWCHARMAP katakana
 NEWCHARMAP hiragana
