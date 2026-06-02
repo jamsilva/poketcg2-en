@@ -620,12 +620,9 @@ GetDamageText:
 	ldtx hl, AttackDamageText
 	and (1 << RESISTANCE) | (1 << WEAKNESS)
 	ret z ; not weak or resistant
-	ldtx hl, WeaknessResistanceMixedDamageText
-	cp (1 << RESISTANCE) | (1 << WEAKNESS)
-	ret z ; weak and resistant
-	and (1 << WEAKNESS)
 	ldtx hl, WeaknessMoreDamageText
-	ret nz ; weak
+	and (1 << WEAKNESS)
+	ret nz ; weak (may or may not be resistant too)
 	ldtx hl, ResistanceLessDamageText
 	ret ; resistant
 
@@ -3356,7 +3353,7 @@ ViewCardPopRecords:
 	call InitTextPrinting_ProcessTextFromID
 .rare_card_pop_1
 	ld a, [wCardPopRecordNumCoins]
-	lb bc, 13, 4
+	lb bc, 16, 4
 	bank1call WriteTwoDigitNumberInTxSymbol_PadSpace
 	ld hl, wCardPopRecordNumCards
 	ld c, 6
@@ -3439,7 +3436,7 @@ ViewCardPopRecords:
 
 ; c = y coordinate
 .PrintNumberAtYCoord:
-	ld b, 12 ; x coordinate
+	ld b, 13 ; x coordinate
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a

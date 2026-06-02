@@ -3497,23 +3497,23 @@ InitAutoDeckMachineCategoryMenu:
 .machine_1_category_titles
 	tx AutoDeckMachine1BasicDecksTextPadded
 	tx AutoDeckMachine1GivenDecksTextPadded
-	tx AutoDeckMachine1FightingDecksText
-	tx AutoDeckMachine1GrassDecksText
-	tx AutoDeckMachine1WaterDecksText
-	tx AutoDeckMachine1FireDecksText
-	tx AutoDeckMachine1LightningDecksText
-	tx AutoDeckMachine1PsychicDecksText
+	tx AutoDeckMachine1FightingDecksTextPadded
+	tx AutoDeckMachine1GrassDecksTextPadded
+	tx AutoDeckMachine1WaterDecksTextPadded
+	tx AutoDeckMachine1FireDecksTextPadded
+	tx AutoDeckMachine1LightningDecksTextPadded
+	tx AutoDeckMachine1PsychicDecksTextPadded
 	tx AutoDeckMachine1SpecialDecksTextPadded
 	tx AutoDeckMachine1LegendaryDecksTextPadded
 
 .machine_2_category_titles
-	tx AutoDeckMachine2DarkGrassDecksText
-	tx AutoDeckMachine2DarkLightningDecksText
-	tx AutoDeckMachine2DarkWaterDecksText
-	tx AutoDeckMachine2DarkFireDecksText
-	tx AutoDeckMachine2DarkFightingDecksText
-	tx AutoDeckMachine2DarkPsychicDecksText
+	tx AutoDeckMachine2DarkGrassDecksTextPadded
+	tx AutoDeckMachine2DarkLightningDecksTextPadded
+	tx AutoDeckMachine2DarkWaterDecksTextPadded
+	tx AutoDeckMachine2DarkFireDecksTextPadded
+	tx AutoDeckMachine2DarkFightingDecksTextPadded
+	tx AutoDeckMachine2DarkPsychicDecksTextPadded
 	tx AutoDeckMachine2ColorlessDecksTextPadded
-	tx AutoDeckMachine2DarkSpecialDecksText
-	tx AutoDeckMachine2RareCardDecksText
+	tx AutoDeckMachine2DarkSpecialDecksTextPadded
+	tx AutoDeckMachine2RareCardDecksTextPadded
 	tx AutoDeckMachine2MysteriousCardDecksTextPadded

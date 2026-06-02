@@ -1,1550 +1,1526 @@
 PrehistoricDreamCheckText:
-	textfw "「おもて」なら 「なにかの化石」から"
-	linefw "進化したポケモンの ダメージが+10"
+	text "If Heads, +10 damage from Pokémon"
+	line "evolved from Mysterious Fossil."
 	done
 
 PowerOfDarknessCheckText:
-	textfw "「おもて」なら 相手のポケモン1体と"
-	linefw "ついているカードを 手札にもどす"
+	text "If Heads, return 1 of the opponent's"
+	line "Pokémon and attached cards to Hand."
 	done
 
 Plus10DamageToOppAndYourselfForEachHeadsText:
-	textfw "「おもて」×10ダメージついか"
-	linefw "[自分]に 「おもて」×10ダメージ"
+	text "10 damage for each Heads to"
+	line "the opponent and to yourself!"
 	done
 
 TheRocketsTrapCheckText:
-	textfw "「おもて」なら 相手の手札から"
-	linefw "3枚を 相手の山札に もどす"
+	text "If Heads, return up to 3 cards from"
+	line "opponent's Hand to his or her Deck."
 	done
 
 ThunderAttackCheckText:
-	textfw "「おもて」なら [相手]を「マヒ」"
-	linefw "「うら」なら [自分]に10ダメージ"
+	text "If Heads, opponent is Paralyzed."
+	line "If Tails, 10 damage to yourself!"
 	done
 
 TwisterCheckText:
-	textfw "「おもて」なら [相手]についている"
-	linefw "カードを すべて 手札にもどす"
+	text "If Heads, return all cards attached"
+	line "to opponent's Pokémon to the Hand."
 	done
 
 IfHeadsHeal1StatusOfYourActiveText:
-	textfw "「おもて」なら 自分の対戦ポケモンの"
-	linefw "「特殊状態」の 1つを かいふく!"
+	text "If Heads, choose and heal 1 Special"
+	line "Condition from your Active Pokémon!"
 	done
 
 BotherCheckText:
-	textfw "「おもて」なら 相手の手札から"
-	linefw "トレーナーカードが1枚 山札にもどる"
+	text "If Heads, return 1 Trainer card from"
+	line "opponent's Hand to his or her Deck."
 	done
 
 PerplexCheckText:
-	textfw "「うら」なら <RAMNAME>は"
-	linefw "つぎの番のはじめに カードをひけない"
+	text "If Tails, <RAMNAME> cannot draw"
+	line "a card at the start of next turn."
 	done
 
 MagnetCheckText:
-	textfw "「おもて」なら 山札から"
-	linefw "「コイル」をえらんで ベンチにだす"
+	text "If Heads, search your Deck for"
+	line "Magnemite and place it on the Bench."
 	done
 
 FossilGuidanceCheckText:
-	textfw "「おもて」なら トラッシュから"
-	linefw "「なにかの化石」を 手札に加える"
+	text "If Heads, return a Mysterious Fossil"
+	line "from your Discard Pile to your Hand."
 	done
 
 AttackUnsuccessfulText:
-	textfw "ワザを しっぱいした"
+	text "Attack unsuccessful."
 	done
 
 UnableToRetreatDueToAcidText:
-	textfw "「ようかいえき」の効果で"
-	linefw "にげられない"
+	text "Unable to Retreat due to"
+	line "the effects of Acid."
 	done
 
 UnableToRetreatDueToRockSealText:
-	textfw "「いわふうじ」の効果で"
-	linefw "にげられない"
+	text "Unable to Retreat due to"
+	line "the effects of Rock Seal."
 	done
 
 UnableToRetreatDueToDrillDiveText:
-	textfw "「ドリルダイブ」の効果で"
-	linefw "にげられない"
+	text "Unable to Retreat due to"
+	line "the effects of Drill Dive."
 	done
 
 UnableToRetreatDueToGuardText:
-	textfw "「とおせんぼ」の効果で"
-	linefw "にげられない"
+	text "Unable to Retreat due to"
+	line "the effects of Guard."
 	done
 
 UnableToUseTrainerDueToHeadacheText:
-	textfw "「ずつう」の効果で"
-	linefw "トレーナーカードは つかえない"
+	text "Unable to use a Trainer card"
+	line "due to the effects of Headache."
 	done
 
 UnableToUseTrainerDueToSpookifyText:
-	textfw "「こわがらせる」の効果で"
-	linefw "トレーナーカードは つかえない"
+	text "Unable to use a Trainer card"
+	line "due to the effects of Spookify."
 	done
 
 UnableToAttackDueToTailWagText:
-	textfw "「しっぽをふる」の効果で"
-	linefw "ワザが つかえない"
+	text "Unable to Attack due to"
+	line "the effects of Tail Wag."
 	done
 
 UnableToAttackDueToLeerText:
-	textfw "「にらみつける」の効果で"
-	linefw "ワザが つかえない"
+	text "Unable to Attack due to"
+	line "the effects of Leer."
 	done
 
 UnableToAttackDueToBoneAttackText:
-	textfw "「ホネでたたく」の効果で"
-	linefw "ワザが つかえない"
+	text "Unable to Attack due to"
+	line "the effects of Bone Attack."
 	done
 
 UnableToAttackDueToDrillDiveText:
-	textfw "「ドリルダイブ」の効果で"
-	linefw "ワザが つかえない"
+	text "Unable to Attack due to"
+	line "the effects of Drill Dive."
 	done
 
 UnableToUseAttackDueToAmnesiaText:
-	textfw "「ドわすれ」の効果で"
-	linefw "このワザは つかえない"
+	text "Unable to use this Attack"
+	line "due to the effects of Amnesia."
 	done
 
 UnableToUseAttackDueToDisableText:
-	textfw "「かなしばり」の効果で"
-	linefw "このワザは つかえない"
+	text "Unable to use this Attack"
+	line "due to the effects of Disable."
 	done
 
 KnockedOutDueToDestinyBondText:
-	textfw "「みちづれ」の効果で"
-	linefw "<RAMTEXT>は「きぜつ」した"
+	text "<RAMTEXT> was Knocked Out"
+	line "due to the effects of Destiny Bond."
 	done
 
 ReceivedDamageDueToStrikesBackText:
-	textfw "<RAMTEXT>は"
-	linefw "「はんげき」の効果で<RAMNUM>ダメージ!"
+	text "<RAMTEXT> receives <RAMNUM> damage"
+	line "due to the effects of Strikes Back."
 	done
 
 UnableToEvolveDueToPrehistoricPowerText:
-	textfw "「げんしのちから」の効果で"
-	linefw "進化できない"
+	text "Unable to evolve due to the"
+	line "effects of Prehistoric Power."
 	done
 
 NoDamageOrEffectDueToFlyText:
-	textfw "「そらをとぶ」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Fly."
 	done
 
 NoDamageOrEffectDueToBarrierText:
-	textfw "「バリアー」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Barrier."
 	done
 
 NoDamageOrEffectDueToAgilityText:
-	textfw "「こうそくいどう」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Agility."
 	done
 
 NoDamageOrEffectDueToHideText:
-	textfw "「かくれる」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Hide."
 	done
 
 UnableToUseAttackDueToNShieldText:
-	textfw "「ニュートラルシールド」の効果で"
-	linefw "このワザは つかえない"
+	text "Unable to use this Attack due to"
+	line "the effects of Neutralizing Shield."
 	done
 
 NoDamageOrEffectDueToNShieldText:
-	textfw "「ニュートラルシールド」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Neut. Shield."
 	done
 
 NoDamageOrEffectDueToTransparencyText:
-	textfw "「とうめい」の効果で"
-	linefw "ワザによるダメージと効果をうけない"
+	text "No damage or effect on next Attack"
+	line "due to the effects of Transparency."
 	done
 
 UnableToUseTrainerDueToHayFeverText:
-	textfw "「アレルギーかふん」の効果で"
-	linefw "トレーナーカードは つかえない"
+	text "Unable to use a Trainer card"
+	line "due to the effects of Hay Fever."
 	done
 
 PoisonFluidActivatedText:
-	textfw "「どくのたいえき」の効果!!"
+	text "Poison Fluid activated!!"
 	done
 
 UnableToDrawCardDueToPerplexText:
-	textfw "「まどわす」の効果で"
-	linefw "カードをひくことが できない"
+	text "Unable to draw a card due"
+	line "to the effects of Perplex."
 	done
 
 MetamorphsToText:
-	textfw "<RAMTEXT>は"
-	linefw "<RAMTEXT>に へんしんした"
+	text "<RAMTEXT>"
+	line "metamorphs to <RAMTEXT>."
 	done
 
 SelectBenchedPokemonToSwitchWithActiveText:
-	textfw "対戦ポケモンと いれかえる"
-	linefw "控えポケモンを えらんでください"
+	text "Select a Pokémon on the Bench"
+	line "to switch with the Active Pokémon."
 	done
 
 SelectPokemonToPlaceInTheArenaText:
-	textfw "バトル場に だす"
-	linefw "ポケモンを えらんでください"
+	text "Select a Pokémon to place"
+	line "in the Arena."
 	done
 
 DuelistIsSelectingPokemonToPlaceInArenaText:
-	textfw "<RAMNAME>はバトル場に だす"
-	linefw "ポケモンを えらんでいます"
+	text "<RAMNAME> is selecting a Pokémon"
+	line "to place in the Arena."
 	done
 
 ChooseWeaknessToConversion1Text:
-	textfw "テクスチャー1でかえる"
-	linefw "弱点の色を えらんでください"
+	text "Choose the Weakness you wish"
+	line "to change with Conversion 1."
 	done
 
 ChooseResistanceToConversion2Text:
-	textfw "テクスチャー2でかえる"
-	linefw "抵抗力の 色を えらんでください"
+	text "Choose the Resistance you wish"
+	line "to change with Conversion 2."
 	done
 
 ChoosePokemonToColorChangeText:
-	textfw "へんしょくでかえる"
-	linefw "ポケモンの色を えらんでください"
+	text "Choose the Pokémon whose type"
+	line "you wish to change with Shift."
 	done
 
 ChangedTheWeaknessOfPokemonToColorText:
-	textfw "<RAMTEXT>の弱点を"
-	linefw "<RAMTEXT>にかえた"
+	text "Changed the Weakness of"
+	line "<RAMTEXT> to <RAMTEXT>."
 	done
 
 ChangedTheResistanceOfPokemonToColorText:
-	textfw "<RAMTEXT>の抵抗力を"
-	linefw "<RAMTEXT>にかえた"
+	text "Changed the Resistance of"
+	line "<RAMTEXT> to <RAMTEXT>."
 	done
 
 ChangedTheColorOfPokemonToColorText:
-	textfw "<RAMTEXT>の色を"
-	linefw "<RAMTEXT>にかえた"
+	text "Changed the type of"
+	line "<RAMTEXT> to <RAMTEXT>."
 	done
 
 Draw1CardFromTheDeckText:
-	textfw "山札からカードを"
-	linefw "1枚 ひきます"
+	text "Draw 1 card from the Deck."
 	done
 
 DrawCardsFromTheDeckText:
-	textfw "山札からカードを"
-	linefw "<RAMNUM>枚 ひきます"
+	text "Draw <RAMNUM> card(s) from the Deck."
 	done
 
 DrawNoCardsFromTheDeckText:
-	; just "Draw no cards from the Deck."
-	; simplified from "Cannot draw a card because<LINE>there are no cards in the Deck." in tcg1-en
-	textfw "山札から カードを引きません"
+	text "Cannot draw a card because"
+	line "there are no cards in the Deck."
 	done
 
 ChooseBenchedPokemonToGiveDamageText:
-	textfw "ダメージをあたえる 控えポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon on the Bench"
+	line "to give damage to."
 	done
 
 ChoosePokemonToGiveDamageText:
-	textfw "ダメージをあたえる ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to give"
+	line "damage to."
 	done
 
 ChooseUpTo3BenchedPokemonToGiveDamageText:
-	textfw "ダメージをあたえる 控えポケモンを"
-	linefw "3体まで えらんでください"
+	text "Choose up to 3 Pokémon on the"
+	line "Bench to give damage to."
 	done
 
 Choose1BasicEnergyCardFromDeckText:
-	textfw "山札から 基本エネルギーカードを"
-	linefw "1枚 えらんでください"
+	text "Choose 1 Basic Energy card"
+	line "from the Deck."
 	done
 
 ChoosePokemonToAttachEnergyCardText:
-	textfw "エネルギーカードをつける"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon to attach"
+	line "the Energy card to."
 	done
 
 ChooseAndDiscard1FireEnergyCardText:
-	textfw "「炎」エネルギーカードを"
-	linefw "1枚えらんで トラッシュしてください"
+	text "Choose and Discard"
+	line "1 Fire Energy card."
 	done
 
 ChooseAndDiscard2FireEnergyCardsText:
-	textfw "「炎」エネルギーカードを"
-	linefw "2枚えらんで トラッシュしてください"
+	text "Choose and Discard"
+	line "2 Fire Energy cards."
 	done
 
 DiscardOppDeckAsManyFireEnergyCardsText:
-	textfw "トラッシュした「炎」エネルギーの"
-	linefw "数だけ 相手の山札をトラッシュします"
+	text "Discard from opponent's Deck as many"
+	line "Fire Energy cards as were discarded."
 	done
 
 ChooseAndDiscard2EnergyCardsText:
-	textfw "エネルギーカードを"
-	linefw "2枚えらんで トラッシュしてください"
+	text "Choose and Discard"
+	line "2 Energy cards."
 	done
 
 ChooseAKrabbyFromDeckText:
-	textfw "山札から"
-	linefw "クラブを えらんでください"
+	text "Choose a Krabby"
+	line "from the Deck."
 	done
 
 ChooseEnergyCardFromOppActiveToDiscardText:
-	textfw "相手の対戦ポケモンからトラッシュする"
-	linefw "エネルギーカードを えらんでください"
+	text "Choose and Discard an Energy card"
+	line "from the opponent's Active Pokémon."
 	done
 
 ChooseAttackToDisableNextOppTurnText:
-	textfw "つぎの相手の番に つかえなくする"
-	linefw "ワザを えらんでください"
+	text "Choose the Attack the opponent will"
+	line "not be able to use on the next turn."
 	done
 
 ChooseBasicFightingPokemonFromDeckText:
-	textfw "山札から 「闘」のたねポケモンを"
-	linefw "えらんでください"
+	text "Choose a Basic Fighting Pokémon"
+	line "from the Deck."
 	done
 
 ChooseAnOddishFromDeckText:
-	textfw "山札から"
-	linefw "ナゾノクサを えらんでください"
+	text "Choose an Oddish"
+	line "from the Deck."
 	done
 
 ChooseAnOddishText:
-	textfw "ナゾノクサを"
-	linefw "えらんでください"
+	text "Choose an Oddish."
 	done
 
 ChooseAKrabbyText:
-	textfw "クラブを"
-	linefw "えらんでください"
+	text "Choose a Krabby."
 	done
 
 ChooseBasicEnergyCardText:
-	textfw "基本エネルギーカード"
-	linefw "を えらんでください"
+	text "Choose a Basic"
+	line "Energy card."
 	done
 
 ChooseNidoranFromDeckText:
-	textfw "山札から ニドラン♀か"
-	linefw "ニドラン♂を えらんでください"
+	text "Choose a Nidoran♀ or a"
+	line "Nidoran♂ from the Deck."
 	done
 
 ChooseNidoranText:
-	textfw "ニドラン♀か"
-	linefw "ニドラン♂を えらぶ"
+	text "Choose a Nidoran♀"
+	line "or a Nidoran♂."
 	done
 
 ChooseBasicFightingPokemonText:
-	textfw "「闘」のたねポケモン"
-	linefw "をえらぶ"
+	text "Choose a Basic"
+	line "Fighting Pokémon."
 	done
 
 ProcedureForEnergyTransferText:
-	textfw "  エナジートランスの操作説明"
-	linefw ""
-	linefw "1ˍ「草」エネルギーの移動もとの"
-	linefw "  ポケモンをえらび Aボタン"
-	linefw ""
-	linefw "2ˍつぎに 移動さきの ポケモンを"
-	linefw "  えらび Aボタン"
-	linefw ""
-	linefw "3ˍ1と2をくりかえす"
-	linefw ""
-	linefw "4ˍBボタンで おわります"
+	text "Procedure for Energy Transfer:"
+	line ""
+	line "1. Choose the Pokémon to move Grass"
+	line "   Energy from. Press the A Button."
+	line ""
+	line "2. Choose the Pokémon to move the"
+	line "   energy to and press the A Button."
+	line ""
+	line "3. Repeat steps 1 and 2."
+	line ""
+	line "4. Press the B Button to end."
 	done
 
 ChooseABellsproutFromDeckText:
-	textfw "山札から"
-	linefw "マダツボミを えらんでください"
+	text "Choose a Bellsprout"
+	line "from the Deck."
 	done
 
 ChooseABellsproutText:
-	textfw "マダツボミを"
-	linefw "えらんでください"
+	text "Choose a Bellsprout."
 	done
 
 ChoosePokemonToRemoveDamageCounterFromText:
-	textfw "ダメージカウンターを とりのぞく"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon to remove"
+	line "the Damage counter from."
 	done
 
 ProcedureForCurseText:
-	textfw "  のろいの操作説明"
-	linefw ""
-	linefw "1ˍダメージカウンターの移動もとの"
-	linefw "  ポケモンをえらび Aボタン"
-	linefw ""
-	linefw "2ˍつぎに 移動さきの ポケモンを"
-	linefw "  えらび Aボタンで けっていです"
-	linefw ""
-	linefw "3ˍBボタンで キャンセルできます"
+	text "Procedure for Curse:"
+	line ""
+	line "1. Choose a Pokémon to move the"
+	line "   Damage counter from and press"
+	line "   the A Button."
+	line ""
+	line "2. Choose a Pokémon to move the"
+	line "   Damage counter to and press"
+	line "   the A Button."
+	line ""
+	line "3. Press the B Button to cancel."
 	done
 
 Choose2EnergyCardsFromDiscardPileToAttachText:
-	textfw "ポケモンにつける エネルギーカードを"
-	linefw "2枚 トラッシュからえらんでください"
+	text "Choose 2 Energy cards from the"
+	line "Discard Pile to attach to a Pokémon."
 	done
 
 Choose2EnergyCardsFromDiscardPileForHandText:
-	textfw "手札にいれる エネルギーカードを"
-	linefw "2枚 トラッシュからえらんでください"
+	text "Choose 2 Energy cards from the"
+	line "Discard Pile for your Hand."
 	done
 
 ChooseAnEnergyCardText:
-	textfw "エネルギーカードを"
-	linefw "えらんでください"
+	text "Choose an Energy"
+	line "card."
 	done
 
 ProcedureForProphecyText:
-	textfw "  みらいよちの操作説明"
-	linefw ""
-	linefw "1ˍ自分の山札か 相手の山札かを"
-	linefw "  えらんでください"
-	linefw ""
-	linefw "2ˍ山札に上から ならべたいカードを"
-	linefw "  えらんで Aボタン"
-	linefw ""
-	linefw "3ˍ3枚に じゅんばんを つけたら"
-	linefw "  「はい」で おわります"
-	linefw ""
-	linefw "4ˍBボタンで キャンセルです"
+	text "Procedure for Prophecy:"
+	line ""
+	line "1. Choose either your Deck"
+	line "   or your opponent's Deck."
+	line ""
+	line "2. Choose the cards you wish to"
+	line "   place on top and press the"
+	line "   A Button."
+	line ""
+	line "3. Select Yes after you choose"
+	line "   the 3 cards and their order."
+	line ""
+	line "4. Press the B Button to cancel."
 	done
 
 ChooseTheOrderOfTheCardsText:
-	textfw "ならびかえる 順番に"
-	linefw "えらんでください"
+	text "Choose the order"
+	line "of the cards."
 	done
 
 ProcedureForDamageSwapText:
-	textfw "  ダメージスワップの操作説明"
-	linefw ""
-	linefw "1ˍダメージカウンターの移動もとの"
-	linefw "  ポケモンをえらび Aボタン"
-	linefw ""
-	linefw "2ˍつぎに 移動さきの ポケモンを"
-	linefw "  えらび Aボタン"
-	linefw ""
-	linefw "3ˍ1と2をくりかえす"
-	linefw ""
-	linefw "4ˍBボタンで おわります"
-	linefw ""
-	linefw "5ˍポケモンが「きぜつ」するような"
-	linefw "  移動はできない"
+	text "Procedure for Damage Swap:"
+	line ""
+	line "1. Choose a Pokémon to move a"
+	line "   Damage counter from and press"
+	line "   the A Button."
+	line ""
+	line "2. Choose a Pokémon to move the"
+	line "   Damage counter to and press"
+	line "   the A Button."
+	line ""
+	line "3. Repeat steps 1 and 2."
+	line ""
+	line "4. Press the B Button to end."
+	line ""
+	line "5. You cannot move the counter if"
+	line "   it will Knock Out the Pokémon."
 	done
 
 ProcedureForDevolutionBeamText:
-	textfw "  たいかビームの操作説明"
-	linefw ""
-	linefw "1ˍ自分の場のポケモンか"
-	linefw "  相手の場のポケモンかをえらび"
-	linefw "  Aボタン"
-	linefw ""
-	linefw "2ˍ退化させるポケモンをえらび"
-	linefw "  Aボタン"
-	linefw ""
-	linefw "3ˍBボタンで キャンセルです"
+	text "Procedure for Devolution Beam:"
+	line ""
+	line "1. Choose either a Pokémon in your"
+	line "   Play Area or your opponent's"
+	line "   Play Area and press the A Button."
+	line ""
+	line "2. Choose the Pokémon to Devolve"
+	line "   and press the A Button."
+	line ""
+	line "3. Press the B Button to cancel."
 	done
 
 ProcedureForStrangeBehaviorText:
-	textfw "  へんなこうどうの操作説明"
-	linefw ""
-	linefw "1ˍヤドランに ダメージカウンターを"
-	linefw "  移動したいポケモンをえらび"
-	linefw "  Aボタン"
-	linefw ""
-	linefw "2ˍ移動したいだけ 1をくりかえす"
-	linefw ""
-	linefw "3ˍBボタンで おわります"
-	linefw ""
-	linefw "4ˍヤドランが「きぜつ」するような"
-	linefw "  移動はできない"
+	text "Procedure for Strange Behavior:"
+	line ""
+	line "1. Choose the Pokémon with the"
+	line "   Damage counters to move to"
+	line "   Slowbro and press the A Button."
+	line ""
+	line "2. Repeat step 1 as many times as"
+	line "   you wish to move the counters."
+	line ""
+	line "3. Press the B Button to end."
+	line ""
+	line "4. You cannot move the damage if"
+	line "   Slowbro will be Knocked Out."
 	done
 
 ChooseOppAttackForMetronomeText:
-	textfw "ゆびをふるでつかう"
-	linefw "[相手]のワザを えらんでください"
+	text "Choose the opponent's Attack"
+	line "to be used with Metronome."
 	done
 
 NoTargetsInDeckText:
-	textfw "<RAMTEXT>は"
-	linefw "山札に ありませんでした"
+	text "There is no <RAMTEXT>"
+	line "in the Deck."
 	done
 
 NoTargetsButCheckDeckPromptText:
-	textfw "山札を かくにんしますか?"
+	text "Would you like to check the Deck?"
 	done
 
 SelectTargetDeckYoursOppsText:
-	textfw "どちらかの山札を えらんでください"
-	linefw "      自分  相手"
+	text "Please select the Deck:"
+	line "            Yours   Opponent's"
 	done
 
 SelectTargetPlayAreaYoursOppsText:
-	textfw "どちらかの場を えらんでください"
-	linefw "      自分  相手"
+	text "Please select the Play Area:"
+	line "            Yours   Opponent's"
 	done
 
 EffectTargetNidoranMNidoranFText:
-	textfw "ニドラン♂とニドラン♀"
+	text "Nidoran♂ or Nidoran♀"
 	done
 
 EffectTargetBasicEnergyText:
-	textfw "基本エネルギー"
+	text "Basic Energy"
 	done
 
 PeekWasUsedToLookInYourHandText:
-	textfw "スパイで 手札のなかの"
-	linefw "<RAMTEXT>を みられた"
+	text "Peek was used to look at the"
+	line "<RAMTEXT> in your Hand."
 	done
 
 CardPeekWasUsedOnText:
-	textfw "スパイで みたところ"
+	text "Card Peek was used on"
 	done
 
 PokemonAndAllAttachedCardsReturnedToHandText:
-	; colloquial "ついてる" instead of "ついている"
-	textfw "<RAMTEXT>とそれについてる"
-	linefw "カードを すべて手札にもどした"
+	text "<RAMTEXT> and all attached"
+	line "cards were returned to the Hand."
+	done
+
+AmnesiaNextTurnText:
+	text "<RAMTEXT> was chosen"
+	line "for the effect of Amnesia."
 	done
 
 DisabledNextTurnText:
-	textfw "つぎの番で"
-	linefw "<RAMTEXT>は つかえない"
+	text "<RAMTEXT> was chosen"
+	line "for the effect of Disable."
 	done
 
 BasicPokemonWasPlacedOnEachBenchText:
-	textfw "おたがいの ベンチに"
-	linefw "たねポケモンが よびだされた"
+	text "A Basic Pokémon was placed"
+	line "on each Bench."
 	done
 
 WasUnsuccessfulText:
-	textfw "<RAMTEXT>は"
-	linefw "「<RAMTEXT>」 しっぱい!"
+	text "<RAMTEXT>'s"
+	line "<RAMTEXT> was unsuccessful."
 	done
 
 MetronomeWasUnsuccessfulText:
-	textfw "<RAMTEXT>は"
-	linefw "「ゆびをふる」を しっぱいした"
+	text "<RAMTEXT>'s"
+	line "Metronome was unsuccessful."
 	done
 
 ThereWasNoEffectFromTxRam2Text:
-	textfw "「<RAMTEXT>」の効果は なかった"
+	text "There was no effect"
+	line "from <RAMTEXT>."
 	done
 
 TheEnergyCardFromPlayAreaWasMovedText:
-	textfw "<RAMNAME>の場の"
-	linefw "エネルギーカードが いどうした"
+	text "The Energy card from <RAMNAME>'s"
+	line "Play Area was moved."
 	done
 
 DrewFireEnergyFromDeckText:
-	textfw "<RAMNAME>は 山札から"
-	linefw "「炎」エネルギーカードを <RAMNUM>枚ひいた"
+	text "<RAMNAME> drew"
+	line "<RAMNUM> Fire Energy from the Deck."
 	done
 
 AffectedByMixUpText:
-	textfw "<RAMNAME>の 手札と 山札の"
-	linefw "ポケモンカードが かきみだされた!"
+	text "The Pokémon cards in <RAMNAME>'s"
+	line "Hand and Deck were shuffled."
 	done
 
 ProcedureForGatherFireText:
-	textfw "  ほのおをもらうの操作説明"
-	linefw ""
-	linefw "1ˍ炎エネルギーがついている"
-	linefw "  ポケモンをえらび Aボタン"
-	linefw ""
-	linefw "2ˍはがすエネルギーカードを"
-	linefw "  えらんで Aボタン"
+	text "Procedure for Gather Fire:"
+	line ""
+	line "1. Choose a Pokémon with Fire"
+	line "   Energy and press the A Button."
+	line ""
+	line "2. Choose the Energy card to remove"
+	line "   and press the A Button."
 	done
 
 RemoveEnergyCardPromptText:
-	textfw "エネルギーカードを はがしますか?"
+	text "Remove the Energy card?"
 	done
 
 ReceivedDamageDueToMirrorShellText:
-	textfw "<RAMTEXT>は"
-	linefw "「こうらがえし」で<RAMNUM>ダメージ!"
+	text "<RAMTEXT> received"
+	line "<RAMNUM> damage due to Mirror Shell!"
 	done
 
 ChooseEvolutionCardForMagikarpFromDeckText:
-	textfw "山札から コイキングから 進化する"
-	linefw "進化カードを えらんでください"
+	text "Choose an Evolution card"
+	line "for Magikarp from the Deck."
 	done
 
 ChooseAGyaradosText:
-	textfw "ギャラドスを"
-	linefw "えらんでください"
+	text "Choose a Gyarados."
 	done
 
 ReceivedDamageDueToFinalBeamText:
-	textfw "「ファイナルビーム」の効果で"
-	linefw "<RAMNUM>ダメージ!"
+	text "Received <RAMNUM> damage due to"
+	line "the effects of Final Beam!"
 	done
 
 SwitchOutDarkAlakazamPromptText:
-	textfw "わるいフーディンを いれかえますか?"
+	text "Switch out Dark Alakazam?"
 	done
 
 ChooseAPsychicEnergyCardFromDeckText:
-	textfw "山札から 超エネルギーカードを"
-	linefw "えらんでください"
+	text "Choose a Psychic Energy"
+	line "card from the Deck."
 	done
 
 ChooseAPsychicEnergyCardText:
-	textfw "超エネルギーカードを"
-	linefw "えらんでください"
+	text "Choose a Psychic"
+	line "Energy card."
 	done
 
 CardTrickeryWasUsedOnText:
-	textfw "「わるふざけ」で"
-	linefw "いれかえた ところ"
+	text "Swapped a card using"
+	line "the effect of Trickery."
 	done
 
 ChooseAnEvolutionCardFromDeckText:
-	textfw "山札から 進化カードを"
-	linefw "えらんでください"
+	text "Choose an Evolution"
+	line "Pokémon card from the Deck."
 	done
 
 EffectTargetEvolutionCardText:
-	textfw "進化カード"
+	text "Evolution card"
 	done
 
 ChooseAnEvolutionCardText:
-	textfw "進化カードを"
-	linefw "えらんでください"
+	text "Choose an"
+	line "Evolution card."
 	done
 
 ChooseAParasFromDeckText:
-	textfw "山札から パラスを"
-	linefw "えらんでください"
+	text "Choose a Paras"
+	line "from the Deck."
 	done
 
 ChooseAParasText:
-	textfw "パラスを"
-	linefw "えらんでください"
+	text "Choose a Paras."
 	done
 
 ChooseATrainerCardFromDeckText:
-	textfw "山札から トレーナーカードを"
-	linefw "えらんでください"
+	text "Choose a Trainer card"
+	line "from the Deck."
 	done
 
 ChooseATrainerCardText:
-	textfw "トレーナーカードを"
-	linefw "えらんでください"
+	text "Choose"
+	line "a Trainer card."
 	done
 
 IfHeadsAttachUpTo3WaterEnergyFromDeckText:
-	textfw "「おもて」なら 山札から 3枚まで"
-	linefw "水エネルギーをひいて [自分]につける"
+	text "If Heads, draw up to 3 Water Energy"
+	line "from Deck & attach to this Pokémon."
 	done
 
 ChooseWaterEnergyText:
-	textfw "「水」エネルギーを"
-	linefw "えらんでください"
+	text "Choose a Water"
+	line "Energy card."
 	done
 
 NoFossilsInDiscardPileText:
-	textfw "「なにかの化石」は"
-	linefw "トラッシュに ありません"
+	text "There are no Mysterious Fossil"
+	line "cards in the Discard Pile."
 	done
 
 ChooseALightningEnergyFromDeckText:
-	textfw "山札から 「雷」エネルギーを"
-	linefw "えらんでください"
+	text "Choose a Lightning Energy"
+	line "card from the Deck."
 	done
 
 ChooseALightningEnergyText:
-	textfw "「雷」エネルギーを"
-	linefw "えらんでください"
+	text "Choose a Lightning"
+	line "Energy card."
 	done
 
 ChooseAMagnemiteFromDeckText:
-	textfw "山札から コイルを"
-	linefw "えらんでください"
+	text "Choose a Magnemite"
+	line "from the Deck."
 	done
 
 ChooseAMagnemiteText:
-	textfw "コイルを"
-	linefw "えらんでください"
+	text "Choose a Magnemite."
 	done
 
 ChooseUpTo3PokemonCardsFromDiscardPileText:
-	textfw "トラッシュから ポケモンカードを"
-	linefw "3枚まで えらんでください"
+	text "Choose up to 3 Pokémon cards"
+	line "from the Discard Pile."
 	done
 
 ChooseUpTo2BasicPokemonFromDeckText:
-	textfw "山札から たねポケモンを"
-	linefw "2枚まで えらんでください"
+	text "Choose up to 2 Basic Pokémon"
+	line "cards from the Deck."
 	done
 
 EffectTargetBasicPokemonText:
-	textfw "たねポケモン"
+	text "Basic Pokémon"
 	done
 
 ChooseBasicPokemonText:
-	textfw "たねポケモンを"
-	linefw "えらんでください"
+	text "Choose a"
+	line "Basic Pokémon."
 	done
 
 ChooseUpTo2BenchedPokemonToGiveDamageText:
-	textfw "ダメージをあたえる 控えポケモンを"
-	linefw "2体まで えらんでください"
+	text "Choose up to 2 Benched"
+	line "Pokémon to give damage to."
 	done
 
 NoDamageOrEffectDueToAuroraVeilText:
-	textfw "「オーロラヴェール」の効果で"
-	linefw "ワザによるダメージと効果を うけない"
+	text "No damage or effect from the Attack"
+	line "due to the effects of Aurora Veil."
 	done
 
 ComputerErrorPromptText:
-	textfw "5枚まで カードをひくことができます"
-	linefw "なん枚ひきますか?"
+	text "You may draw up to 5 cards."
+	line "How many cards will you draw?"
 	done
 
 EffectTargetCardsUnitText:
-	textfw "枚"
+	text "cards"
 	done
 
 EffectTargetGeneralUnitText: ; for Energy, Counters, etc.
-	textfw "コ"
+	text "counters"
 	done
 
 DuelistDrawCardsText:
-	textfw "<RAMNAME>は カードを"
-	linefw "<RAMNUM>枚 ひきます"
+	text "<RAMNAME> draws"
+	line "<RAMNUM> card(s)."
 	done
 
 DiscardingXCardsPromptText:
-	textfw "<RAMNUM>枚 トラッシュで いいですか?"
+	text "Discard <RAMNUM> card(s)?"
 	done
 
 ProcedureForBurningFireText:
-	textfw "  ファイヤーバーンの操作説明"
-	linefw ""
-	linefw "1ˍ炎エネルギーがついている"
-	linefw "  ポケモンをえらび Aボタン"
-	linefw ""
-	linefw "2ˍはがすエネルギーカードを"
-	linefw "  えらんで Aボタン"
-	linefw ""
-	linefw "3ˍ1と2をくりかえす"
-	linefw ""
-	linefw "4ˍBボタンで おわります"
+	text "Procedure for Burning Fire:"
+	line ""
+	line "1. Choose a Pokémon with Fire"
+	line "   Energy and press the A Button."
+	line ""
+	line "2. Choose the Energy card to remove"
+	line "   and press the A Button."
+	line ""
+	line "3. Repeat steps 1 and 2."
+	line ""
+	line "4. Press the B Button to end."
 	done
 
 ChooseHowManyFoodCountersToRemoveText:
-	textfw "「たべものカウンター」を"
-	linefw "いくつ とりのぞきますか?"
+	text "How many Food Counters"
+	line "would you like to use?"
 	done
 
 Put1FoodCounterCurrentNumberText:
-	textfw "「たべものカウンター」が"
-	linefw "1つ ふえた! ごうけい <RAMNUM>コ!"
+	text "Added 1 Food Counter!"
+	line "It has a total of <RAMNUM> now!"
 	done
 
 ChoosePokemonWithWaterEnergyText:
-	textfw "「水」エネルギーの ついている"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon with"
+	line "Water Energy attached to it."
 	done
 
 ChoosePokemonToRemoveWaterEnergyFromText:
-	textfw "「水」エネルギーを はがす"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon to remove"
+	line "Water Energy from."
 	done
 
 ChoosePokemonEvolvingFromFossilText:
-	textfw "「なにかの化石」から 進化した"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon evolved"
+	line "from Mysterious Fossil."
 	done
 
 ChooseUpTo2FireEnergyPlus20DamageForEachText:
-	textfw "「炎」エネルギーを 2枚までえらんで"
-	linefw "はがした枚数×20ダメージついか"
+	text "Discard up to 2 Fire Energy."
+	line "+20 damage for each discarded."
 	done
 
 RemoveAllEnergyPromptText:
-	textfw "エネルギーを ぜんぶ はがしますか?"
+	text "Remove all Energy cards?"
 	done
 
 ChoosePokemonToReturnToHandText:
-	textfw "手札にもどす ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to"
+	line "return to the Hand."
 	done
 
 ChoosePokemonToRemoveEnergyFromText:
-	textfw "エネルギーをはがす ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to"
+	line "remove Energy from."
 	done
 
 ChoosePokemonToAttachEnergyToText:
-	textfw "エネルギーをつける ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to"
+	line "attach Energy to."
 	done
 
 ChooseCardToReturnToTopDeckText:
-	textfw "山札のうえにもどす カードを"
-	linefw "えらんでください"
+	text "Choose a card to place"
+	line "on top of the Deck."
 	done
 
 NoTrainerCardsInOppHandText:
-	textfw "相手の手札に トレーナーカードは"
-	linefw "ありませんでした"
+	text "There were no Trainer cards"
+	line "in the opponent's Hand."
 	done
 
 DiscardedCardText:
-	textfw "<RAMTEXT>を"
-	linefw "トラッシュした"
+	text "Discarded <RAMTEXT>."
 	done
 
 SwitchedOutDueToVinePullText:
-	textfw "「つるでひっぱる」の効果で"
-	linefw "[相手]が いれかわった"
-	done
-
-RemoveDamageCountersOneByOneText:
-	textfw "Aボタンで ダメージカウンターが"
-	linefw "1つずつへります Bボタンでおわり"
+	text "The opponent's Pokémon was switched"
+	line "due to the effect of Vine Pull."
 	done
 
 ChooseCardFromHandToDiscardText:
-	textfw "手札から トラッシュするカードを"
-	linefw "えらんでください"
+	text "Choose the card to Discard"
+	line "from the Hand."
 	done
 
 ChoosePokemonAndRemoveEnergyText:
-	textfw "エネルギーをはがすポケモンをえらんで"
-	linefw "はがすエネルギーカードを えらびます"
+	text "Choose a Pokémon to remove"
+	line "Energy from and choose the Energy."
 	done
 
 Choose2BasicEnergyCardsFromDiscardPileText:
-	textfw "トラッシュから基本エネルギーカードを"
-	linefw "2枚 えらんでください"
-	done
-
-ChoosePokemonPressAToRemoveDamageCounterText:
-	textfw "ポケモンをえらび Aボタンで"
-	linefw "ダメージカウンターが とりのぞけます"
+	text "Choose 2 Basic Energy cards"
+	line "from the Discard Pile."
 	done
 
 Choose2CardsFromHandToDiscardText:
-	textfw "手札から トラッシュするカードを"
-	linefw "2枚 えらんでください"
+	text "Choose 2 cards from the Hand"
+	line "to Discard."
 	done
 
 Choose2CardsFromHandToReturnToDeckText:
-	textfw "手札から 山札にもどすカードを"
-	linefw "2枚 えらんでください"
+	text "Choose 2 cards from the Hand"
+	line "to return to the Deck."
 	done
 
 ChooseCardToPlaceInHandText:
-	textfw "手札にいれるカードを"
-	linefw "えらんでください"
+	text "Choose a card to"
+	line "place in the Hand."
 	done
 
 ChoosePokemonToAttachDefenderToText:
-	textfw "ディフェンダーを つける"
-	linefw "ポケモンを えらんでください"
-	done
-
-DrawUpToXCardsOneByOneText:
-	textfw "カードを <RAMNUM>枚までひけます"
-	linefw "Aボタンでひく Bボタンでおわる"
+	text "Choose a Pokémon to"
+	line "attach Defender to."
 	done
 
 ChoosePokemonToReturnToTheDeckText:
-	textfw "山札に もどす"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon to"
+	line "return to the Deck."
 	done
 
 ChoosePokemonToPlaceInPlayText:
-	textfw "よびだす ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to"
+	line "place in play."
 	done
 
 ChooseBasicPokemonToEvolveText:
-	textfw "進化させる たねポケモンを"
-	linefw "えらんでください"
+	text "Choose a Basic Pokémon"
+	line "to Evolve."
 	done
 
 ChoosePokemonToScoopUpText:
-	textfw "回収する ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Pokémon to"
+	line "Scoop Up."
 	done
 
 ChooseCardFromYourHandToExchangeText:
-	textfw "手札から 交換するカードを"
-	linefw "えらんでください"
+	text "Choose a card from your"
+	line "Hand to Switch."
 	done
 
 ChooseCardToExchangeText:
-	textfw "交換するカードを"
-	linefw "えらんでください"
+	text "Choose a card to"
+	line "Switch."
 	done
 
 ChooseBasicOrEvolutionPokemonCardFromDeckText:
-	textfw "山札から たねポケモンカードか"
-	linefw "進化カードを えらんでください"
+	text "Choose a Basic or Evolution"
+	line "Pokémon card from the Deck."
 	done
 
 ChoosePokemonCardText:
-	textfw "ポケモンカードを"
-	linefw "えらんでください"
+	text "Choose"
+	line "a Pokémon card."
 	done
 
 RearrangeThe5CardsAtTopOfDeckText:
-	textfw "山札のうえから 5枚を"
-	linefw "すきに ならびかえてください"
+	text "Rearrange the 5 cards at"
+	line "the top of the Deck."
 	done
 
 PleaseCheckTheOpponentsHandText:
-	textfw "相手の手札を"
-	linefw "かくにん してください"
+	text "Please check the opponent's"
+	line "Hand."
 	done
 
 EffectTargetBasicOrEvolutionPokemonCardText:
-	textfw "たねポケモン 進化カード"
+	text "Pokémon card"
 	done
 
 CardWasChosenText:
-	textfw "<RAMTEXT>を"
-	linefw "えらんだ"
+	text "<RAMTEXT> was chosen."
 	done
 
 ChooseBasicPokemonToPlaceOnBenchText:
-	textfw "ベンチにだす たねポケモンを"
-	linefw "えらんでください"
+	text "Choose a Basic Pokémon"
+	line "to place on the Bench."
 	done
 
 ChooseEvolutionCardAndPressAButtonToDevolveText:
-	textfw "進化カードをえらび"
-	linefw "Aボタンで 1枚ずつはがします"
+	text "Choose an Evolution card and"
+	line "press the A Button to Devolve."
 	done
 
 ChoosePokemonInYourAreaThenInOppAreaText:
-	textfw "自分の場のポケモンをえらび"
-	linefw "相手の場のポケモンをえらんでください"
+	text "Choose a Pokémon in your Area, then"
+	line "a Pokémon in your opponent's."
 	done
 
 ChooseUpTo4FromDiscardPileText:
-	textfw "トラッシュから"
-	linefw "4枚まで えらんでください"
+	text "Choose up to 4"
+	line "from the Discard Pile."
 	done
 
 ChoosePokemonToSwitchWithActiveText:
-	textfw "バトル場のポケモンと いれかえる"
-	linefw "ポケモンを えらんでください"
+	text "Choose a Pokémon to switch"
+	line "with the Active Pokémon."
 	done
 
 PokemonAndAllAttachedCardsWereReturnedToDeckText:
-	textfw "<RAMTEXT>とそれについてる"
-	linefw "カードを すべて山札にもどした"
+	text "<RAMTEXT> and all attached"
+	line "cards were returned to the Deck."
 	done
 
 PokemonWasReturnedFromArenaToHandText:
-	textfw "<RAMTEXT>を"
-	linefw "バトル場から 手札にもどした"
+	text "<RAMTEXT> was returned"
+	line "from the Arena to the Hand."
 	done
 
 PokemonWasReturnedFromBenchToHandText:
-	textfw "<RAMTEXT>を"
-	linefw "ベンチから 手札にもどした"
+	text "<RAMTEXT> was returned"
+	line "from the Bench to the Hand."
 	done
 
 PokemonWasReturnedToDeckText:
-	textfw "<RAMTEXT>を"
-	linefw "山札に もどした"
+	text "<RAMTEXT> was returned"
+	line "to the Deck."
 	done
 
 WasPlacedInTheHandText:
-	textfw "<RAMTEXT>を"
-	linefw "手札に いれた"
+	text "<RAMTEXT> was placed"
+	line "in the Hand."
 	done
 
 TheCardYouReceivedText:
-	textfw "手に いれたカード"
+	text "The card you received"
 	done
 
 YouReceivedTheseCardsText:
-	textfw "これらのカードを"
-	linefw "手に いれた"
+	text "You received these cards:"
 	done
 
 ChooseTheCardToPutBackText:
-	textfw "もどすカードを"
-	linefw "えらんでください"
+	text "Choose the card"
+	line "to put back."
 	done
 
 ChooseTheCardToDiscardText:
-	textfw "すてるカードを"
-	linefw "えらんでください"
+	text "Choose the card"
+	line "to Discard."
 	done
 
 DiscardedCardsFromDeckText:
-	textfw "<RAMNAME>の山札を<RAMNUM>枚"
-	linefw "トラッシュした"
-	done
-
-DiscardedCardFromHandText:
-	textfw "<RAMTEXT>を"
-	linefw "手札からトラッシュした"
+	text "Discarded <RAMNUM> cards"
+	line "from <RAMNAME>'s Deck."
 	done
 
 NoneCameText:
-	textfw "だれも でてこなかった"
+	text "None came!"
 	done
 
 CameToTheBenchText:
-	textfw "<RAMTEXT>が"
-	linefw "ベンチにでてきた"
+	text "<RAMTEXT>"
+	line "came to the Bench!"
 	done
 
 DuelistHasNoCardsInHandText:
-	textfw "<RAMNAME>は"
-	linefw "手札が ありませんでした"
+	text "<RAMNAME> has"
+	line "no cards in Hand!"
 	done
 
 PokemonHealedDamageText:
-	textfw "<RAMTEXT>は"
-	linefw "<RAMNUM>ダメージ かいふくした"
+	text "<RAMTEXT> healed"
+	line "<RAMNUM> damage!"
 	done
 
 PokemonDevolvedToText:
-	textfw "<RAMTEXT>は"
-	linefw "<RAMTEXT>に たいかした"
+	text "<RAMTEXT> devolved"
+	line "to <RAMTEXT>!"
 	done
 
 ThereWasNoFireEnergyText:
-	textfw "「炎」エネルギーは なかった"
+	text "There was no Fire Energy."
 	done
 
 MaySelectMoreCardsButQuitPromptText:
-	textfw "あと<RAMNUM>枚えらべますが やめますか?"
+	text "You can select <RAMNUM> more cards. Quit?"
 	done
 
 ThereWasNoEffectText:
-	textfw "効果は なかった"
+	text "There was no effect!"
 	done
 
 ThereWasNoEffectFromToxicText:
-	textfw "「どくどく」の効果は なかった"
+	text "There was no effect"
+	line "from Double Poison."
 	done
 
 ThereWasNoEffectFromPoisonText:
-	textfw "「どく」の効果は なかった"
+	text "There was no effect"
+	line "from Poison."
 	done
 
 ThereWasNoEffectFromSleepText:
-	textfw "「ねむり」の効果は なかった"
+	text "There was no effect"
+	line "from Sleep."
 	done
 
 ThereWasNoEffectFromParalysisText:
-	textfw "「マヒ」の効果は なかった"
+	text "There was no effect"
+	line "from Paralysis."
 	done
 
 ThereWasNoEffectFromConfusionText:
-	textfw "「こんらん」の効果は なかった"
+	text "There was no effect"
+	line "from Confusion."
 	done
 
 ThereWasNoEffectFromPoisonConfusionText:
-	textfw "「どく・こんらん」の効果は なかった"
+	text "There was no effect"
+	line "from Poison, Confusion."
 	done
 
 ThereWasNoEffectFromPoisonParalysisText:
-	textfw "「どく・マヒ」の効果は なかった"
+	text "There was no effect"
+	line "from Poison, Paralysis."
 	done
 
 ThereWasNoEffectFromPoisonSleepText:
-	textfw "「どく・ねむり」の効果は なかった"
+	text "There was no effect"
+	line "from Poison, Sleep."
 	done
 
 RearrangedDuelistsDeckText:
-	textfw "<RAMNAME>の 山札を いれかえた"
+	text "<RAMNAME>'s Deck was shuffled."
 	done
 
 ChooseADarkEvolutionCardText:
-	textfw "「わるいポケモン」への 進化カードを"
-	linefw "えらんでください"
+	text "Choose a Dark Evolution"
+	line "Pokémon card from the Deck."
 	done
 
 EffectTargetDarkPokemonText:
-	textfw "わるいポケモン"
+	text "Dark Evolution card"
 	done
 
 ChooseADarkPokemonText:
-	textfw "「わるいポケモン」を"
-	linefw "えらんでください"
+	text "Choose a Dark"
+	line "Evolution card."
 	done
 
 NoWaterEnergyText:
-	textfw "「水」エネルギーが ありません"
+	text "There was no Water Energy."
 	done
 
 NoFightingEnergyText:
-	textfw "「闘」エネルギーが ありません"
+	text "There was no Fighting Energy."
 	done
 
 ReturningTheseCardsToDeckText:
-	textfw "これらの カードを 山札にもどします"
+	text "Returning these cards to the Deck."
 	done
 
 CardsToReturnToDeckText:
-	textfw "山札に もどすカード"
+	text "Cards to return to the Deck:"
 	done
 
 ChooseAColorlessEvolutionCardText:
-	textfw "無色ポケモンの 進化カードを"
-	linefw "えらんでください"
+	text "Choose a Colorless Evolution"
+	line "Pokémon card from the Deck."
 	done
 
 EffectTargetColorlessEvolutionCardText:
-	textfw "無色の進化ポケモン"
+	text "Colorless Evolution card"
 	done
 
 ChooseAColorlessEvolutionPokemonText:
-	textfw "無色の進化ポケモンを"
-	linefw "えらんでください"
+	text "Choose a Colorless"
+	line "Evolution card."
 	done
 
 Choose1StatusToHealText:
-	textfw "どちらを かいふくしますか?"
-	linefw "      どく  <RAMTEXT>"
+	text "Heal which Special Condition?"
+	linefw "      "
+	text "Poison  <RAMTEXT>"
 	done
 
 EffectTargetSleepText:
-	textfw "ねむり"
+	text "Sleep"
 	done
 
 EffectTargetParalysisText:
-	textfw "マヒ"
+	text "Paralysis"
 	done
 
 EffectTargetConfusionText:
-	textfw "こんらん"
+	text "Confusion"
 	done
 
 ChooseDeckOrDiscardPileToCheckText:
-	textfw "どちらを みますか?"
-	linefw "      山札  トラッシュ"
+	text "Check Deck or Discard Pile?"
+	linefw "      "
+	line "Deck  Discard Pile"
 	done
 
 CheckDeckPilePromptText:
-	textfw "山札を かくにんしますか?"
+	text "Check the Deck?"
 	done
 
 CheckDiscardPilePromptText:
-	textfw "トラッシュを かくにんしますか?"
+	text "Check the Discard Pile?"
 	done
 
 ChooseAFossilFromDeckText:
-	textfw "山札から なにかの化石を"
-	linefw "えらんでください"
+	text "Choose a Mysterious Fossil"
+	line "card from the Deck."
 	done
 
 ChooseAFossilText:
-	textfw "なにかの化石を"
-	linefw "えらんでください"
+	text "Choose a"
+	line "Mysterious Fossil."
 	done
 
 ReturnedXCardsToDeckText:
-	textfw "<RAMNUM>枚 山札にもどします"
+	text "Returned <RAMNUM> card(s) to the Deck."
 	done
 
 ChooseBasicOrEvolutionCardText:
-	textfw "たねポケモンか"
-	linefw "進化ポケモンをえらぶ"
+	text "Choose a Basic or"
+	line "Evolution Pokémon card."
 	done
 
 Choose2EnergyCardsFromHandToDiscardText:
-	textfw "手札から トラッシュするエネルギー"
-	linefw "カードを 2枚 えらんでください"
+	text "Choose 2 Energy cards from"
+	line "your Hand to discard."
 	done
 
 ChooseACardToReturnToDeckText:
-	textfw "山札にもどすカードを"
-	linefw "えらんでください"
+	text "Choose a card to"
+	line "return to the Deck."
 	done
 
 BattleCenterText:
-	textfw "バトルセンター"
+	text "Battle Center"
 	done
 
 PrizesNumberText:
-	textfw "サイドカード"
-	linefw "    枚"
+	text "Prizes"
+	line "       cards"
 	done
 
 ChooseTheNumberOfPrizesText:
-	textfw "サイドカードの 枚数を"
-	linefw "えらんでください"
+	text "Choose the number"
+	line "of Prizes."
 	done
 
 PleaseWaitDecidingNumberOfPrizesText:
-	textfw "サイドカードの 枚数をきめています"
-	linefw "しばらく おまちください"
+	text "Please wait..."
+	line "Deciding the number of Prizes..."
 	done
 
 BeginDuelOfXPrizesWithOpponentText:
-	textfw "<RAMNAME>と サイドカード<RAMNUM>枚で"
-	linefw "対戦をはじめます"
+	text "Begin a <RAMNUM>-Prize Duel"
+	line "with <RAMNAME>."
 	done
 
 ReceivedCardText:
-	textfw "<RAMNAME>は"
-	linefw "「<RAMTEXT>」を ゲット!"
+	text "<RAMNAME> received"
+	line "a <RAMTEXT>!"
 	done
 
 ReceivedPromotionalCardText:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「<RAMTEXT>」を ゲット!"
+	text "<RAMNAME> received a Promotional"
+	line "card <RAMTEXT>!"
 	done
 
 ReceivedLegendaryCardText:
-	textfw "<RAMNAME>は 伝説のポケモンカード"
-	linefw "「<RAMTEXT>」を ゲット!"
+	text "<RAMNAME> received the Legendary"
+	line "card <RAMTEXT>!"
 	done
 
 ReceivedPromotionalFlyingPikachuText:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「そらをとぶピカチュウ」を ゲット!"
+	text "<RAMNAME> received a Promotional"
+	line "card Flying Pikachu!"
 	done
 
 ReceivedPromotionalSurfingPikachuText:
-	textfw "<RAMNAME>は プロモーションカード"
-	linefw "「なみのりピカチュウ」を ゲット!"
+	text "<RAMNAME> received a Promotional"
+	line "card Surfing Pikachu!"
 	done
 
 NowPrintingPleaseWaitText:
-	textfw "プリント中です"
-	linefw "しばらく おまちください"
+	text "Now printing."
+	line "Please wait..."
 	done
 
 BoosterPackCardsText:
-	textfw "拡張パックのカード"
+	text "Booster Pack"
 	done
 
 TryAgainPromptText:
-	textfw "もういちど やりなおしますか?"
+	text "Would you like to try again?"
 	done
 
 TransmittedToText:
-	textfw "<RAMNAME>へ そうしんしました"
+	text "Sent to <RAMNAME>."
 	done
 
 TransmittedFromText:
-	textfw "<RAMNAME>から じゅしんしました"
+	text "Received from <RAMNAME>."
 	done
 
 TransmittingCardSenderText:
-	textfw "カードを おくります"
-	linefw "ゲームボーイをちかづけて Aボタン!"
+	text "Sending a card... Move the Game"
+	line "Boys close and press the A Button."
 	done
 
 TransmittingCardReceiverText:
-	textfw "カードを うけとります"
-	linefw "ゲームボーイを ちかづけてください"
+	text "Receiving a card... Move"
+	line "the Game Boys close together."
 	done
 
 TransmittingDeckConfigurationSenderText:
-	textfw "デッキのつくりかたを おくります"
-	linefw "ゲームボーイをちかづけて Aボタン!"
+	text "Sending a Deck Configuration... Move"
+	line "the Game Boys close and press A."
 	done
 
 TransmittingDeckConfigurationReceiverText:
-	textfw "デッキのつくりかたを うけとります"
-	linefw "ゲームボーイを ちかづけてください"
+	text "Receiving Deck configuration... Move"
+	line "the Game Boys close together."
 	done
 
-TransmittingCardUnsuccessfulSenderText:
-	textfw "カードをおくるのに しっぱいしました"
+TransmittingCardUnsuccessfulText:
+	text "Card transfer wasn't successful."
 	done
 
-TransmittingCardUnsuccessfulReceiverText:
-	textfw "カードのうけとりに しっぱいしました"
-	done
-
-TransmittingDeckConfigurationUnsuccessfulSenderText:
-	textfw "デッキのつくりかたを"
-	linefw "おくるのに しっぱいしました"
-	done
-
-TransmittingDeckConfigurationUnsuccessfulReceiverText:
-	textfw "デッキのつくりかたの"
-	linefw "うけとりに しっぱいしました"
+TransmittingDeckConfigurationUnsuccessfulText:
+	text "Deck configuration transfer"
+	line "wasn't successful."
 	done
 
 NowPrintingText:
-	textfw "<RAMTEXT>を"
-	linefw "プリント中です"
+	text "Now printing"
+	line "<RAMTEXT>..."
 	done
 
 UnableDueToGoopGasAttackText:
-	textfw "「まきちらせ!ベトベトガス」の効果で"
-	linefw "特殊能力は つかえない"
+	text "Pokémon Powers cannot be used due"
+	line "to the effects of Goop Gas Attack."
 	done
 
 NightlyGarbageRunPromptText:
-	textfw "トラッシュから ポケモンカードか"
-	linefw "基本エネルギーを3枚えらんでください"
-	linefw ""
-	linefw "012345678901234567" ; weird, remnants?
+	text "Choose up to 3 Basic Energy or"
+	line "Pokémon cards from the Discard Pile."
+	done
+
+NoRecoverableCardsInDiscardPileText:
+	text "There are no recoverable"
+	line "cards in the Discard Pile."
+	done
+
+DiggerCheckText:
+	text "If Tails, Digger does 10"
+	line "damage to your Active Pokémon."
+	done
+
+ChallengePromptText:
+	text "Accept the opponent's challenge?"
+	done
+
+ChallengeAcceptedText:
+	text "<RAMNAME> accepted the challenge!"
+	done
+
+ChallengeDeclinedText:
+	text "<RAMNAME> declined the challenge."
+	done
+
+DuelistSelectsPokemonTotalNumberText:
+	text "<RAMNAME> chose <RAMNUM> Pokémon,"
+	line "for a total of <RAMNUM>."
+	done
+
+SelectingPokemonFromDeckText:
+	text "Selecting Pokémon from the Deck..."
+	done
+
+CardPopMenuText:
+	text "Card Pop!"
+	line "View Records"
+	line "Cancel"
+	done
+
+CardPopMenuRareCardPopUnlockedText:
+	text "Card Pop!"
+	line "Rare Card Pop!"
+	line "View Records"
+	line "Cancel"
+	done
+
+CardPopEncouragementMessageText:
+	text "Card Pop! with your friends!"
+	done
+
+RareCardPopDescriptionText:
+	text "This Card Pop! is only available to"
+	line "people who have cleared the game."
+	done
+
+CardPopViewRecordsDescriptionText:
+	text "View the records of your"
+	line "previous Card Pop! sessions."
+	done
+
+CardPopExitText:
+	text "Finished with Card Pop!"
 	done
 
 SECTION "Text 3", ROMX
 
-NoRecoverableCardsInDiscardPileText:
-	textfw "トラッシュに"
-	linefw "回収できるカードが ありません"
-	done
-
-DiggerCheckText:
-	textfw "「うら」なら"
-	linefw "対戦ポケモンに 10ダメージ"
-	done
-
-ChallengePromptText: ; the opponent plays CHALLENGE
-	textfw "相手の挑戦を うけますか?"
-	done
-
-ChallengeAcceptedText:
-	textfw "<RAMNAME>は 挑戦をうけました"
-	done
-
-ChallengeDeclinedText:
-	textfw "<RAMNAME>は 挑戦をことわりました"
-	done
-
-DuelistSelectsPokemonTotalNumberText:
-	textfw "<RAMNAME>は <RAMNUM>体えらんで"
-	linefw "ぜんぶで <RAMNUM>体になった"
-	done
-
-SelectingPokemonFromDeckText:
-	textfw "山札から ポケモンをえらんでいます"
-	done
-
-CardPopMenuText:
-	textfw "カードポン!"
-	linefw "きろくをみる"
-	linefw "やめる"
-	done
-
-CardPopMenuRareCardPopUnlockedText:
-	textfw "カードポン!"
-	linefw "レアカードポン!"
-	linefw "きろくをみる"
-	linefw "やめる"
-	done
-
-CardPopEncouragementMessageText:
-	textfw "いろんなともだちと"
-	linefw "「カードポン!」してみよう!"
-	done
-
-RareCardPopDescriptionText:
-	textfw "ゲームをクリアした ひとどうしだけが"
-	linefw "できる「カードポン!」です"
-	done
-
-CardPopViewRecordsDescriptionText:
-	textfw "いままでにした 「カードポン!」の"
-	linefw "きろくを みることができます"
-	done
-
-CardPopExitText:
-	textfw "「カードポン!」を おわります"
-	done
-
 AreYouBothReadyToCardPopText:
-	textfw "ふたりとも 「カードポン!」の"
-	linefw "よういは できましたか?"
+	text "Are you both ready"
+	line "to Card Pop!?"
 	done
 
 CardPopUnsuccessfulTryAgainText:
-	textfw "うまく 「ポン!」できませんでした"
-	linefw "もういちど やりなおしてください"
+	text "The Pop! wasn't successful."
+	line "Please try again."
 	done
 
 CannotCardPopWithFriendPreviouslyPoppedWithText:
-	textfw "まえにポン!している ともだちとは"
-	linefw "「カードポン!」できません"
+	text "You cannot Card Pop! with a"
+	line "friend you previously Popped! with."
 	done
 
 PositionGameBoyColorsAndPressAButtonText:
-	textfw "ゲームボーイを ちかづけて"
-	linefw "どちらかがAボタンを おしてください"
+	text "Position the Game Boy Colors"
+	line "and press the A Button."
 	done
 
 ReceivedThroughCardPopText:
-	textfw "<RAMTEXT>を"
-	linefw "「カードポン!」で ゲット!"
+	text "Received <RAMTEXT>"
+	line "through Card Pop!"
 	done
 
 AreYouBothReadyToRareCardPopText:
-	textfw "ふたりとも 「レア・カードポン!」の"
-	linefw "よういは できましたか?"
+	text "Are you both ready"
+	line "to Rare Card Pop!?"
 	done
 
 ReceivedThroughRareCardPopText:
-	textfw "<RAMTEXT>を"
-	linefw "「レア・カードポン!」で ゲット!"
+	text "Received <RAMTEXT>"
+	line "through Rare Card Pop!"
 	done
 
 CannotRareCardPopWithFriendPreviouslyPoppedWithText:
-	textfw "まえにポン!している ともだちとは"
-	linefw "「レア・カードポン!」できません"
+	text "You cannot Rare Card Pop! with a"
+	line "friend you previously Popped! with."
 	done
 
 CardPopModeMismatchedText:
-	textfw "「カードポン!」の"
-	linefw "しゅるいが ちがいます"
+	text "The selected Card Pop!"
+	line "modes do not match..."
 	done
 
 CardPopRecordsText:
-	textfw "カードポン!のきろく"
+	text "Card Pop! Records"
 	done
 
 CardPopRecordFriendNameText:
-	textfw "・あいて:          "
+	textfw "・"
+	text "Friend:"
 	done
 
 RareCardPopRecordFriendNameText:
-	textfw "★あいて:          "
+	textfw "★"
+	text "Friend:"
 	done
 
 CardPopRecordContentText:
-	textfw " きろくの ないよう "
+	text " Card Pop! Record Data "
 	done
 
 CardPopRecordFriendCoinQuantityText:
-	textfw "コイン    /24"
+	text "Event Coins"
 	done
 
 CardPopRecordFriendCardQuantityText:
-	textfw "カード      枚"
+	text "Album"
 	done
 
 CardPopRecordFriendBattleQuantityText:
-	textfw "対戦数      回"
+	text "Duels"
 	done
 
 CardPopRecordCardsText:
-	textfw " カード "
+	text "  Cards  "
 	done
 
 CardPopRecordYourResultText:
-	textfw "・じぶんに でたカード"
+	textfw "・"
+	text "Card received by me:"
 	done
 
 CardPopRecordFriendResultText:
-	textfw "・あいてに でたカード"
+	textfw "・"
+	text "Card received by friend:"
 	done
 
 NoCardPopRecordsText:
-	textfw "カードポンのきろくが ありません"
+	text "There are no Card Pop! records."
 	done
 
 CardPopFriendDeckNameText:
-	textfw "<RAMTEXT>デッキ"
+	text "<RAMTEXT> Deck"
 	done
 
 GameCenterBillsPCTitleText:
-	textfw "マサキのパソコン"
+	text " Bill's PC "
 	done
 
 GameCenterBillsPCDescriptionText:
-	textfw "オムナイト > オムスター<Lv>36"
-	linefw "ゴースト  > ゲンガー<Lv>40"
-	linefw "ゴーリキー > カイリキー<Lv>54"
-	linefw "ゴローン  > ゴローニャ<Lv>37"
-	linefw "ユンゲラー > フーディン<Lv>45"
+	text "Omanyte  > Omastar Lv36"
+	line "Haunter  > Gengar Lv40"
+	line "Machoke  > Machamp Lv54"
+	line "Graveler > Golem Lv37"
+	line "Kadabra  > Alakazam Lv45"
 	done
 
 GameCenterBillsPCDescriptionDialogText:
-	textfw "「マサキのパソコン」と このカードで"
-	linefw "超めずらしいカードを ゲットしよう"
+	text "Get very Rare cards using this"
+	line "machine and Bill's PC cards!"
 	done
 
 GameCenterBillsPCStartPromptText:
-	textfw "マサキのパソコンで あそびますか?"
+	text "Would you like to use Bill's PC?"
 	done
 
 GameCenterBillsPCUnableNoBillsComputerText:
-	textfw "「マサキのパソコン」カードが無いので"
-	linefw "あそぶことが できません"
-	linefw "「マサキのパソコン」カードを"
-	linefw "てにいれてから あそんでください"
+	text "You cannot use this machine"
+	line "without a Bill's PC card."
+	line "Please come back after you"
+	line "get a Bill's PC card."
 	done
 
 GameCenterBillsPCYourCompatibleCardsText:
-	textfw "「マサキのパソコン」 たいおうカード"
+	text "Cards compatible with Bill's PC:"
 	done
 
 GameCenterBillsPCUnableNoCompatibleCardsText:
-	textfw "「マサキのパソコン」の"
-	linefw "たいおうカードが ありません"
-	linefw "ひつようなカードを てにいれてから"
-	linefw "きてください"
+	text "You do not have any cards that"
+	line "are compatible with Bill's PC."
+	line "Please come back after you"
+	line "get the cards you need."
 	done
 
 GameCenterBillsPCChooseACardToInsertText: ; unused?
-	textfw "「マサキのパソコン」と いっしょに"
-	linefw "いれるカードを えらんでください"
+	text "Choose a card to insert"
+	line "along with Bill's PC."
 	done
 
 GameCenterBillsPCConfirmPromptText:
-	textfw "このカードで よろしいですか?"
+	text "Is this card OK?"
 	done
 
 GameCenterBillsPCCancelPromptText:
-	textfw "マサキのパソコンを おわりますか?"
+	text "Log out of Bill's PC?"
 	done
 
 GameCenterBillsPCChipsPaidText:
-	textfw "それでは てすうりょうとして"
-	linefw "チップ20枚を いただきます"
+	text "We'll take 20 Chips as a"
+	line "service fee. Thank you!"
 	done
 
 GameCenterBillsPCCardsInsertedText:
-	textfw "マサキのパソコンに"
-	linefw "カードを いれました!"
-	done
-
-GameCenterBillsPCReceivedRewardText: ; unused?
-	textfw "<RAMNAME>は"
-	linefw "「<RAMTEXT>」を ゲット!"
+	text "Inserted the cards"
+	line "into Bill's PC!"
 	done
 
 GameCenterBillsPCUnableLastOutputRemainingText:
-	textfw "マサキのパソコンからの メールが"
-	linefw "メールボックスに のこっています"
-	linefw "メールをよんでカードをうけとってから"
-	linefw "きてください"
+	text "A previous Mail from Bill's PC is"
+	line "still waiting in your Mailbox."
+	line "Please read your mail and collect"
+	line "your card before coming back."
 	done
 
 GameCenterBillsPCUnableNotEnoughChipsText:
-	textfw "マサキのパソコンは 1かい20枚です"
-	linefw "チップが たりません!"
+	text "Bill's PC costs 20 Chips to use."
+	line "You don't have enough Chips!"
 	done
 
 DeckText:
-	textfw "デッキ"
+	text "Deck"
 	done
 
 EndText:
-	textfw "おわる"
+	text "End"
 	done
 
 WhatIsYourNameText:
-	textfw "あなたのなまえは?"
+	text "What is your name?"
 	done
 
 PlayerNameKeyboardText:
@@ -1564,36 +1540,32 @@ DeckNameKeyboardText:
 	done
 
 NewDeckText:
-	textfw "あたらしく つくる"
+	text "New deck"
 	done
 
 PleaseSelectDeckText:
-	textfw "デッキを えらんでください"
+	text "Please select deck."
 	done
 
 ModifyDeckText:
-	textfw "デッキかいぞう"
+	text "Modify deck"
 	done
 
 RenameDeckText:
-	textfw "なまえをかえる"
+	text "Change name"
 	done
 
 ChooseAsDuelingDeckText:
-	textfw "つかうデッキ"
+	text "Select deck"
 	done
 
-CancelDeckText:
-	textfw "やめる"
-	done
-
-ParticleOText: ; unused?
-	textfw "を"
+CancelText:
+	text "Cancel"
 	done
 
 ChosenAsDuelingDeckText:
-	textfw "<RAMTEXT>を"
-	linefw "対戦用のデッキに しました!"
+	text "<RAMTEXT> was"
+	line "chosen as the dueling deck!"
 	done
 
 Deck1Text:
@@ -1612,149 +1584,136 @@ Deck4Text:
 	textfw "4・"
 	done
 
-Deck5Text: ; unused?
-	textfw "5・"
-	done
-
 ThereIsNoDeckHereText:
-	textfw "ここにはデッキが ありません!"
+	text "There is no Deck here!"
 	done
 
 DeckBuildingConfirmText:
-	textfw "かくにん"
+	text "Confirm"
 	done
 
 DeckBuildingDismantleText:
-	textfw "くずす"
+	text "Dismantle"
 	done
 
 DeckBuildingContinueModifyingText:
-	textfw "かいぞう"
+	text "Modify"
 	done
 
 DeckBuildingSaveText:
-	textfw "ほぞん"
+	text "Save"
 	done
 
 DeckBuildingWarningTheOnlyDeckNotDismantleableText:
-	textfw "デッキが 1つしかありませんので"
-	linefw "このデッキは くずせません"
+	text "There is only 1 Deck, so this"
+	line "Deck cannot be dismantled."
 	done
 
 DeckBuildingWarningNoBasicPokemonText:
-	textfw "たねポケモンが"
-	linefw "1枚も はいっていません!"
+	text "There are no Basic Pokémon"
+	line "in this Deck!"
 	done
 
 DeckBuildingWarningMustIncludeBasicPokemonText:
-	textfw "デッキには たねポケモンを"
-	linefw "かならず いれなければなりません!"
+	text "You must include a Basic Pokémon"
+	line "in the Deck!"
 	done
 
 DeckBuildingWarningNot60CardsText:
-	textfw "デッキが 60枚になっていません!"
+	text "This isn't a 60-card deck!"
 	done
 
 DeckBuildingWarningMustInclude60CardsText:
-	textfw "デッキは かならず"
-	linefw "60枚で なければなりません!"
+	text "The Deck must include 60 cards!"
 	done
 
 DeckBuildingRevertPromptText:
-	textfw "デッキを もとにもどしますか?"
+	text "Return to original configuration?"
 	done
 
 DeckBuildingSavePromptText:
-	textfw "このデッキを ほぞんしますか?"
+	text "Save this Deck?"
 	done
 
 DeckBuildingQuitPromptText:
-	textfw "デッキかいぞうを やめますか?"
+	text "Quit modifying the Deck?"
 	done
 
 DeckBuildingDismantlePromptText:
-	textfw "このデッキを くずしますか?"
+	text "Dismantle this Deck?"
 	done
 
 DeckBuildingSaveToMachinePromptText:
-	textfw "デッキきろくマシンにきろくしますか?"
+	text "Save to the Deck Machine?"
 	done
 
 DeckBuildingRevertAndSaveToMachinePromptText:
-	textfw "もとのデッキを きろくしますか?"
+	text "Save the original Deck?"
 	done
 
 DeckBuildingWarningIncompleteCannotSaveToMachineText:
-	textfw "デッキが できあがっていないので"
-	linefw "きろくできませんでした"
+	text "The Deck is incomplete,"
+	line "so it cannot be saved."
 	done
 
 YourPokemonHiraganaText:
-	textfw "じぶんのポケモン"
+	text "Your Pokémon"
 	done
 
 YourDiscardPileHiraganaText:
-	textfw "じぶんのトラッシュ"
+	text "Your Discard Pile"
 	done
 
 YourHandHiraganaText:
-	textfw "じぶんのてふだ"
-	done
-
-ToYourPlayAreaHiraganaText:
-	textfw "じぶんのばへ"
+	text "Your Hand"
 	done
 
 YourPrizesHiraganaText:
-	textfw "じぶんのサイド"
+	text "Your Prizes"
 	done
 
 OpponentsPokemonHiraganaText:
-	textfw "あいてのポケモン"
+	text "Opp. Pokémon"
 	done
 
 OpponentsDiscardPileHiraganaText:
-	textfw "あいてのトラッシュ"
+	text "Opp. Discard Pile"
 	done
 
 OpponentsHandHiraganaText:
-	textfw "あいてのてふだ"
+	text "Opp. Hand"
 	done
 
 OpponentsPrizesHiraganaText:
-	textfw "あいてのサイド"
-	done
-
-ToOpponentsPlayAreaHiraganaText:
-	textfw "あいてのばへ"
+	text "Opp. Prizes"
 	done
 
 DuelistsPlayAreaSuffixText:
-	textfw "の場"
+	text "'s Play Area"
 	done
 
 YourPlayAreaHiraganaText:
-	textfw "じぶんのば"
+	text "Your Play Area"
 	done
 
 OpponentsPlayAreaHiraganaText:
-	textfw "あいてのば"
+	text "Opp. Play Area"
 	done
 
 EntirePlayAreaHiraganaText:
-	textfw "ぜんたいのば"
+	text "In Play Area"
 	done
 
 GlossaryText:
-	textfw "ようごじてん"
+	text "Glossary"
 	done
 
 WhichCardWouldYouLikeToSeeText:
-	textfw "どこのカードを みますか?"
+	text "Which card would you like to see?"
 	done
 
 PleaseChooseAPrizeText:
-	textfw "サイドカードを えらんでください"
+	text "Please choose a Prize."
 	done
 
 EmptyLineText:
@@ -1762,19 +1721,28 @@ EmptyLineText:
 	done
 
 BoosterPackTitleText:
-	textfw "拡張パック"
+	text " Booster Pack"
 	done
 
 Item1BeginningPokemonText:
-	textfw "1・はじめてのポケモン "
+	textfw "1・"
+	text "Beginning Pokémon"
+	half2full
+	textfw " "
 	done
 
 Item2LegendaryPowerText:
-	textfw "2・でんせつのちから  "
+	textfw "2・"
+	text "Legendary Power"
+	half2full
+	textfw "  "
 	done
 
 Item3IslandOfFossilText:
-	textfw "3・化石のしま     "
+	textfw "3・"
+	text "Fossil Island"
+	half2full
+	textfw "  "
 	done
 
 Item3IslandOfFossilLockedText:
@@ -1782,7 +1750,10 @@ Item3IslandOfFossilLockedText:
 	done
 
 Item4PsychicBattleText:
-	textfw "4・超バトル      "
+	textfw "4・"
+	text "Psychic Battle"
+	half2full
+	textfw "   "
 	done
 
 Item4PsychicBattleLockedText:
@@ -1790,7 +1761,8 @@ Item4PsychicBattleLockedText:
 	done
 
 Item5SkyFlyingPokemonText:
-	textfw "5・そらとぶポケモン  "
+	textfw "5・"
+	text "Sky-Flying Pokémon"
 	done
 
 Item5SkyFlyingPokemonLockedText:
@@ -1798,7 +1770,10 @@ Item5SkyFlyingPokemonLockedText:
 	done
 
 Item6WeAreTeamRocketText:
-	textfw "6・われらロケット団  "
+	textfw "6・"
+	text "We Are Team Rocket"
+	half2full
+	textfw " "
 	done
 
 Item6WeAreTeamRocketLockedText:
@@ -1806,7 +1781,10 @@ Item6WeAreTeamRocketLockedText:
 	done
 
 Item7TeamRocketsAmbitionText:
-	textfw "7・ロケット団のやぼう "
+	textfw "7・"
+	text "Rocket's Ambition"
+	half2full
+	textfw "  "
 	done
 
 Item7TeamRocketsAmbitionLockedText:
@@ -1814,7 +1792,10 @@ Item7TeamRocketsAmbitionLockedText:
 	done
 
 Item8PromotionalCardText:
-	textfw "8・プロモーションカード"
+	textfw "8・"
+	text "Promotional Card"
+	half2full
+	textfw "  "
 	done
 
 Item8PromotionalCardLockedText:
@@ -1822,15 +1803,15 @@ Item8PromotionalCardLockedText:
 	done
 
 ViewWhichCardFileText:
-	textfw "どのカードファイルを みますか?"
+	text "View which Card File?"
 	done
 
 EmptyPromotionalCardText:
 	textfw "----------"
 	done
 
-OnesCardsText: ; "'s Cards"
-	textfw "のカード"
+OnesCardsText:
+	text "'s Cards"
 	done
 
 EmptyDeckNameText:
@@ -1838,369 +1819,411 @@ EmptyDeckNameText:
 	done
 
 DeckSaveMachineText:
-	textfw "デッキきろくマシン"
+	text "  Deck Save Machine  "
 	done
 
 SaveDeckToMachineText:
-	textfw "デッキをきろく"
+	text "Save a Deck"
 	done
 
 DeleteDeckFromMachineText:
-	textfw "きろくをけす"
+	text "Delete a Deck"
 	done
 
 BuildDeckText:
-	textfw "デッキをつくる"
+	text "Build a Deck"
 	done
 
 ChooseDeckToSaveToMachineText:
-	textfw "きろくするデッキを えらんでください"
-	done
-
-ParticleNOText: ; unused?
-	textfw "の"
+	text "Choose a Deck to Save."
 	done
 
 SavedDeckToMachineText:
-	textfw "<RAMTEXT>の"
-	linefw "つくりかたを きろくしました!"
+	text "Saved the configuration for"
+	line "<RAMTEXT>!"
 	done
 
 NoDecksSavedToMachineText:
-	textfw "デッキが きろくされていません"
-	done
-
-ChooseDeckToDeleteFromMachineText:
-	textfw "つくりかたを けす"
-	linefw "デッキを えらんでください"
+	text "No Deck is saved."
 	done
 
 ConfirmDeletePromptText:
-	textfw "ほんとうに けして よろしいですか?"
+	text "Do you really wish to delete?"
 	done
 
 DeletedDeckFromMachineText:
-	textfw "<RAMTEXT>の"
-	linefw "つくりかたを けしました"
+	text "Deleted the configuration for"
+	line "<RAMTEXT>."
 	done
 
 YouMayOnlyCarry4DecksText:
-	textfw "デッキは 4つまでしか もてません!"
+	text "You may only carry 4 Decks!"
 	done
 
 ChooseDeckToDismantleText:
-	textfw "くずすデッキを えらんでください"
+	text "Choose a deck to dismantle."
 	done
 
 DismantledThisDeckText:
-	textfw "<RAMTEXT>を"
-	linefw "くずしました"
-	done
-
-ChooseDeckToBuildText:
-	textfw "つくりたいデッキを えらんでください"
+	text "Dismantled"
+	line "<RAMTEXT>."
 	done
 
 CannotBuildMustDismantleText:
-	textfw "このデッキは 手もちのデッキを"
-	linefw "くずさないと つくれません"
+	text "This Deck can only be built if"
+	line "you dismantle another Deck."
 	done
 
 YouDoNotOwnAllCardsNeededToBuildThisDeckText:
-	textfw "このデッキを つくるのに"
-	linefw "ひつようなカードを もっていません"
+	text "You do not own all cards needed"
+	line "to build this Deck."
 	done
 
 BuiltDeckText:
-	textfw "<RAMTEXT>を"
-	linefw "つくりました"
+	text "Built"
+	line "<RAMTEXT>."
 	done
 
 NeedTheseCardsToBuildThisDeckText:
-	textfw "デッキを つくるには"
-	linefw "これだけのカードが ひつようです"
+	text "These cards are needed"
+	line "to build this Deck:"
 	done
 
 LackTheseCardsToBuildThisDeckText:
-	textfw "このデッキを つくるには"
-	linefw "これだけのカードが たりません"
+	text "You don't have enough cards"
+	line "to build this Deck."
 	done
 
 UsingTheseCardsInOtherDecksText:
-	textfw "これらのカードが"
-	linefw "ほかのデッキで つかわれています"
+	text "These cards are currently"
+	line "being used in your other Decks."
 	done
 
 UsingTheseCardsTooInOtherDecksText:
-	textfw "また これらのカードが"
-	linefw "ほかのデッキで つかわれています"
+	text "Also, these cards are currently"
+	line "being used in your other Decks."
 	done
 
 DismantleTheseDecksPromptText:
-	textfw "これらのデッキを くずしますか?"
+	text "Dismantle these Decks?"
 	done
 
 DismantledTheseDecksText:
-	textfw "デッキを くずしました"
+	text "Dismantled the Deck."
 	done
 
 DeleteSavedDeckPromptText:
-	textfw "このきろくが きえても いいですか?"
+	text "OK if this file is deleted?"
 	done
 
 DeckMachineReadInstructionsText:
-	textfw "せつめいをみる"
+	text "Read the Instructions"
 	done
 
 MaySubInEnergyCardsToBuildThisDeckText:
-	textfw "エネルギーカードを かわりにつかって"
-	linefw "デッキを つくることができます"
+	text "You can build this Deck using"
+	line "Energy cards as replacements."
 	done
 
 BuildSubbedDeckPromptText:
-	textfw "かわりのデッキを つくりますか?"
+	text "Build a Deck with replacements?"
 	done
 
 CannotBuildLackingTooManyCardsText:
-	textfw "たりないカードが おおすぎるので"
-	linefw "デッキをつくることが できません"
+	text "You are missing too many"
+	line "cards to build this Deck."
 	done
 
 CannotBuildLackingEnergyCardsText:
-	textfw "エネルギーカードが たりないので"
-	linefw "デッキをつくることが できません"
+	text "You don't have enough Energy"
+	line "cards to build this Deck."
 	done
 
 CannotBuildLackingBasicPokemonText:
-	textfw "たねポケモンが はいっていないので"
-	linefw "デッキをつくることが できません"
+	text "You don't have enough Basic"
+	line "Pokémon to build this Deck."
 	done
 
 BuiltSubbedDeckWithTheseCardsText:
-	textfw "これらのカードを つかって"
-	linefw "かわりのデッキを つくりました"
+	text "Built the Deck using these"
+	line "cards as replacements."
 	done
 
 SubInEnergyCardsPromptText:
-	textfw "エネルギーカードをだいようしますか?"
+	text "Use Energy cards as replacements?"
 	done
 
 ChooseDeckCategoryText:
-	textfw "デッキの しゅるいを"
-	linefw "えらんでください"
+	text "Please select category."
 	done
 
 PrintThisCardPromptYesNoText:
-	textfw "このカードを いんさつしますか?"
-	linefw "   はい  いいえ"
+	text "Print this card?"
+	line "      Yes     No"
 	done
 
 ChooseDeckConfigurationToPrintText:
-	textfw "いんさつするデッキのつくりかたを"
-	linefw "えらんでください"
+	text "Please choose a Deck configuration"
+	line "to print."
 	done
 
 PrintThisDeckPromptText:
-	textfw "このデッキを いんさつしますか?"
+	text "Print this Deck?"
 	done
 
 PrintCardListPromptText:
-	textfw "カードいちらんを いんさつしますか?"
-	linefw "   はい  いいえ"
+	text "Print the card list?"
+	line "      Yes     No"
 	done
 
 PrintMenuItemsText:
-	textfw "ポケモンカード"
-	linefw "デッキのつくりかた"
-	linefw "カードのいちらん"
-	linefw "のうどせってい"
-	linefw "プリントやめる"
+	text "Pokémon Cards"
+	line "Deck Configuration"
+	line "Card List"
+	line "Print Quality"
+	line "Quit Print"
 	done
 
 WhatToPrintPromptText:
-	textfw "なにを プリントアウトしますか?"
+	text "What would you like to print?"
 	done
 
 PrinterContrastSettingsPromptText:
-	textfw "いんさつの こさを きめてください"
-	linefw "うすい  1 2 3 4 5  こい"
+	text "Please set the contrast:"
+	line "  Light   1   2   3   4   5   Dark"
 	done
 
 PrinterTurningOffReminderText:
-	textfw "ポケットプリンターの スイッチの"
-	linefw "きりわすれに ちゅういしましょう"
+	text "Please make sure to turn"
+	line "the Game Boy Printer OFF."
 	done
 
 ProcedureForSendingCardsToPlayerTitleText:
-	textfw "あげるカードの えらびかた"
+	text "Procedure for sending cards:"
 	done
 
 ProcedureForSendingCardsToPlayerText:
-	textfw "1ˍデッキをつくるように あげたい"
-	linefw "  カードをえらび 左右でふやします"
-	linefw ""
-	linefw "2ˍあげるカードを すべてきめたら"
-	linefw "  Bボタンで メニューをひらきます"
-	linefw ""
-	linefw "3ˍ「おくる」で カードをおくる"
-	linefw "  じゅんびが かんりょうです"
+	text "1. Choose the card you wish to send."
+	line "   Press left/right to choose more."
+	line ""
+	line "2. Choose all the cards. Then press"
+	line "   the B Button to open the menu."
+	line ""
+	line "3. Choose Send to finish"
+	line "   the process."
 	done
 
 ReadProcedureForSendingCardsToPlayerText:
-	textfw "あげるカードの えらびかたを"
-	linefw "かくにんしてください"
+	text "Please read the procedure"
+	line "for sending cards."
 	done
 
 ; used both for sending cards to another player and to in-game machines
 SendText:
-	textfw "おくる"
+	text "Send"
 	done
 
 CardsReceivedText:
-	textfw "もらったカード"
+	text "Card received"
 	done
 
 CardsToSendToPlayerText:
-	textfw "あげるカード"
+	text "Card to send"
 	done
 
 SendTheseCardsToPlayerPromptText:
-	textfw "これらのカードを あげますか?"
+	text "Send these cards?"
 	done
 
 ReceivedTheseCardsFromText:
-	textfw "これらのカードを"
-	linefw "<RAMTEXT>さんから もらいました!"
+	text "Received these cards"
+	line "from <RAMTEXT>!"
 	done
 
 ChooseDeckConfigurationToSendText:
-	textfw "わたしたい デッキのつくりかたを"
-	linefw "えらんでください"
+	text "Please choose a Deck"
+	line "configuration to send."
 	done
 
 ChooseWhereToSaveText:
-	textfw "ほぞんばしょを えらんでください"
+	text "Please choose a Save Slot."
 	done
 
 ReceiveRecordsText:
-	textfw "きろくをうけとる"
+	text "Receive configuration."
 	done
 
 ReceivedDeckConfigurationFromText:
-	textfw "デッキのつくりかたを"
-	linefw "<RAMTEXT>さんから もらいました!"
+	text "Received a Deck Configuration"
+	line "from <RAMTEXT>!"
 	done
 
 AutoDeckMachine1Text:
-	textfw "オートデッキマシン1"
+	text " Auto Machine 1 "
 	done
 
 AutoDeckMachine1BasicDecksText:
-	textfw "きほんデッキ"
+	text " Starter Decks "
 	done
 
 AutoDeckMachine1GivenDecksText:
-	textfw "もらったデッキ"
+	text " Received Decks"
 	done
 
 AutoDeckMachine1FightingDecksText:
-	textfw "闘ポケモンのデッキ"
+	text " Fighting Decks"
 	done
 
 AutoDeckMachine1GrassDecksText:
-	textfw "草ポケモンのデッキ"
+	text " Grass Decks "
 	done
 
 AutoDeckMachine1WaterDecksText:
-	textfw "水ポケモンのデッキ"
+	text " Water Decks "
 	done
 
 AutoDeckMachine1FireDecksText:
-	textfw "炎ポケモンのデッキ"
+	text " Fire Decks"
 	done
 
 AutoDeckMachine1LightningDecksText:
-	textfw "雷ポケモンのデッキ"
+	text " Lightning Decks "
 	done
 
 AutoDeckMachine1PsychicDecksText:
-	textfw "超ポケモンのデッキ"
+	text " Psychic Decks "
 	done
 
 AutoDeckMachine1SpecialDecksText:
-	textfw "スペシャルデッキ"
+	text " Special Decks "
 	done
 
 AutoDeckMachine1LegendaryDecksText:
-	textfw "伝説のデッキ"
+	text " Legendary Decks "
 	done
 
 AutoDeckMachine1BasicDecksTextPadded:
-	textfw "きほんデッキ   "
+	text "Starter Decks "
 	done
 
 AutoDeckMachine1GivenDecksTextPadded:
-	textfw "もらったデッキ  "
+	text "Received Decks "
+	done
+
+AutoDeckMachine1FightingDecksTextPadded:
+	text "Fighting Decks "
+	done
+
+AutoDeckMachine1GrassDecksTextPadded:
+	text "Grass Decks    "
+	done
+
+AutoDeckMachine1WaterDecksTextPadded:
+	text "Water Decks    "
+	done
+
+AutoDeckMachine1FireDecksTextPadded:
+	text "Fire Decks     "
+	done
+
+AutoDeckMachine1LightningDecksTextPadded:
+	text "Lightning Decks"
+	done
+
+AutoDeckMachine1PsychicDecksTextPadded:
+	text "Psychic Decks  "
 	done
 
 AutoDeckMachine1SpecialDecksTextPadded:
-	textfw "スペシャルデッキ "
+	text "Special Decks  "
 	done
 
 AutoDeckMachine1LegendaryDecksTextPadded:
-	textfw "伝説のデッキ   "
+	text "Legendary Decks"
 	done
 
 AutoDeckMachine2Text:
-	textfw "オートデッキマシン2"
+	text " Auto Machine 2 "
 	done
 
 AutoDeckMachine2DarkGrassDecksText:
-	textfw "わるい草ポケモンデッキ"
+	text " Dark Grass Decks"
 	done
 
 AutoDeckMachine2DarkLightningDecksText:
-	textfw "わるい雷ポケモンデッキ"
+	text " Dark Lightning Decks"
 	done
 
 AutoDeckMachine2DarkWaterDecksText:
-	textfw "わるい水ポケモンデッキ"
+	text " Dark Water Decks"
 	done
 
 AutoDeckMachine2DarkFireDecksText:
-	textfw "わるい炎ポケモンデッキ"
+	text " Dark Fire Decks "
 	done
 
 AutoDeckMachine2DarkFightingDecksText:
-	textfw "わるい闘ポケモンデッキ"
+	text " Dark Fighting Decks "
 	done
 
 AutoDeckMachine2DarkPsychicDecksText:
-	textfw "わるい超ポケモンデッキ"
+	text " Dark Psychic Decks"
 	done
 
 AutoDeckMachine2ColorlessDecksText:
-	textfw "無色ポケモンデッキ"
+	text " Colorless Decks "
 	done
 
 AutoDeckMachine2DarkSpecialDecksText:
-	textfw "わるいスペシャルデッキ"
+	text " Dark Special Decks"
 	done
 
 AutoDeckMachine2RareCardDecksText:
-	textfw "めずらしいカードデッキ"
+	text " Rare Decks "
 	done
 
 AutoDeckMachine2MysteriousCardDecksText:
-	textfw "なぞのカードデッキ"
+	text " Mysterious Decks   "
+	done
+
+AutoDeckMachine2DarkGrassDecksTextPadded:
+	text "Dark Grass Decks    "
+	done
+
+AutoDeckMachine2DarkLightningDecksTextPadded:
+	text "Dark Lightning Decks"
+	done
+
+AutoDeckMachine2DarkWaterDecksTextPadded:
+	text "Dark Water Decks    "
+	done
+
+AutoDeckMachine2DarkFireDecksTextPadded:
+	text "Dark Fire Decks     "
+	done
+
+AutoDeckMachine2DarkFightingDecksTextPadded:
+	text "Dark Fighting Decks "
+	done
+
+AutoDeckMachine2DarkPsychicDecksTextPadded:
+	text "Dark Psychic Decks  "
 	done
 
 AutoDeckMachine2ColorlessDecksTextPadded:
-	textfw "無色ポケモンデッキ  "
+	text "Colorless Decks     "
+	done
+
+AutoDeckMachine2DarkSpecialDecksTextPadded:
+	text "Dark Special Decks  "
+	done
+
+AutoDeckMachine2RareCardDecksTextPadded:
+	text "Rare Decks          "
 	done
 
 AutoDeckMachine2MysteriousCardDecksTextPadded:
-	textfw "なぞのカードデッキ  "
+	text "Mysterious Decks    "
 	done
 
 MachineElectricFireDeckName:
@@ -2284,203 +2307,203 @@ MachineEverybodySurfDeckName:
 	done
 
 MachineStarterDeckDescriptionText:
-	textfw "D<RDOT>オーヤマから もらったデッキ"
-	linefw "炎と 闘エネルギーで つくられている"
+	text "A Deck received from Dr. Mason."
+	line "Uses Fire and Fighting Pokémon."
 	done
 
 MachineElectricFireDeckDescriptionText:
-	textfw "「炎」と「雷」と「無色」ポケモンで"
-	linefw "つくったデッキ"
+	text "A Deck of Fire, Lightning"
+	line "and Colorless Pokémon."
 	done
 
 MachineBattleWaterDeckDescriptionText:
-	textfw "「水」と「闘」のポケモンで"
-	linefw "つくったデッキ"
+	text "A Deck of Fighting"
+	line "and Water Pokémon."
 	done
 
 MachineEsperGreenDeckDescriptionText:
-	textfw "「草」と「超」のポケモンで"
-	linefw "つくったデッキ"
+	text "A Deck of Grass"
+	line "and Psychic Pokémon."
 	done
 
 MachineSweatAntiGR1DeckDescriptionText:
-	textfw "ストーンクラブの ゲンゾウが くれた"
-	linefw "草と 岩ポケモンの デッキ"
+	text "Rock Club Master Gene's Deck"
+	line "of Grass and Rock Pokémon."
 	done
 
 MachineGiveInAntiGR2DeckDescriptionText:
-	textfw "グリーンクラブの クニミが くれた"
-	linefw "草と 水ポケモンの デッキ"
+	text "Grass Club Master Nikki's Deck"
+	line "of Grass and Water Pokémon."
 	done
 
 MachineVengefulAntiGR3DeckDescriptionText:
-	textfw "アクアクラブの ウッチーが くれた"
-	linefw "炎と 水ポケモンの デッキ"
+	text "Water Club Master Amy's Deck"
+	line "of Fire and Water Pokémon."
 	done
 
 MachineUnforgivingAntiGR4DeckDescriptionText:
-	textfw "エスパークラブの ミウラが くれた"
-	linefw "雷と 超ポケモンの デッキ"
+	text "Psychic Club Master Murray's Deck"
+	line "of Lightning and Psychic Pokémon."
 	done
 
 MachineAwesomeFossilsDeckDescriptionText:
-	textfw "シブイ「いわポケモン」が せいぞろい"
-	linefw "「なにかの化石」を 進化させよう"
+	text "A collection of cool Rock Pokémon."
+	line "Let's evolve some fossils!"
 	done
 
 MachineNewMachokeDeckDescriptionText:
-	textfw "うまれかわった ゴーリキー のデッキ"
-	linefw "「きあいだま」で ベンチを こうげき"
+	text "A Deck with some new Machoke cards."
+	line "Target the Bench with Focus Blast!"
 	done
 
 MachineRockFestivalDeckDescriptionText:
-	textfw "いわポケモンが せいぞろい"
-	linefw "雷ポケモンは このデッキで せめろ!"
+	text "All the Rock Pokémon are here!"
+	line "Solid against Lightning Pokémon!"
 	done
 
 MachineJabHookDeckDescriptionText:
-	textfw "いろんな 「パンチ」で"
-	linefw "あいてを ノックアウトする デッキ"
+	text "With a variety of Punches, you're"
+	line "sure to Knock Out the opponent."
 	done
 
 MachineSteadyIncreaseDeckDescriptionText:
-	textfw "なかまを ドンドン ふやして"
-	linefw "しぶとく ねばる デッキ"
+	text "A Deck built on adaptability. Keep"
+	line "calling more Pokémon to your Bench."
 	done
 
 MachineGatheringNidoranDeckDescriptionText:
-	textfw "ニドランが だいしゅうごうの デッキ"
-	linefw "ニドキングとニドクインを そだてよう"
+	text "A Deck full of Nidoran. Let's evolve"
+	line "them into Nidoking and Nidoqueen."
 	done
 
 MachineNationalParkDeckDescriptionText:
-	textfw "いろいろな 草ポケモンと いっしょに"
-	linefw "こうえんで あそぼう!"
+	text "Let's visit the Park and play"
+	line "with all of the Grass Pokémon!"
 	done
 
 MachineSelectiveBreedingDeckDescriptionText:
-	textfw "進化すると きょうりょくになる"
-	linefw "かがくのちからで こうげきだ!"
+	text "Use the power of Science to evolve"
+	line "your Pokémon and make them tougher."
 	done
 
 MachineSplashingAboutDeckDescriptionText:
-	textfw "みずべで あそぶ ポケモンたち"
-	linefw "きみと いっしょに みずあそび"
+	text "You can find these playful Pokémon"
+	line "near the water's edge. Let's play!"
 	done
 
 MachineBeachDeckDescriptionText:
-	textfw "なみうちぎわの ポケモンたち"
-	linefw "みなみの うみは いつもにぎやか"
+	text "Visit the beach and Surf"
+	line "the lively southern sea!"
 	done
 
 MachineInsulationDeckDescriptionText:
-	textfw "弱点が 雷じゃない 水ポケモンたち"
-	linefw "これで 雷ポケモンも へっちゃらだ!"
+	text "Don't be shocked, but these Water"
+	line "Pokémon aren't weak to Lightning!"
 	done
 
 MachineAntarcticDeckDescriptionText:
-	textfw "さむい うみにすむ 水ポケモンたち"
-	linefw "あいての うごきを ふうじるぞ!"
+	text "These Pokémon live in the icy"
+	line "ocean. Freeze your opponent solid!"
 	done
 
 MachineFlameFestivalDeckDescriptionText:
-	textfw "ロコンと キュウコンの ワザで"
-	linefw "あいては だいこんらん!"
+	text "As Vulpix and Ninetales move, the"
+	line "opponent is completely Confused!"
 	done
 
 MachineElectricCurrentShockDeckDescriptionText:
-	textfw "炎と 雷の 2色デッキ"
-	linefw "あいての 弱点を りようしよう"
+	text "Exploit the opponent's Weaknesses"
+	line "with this Fire and Lightning Deck!"
 	done
 
 MachineRiskyBlazeDeckDescriptionText:
-	textfw "すてみの こうげきで しょうぶ!"
-	linefw "「ディフェンダー」を うまくつかおう"
+	text "Self-damaging attacks can be useful!"
+	line "Limit their damage with Defender!"
 	done
 
 MachineRagingCharizardDeckDescriptionText:
-	textfw "リザードンが たいかつやくの デッキ"
-	linefw "ベンチで だいじに そだてよう"
+	text "Get Charizard ready on the Bench,"
+	line "then let it loose against your foes!"
 	done
 
 MachineZapdosPowerPlantDeckDescriptionText:
-	textfw "コイルと ビリリダマが せいぞろい"
-	linefw "サンダーで いっきに けっちゃくだ!"
+	text "Magnemite and Voltorb join the"
+	line "lineup and unleash their Thunder!"
 	done
 
 MachineElectricShockDeckDescriptionText:
-	textfw "でんきの ちからで 「マヒ」させる!"
-	linefw "あいては シビレて なにもできない"
+	text "Paralyze foes with electricity!"
+	line "Numb the opponent to submission!"
 	done
 
 MachineOverflowDeckDescriptionText:
-	textfw "たまった デンキが あふれだして"
-	linefw "あいてに おそいかかる デッキ"
+	text "Accumulated electricity overflows,"
+	line "striking the opponent hard!"
 	done
 
 MachineTripleZapdosDeckDescriptionText:
-	textfw "3しゅるいの サンダーこうげき!"
-	linefw "エネルギーぎれに きをつけよう"
+	text "3 Zapdos, each with unique Thunder"
+	line "attacks. Don't run out of Energy!"
 	done
 
 MachineSpecialBarrierDeckDescriptionText:
-	textfw "とくしゅバリヤーで こうげきを"
-	linefw "ふうじこめてしまう デッキ"
+	text "A Deck that uses a special"
+	line "barrier to prevent Attacks."
 	done
 
 MachineEvolutionProhibitedDeckDescriptionText:
-	textfw "プテラと ミュウの ちからで"
-	linefw "あいての 進化を じゃまするデッキ"
+	text "Disrupt the opponent's Evolutions"
+	line "with Mew and Aerodactyl's Powers!"
 	done
 
 MachineGhostDeckDescriptionText:
-	textfw "ゴース ゴースト ゲンガーで"
-	linefw "あいてを きょうふに おとしいれる"
+	text "Gastly, Haunter and Gengar strike"
+	line "fear into your opponent's heart!"
 	done
 
 MachinePuppetMasterDeckDescriptionText:
-	textfw "スリーパーの 「にんぎょうつかい」で"
-	linefw "「ピッピ人形」を あやつる デッキ"
+	text "A Deck using Hypno's Puppet Master"
+	line "Power to control Clefairy Dolls."
 	done
 
 MachineMewLv15DeckDescriptionText:
-	textfw "ミュウの 「みちのちから」のすべてが"
-	linefw "いま あきらかになる!"
+	text "Reveal the full extent of Mew's"
+	line "Mystery Attack with this Deck!"
 	done
 
 MachineVenusaurLv64DeckDescriptionText:
-	textfw "フシギバナの 「ソーラーパワー」で"
-	linefw "とくしゅな こうかも へっちゃらだ"
+	text "Venusaur's Solar Power heals your"
+	line "Pokémon's Special Conditions."
 	done
 
 MachineMutualDestructionDeckDescriptionText:
-	textfw "にくをきらせて ほねをたつ"
-	linefw "とっても はげしい デッキだ"
+	text "This is a very intense Deck, where"
+	line "self-sacrifice is required to win!"
 	done
 
 MachineEverybodySurfDeckDescriptionText:
-	textfw "カメックスの 「あまごい」で"
-	linefw "みんなで いっきに 「なみのり」だ!"
+	text "With Blastoise's Rain Dance Power,"
+	line "you can make all your Pokémon Surf!"
 	done
 
 MachineGrandFireDeckDescriptionText:
-	textfw "ファイヤーの 「ほのおをもたらす」で"
-	linefw "炎エネルギーを てにいれよう"
+	text "Use Moltres' Firegiver Power to"
+	line "bring Fire Energy to your Hand."
 	done
 
 MachineLegendaryFossilDeckDescriptionText:
-	textfw "プテラの チカラで 進化をふうじて"
-	linefw "きょうりょくな ワザで こうげき!"
+	text "Block Evolution with Aerodactyl's"
+	line "Power, then use powerful Attacks!"
 	done
 
 MachineWaterLegendDeckDescriptionText:
-	textfw "フリーザーの 「こおりつかせる」で"
-	linefw "なんども あいてを 「マヒ」させる"
+	text "Use Articuno's Quickfreeze Power"
+	line "and keep paralyzing the opponent!"
 	done
 
 MachineGreatDragonDeckDescriptionText:
-	textfw "わるいハクリューの ちからで進化して"
-	linefw "きょうりょくポケモンで トドメだ!"
+	text "Use Dark Dragonair to Evolve your"
+	line "Pokémon quickly and win the duel!"
 	done
 
 MachineCaveExplorationDeckName:
@@ -2537,11 +2560,6 @@ MachineBewareTheTrapDeckName:
 
 MachineOgresKickDeckName:
 	text "Angry Kick"
-	done
-
-MachineHeavyWorkDeckName:
-	; the same as Full Strength Deck but renamed for Machine
-	text "Heavy Work"
 	done
 
 MachineSlowbrosFishingDeckName:
@@ -2605,295 +2623,296 @@ MachineDreadfulParalysisDeckName:
 	done
 
 MachineInsectCollectionDeckDescriptionText:
-	textfw "こんちゅうの ポケモンが いっぱい!"
-	linefw "トランセルで 炎にも つよいぞ!"
+	text "Lots of bug Pokémon in this Deck!"
+	line "Metapod protects against Fire, too!"
 	done
 
 MachineCaveExplorationDeckDescriptionText:
-	textfw "くらいどうくつに ひそむポケモンたち"
-	linefw "どくのこうげきで えものをとらえろ!"
+	text "These Pokémon lurk in dark caves..."
+	line "They use Poison to capture prey!"
 	done
 
 MachineOminousMeadowDeckDescriptionText:
-	textfw "くさいかふんで あたまがクラクラ"
-	linefw "でも カビゴンだけは ゲンキだぞ?"
+	text "This smelly pollen is making my head"
+	line "spin. At least Snorlax looks ready!"
 	done
 
 MachineAtrociousWeezingDeckDescriptionText:
-	textfw "わるいマタドガスが だいばくはつ!"
-	linefw "どくこうげきも きょうりょくだ"
+	text "Dark Weezing is ready to explode!"
+	line "Its Poison is also very potent."
 	done
 
 MachineTheBenchIsAlsoASurpriseDeckDescriptionText:
-	textfw "あいての ベンチも こうげきだ!"
-	linefw "みんな まとめて やっつけよう"
+	text "Let's attack the opponent's Bench"
+	line "too and take everyone down at once!"
 	done
 
 MachineEnergyConservationDeckDescriptionText:
-	textfw "エネルギーは とってもだいじ"
-	linefw "「エネルギー回収」で てにいれよう"
+	text "Having enough Energy is important."
+	line "Let's use Energy Retrieval!"
 	done
 
 MachineSonicboomDeckDescriptionText:
-	textfw "ソニックブームは 抵抗力を うけない"
-	linefw "これで 岩ポケモンも だいじょうぶ"
+	text "Since Sonicboom ignores Resistance,"
+	line "even Rock Pokémon are no problem!"
 	done
 
 MachineRageOfTheHeavensDeckDescriptionText:
-	textfw "おおぞらの ポケモンが せいぞろい"
-	linefw "サンダーで いっきに けっちゃくだ"
+	text "Zapdos and other Flying Pokémon"
+	line "join forces to defeat the opponent."
 	done
 
 MachineDarkWaterDeckDescriptionText:
-	textfw "超ポケモンと 水ポケモンの"
-	linefw "わるくて あやしい デッキだ"
+	text "A wicked, sinister Deck of"
+	line "Psychic and Water Pokémon."
 	done
 
 MachineQuickFreezeDeckDescriptionText:
-	textfw "きょうりょくな 「れいとうビーム」で"
-	linefw "あいての うごきを ふうじこめるぞ"
+	text "Use the mighty Ice Beam attack and"
+	line "freeze the opponent's movements!"
 	done
 
 MachineWhirlpoolShowerDeckDescriptionText:
-	textfw "ワザと トレーナーカードで"
-	linefw "あいての エネルギーを はがせ!"
+	text "Use your Attacks and Trainer Cards"
+	line "to remove the opponent's Energy!"
 	done
 
 MachineWaterGangDeckDescriptionText:
-	textfw "わるい 水ポケモンが せいぞろい"
-	linefw "すばやく 進化して こうげきだ!"
+	text "All the Dark Water Pokémon are"
+	line "gathering and evolving to attack!"
 	done
 
 MachineFireballDeckDescriptionText:
-	textfw "「れんぞくファイヤーボール」が"
-	linefw "すべてを やきつくしてしまう デッキ"
+	text "A Deck where Continuous Fireball"
+	line "burns everything to ashes."
 	done
 
 MachineCompleteCombustionDeckDescriptionText:
-	textfw "トラッシュされた エネルギーカードを"
-	linefw "ひろって つけて かんぜんねんしょう"
+	text "Retrieve your discarded Energy and"
+	line "use it to power up your attacks!"
 	done
 
 MachineOminousSpiritFlamesDeckDescriptionText:
-	textfw "あやしい ほのおで まどわすデッキ"
-	linefw "あいての場を かきまわしてやろう"
+	text "A Deck of illusory flames that"
+	line "keeps the opponent confused!"
 	done
 
 MachineEternalFireDeckDescriptionText:
-	textfw "とにかく アツイ スペシャルデッキ"
-	linefw "ファイヤーの いちげきで きまりだ!"
+	text "A very exciting, fiery Deck."
+	line "It can decide matches in one hit!"
 	done
 
 MachineBewareTheTrapDeckDescriptionText:
-	textfw "バトル場が ワナで いっぱいになるぞ"
-	linefw "あいては うかつに うごけないデッキ"
+	text "The Arena will be filled with traps,"
+	line "making the opponent move carefully."
 	done
 
 MachineOgresKickDeckDescriptionText:
-	textfw "キックの スペシャリストデッキ!"
-	linefw "みんな けりワザが きょうれつだ!"
+	text "A Deck of expert kickers."
+	line "Full of strong kicking moves!"
 	done
 
 MachineRockBlastDeckDescriptionText:
-	textfw "「ロックブラスト」が きょうりょくだ"
-	linefw "みんなまとめて かかってこい!"
+	text "Rock Blast is a useful move."
+	line "Use it to hit everyone at once!"
 	done
 
 MachineHeavyWorkDeckDescriptionText:
-	textfw "かいりきじまんの ポケモンたち"
-	linefw "あいての ポケモンを うごかせ!"
+	text "Use your superhuman strength to"
+	line "control your opponent's Pokémon!"
 	done
 
 MachineSlowbrosFishingDeckDescriptionText:
-	textfw "ヤドランの 「つりあげる」で"
-	linefw "プクリンの ワザが パワーアップ!"
+	text "Use Dark Slowbro's Reel In Power"
+	line "to charge up Wigglytuff's Attacks!"
 	done
 
 MachineDirectHitDeckDescriptionText:
-	textfw "「弱点・抵抗力」は しんぱいないぞ!"
-	linefw "これで 無色ポケモンも てきじゃない"
+	text "Weakness and Resistance are nothing"
+	line "to worry about for these Pokémon!"
 	done
 
 MachineBadDreamDeckDescriptionText:
-	textfw "「えんかくさいみん」と「ゆめくい」の"
-	linefw "コンビネーションが さえるデッキ"
+	text "A Deck that brilliantly combines"
+	line "Remote Hypnosis and Dream Eater."
 	done
 
 MachineBenchPanicDeckDescriptionText:
-	textfw "わるいゲンガーの 「もてあそぶ」で"
-	linefw "あいての ベンチを かくらんしよう!"
+	text "Use Dark Gengar's Play Tricks Power"
+	line "and make the opponent's Bench panic!"
 	done
 
 MachineSnorlaxGuardDeckDescriptionText:
-	textfw "カビゴンが とおせんぼする デッキ"
-	linefw "エネルギーも はがして ねむらせろ!"
+	text "Use Snorlax to block Retreat. Drain"
+	line "the opponent's Energy as it sleeps!"
 	done
 
 MachineEyeOfTheStormDeckDescriptionText:
-	textfw "とりポケモンが あつまった デッキ"
-	linefw "どんどん いれかえて たたかおう"
+	text "A Deck full of Flying Pokémon."
+	line "Retreat them as they take damage!"
 	done
 
 MachineSuddenGrowthDeckDescriptionText:
-	textfw "ポケモンを すばやく そだてよう"
-	linefw "きょうりょくな ワザで アタック!"
+	text "This Deck has Pokémon that are quick"
+	line "to Evolve and use powerful Attacks!"
 	done
 
 MachineKingDragoniteDeckDescriptionText:
-	textfw "きょだいな カイリューが おおあばれ"
-	linefw "どんな ポケモンも けちらすぞ!"
+	text "A gigantic Dragonite on a rampage!"
+	line "It will take down any Pokémon!"
 	done
 
 MachineDarkCharizardDeckDescriptionText:
-	textfw "れんぞくファイヤーボールが つよい!"
-	linefw "わるいリザードンを つかいこなせ!"
+	text "Continuous Fireball is incredible!"
+	line "Master Dark Charizard's strength!"
 	done
 
 MachineDarkBlastoiseDeckDescriptionText:
-	textfw "わるいカメックスが たのもしいデッキ"
-	linefw "雷ポケモンには プテラで はんげき"
+	text "A reliable Deck with Dark Blastoise."
+	line "Aerodactyl stops Lightning Pokémon!"
 	done
 
 MachineDarkVenusaurDeckDescriptionText:
-	textfw "わるいフシギバナの どくこうげきを"
-	linefw "「ポイズンミスト」で パワーアップ!"
+	text "Power up Dark Venusaur's Horrid"
+	line "Pollen with Weezing's Poison Mist!"
 	done
 
 MachineDarkDragoniteDeckDescriptionText:
-	textfw "わるいカイリューが てしたをよぶと"
-	linefw "「ともだちのわ」が つよくなる!"
+	text "Summon Minions with Dragonite and"
+	line "watch your Bench grow stronger!"
 	done
 
 MachinePerfectHealthDeckDescriptionText:
-	textfw "めずらしい フシギバナの ちからが"
-	linefw "なかまたちを まもってくれる"
+	text "The Power of the Rare Venusaur card"
+	line "will keep your Pokémon protected."
 	done
 
 MachineSuperSoakerDeckDescriptionText:
-	textfw "「みずでっぽう」を うちまくれ!"
-	linefw "かわいい マリルも いっしょだよ"
+	text "Blast away with Water Gun Attacks!"
+	line "The cute Marill joins the fight too!"
 	done
 
 MachineHellsDemonDeckDescriptionText:
-	textfw "めずらしい ダグトリオの デッキ"
-	linefw "アースウェイブで ベンチに ダメージ"
+	text "A Deck with the Rare Dugtrio card."
+	line "Damage the Bench with Earth Wave!"
 	done
 
 MachinePremiumThunderDeckDescriptionText:
-	textfw "めずらしい カードばかりの デッキ"
-	linefw "がんばって あつめてみよう!"
+	text "A Deck made entirely of Rare cards!"
+	line "Do your best to collect them all!"
 	done
 
 MachineMysteriousMewtwoDeckDescriptionText:
-	textfw "「GR団のミュウツー」とは・・・?"
-	linefw "そのしょうたいが いま あかされる!"
+	text "What exactly is Team GR's Mewtwo...?"
+	line "Its true identity is now revealed!"
 	done
 
 MachineHeavenlyLugiaDeckDescriptionText:
-	textfw "しんぴに つつまれた ポケモン"
-	linefw "ルギアが とうとう たんじょうだ!"
+	text "Shrouded in mystery, the Legendary"
+	line "Pokémon Lugia has finally arrived!"
 	done
 
 MachineBrutalTrainersDeckDescriptionText:
-	textfw "ずらりとそろった トレーナーカード"
-	linefw "あいては とっても やりにくいぞ!"
+	text "Packed with useful Trainer cards,"
+	line "your opponent will struggle to play!"
 	done
 
-SECTION "Text 4", ROMX
-
 MachineDreadfulParalysisDeckDescriptionText:
-	textfw "あいてが なにも できなくなる"
-	linefw "きょうふの デッキが これだ!"
+	text "This terrifying Deck will leave"
+	line "your opponent completely helpless!"
 	done
 
 GlossaryTitleText:
-	textfw "●ポケモンカード ようごじてん●"
+	textfw "● "
+	text "Pokémon Card Glossary"
+	half2full
+	textfw "●"
 	done
 
 GlossaryGameBasicsText:
-	textfw "ポケモンカードのきほんようご"
+	text "Game Basics"
 	done
 
 GlossaryCardTypesAndKeywordsText:
-	textfw "カードのしゅるいと せつめい"
+	text "Card Types & Keywords"
 	done
 
 GlossaryStatusesAndDecisionText:
-	textfw "特殊状態と 勝ちまけの決定"
+	text "Special Conditions & Decisions"
 	done
 
 GlossarySpecialRulesText:
-	textfw "特別ルール対戦"
+	text "Special Duel Rules"
 	done
 
 GlossaryExitText:
-	textfw "ようごじてんを ぬける"
+	text "Exit Glossary"
 	done
 
 GlossaryGameBasicsMenuText:
-	textfw "デッキ       ベンチ"
-	linefw "山札        対戦ポケモン"
-	linefw "トラッシュ     ひかえポケモン"
-	linefw "手札        サイドカード"
-	linefw "バトル場      ダメージカウンター"
+	text "Deck Building       Bench"
+	line "Deck                Active Pokémon"
+	line "Discard Pile        Bench Pokémon"
+	line "Hand                Prizes"
+	line "Arena               Damage Counter"
 	done
 
 GlossaryCardTypesAndKeywordsMenuText:
-	textfw "エネルギーカード  ワザ"
-	linefw "トレーナーカード  特殊能力"
-	linefw "たねポケモン    弱点"
-	linefw "進化カード     抵抗力"
-	linefw "わるい進化カード  にげる"
+	text "Energy Card         Attack"
+	line "Trainer Card        Pokémon Power"
+	line "Basic Pokémon       Weakness"
+	line "Evolution Card      Resistance"
+	line "Dark Evolution      Retreat"
 	done
 
 GlossaryStatusesAndDecisionMenuText:
-	textfw "「どく」状態    勝ちまけの決定1"
-	linefw "「マヒ」状態    勝ちまけの決定2"
-	linefw "「ねむり」状態   勝ちまけの決定3"
-	linefw "「こんらん」状態  サドン・デス"
+	text "Poisoned            Decision 1"
+	line "Paralyzed           Decision 2"
+	line "Asleep              Decision 3"
+	line "Confused            Sudden Death"
 	done
 
 GlossarySpecialRulesMenuText:
-	textfw "みどりのちから   だいちのちから"
-	linefw "雷パワーアップ   抵抗力ていか"
-	linefw "ほのおのよろい   エネルギーR"
-	linefw "せまいベンチ    にげにくい場"
-	linefw "にげみずの場    トラッシュBH"
+	text "Chlorophyll         Earth Power"
+	line "Thunder Charge      Low Resistance"
+	line "Flame Armor         Energy Return"
+	line "Small Bench         Tough Escape"
+	line "Running Water       Black Hole"
 	done
 
 ChooseWordAndPressAButtonText:
-	textfw "しりたい こうもくを えらんで"
-	linefw "Aボタンを おしてください"
+	text "Choose a topic and press the"
+	line "A button."
 	done
 
 GlossaryDeckTitleText:
-	textfw "「デッキ」について"
+	text "About Deck Building"
 	done
 
 GlossaryDeckPileTitleText:
-	textfw "「山札」について"
+	text "About the Deck"
 	done
 
 GlossaryDiscardPileTitleText:
-	textfw "「トラッシュ」について"
+	text "About the Discard Pile"
 	done
 
 GlossaryHandTitleText:
-	textfw "「手札」について"
+	text "About the Hand"
 	done
 
 GlossaryArenaTitleText:
-	textfw "「バトル場」について"
+	text "About the Arena"
 	done
 
 GlossaryBenchTitleText:
-	textfw "「ベンチ」について"
+	text "About the Bench"
 	done
 
 GlossaryActivePokemonTitleText:
-	textfw "「対戦ポケモン」について"
+	text " About the Active Pokémon"
 	done
 
 GlossaryBenchedPokemonTitleText:
-	textfw "「ひかえポケモン」について"
+	text "About Bench Pokémon"
 	done

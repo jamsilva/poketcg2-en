@@ -1,3 +1,5 @@
+SECTION "Text 4", ROMX
+
 GlossaryPrizesTitleText:
 	textfw "「サイドカード」について"
 	done

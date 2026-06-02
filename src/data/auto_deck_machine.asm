@@ -205,7 +205,7 @@ AutoDeckMachine2Entries:
 		RockBlastDeckName, \
 		MachineRockBlastDeckDescriptionText
 	auto_deck MachineHeavyWorkDeckList, \
-		MachineHeavyWorkDeckName, \
+		FullStrengthDeckName, \
 		MachineHeavyWorkDeckDescriptionText
 ; dark psychic
 	auto_deck MachineSlowbrosFishingDeckList, \
