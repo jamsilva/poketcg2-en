@@ -1338,7 +1338,7 @@ TextOffsets::
 	textpointer DeckDiagnosisAdvice2Text                              ; 0x052e
 	textpointer DeckDiagnosisAdvice3Text                              ; 0x052f
 	textpointer DeckDiagnosisAdvice4Text                              ; 0x0530
-	textpointer DeckDiagnosisExitText                                 ; 0x0531
+	textpointer UNUSED_0531                                           ; 0x0531
 	textpointer DeckDiagnosisStep1MenuText                            ; 0x0532
 	textpointer DeckDiagnosisStep2MenuText                            ; 0x0533
 	textpointer DeckDiagnosisStep3MenuText                            ; 0x0534
@@ -1430,9 +1430,9 @@ TextOffsets::
 	textpointer DeckDiagnosisOKText                                   ; 0x058a
 	textpointer DeckDiagnosisOKButNoTrainerText                       ; 0x058b
 	textpointer DeckDiagnosisEnergyUnbalancedText                     ; 0x058c
-	textpointer DebugDummyText                                        ; 0x058d
+	textpointer UNUSED_058D                                           ; 0x058d
 	textpointer DebugKondoDebugText                                   ; 0x058e
-	textpointer DebugMapDisplayTestText                               ; 0x058f
+	textpointer UNUSED_058F                                           ; 0x058f
 	textpointer DebugCharacterDisplayTestText                         ; 0x0590
 	textpointer DebugYoshidaTestText                                  ; 0x0591
 	textpointer DebugGameMainText                                     ; 0x0592

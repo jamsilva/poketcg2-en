@@ -1,619 +1,569 @@
-SECTION "Text 4", ROMX
-
 GlossaryPrizesTitleText:
-	textfw "「サイドカード」について"
+	text " About Prizes"
 	done
 
 GlossaryDamageCountersTitleText:
-	textfw "「ダメージカウンター」について"
+	text " About Damage Counters"
 	done
 
 GlossaryEnergyCardsTitleText:
-	textfw "「エネルギーカード」について"
+	text " About Energy Cards"
 	done
 
 GlossaryTrainerCardsTitleText:
-	textfw "「トレーナーカード」について"
+	text " About Trainer Cards"
 	done
 
 GlossaryBasicPokemonTitleText:
-	textfw "「たねポケモン」について"
+	text " About Basic Pokémon"
 	done
 
 GlossaryEvolutionCardsTitleText:
-	textfw "「進化カード」について"
+	text "About Evolution Cards"
 	done
 
 GlossaryDarkEvolutionCardsTitleText:
-	textfw "「わるい進化カード」について"
+	text " About Dark Evolution Cards"
 	done
 
 GlossaryAttackTitleText:
-	textfw "「ワザ」について"
+	text " About Attacking"
 	done
 
 GlossaryPokemonPowerTitleText:
-	textfw "「特殊能力」について"
+	text " About Pokémon Power"
 	done
 
 GlossaryWeaknessTitleText:
-	textfw "「弱点」について"
+	text " About Weakness"
 	done
 
 GlossaryResistanceTitleText:
-	textfw "「抵抗力」について"
+	text "About Resistance"
 	done
 
 GlossaryRetreatTitleText:
-	textfw "「にげる」について"
+	text "About Retreating"
 	done
 
 GlossaryPoisonedTitleText:
-	textfw "「どく状態」について"
+	text " About the Poisoned Condition"
 	done
 
 GlossaryParalyzedTitleText:
-	textfw "「マヒ状態」について"
+	text "About the Paralyzed Condition"
 	done
 
 GlossaryAsleepTitleText:
-	textfw "「ねむり状態」について"
+	text "About the Asleep Condition"
 	done
 
 GlossaryConfusedTitleText:
-	textfw "「こんらん状態」について"
+	text " About the Confused Condition"
 	done
 
 GlossaryDecision1TakenAllPrizesTitleText:
-	textfw "「勝ちまけの決定1」について"
+	text " About Decision 1"
 	done
 
 GlossaryDecision2DeckedOutTitleText:
-	textfw "「勝ちまけの決定2」について"
+	text " About Decision 2"
 	done
 
 GlossaryDecision3RunOutOfPokemonTitleText:
-	textfw "「勝ちまけの決定3」について"
+	text " About Decision 3"
 	done
 
 GlossarySuddenDeathTitleText:
-	textfw "「サドン・デス」について"
+	text "About Sudden Death"
 	done
 
 GlossaryChlorophyllTitleText:
-	textfw "「みどりのちから」について"
+	text "About Chlorophyll"
 	done
 
 GlossaryThunderChargeTitleText:
-	textfw "「雷パワーアップ」について"
+	text " About Thunder Charge"
 	done
 
 GlossaryFlameArmorTitleText:
-	textfw "「ほのおのよろい」について"
+	text "About Flame Armor"
 	done
 
 GlossarySmallBenchTitleText:
-	textfw "「せまいベンチ」について"
+	text "About Small Bench"
 	done
 
 GlossaryRunningWaterTitleText:
-	textfw "「にげみずの場」について"
+	text " About Running Water"
 	done
 
 GlossaryEarthPowerTitleText:
-	textfw "「だいちのちから」について"
+	text "About Earth Power"
 	done
 
 GlossaryLowResistanceTitleText:
-	textfw "「抵抗力ていか」について"
+	text " About Low Resistance"
 	done
 
 GlossaryEnergyReturnTitleText:
-	textfw "「エネルギーR」について"
+	text " About Energy Return"
 	done
 
 GlossaryToughEscapeTitleText:
-	textfw "「にげにくい場」について"
+	text "About Tough Escape"
 	done
 
 GlossaryBlackHoleTitleText:
-	textfw "「トラッシュBH」について"
+	text " About Black Hole"
 	done
 
 GlossaryDeckDescriptionText:
-	textfw "ポケモンカードで対戦につかうカード"
-	linefw "のたばを「デッキ」といいます。"
-	linefw "「デッキ」は かならず 60枚で"
-	linefw "つくられています。"
-	linefw "「デッキ」には おなじ なまえのカ"
-	linefw "ードは 4枚までしかいれては いけ"
-	linefw "ません。"
-	linefw "じぶんの「デッキ」をつくり 対戦する"
-	linefw "これが ポケモンカードの だいごみで"
-	linefw "す。"
+	text "A Deck is the set of Pokémon cards"
+	line "used in duels."
+	line "A Deck consists of 60 cards."
+	line "Only 4 of the same card are"
+	line "allowed in a Deck. Create your"
+	line "own Deck to play the game."
+	line "These are the most basic rules of"
+	line "the Pokémon Trading Card Game."
 	done
 
 GlossaryDeckPileDescriptionText:
-	textfw "これから ひくカードのたばを「山札"
-	linefw "(やまふだ)」と いいます。"
-	linefw "じぶんの番の はじめには「じぶんの山"
-	linefw "札」から カードを 1枚ひきます。"
-	linefw "このとき 「山札」にカードがなくて"
-	linefw "カードを ひけないときには まけに"
-	linefw "なります。"
+	text "The Deck is the pile of cards"
+	line "you will be drawing from."
+	line "At the beginning of your turn, you"
+	line "will draw 1 card from your Deck."
+	line "If there are no cards to draw"
+	line "from the Deck, you lose the game."
 	done
 
 GlossaryDiscardPileDescriptionText:
-	textfw "つかいおわったカードを おくところを"
-	linefw "「トラッシュ」と いいます。"
-	linefw "「トラッシュ」にカードを おくことを"
-	linefw "「トラッシュする」と いいます。"
-	linefw "「トラッシュ」にあるカードは しらべ"
-	linefw "るのコマンドをつかって じぶんの「ト"
-	linefw "ラッシュ」は もちろん あいての「ト"
-	linefw "ラッシュ」も しらべることができます"
+	text "The pile in which you place used"
+	line "cards is called the Discard Pile."
+	line "You can look at both yours and your"
+	line "opponent's Discard Pile"
+	line "with the Check command."
 	done
 
 GlossaryHandDescriptionText:
-	textfw "かくプレイヤーが 手にもっているカー"
-	linefw "ドを 「手札(てふだ)」と いいます"
-	linefw "「手札」の枚数には せいげんがありま"
-	linefw "せん。10枚でも 20枚でももつこと"
-	linefw "が できます。"
+	text "The cards held by each player"
+	line "are called a Hand."
+	line "There is no restriction to the"
+	line "number of cards in the Hand."
+	line "You may even have 10 or 20"
+	line "cards in your Hand."
 	done
 
 GlossaryArenaDescriptionText:
-	textfw "いま たたかっているポケモンが おか"
-	linefw "れているところを 「バトル場」といい"
-	linefw "ます。"
-	linefw "「バトル場」にいる ポケモンを「対戦"
-	linefw "ポケモン」と いいます。"
-	linefw "ゲームは この「バトル場」にいる「対"
-	linefw "戦ポケモン」を つかって ゲームを"
-	linefw "すすめます。"
+	text "The place where the Pokémon"
+	line "that is actively fighting"
+	line "is placed is called the Arena."
+	line "The game proceeds by using the"
+	line "Active Pokémon in the Arena."
 	done
 
 GlossaryBenchDescriptionText:
-	textfw "バトル場にいるポケモンと こうたい"
-	linefw "するために ひかえているポケモンが"
-	linefw "いるところを 「ベンチ」といいます。"
-	linefw "「ベンチ」には つうじょう ひかえの"
-	linefw "ポケモンを さいだいで 5ひきまで"
-	linefw "だしておくことが できます。"
+	text "The Bench is where your Pokémon"
+	line "that are in play but aren't actively"
+	line "fighting sit."
+	line "They're ready to come out and fight"
+	line "if the Active Pokémon retreats or"
+	line "is Knocked Out."
+	line "You can have up to 5 Pokémon on"
+	line "the Bench."
 	done
 
 GlossaryActivePokemonDescriptionText:
-	textfw "バトル場にいるポケモンを 「対戦ポケ"
-	linefw "モン」と いいます。"
-	linefw "この「対戦ポケモン」のワザをつかって"
-	linefw "こうげきして あいてのポケモンを"
-	linefw "たおすことに なります。"
+	text "The Active Pokémon is the"
+	line "Pokémon that is in the Arena."
+	line "Only Active Pokémon can"
+	line "attack."
 	done
 
 GlossaryBenchedPokemonDescriptionText:
-	textfw "バトル場のポケモンと こうたいするた"
-	linefw "めに ベンチにいるポケモンを 「ひか"
-	linefw "えポケモン」と いいます。"
-	linefw "バトル場のポケモンが いなくなったら"
-	linefw "「ひかえポケモン」のなかから バトル"
-	linefw "場にだす ポケモンを えらぶことにな"
-	linefw "ります。"
-	linefw "このとき バトル場にだすための「ひか"
-	linefw "えポケモン」が いないときは まけと"
-	linefw "なります。"
+	text "The Pokémon that are in play"
+	line "but aren't actively fighting"
+	line "are called Bench Pokémon."
+	line "They're ready to come out and fight"
+	line "if the Active Pokémon retreats or"
+	line "is Knocked Out."
+	line "If the Active Pokémon is Knocked"
+	line "Out and you don't have a Bench"
+	line "Pokémon, you lose the game."
 	done
 
 GlossaryPrizesDescriptionText:
-	textfw "あいてのポケモンを たおした数を"
-	linefw "かぞえるためのカードを「サイドカード"
-	linefw "」と いいます。"
-	linefw "「サイドカード」は あいてのポケモン"
-	linefw "を たおしたときに 1枚 ひくことが"
-	linefw "できます。"
-	linefw "「サイドカード」を すべてとりきると"
-	linefw "対戦に 勝ったことになります。"
-	linefw "つまり ポケモンカードは セットした"
-	linefw "「サイドカード」の数だけ あいてのポ"
-	linefw "ケモンをたおせば いいゲームなのです"
+	text "Prizes are the cards placed to"
+	line "count the number of the opponent's"
+	line "Pokémon you Knocked Out."
+	line "Every time one of your opponent's"
+	line "Pokémon is Knocked Out, you take 1"
+	line "of your Prizes into your Hand."
+	line "When you take all of your Prizes,"
+	line "you win the game."
 	done
 
 GlossaryDamageCountersDescriptionText:
-	textfw "「ダメージカウンター」は そのポケモ"
-	linefw "ンが うけているダメージを あらわし"
-	linefw "ています。"
-	linefw "「ダメージカウンター」1つで 10ポ"
-	linefw "イントのダメージを うけていることを"
-	linefw "あらわしています。"
-	linefw "HP「30」のポケモンに 「ダメージ"
-	linefw "カウンター」が 3つのると そのポケ"
-	linefw "モンは 30ダメージを うけたことに"
-	linefw "なり HPは「0」ということに なり"
-	linefw "「きぜつ」してしまいます。"
+	text "A Damage Counter represents the"
+	line "amount of damage a certain Pokémon"
+	line "has taken."
+	line "1 Damage Counter represents"
+	line "10 HP of damage."
+	line "If a Pokémon with an HP of 30 has"
+	line "3 Damage Counters, it has received"
+	line "30 HP of damage, and its remaining"
+	line "HP is 0."
 	done
 
 GlossaryEnergyCardsDescriptionText:
-	textfw "「エネルギーカード」は エネルギーを"
-	linefw "あらわすカードです。"
-	linefw "エネルギーのしゅるいは ぜんぶで"
-	linefw "7しゅるい あります。"
-	linefw "「<GRASS>草(くさ)」「<FIRE>炎(ほのお)」"
-	linefw "「<WATER>水(みず)」「<LIGHTNING>雷(かみなり)」"
-	linefw "「<PSYCHIC>超(ちょう)」「<FIGHTING>闘(とう)」"
-	linefw "「<COLORLESS>無色(むしょく)」の 7つです。"
-	linefw "「エネルギーカード」は じぶんの番に"
-	linefw "1枚しか 手札からだすことが"
-	linefw "できません。"
+	text "Energy Cards are cards that power"
+	line "your Pokémon, making them able"
+	line "to Attack."
+	line "There are 7 types of Energy:"
+	line "[<GRASS> Grass] [<FIRE> Fire]"
+	line "[<WATER> Water] [<LIGHTNING> Lightning]"
+	line "[<PSYCHIC> Psychic] [<FIGHTING> Fighting]"
+	line "and [<COLORLESS> Colorless]."
+	line "You may only play 1 Energy Card"
+	line "from your Hand per turn."
 	done
 
 GlossaryTrainerCardsDescriptionText:
-	textfw "「トレーナーカード」は おたすけカー"
-	linefw "ドです。"
-	linefw "「トレーナーカード」の こうかは"
-	linefw "「トレーナーカード」によって さまざ"
-	linefw "まですから それぞれのカードのせつめ"
-	linefw "いを よんでおきましょう。"
-	linefw "「トレーナーカード」は じぶんの番な"
-	linefw "ら 手札にあるだけ なん枚でもつかえ"
-	linefw "ます。"
+	text "Trainer Cards are support cards."
+	line "There are many Trainer Cards"
+	line "with different effects."
+	line "Trainer Cards are played during"
+	line "your turn by following the"
+	line "instructions on the card and then"
+	line "discarding it."
+	line "You may use as many Trainer Cards"
+	line "as you like."
 	done
 
 GlossaryBasicPokemonText:
-	textfw "ポケモンのカードのなかで 進化のもと"
-	linefw "になるポケモンを 「たねポケモン」と"
-	linefw "いいます。"
-	linefw "たとえば ヒトカゲ ゼニガメ フシギ"
-	linefw "ダネなどのポケモンが「たねポケモン」"
-	linefw "です。"
-	linefw "手札から バトル場やベンチに ちょく"
-	linefw "せつ だすことが できるのは 「たね"
-	linefw "ポケモン」だけです。"
+	text "Basic Pokémon are cards that"
+	line "can be played directly from your"
+	line "Hand into the play area. Basic"
+	line "Pokémon act as the base for"
+	line "Evolution Cards. Charmander,"
+	line "Squirtle and Bulbasaur are"
+	line "examples of Basic Pokémon."
 	done
 
 GlossaryEvolutionCardsDescriptionText:
-	textfw "ポケモンのカードのなかで 「たねポケ"
-	linefw "モン」から進化した ポケモンをあらわ"
-	linefw "すカードを 「進化(しんか)カード」"
-	linefw "といいます。"
-	linefw "「進化カード」には 1進化カードと"
-	linefw "2進化カードがあります。ゼニガメが"
-	linefw "たね カメールが1進化 カメックスが"
-	linefw "2進化となっています。"
-	linefw "たねポケモンが 場にでていないと"
-	linefw "1進化カードは だせませんし 1進化"
-	linefw "カードが 場にでていないと 2進化カ"
-	linefw "ードを だすことができません。"
+	text "Evolution Cards are cards you"
+	line "play on top of a Basic Pokémon card"
+	line "(or sometimes on top of another"
+	line "Evolution Card) to make it stronger."
+	line "There are Stage 1 and Stage 2"
+	line "Evolution Cards."
+	line "If you do not have a Basic Pokémon"
+	line "in the Play Area, you cannot place"
+	line "the Stage 1 Evolution Card, and if"
+	line "you do not have a Stage 1 Evolution"
+	line "Card in the Play Area, you cannot"
+	line "place the Stage 2 Evolution Card."
 	done
 
+SECTION "Text 4", ROMX
+
 GlossaryDarkEvolutionCardsDescriptionText:
-	textfw "「進化カード」のなかには 「わるい進"
-	linefw "化カード」が あります。"
-	linefw "「わるいリザード」「わるいリザードン"
-	linefw "」などの「わるい~」が ついている進"
-	linefw "化カードです。"
-	linefw "「わるい進化カード」は ふつうの進化"
-	linefw "カードと おなじく たね>1進化>2"
-	linefw "進化と進化してゆきますが、1進化で "
-	linefw "わるい進化をしたポケモンは 2進化も"
-	linefw "わるい進化しかできません。また 1進"
-	linefw "化で ふつうの進化をしたポケモンは "
-	linefw "2進化で わるい進化はできません。"
+	text "Evolution cards with Dark in their"
+	line "name, such as Dark Charmeleon and"
+	line "Dark Charizard are called Dark"
+	line "Evolution cards. These cards evolve"
+	line "from Basic > Stage 1 > Stage 2"
+	line "just like normal cards. However, if"
+	line "a Pokémon undergoes a Dark Evolution"
+	line "at Stage 1, it can only evolve into"
+	line "a Dark Pokémon at Stage 2."
+	line "Likewise, a normal Stage 1 Pokémon"
+	line "cannot evolve into a Dark Pokémon"
+	line "at Stage 2."
 	done
 
 GlossaryAttackDescriptionText:
-	textfw "ポケモンは 「ワザ」をつかうことで"
-	linefw "あいてのポケモンを こうげきすること"
-	linefw "が できます。"
-	linefw "ポケモンが 「ワザ」をつかうためには"
-	linefw "エネルギーが ひつようです。"
-	linefw "ただし 「ワザ」によって ひつような"
-	linefw "エネルギーが ちがいます。 また"
-	linefw "「ワザ」をつかうことができるのは"
-	linefw "バトル場にいる 対戦ポケモンだけです"
+	text "By choosing Attack, your Pokémon"
+	line "will fight your opponent's Pokémon."
+	line "Your Pokémon require Energy"
+	line "in order to Attack."
+	line "The amount of Energy required"
+	line "differs according to the Attack."
+	line "The Active Pokémon is the only"
+	line "Pokémon that can Attack."
 	done
 
 GlossaryPokemonPowerDescriptionText:
-	textfw "「特殊能力(とくしゅのうりょく)」は"
-	linefw "ワザとちがい ベンチにいるポケモンも"
-	linefw "つかうことが できます。"
-	linefw "「特殊能力」をもったポケモンが 場に"
-	linefw "でているだけで こうかが あらわれる"
-	linefw "もの。"
-	linefw "「とくしゅ」のコマンドで せんたく"
-	linefw "することで こうかが あらわれるもの"
-	linefw "手札から 場にでるときに 1度だけ"
-	linefw "つかえる「特殊能力」など さまざまな"
-	linefw "ものが あります。それぞれのカードの"
-	linefw "せつめいを よく よんでおこう!"
+	text "Unlike Attacks, Pokémon Power"
+	line "can be used by Active or Benched"
+	line "Pokémon. Some Pokémon Powers are"
+	line "effective by just placing the"
+	line "Pokémon in the Play Area, but for"
+	line "some you must choose the"
+	line "command, PKMN Power."
 	done
 
 GlossaryWeaknessDescriptionText:
-	textfw "ポケモンのなかには 「弱点(じゃくて"
-	linefw "ん)」をもっている ポケモンが いま"
-	linefw "す。「弱点」のあるポケモンは 「弱点"
-	linefw "」の いろ(タイプ)の ポケモンから"
-	linefw "うけるダメージが 2ばいに なります"
+	text "Some Pokémon have a Weakness."
+	line "If a Pokémon has a Weakness, it"
+	line "takes double damage when attacked by"
+	line "Pokémon of a certain type."
 	done
 
 GlossaryResistanceDescriptionText:
-	textfw "ポケモンのなかには 「抵抗力(ていこ"
-	linefw "うりょく)」をもっている ポケモンが"
-	linefw "います。「抵抗力」を もっているポケ"
-	linefw "モンは 「抵抗力」のいろ(タイプ)の"
-	linefw "ポケモンから うけるダメージを"
-	linefw "「-30」します。"
+	text "Some Pokémon have Resistance."
+	line "If a Pokémon has Resistance, it"
+	line "takes 30 less damage whenever"
+	line "attacked by Pokémon of"
+	line "a certain type."
 	done
 
 GlossaryRetreatDescriptionText:
-	textfw "バトル場にいる 対戦ポケモンを ベン"
-	linefw "チに 「にがす」ことによって バトル"
-	linefw "場と ベンチのポケモンを いれかえる"
-	linefw "ことが できます。"
-	linefw "バトル場のポケモンを 「にがす」にも"
-	linefw "エネルギーが ひつようです。 ひつよ"
-	linefw "うなエネルギーの数は ポケモンによっ"
-	linefw "て さまざまですので ひつような エ"
-	linefw "ネルギーの数だけ エネルギーカードを"
-	linefw "トラッシュしてください。"
+	text "By choosing Retreat, you can"
+	line "switch the Active Pokémon with"
+	line "a Pokémon on your Bench."
+	line "Energy is required to Retreat"
+	line "your Active Pokémon."
+	line "The amount of Energy required to"
+	line "Retreat differs for each Pokémon."
+	line "To Retreat, you must discard"
+	line "Energy equal to the Retreat Cost"
+	line "of the retreating Pokémon."
 	done
 
 GlossaryPoisonedDescriptionText:
-	textfw "ポケモンが 「どく」状態に なると"
-	linefw "「どく」状態のポケモンは ポケモンチ"
-	linefw "ェックのたびに 「10」ダメージを"
-	linefw "うけつづけることに なります。"
-	linefw "「どく」状態を なおすには"
-	linefw "ポケモンを ベンチへ にがしたり"
-	linefw "トレーナーカード「なんでもなおし」を"
-	linefw "つかう ほうほうがあります。"
-	linefw "ほかには ポケモンを 進化させたり"
-	linefw "退化させることでも なおすことが"
-	linefw "できます。"
+	text "When your Pokémon is poisoned, it"
+	line "will continue to lose HP."
+	line "The poisoned Pokémon will lose"
+	line "10 HP at the end of each player's"
+	line "turn. To heal a Poisoned Pokémon,"
+	line "you may retreat it to the Bench"
+	line "or use the Trainer card, Full Heal."
+	line "Evolving or Devolving the Pokémon"
+	line "are other ways of healing it."
 	done
 
 GlossaryParalyzedDescriptionText:
-	textfw "ポケモンが 「マヒ」状態になると"
-	linefw "そのポケモンは なにもできなくなる。"
-	linefw "「にげる」ことも できないし"
-	linefw "「とくしゅ」も「ワザ」も つかえない"
-	linefw "「マヒ」状態は かけられたプレイヤー"
-	linefw "の 番のおわりに しぜんに なおる。"
-	linefw "「なんでもなおし」を つかったり"
-	linefw "進化や退化しても 「マヒ」をなおす"
-	linefw "ことができます。"
-	linefw "また 「マヒ」状態のポケモンを ベン"
-	linefw "チへ いどうさせても かいふくします"
+	text "When a Pokémon is paralyzed, it"
+	line "is unable to do anything. It cannot"
+	line "retreat, attack or use Pokémon"
+	line "Power. Paralysis lasts until the"
+	line "end of the paralyzed player's turn."
+	line "Paralysis can be healed with"
+	line "Full Heal and Evolution cards."
+	line "It can also be healed by moving"
+	line "the Paralyzed Pokémon to the Bench."
 	done
 
 GlossaryAsleepDescriptionText:
-	textfw "ポケモンが 「ねむり」状態になると"
-	linefw "そのポケモンは なにもできなくなる"
-	linefw "「にげる」も「ワザ」も「とくしゅ」も"
-	linefw "つかうことは できません"
-	linefw "「ねむり」状態は ポケモンチェックで"
-	linefw "コインをなげて 「おもて」なら"
-	linefw "目がさめますが 「うら」が でたら"
-	linefw "ねむったままに なります"
-	linefw "「なんでもなおし」を つかったり"
-	linefw "進化や退化しても 「ねむり」をなおす"
-	linefw "ことができます。"
+	text "When a Pokémon is asleep,"
+	line "it is unable to do anything."
+	line "It cannot attack, retreat or use"
+	line "Pokémon Power. A coin will be"
+	line "flipped at the end of each player's"
+	line "turn. If the coin comes up Heads,"
+	line "the Pokémon will wake up. If it's"
+	line "Tails, the Pokémon remains asleep."
+	line "Use a Full Heal, Evolve or Devolve"
+	line "it to wake it up!"
 	done
 
 GlossaryConfusedDescriptionText:
-	textfw "ポケモンが 「こんらん」状態になると"
-	linefw "そのポケモンが ワザをつかうときには"
-	linefw "コイントスを おこなう。"
-	linefw "コインをなげて 「おもて」が でれば"
-	linefw "「ワザ」は ふつうどうりに つかえる"
-	linefw "「うら」が出ると 「ワザ」しっぱい!"
-	linefw "わけもわからず じぶんをこうげきして"
-	linefw "じぶんに 20ダメージとなる。"
-	linefw "「にげる」ときにも コイントスがあり"
-	linefw "「おもて」は にげられ 「うら」は"
-	linefw "にげられない。なお 「どく」とおなじ"
-	linefw "ほうほうで 「こんらん」は なおせる"
+	text "When a Confused Pokémon tries to"
+	line "attack or retreat, you must flip"
+	line "a coin! If it's Heads, the action is"
+	line "successful, but if it's Tails, the"
+	line "Pokémon will attack itself for 20"
+	line "damage, or fail to retreat,"
+	line "respectively! Confusion can be"
+	line "healed in the same ways as Poison!"
 	done
 
 GlossaryDecision1TakenAllPrizesDescriptionText:
-	textfw "ポケモンのHPが なくなると"
-	linefw "そのポケモンは 「きぜつ」となります"
-	linefw "あいてのポケモンが 「きぜつ」すると"
-	linefw "「きぜつ」したポケモン 1ぴきにつき"
-	linefw "サイドカードが 1枚ひける。"
-	linefw "このようにして あいてのポケモンを"
-	linefw "「きぜつ」させて サイドカードを"
-	linefw "すべて ひいたほうが 勝ちとなる。"
-	linefw "つまり 対戦のはじめに セットした"
-	linefw "サイドカードのかずだけ あいてのポケ"
-	linefw "モンを 「きぜつ」させると 対戦に"
-	linefw "しょうりしたことに なります。"
+	text "When a Pokémon loses all of"
+	line "its HP, the Pokémon is Knocked Out."
+	line "Place it and all attached Energy"
+	line "cards in the Discard Pile."
+	line "Each time you Knock Out 1"
+	line "of your opponent's Pokémon,"
+	line "you draw 1 of your Prize cards"
+	line "and place it in your Hand."
+	line "When you've taken all"
+	line "of your Prizes, you win the game."
 	done
 
 GlossaryDecision2DeckedOutDescriptionText:
-	textfw "じぶんの番の はじめに 山札から"
-	linefw "カードを ひくときに 山札にカードが"
-	linefw "1枚もなくて カードを ひくことが"
-	linefw "できなかったとき そのひとは 対戦に"
-	linefw "まけたことに なります。"
-	linefw "山札は さまざまなカードのこうかで"
-	linefw "どんどん ひくことが ありますが"
-	linefw "山札のカードの のこり枚数には"
-	linefw "きを つけましょう。"
+	text "You also win if your opponent's"
+	line "Deck is out of cards at the start"
+	line "of your opponent's turn. Be"
+	line "careful not to run out of cards!"
 	done
 
 GlossaryDecision3RunOutOfPokemonDescriptionText:
-	textfw "バトル場の ポケモンが 「きぜつ」"
-	linefw "したとき つぎに バトル場に だせる"
-	linefw "ひかえのポケモンが ベンチにいないと"
-	linefw "まけになってしまいます。"
-	linefw "ですから ベンチに ひかえポケモンを"
-	linefw "だしておくように こころがけましょう"
+	text "You also win if your opponent has"
+	line "no Pokémon left on the Bench"
+	line "after you have Knocked Out his or"
+	line "her Active Pokémon. Be sure to"
+	line "keep enough Pokémon on your Bench."
 	done
 
 GlossarySuddenDeathDescriptionText:
-	textfw "じぶんと あいてが サイドカードを"
-	linefw "どうじに すべて とってしまったり"
-	linefw "どちらも バトル場に ポケモンを"
-	linefw "だすことが できなくて"
-	linefw "「ひきわけ」に なったばあいは"
-	linefw "「サドン・デス」を おこないます。"
-	linefw "「サドン・デス」はサイドカード1枚で"
-	linefw "もういちど 対戦します。"
-	linefw "それでも しょうぶが つかないときは"
-	linefw "「サドン・デス」を くりかえします。"
+	text "If a duel ends in a draw, such as"
+	line "when both players take their last"
+	line "Prize card at the same time, or"
+	line "when neither player has a Pokémon"
+	line "left in the Arena, a Sudden Death"
+	line "match is played."
+	line "In Sudden Death, players duel"
+	line "again using only 1 Prize card."
+	line "If the match ends in another draw,"
+	line "Sudden Death is repeated until a"
+	line "winner is decided."
 	done
 
 GlossaryChlorophyllDescriptionText:
-	textfw "特別ルール1"
-	linefw "「みどりのちから」"
-	linefw ""
-	linefw "この対戦では 「草ポケモン」は"
-	linefw "「どく・マヒ・こんらん・ねむり」の"
-	linefw "状態に ならない"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 1: Chlorophyll"
+	line ""
+	line "For this Duel, <GRASS> Pokémon cannot"
+	line "become Asleep, Confused, Paralyzed,"
+	line "or Poisoned."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryThunderChargeDescriptionText:
-	textfw "特別ルール2"
-	linefw "「雷パワーアップ」"
-	linefw ""
-	linefw "この対戦では 「雷ポケモン」が"
-	linefw "ワザによって あいての対戦ポケモンに"
-	linefw "あたえるダメージが 「+10」される"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 2: Thunder Charge"
+	line ""
+	line "For this Duel, when a <LIGHTNING> Pokémon"
+	line "attacks, the Defending Pokémon"
+	line "receives 10 more damage."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryFlameArmorDescriptionText:
-	textfw "特別ルール3"
-	linefw "「ほのおのよろい」"
-	linefw ""
-	linefw "この対戦では 「炎ポケモン」は"
-	linefw "「水ポケモン」からの ワザによる"
-	linefw "ダメージにたいして 弱点の"
-	linefw "えいきょうをうけない。"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 3: Flame Armor"
+	line ""
+	line "For this Duel, when a <WATER> Pokémon"
+	line "attacks a <FIRE> Pokémon, don't apply"
+	line "Weakness."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossarySmallBenchDescriptionText:
-	textfw "特別ルール4"
-	linefw "「せまいベンチ」"
-	linefw ""
-	linefw "この対戦では おたがいのベンチ数が"
-	linefw "「3」になる"
-	linefw "(「ひかえポケモン」のおける数が"
-	linefw " 「3」びきになる)"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 4: Small Bench"
+	line ""
+	line "For this Duel, each player's Bench"
+	line "can only have up to 3 Pokémon."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryRunningWaterDescriptionText:
-	textfw "特別ルール5"
-	linefw "「にげみずの場」"
-	linefw ""
-	linefw "この対戦では"
-	linefw "「水ポケモン」が 「にげる」ときに"
-	linefw "ひつような エネルギーの数が"
-	linefw "「-1」される"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 5: Running Water"
+	line ""
+	line "For this Duel, <WATER> Pokémon pay <COLORLESS>"
+	line "less to retreat to the Bench."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryEarthPowerDescriptionText:
-	textfw "特別ルール6"
-	linefw "「だいちのちから」"
-	linefw ""
-	linefw "この対戦では 「闘ポケモン」が"
-	linefw "あたえるダメージは 抵抗力の"
-	linefw "えいきょうをうけず そのままあたえる"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 6: Earth Power"
+	line ""
+	line "For this Duel, when a <FIGHTING> Pokémon"
+	line "attacks, don't apply Resistance."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryLowResistanceDescriptionText:
-	textfw "特別ルール7"
-	linefw "「抵抗力ていか」"
-	linefw ""
-	linefw "この対戦では 抵抗力のえいきょうを"
-	linefw "「-30」から「-10」に"
-	linefw "へんこうする"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 7: Low Resistance"
+	line ""
+	line "For this Duel, the effect of"
+	line "Resistance is changed from -30"
+	line "damage to -10 damage."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryEnergyReturnDescriptionText:
-	textfw "特別ルール8"
-	linefw "「エネルギーリターン(R)」"
-	linefw ""
-	linefw "この対戦では 場にいるポケモンが"
-	linefw "トラッシュされるとき そのポケモンに"
-	linefw "ついている「基本エネルギーカード」は"
-	linefw "そのポケモンの もちぬしの手札に"
-	linefw "もどる。"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 8: Energy Return"
+	line ""
+	line "For this Duel, when a Pokémon is"
+	line "discarded from play, all Energy"
+	line "cards attached to it return to the"
+	line "Hand."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryToughEscapeDescriptionText:
-	textfw "特別ルール9"
-	linefw "「にげにくい場」"
-	linefw ""
-	linefw "この対戦では 「対戦ポケモン」が"
-	linefw "バトル場から 「にげる」ときに"
-	linefw "トラッシュする エネルギーの数が"
-	linefw "「+1」される。"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 9: Tough Escape"
+	line ""
+	line "For this Duel, all Pokémon pay <COLORLESS>"
+	line "more to retreat to the Bench."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 GlossaryBlackHoleDescriptionText:
-	textfw "特別ルール10"
-	linefw "「トラッシュブラックホール(BH)」"
-	linefw ""
-	linefw "この対戦では トラッシュしたカードは"
-	linefw "この対戦中は つかえなくなる。"
-	linefw "(トラッシュには つねに カードが"
-	linefw " ない状態になっている)"
-	linefw ""
-	linefw "※対戦者が していしてきたときだけ"
-	linefw " 「特別ルール」で 対戦となります"
+	text "Special Rule 10: Black Hole"
+	line ""
+	line "For this Duel, the Discard Pile is"
+	line "always empty. Discarded cards are"
+	line "permanently removed from play."
+	line ""
+	line "A Duel is only played under this"
+	line "Special Rule when it is presented"
+	line "before the Duel begins."
 	done
 
 DebugDeckMenuText:
-	textfw "デッキかいぞう"
-	linefw "カードいちらん(全しさん)"
-	linefw "アルバムいちらん"
-	linefw "デッキきろくマシン"
-	linefw "いんさつメニュー"
-	linefw "オートデッキマシン"
-	linefw "ギフトセンター"
-	linefw "デッキしんだん"
+	text "Modify Deck"
+	line "Card List (All Owned)"
+	line "Album List"
+	line "Deck Save Machine"
+	line "Print Menu"
+	line "Auto Deck Machine"
+	line "Gift Center"
+	line "Deck Diagnosis"
 	done
 
 DebugAutoDeckMachineMenuText:
-	textfw "オートデッキマシン1"
-	linefw "オートデッキマシン2"
+	text "Auto Machine 1"
+	line "Auto Machine 2"
 	done
 
 DebugTransmittingMenuText:
-	textfw "カードあげる"
-	linefw "カードもらう"
-	linefw "デッキあげる"
-	linefw "デッキもらう"
+	text "Send Card"
+	line "Receive Card"
+	line "Send Deck Configuration"
+	line "Receive Deck Configuration"
 	done
 
 DebugLectureDuelText:
-	textfw "レクチャー対戦"
+	text "Lecture Duel"
 	done
 
 ThunderboltDeckName:
@@ -621,23 +571,23 @@ ThunderboltDeckName:
 	done
 
 DuelistGR1Name:
-	textfw "GR1号"
+	text "GR1"
 	done
 
 DuelistGR2Name:
-	textfw "GR2号"
+	text "GR2"
 	done
 
 DuelistGR3Name:
-	textfw "GR3号"
+	text "GR3"
 	done
 
 DuelistGR4Name:
-	textfw "GR4号"
+	text "GR4"
 	done
 
 DuelistGRXName:
-	textfw "GRX"
+	text "GRX"
 	done
 
 MaxEnergyDeckName:
@@ -645,7 +595,7 @@ MaxEnergyDeckName:
 	done
 
 DuelistMrIshiharaName:
-	textfw "M<RDOT>イシハラ"
+	text "Ishihara"
 	done
 
 DemonicForestDeckName:
@@ -665,7 +615,7 @@ RainDanceConfusionDeckName:
 	done
 
 DuelistAaronName:
-	textfw "あらいモン"
+	text "Aaron"
 	done
 
 AaronsStep1DeckName:
@@ -925,19 +875,19 @@ BadGuysDeckName:
 	done
 
 DuelistAiraName:
-	textfw "アイラ"
+	text "Alex"
 	done
 
 DuelistKenName:
-	textfw "アカバネ"
+	text "Ken"
 	done
 
 DuelistBrittanyName:
-	textfw "アヤコ"
+	text "Brittany"
 	done
 
 DuelistAnnaName:
-	textfw "アンナ"
+	text "Anna"
 	done
 
 EeveeShowdownDeckName:
@@ -945,15 +895,15 @@ EeveeShowdownDeckName:
 	done
 
 DuelistIshiiName:
-	textfw "イシイ"
+	text "Avery"
 	done
 
 DuelistIchikawaName:
-	textfw "イチカワ"
+	text "Chip"
 	done
 
 DuelistImakuniName:
-	textfw "イマクニ?"
+	text "Imakuni?"
 	done
 
 WaterStreamDeckName:
@@ -965,7 +915,7 @@ WaterLegendDeckName:
 	done
 
 DuelistAmyName:
-	textfw "ウッチー"
+	text "Amy"
 	done
 
 UltraRemovalDeckName:
@@ -973,7 +923,7 @@ UltraRemovalDeckName:
 	done
 
 DuelistEijiName:
-	textfw "エイジ"
+	text "Axel"
 	done
 
 EnergyRemovalDeckName:
@@ -985,11 +935,11 @@ OverflowDeckName:
 	done
 
 DuelistJackName:
-	textfw "カネコウジ"
+	text "Jack"
 	done
 
 DuelistKanokoName:
-	textfw "カノコ"
+	text "Brooke"
 	done
 
 SnorlaxGuardDeckName:
@@ -997,27 +947,27 @@ SnorlaxGuardDeckName:
 	done
 
 DuelistKamiyaName:
-	textfw "カミヤ"
+	text "Brutus"
 	done
 
 DuelistKanzakiName:
-	textfw "カンザキ"
+	text "Clay"
 	done
 
 DuelistCatherineName:
-	textfw "キャサリン"
+	text "Catherine"
 	done
 
 DuelistQueenName:
-	textfw "クィーン"
+	text "Queen"
 	done
 
 DuelistNikkiName:
-	textfw "クニミ"
+	text "Nikki"
 	done
 
 DuelistRickName:
-	textfw "クルシマ"
+	text "Rick"
 	done
 
 GrandFireDeckName:
@@ -1025,7 +975,7 @@ GrandFireDeckName:
 	done
 
 DuelistGraceName:
-	textfw "グレース"
+	text "Grace"
 	done
 
 GreatRocket1DeckName:
@@ -1045,19 +995,19 @@ GreatRocket4DeckName:
 	done
 
 DuelistDanielName:
-	textfw "ケイタ"
+	text "Daniel"
 	done
 
 DuelistKevinName:
-	textfw "ケビン"
+	text "Kevin"
 	done
 
 DuelistGeneName:
-	textfw "ゲンゾウ"
+	text "Gene"
 	done
 
 DuelistGodaName:
-	textfw "ゴウダ"
+	text "Tony"
 	done
 
 PsychicBattleDeckName:
@@ -1069,7 +1019,7 @@ PsychicDeckName:
 	done
 
 DuelistSamejimaName:
-	textfw "サメジマ"
+	text "Alan"
 	done
 
 AwesomeFossilDeckName:
@@ -1077,19 +1027,19 @@ AwesomeFossilDeckName:
 	done
 
 DuelistShokoName:
-	textfw "ショウコ"
+	text "Ellen"
 	done
 
 DuelistJoshuaName:
-	textfw "シンタロー"
+	text "Joshua"
 	done
 
 DuelistJesName:
-	textfw "ジェス"
+	text "Jess"
 	done
 
 DuelistAndrewName:
-	textfw "ジョータ"
+	text "Andrew"
 	done
 
 SkySparkDeckName:
@@ -1097,35 +1047,35 @@ SkySparkDeckName:
 	done
 
 DuelistSteveName:
-	textfw "スティーブ"
+	text "Steve"
 	done
 
 DuelistSentaName:
-	textfw "センタ"
+	text "Cody"
 	done
 
 DuelistNicholasName:
-	textfw "ソウスケ"
+	text "Nicholas"
 	done
 
 DuelistJosephName:
-	textfw "ソウタ"
+	text "Joseph"
 	done
 
 DuelistJohnName:
-	textfw "タカシ"
+	text "John"
 	done
 
 DuelistIsaacName:
-	textfw "タカハシ"
+	text "Isaac"
 	done
 
 DuelistTapName:
-	textfw "タップ"
+	text "Peter"
 	done
 
 DuelistChrisName:
-	textfw "タツロー"
+	text "Chris"
 	done
 
 DarkScienceDeckName:
@@ -1141,19 +1091,19 @@ TextureTuner7DeckName:
 	done
 
 DuelistDeeName:
-	textfw "ディー"
+	text "Frank"
 	done
 
 DuelistBrandonName:
-	textfw "トシヒコ"
+	text "Brandon"
 	done
 
 DuelistToshironName:
-	textfw "トシロン"
+	text "Warren"
 	done
 
 DuelistTobichanName:
-	textfw "トビちゃん"
+	text "Toby"
 	done
 
 TripleZapdosDeckName:
@@ -1165,15 +1115,15 @@ TrainerImprisonDeckName:
 	done
 
 YourPracticeDeck1Name:
-	textfw "トレーニング1"
+	text "Training 1"
 	done
 
 YourPracticeDeck2Name:
-	textfw "トレーニング2"
+	text "Training 2"
 	done
 
 YourPracticeDeck3Name:
-	textfw "トレーニング3"
+	text "Training 3"
 	done
 
 RagingBillowOfFistsDeckName:
@@ -1185,15 +1135,15 @@ SteadyIncreaseDeckName:
 	done
 
 DuelistKnightName:
-	textfw "ナイト"
+	text "Knight"
 	done
 
 DuelistJessicaName:
-	textfw "ナツキ"
+	text "Jessica"
 	done
 
 DuelistNishijimaName:
-	textfw "ニシジマ"
+	text "Seth"
 	done
 
 NewMachokeDeckName:
@@ -1201,11 +1151,11 @@ NewMachokeDeckName:
 	done
 
 DuelistRyanName:
-	textfw "ノリオ"
+	text "Ryan"
 	done
 
 DuelistKristinName:
-	textfw "ハルナ"
+	text "Kristin"
 	done
 
 BadDreamDeckName:
@@ -1217,19 +1167,19 @@ LoveToBattleDeckName:
 	done
 
 DuelistHideroName:
-	textfw "ヒデロウ"
+	text "Bernard"
 	done
 
 DuelistRobertName:
-	textfw "ヒロ"
+	text "Robert"
 	done
 
 DuelistCourtneyName:
-	textfw "ヒロコ"
+	text "Courtney"
 	done
 
 DuelistBishopName:
-	textfw "ビショップ"
+	text "Bishop"
 	done
 
 BigThunderDeckName:
@@ -1241,11 +1191,11 @@ ElectricSelfDestructDeckName:
 	done
 
 DuelistBiruritchiName:
-	textfw "ビルリッチ"
+	text "Villicci"
 	done
 
 DuelistPierrotName:
-	textfw "ピエロ"
+	text "Pierrot"
 	done
 
 ILovePikachuDeckName:
@@ -1265,7 +1215,7 @@ BenchCallDeckName:
 	done
 
 DuelistPawnName:
-	textfw "ポーン"
+	text "Pawn"
 	done
 
 PoisonStormDeckName:
@@ -1281,43 +1231,43 @@ PokemonsPowerDeckName:
 	done
 
 DuelistErikName:
-	textfw "マサシ"
+	text "Erik"
 	done
 
 DuelistJonathanName:
-	textfw "マサトシ"
+	text "Jonathan"
 	done
 
 DuelistMichaelName:
-	textfw "マサヒロ"
+	text "Michael"
 	done
 
 DuelistMagicianName:
-	textfw "マジシャン"
+	text "Magician"
 	done
 
 DuelistMasqueradeName:
-	textfw "マスカレード"
+	text "Masquerade"
 	done
 
 ParalyzedParalyzedDeckName:
-	text "Paralyzed!Paralyzed!"
+	text "Paralyze! Paralyze!!"
 	done
 
 DuelistMamiName:
-	textfw "マミ"
+	text "Claire"
 	done
 
 DuelistSaraName:
-	textfw "マリ"
+	text "Sara"
 	done
 
 DuelistMurrayName:
-	textfw "ミウラ"
+	text "Murray"
 	done
 
 DuelistSamName:
-	textfw "ミカサ"
+	text "Sam"
 	done
 
 SamsPracticeDeckName:
@@ -1325,67 +1275,67 @@ SamsPracticeDeckName:
 	done
 
 DuelistHeatherName:
-	textfw "ミサオ"
+	text "Heather"
 	done
 
 DuelistMidoriName:
-	textfw "ミドリ"
+	text "Melissa"
 	done
 
 DuelistMiyajimaName:
-	textfw "ミヤジマ"
+	text "Jacob"
 	done
 
 DuelistMiyukiName:
-	textfw "ミユキ"
+	text "Liz"
 	done
 
 DuelistMiwaName:
-	textfw "ミワ"
+	text "Victoria"
 	done
 
 DuelistAmandaName:
-	textfw "メグミ"
+	text "Amanda"
 	done
 
 DuelistMorinoName:
-	textfw "モリノ"
+	text "Parker"
 	done
 
 DuelistMatthewName:
-	textfw "ヤストモ"
+	text "Matthew"
 	done
 
 DuelistDavidName:
-	textfw "ヤスユキ"
+	text "David"
 	done
 
 DuelistMitchName:
-	textfw "ヤマグチ"
+	text "Mitch"
 	done
 
 DuelistYuiName:
-	textfw "ユイ"
+	text "Mary"
 	done
 
 DuelistYukiName:
-	textfw "ユウキ"
+	text "Kara"
 	done
 
 DuelistYutaName:
-	textfw "ユウタ"
+	text "James"
 	done
 
 DuelistJenniferName:
-	textfw "ユカ"
+	text "Jennifer"
 	done
 
 DuelistYosukeName:
-	textfw "ヨウスケ"
+	text "Clyde"
 	done
 
 DuelistRonaldName:
-	textfw "ランド"
+	text "Ronald"
 	done
 
 RonaldsGRXDeckName:
@@ -1400,8 +1350,6 @@ RonaldsUltraDeckName:
 	text "Ronald's Ultra"
 	done
 
-SECTION "Text 5", ROMX
-
 RonaldsSuperDeckName:
 	text "Ronald's Super"
 	done
@@ -1411,23 +1359,23 @@ RonaldsPowerDeckName:
 	done
 
 DuelistStephanieName:
-	textfw "リエ"
+	text "Stephanie"
 	done
 
 DuelistRodName:
-	textfw "リュウドー"
+	text "Rod"
 	done
 
 DuelistRyokoName:
-	textfw "リョウコ"
+	text "Heidi"
 	done
 
 DuelistRookName:
-	textfw "ルーク"
+	text "Rook"
 	done
 
 DuelistRuiName:
-	textfw "ルイ"
+	text "Allison"
 	done
 
 PracticeDeckName:
@@ -1435,7 +1383,7 @@ PracticeDeckName:
 	done
 
 DuelistRennaName:
-	textfw "レンナ"
+	text "Cassie"
 	done
 
 RollingStoneDeckName:
@@ -1447,406 +1395,420 @@ RockBlastDeckName:
 	done
 
 DuelistAdamName:
-	textfw "ワタルン"
+	text "Adam"
 	done
 
 DuelistMainCharacterName:
-	textfw "主人公"
+	text "Hero"
 	done
 
 DrMasonText:
-	textfw "D<RDOT>オーヤマ"
+	text "Dr. Mason"
 	done
 
 PracticeDuelHeaderPlayersTurnNumberText:
-	textfw "<RAMNAME>の<RAMNUM>手目"
+	text "<RAMNAME>'s turn <RAMNUM>"
 	done
 
 PracticeDuelHeaderKnockedOutReplaceText:
-	textfw "「きぜつ」によるいれかえ"
+	text " Replace due to Knockout "
 	done
 
 PracticeDuelMasonSetupsActivePokemonText:
-	textfw "手札を 7枚ひいたら"
-	linefw "対戦のじゅんびじゃ"
-	linefw "バトル場にセットする ポケモンを"
-	linefw "手札から えらぶんじゃ"
-	linefw "このとき バトル場にセットできるのは"
-	linefw "「たねポケモン」だけじゃから"
-	linefw "「ディグダ」か 「ポッポ」だが"
-	linefw "ここは 「ディグダ」を セットじゃ"
+	text "Draw 7 cards,"
+	line ""
+	line "and get ready for the battle!"
+	line "Choose your Active Pokémon."
+	line "You can only choose Basic Pokémon"
+	line "as your Active Pokémon,"
+	line "so you can choose either Diglett"
+	line "or Pidgey."
+	line "For our practice duel,"
+	line "choose Diglett."
 	done
 
 PracticeDuelMasonSetupsActivePokemonIncorrectText:
-	textfw "とりあえず こんかいは"
-	linefw "「ディグダ」を えらぶのじゃ"
+	text "Choose Diglett for this"
+	line "practice duel, OK?"
 	done
 
 PracticeDuelMasonSetupsBenchedPokemonText:
-	textfw "さて つぎは ベンチに"
-	linefw "ポケモンを セットするんじゃ"
-	linefw "ベンチのポケモンは バトル場の"
-	linefw "ポケモンの ひかえのポケモンじゃ"
-	linefw "ベンチに セットできるのも"
-	linefw "「たねポケモン」だけじゃから"
-	linefw "てふだから 「ポッポ」をえらんで"
-	linefw "ベンチに セットするんじゃ"
+	text "Next, put your Pokémon on your"
+	line "Bench."
+	line "You can switch Benched Pokémon"
+	line "with your Active Pokémon."
+	line "Again, only Basic Pokémon can be"
+	line "placed on your Bench."
+	line "Choose Pidgey from your Hand and"
+	line "put it there."
 	done
 
 PracticeDuelMasonSetupsBenchedPokemonIncorrectText:
-	textfw "とりあえず こんかいは"
-	linefw "「ポッポ」を セットするんじゃ"
+	text "Choose Pidgey for this"
+	line "practice duel, OK?"
 	done
 
 PracticeDuelMasonSetupsFinishPressBText:
-	textfw "だすポケモンが いないときは"
-	linefw "Bボタンをおして おわりじゃ"
+	text "When you have no Pokémon to put on"
+	line "your Bench, press the B Button to"
+	line "finish."
 	done
 
 PracticeDuelTurn1Instr1Text:
-	textfw "1ˍメニューの「てふだ」を せんたく"
-	linefw "  「闘エネルギー」を えらぶ"
+	text "1. Choose Hand from the Menu."
+	line "   Select a Fighting Energy card."
 	done
 
 PracticeDuelTurn1Instr2Text:
-	textfw "2ˍ「闘エネルギー」を バトル場の"
-	linefw "  「ディグダ」に つける"
+	text "2. Attach a Fighting Energy card to"
+	line "   your Active Pokémon, Diglett."
 	done
 
 PracticeDuelTurn1Instr3Text:
-	textfw "3ˍメニューの「ワザ」を えらんで"
-	linefw "  「あなをほる」で えらぶ"
+	text "3. Choose Attack from the Menu"
+	line "   and select Dig."
 	done
 
 PracticeDuelTurn1Mason1Text:
-	textfw "ポケモンのワザを つかうには"
-	linefw "エネルギーが ひつようなんじゃ"
-	linefw "メニューの「てふだ」を せんたく"
-	linefw "「闘エネルギー」を えらぶんじゃ"
+	text "To use the attack command, you need"
+	line "to attach Energy cards to your"
+	line "Pokémon."
+	line ""
+	line "Choose Cards from the Menu, and"
+	line "select a Fighting Energy card."
 	done
 
 PracticeDuelTurn1Mason2Text:
-	textfw "つぎに バトル場の「ディグダ」を"
-	linefw "えらんで Aボタン"
-	linefw "これで 「ディグダ」に"
-	linefw "「闘エネルギー」を つけられるんじゃ"
+	text "Next, choose your Active Pokémon,"
+	line "Diglett, and press the A Button."
+	line "Then the Fighting Energy card"
+	line "will be attached to Diglett."
 	done
 
 PracticeDuelTurn1Mason3Text:
-	textfw "そうして さいごに"
-	linefw "「ワザ」をつかって こうげきじゃ"
-	linefw "メニューの「ワザ」を せんたく"
-	linefw "「あなをほる」で こうげきじゃ"
+	text "Finally, attack your opponent by"
+	line "selecting an attack command."
+	line "Choose Attack from the Menu, and"
+	line "select Dig."
 	done
 
 PracticeDuelMasonProceedAsTaughtText:
-	textfw "さあ"
-	linefw "このとおりに やってみるんじゃ"
+	text "Now, let's play the game!"
 	done
 
 PracticeDuelMasonIncorrectRetryText:
-	textfw "これは 「れんしゅう」じゃから"
-	linefw "いわれたとおりに そうさするんじゃ"
-	linefw "もう いちど"
-	linefw "やりなおしじゃ"
+	text "This is Practice Mode, so"
+	line "please follow my guidance."
+	line "Do it again."
 	done
 
 PracticeDuelMasonExplainAgainPromptText:
-	textfw "もういちど せつめいしようか?"
+	text "Do you need to practice again?"
 	done
 
 PracticeDuelTurn2Instr1Text:
-	textfw "1ˍ「闘エネルギー」を"
-	linefw "  「ディグダ」に つける"
+	text "1. Attach a Fighting Energy card to"
+	line "   your Active Pokémon, Diglett."
 	done
 
 PracticeDuelTurn2Instr2Text:
-	textfw "2ˍ「ディグダ」の 2つめの「ワザ」"
-	linefw "  「どろかけ」で こうげきする"
+	text "2. Choose Attack and select Mud"
+	line "   Slap to attack your opponent."
 	done
 
 PracticeDuelTurn2Mason1Text:
-	textfw "「ディグダ」の 2つめの「ワザ」で"
-	linefw "こうげきするための じゅんびじゃ"
-	linefw "さらに 「ディグダ」に"
-	linefw "「闘エネルギー」を つけよう"
+	text "Let's get ready to use Diglett's"
+	line "second attack command."
+	line "Attach another Fighting Energy"
+	line "card to Diglett."
 	done
 
 PracticeDuelTurn2Mason2Text:
-	textfw "さあ 「ディグダ」のワザ"
-	linefw "「どろかけ」で こうげきじゃ"
+	text "Now, attack your opponent with"
+	line "Diglett's Mud Slap."
 	done
 
 PracticeDuelTurn3Instr1Text:
-	textfw "1ˍ「ダグトリオ」を えらんで"
-	linefw "  「ディグダ」につけて 進化"
+	text "1. Evolve Diglett by"
+	line "   attaching Dugtrio to it."
 	done
 
 PracticeDuelTurn3Instr2Text:
-	textfw "2ˍ「闘エネルギー」を 進化した"
-	linefw "  「ダグトリオ」に つける"
+	text "2. Attach a Fighting Energy card"
+	line "   to the evolved Dugtrio."
 	done
 
 PracticeDuelTurn3Instr3Text:
-	textfw "3ˍ「ダグトリオ」のワザを つかって"
-	linefw "  「きりさく」で こうげき"
+	text "3. Choose Attack and select"
+	line "   Slash to attack your"
+	line "   opponent."
 	done
 
 PracticeDuelTurn3Mason1Text:
-	textfw "このままだと 「ディグダ」が"
-	linefw "やられてしまうので 進化してみよう"
-	linefw "手札にある 「ダグトリオ」を"
-	linefw "「ディグダ」につけて 進化じゃ"
-	linefw "進化することによって"
-	linefw "HPも 30から70にUPじゃ"
+	text "Your Diglett's gonna get Knocked"
+	line "Out. Let's evolve it!"
+	line "Choose Dugtrio from your Hand and"
+	line "attach it to Diglett to"
+	line "Evolve it."
+	line "Its HP increases from 30 to 70."
 	done
 
 PracticeDuelTurn3Mason2Text:
-	textfw "「ダグトリオ」の「きりさく」を"
-	linefw "つかうには エネルギーが たりない"
-	linefw "「ダグトリオ」に さらに"
-	linefw "「闘エネルギー」を つけよう"
+	text "Your Dugtrio doesn't have enough"
+	line "Energy to use Slash."
+	line "You need to attach an Energy card"
+	line "to Dugtrio."
+	line "Attach a Fighting Energy card."
 	done
 
 PracticeDuelTurn3Mason3Text:
-	textfw "これで 「ダグトリオ」のワザ"
-	linefw "「きりさく」を つかえるぞ"
-	linefw "「ダグトリオ」の 「きりさく」で"
-	linefw "「パウワウ」を こうげきじゃ"
-	linefw "「パウワウ」を 「きぜつ」させたので"
-	linefw "サイドカードを 1枚ひくんじゃ"
+	text "Now let's attack your opponent with"
+	line "Dugtrio's Slash!"
+	line "Now Seel's HP is 0 and it is"
+	line "Knocked Out."
+	line "When you Knock Out the Defending"
+	line "Pokémon, you can pick up a"
+	line "Prize."
 	done
 
 PracticeDuelTurn4Instr1Text:
-	textfw "1ˍ「ニドラン♂」を 手札から"
-	linefw "  えらんで ベンチに だす"
+	text "1. Take Nidoran♂ from your Hand"
+	line "   and put it on your Bench."
 	done
 
 PracticeDuelTurn4Instr2Text:
-	textfw "2ˍ「草エネルギー」を ベンチの"
-	linefw "  「ニドラン♂」に つける"
+	text "2. Attach a Grass Energy card to"
+	line "   your Benched Nidoran♂."
 	done
 
 PracticeDuelTurn4Instr3Text:
-	textfw "3ˍ「ダグトリオ」のワザを つかって"
-	linefw "  「きりさく」で こうげき"
+	text "3. Choose Dugtrio and attack your"
+	line "   opponent with Slash."
 	done
 
 PracticeDuelTurn4Mason1Text:
-	textfw "じぶんの場に ポケモンが 1ぴきも"
-	linefw "いなくなると まけになるんじゃ"
-	linefw "ベンチに いまひいた たねポケモンの"
-	linefw "「ニドラン♂」を だしておこう"
+	text "When all your Pokémon are Knocked"
+	line "Out and there are no Pokémon on your"
+	line "Bench, you lose the game."
+	line ""
+	line "Put Nidoran♂, the Basic Pokémon"
+	line "you just drew, on your Bench."
 	done
 
 PracticeDuelTurn4Mason2Text:
-	textfw "「ニドラン♂」に 「草エネルギー」を"
-	linefw "つけて ワザの じゅんびじゃ"
+	text "Attach a Grass Energy card to"
+	line "Nidoran♂ to get it ready to"
+	line "attack."
 	done
 
 PracticeDuelTurn4Mason3Text:
-	textfw "そして 「ダグトリオ」は"
-	linefw "「きりさく」で こうげきじゃ"
+	text "Choose your Active Dugtrio and"
+	line "attack your opponent with Slash."
 	done
 
 PracticeDuelKnockedOutInstr1Text:
-	textfw "1ˍ「ダグトリオ」が きぜつしたので"
-	linefw "  ベンチの 「ニドラン♂」を"
-	linefw "  えらんで Aボタンで だす"
+	text "1. Your Dugtrio was Knocked Out."
+	line "   Choose your Benched Nidoran♂"
+	line "   and press the A Button to set"
+	line "   it as your Active Pokémon."
 	done
 
 PracticeDuelKnockedOutInstr2Text:
+	text "2. You can check Pokémon data by"
+	line "   pressing SELECT."
 	done
 
 PracticeDuelKnockedOutMason1Text:
-	textfw "「きぜつ」した ポケモンのかわりに"
-	linefw "ベンチのポケモンを だすのじゃ"
-	linefw "だせるポケモンは ベンチにいる"
-	linefw "「ポッポ」か 「ニドラン♂」じゃが"
-	linefw "ここは 「ニドラン♂」を"
-	linefw "バトル場に だしておくのじゃ"
+	text "Choose a Benched Pokémon to replace"
+	line "your Knocked Out Pokémon."
+	line "You now have Pidgey and Nidoran♂"
+	line "on your Bench."
+	line "Choose Nidoran♂ as the Active"
+	line "Pokémon for this practice duel."
 	done
 
 PracticeDuelKnockedOutMason2Text:
-	textfw "このとき SELECTボタンで"
-	linefw "さまざまなじょうほうを かくにんじゃ"
-	linefw "手札や 場のじょうたいを"
-	linefw "かくにんするのは たいせつじゃ"
+	text "Here, press SELECT to"
+	line "check Pokémon data."
+	line "It is important to know your cards"
+	line "and the status of your Pokémon."
 	done
 
 PracticeDuelKnockedOutMasonIncorrectText:
-	textfw "ここは"
-	linefw "「ニドラン♂」を えらぶんじゃ"
+	text "Select Nidoran♂ for this practice,"
+	line "OK?"
 	done
 
 PracticeDuelTurn5Instr1Text:
-	textfw "1ˍ「ワンリキー」を 手札から"
-	linefw "  えらんで ベンチに だす"
+	text "1. Take Machop from your Hand"
+	line "   and put it on your Bench."
 	done
 
 PracticeDuelTurn5Instr2Text:
-	textfw "2ˍ「草エネルギー」を バトル場の"
-	linefw "  「ニドラン♂」に つける"
+	text "2. Choose a Grass Energy card from"
+	line "   your Hand and attach it to"
+	line "   Nidoran♂."
 	done
 
 PracticeDuelTurn5Instr3Text:
-	textfw "3ˍ「ニドラン♂」のワザ"
-	linefw "  「つのでつつく」で こうげき"
+	text "3. Choose Nidoran♂ and attack your"
+	line "   opponent with Horn Hazard."
 	done
 
 PracticeDuelTurn5Mason1Text:
-	textfw "まずは ベンチのポケモンの"
-	linefw "ほじゅうじゃな"
-	linefw "いまひいた 「ワンリキー」を"
-	linefw "ベンチに だしておこう"
+	text "First, attach Energy cards to your"
+	line "Benched Pokémon to get them ready"
+	line "for battle."
+	line ""
+	line "Put Machop, the Basic Pokémon"
+	line "you just drew, on your Bench."
 	done
 
 PracticeDuelTurn5Mason2Text:
-	textfw "「ニドラン♂」は 「ニドリーノ」に"
-	linefw "進化することが できるのじゃ"
-	linefw "「ニドリーノ」に 進化させたときの"
-	linefw "ワザの じゅんびをしておこう"
-	linefw "手札の 「草エネルギー」を"
-	linefw "「ニドラン♂」に つけておくのじゃ"
+	text "Nidoran♂ evolves into Nidorino!"
+	line ""
+	line "Let's get Nidoran♂ ready to use"
+	line "Nidorino's attack command when it"
+	line "evolves to Nidorino."
+	line ""
+	line "Choose the Grass Energy card from"
+	line "your Hand and attach it to Nidoran♂."
 	done
 
 PracticeDuelTurn5Mason3Text:
-	textfw "こうげきは 「ニドラン♂」のワザ"
-	linefw "「つのでつつく」じゃ"
-	linefw "このワザは コインをなげて"
-	linefw "「おもて」なら せいこうじゃ"
+	text "Attack your opponent with Nidoran♂'s"
+	line "Horn Hazard."
+	line "This attack flips a coin,"
+	line "if it is Heads, the attack succeeds."
 	done
 
 PracticeDuelTurn6Instr1Text:
-	textfw "1ˍ「ニドリーノ」を えらんで"
-	linefw "  「ニドラン♂」につけて 進化"
+	text "1. Evolve Nidoran♂ by"
+	line "   attaching Nidorino to it."
 	done
 
 PracticeDuelTurn6Instr2Text:
-	textfw "2ˍ「草エネルギー」を"
-	linefw "  「ニドリーノ」に つける"
+	text "2. Attach a Grass Energy card"
+	line "   to the evolved Nidorino."
 	done
 
 PracticeDuelTurn6Instr3Text:
-	textfw "3ˍ「ニドリーノ」のワザ"
-	linefw "  「にどげり」で こうげき"
+	text "3. Select the evolved Nidorino and"
+	line "   attack your opponent with Double"
+	line "   Kick."
 	done
 
 PracticeDuelTurn6Mason1Text:
-	textfw "よおし 「ニドラン♂」を"
-	linefw "「ニドリーノ」へ 進化させるのじゃ"
-	linefw "手札から 「ニドリーノ」をえらんで"
-	linefw "「ニドラン♂」へ つけるのじゃ"
+	text "Now you have finally drawn a"
+	line "Nidorino card!"
+	line "Choose Nidorino from your Hand and"
+	line "use it to evolve Nidoran♂."
 	done
 
 PracticeDuelTurn6Mason2Text:
-	textfw "進化させた 「ニドリーノ」の"
-	linefw "ワザ「にどげり」の じゅんびじゃ"
-	linefw "手札の 「草エネルギー」を"
-	linefw "「ニドリーノ」に つけるのじゃ"
+	text "Now let's get ready to use"
+	line "Nidorino's attack command."
+	line "Also, attach a Grass Energy card to"
+	line "Nidorino."
 	done
 
 PracticeDuelTurn6Mason3Text:
-	textfw "さあ 「ニドリーノ」のワザ"
-	linefw "「にどげり」で こうげきじゃ!"
-	linefw "「にどげり」は コインをなげて"
-	linefw "ダメージをきめる ワザじゃ"
-	linefw "もし なげるコインが 2枚とも"
-	linefw "「おもて」なら 60ダメージ"
-	linefw "あいての 「アズマオウ」は"
-	linefw "いっきに 「きぜつ」じゃ"
-	linefw "「きぜつ」できれば サイドカードを"
-	linefw "ひいて <RAMNAME>の勝ちじゃ"
+	text "Attack your opponent with Nidorino's"
+	line "Double Kick to end your turn."
+	line "Double Kick flips 2 coins and deals"
+	line "damage based on the results."
+	line "If both coins are Heads,"
+	line "it will deal 60 damage!"
+	line "Then Goldeen's HP will be 0"
+	line "and it will be Knocked Out."
+	line "Pick up the last Prize."
+	line "<RAMNAME> is the winner!"
 	done
 
 DeckDiagnosisStep1Text:
-	textfw "ステップ1"
+	text "Step 1"
 	done
 
 DeckDiagnosisStep2Text:
-	textfw "ステップ2"
+	text "Step 2"
 	done
 
 DeckDiagnosisStep3Text:
-	textfw "ステップ3"
+	text "Step 3"
 	done
 
 DeckDiagnosisStep4Text:
-	textfw "ステップ4"
+	text "Step 4"
 	done
 
 DeckDiagnosisAdvice1Text:
-	textfw "アドバイス1"
+	text "Advice 1"
 	done
 
 DeckDiagnosisAdvice2Text:
-	textfw "アドバイス2"
+	text "Advice 2"
 	done
 
 DeckDiagnosisAdvice3Text:
-	textfw "アドバイス3"
+	text "Advice 3"
 	done
 
 DeckDiagnosisAdvice4Text:
-	textfw "アドバイス4"
-	done
-
-DeckDiagnosisExitText:
-	textfw "やめる"
+	text "Advice 4"
 	done
 
 DeckDiagnosisStep1MenuText:
-	textfw "ステップ 1"
-	linefw "デッキチェック"
-	linefw "アドバイス1"
-	linefw "アドバイス2"
-	linefw "アドバイス3"
-	linefw "もどる"
+	text "   Step 1  "
+	line "Check Deck"
+	line "Advice 1"
+	line "Advice 2"
+	line "Advice 3"
+	line "Back"
 	done
 
 DeckDiagnosisStep2MenuText:
-	textfw "ステップ 2"
-	linefw "アドバイス1"
-	linefw "アドバイス2"
-	linefw "アドバイス3"
-	linefw "もどる"
+	text "   Step 2  "
+	line "Advice 1"
+	line "Advice 2"
+	line "Advice 3"
+	line "Back"
 	done
 
 DeckDiagnosisStep3MenuText:
-	textfw "ステップ 3"
-	linefw "アドバイス1"
-	linefw "アドバイス2"
-	linefw "アドバイス3"
-	linefw "もどる"
+	text "   Step 3  "
+	line "Advice 1"
+	line "Advice 2"
+	line "Advice 3"
+	line "Back"
 	done
 
 DeckDiagnosisStep4MenuText:
-	textfw "ステップ 4"
-	linefw "アドバイス1"
-	linefw "アドバイス2"
-	linefw "アドバイス3"
-	linefw "アドバイス4"
-	linefw "もどる"
+	text "   Step 4  "
+	line "Advice 1"
+	line "Advice 2"
+	line "Advice 3"
+	line "Advice 4"
+	line "Back"
 	done
 
 DeckDiagnosisTargetNameText:
-	textfw "<RAMTEXT>デッキ"
+	text "<RAMTEXT> Deck"
 	done
 
 DeckDiagnosisBreakdownText:
-	textfw "エネルギーカード       枚"
-	linefw "たねポケモンカード      枚"
-	linefw "1進化カード         枚"
-	linefw "2進化カード         枚"
-	linefw "トレーナーカード       枚"
+	text "Energy Cards"
+	line "Basic Pokémon Cards"
+	line "Stage 1 Evolution Cards"
+	line "Stage 2 Evolution Cards"
+	line "Trainer Cards"
 	done
 
 DeckDiagnosisGrassText:
-	textfw "草"
+	text "Grass"
 	done
 
 DeckDiagnosisWaterText:
-	textfw "水"
+	text "Water"
 	done
 
 DeckDiagnosisLightningText:
@@ -1854,579 +1816,585 @@ DeckDiagnosisLightningText:
 	done
 
 DeckDiagnosisFireText:
-	textfw "炎"
+	text "Fire"
 	done
 
 DeckDiagnosisFightingText:
-	textfw "闘"
+	text "Fighting"
 	done
 
 DeckDiagnosisPsychicText:
-	textfw "超"
+	text "Psychic"
 	done
 
 DeckDiagnosisDialogInitialText:
-	textfw "D<RDOT>オーヤマの デッキしんだんじゃ"
-	linefw "メニューを えらぶんじゃ"
+	text "Welcome to Dr. Mason's Deck"
+	line "Diagnosis! Select an option."
 	done
 
 DeckDiagnosisDialogStep1Text:
-	textfw "「デッキ」の つくりかたの"
-	linefw "きほんてきな アドバイスじゃ"
+	text "Basic advice on how"
+	line "to build a Deck."
 	done
 
 DeckDiagnosisDialogStep2Text:
-	textfw "すこし なれてきたひとのための"
-	linefw "アドバイスじゃ"
+	text "Advice for players who are"
+	line "starting to get used to dueling."
 	done
 
 DeckDiagnosisDialogStep3Text:
-	textfw "さらに ステップアップしたい"
-	linefw "ひとへの アドバイスじゃ"
+	text "Advice for players who want"
+	line "to step up their game."
 	done
 
 DeckDiagnosisDialogStep4Text:
-	textfw "もっと つよくなりたいひとへの"
-	linefw "アドバイスじゃ"
+	text "Advice for players trying to"
+	line "master advanced duel strategy."
 	done
 
 DeckDiagnosisDialogExitText:
-	textfw "デッキしんだんを やめるぞ"
+	text "End Deck Diagnosis."
 	done
 
 DeckDiagnosisDialogCheckDeckText:
-	textfw "「デッキ」のなかを みてやろう"
+	text "Let's check your Deck."
 	done
 
 DeckDiagnosisDialogStep1Advice1Text:
-	textfw "「たねポケモン」は"
-	linefw "ポケモンカードの きほんじゃぞ!"
+	text "Basic Pokémon are the foundation"
+	line "of every single Pokémon Deck!"
 	done
 
 DeckDiagnosisDialogStep1Advice2Text:
-	textfw "「エネルギーカード」は"
-	linefw "わすれずに いれるんじゃ!"
+	text "Don't forget to add enough"
+	line "Energy cards to your Deck!"
 	done
 
 DeckDiagnosisDialogStep1Advice3Text:
-	textfw "「進化カード」は バランスを"
-	linefw "かんがえて いれるんじゃ!"
+	text "Keep a good balance when adding"
+	line "Evolution cards to a Deck!"
 	done
 
 DeckDiagnosisDialogBackText:
-	textfw "メインメニューに もどるぞ"
+	text "Return to the main menu."
 	done
 
 DeckDiagnosisDialogStep2Advice1Text:
-	textfw "まずは"
-	linefw "「マサキ」と「オーキドはかせ」じゃ"
+	text "Start with Bill and"
+	line "Professor Oak cards."
 	done
 
 DeckDiagnosisDialogStep2Advice2Text:
-	textfw "つぎは 「きずぐすり」と"
-	linefw "「ポケモンいれかえ」じゃ"
+	text "Next, include Potion and"
+	line "Switch cards."
 	done
 
 DeckDiagnosisDialogStep2Advice3Text:
-	textfw "「どく・マヒ・ねむり・こんらん」と"
-	linefw "「なんでもなおし」じゃ!"
+	text "Counter Special Conditions"
+	line "with Full Heal cards!"
 	done
 
 DeckDiagnosisDialogStep3Advice1Text:
-	textfw "まずは 2色のデッキじゃ!"
+	text "First, try mastering a"
+	line "Deck with 2 types!"
 	done
 
 DeckDiagnosisDialogStep3Advice2Text:
-	textfw "つぎは 3色のデッキじゃな!"
+	text "Next, try moving up to a"
+	line "Deck with 3 types!"
 	done
 
 DeckDiagnosisDialogStep3Advice3Text:
-	textfw "なにが わるいかを"
-	linefw "かんがえてみよう"
+	text "If you lose, analyze what"
+	line "went wrong with your strategy."
 	done
 
 DeckDiagnosisDialogStep4Advice1Text:
-	textfw "それぞれの色の とくちょうを"
-	linefw "せつめいしてやろう"
+	text "Let me explain the characteristics"
+	line "of the various Energy types."
 	done
 
 DeckDiagnosisDialogStep4Advice2Text:
-	textfw "無色のポケモンを"
-	linefw "うまくいれて つくるのじゃ!"
+	text "Learn to balance Colorless"
+	line "Pokémon effectively!"
 	done
 
 DeckDiagnosisDialogStep4Advice3Text:
-	textfw "「オーキドはかせ」の つかいかたじゃ"
+	text "Mastering the timing of"
+	line "your Professor Oak cards."
 	done
 
 DeckDiagnosisDialogStep4Advice4Text:
-	textfw "「そっこう型」と「かべ型」の"
-	linefw "デッキの たたかいかたじゃ"
+	text "How to duel with Speedy Aggressive"
+	line "and Strong Defensive Decks."
 	done
 
 DeckDiagnosisChooseDeckToCheckText:
-	textfw "どのデッキを"
-	linefw "チェックしてほしいんじゃ?"
+	text "Which Deck would you like to check?"
 	done
 
 DeckDiagnosisCheckingDeckText:
-	textfw "「<RAMTEXT>デッキ」"
-	linefw "チェック中じゃ?"
+	text "Checking your"
+	line "<RAMTEXT> Deck..."
 	done
 
 DeckDiagnosisCheckedDeckText:
-	textfw "「<RAMTEXT>」"
-	linefw "デッキチェック かんりょうじゃ"
+	text "Finished checking the"
+	line "<RAMTEXT> Deck."
 	done
 
 DeckDiagnosisResultRareCardsHeaderText:
-	textfw "「<RAMTEXT>」の"
-	linefw "★しるしのカード"
+	text "Cards marked with a"
+	half2full
+	textfw "★"
+	text " symbol"
+	line "in your <RAMTEXT> Deck:"
 	done
 
 DeckDiagnosisResultEvolutionMismatchedHeaderText:
-	textfw "「<RAMTEXT>」の"
-	linefw "進化セットが そろっていないカード"
+	text "Mismatched Evolution sets"
+	line "in your <RAMTEXT> Deck:"
 	done
 
 DeckDiagnosisResultEnergyMismatchedHeaderText:
-	textfw "「<RAMTEXT>」の"
-	linefw "色のあっていない エネルギーカード"
+	text "Mismatched Energy types"
+	line "in your <RAMTEXT> Deck:"
 	done
 
 DeckDiagnosisResultPokemonPowerCardsHeaderText:
-	textfw "「<RAMTEXT>」の"
-	linefw "特殊能力のあるカード"
+	text "Cards with Pokémon Powers"
+	line "in your <RAMTEXT> Deck:"
 	done
 
 DeckDiagnosisCheckAnotherDeckPromptText:
-	textfw "ほかのデッキも チェックするのか?"
+	text "Do you want to check another Deck?"
 	done
 
 DeckDiagnosisStep1Advice1Description1Text:
-	textfw "「たねポケモン」カードは"
-	linefw "ポケモンカードの すべてのきほんじゃ"
-	linefw "対戦のはじめや 「場」に ちょくせつ"
-	linefw "だせるのは 「たねポケモン」だけじゃ"
-	linefw "ポケモンがいなければ 対戦はならんぞ"
-	linefw "それに 「たねポケモン」が いないと"
-	linefw "「進化カード」も だせんぞ!"
+	text "Basic Pokémon cards are the most"
+	line "important part of any Deck!"
+	line "At the start of a duel, or when"
+	line "playing cards to the field, you can"
+	line "only play Basic Pokémon directly."
+	line "Without them, you cannot duel at"
+	line "all! Also, if you don't have a Basic"
+	line "Pokémon out, you can't evolve them!"
 	done
 
 DeckDiagnosisStep1Advice1Description2Text:
-	textfw "そうじゃなぁ"
-	linefw "デッキには 12枚いじょうの"
-	linefw "「たねポケモンカード」は"
-	linefw "いれておきたいもんじゃのう!"
+	text "Let's see..."
+	line "As a general rule, you should"
+	line "include at least 12 Basic Pokémon"
+	line "cards in every Deck you build!"
 	done
 
 DeckDiagnosisStep1Advice2Description1Text:
-	textfw "「エネルギーカード」は"
-	linefw "わすれずに いれるんじゃ!"
-	linefw "エネルギーがなければ ポケモンは"
-	linefw "なんにも できんぞ!!"
-	linefw "「ワザ」も だせなければ"
-	linefw "バトル場から 「にげる」こともできん"
-	linefw "なにをするにも 「エネルギー」が"
-	linefw "ひつようじゃ"
+	text "Make sure you don't forget to"
+	line "include enough Energy cards!"
+	line "Without Energy, your Pokémon won't"
+	line "be able to do anything at all!"
+	line "They won't be able to attack, nor"
+	line "will they be able to Retreat from"
+	line "the Active Position."
+	line "Energy is vital for everything!"
 	done
 
 DeckDiagnosisStep1Advice2Description2Text:
-	textfw "エネルギーの色も たいせつじゃ"
-	linefw "ポケモンの色と エネルギーの色は"
-	linefw "あわせるようにするのじゃ"
-	linefw "そうじゃな デッキには さいてい"
-	linefw "「ポケモンカード」のかずと おなじか"
-	linefw "それいじょうの エネルギーを"
-	linefw "いれておくと いいじゃろう"
+	text "Matching Energy types is key."
+	line "Ensure your Energy cards match"
+	line "the types of Pokémon you use."
+	line "At a minimum, you should have at"
+	line "least as many Energy cards as you do"
+	line "Pokémon cards, if not more."
 	done
 
 DeckDiagnosisStep1Advice3Description1Text:
-	textfw "ポケモンのカードには"
-	linefw "「たねポケモン・1進化・2進化」の"
-	linefw "3しゅるいが ある"
-	linefw "「たねポケモン」は そのまま「場」に"
-	linefw "だすことができるが 「1進化」は"
-	linefw "「たねポケモン」が 「場」にいないと"
-	linefw "だせない 「2進化」は 「1進化」が"
-	linefw "「場」にいないと だせないんじゃ"
+	text "Pokémon cards come in three stages:"
+	line "Basic, Stage 1, and Stage 2."
+	line "Basic Pokémon can be played straight"
+	line "to the field. However, Stage 1 cards"
+	line "must be placed on top of their"
+	line "matching Basic Pokémon. Stage 2"
+	line "cards must be placed on top of"
+	line "their matching Stage 1 Pokémon."
 	done
 
 DeckDiagnosisStep1Advice3Description2Text:
-	textfw "デッキには 「たねポケモン」を"
-	linefw "1ばんおおく 「1進化」「2進化」の"
-	linefw "じゅんに 枚すうを へらしておくのが"
-	linefw "いいじゃろう"
-	linefw "「たね」4枚 「1進化」3枚"
-	linefw "「2進化」2枚と いったかんじじゃな"
+	text "In your Deck, you should have the"
+	line "highest count of Basic cards,"
+	line "followed by fewer Stage 1 and"
+	line "Stage 2 cards."
+	line "A balanced evolutionary pyramid"
+	line "looks like 4 Basic Pokémon, 3"
+	line "Stage 1 cards, and 2 Stage 2 cards."
 	done
 
 DeckDiagnosisStep2Advice1DescriptionText:
-	textfw "「マサキ」と「オーキドはかせ」は"
-	linefw "だいぎゃくてんを ねらうときに"
-	linefw "いいカードだぞ!"
-	linefw "「オーキドはかせ」は デッキに2枚"
-	linefw "ぐらい いれておこう"
-	linefw "「マサキ」も2枚ぐらい いれてみよう"
+	text "Bill and Professor Oak are excellent"
+	line "cards when you need to turn the"
+	line "tables! Try including about 2 copies"
+	line "of Professor Oak in your Deck."
+	line "Throwing in 2 copies of Bill is"
+	line "also highly recommended."
 	done
 
 DeckDiagnosisStep2Advice2DescriptionText:
-	textfw "つぎに だいじなのは「きずぐすり」と"
-	linefw "「ポケモンいれかえ」じゃ"
-	linefw "「きずぐすり」と「ポケモンいれかえ」"
-	linefw "は つかいやすいカードなので"
-	linefw "いれてみよう"
-	linefw "「きずぐすり」は 3枚ぐらい"
-	linefw "「ポケモンいれかえ」は 2枚ぐらい"
-	linefw "いれてみよう"
+	text "Next up in importance are Potion"
+	line "and Switch cards."
+	line "Both Potion and Switch are extremely"
+	line "versatile and easy to use."
+	line "Try running 3 copies of Potion"
+	line "and about 2 copies of Switch."
 	done
 
+SECTION "Text 5", ROMX
+
 DeckDiagnosisStep2Advice3DescriptionText:
-	textfw "ポケモンは [相手]のこうげきで"
-	linefw "「どく」や「マヒ」「ねむり」"
-	linefw "「こんらん」といった 特殊状態に"
-	linefw "なることが あるんじゃ"
-	linefw "そんなときには トレーナーカードの"
-	linefw "「なんでもなおし」じゃ!"
-	linefw "デッキに 1~2枚いれておくと"
-	linefw "いいぞ"
+	text "Your Pokémon can be inflicted with"
+	line "Special Conditions like Poison,"
+	line "Sleep, Paralysis, and Confusion by"
+	line "Attacks. When that happens, use the"
+	line "Trainer card Full Heal!"
+	line "Keeping 1 or 2 in your Deck"
+	line "will save you in a pinch."
 	done
 
 DeckDiagnosisStep3Advice1Description1Text:
-	textfw "まずは 「2色」+無色のデッキを"
-	linefw "つくってみるのじゃ。"
-	linefw "「2色」+無色は わかりやすく"
-	linefw "たたかいやすいぞ"
-	linefw "エネルギーの色が あわないことにも"
-	linefw "なりにくいし 弱点をカバーして"
-	linefw "たたかうのに むいているんじゃ"
-	linefw "弱点をおぎなうように かんがえよう"
+	text "First, try building a Deck around"
+	line "two primary types plus Colorless."
+	line "A 2-type Deck is easy to understand"
+	line "and very straightforward to play."
+	line "It keeps you from getting stuck with"
+	line "the wrong Energy types and lets"
+	line "you cover your Pokémon's Weaknesses."
+	line "Build to cover your weak spots!"
 	done
 
 DeckDiagnosisStep3Advice1Description2Text:
-	textfw "たとえばじゃ"
-	linefw "「雷ポケモン中心のデッキ」なら"
-	linefw "「雷ポケモン」は"
-	linefw "「闘ポケモン」に よわいので"
-	linefw "「闘」につよい 「超ポケモン」や"
-	linefw "「無色ポケモン(飛行タイプ)」を"
-	linefw "いれるのじゃな"
+	text "For example, if you build a Deck"
+	line "centered around Lightning Pokémon,"
+	line "remember that they are weak against"
+	line "Fighting types."
+	line "To cover that, include Psychic types"
+	line "or Flying-type Colorless Pokémon,"
+	line "which resist Fighting attacks."
 	done
 
 DeckDiagnosisStep3Advice1Description3Text:
-	textfw "また 「炎ポケモン中心のデッキ」なら"
-	linefw "「炎ポケモンは 「水ポケモン」に"
-	linefw "よわいので 「水」につよい"
-	linefw "「雷ポケモン」をいれるのじゃ"
-	linefw "「雷ポケモン」は 「闘」によわいので"
-	linefw "「無色ポケモン(飛行タイプ)」も "
-	linefw "すこしいれてカバーしよう"
+	text "Alternatively, if you build around"
+	line "Fire Pokémon, they will be weak"
+	line "against Water types."
+	line "To counter Water, add Lightning"
+	line "Pokémon to your Deck. Since"
+	line "Lightning is weak to Fighting,"
+	line "add a few Flying-type Colorless"
+	line "Pokémon to protect them."
 	done
 
 DeckDiagnosisStep3Advice1Description4Text:
-	textfw "つまり"
-	linefw "「炎+雷+無色(飛行タイプ)」という"
-	linefw "デッキじゃな"
+	text "In other words, you create a"
+	line "well-rounded Fire, Lightning,"
+	line "and Colorless Flying-type Deck"
+	line "combo!"
 	done
 
 DeckDiagnosisStep3Advice2Description1Text:
-	textfw "3色デッキは くふうしだいで"
-	linefw "おもしろいデッキに なるぞ!"
-	linefw "3色デッキなどの「多色デッキ(2色"
-	linefw "いじょうのポケモンが はいっている"
-	linefw "デッキ)」には 「エネルギー転送」を"
-	linefw "2~4枚 いれるといいのじゃ"
+	text "Decks with 3 types can be incredibly"
+	line "fun if you plan them out creatively!"
+	line "When running multi-type Decks with 2"
+	line "or more energy requirements, it is a"
+	line "great idea to include 2 to 4 copies"
+	line "of Energy Search."
 	done
 
 DeckDiagnosisStep3Advice2Description2Text:
-	textfw "たとえばじゃ"
-	linefw "「炎+雷+草」なんかいがいと いいぞ"
-	linefw "しんごうきのようじゃがな・・・"
-	linefw "はははっ"
+	text "For instance, a Fire, Lightning, and"
+	line "Grass combination can work amazingly"
+	line "well together."
+	line "It looks just like traffic lights..."
+	line "Haha! Give it a shot!"
 	done
 
 DeckDiagnosisStep3Advice3Description1Text:
-	textfw "とにかく まけることを きにせず"
-	linefw "なん回も対戦して なにが わるいのか"
-	linefw "かんがえるようにしよう"
-	linefw "「ポケモン」がでないで まけたのなら"
-	linefw "「たねポケモン」を ふやせばいいし"
-	linefw "「エネルギーカード」が でなくて"
-	linefw "まけたのなら 「エネルギーカード」を"
-	linefw "ふやせばいい"
+	text "Don't worry about losing! Duel as"
+	line "many times as you can to pinpoint"
+	line "where your Deck composition might"
+	line "be failing. If you lose because you"
+	line "can't draw any Pokémon, increase"
+	line "your Basic count. If you get stuck"
+	line "without Energy cards, then increase"
+	line "your Energy count!"
 	done
 
 DeckDiagnosisStep3Advice3Description2Text:
-	textfw "全体でのバランスが 1番 たいせつ"
-	linefw "なので きを つけるのじゃ"
-	linefw "デッキのなかの 色かずを へらしたり"
-	linefw "進化カードを すくなくしたり"
-	linefw "トレーナーカードで カードをたくさん"
-	linefw "めくるようにしたり やりかたは"
-	linefw "たくさんあるんじゃ いろいろためして"
-	linefw "対戦をたのしむことが だいじじゃな"
+	text "How well your cards work together is"
+	line "the most critical factor."
+	line "You can use fewer types, reduce"
+	line "Stage 1 and Stage 2 Evolutions, or"
+	line "use Trainer cards to draw more"
+	line "cards. There are many ways to win,"
+	line "so try different ideas and have"
+	line "fun dueling!"
 	done
 
 DeckDiagnosisStep4Advice1Description1Text:
-	textfw "「それぞれの色の特徵」"
-	linefw ""
-	linefw "「炎」ポケモンは 「炎」をトラッシュ"
-	linefw "してしまうワザが多いので"
-	linefw "「炎」ポケモンが たくさんはいって"
-	linefw "いるデッキには「エネルギー回収」を"
-	linefw "2枚ぐらい いれるのじゃ"
+	text "Characteristics of Energy Types:"
+	line ""
+	line "Fire Pokémon often have powerful"
+	line "attacks that force you to discard"
+	line "Fire Energy. If your Deck runs heavy"
+	line "on Fire types, be sure to include"
+	line "about 2 copies of Energy Retrieval."
 	done
 
 DeckDiagnosisStep4Advice1Description2Text:
-	textfw "「雷」ポケモンは [自分]にも"
-	linefw "ダメージを あたえてしまうワザを"
-	linefw "もったポケモンが おおいのじゃ"
-	linefw "そんなデッキには「ディフェンダー」を"
-	linefw "2枚ぐらい いれるといいじゃろう"
+	text "Lightning Pokémon frequently possess"
+	line "recoil moves that damage themselves."
+	line "For a Deck like that, running about"
+	line "2 copies of Defender will help"
+	line "reduce that extra damage."
 	done
 
 DeckDiagnosisStep4Advice1Description3Text:
-	textfw "「草」ポケモンは2進化するポケモンが"
-	linefw "おおいのじゃ"
-	linefw "だから そんなデッキには ポケモンの"
-	linefw "進化をたすけるカードをいれるんじゃ"
-	linefw "「ポケモン交換おじさん」や「ポケモン"
-	linefw "育て屋さん」を2枚ずつぐらいいれると"
-	linefw "よいぞ"
+	text "Grass types feature a high number of"
+	line "Stage 2 Evolution chains."
+	line "You should include cards to speed up"
+	line "and assist with your evolutions."
+	line "Adding 2 copies each of Pokémon"
+	line "Trader and Pokémon Breeder will work"
+	line "wonders."
 	done
 
 DeckDiagnosisStep4Advice1Description4Text:
-	textfw "「水」ポケモンは 「水」エネルギーを"
-	linefw "追加すると[相手]にあたえる"
-	linefw "ダメージが ふえるワザをもった"
-	linefw "ポケモンが 多いんじゃ"
-	linefw "そんなデッキには 「水」エネルギー"
-	linefw "カードを 多めにいれるといいんじゃよ"
+	text "Water Pokémon often have attacks"
+	line "that scale up in damage when you"
+	line "attach extra Water Energy to them."
+	line "Decks built around Water types"
+	line "thrive when you pack a generous"
+	line "amount of Water Energy cards."
 	done
 
 DeckDiagnosisStep4Advice1Description5Text:
-	textfw "「闘」ポケモンは 「にげる」のに"
-	linefw "エネルギーのかずが 多いポケモンが"
-	linefw "けっこう いるんじゃ"
-	linefw "「闘」ポケモンが たくさんはいった"
-	linefw "デッキには 「ポケモンいれかえ」を"
-	linefw "2~4枚 いれてみよう。"
+	text "Fighting Pokémon often suffer from"
+	line "high Retreat Costs, requiring a lot"
+	line "of Energy to switch out."
+	line "If your Deck features many Fighting"
+	line "types, it's smart to include 2 to 4"
+	line "copies of Switch."
 	done
 
 DeckDiagnosisStep4Advice1Description6Text:
-	textfw "「超」ポケモンは 「抵抗力」で"
-	linefw "ダメージを ふせがれるときがあるので"
-	linefw "そんなデッキには 「突風」を"
-	linefw "2~4枚 いれてみるといいぞ"
-	linefw ""
-	linefw "「無色」ポケモンが 多いデッキには"
-	linefw "「無色2個エネルギーカード」を 4枚"
-	linefw "いれたいところじゃな。"
+	text "Psychic types can struggle when"
+	line "their damage is reduced by an"
+	line "opponent's Resistance."
+	line "To counter this, try running 2 to 4"
+	line "copies of Gust of Wind."
+	line "Decks using lots of Colorless types"
+	line "will definitely want to run 4 copies"
+	line "of Double Colorless Energy."
 	done
 
 DeckDiagnosisStep4Advice2Description1Text:
-	textfw "「無色ポケモン」は どの色のエネルギ"
-	linefw "ーでもワザが つかえるから"
-	linefw "どのデッキに いれてもつかいやすい"
-	linefw "カードなんじゃ"
-	linefw "「ノーマルタイプ」と「飛行タイプ」で"
-	linefw "抵抗力が ちがうのも おぼえておこう"
+	text "Colorless Pokémon can use any type"
+	line "of Energy card to power their"
+	line "Attacks. This flexibility makes them"
+	line "easy additions to almost any Deck!"
+	line "Keep in mind that Normal types and"
+	line "Flying types have entirely different"
+	line "profiles in regards to Resistances."
 	done
 
 DeckDiagnosisStep4Advice2Description2Text:
-	textfw "「無色ポケモン」を 多くいれたデッキ"
-	linefw "には 「無色2個エネルギー」を"
-	linefw "2~4枚入れるのじゃ。"
-	linefw "「無色ポケモン」を いれなくても"
-	linefw "無色でつかえるワザをもったポケモンを"
-	linefw "つかえば 「多色デッキ」も つかい"
-	linefw "やすくなるぞ"
+	text "If you run a heavy Colorless Deck,"
+	line "include 2 to 4 Double Colorless"
+	line "Energy cards. Even if you don't use"
+	line "only Colorless Pokémon, using other"
+	line "types with Colorless Energy costs"
+	line "can make a Deck with multiple types"
+	line "much easier to play."
 	done
 
 DeckDiagnosisStep4Advice2Description3Text:
-	textfw "たとえば 「けとばすのポニータ」とか"
-	linefw "「こうらアタックのゼニガメ」とか"
-	linefw "「きりさくのストライク」とか"
-	linefw "「パンチのワンリキー」などのカードが"
-	linefw "そうじゃな"
+	text "Cards like Ponyta with its Kick"
+	line "attack, Squirtle with Shell Attack,"
+	line "Scyther with Slash, or Machop with"
+	line "its Punch attack are perfect"
+	line "examples of this design strategy."
 	done
 
 DeckDiagnosisStep4Advice3Description1Text:
-	textfw "「オーキドはかせ」は おもいきって"
-	linefw "つかうのじゃ"
-	linefw " 手札を せんぶすててしまうのは"
-	linefw "勇気が いるけれど ゲームのはじめで"
-	linefw "「たねポケモン」がいないときや"
-	linefw "ポケモンはいるけど 「エネルギーカー"
-	linefw "ド」がないときなどは おもいきって"
-	linefw "手札をすてて 7枚ひくのじゃ!"
+	text "When it comes to Professor Oak, you"
+	line "must be bold and use it decisively!"
+	line "Discarding your entire Hand requires"
+	line "nerve, but if you have no Basics"
+	line "early on, or you have Pokémon but"
+	line "lack the Energy to use them, don't"
+	line "hesitate! Dump your Hand and draw a"
+	line "fresh 7 cards!"
 	done
 
 DeckDiagnosisStep4Advice3Description2Text:
-	textfw "こうすることで デッキのうごきが"
-	linefw "ぜんぜん かわってくるはずじゃよ"
-	linefw "おもいきったプレイが ぎゃくてんへの"
-	linefw "カギじゃ"
-	linefw "「オーキドはかせ」は デッキに2枚は"
-	linefw "いれておきたいものじゃな"
+	text "Playing this way will completely"
+	line "change how fast you can draw cards."
+	line "Making bold plays is often the"
+	line "secret to making a big comeback!"
+	line "You should always aim to have at"
+	line "least 2 copies of Professor Oak"
+	line "in your Deck."
 	done
 
 DeckDiagnosisStep4Advice4Description1Text:
-	textfw "そっこう型デッキ"
-	linefw "「ヒトデマン」「ワンリキー」「ビリリ"
-	linefw "ダマ」など 「色エネルギーひとつで"
-	linefw "20ダメージ」のポケモンで はやく"
-	linefw "せめる たたかいかたじゃ"
-	linefw "ゲームがながびくと ツライがな・・・"
-	linefw "「大技」をもったポケモンも すこしは"
-	linefw "いれとかないとダメじゃぞ"
+	text "Speedy Aggressive Decks:"
+	line "Built around Pokémon like Staryu,"
+	line "Machop, or Voltorb that can deal 20"
+	line "damage for just a single Energy"
+	line "card. This style aims to defeat the"
+	line "opponent quickly. It struggles if"
+	line "the duel takes too long, so include"
+	line "a few heavy hitters as backup."
 	done
 
 DeckDiagnosisStep4Advice4Description2Text:
-	textfw "かべ型デッキ"
-	linefw "「イワーク」「ラッキー」「ベロリンガ"
-	linefw "」など <HP>が たかいポケモンたちで"
-	linefw "バトル場をまもり ベンチで「大技」を"
-	linefw "もったポケモンを育てる ほうほうじゃ"
-	linefw "そっこう型の ぎゃくじゃぞ"
+	text "Strong Defensive Decks:"
+	line "Uses high HP Pokémon like Onix,"
+	line "Chansey, or Lickitung to take hits"
+	line "and guard the Active Position. This"
+	line "gives you time to charge up powerful"
+	line "high-cost attacks on your Bench."
+	line "It's the complete opposite of a"
+	line "fast Deck strategy."
 	done
 
 DeckDiagnosisTooFewBasicPokemonText:
-	textfw "うーむ"
-	linefw "「たねポケモン」が すくないようじゃ"
-	linefw "もうすこし"
-	linefw "「たねポケモン」を いれてみよう"
+	text "Hmm... It looks like you have too"
+	line "few Basic Pokémon cards."
+	line "Try adding a few more Basic Pokémon"
+	line "to your Deck."
 	done
 
 DeckDiagnosisTooManyColorsText:
-	textfw "デッキのなかの色は 「2色+無色」や"
-	linefw "「3色+無色」に してみよう"
+	text "Your Deck has too many types."
+	line "Try sticking to 2 elements plus"
+	line "Colorless, or at most 3 elements"
+	line "plus Colorless."
 	done
 
 DeckDiagnosisTooFewPokemonText:
-	textfw "ポケモンのカードが"
-	linefw "すこし すくないようじゃな"
-	linefw "もうすこし ポケモンのカードを"
-	linefw "いれたほうが いいじゃろう"
+	text "Your total Pokémon card count"
+	line "seems a bit on the low side."
+	line "It would be wise to add a few more"
+	line "Pokémon cards to the mix."
 	done
 
 DeckDiagnosisTooManyPokemonText:
-	textfw "ポケモンのカードが"
-	linefw "すこし おおいようじゃな"
-	linefw "もうすこし ポケモンのカードを"
-	linefw "へらしたほうが いいじゃろう"
+	text "Your total Pokémon card count"
+	line "seems a bit too high."
+	line "You should probably remove a few"
+	line "Pokémon cards to balance it out."
 	done
 
 DeckDiagnosisTooFewEnergyText:
-	textfw "エネルギーカードが"
-	linefw "すくない ようじゃな!"
-	linefw "もうすこし エネルギーカードを"
-	linefw "いれたほうが いいじゃろう"
+	text "You don't have enough Energy cards"
+	line "in this Deck!"
+	line "You should add some more Energy"
+	line "cards so your Pokémon can attack."
 	done
 
 DeckDiagnosisTooManyEnergyText:
-	textfw "エネルギーカードが"
-	linefw "おおい ようじゃな!"
-	linefw "もうすこし エネルギーカードを"
-	linefw "へらしたほうが いいじゃろう"
+	text "You have way too many Energy cards"
+	line "packed in here!"
+	line "You should remove some Energy cards"
+	line "to make room for other options."
 	done
 
 DeckDiagnosisNoEnergyText:
-	textfw "ばかもの! エネルギーカードが"
-	linefw "1枚もはいって おらんじゃないか!"
-	linefw "エネルギーカードが なければ"
-	linefw "なにも できんぞ!!"
+	text "What are you thinking?! You don't"
+	line "have any Energy cards in this Deck!"
+	line "Without Energy cards, your Pokémon"
+	line "won't be able to do anything!"
 	done
 
 DeckDiagnosisEvolutionMismatchedText:
-	textfw "進化まえのポケモンが はいっていない"
-	linefw "ポケモンカードが あるぞ"
+	text "You have Evolution cards included"
+	line "without their required lower stages."
 	done
 
 DeckDiagnosisEvolutionMismatchedListText:
-	textfw "進化まえのポケモンがいない"
-	linefw "ポケモンカードは これじゃ"
+	text "These Evolution cards are missing"
+	line "the Pokémon they evolve from:"
 	done
 
 DeckDiagnosisEvolutionUnbalancedText:
-	textfw "「たね」「1進化」「2進化」の"
-	linefw "バランスが よくないものが あるのぅ"
+	text "The balance between your Basic,"
+	line "Stage 1, and Stage 2 cards is off."
 	done
 
 DeckDiagnosisEvolutionUnbalancedListText:
-	textfw "進化のバランスが わるい"
-	linefw "くみあわせのカードは これじゃ"
+	text "These evolutionary lines have an"
+	line "unbalanced ratio of cards:"
 	done
 
 DeckDiagnosisPokemonEnergyMismatchedText:
-	textfw "デッキのなかの ポケモンと"
-	linefw "エネルギーカードの色は そろえよう"
+	text "You need to align your Energy types"
+	line "to match the Pokémon in your Deck."
 	done
 
 DeckDiagnosisPokemonEnergyMismatchedListText:
-	textfw "ポケモンの色とあっていない"
-	linefw "エネルギーカードは これじゃ"
+	text "These Energy cards do not match"
+	line "any of your Pokémon types:"
 	done
 
 DeckDiagnosisPokemonEnergyUnbalancedText:
-	textfw "ポケモンに くらべて"
-	linefw "エネルギーのかずが すくないようじゃ"
-	linefw "ポケモンが うまくワザをだせるように"
-	linefw "エネルギーカードを ふやすのじゃ!"
+	text "Compared to your Pokémon count,"
+	line "you don't have enough Energy cards."
+	line "Add more Energy so your Pokémon can"
+	line "always use their attacks!"
 	done
 
 DeckDiagnosisTooManyEnergyThisColorText:
-	textfw "「<RAMTEXT>エネルギー」の わりあいが"
-	linefw "おおすぎる ようじゃな"
-	linefw "「<RAMTEXT>エネルギー」の 枚すうを"
-	linefw "すこし へらしては どうかな?"
+	text "The ratio of <RAMTEXT> Energy cards"
+	line "seems a bit too high."
+	line "How about reducing your total"
+	line "count of <RAMTEXT> Energy a bit?"
 	done
 
 DeckDiagnosisTooFewEnergyThisColorText:
-	textfw "「<RAMTEXT>エネルギー」の わりあいが"
-	linefw "すくなすぎる ようじゃな"
-	linefw "「<RAMTEXT>エネルギー」の 枚すうを"
-	linefw "すこし ふやしては どうかな?"
+	text "The ratio of <RAMTEXT> Energy cards"
+	line "seems far too low."
+	line "How about increasing your total"
+	line "count of <RAMTEXT> Energy a bit?"
 	done
 
 DeckDiagnosisTooManyEnergyThisColorAddThatColorText:
-	textfw "「<RAMTEXT>エネルギー」の わりあいが"
-	linefw "おおすぎる ようじゃ"
-	linefw "「<RAMTEXT>エネルギー」の わりあいを"
-	linefw "ふやしたほうが いいようじゃぞ"
+	text "The ratio of <RAMTEXT> Energy cards"
+	line "is way too high."
+	line "You need to adjust your Energy type"
+	line "proportions to balance things out."
 	done
 
 DeckDiagnosisOKText:
-	textfw "きほんてきな デッキとしては"
-	linefw "これで OKじゃな"
-	linefw "これで 1ど 対戦してみなさい"
-	linefw "やってみることが いちばんじゃ"
+	text "This looks solid enough to serve"
+	line "as a fundamental Deck layout."
+	line "Go test it out in a duel!"
+	line "Experience is the finest teacher."
 	done
 
 DeckDiagnosisOKButNoTrainerText:
-	textfw "きほんてきな デッキとしては"
-	linefw "これで OKじゃな"
-	linefw "これで 1ど 対戦してみなさい"
-	linefw "やってみることが いちばんじゃ"
-	linefw "ただ トレーナーカードが 1枚も"
-	linefw "はいって いないようじゃな"
-	linefw "トレーナーカードは べんりじゃぞ"
-	linefw "1ど つかってみると いいぞ"
+	text "This looks solid enough to serve"
+	line "as a fundamental Deck layout."
+	line "Go test it out in a duel!"
+	line "Experience is the finest teacher."
+	line "However, you don't have a single"
+	line "Trainer card included."
+	line "Trainer cards are incredibly useful,"
+	line "so try adding some next time!"
 	done
 
 DeckDiagnosisEnergyUnbalancedText:
-	textfw "う~む エネルギーのバランスが"
-	linefw "よくないようじゃのう・・・"
-	done
-
-DebugDummyText:
-	textfw "ダミー"
+	text "Hmm... The overall balance of your"
+	line "Energy cards looks problematic..."
 	done
 
 DebugKondoDebugText:
-	textfw "近ドウデバッグ"
-	done
-
-DebugMapDisplayTestText:
-	textfw "地図の表示テスト"
+	text "Debugging Menu"
 	done

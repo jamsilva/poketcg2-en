@@ -2385,7 +2385,7 @@ PrintDeckDiagnosisSteps:
 	dec c
 	jr nz, .loop
 
-	ldtx hl, DeckDiagnosisExitText
+	ldtx hl, PauseMenuExitText
 	call InitTextPrinting_ProcessTextFromID
 	ld a, [wNumDeckDiagnosisSteps]
 	add 2
