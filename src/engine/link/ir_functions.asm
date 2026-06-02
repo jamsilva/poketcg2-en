@@ -229,7 +229,7 @@ _SendCard:
 
 .fail
 	call PlayCardPopSong
-	ldtx hl, TransmittingCardUnsuccessfulSenderText
+	ldtx hl, TransmittingCardUnsuccessfulText
 	call LoadLinkNotConnectedSceneAndAskWhetherToTryAgain
 	jr nc, _SendCard
 	scf
@@ -263,7 +263,7 @@ _ReceiveCard:
 
 .fail
 	call PlayCardPopSong
-	ldtx hl, TransmittingCardUnsuccessfulReceiverText
+	ldtx hl, TransmittingCardUnsuccessfulText
 	call LoadLinkNotConnectedSceneAndAskWhetherToTryAgain
 	jr nc, _ReceiveCard
 	scf
@@ -291,7 +291,7 @@ _SendDeckConfiguration:
 
 .fail
 	call PlayCardPopSong
-	ldtx hl, TransmittingDeckConfigurationUnsuccessfulSenderText
+	ldtx hl, TransmittingDeckConfigurationUnsuccessfulText
 	call LoadLinkNotConnectedSceneAndAskWhetherToTryAgain
 	jr nc, _SendDeckConfiguration
 	scf
@@ -311,7 +311,7 @@ _ReceiveDeckConfiguration:
 
 .fail
 	call PlayCardPopSong
-	ldtx hl, TransmittingDeckConfigurationUnsuccessfulReceiverText
+	ldtx hl, TransmittingDeckConfigurationUnsuccessfulText
 	call LoadLinkNotConnectedSceneAndAskWhetherToTryAgain
 	jr nc, _ReceiveDeckConfiguration
 	scf

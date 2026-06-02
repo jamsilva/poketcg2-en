@@ -7350,7 +7350,7 @@ _HandleDeckSaveMachineMenu:
 	textitem  2, 14, SaveDeckToMachineText     ; DECKSAVEMACHINEMENU_SAVE
 	textitem 12, 14, DeleteDeckFromMachineText ; DECKSAVEMACHINEMENU_DELETE
 	textitem  2, 16, BuildDeckText             ; DECKSAVEMACHINEMENU_BUILD
-	textitem 12, 16, CancelDeckText            ; DECKSAVEMACHINEMENU_CANCEL
+	textitem 12, 16, CancelText                ; DECKSAVEMACHINEMENU_CANCEL
 	textitems_end
 
 ; sets the number of cursor positions for deck machine menu,
@@ -9597,7 +9597,7 @@ _HandleAutoDeckSelectionMenu:
 
 .deck_options
 	textitem  2, 14, BuildDeckText
-	textitem 12, 14, CancelDeckText
+	textitem 12, 14, CancelText
 	textitem  2, 16, DeckMachineReadInstructionsText
 	textitems_end
 
@@ -9980,7 +9980,7 @@ OpenDeckSaveMachineFromDeckBuilding:
 
 Menu_3bf55:
 	textitem  2, 14, SaveDeckToMachineText
-	textitem 12, 14, CancelDeckText
+	textitem 12, 14, CancelText
 	textitems_end
 
 UpdateDeckMachineScrollArrowsAndEntries:

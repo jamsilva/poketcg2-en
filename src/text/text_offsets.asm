@@ -14,7 +14,7 @@ TextOffsets::
 	textpointer WeaknessText                                          ; 0x0008
 	textpointer ResistanceText                                        ; 0x0009
 	textpointer PokemonPowerKanjiText                                 ; 0x000a
-	textpointer PokemonTCGText                                        ; 0x000b
+	textpointer RetreatCostText                                       ; 0x000b
 	textpointer LengthText                                            ; 0x000c
 	textpointer WeightText                                            ; 0x000d
 	textpointer PokemonText                                           ; 0x000e
@@ -24,7 +24,7 @@ TextOffsets::
 	textpointer CircleRarityText                                      ; 0x0012
 	textpointer DiamondRarityText                                     ; 0x0013
 	textpointer StarRarityText                                        ; 0x0014
-	textpointer RetreatCostText                                       ; 0x0015
+	textpointer UNUSED_0015                                           ; 0x0015
 	textpointer AllCardsOwnedText                                     ; 0x0016
 	textpointer TotalCardsCountText                                   ; 0x0017
 	textpointer TotalUniqueCardsCountText                             ; 0x0018
@@ -38,7 +38,7 @@ TextOffsets::
 	textpointer TrainerCardText                                       ; 0x0020
 	textpointer EnergyCardText                                        ; 0x0021
 	textpointer DeckPrinterText                                       ; 0x0022
-	textpointer AttackByText                                          ; 0x0023
+	textpointer UNUSED_0023                                           ; 0x0023
 	textpointer NoBenchedPokemonText                                  ; 0x0024
 	textpointer UnableDueToSleepText                                  ; 0x0025
 	textpointer UnableDueToParalysisText                              ; 0x0026
@@ -54,13 +54,13 @@ TextOffsets::
 	textpointer YesOrNoText                                           ; 0x0030
 	textpointer DiscardActionName                                     ; 0x0031
 	textpointer IncompleteText                                        ; 0x0032
-	textpointer DamageText                                            ; 0x0033
+	textpointer UNUSED_0033                                           ; 0x0033
 	textpointer UsedText                                              ; 0x0034
-	textpointer ReceivedDamageText                                    ; 0x0035
+	textpointer UNUSED_0035                                           ; 0x0035
 	textpointer PokemonsAttackText                                    ; 0x0036
 	textpointer ResistanceLessDamageText                              ; 0x0037
 	textpointer WeaknessMoreDamageText                                ; 0x0038
-	textpointer WeaknessResistanceMixedDamageText                     ; 0x0039
+	textpointer UNUSED_0039                                           ; 0x0039
 	textpointer ResistanceNoDamageText                                ; 0x003a
 	textpointer AttackDamageText                                      ; 0x003b
 	textpointer NoDamageText                                          ; 0x003c
@@ -129,8 +129,8 @@ TextOffsets::
 	textpointer LostDuelText                                          ; 0x007b
 	textpointer StartSuddenDeathMatchText                             ; 0x007c
 	textpointer PrizesLeftActivePokemonCardsInDeckText                ; 0x007d
-	textpointer NoneText                                              ; 0x007e
-	textpointer YesText                                               ; 0x007f
+	textpointer ActiveNoneText                                        ; 0x007e
+	textpointer ActiveYesText                                         ; 0x007f
 	textpointer CardsUnitText                                         ; 0x0080
 	textpointer DrewFromPrizesText                                    ; 0x0081
 	textpointer TookAllThePrizesText                                  ; 0x0082
@@ -140,7 +140,7 @@ TextOffsets::
 	textpointer HavePokemonPowerButUnableDueToToxicGasText            ; 0x0086
 	textpointer HavePokemonPowerButUnableDueToGoopGasAttackText       ; 0x0087
 	textpointer HavePokemonPowerButUnableDueToStareText               ; 0x0088
-	textpointer UNUSED_0089                                           ; 0x0089
+	textpointer YesText                                               ; 0x0089
 	textpointer MenuPlayCheckText                                     ; 0x008a
 	textpointer MenuSelectCheckText                                   ; 0x008b
 	textpointer LengthUnitSeparatorText                               ; 0x008c
@@ -159,18 +159,18 @@ TextOffsets::
 	textpointer DebugDirectionRightToLeftText                         ; 0x0099
 	textpointer DebugChangeExecuteEndText                             ; 0x009a
 	textpointer DebugDuelMenu1Text                                    ; 0x009b
-	textpointer DebugDuelMenu2Text                                    ; 0x009c
+	textpointer UNUSED_009C                                           ; 0x009c
 	textpointer DebugSaveFileText                                     ; 0x009d
 	textpointer DebugLoadFileLastSavedFileText                        ; 0x009e
 	textpointer DebugPauseModeOnText                                  ; 0x009f
 	textpointer DebugPauseModeOffText                                 ; 0x00a0
-	textpointer DebugComputerModeOffText                              ; 0x00a1
-	textpointer DebugComputerModeOnText                               ; 0x00a2
+	textpointer UNUSED_00A1                                           ; 0x00a1
+	textpointer UNUSED_00A2                                           ; 0x00a2
 	textpointer DebugCardCategoryListText                             ; 0x00a3
 	textpointer DebugBoosterPackListText                              ; 0x00a4
 	textpointer DebugSpecialDuelRuleListText                          ; 0x00a5
 	textpointer DebugCardListText                                     ; 0x00a6
-	textpointer DebugTestCoinFlipText                                 ; 0x00a7
+	textpointer UNUSED_00A7                                           ; 0x00a7
 	textpointer DebugEndWithoutPrizesText                             ; 0x00a8
 	textpointer ResetBackUpRamPromptText                              ; 0x00a9
 	textpointer DebugIncidentAbortPleaseSubmitRomText                 ; 0x00aa
@@ -186,7 +186,7 @@ TextOffsets::
 	textpointer PleaseSelectCardText                                  ; 0x00b4
 	textpointer NoPokemonWithDamageCountersText                       ; 0x00b5
 	textpointer NoDamageCountersText                                  ; 0x00b6
-	textpointer NoEnergyAttachedToPokemonInOppPlayAreaText            ; 0x00b7
+	textpointer UNUSED_00B7                                           ; 0x00b7
 	textpointer NoEnergyCardsInDiscardPileText                        ; 0x00b8
 	textpointer NoBasicEnergyCardsInDiscardPileText                   ; 0x00b9
 	textpointer NoCardsLeftInTheDeckText                              ; 0x00ba
@@ -243,7 +243,7 @@ TextOffsets::
 	textpointer NotEnoughEnergyCardsInHandText                        ; 0x00ed
 	textpointer NoWaterEnergyInOppPlayAreaText                        ; 0x00ee
 	textpointer CannotUseThisAttackText                               ; 0x00ef
-	textpointer TransmissionErrorSimpleText                           ; 0x00f0
+	textpointer FoodCountersText                                      ; 0x00f0
 	textpointer BackUpIsBrokenText                                    ; 0x00f1
 	textpointer PrinterNotConnectedErrorText                          ; 0x00f2
 	textpointer PrinterLowBatteryErrorText                            ; 0x00f3
@@ -276,7 +276,7 @@ TextOffsets::
 	textpointer TrainerCardSuccessCheckText                           ; 0x010e
 	textpointer GamblerQuantityCheckText                              ; 0x010f
 	textpointer IfHeadsNoDamageNextTurnText                           ; 0x0110
-	textpointer DamageCheckSimpleText                                 ; 0x0111
+	textpointer UNUSED_0111                                           ; 0x0111
 	textpointer DamageCheckIfHeadsPlusDamageText                      ; 0x0112
 	textpointer DamageCheckXDamageTimesHeadsText                      ; 0x0113
 	textpointer DamageCheckPlusXDamageForEachHeadsText                ; 0x0114
@@ -413,11 +413,11 @@ TextOffsets::
 	textpointer UNUSED_0197                                           ; 0x0197
 	textpointer UNUSED_0198                                           ; 0x0198
 	textpointer UNUSED_0199                                           ; 0x0199
-	textpointer UNUSED_019A                                           ; 0x019a
-	textpointer EffectTargetBasicEnergyText                           ; 0x019b
-	textpointer PeekWasUsedToLookInYourHandText                       ; 0x019c
-	textpointer CardPeekWasUsedOnText                                 ; 0x019d
-	textpointer PokemonAndAllAttachedCardsReturnedToHandText          ; 0x019e
+	textpointer EffectTargetBasicEnergyText                           ; 0x019a
+	textpointer PeekWasUsedToLookInYourHandText                       ; 0x019b
+	textpointer CardPeekWasUsedOnText                                 ; 0x019c
+	textpointer PokemonAndAllAttachedCardsReturnedToHandText          ; 0x019d
+	textpointer AmnesiaNextTurnText                                   ; 0x019e
 	textpointer DisabledNextTurnText                                  ; 0x019f
 	textpointer BasicPokemonWasPlacedOnEachBenchText                  ; 0x01a0
 	textpointer WasUnsuccessfulText                                   ; 0x01a1
@@ -483,17 +483,17 @@ TextOffsets::
 	textpointer NoTrainerCardsInOppHandText                           ; 0x01dd
 	textpointer DiscardedCardText                                     ; 0x01de
 	textpointer SwitchedOutDueToVinePullText                          ; 0x01df
-	textpointer RemoveDamageCountersOneByOneText                      ; 0x01e0
+	textpointer UNUSED_01E0                                           ; 0x01e0
 	textpointer UNUSED_01E1                                           ; 0x01e1
 	textpointer ChooseCardFromHandToDiscardText                       ; 0x01e2
 	textpointer ChoosePokemonAndRemoveEnergyText                      ; 0x01e3
 	textpointer Choose2BasicEnergyCardsFromDiscardPileText            ; 0x01e4
-	textpointer ChoosePokemonPressAToRemoveDamageCounterText          ; 0x01e5
+	textpointer UNUSED_01E5                                           ; 0x01e5
 	textpointer Choose2CardsFromHandToDiscardText                     ; 0x01e6
 	textpointer Choose2CardsFromHandToReturnToDeckText                ; 0x01e7
 	textpointer ChooseCardToPlaceInHandText                           ; 0x01e8
 	textpointer ChoosePokemonToAttachDefenderToText                   ; 0x01e9
-	textpointer DrawUpToXCardsOneByOneText                            ; 0x01ea
+	textpointer UNUSED_01EA                                           ; 0x01ea
 	textpointer ChoosePokemonToReturnToTheDeckText                    ; 0x01eb
 	textpointer ChoosePokemonToPlaceInPlayText                        ; 0x01ec
 	textpointer ChooseBasicPokemonToEvolveText                        ; 0x01ed
@@ -521,7 +521,7 @@ TextOffsets::
 	textpointer ChooseTheCardToPutBackText                            ; 0x0203
 	textpointer ChooseTheCardToDiscardText                            ; 0x0204
 	textpointer DiscardedCardsFromDeckText                            ; 0x0205
-	textpointer DiscardedCardFromHandText                             ; 0x0206
+	textpointer UNUSED_0206                                           ; 0x0206
 	textpointer NoneCameText                                          ; 0x0207
 	textpointer CameToTheBenchText                                    ; 0x0208
 	textpointer DuelistHasNoCardsInHandText                           ; 0x0209
@@ -583,10 +583,10 @@ TextOffsets::
 	textpointer TransmittingCardReceiverText                          ; 0x0241
 	textpointer TransmittingDeckConfigurationSenderText               ; 0x0242
 	textpointer TransmittingDeckConfigurationReceiverText             ; 0x0243
-	textpointer TransmittingCardUnsuccessfulSenderText                ; 0x0244
-	textpointer TransmittingCardUnsuccessfulReceiverText              ; 0x0245
-	textpointer TransmittingDeckConfigurationUnsuccessfulSenderText   ; 0x0246
-	textpointer TransmittingDeckConfigurationUnsuccessfulReceiverText ; 0x0247
+	textpointer TransmittingCardUnsuccessfulText                      ; 0x0244
+	textpointer UNUSED_0245                                           ; 0x0245
+	textpointer TransmittingDeckConfigurationUnsuccessfulText         ; 0x0246
+	textpointer UNUSED_0247                                           ; 0x0247
 	textpointer NowPrintingText                                       ; 0x0248
 	textpointer UNUSED_0249                                           ; 0x0249
 	textpointer UnableDueToGoopGasAttackText                          ; 0x024a
@@ -641,7 +641,7 @@ TextOffsets::
 	textpointer GameCenterBillsPCCancelPromptText                     ; 0x027b
 	textpointer GameCenterBillsPCChipsPaidText                        ; 0x027c
 	textpointer GameCenterBillsPCCardsInsertedText                    ; 0x027d
-	textpointer GameCenterBillsPCReceivedRewardText                   ; 0x027e
+	textpointer UNUSED_027E                                           ; 0x027e
 	textpointer GameCenterBillsPCUnableLastOutputRemainingText        ; 0x027f
 	textpointer GameCenterBillsPCUnableNotEnoughChipsText             ; 0x0280
 	textpointer DeckText                                              ; 0x0281
@@ -660,8 +660,8 @@ TextOffsets::
 	textpointer ModifyDeckText                                        ; 0x028e
 	textpointer RenameDeckText                                        ; 0x028f
 	textpointer ChooseAsDuelingDeckText                               ; 0x0290
-	textpointer CancelDeckText                                        ; 0x0291
-	textpointer ParticleOText                                         ; 0x0292
+	textpointer CancelText                                            ; 0x0291
+	textpointer UNUSED_0292                                           ; 0x0292
 	textpointer ChosenAsDuelingDeckText                               ; 0x0293
 	textpointer Deck1Text                                             ; 0x0294
 	textpointer Deck2Text                                             ; 0x0295
@@ -689,13 +689,13 @@ TextOffsets::
 	textpointer YourPokemonHiraganaText                               ; 0x02ab
 	textpointer YourDiscardPileHiraganaText                           ; 0x02ac
 	textpointer YourHandHiraganaText                                  ; 0x02ad
-	textpointer ToYourPlayAreaHiraganaText                            ; 0x02ae
+	textpointer UNUSED_02AE                                           ; 0x02ae
 	textpointer YourPrizesHiraganaText                                ; 0x02af
 	textpointer OpponentsPokemonHiraganaText                          ; 0x02b0
 	textpointer OpponentsDiscardPileHiraganaText                      ; 0x02b1
 	textpointer OpponentsHandHiraganaText                             ; 0x02b2
 	textpointer OpponentsPrizesHiraganaText                           ; 0x02b3
-	textpointer ToOpponentsPlayAreaHiraganaText                       ; 0x02b4
+	textpointer UNUSED_02B4                                           ; 0x02b4
 	textpointer DuelistsPlayAreaSuffixText                            ; 0x02b5
 	textpointer YourPlayAreaHiraganaText                              ; 0x02b6
 	textpointer OpponentsPlayAreaHiraganaText                         ; 0x02b7
@@ -732,16 +732,16 @@ TextOffsets::
 	textpointer BuildDeckText                                         ; 0x02d6
 	textpointer ChooseDeckToSaveToMachineText                         ; 0x02d7
 	textpointer UNUSED_02D8                                           ; 0x02d8
-	textpointer ParticleNOText                                        ; 0x02d9
+	textpointer UNUSED_02D9                                           ; 0x02d9
 	textpointer SavedDeckToMachineText                                ; 0x02da
 	textpointer NoDecksSavedToMachineText                             ; 0x02db
-	textpointer ChooseDeckToDeleteFromMachineText                     ; 0x02dc
+	textpointer UNUSED_02DC                                           ; 0x02dc
 	textpointer ConfirmDeletePromptText                               ; 0x02dd
 	textpointer DeletedDeckFromMachineText                            ; 0x02de
 	textpointer YouMayOnlyCarry4DecksText                             ; 0x02df
 	textpointer ChooseDeckToDismantleText                             ; 0x02e0
 	textpointer DismantledThisDeckText                                ; 0x02e1
-	textpointer ChooseDeckToBuildText                                 ; 0x02e2
+	textpointer UNUSED_02E2                                           ; 0x02e2
 	textpointer CannotBuildMustDismantleText                          ; 0x02e3
 	textpointer YouDoNotOwnAllCardsNeededToBuildThisDeckText          ; 0x02e4
 	textpointer BuiltDeckText                                         ; 0x02e5
@@ -809,34 +809,34 @@ TextOffsets::
 	textpointer AutoDeckMachine2MysteriousCardDecksText               ; 0x0323
 	textpointer AutoDeckMachine2ColorlessDecksTextPadded              ; 0x0324
 	textpointer AutoDeckMachine2MysteriousCardDecksTextPadded         ; 0x0325
-	textpointer UNUSED_0326                                           ; 0x0326
+	textpointer AutoDeckMachine1FightingDecksTextPadded               ; 0x0326
 	textpointer MachineElectricFireDeckName                           ; 0x0327
 	textpointer MachineBattleWaterDeckName                            ; 0x0328
 	textpointer MachineEsperGreenDeckName                             ; 0x0329
-	textpointer UNUSED_032A                                           ; 0x032a
-	textpointer UNUSED_032B                                           ; 0x032b
-	textpointer UNUSED_032C                                           ; 0x032c
-	textpointer UNUSED_032D                                           ; 0x032d
+	textpointer AutoDeckMachine1GrassDecksTextPadded                  ; 0x032a
+	textpointer AutoDeckMachine1WaterDecksTextPadded                  ; 0x032b
+	textpointer AutoDeckMachine1FireDecksTextPadded                   ; 0x032c
+	textpointer AutoDeckMachine1LightningDecksTextPadded              ; 0x032d
 	textpointer MachineAwesomeFossilsDeckName                         ; 0x032e
-	textpointer UNUSED_032F                                           ; 0x032f
+	textpointer AutoDeckMachine1PsychicDecksTextPadded                ; 0x032f
 	textpointer MachineRockFestivalDeckName                           ; 0x0330
 	textpointer MachineJabHookDeckName                                ; 0x0331
-	textpointer UNUSED_0332                                           ; 0x0332
-	textpointer UNUSED_0333                                           ; 0x0333
+	textpointer AutoDeckMachine2DarkGrassDecksTextPadded              ; 0x0332
+	textpointer AutoDeckMachine2DarkLightningDecksTextPadded          ; 0x0333
 	textpointer MachineNationalParkDeckName                           ; 0x0334
 	textpointer MachineSelectiveBreedingDeckName                      ; 0x0335
-	textpointer UNUSED_0336                                           ; 0x0336
-	textpointer UNUSED_0337                                           ; 0x0337
+	textpointer AutoDeckMachine2DarkWaterDecksTextPadded              ; 0x0336
+	textpointer AutoDeckMachine2DarkFireDecksTextPadded               ; 0x0337
 	textpointer MachineInsulationDeckName                             ; 0x0338
 	textpointer MachineAntarcticDeckName                              ; 0x0339
-	textpointer UNUSED_033A                                           ; 0x033a
-	textpointer UNUSED_033B                                           ; 0x033b
+	textpointer AutoDeckMachine2DarkFightingDecksTextPadded           ; 0x033a
+	textpointer AutoDeckMachine2DarkPsychicDecksTextPadded            ; 0x033b
 	textpointer MachineRiskyBlazeDeckName                             ; 0x033c
 	textpointer MachineRagingCharizardDeckName                        ; 0x033d
 	textpointer MachineZapdosPowerPlantDeckName                       ; 0x033e
 	textpointer MachineElectricShockDeckName                          ; 0x033f
-	textpointer UNUSED_0340                                           ; 0x0340
-	textpointer UNUSED_0341                                           ; 0x0341
+	textpointer AutoDeckMachine2DarkSpecialDecksTextPadded            ; 0x0340
+	textpointer AutoDeckMachine2RareCardDecksTextPadded               ; 0x0341
 	textpointer MachineSpecialBarrierDeckName                         ; 0x0342
 	textpointer MachineEvolutionProhibitedDeckName                    ; 0x0343
 	textpointer UNUSED_0344                                           ; 0x0344
@@ -908,7 +908,7 @@ TextOffsets::
 	textpointer MachineBewareTheTrapDeckName                          ; 0x0386
 	textpointer MachineOgresKickDeckName                              ; 0x0387
 	textpointer UNUSED_0388                                           ; 0x0388
-	textpointer MachineHeavyWorkDeckName                              ; 0x0389
+	textpointer UNUSED_0389                                           ; 0x0389
 	textpointer MachineSlowbrosFishingDeckName                        ; 0x038a
 	textpointer UNUSED_038B                                           ; 0x038b
 	textpointer UNUSED_038C                                           ; 0x038c

@@ -2888,7 +2888,7 @@ DeckSelectScreenTextItems:
 	textitem  2, 14, ModifyDeckText
 	textitem 12, 14, ChooseAsDuelingDeckText
 	textitem  2, 16, RenameDeckText
-	textitem 12, 16, CancelDeckText
+	textitem 12, 16, CancelText
 	textitems_end
 
 ; for X = [wCurDeck] + 1,
@@ -3969,19 +3969,19 @@ HandleDeckCardsBreakdown:
 	ldtx hl, DeckDiagnosisBreakdownText
 	call ProcessTextFromID
 	ld a, [wDeckCheckEnergyCount]
-	lb de, 15, 8
+	lb de, 16, 8
 	call .PrintNumber
 	ld a, [wDeckCheckBasicCount]
-	lb de, 15, 10
+	lb de, 16, 10
 	call .PrintNumber
 	ld a, [wDeckCheckStage1Count]
-	lb de, 15, 12
+	lb de, 16, 12
 	call .PrintNumber
 	ld a, [wDeckCheckStage2Count]
-	lb de, 15, 14
+	lb de, 16, 14
 	call .PrintNumber
 	ld a, [wDeckCheckTrainerCount]
-	lb de, 15, 16
+	lb de, 16, 16
 	jp .PrintNumber
 
 .PrintNumber:
@@ -4285,7 +4285,7 @@ DeckBuildMenuTextItems:
 	textitem 16, 2, NameText
 	textitem  2, 4, DeckBuildingSaveText
 	textitem  9, 4, DeckBuildingDismantleText
-	textitem 16, 4, CancelDeckText
+	textitem 16, 4, CancelText
 	textitems_end
 
 ; prints "/60" to the coordinates given in de
@@ -6369,7 +6369,7 @@ SendCards_TransitionTable:
 SendCards_MenuData:
 	textitem  2, 2, DeckBuildingConfirmText
 	textitem  9, 2, SendText
-	textitem 16, 2, CancelDeckText
+	textitem 16, 2, CancelText
 	textitems_end
 
 HandleGiftCenterSendCardsMenu:

@@ -5578,7 +5578,7 @@ Rollout_PlayerSelectEffect:
 	; print "counters" text
 	push de
 	inc d ; x += 1
-	ldtx hl, EffectTargetGeneralUnitText
+	ldtx hl, FoodCountersText
 	call InitTextPrinting_ProcessTextFromID
 	pop de
 	pop bc
@@ -7387,7 +7387,7 @@ ImakuniEffect:
 EnergyRemoval_EnergyCheck:
 	call SwapTurn
 	call CheckIfThereAreAnyEnergyCardsAttached
-	ldtx hl, NoEnergyAttachedToPokemonInOppPlayAreaText
+	ldtx hl, NoEnergyCardsAttachedToPokemonInOppPlayAreaText
 	call SwapTurn
 	ret
 

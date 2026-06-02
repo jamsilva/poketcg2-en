@@ -3233,10 +3233,10 @@ ApplyAmnesiaToAttack_GotSubstatus:
 	ld e, a
 	call GetAttackName
 	call LoadTxRam2
-	ldtx hl, DisabledNextTurnText
+	call SharedDisableAmnesia_LoadText
 	call DrawWideTextBox_WaitForInput
-	call SwapTurn
-	ret
+	jp SwapTurn
+	nop ; dummy NOP here to pad space freed
 
 PoliwhirlDoubleslap_AIEffect:
 	ld a, 60 / 2
@@ -3944,25 +3944,18 @@ Discard2CardsFromTempList:
 	call DiscardCard
 	ret
 
-; returns carry if Pkmn Power cannot be used
-; or if Arena card is not Charizard.
-; unreferenced
-EnergyBurnCheck_Unreferenced:
-	xor a ; PLAY_AREA_ARENA
-	bank1call CheckIsIncapableOfUsingPkmnPower
-	ret c
-	ld a, DUELVARS_ARENA_CARD
-	push de
+SharedDisableAmnesia_LoadText:
+	ld a, DUELVARS_ARENA_CARD_SUBSTATUS2
 	get_turn_duelist_var
-	call GetCardIDFromDeckIndex
-	cp16 CHARIZARD_LV76
-	pop de
-	jr nz, .not_charizard
+	ldtx hl, DisabledNextTurnText
 	or a
+	cp SUBSTATUS2_AMNESIA
+	ret nz
+	ldtx hl, AmnesiaNextTurnText
 	ret
-.not_charizard
-	scf
-	ret
+REPT $d ; dummy NOPs here to pad space freed
+	nop
+ENDR
 
 CharizardAltEnergyBurnEffect:
 	scf

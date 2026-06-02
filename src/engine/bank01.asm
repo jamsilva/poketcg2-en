@@ -1424,7 +1424,7 @@ CheckIfEnoughEnergiesForGivenAttack:
 ; print the number of prizes left, of active Pokemon, and of cards left in the deck
 ; of both duelists. this is called when the duel ends.
 PrintDuelResultStats:
-	lb de, 8, 8
+	lb de, 7, 8
 	call .PrintDuelistResultStats
 	lb de, 1, 1
 	call SwapTurn
@@ -1453,10 +1453,10 @@ PrintDuelResultStats:
 	inc c
 	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
 	get_turn_duelist_var
-	ldtx hl, YesText
+	ldtx hl, ActiveYesText
 	or a
 	jr nz, .pkmn_in_play_area
-	ldtx hl, NoneText
+	ldtx hl, ActiveNoneText
 .pkmn_in_play_area
 	dec d
 	call InitTextPrinting_ProcessTextFromID
