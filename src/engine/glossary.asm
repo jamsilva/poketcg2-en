@@ -148,12 +148,12 @@ Glossary:
 	menu_params 1, 3, 2, 5, SYM_CURSOR_R, SYM_SPACE, NULL
 
 .MainMenuItems:
-	textitem 2,  1, GlossaryTitleText
-	textitem 3,  3, GlossaryGameBasicsText
-	textitem 3,  5, GlossaryCardTypesAndKeywordsText
-	textitem 3,  7, GlossaryStatusesAndDecisionText
-	textitem 3,  9, GlossarySpecialRulesText
-	textitem 3, 11, GlossaryExitText
+	textitem 3,  1, GlossaryTitleText
+	textitem 2,  3, GlossaryGameBasicsText
+	textitem 2,  5, GlossaryCardTypesAndKeywordsText
+	textitem 2,  7, GlossaryStatusesAndDecisionText
+	textitem 2,  9, GlossarySpecialRulesText
+	textitem 2, 11, GlossaryExitText
 	textitems_end
 
 ; shows which topics are inside this Glossary menu
@@ -168,6 +168,7 @@ Glossary:
 ; GLOSSARY_GAME_BASICS
 	ldtx hl, GlossaryGameBasicsText
 	ldtx de, GlossaryGameBasicsMenuText
+	ld a, 8
 	jr .got_title_and_topics
 .asm_187df
 	cp GLOSSARY_CARD_TYPE_EXPLANATIONS
@@ -175,6 +176,7 @@ Glossary:
 ; GLOSSARY_CARD_TYPE_EXPLANATIONS
 	ldtx hl, GlossaryCardTypesAndKeywordsText
 	ldtx de, GlossaryCardTypesAndKeywordsMenuText
+	ld a, 5
 	jr .got_title_and_topics
 .asm_187eb
 	cp GLOSSARY_STATUS_WINNING_LOSING
@@ -182,25 +184,24 @@ Glossary:
 ; GLOSSARY_STATUS_WINNING_LOSING
 	ldtx hl, GlossaryStatusesAndDecisionText
 	ldtx de, GlossaryStatusesAndDecisionMenuText
+	ld a, 3
 	jr .got_title_and_topics
 .asm_187f7
 ; GLOSSARY_SPECIAL_DUEL_RULES
-	lb de, 6, 1
-	call InitTextPrinting
 	ldtx hl, GlossarySpecialRulesText
 	ldtx de, GlossarySpecialRulesMenuText
-	push de
-	jr .skip_init_text
+	ld a, 6
+	nop ; dummy NOP here to pad space freed
 
 ; hl = title
 ; de = topics
 .got_title_and_topics
 	push de
 	push hl
-	lb de, 3, 1
+	ld d, a
+	ld e, 1
 	call InitTextPrinting
 	pop hl
-.skip_init_text
 	call ProcessTextFromID
 	lb de, 1, 3
 	call InitTextPrinting
@@ -232,7 +233,7 @@ Glossary:
 	push hl
 	ldtx hl, GlossaryGameBasicsText
 	push hl
-	lb de, 2, 0
+	lb de, 8, 0
 	jr .got_explanation_data
 
 .asm_18847
@@ -243,7 +244,7 @@ Glossary:
 	push hl
 	ldtx hl, GlossaryCardTypesAndKeywordsText
 	push hl
-	lb de, 2, 0
+	lb de, 5, 0
 	jr .got_explanation_data
 
 .asm_18858
@@ -254,7 +255,7 @@ Glossary:
 	push hl
 	ldtx hl, GlossaryStatusesAndDecisionText
 	push hl
-	lb de, 2, 0
+	lb de, 3, 0
 	jr .got_explanation_data
 
 .asm_18869
@@ -263,7 +264,7 @@ Glossary:
 	push hl
 	ldtx hl, GlossarySpecialRulesText
 	push hl
-	lb de, 5, 0
+	lb de, 6, 0
 .got_explanation_data
 	call InitTextPrinting
 	pop hl
@@ -320,47 +321,47 @@ MACRO explanation
 ENDM
 
 .ExplanationTextData_GameBasics:
-	explanation 5, GlossaryDeckTitleText, GlossaryDeckDescriptionText
-	explanation 6, GlossaryDeckPileTitleText, GlossaryDeckPileDescriptionText
-	explanation 4, GlossaryDiscardPileTitleText, GlossaryDiscardPileDescriptionText
-	explanation 6, GlossaryHandTitleText, GlossaryHandDescriptionText
-	explanation 5, GlossaryArenaTitleText, GlossaryArenaDescriptionText
-	explanation 5, GlossaryBenchTitleText, GlossaryBenchDescriptionText
+	explanation 6, GlossaryDeckTitleText, GlossaryDeckDescriptionText
+	explanation 7, GlossaryDeckPileTitleText, GlossaryDeckPileDescriptionText
+	explanation 5, GlossaryDiscardPileTitleText, GlossaryDiscardPileDescriptionText
+	explanation 7, GlossaryHandTitleText, GlossaryHandDescriptionText
+	explanation 7, GlossaryArenaTitleText, GlossaryArenaDescriptionText
+	explanation 7, GlossaryBenchTitleText, GlossaryBenchDescriptionText
 	explanation 4, GlossaryActivePokemonTitleText, GlossaryActivePokemonDescriptionText
-	explanation 3, GlossaryBenchedPokemonTitleText, GlossaryBenchedPokemonDescriptionText
-	explanation 4, GlossaryPrizesTitleText, GlossaryPrizesDescriptionText
-	explanation 2, GlossaryDamageCountersTitleText, GlossaryDamageCountersDescriptionText
+	explanation 6, GlossaryBenchedPokemonTitleText, GlossaryBenchedPokemonDescriptionText
+	explanation 7, GlossaryPrizesTitleText, GlossaryPrizesDescriptionText
+	explanation 5, GlossaryDamageCountersTitleText, GlossaryDamageCountersDescriptionText
 
 .ExplanationTextData_CardTypes:
-	explanation 3, GlossaryEnergyCardsTitleText, GlossaryEnergyCardsDescriptionText
-	explanation 3, GlossaryTrainerCardsTitleText, GlossaryTrainerCardsDescriptionText
-	explanation 4, GlossaryBasicPokemonTitleText, GlossaryBasicPokemonText
-	explanation 4, GlossaryEvolutionCardsTitleText, GlossaryEvolutionCardsDescriptionText
+	explanation 5, GlossaryEnergyCardsTitleText, GlossaryEnergyCardsDescriptionText
+	explanation 5, GlossaryTrainerCardsTitleText, GlossaryTrainerCardsDescriptionText
+	explanation 5, GlossaryBasicPokemonTitleText, GlossaryBasicPokemonText
+	explanation 5, GlossaryEvolutionCardsTitleText, GlossaryEvolutionCardsDescriptionText
 	explanation 3, GlossaryDarkEvolutionCardsTitleText, GlossaryDarkEvolutionCardsDescriptionText
 	explanation 6, GlossaryAttackTitleText, GlossaryAttackDescriptionText
 	explanation 5, GlossaryPokemonPowerTitleText, GlossaryPokemonPowerDescriptionText
 	explanation 6, GlossaryWeaknessTitleText, GlossaryWeaknessDescriptionText
-	explanation 5, GlossaryResistanceTitleText, GlossaryResistanceDescriptionText
-	explanation 5, GlossaryRetreatTitleText, GlossaryRetreatDescriptionText
+	explanation 6, GlossaryResistanceTitleText, GlossaryResistanceDescriptionText
+	explanation 6, GlossaryRetreatTitleText, GlossaryRetreatDescriptionText
 
 .ExplanationTextData_StatusWinningLosing:
-	explanation 5, GlossaryPoisonedTitleText, GlossaryPoisonedDescriptionText
-	explanation 5, GlossaryParalyzedTitleText, GlossaryParalyzedDescriptionText
+	explanation 3, GlossaryPoisonedTitleText, GlossaryPoisonedDescriptionText
+	explanation 3, GlossaryParalyzedTitleText, GlossaryParalyzedDescriptionText
 	explanation 4, GlossaryAsleepTitleText, GlossaryAsleepDescriptionText
-	explanation 4, GlossaryConfusedTitleText, GlossaryConfusedDescriptionText
-	explanation 3, GlossaryDecision1TakenAllPrizesTitleText, GlossaryDecision1TakenAllPrizesDescriptionText
-	explanation 3, GlossaryDecision2DeckedOutTitleText, GlossaryDecision2DeckedOutDescriptionText
-	explanation 3, GlossaryDecision3RunOutOfPokemonTitleText, GlossaryDecision3RunOutOfPokemonDescriptionText
-	explanation 4, GlossarySuddenDeathTitleText, GlossarySuddenDeathDescriptionText
+	explanation 3, GlossaryConfusedTitleText, GlossaryConfusedDescriptionText
+	explanation 6, GlossaryDecision1TakenAllPrizesTitleText, GlossaryDecision1TakenAllPrizesDescriptionText
+	explanation 6, GlossaryDecision2DeckedOutTitleText, GlossaryDecision2DeckedOutDescriptionText
+	explanation 6, GlossaryDecision3RunOutOfPokemonTitleText, GlossaryDecision3RunOutOfPokemonDescriptionText
+	explanation 6, GlossarySuddenDeathTitleText, GlossarySuddenDeathDescriptionText
 
 .ExplanationTextData_SpecialDuelRules:
-	explanation 3, GlossaryChlorophyllTitleText, GlossaryChlorophyllDescriptionText
-	explanation 3, GlossaryThunderChargeTitleText, GlossaryThunderChargeDescriptionText
-	explanation 3, GlossaryFlameArmorTitleText, GlossaryFlameArmorDescriptionText
-	explanation 4, GlossarySmallBenchTitleText, GlossarySmallBenchDescriptionText
-	explanation 4, GlossaryRunningWaterTitleText, GlossaryRunningWaterDescriptionText
-	explanation 3, GlossaryEarthPowerTitleText, GlossaryEarthPowerDescriptionText
-	explanation 4, GlossaryLowResistanceTitleText, GlossaryLowResistanceDescriptionText
-	explanation 4, GlossaryEnergyReturnTitleText, GlossaryEnergyReturnDescriptionText
-	explanation 4, GlossaryToughEscapeTitleText, GlossaryToughEscapeDescriptionText
-	explanation 3, GlossaryBlackHoleTitleText, GlossaryBlackHoleDescriptionText
+	explanation 6, GlossaryChlorophyllTitleText, GlossaryChlorophyllDescriptionText
+	explanation 5, GlossaryThunderChargeTitleText, GlossaryThunderChargeDescriptionText
+	explanation 6, GlossaryFlameArmorTitleText, GlossaryFlameArmorDescriptionText
+	explanation 6, GlossarySmallBenchTitleText, GlossarySmallBenchDescriptionText
+	explanation 5, GlossaryRunningWaterTitleText, GlossaryRunningWaterDescriptionText
+	explanation 6, GlossaryEarthPowerTitleText, GlossaryEarthPowerDescriptionText
+	explanation 5, GlossaryLowResistanceTitleText, GlossaryLowResistanceDescriptionText
+	explanation 5, GlossaryEnergyReturnTitleText, GlossaryEnergyReturnDescriptionText
+	explanation 6, GlossaryToughEscapeTitleText, GlossaryToughEscapeDescriptionText
+	explanation 6, GlossaryBlackHoleTitleText, GlossaryBlackHoleDescriptionText

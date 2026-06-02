@@ -1430,9 +1430,9 @@ TextOffsets::
 	textpointer DeckDiagnosisOKText                                   ; 0x058a
 	textpointer DeckDiagnosisOKButNoTrainerText                       ; 0x058b
 	textpointer DeckDiagnosisEnergyUnbalancedText                     ; 0x058c
-	textpointer DebugDummyText                                        ; 0x058d
+	textpointer UNUSED_058D                                           ; 0x058d
 	textpointer DebugKondoDebugText                                   ; 0x058e
-	textpointer DebugMapDisplayTestText                               ; 0x058f
+	textpointer UNUSED_058F                                           ; 0x058f
 	textpointer DebugCharacterDisplayTestText                         ; 0x0590
 	textpointer DebugYoshidaTestText                                  ; 0x0591
 	textpointer DebugGameMainText                                     ; 0x0592
