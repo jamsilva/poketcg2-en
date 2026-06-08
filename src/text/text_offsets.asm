@@ -645,16 +645,16 @@ TextOffsets::
 	textpointer GameCenterBillsPCUnableLastOutputRemainingText        ; 0x027f
 	textpointer GameCenterBillsPCUnableNotEnoughChipsText             ; 0x0280
 	textpointer DeckText                                              ; 0x0281
-	textpointer HiraganaOptionText                                    ; 0x0282
-	textpointer KatakanaOptionText                                    ; 0x0283
-	textpointer UppercaseOptionText                                   ; 0x0284
-	textpointer LowercaseOptionText                                   ; 0x0285
+	textpointer UNUSED_0282                                           ; 0x0282
+	textpointer UNUSED_0283                                           ; 0x0283
+	textpointer UNUSED_0284                                           ; 0x0284
+	textpointer UNUSED_0285                                           ; 0x0285
 	textpointer EndText                                               ; 0x0286
 	textpointer WhatIsYourNameText                                    ; 0x0287
-	textpointer HiraganaKeyboardText                                  ; 0x0288
-	textpointer KatakanaKeyboardText                                  ; 0x0289
-	textpointer UppercaseKeyboardText                                 ; 0x028a
-	textpointer LowercaseKeyboardText                                 ; 0x028b
+	textpointer UNUSED_0288                                           ; 0x0288
+	textpointer UNUSED_0289                                           ; 0x0289
+	textpointer PlayerNameKeyboardText                                ; 0x028a
+	textpointer DeckNameKeyboardText                                  ; 0x028b
 	textpointer NewDeckText                                           ; 0x028c
 	textpointer PleaseSelectDeckText                                  ; 0x028d
 	textpointer ModifyDeckText                                        ; 0x028e
@@ -667,7 +667,7 @@ TextOffsets::
 	textpointer Deck2Text                                             ; 0x0295
 	textpointer Deck3Text                                             ; 0x0296
 	textpointer Deck4Text                                             ; 0x0297
-	textpointer Deck5Text                                             ; 0x0298
+	textpointer UNUSED_0298                                           ; 0x0298
 	textpointer ThereIsNoDeckHereText                                 ; 0x0299
 	textpointer DeckBuildingConfirmText                               ; 0x029a
 	textpointer DeckBuildingDismantleText                             ; 0x029b

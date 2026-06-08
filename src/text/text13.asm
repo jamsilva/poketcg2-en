@@ -1,5 +1,3 @@
-SECTION "Text 13", ROMX
-
 Text11f3:
 	textfw "うふふ・・・うれしいなぁ"
 	linefw "こうかんしてくれて ありがとー"
@@ -858,6 +856,8 @@ Text1263:
 	linefw "D<RDOT>オーヤマに きいてくれ!"
 	linefw "じゃあな! <RAMNAME>!"
 	done
+
+SECTION "Text 19", ROMX
 
 Text1264:
 	textfw "おっ!"

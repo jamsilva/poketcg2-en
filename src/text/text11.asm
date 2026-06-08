@@ -1,5 +1,3 @@
-SECTION "Text 11", ROMX
-
 RodFinalCupRound2NextOpponentText:
 	textfw "さすがだな <RAMNAME>くん"
 	linefw "つぎは カネコウジと対戦だ!"
@@ -349,6 +347,8 @@ CupHostGrandMasterCupGrandFinalsCallRodText:
 	textfw "グランドマスターのリーダー"
 	linefw "リュウドーさんが あいてです!"
 	done
+
+SECTION "Text 16", ROMX
 
 RodGrandMasterCupGrandFinalsText:
 	textfw "さあ わたし このリュウドーが"
@@ -1854,6 +1854,8 @@ PierrotPlayerLostText:
 StatueDamageChaosDeckName:
 	textfw "ダメージだいこんらんデッキ"
 	done
+
+SECTION "Text 17", ROMX
 
 AnnaWantsToDuelText:
 	textfw "いらっしゃいませー!"

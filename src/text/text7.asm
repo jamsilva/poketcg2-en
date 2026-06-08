@@ -1,5 +1,3 @@
-SECTION "Text 7", ROMX
-
 Text0b76:
 	textfw "そうか・・・ざんねんだな"
 	linefw " "
@@ -524,6 +522,8 @@ Text0bc4:
 	linefw "オートデッキマシンを つかって"
 	linefw "つくると いいんじゃないかな"
 	done
+
+SECTION "Text 11", ROMX
 
 Text0bc5:
 	textfw "このコインも うけとってくれ"

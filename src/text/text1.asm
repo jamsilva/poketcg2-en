@@ -22,6 +22,13 @@ UNUSED_024B:
 UNUSED_026F:
 UNUSED_0270:
 UNUSED_0272:
+UNUSED_0282:
+UNUSED_0283:
+UNUSED_0284:
+UNUSED_0285:
+UNUSED_0288:
+UNUSED_0289:
+UNUSED_0298:
 UNUSED_029E:
 UNUSED_02BC:
 UNUSED_02BD:
@@ -1490,6 +1497,8 @@ VenomPowderCheckText:
 	textfw "「りんぷん」判定! 「おもて」なら"
 	linefw "[相手]を「どく」と「こんらん」"
 	done
+
+SECTION "Text 2", ROMX
 
 IfTailsYourPokemonBecomesConfusedText:
 	textfw "「うら」なら"

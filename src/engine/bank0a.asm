@@ -3258,58 +3258,15 @@ ReadCurAutoDeckName:
 	ld de, wDefaultText
 	call CopyText
 	pop hl
-
 	farcall SwitchToWRAM2
 	ld de, wDefaultText
-	ld b, TX_KATAKANA
-	ld c, TX_HIRAGANA
 .loop_copy_name
 	ld a, [de]
-	inc de
+	ld [hli], a
 	or a
 	jr z, .done_copy_name ; TX_END
-; handle charmap, due to different TX_* usage
-	cp TX_SYMBOL
-	jr z, .symbol
-	cp TX_FULLWIDTH4
-	jr z, .fw4
-	cp c
-	jr z, .kana_switch
-; kana, no switch
-	ld [hl], b
-	inc hl
-	ld [hli], a
-	jr .loop_copy_name
-.kana_switch
-	ld [hli], a
-	ld a, [de]
-	inc de
-	ld [hli], a
-	ld a, b
-	ld b, c
-	ld c, a
-	jr .loop_copy_name
-.symbol
-	ld [hli], a
-	ld a, [de]
-	inc de
-	ld [hli], a
-	ld a, [de]
-	cp b
-	jr nz, .loop_copy_name
 	inc de
 	jr .loop_copy_name
-.fw4
-	ld [hli], a
-	ld a, [de]
-	inc de
-	ld [hli], a
-	ld a, [de]
-	cp b
-	jr nz, .loop_copy_name
-	inc de
-	jr .loop_copy_name
-
 .done_copy_name
 	ld [hl], a
 	farcall SwitchToWRAM1

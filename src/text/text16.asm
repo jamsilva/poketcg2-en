@@ -327,6 +327,8 @@ DarkMachokeDescription:
 	linefw "突然暴れ始めた。"
 	done
 
+SECTION "Text 23", ROMX
+
 MachampName:
 	text "Machamp"
 	done
@@ -1825,6 +1827,8 @@ DarkAmplificationDescription:
 	linefw "×20のダメージを追加する。"
 	done
 
+SECTION "Text 24", ROMX
+
 GRsMewtwoDescription:
 	textfw "わるいポケモンをコントロールする力を"
 	linefw "もつという。なかなか、その姿をみる"
@@ -2392,8 +2396,6 @@ MeowthLv13Description:
 ClearProfitName:
 	textfw "まるもうけ"
 	done
-
-SECTION "Text 17", ROMX
 
 ClearProfitDescription:
 	textfw "「うら」が出るまでコインを投げつづけ"

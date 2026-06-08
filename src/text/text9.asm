@@ -1,5 +1,3 @@
-SECTION "Text 9", ROMX
-
 Text0dc8:
 	textfw "イラストがちがう めずらしい"
 	linefw "「フシギバナ<Lv>67」を やるぜ!"
@@ -1000,6 +998,8 @@ Text0e57:
 	textfw "また まけちゃったわ"
 	linefw "はい 拡張パックを あげるわ"
 	done
+
+SECTION "Text 14", ROMX
 
 Text0e58:
 	textfw "がんばって GR団を やっつけて"

@@ -1,5 +1,3 @@
-SECTION "Text 14", ROMX
-
 UsefulButtonsBookText:
 	textfw "対戦画面での べんりなボタン"
 	linefw "Bボタンをおしながら 十字ボタン!"
@@ -729,6 +727,8 @@ DarkIvysaurName:
 VinePullName:
 	textfw "つるでひっぱる"
 	done
+
+SECTION "Text 20", ROMX
 
 VinePullDescription:
 	textfw "この力は、自分の番ごとに1回、この"
@@ -2227,6 +2227,8 @@ PinsirName:
 	text "Pinsir"
 	done
 
+SECTION "Text 21", ROMX
+
 SlicingThrowName:
 	textfw "はさんでなげる"
 	done
@@ -2293,8 +2295,6 @@ CharmanderLv9Description:
 EmberName:
 	textfw "ひのこ"
 	done
-
-SECTION "Text 15", ROMX
 
 DiscardOneFireEnergyDescription:
 	textfw "[自分]についている「炎」エネルギーカ"

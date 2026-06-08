@@ -25,18 +25,11 @@ DEF MULTILINE_INPUT_SCREEN_BUFFER_LENGTH EQU MAX_MULTILINE_INPUT_LENGTH + 2     
 	const_def
 	const NAME_MODE_HIRAGANA  ; $0
 	const NAME_MODE_KATAKANA  ; $1
-	const NAME_MODE_UPPER_ABC ; $2
-	const NAME_MODE_LOWER_ABC ; $3
+	const NAME_MODE_UPPER_WIDE ; $2
+	const NAME_MODE_UPPER_HALF ; $3
 DEF NUM_NAME_MODES EQU const_value
 
-; keyboard toggle locations:
-; - hiragana mode: katakana, upper abc, lower abc, done
-; - katakana mode: hiragana, upper abc, lower abc, done
-; - upper abc mode: hiragana, katakana, lower abc, done
-; - lower abc mode: hiragana, katakana, upper abc, done
-	const_def $06
-	const KEYBOARD_UNKNOWN  ; $06
-	const KEYBOARD_TOGGLE_1 ; $07
-	const KEYBOARD_TOGGLE_2 ; $08
-	const KEYBOARD_TOGGLE_3 ; $09
-	const KEYBOARD_DONE     ; $0a
+; keyboard commands:
+	const_def $01
+	const KEYBOARD_DONE     ; $01
+	const KEYBOARD_UNKNOWN  ; $02

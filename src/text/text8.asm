@@ -1,5 +1,3 @@
-SECTION "Text 8", ROMX
-
 Text0c95:
 	textfw "さあ つぎは"
 	linefw "水のGR団のトリデに むかうといい"
@@ -48,6 +46,8 @@ Text0c9b:
 	linefw "ぜーんぜん かまわないよ"
 	linefw "こまるのは きみだしね"
 	done
+
+SECTION "Text 12", ROMX
 
 Text0c9c:
 	textfw "あたらしいりょうりを いくつか"
@@ -1557,6 +1557,8 @@ GameCenterLobbyGRLassPostgameNoWordsToVictorText:
 	textfw "ビルリッチさまが まけたんだから"
 	linefw "なにしてても モンクないわ"
 	done
+
+SECTION "Text 13", ROMX
 
 GameCenterLobbyGRPappyLectureText:
 	textfw "ゲームに ムチュウになって"

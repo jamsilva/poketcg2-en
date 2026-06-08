@@ -1,5 +1,3 @@
-SECTION "Text 5", ROMX
-
 DebugSwapPlayerGenderText:
 	textfw "プレイヤーの性別を入れ替える"
 	done
@@ -502,6 +500,8 @@ Text0861:
 	textfw "えーと サイドカードは"
 	linefw "4枚で 対戦しましょう"
 	done
+
+SECTION "Text 8", ROMX
 
 Text0862:
 	textfw "対戦しないのも じゆうだから"
@@ -1997,6 +1997,8 @@ Text093b:
 	textfw "それなら わたしは ほかの団員と"
 	linefw "対戦を たのしむことにしよう"
 	done
+
+SECTION "Text 9", ROMX
 
 Text093c:
 	textfw "だが もう1ど わたしに勝つと"

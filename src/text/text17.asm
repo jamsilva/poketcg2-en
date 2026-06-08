@@ -1306,11 +1306,3 @@ TheRocketsTrapDescription:
 	linefw "いで選び、相手の山札にもどす。その後"
 	linefw "その山札をよく切る。"
 	done
-
-SECTION "Text 18", ROMX
-SECTION "Text 19", ROMX
-SECTION "Text 20", ROMX
-SECTION "Text 21", ROMX
-SECTION "Text 22", ROMX
-SECTION "Text 23", ROMX
-SECTION "Text 24", ROMX

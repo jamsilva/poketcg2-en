@@ -2693,6 +2693,7 @@ DeckSelectionSubMenu:
 	ld a, [wCurDeck]
 	jp DeckSelectionMenu.init_menu_params
 
+; gets current deck's name from user input
 InputCurDeckName:
 	ld a, [wCurDeck]
 	or a
@@ -2710,62 +2711,53 @@ InputCurDeckName:
 	ld hl, Deck3RenameText
 	jr .got_deck_ptr
 .try_deck_4
-	dec a
-	jr nz, .deck_5
 	ld hl, Deck4RenameText
-	jr .got_deck_ptr
-.deck_5
-	ld hl, Deck5RenameText
 .got_deck_ptr
 	ld a, DECK_NAME_SIZE_WO_SUFFIX
 	lb bc, 4, 1
 	ld de, wCurDeckName
-	farcall InputName
+	farcall InputName_HalfWidth
 	ld a, [wCurDeckName]
 	or a
 	ret nz
-	call .UnnamedDeck
-	ret
+	; empty name
 
 ; handles the naming of unnamed decks
-; inputs as the deck name "<player name> no XXX"
+; inputs as the deck name "Deck XXX"
 ; where XXX is the current unnamed deck counter
 .UnnamedDeck
+; read the current unnamed deck number
+; and convert it to text
 	ld hl, sUnnamedDeckCounter
 	call EnableSRAM
-	ld e, [hl]
-	inc hl
-	ld d, [hl]
-	push de
-	ld de, wCurDeckName
-	call CopyPlayerName
-	ld h, d
-	ld l, e
-	pop de
-
-	ld [hl], TX_HIRAGANA
-	inc hl
-	ldfw [hl], "の"
-	inc hl
-
-	push hl
-	ld h, d
-	ld l, e
-	call UnnamedDeckCounterToTxSymbol
+	ld a, [hli]
+	ld h, [hl]
 	call DisableSRAM
-	pop hl
+	ld l, a
+	ld de, wDefaultText
+	call TwoByteNumberToText
 
-	ld a, [wTempUnnamedDeckCounter]
-	ld [hl], TX_SYMBOL
+	ld hl, wCurDeckName
+	ld [hl], TX_HALFWIDTH
 	inc hl
+	ld [hl], 'D'
+	inc hl
+	ld [hl], 'e'
+	inc hl
+	ld [hl], 'c'
+	inc hl
+	ld [hl], 'k'
+	inc hl
+	ld [hl], ' '
+	inc hl
+	ld de, wDefaultText + 2
+	ld a, [de]
+	inc de
 	ld [hli], a
-	ld a, [wTempUnnamedDeckCounter + 1]
-	ld [hl], TX_SYMBOL
-	inc hl
+	ld a, [de]
+	inc de
 	ld [hli], a
-	ld a, [wTempUnnamedDeckCounter + 2]
-	ld [hl], TX_SYMBOL
-	inc hl
+	ld a, [de]
 	ld [hli], a
 	xor a
 	ld [hl], a
@@ -3330,6 +3322,9 @@ DrawDecksScreen:
 	textitem 4, 11, Deck4Text ; "4・"
 	textitems_end
 
+; copies text from hl to wDefaultText
+; with " Deck" appended to the end
+; hl = ptr to deck name
 CopyDeckName:
 	ld de, wDefaultText
 	call CopyListFromHLToDE
@@ -3383,19 +3378,16 @@ PrintDeckName:
 	ret
 
 DeckNameSuffix:
-	katakana "デ"
-	katakana "ッ"
-	katakana "キ"
+	db " Deck"
 	done
 
 CopyListFromHLToDE:
-.loop
 	ld a, [hli]
 	ld [de], a
 	or a
 	ret z ; TX_END
 	inc de
-	jr .loop
+	jr CopyListFromHLToDE
 
 ; same as CopyListFromHLToDE, but for SRAM copying
 CopyListFromHLToDEInSRAM:
@@ -3480,12 +3472,7 @@ AppendDeckName:
 	ret
 
 .text_start
-	katakana "デ"
-	katakana "ッ"
-	katakana "キ"
-REPT 10
-	db "<SPACE>"
-ENDR
+	db " Deck                     "
 .text_end
 
 ; returns carry if the deck in hl
@@ -3535,6 +3522,10 @@ DrawHandCardsTileAtDE:
 	call FillRectangle
 	ret
 
+; handles user input when selecting a card filter
+; when building a deck configuration
+; the handling of selecting cards themselves from the list
+; to add/remove to the deck is done in HandleDeckCardSelectionList
 HandleDeckBuildScreen:
 	xor a
 	ld [hffbf], a
@@ -3591,6 +3582,7 @@ HandleDeckBuildScreen:
 	cp MENU_CANCEL
 	jp z, OpenDeckConfigurationMenu
 
+; input was made to jump to the card list
 .jump_to_list
 	ld a, [wNumEntriesInCurFilter]
 	or a
@@ -3691,6 +3683,7 @@ HandleDeckBuildScreen:
 	ld a, [hCurMenuItem]
 	cp MENU_CANCEL
 	jr nz, .open_card_page
+	; cancelled
 	ld hl, FiltersCardSelectionParams
 	call InitializeScrollMenuParameters
 	ld a, [wCurCardTypeFilter]
@@ -3940,11 +3933,8 @@ AppendDeckName_Breakdown:
 	ret
 
 .DeckNameSuffix
-	katakana "デ"
-	katakana "ッ"
-	katakana "キ"
-	katakana " "
-	done
+	text " Deck "
+	; fall through
 
 .space
 	katakana " "
@@ -4196,9 +4186,6 @@ FillBGMapLineWithA:
 	call BCCoordToBGMap0Address
 	ld b, SCREEN_WIDTH
 	call WriteBBytesToDE
-	ld a, [wConsole]
-	cp CONSOLE_CGB
-	ret nz ; not cgb
 	ld a, $01 ; attributes
 	ld b, SCREEN_WIDTH
 	call BankswitchVRAM1
@@ -4259,17 +4246,11 @@ DrawCardTypeIcons:
 	call FillRectangle
 	pop af
 	call GetCardTypeIconPalette
-	ld b, a
-	ld a, [wConsole]
-	cp CONSOLE_CGB
-	jr nz, .not_cgb
-	ld a, b
 	lb bc, 2, 2
 	lb hl, 0, 0
 	call BankswitchVRAM1
 	call FillRectangle
 	call BankswitchVRAM0
-.not_cgb
 	pop hl
 	ret
 
@@ -6275,17 +6256,11 @@ PrintConfirmationCardList:
 	pop af
 
 	call GetCardTypeIconPalette
-	ld b, a
-	ld a, [wConsole]
-	cp CONSOLE_CGB
-	jr nz, .skip_pal
-	ld a, b
 	lb bc, 2, 2
 	lb hl, 0, 0
 	call BankswitchVRAM1
 	call FillRectangle
 	call BankswitchVRAM0
-.skip_pal
 	pop bc
 	pop de
 	pop hl
@@ -7041,8 +7016,6 @@ PrintTotalNumberOfCardsInCollection:
 	ld bc, -10
 	call .GetDigit
 	ld bc, -1
-	call .GetDigit
-	ret
 
 .GetDigit
 	ld a, SYM_0 - 1

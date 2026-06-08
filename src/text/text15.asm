@@ -1419,6 +1419,8 @@ MysteriousName:
 	textfw "なぞの"
 	done
 
+SECTION "Text 22", ROMX
+
 StarmieDescription:
 	textfw "幾何学的なボディから宇宙生物では"
 	linefw "ないかと地元では疑われている。"
@@ -2511,8 +2513,6 @@ SandshrewLv12Description:
 SwiftName:
 	textfw "スピードスター"
 	done
-
-SECTION "Text 16", ROMX
 
 SwiftDescription:
 	textfw "このワザのダメージは、"

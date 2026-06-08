@@ -1,5 +1,3 @@
-SECTION "Text 6", ROMX
-
 Text093f:
 	textfw "これで きさまが 1勝"
 	linefw "わたしが 1勝だ・・・"
@@ -1479,6 +1477,8 @@ PromotionalSlowpokeLv9Text:
 PromotionalCharizardLv76Text:
 	textfw "リザードン<Lv>76"
 	done
+
+SECTION "Text 10", ROMX
 
 PromotionalDarkPersianLv28Text:
 	textfw "わるいペルシアン<Lv>28"

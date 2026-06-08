@@ -1,5 +1,3 @@
-SECTION "Text 4", ROMX
-
 DebugCharacterDisplayTestText:
 	textfw "人物の表示テスト"
 	done
@@ -471,6 +469,8 @@ GRPsychicCoinText:
 GRColorlessCoinText:
 	textfw "無のGR団コイン"
 	done
+
+SECTION "Text 6", ROMX
 
 GRKingCoinText:
 	textfw "GR団キングコイン"
@@ -1973,6 +1973,8 @@ MailboxFullWarningText:
 	linefw "あたらしいメールを よむばあいは"
 	linefw "ひつようないメールを けしてください"
 	done
+
+SECTION "Text 7", ROMX
 
 MailboxNoNewMailText:
 	textfw "あたらしいメールは"
