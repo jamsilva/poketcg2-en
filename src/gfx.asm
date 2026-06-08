@@ -125,8 +125,6 @@ Pals_6f108::
 	rgb  0,  0,  0
 ; 0x6f150
 
-SECTION "Gfx 1@7150", ROMX[$7150], BANK[$1b]
-
 SymbolsFont::
 INCBIN "gfx/fonts/symbols.2bpp"
 

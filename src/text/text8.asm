@@ -1,3 +1,5 @@
+SECTION "Text 8", ROMX
+
 Text0c95:
 	textfw "さあ つぎは"
 	linefw "水のGR団のトリデに むかうといい"

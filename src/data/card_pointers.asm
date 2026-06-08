@@ -449,5 +449,3 @@ CardPointers::
 	card_ptr RocketsSneakAttackCard    ; ROCKETS_SNEAK_ATTACK
 	card_ptr HereComesTeamRocketCard   ; HERE_COMES_TEAM_ROCKET
 	card_ptr TheRocketsTrapCard        ; THE_ROCKETS_TRAP
-
-	ds $b4, $0

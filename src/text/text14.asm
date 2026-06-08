@@ -1,3 +1,5 @@
+SECTION "Text 14", ROMX
+
 UsefulButtonsBookText:
 	textfw "対戦画面での べんりなボタン"
 	linefw "Bボタンをおしながら 十字ボタン!"

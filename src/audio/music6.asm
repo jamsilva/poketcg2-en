@@ -2394,5 +2394,3 @@ INCLUDE "audio/music/fort4.asm"
 INCLUDE "audio/music/grcastle.asm"
 INCLUDE "audio/music/grchallengecup.asm"
 INCLUDE "audio/music/imakunired.asm"
-
-	ds $c0

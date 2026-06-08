@@ -1,3 +1,5 @@
+SECTION "Text 7", ROMX
+
 Text0b76:
 	textfw "そうか・・・ざんねんだな"
 	linefw " "

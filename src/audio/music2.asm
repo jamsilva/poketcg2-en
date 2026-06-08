@@ -2399,5 +2399,3 @@ INCLUDE "audio/music/deckmachine.asm"
 INCLUDE "audio/music/cardpop.asm"
 INCLUDE "audio/music/overworld.asm"
 INCLUDE "audio/music/boop.asm"
-
-	ds $149

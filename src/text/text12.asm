@@ -1,3 +1,5 @@
+SECTION "Text 12", ROMX
+
 Text10d3:
 	textfw "ストーンクラブマスター ゲンゾウ!!"
 	linefw "きょうは これで ひきさがってやる"

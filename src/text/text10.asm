@@ -1,3 +1,5 @@
+SECTION "Text 10", ROMX
+
 IshiharaWantsToTrade6InitialText:
 	textfw "やあ <RAMNAME>くんですか"
 	linefw "GR団との対戦 たのしんでますか?"

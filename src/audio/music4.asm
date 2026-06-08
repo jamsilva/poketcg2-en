@@ -2409,5 +2409,3 @@ INCLUDE "audio/music/matchstartgrexecs.asm"
 INCLUDE "audio/music/gamecenterpoweron.asm"
 INCLUDE "audio/music/fanfare1.asm"
 INCLUDE "audio/music/fanfare2.asm"
-
-	ds $c2

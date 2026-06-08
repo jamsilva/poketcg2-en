@@ -1,3 +1,5 @@
+SECTION "Text 11", ROMX
+
 RodFinalCupRound2NextOpponentText:
 	textfw "さすがだな <RAMNAME>くん"
 	linefw "つぎは カネコウジと対戦だ!"

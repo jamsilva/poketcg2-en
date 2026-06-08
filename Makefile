@@ -7,17 +7,9 @@ rom_obj := \
 	src/text.o \
 	src/audio.o \
 	src/wram.o \
-	src/hram.o \
-	src/padding.o
-
+	src/hram.o
 
 ### Build tools
-
-ifeq (,$(shell which sha1sum))
-SHA1 := shasum
-else
-SHA1 := sha1sum
-endif
 
 RGBDS ?=
 RGBASM  ?= $(RGBDS)rgbasm
@@ -37,10 +29,10 @@ RGBGFXFLAGS  ?= -Weverything
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all tcg2 clean tidy compare tools
+.PHONY: all tcg2 clean tidy tools
 
-all: $(rom) compare
-tcg2: $(rom) compare
+all: $(rom)
+tcg2: $(rom)
 
 clean: tidy
 	find src/gfx \
@@ -56,9 +48,6 @@ tidy:
 	      $(rom_obj) \
 	      src/rgbdscheck.o
 	$(MAKE) clean -C tools/
-
-compare: $(rom)
-	@$(SHA1) -c rom.sha1
 
 tools:
 	$(MAKE) -C tools/

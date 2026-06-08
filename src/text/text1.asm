@@ -1,3 +1,5 @@
+SECTION "Text 1", ROMX
+
 HandText:
 	textfw "てふだ"
 	done

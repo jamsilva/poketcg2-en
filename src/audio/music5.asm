@@ -2394,5 +2394,3 @@ INCLUDE "audio/music/fort1.asm"
 INCLUDE "audio/music/fort2.asm"
 INCLUDE "audio/music/fort3.asm"
 INCLUDE "audio/music/duelthemegrleader.asm"
-
-	ds $7

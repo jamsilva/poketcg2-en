@@ -2400,5 +2400,3 @@ INCLUDE "audio/music/hallofhonor.asm"
 INCLUDE "audio/music/stub12.asm"
 INCLUDE "audio/music/gamecenter.asm"
 INCLUDE "audio/music/grblimp.asm"
-
-	ds $2a

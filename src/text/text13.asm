@@ -1,3 +1,5 @@
+SECTION "Text 13", ROMX
+
 Text11f3:
 	textfw "うふふ・・・うれしいなぁ"
 	linefw "こうかんしてくれて ありがとー"

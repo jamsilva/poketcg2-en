@@ -1,3 +1,5 @@
+SECTION "Text 4", ROMX
+
 DebugCharacterDisplayTestText:
 	textfw "人物の表示テスト"
 	done

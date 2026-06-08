@@ -1,3 +1,5 @@
+SECTION "Text 2", ROMX
+
 PrehistoricDreamCheckText:
 	textfw "「おもて」なら 「なにかの化石」から"
 	linefw "進化したポケモンの ダメージが+10"

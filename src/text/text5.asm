@@ -1,3 +1,5 @@
+SECTION "Text 5", ROMX
+
 DebugSwapPlayerGenderText:
 	textfw "プレイヤーの性別を入れ替える"
 	done

@@ -2394,5 +2394,3 @@ INCLUDE "audio/music/club2.asm"
 INCLUDE "audio/music/duelthemegrmember.asm"
 INCLUDE "audio/music/duelthemegrking.asm"
 INCLUDE "audio/music/grandmastercupchampion.asm"
-
-	ds $7c5

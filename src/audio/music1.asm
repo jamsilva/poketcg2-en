@@ -2625,5 +2625,3 @@ INCLUDE "audio/music1_headers.asm"
 
 INCLUDE "audio/music/ishihara.asm"
 INCLUDE "audio/music/credits.asm"
-
-	ds $267

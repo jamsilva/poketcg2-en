@@ -1,3 +1,5 @@
+SECTION "Text 9", ROMX
+
 Text0dc8:
 	textfw "イラストがちがう めずらしい"
 	linefw "「フシギバナ<Lv>67」を やるぜ!"

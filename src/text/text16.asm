@@ -1,3 +1,5 @@
+SECTION "Text 16", ROMX
+
 DigUnderDescription:
 	textfw "相手の場のポケモンを1匹選び、"
 	linefw "「弱点・抵抗力」に関係なく、"
