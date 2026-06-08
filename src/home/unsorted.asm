@@ -749,14 +749,6 @@ WaitAFrames::
 	jr nz, .loop
 	ret
 
-CoreGameLoop::
-	farcall _CoreGameLoop
-	ret
-
-CallStartupDebugMenu::
-	farcall StartUpDebugMenu
-	ret
-
 WaitForLCDOff::
 .loop_wait
 	ldh a, [rSTAT]

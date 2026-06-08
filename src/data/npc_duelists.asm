@@ -115,7 +115,7 @@ SamNPCDuelistHeader:
 		UNUSED_SAMS_PRACTICE_DECK_ID, DECK_NONE, DECK_NONE, DECK_NONE, DECK_NONE
 AaronNPCDuelistHeader:
 	npc_duelist NPC_AARON, DuelistAaronName, \
-		NONE, DialogTechText, \
+		NONE, TechText, \
 		AARONS_STEP1_DECK_ID, AARONS_STEP2_DECK_ID, AARONS_STEP3_DECK_ID, BRICK_WALK_DECK_ID, BENCH_TRAP_DECK_ID
 NikkiNPCDuelistHeader:
 	npc_duelist NPC_NIKKI, DuelistNikkiName, \

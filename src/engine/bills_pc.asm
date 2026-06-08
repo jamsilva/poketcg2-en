@@ -9,7 +9,7 @@ _BillsPC:
 	ldtx hl, GameCenterBillsPCTitleText
 	call PrintTextNoDelay_ZeroAttributes
 	lb de, 13, 0
-	ldtx hl, GameCenter20ChipsPerPlayText
+	ldtx hl, GameCenterCardDungeonBet20Text
 	call PrintTextNoDelay_ZeroAttributes
 	lb de, 2, 2
 	ldtx hl, GameCenterBillsPCDescriptionText
@@ -384,10 +384,8 @@ DrawBillsPCMenu:
 	ld a, [wBillsPCCurCompatibleCardOwnedCount]
 	bank1call WriteTwoDigitNumberInTxSymbol_PadSpace
 	pop de
-	ld d, 18
+	ld d, 19
 	call InitTextPrinting
-	ldfw de, "枚"
-	call GenerateAndPlaceTextTile
 	ret
 
 ; return a = list size

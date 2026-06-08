@@ -1433,8 +1433,8 @@ TextOffsets::
 	textpointer UNUSED_058D                                           ; 0x058d
 	textpointer DebugKondoDebugText                                   ; 0x058e
 	textpointer UNUSED_058F                                           ; 0x058f
-	textpointer DebugCharacterDisplayTestText                         ; 0x0590
-	textpointer DebugYoshidaTestText                                  ; 0x0591
+	textpointer UNUSED_0590                                           ; 0x0590
+	textpointer UNUSED_0591                                           ; 0x0591
 	textpointer DebugGameMainText                                     ; 0x0592
 	textpointer DebugReserveText                                      ; 0x0593
 	textpointer DebugReturnToMainText                                 ; 0x0594
@@ -1473,7 +1473,7 @@ TextOffsets::
 	textpointer PlayerStatusCurrentCoinText                           ; 0x05b5
 	textpointer PlayerStatusGRCoinText                                ; 0x05b6
 	textpointer PCMenuCardAlbumText                                   ; 0x05b7
-	textpointer PCMenuReadMailText                                    ; 0x05b8
+	textpointer UNUSED_05B8                                           ; 0x05b8
 	textpointer UNUSED_05B9                                           ; 0x05b9
 	textpointer PCMenuPrintText                                       ; 0x05ba
 	textpointer TurnedOnPCText                                        ; 0x05bb
@@ -1484,17 +1484,17 @@ TextOffsets::
 	textpointer DebugGotCardsText                                     ; 0x05c0
 	textpointer DebugBackgroundFontStateText                          ; 0x05c1
 	textpointer DebugForceDuelWinPromptText                           ; 0x05c2
-	textpointer DebugVCounterLabelText                                ; 0x05c3
-	textpointer DebugVHookCountLabelText                              ; 0x05c4
+	textpointer UNUSED_05C3                                           ; 0x05c3
+	textpointer UNUSED_05C4                                           ; 0x05c4
 	textpointer DebugBackgroundFaceDisplayText                        ; 0x05c5
-	textpointer DebugSystemStateText                                  ; 0x05c6
-	textpointer DebugCurrentObjectCharacterNumberLabelText            ; 0x05c7
-	textpointer DebugCurrentMapNumberLabelText                        ; 0x05c8
-	textpointer DebugCurrentMapChipsetCountLabelText                  ; 0x05c9
-	textpointer CardsAndChipsUnitText                                 ; 0x05ca
+	textpointer UNUSED_05C6                                           ; 0x05c6
+	textpointer UNUSED_05C7                                           ; 0x05c7
+	textpointer UNUSED_05C8                                           ; 0x05c8
+	textpointer UNUSED_05C9                                           ; 0x05c9
+	textpointer UNUSED_05CA                                           ; 0x05ca
 	textpointer ChipsText                                             ; 0x05cb
 	textpointer PCMenuDeckDiagnosisText                               ; 0x05cc
-	textpointer TCG2TitleText                                         ; 0x05cd
+	textpointer UNUSED_05CD                                           ; 0x05cd
 	textpointer MainMenuNewGameText                                   ; 0x05ce
 	textpointer MainMenuContinueFromDiaryText                         ; 0x05cf
 	textpointer MainMenuCardPopText                                   ; 0x05d0
@@ -1512,7 +1512,7 @@ TextOffsets::
 	textpointer DebugObjectCharacterDisplayText                       ; 0x05dc
 	textpointer UNUSED_05DD                                           ; 0x05dd
 	textpointer PlayerGenderText                                      ; 0x05de
-	textpointer CardsUnitHiraganaText                                 ; 0x05df
+	textpointer UNUSED_05DF                                           ; 0x05df
 	textpointer ReceptionistText                                      ; 0x05e0
 	textpointer GameCenterPrizeExchangeWelcomeText                    ; 0x05e1
 	textpointer GameCenterPrizeExchangePromptText                     ; 0x05e2
@@ -1540,7 +1540,7 @@ TextOffsets::
 	textpointer GiftCenterReceiveCardsText                            ; 0x05f8
 	textpointer GiftCenterSendDeckConfigurationText                   ; 0x05f9
 	textpointer GiftCenterReceiveDeckConfigurationText                ; 0x05fa
-	textpointer GiftCenterQuitText                                    ; 0x05fb
+	textpointer UNUSED_05FB                                           ; 0x05fb
 	textpointer UNUSED_05FC                                           ; 0x05fc
 	textpointer UNUSED_05FD                                           ; 0x05fd
 	textpointer DebugBackgroundCoinDisplayText                        ; 0x05fe
@@ -1578,17 +1578,17 @@ TextOffsets::
 	textpointer EventCoinPage2Text                                    ; 0x061e
 	textpointer EventCoinPage3Text                                    ; 0x061f
 	textpointer DebugEffectViewerText                                 ; 0x0620
-	textpointer DebugEffectViewerLeftToRightText                      ; 0x0621
-	textpointer DebugEffectViewerRightToLeftText                      ; 0x0622
-	textpointer LinkDuelText                                          ; 0x0623
-	textpointer DebugEffectViewerStartButtonSwapText                  ; 0x0624
-	textpointer DebugEffectViewerAButtonPlayText                      ; 0x0625
-	textpointer DebugEffectViewerBButtonStopText                      ; 0x0626
+	textpointer UNUSED_0621                                           ; 0x0621
+	textpointer LinkDuelText                                          ; 0x0622
+	textpointer DebugEffectViewerAButtonPlayText                      ; 0x0623
+	textpointer DebugEffectViewerBButtonStopText                      ; 0x0624
+	textpointer DebugEffectViewerSelectButtonSwapText                 ; 0x0625
+	textpointer DebugEffectViewerStartButtonExitText                  ; 0x0626
 	textpointer DebugEffectViewerAnimationNumberText                  ; 0x0627
 	textpointer DebugEffectViewerPlayingStateText                     ; 0x0628
 	textpointer DebugEffectViewerStopStateText                        ; 0x0629
-	textpointer DebugMikamiProgText                                   ; 0x062a
-	textpointer DebugPowerOnText                                      ; 0x062b
+	textpointer UNUSED_062A                                           ; 0x062a
+	textpointer UNUSED_062B                                           ; 0x062b
 	textpointer ObtainedCoinText                                      ; 0x062c
 	textpointer ObtainedCoinTotalNumberText                           ; 0x062d
 	textpointer DebugSlotMachineText                                  ; 0x062e
@@ -1624,7 +1624,7 @@ TextOffsets::
 	textpointer SpecialRuleToughEscapeDescriptionText                 ; 0x064c
 	textpointer SpecialRuleBlackHoleTitleText                         ; 0x064d
 	textpointer SpecialRuleBlackHoleDescriptionText                   ; 0x064e
-	textpointer MainCharacterText                                     ; 0x064f
+	textpointer UNUSED_064F                                           ; 0x064f
 	textpointer TechText                                              ; 0x0650
 	textpointer DuelistIntroLightningClubMemberText                   ; 0x0651
 	textpointer DuelistIntroPsychicClubMemberText                     ; 0x0652
@@ -1682,13 +1682,13 @@ TextOffsets::
 	textpointer PresentPackText                                       ; 0x0686
 	textpointer ReceivedBoosterPackText                               ; 0x0687
 	textpointer ReceivedAnotherBoosterPackText                        ; 0x0688
-	textpointer BoosterPack1Text                                      ; 0x0689
-	textpointer BoosterPack2Text                                      ; 0x068a
-	textpointer BoosterPack3Text                                      ; 0x068b
-	textpointer BoosterPack4Text                                      ; 0x068c
-	textpointer BoosterPack5Text                                      ; 0x068d
-	textpointer BoosterPack6Text                                      ; 0x068e
-	textpointer BoosterPack7Text                                      ; 0x068f
+	textpointer UNUSED_0689                                           ; 0x0689
+	textpointer UNUSED_068A                                           ; 0x068a
+	textpointer UNUSED_068B                                           ; 0x068b
+	textpointer UNUSED_068C                                           ; 0x068c
+	textpointer UNUSED_068D                                           ; 0x068d
+	textpointer UNUSED_068E                                           ; 0x068e
+	textpointer UNUSED_068F                                           ; 0x068f
 	textpointer GetPackText                                           ; 0x0690
 	textpointer GameCenter1ChipPerPlayText                            ; 0x0691
 	textpointer GameCenter5ChipsPerPlayText                           ; 0x0692
@@ -1880,9 +1880,9 @@ TextOffsets::
 	textpointer GrandMasterCupPrizesTitleText                         ; 0x074c
 	textpointer GrandMasterCupPrizesDialogText                        ; 0x074d
 	textpointer GrandMasterCupPrizesConfirmPromptText                 ; 0x074e
-	textpointer DebugTitleScreenTentativeText                         ; 0x074f
-	textpointer DebugPlayerGenderSelectionScreenText                  ; 0x0750
-	textpointer DebugStartMenuText                                    ; 0x0751
+	textpointer UNUSED_074F                                           ; 0x074f
+	textpointer UNUSED_0750                                           ; 0x0750
+	textpointer UNUSED_0751                                           ; 0x0751
 	textpointer GameCenterBlackBoxTitleText                           ; 0x0752
 	textpointer GameCenterBlackBoxDescriptionText                     ; 0x0753
 	textpointer GameCenterBlackBoxStartPromptText                     ; 0x0754
@@ -1951,16 +1951,16 @@ TextOffsets::
 	textpointer AttemptsUnitText                                      ; 0x0793
 	textpointer WinsUnitText                                          ; 0x0794
 	textpointer ChallengeMachineStartPromptText                       ; 0x0795
-	textpointer OpponentGrassScienceClubMemberSimpleText              ; 0x0796
-	textpointer OpponentWaterClubMemberSimpleText                     ; 0x0797
-	textpointer OpponentFireClubMemberSimpleText                      ; 0x0798
-	textpointer OpponentPsychicClubMemberSimpleText                   ; 0x0799
-	textpointer OpponentLightningClubMemberSimpleText                 ; 0x079a
-	textpointer OpponentRockFightingClubMemberSimpleText              ; 0x079b
+	textpointer MainMenuContinueFromDiaryInsteadOfDuelWarning5Text    ; 0x0796
+	textpointer UNUSED_0797                                           ; 0x0797
+	textpointer UNUSED_0798                                           ; 0x0798
+	textpointer UNUSED_0799                                           ; 0x0799
+	textpointer UNUSED_079A                                           ; 0x079a
+	textpointer UNUSED_079B                                           ; 0x079b
 	textpointer ChallengeMachineOpponentListDialogText                ; 0x079c
-	textpointer ChallengeMachineOpponent1DialogText                   ; 0x079d
+	textpointer UNUSED_079D                                           ; 0x079d
 	textpointer ChallengeMachineDuelPromptText                        ; 0x079e
-	textpointer ChallengeMachineOpponentGrandMasterText               ; 0x079f
+	textpointer UNUSED_079F                                           ; 0x079f
 	textpointer UNUSED_07A0                                           ; 0x07a0
 	textpointer GameCenterXChipsPerPlayText                           ; 0x07a1
 	textpointer UNUSED_07A2                                           ; 0x07a2
@@ -2044,7 +2044,7 @@ TextOffsets::
 	textpointer CreditsGameProductionListText                         ; 0x07f0
 	textpointer CreditsToBeContinuedText                              ; 0x07f1
 	textpointer DebugNameEntryText                                    ; 0x07f2
-	textpointer PleasePressAText                                      ; 0x07f3
+	textpointer UNUSED_07F3                                           ; 0x07f3
 	textpointer AttendantText                                         ; 0x07f4
 	textpointer DebugClearMailText                                    ; 0x07f5
 	textpointer ObtainedGRCoinPieceTotalNumberText                    ; 0x07f6
@@ -2056,8 +2056,8 @@ TextOffsets::
 	textpointer OpenedBoosterPackText                                 ; 0x07fc
 	textpointer NoCardsSelectedTryAgainText                           ; 0x07fd
 	textpointer UNUSED_07FE                                           ; 0x07fe
-	textpointer DebugDummyLinesText                                   ; 0x07ff
-	textpointer DebugYoshidaDebugMenuText                             ; 0x0800
+	textpointer UNUSED_07FF                                           ; 0x07ff
+	textpointer UNUSED_0800                                           ; 0x0800
 	textpointer DebugScenarioDebugMenuText                            ; 0x0801
 	textpointer DebugModifyEventsText                                 ; 0x0802
 	textpointer DebugModifyFlagsText                                  ; 0x0803

@@ -1,6 +1,6 @@
 ; handles intro, title screen and start menu
 ; as well as the core gameplay loop
-_CoreGameLoop::
+CoreGameLoop::
 	call ResetMusicAndOverworldState
 .intro
 	farcall IntroAndTitleScreen
@@ -5074,8 +5074,8 @@ DebugEffectViewer:
 	farcall SetInitialGraphicsConfiguration
 	lb de, 0, 0
 	lb bc, 20, 18
-	ld h, $00
-	ld l, $00
+	ld h, d
+	ld l, e
 	farcall FillBoxInBGMap
 	lb de, 0, 12
 	lb bc, 20, 6
@@ -5096,15 +5096,15 @@ DebugEffectViewer:
 .wait_input
 	call DoFrame
 	call .StopAnimationOnBPress
-	call .SwapSidesOnStartPress
+	call .SwapSidesOnSelectPress
 	call .ScrollOnDpadPress
 	call .PlayAnimationOnAPress
 	call .PrintAnimBufferCurPosAndSize
 	call .PrintViewerState
 	ldh a, [hKeysPressed]
-	and PAD_SELECT
+	and PAD_START
 	jr z, .wait_input
-; exit on select press
+; exit on start press
 	call FinishQueuedAnimations
 	farcall StartFadeToWhite
 	farcall WaitPalFading_Bank07
@@ -5157,15 +5157,16 @@ DebugEffectViewer:
 	ret
 
 .text_items
-	textitem 10, 14, DebugEffectViewerStartButtonSwapText
-	textitem 14, 15, DebugEffectViewerAButtonPlayText
-	textitem 14, 16, DebugEffectViewerBButtonStopText
 	textitem  2, 13, DebugEffectViewerAnimationNumberText
+	textitem 14, 13, DebugEffectViewerAButtonPlayText
+	textitem 14, 14, DebugEffectViewerBButtonStopText
+	textitem 12, 15, DebugEffectViewerSelectButtonSwapText
+	textitem 12, 16, DebugEffectViewerStartButtonExitText
 	textitems_end
 
-.SwapSidesOnStartPress:
+.SwapSidesOnSelectPress:
 	ldh a, [hKeysPressed]
-	and PAD_START
+	and PAD_SELECT
 	ret z
 	push af
 	ld a, SFX_CONFIRM
@@ -5173,7 +5174,7 @@ DebugEffectViewer:
 	pop af
 	ld b, OPPONENT_TURN
 	ld c, DUEL_ANIM_SCREEN_MAIN_SCENE
-	ldtx hl, DebugEffectViewerRightToLeftText
+	ldtx hl, DebugDirectionRightToLeftText
 	ld a, [wDebugAnimDuelistSide]
 	cp PLAYER_TURN
 	jr z, .apply_sides
@@ -5181,14 +5182,14 @@ DebugEffectViewer:
 .InitSides
 	ld b, PLAYER_TURN
 	ld c, DUEL_ANIM_SCREEN_MAIN_SCENE
-	ldtx hl, DebugEffectViewerLeftToRightText
+	ldtx hl, DebugDirectionLeftToRightText
 
 .apply_sides
 	ld a, b
 	ld [wDebugAnimDuelistSide], a
 	ld a, c
 	ld [wDebugDuelAnimationScreen], a
-	lb de, 2, 14
+	lb de, 2, 15
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	ret
 
@@ -5229,7 +5230,7 @@ DebugEffectViewer:
 	ld l, a
 	ld h, 0
 	lb de, 3, 13
-	ld a, 3
+	ld a, d
 	ld b, FALSE
 	farcall PrintNumber
 	ret
@@ -5254,7 +5255,7 @@ DebugEffectViewer:
 	ld l, a
 	ld h, 0
 	lb de, 2, 16
-	ld a, 2
+	ld a, d
 	ld b, FALSE
 	farcall PrintNumber
 	farcall GetwDuelAnimBufferSize
@@ -5280,7 +5281,7 @@ DebugEffectViewer:
 	jr c, .print_state
 	ldtx hl, DebugEffectViewerStopStateText
 .print_state
-	lb de, 13, 13
+	lb de, 2, 14
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	pop hl
 	pop de
@@ -5303,7 +5304,7 @@ DebugSendMailScreen:
 	farcall DrawMenuBox
 	push af
 	ld de, ROCKETS_SNEAK_ATTACK
-	lb bc, 10, 2
+	lb bc, 11, 1
 	farcall DrawIntroCardGfx
 	pop af
 	farcall SetFrameFuncAndFadeFromWhite
@@ -5332,22 +5333,22 @@ DebugSendMailScreen:
 	menubox_params TRUE, 20, 18, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, (TRUE << 4), 1, NULL, DebugSendMailText
-	textitem 2,  1, GameCenterBookName
-	textitem 2,  2, GameCenterBookName
-	textitem 2,  3, DrMasonText
-	textitem 2,  4, DrMasonText
-	textitem 2,  5, DrMasonText
-	textitem 2,  6, DrMasonText
-	textitem 2,  7, DrMasonText
-	textitem 2,  8, DrMasonText
-	textitem 2,  9, DrMasonText
-	textitem 2, 10, DrMasonText
-	textitem 2, 11, DrMasonText
-	textitem 2, 12, DrMasonText
-	textitem 2, 13, DrMasonText
-	textitem 2, 14, DuelistBiruritchiName
-	textitem 2, 15, DuelistRodName
-	textitem 2, 16, DuelistRonaldName
+	textitem 2,  1, MailBlackBoxOutputSubjectText
+	textitem 2,  2, BillsComputerName
+	textitem 2,  3, MailMailboxIntroSubjectText
+	textitem 2,  4, MailDeckDiagnosis1SubjectText
+	textitem 2,  5, MailDeckDiagnosis2SubjectText
+	textitem 2,  6, MailDeckDiagnosis3SubjectText
+	textitem 2,  7, MailDeckDiagnosis4SubjectText
+	textitem 2,  8, MailAutoDeckMachine1SubjectText
+	textitem 2,  9, MailAutoDeckMachine2SubjectText
+	textitem 2, 10, MailAutoDeckMachine3SubjectText
+	textitem 2, 11, MailAutoDeckMachine4SubjectText
+	textitem 2, 12, MailAutoDeckMachine5SubjectText
+	textitem 2, 13, MailChallengeMachineSubjectText
+	textitem 2, 14, MailGRChallengeMachineSubjectText
+	textitem 2, 15, MailGrandMasterCupSubjectText
+	textitem 2, 16, MailRonaldsScoutGR1SubjectText
 	textitems_end
 
 DebugAdjustChips:
@@ -5407,31 +5408,31 @@ DebugGrandMasterCupBracket:
 	farcall GrandMasterCupBracketScreen
 	ret
 
-; arbitrary texts
+; non-Villicci GR Leaders with Special Rules
 .SetNames:
 	xor a
 	ldtx hl, TxRam1Text
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, PauseMenuStatusText
+	ldtx hl, DuelistMorinoName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, BoosterPackPsychicBattleText
+	ldtx hl, DuelistCatherineName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, BoosterPackIslandOfFossilText
+	ldtx hl, DuelistHideroName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, GetPackText
+	ldtx hl, DuelistKanokoName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, TechText
+	ldtx hl, DuelistKamiyaName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, MainCharacterText
+	ldtx hl, DuelistIshiiName
 	farcall LoadGrandMasterCupCompetitorNames
 	inc a
-	ldtx hl, GiftCenterQuitText
+	ldtx hl, DuelistRuiName
 	farcall LoadGrandMasterCupCompetitorNames
 	ret
 

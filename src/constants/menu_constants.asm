@@ -33,13 +33,12 @@
 
 ; debug menu options
 	const_def
-	const DEBUGMENU_POWER_ON      ; 0
-	const DEBUGMENU_COIN          ; 1
-	const DEBUGMENU_CONFIG        ; 2
-	const DEBUGMENU_EFFECT_VIEWER ; 3
-	const DEBUGMENU_CREDITS       ; 4
-	const DEBUGMENU_DUEL          ; 5
-	const DEBUGMENU_SLOT          ; 6
+	const DEBUGMENU_COIN          ; 0
+	const DEBUGMENU_CONFIG        ; 1
+	const DEBUGMENU_EFFECT_VIEWER ; 2
+	const DEBUGMENU_CREDITS       ; 3
+	const DEBUGMENU_DUEL          ; 4
+	const DEBUGMENU_SLOT          ; 5
 
 ; in-game debug menu options
 	const_def
@@ -47,12 +46,13 @@
 	const INGAMEDEBUGMENU_BG_PORTRAIT_VIEWER ; $1
 	const INGAMEDEBUGMENU_EFFECT_VIEWER      ; $2
 	const INGAMEDEBUGMENU_OBJ_VIEWER         ; $3
-	const INGAMEDEBUGMENU_CLEAR_MAIL         ; $4
-	const INGAMEDEBUGMENU_CUP_BRACKET        ; $5
+	const INGAMEDEBUGMENU_CUP_BRACKET        ; $4
+	const INGAMEDEBUGMENU_CLEAR_MAIL         ; $5
 	const INGAMEDEBUGMENU_SEND_MAIL          ; $6
 	const INGAMEDEBUGMENU_ADJUST_CHIPS       ; $7
 	const INGAMEDEBUGMENU_ENTER_NAME         ; $8
 	const INGAMEDEBUGMENU_CREDITS            ; $9
+	const INGAMEDEBUGMENU_SCENARIO           ; $a
 
 ; scenario debug menu options
 	const_def
@@ -76,6 +76,7 @@ DEF NUM_DEBUGEVENTMENU_ITEMS EQU 11
 	const PAUSEMENU_MINICOM ; 3
 	const PAUSEMENU_COIN    ; 4
 	const PAUSEMENU_CONFIG  ; 5
+	const PAUSEMENU_DEBUG   ; 6
 
 ; pc menu options
 	const_def

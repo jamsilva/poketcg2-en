@@ -2593,6 +2593,8 @@ _CardPopMenu:
 	ld a, SCENE_CARD_POP_MENU
 	lb bc, 0, 0
 	call EmptyScreenAndLoadScene
+	lb de, $40, $cf
+	call SetupText
 
 	ld a, [wClearedGame]
 	or a

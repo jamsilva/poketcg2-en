@@ -1,73 +1,65 @@
-DebugCharacterDisplayTestText:
-	textfw "人物の表示テスト"
-	done
-
-DebugYoshidaTestText:
-	textfw "よしだくんテスト"
-	done
-
 DebugGameMainText:
-	textfw "ゲームメイン"
+	text "Game Main"
 	done
 
 DebugReserveText:
-	textfw "よやく"
+	text "Reserve"
 	done
 
 DebugReturnToMainText:
-	textfw "メインへもどる"
+	text "Return to Main"
 	done
 
 PauseMenuStatusText:
-	textfw "ステータス"
+	text "Status"
 	done
 
 PauseMenuDiaryText:
-	textfw "にっき"
+	text "Diary"
 	done
 
 PauseMenuDeckText:
-	textfw "デッキ"
+	text "Deck"
 	done
 
 PauseMenuMinicomText:
-	textfw "ミニコン"
+	text "MiniCOM"
 	done
 
 PauseMenuCoinText:
-	textfw "コイン"
+	text "Coins"
 	done
 
 PauseMenuConfigText:
-	textfw "せってい"
+	text "Config"
 	done
 
 PauseMenuExitText:
-	textfw "とじる"
+	text "Exit"
 	done
 
 ConfigMessageSpeedText:
-	textfw " メッセージの はやさ "
+	text " Message Speed "
 	done
 
 ConfigDuelAnimationText:
-	textfw " 対戦 アニメーション "
+	text " Duel Animation"
 	done
 
 ConfigCoinAnimationText:
-	textfw " コイントス アニメーション "
+	text " Coin Toss Animation "
 	done
 
 ConfigExitText:
-	textfw "せっていを おわる"
+	text " Exit Settings"
 	done
 
 ConfigMessageSpeedSlowLabelText:
-	textfw "おそい"
+	text "Slow"
 	done
 
 ConfigMessageSpeedFastLabelText:
-	textfw "はやい"
+	text "Fast"
 	done
 
 CardCountSeparatorText:
@@ -75,97 +67,94 @@ CardCountSeparatorText:
 	done
 
 ConfigMessageSpeed1Text:
-	textfw "1"
+	text "1"
 	done
 
 ConfigMessageSpeed2Text:
-	textfw "2"
+	text "2"
 	done
 
 ConfigMessageSpeed3Text:
-	textfw "3"
+	text "3"
 	done
 
 ConfigMessageSpeed4Text:
-	textfw "4"
+	text "4"
 	done
 
 ConfigMessageSpeed5Text:
-	textfw "5"
+	text "5"
 	done
 
 ConfigAnimationShowAllText:
-	textfw "じっくり"
+	text "Show All"
 	done
 
 ConfigAnimationSkipSomeText:
-	textfw "スキップあり"
+	text "Skip Some"
 	done
 
 ConfigAnimationNoneText:
-	textfw "みない"
+	text "None"
 	done
 
 PlayerDiaryTitleText:
-	textfw "<RAMNAME>のにっき"
+	text "<RAMNAME>'s diary"
 	done
 
 NameText:
-	textfw "なまえ"
+	text "Name"
 	done
 
 EventCoinText:
-	textfw "イベントコイン"
+	text "Event Coins"
 	done
 
 PlayerDiaryAlbumText:
-	textfw "アルバム"
+	text "Album"
 	done
 
 PlayerDiaryPlayTimeText:
-	textfw "プレイじかん"
+	text "Play Time"
 	done
 
 PlayerDiaryPromptText:
-	textfw "にっきを つけますか?"
+	text "Would you like to keep a diary?"
 	done
 
 PlayerDiaryPromptNoText:
-	textfw "いいえ"
+	text "No"
 	done
 
 PlayerStatusCurrentCoinText:
-	textfw "いま つかっているコイン"
+	text "Currently using the"
 	done
 
 PlayerStatusGRCoinText:
-	textfw "GR団のコイン"
+	text "GR Coin"
+	line "Completion"
 	done
 
 PCMenuCardAlbumText:
-	textfw "カードアルバム"
-	done
-
-PCMenuReadMailText: ; left over from tcg1
-	textfw "メールをよむ"
+	text "Card Album"
 	done
 
 PCMenuPrintText:
-	textfw "プリントアウト"
+	text "Print"
 	done
 
 TurnedOnPCText:
-	textfw "<RAMNAME>は"
-	linefw "パソコンのスイッチを いれた!"
+	text "<RAMNAME>"
+	line "turned the PC on!"
 	done
 
 TurnedOffPCText:
-	textfw "<RAMNAME>は"
-	linefw "パソコンのスイッチを きった!"
+	text "<RAMNAME>"
+	line "turned the PC off!"
 	done
 
 PCMenuShutdownText:
-	textfw "スイッチをきる"
+	text "Shut Down"
 	done
 
 TxRam1Text: ; mainly used to print the player's name
@@ -173,232 +162,191 @@ TxRam1Text: ; mainly used to print the player's name
 	done
 
 DebugMenuDebugText:
-	textfw "デバッグ"
+	text "Debug"
 	done
 
 DebugGotCardsText:
-	textfw "カードをゲットしたぜ!"
+	text "Got Cards!"
 	done
 
 DebugBackgroundFontStateText:
-	textfw "BGフォントの状態"
+	text "BG Font State"
 	done
 
 DebugForceDuelWinPromptText:
-	textfw "バトルに勝利しますか?"
-	done
-
-DebugVCounterLabelText:
-	textfw "Vカウンタ:"
-	done
-
-DebugVHookCountLabelText:
-	textfw "Vフック数:"
+	text "Force Duel Win?"
 	done
 
 DebugBackgroundFaceDisplayText:
-	textfw "BGフェイスの表示"
-	done
-
-DebugSystemStateText:
-	textfw "システムの状態"
-	done
-
-DebugCurrentObjectCharacterNumberLabelText:
-	textfw "使用中OBJキャラクタ数:"
-	done
-
-DebugCurrentMapNumberLabelText:
-	textfw "使用中のマップ番号:"
-	done
-
-DebugCurrentMapChipsetCountLabelText:
-	textfw "使用中のマップチップ数:"
-	done
-
-CardsAndChipsUnitText:
-	textfw "枚"
+	text "BG Face Display"
 	done
 
 ChipsText:
-	textfw "チップ"
+	text "Chips"
 	done
 
 PCMenuDeckDiagnosisText:
-	textfw "デッキしんだん"
-	done
-
-TCG2TitleText:
-	textfw "ポケモンカードGB2"
+	text "Deck Diagnosis"
 	done
 
 MainMenuNewGameText:
-	textfw "さいしょから"
+	text "New Game"
 	done
 
 MainMenuContinueFromDiaryText:
-	textfw "つづきを あそぶ"
+	text "Continue from Diary"
 	done
 
 MainMenuCardPopText:
-	textfw "カードポン!"
+	text "Card Pop!"
 	done
 
 MainMenuContinueDuelText:
-	textfw "対戦から あそぶ"
+	text "Continue Duel"
 	done
 
 MainMenuNewGameDialogText:
-	textfw "ゲームを はじめからスタートします"
+	text "Start a New Game."
 	done
 
 MainMenuCardPopDialogText:
-	textfw "ともだちと「カードポン!」すると"
-	linefw "あたらしい カードが うまれます"
-	linefw "ふたりとも とくするぞ"
+	text "When you Card Pop! with a friend,"
+	line "you will each receive a new card!"
 	done
 
 MainMenuContinueDuelDialogText:
-	textfw "対戦のとちゅうで 電源がきれました"
-	linefw "対戦とちゅうの電源がきれたところから"
-	linefw "ゲームをはじめられます"
+	text "The Game will continue from"
+	line "the point in the duel at"
+	line "which the power was turned OFF."
 	done
 
 PlayerGenderMaleText:
-	textfw "おとこのこ"
+	text "Boy"
 	done
 
 PlayerGenderFemaleText:
-	textfw "おんなのこ"
+	text "Girl"
 	done
 
 ChoosePlayerGenderText:
-	textfw "あなたの せいべつを"
-	linefw "えらんでください"
+	text "Are you a boy?"
+	line "Or are you a girl?"
 	done
 
 ConfirmPlayerGenderMaleText:
-	textfw "「おとこのこ」で いいですか?"
+	text "So, you're a boy then?"
 	done
 
 ConfirmPlayerGenderFemaleText:
-	textfw "「おんなのこ」で いいですか?"
+	text "So, you're a girl then?"
 	done
 
 DebugTournamentTableText:
-	textfw "トーナメント表"
+	text "Tournament Table"
 	done
 
 DebugLabText:
-	textfw "じっけんしつ"
+	text "Laboratory"
 	done
 
 DebugObjectCharacterDisplayText:
-	textfw "OBJ人物の表示"
+	text "OBJ Char Display"
 	done
 
 PlayerGenderText:
-	textfw "せいべつ"
-	done
-
-CardsUnitHiraganaText:
-	textfw "まい"
+	text "Gender"
 	done
 
 ReceptionistText:
-	textfw "うけつけ"
+	text "Receptionist"
 	done
 
 GameCenterPrizeExchangeWelcomeText:
-	textfw "いらっしゃいませ"
-	linefw "けいひんカウンターへ ようこそ!"
+	text "Welcome!"
+	line "This is the Prize Counter!"
 	done
 
 GameCenterPrizeExchangePromptText:
-	textfw "チップをけいひんに かえますか?"
+	text "Would you like to trade your Chips?"
 	done
 
 GameCenterPrizeExchangeChoosePrizeText:
-	textfw "けいひんを えらんでください"
+	text "Please choose a prize."
 	done
 
 GameCenterNotEnoughChipsText:
-	textfw "チップが たりません"
+	text "You don't have enough Chips."
 	done
 
 GameCenterPrizeExchangeConfirmText:
-	textfw "このけいひんで よろしいですか?"
+	text "Is this the prize you want?"
 	done
 
 GameCenterPrizeExchangeQuitConfirmText:
-	textfw "けいひんのこうかんを おわりますか?"
+	text "Quit trading for prizes?"
 	done
 
 GameCenterPrizeExchangeComeAgainText:
-	textfw "またの ごりようを"
-	linefw "おまちしております"
+	text "Please come play again!"
+	line "We hope to see you soon!"
 	done
 
 GameCenterPrize1PresentPackText:
-	textfw "プレゼントパック×1"
+	text "1 Present Pack"
 	done
 
 GameCenterPrize3PresentPacksText:
-	textfw "プレゼントパック×3"
+	text "3 Present Packs"
 	done
 
 GiftCenterWelcomeText:
-	textfw "いらっしゃいませ"
-	linefw "ギフトセンターへ ようこそ!"
+	text "Welcome!"
+	line "This is the Gift Center!"
 	done
 
 GiftCenterServicePromptText:
-	textfw "どのような"
-	linefw "ごようけんでしょうか?"
+	text "How can I help"
+	line "you today?"
 	done
 
 GiftCenterServiceAcknowledgementText:
-	textfw "わかりました"
-	linefw "「<RAMTEXT>」ですね"
+	text "All right."
+	line "You want to <RAMTEXT>, correct?"
 	done
 
 GiftCenterServiceSaveRequestText:
-	textfw "それでは ごりようの まえに"
-	linefw "「にっき」を つけてください"
+	text "Before we begin, please"
+	line "write in your Diary."
 	done
 
 GiftCenterServiceUnavailableSaveRequiredText:
-	textfw "「にっき」をつけて いただかなければ"
-	linefw "ごりように なれません"
+	text "You cannot use this service"
+	line "without writing in your Diary."
 	done
 
 GiftCenterComeAgainText:
-	textfw "またの ごりようを"
-	linefw "おまちしております"
+	text "Please come play again!"
+	line "We hope to see you soon!"
 	done
 
 GiftCenterSendCardsText:
-	textfw "カードをあげる"
+	text "Send Cards"
 	done
 
 GiftCenterReceiveCardsText:
-	textfw "カードをもらう"
+	text "Receive Cards"
 	done
 
 GiftCenterSendDeckConfigurationText:
-	textfw "デッキのつくりかたをわたす"
+	text "Send Deck Configuration"
 	done
 
 GiftCenterReceiveDeckConfigurationText:
-	textfw "デッキのつくりかたをもらう"
-	done
-
-GiftCenterQuitText:
-	textfw "やめる"
+	text "Receive Deck Configuration"
 	done
 
 DebugBackgroundCoinDisplayText:
-	textfw "BGコインの表示"
+	text "BG Coin Display"
 	done
 
 ; pseudo-empty
@@ -407,723 +355,678 @@ SingleSpaceText:
 	done
 
 PlayerCoinSelectText:
-	textfw "つかうコインを えらんでください"
+	text "Select the coin you want to use."
 	done
 
 ChanseyCoinText:
-	textfw "ラッキーコイン"
+	text "Chansey Coin"
 	done
 
 GrassCoinText:
-	textfw "グリーンコイン"
+	text "Grass Coin"
 	done
 
 FireCoinText:
-	textfw "ファイアコイン"
+	text "Fire Coin"
 	done
 
 WaterCoinText:
-	textfw "アクアコイン"
+	text "Water Coin"
 	done
 
 LightningCoinText:
-	textfw "エレキコイン"
+	text "Lightning Coin"
 	done
 
 PsychicCoinText:
-	textfw "エスパーコイン"
+	text "Psychic Coin"
 	done
 
 RockCoinText:
-	textfw "ストーンコイン"
+	text "Rock Coin"
 	done
 
 GRCoinText:
-	textfw "GRコイン"
+	text "GR Coin"
 	done
 
 GRGrassCoinText:
-	textfw "草のGR団コイン"
+	text "GR Grass Coin"
 	done
 
 GRLightningCoinText:
-	textfw "雷のGR団コイン"
+	text "GR Lightning Coin"
 	done
 
 GRFireCoinText:
-	textfw "炎のGR団コイン"
+	text "GR Fire Coin"
 	done
 
 GRWaterCoinText:
-	textfw "水のGR団コイン"
+	text "GR Water Coin"
 	done
 
 GRFightingCoinText:
-	textfw "闘のGR団コイン"
+	text "GR Fighting Coin"
 	done
 
 GRPsychicCoinText:
-	textfw "超のGR団コイン"
+	text "GR Psychic Coin"
 	done
 
 GRColorlessCoinText:
-	textfw "無のGR団コイン"
+	text "GR Colorless Coin"
 	done
 
-SECTION "Text 6", ROMX
-
 GRKingCoinText:
-	textfw "GR団キングコイン"
+	text "GR King Coin"
 	done
 
 PonytaCoinText:
-	textfw "ポニータコイン"
+	text "Ponyta Coin"
 	done
 
 HorseaCoinText:
-	textfw "タッツーコイン"
+	text "Horsea Coin"
 	done
 
 ArbokCoinText:
-	textfw "アーボックコイン"
+	text "Arbok Coin"
 	done
 
 JigglypuffCoinText:
-	textfw "プリンコイン"
+	text "Jigglypuff Coin"
 	done
 
 DugtrioCoinText:
-	textfw "ダグトリオコイン"
+	text "Dugtrio Coin"
 	done
 
 GengarCoinText:
-	textfw "ゲンガーコイン"
+	text "Gengar Coin"
 	done
 
 RaichuCoinText:
-	textfw "ライチュウコイン"
+	text "Raichu Coin"
 	done
 
 LugiaCoinText:
-	textfw "ルギアコイン"
+	text "Lugia Coin"
 	done
 
 GRCoinPiece1Text:
-	textfw "GRコインのカケラ1"
+	text "GR Coin Piece 1"
 	done
 
 GRCoinPiece2Text:
-	textfw "GRコインのカケラ2"
+	text "GR Coin Piece 2"
 	done
 
 GRCoinPiece3Text:
-	textfw "GRコインのカケラ3"
+	text "GR Coin Piece 3"
 	done
 
 GRCoinPiece4Text:
-	textfw "GRコインのカケラ4"
+	text "GR Coin Piece 4"
 	done
 
 EventCoinPage1Text:
-	textfw "イベントコイン1"
+	text "Event Coins Page 1"
 	done
 
 EventCoinPage2Text:
-	textfw "イベントコイン2"
+	text "Event Coins Page 2"
 	done
 
 EventCoinPage3Text:
-	textfw "イベントコイン3"
+	text "Event Coins Page 3"
 	done
 
 DebugEffectViewerText:
-	textfw "エフェクトの再生"
-	done
-
-DebugEffectViewerLeftToRightText:
-	textfw "左から右へ"
-	done
-
-DebugEffectViewerRightToLeftText:
-	textfw "右から左へ"
+	text "Play Effect"
 	done
 
 LinkDuelText:
-	textfw "通信対戦"
-	done
-
-DebugEffectViewerStartButtonSwapText:
-	textfw "START:入替"
+	text "Link Duel"
 	done
 
 DebugEffectViewerAButtonPlayText:
-	textfw "A:実行"
+	text " A: Play"
 	done
 
 DebugEffectViewerBButtonStopText:
-	textfw "B:中止"
+	text " B: Stop"
+	done
+
+DebugEffectViewerSelectButtonSwapText:
+	text "SELECT: Swap"
+	done
+
+DebugEffectViewerStartButtonExitText:
+	text " START: Exit"
 	done
 
 DebugEffectViewerAnimationNumberText:
-	textfw "A000"
+	textfw "A"
 	done
 
 DebugEffectViewerPlayingStateText:
-	textfw "<実行中>"
+	text "<Playing>"
 	done
 
 DebugEffectViewerStopStateText:
-	textfw "<テイ止>"
-	done
-
-DebugMikamiProgText:
-	textfw "MIKAMI PROG"
-	done
-
-DebugPowerOnText:
-	textfw "パワーオン"
+	text "<Stopped>"
 	done
 
 ObtainedCoinText:
-	textfw "「<RAMTEXT>」を"
-	linefw "ゲットしました!"
+	text "Received a unique"
+	line "<RAMTEXT>!"
 	done
 
 ObtainedCoinTotalNumberText:
-	textfw "ごうけい<RAMNUM>枚めの コインです!"
+	text "That makes <RAMNUM> Coins total!"
 	done
 
 DebugSlotMachineText:
-	textfw "スロットマシン"
+	text "Slot Machine"
 	done
 
 GameCenterSlotMachineTitleText:
-	textfw " スロットマシン "
+	text " Slot Machine "
 	done
 
 GameCenterSlotMachineStartPromptText:
-	textfw "スロットマシンで あそびますか?"
+	text "Play the Slot Machine?"
 	done
 
 GameCenterSlotMachineDescriptionText:
-	textfw "かいてんする 3つのドラムをとめて"
-	linefw "おなじマークがそろうとチップゲット!"
-	linefw "レインボーエネルギーマークがそろうと"
-	linefw "ボーナスゲームへ とつにゅうします!"
+	text "Stop the 3 spinning reels!"
+	line "Match symbols to win Chips!"
+	line "Match Rainbow Energy symbols"
+	line "to enter the Bonus Game!"
 	done
 
 PlayerDiarySavedText:
-	textfw "<RAMNAME>は"
-	linefw "にっきを つけました"
+	text "<RAMNAME>"
+	line "wrote in the diary."
 	done
 
 PlayerDiaryCancelledText:
-	textfw "<RAMNAME>は"
-	linefw "にっきをつけるのを やめました"
+	text "Nothing was recorded"
+	line "in the diary."
 	done
 
 GameCenterCoinFlipTitleText:
-	textfw " れんぞくコイントス "
+	text " Consecutive Coin Toss "
 	done
 
 GameCenterCoinFlipDescriptionText:
-	textfw "おもてが れんぞく なんかいでるか"
-	linefw "コイントスに チャレンジしよう!"
-	linefw "10かいれんぞく せいこうすれば"
-	linefw "ごうかなけいひんゲット!"
+	text "Test your luck at the Coin Toss"
+	line "to see how many times you can"
+	line "flip Heads in a row!"
+	line "Get 10 Heads in a row to win"
+	line "a fabulous prize!"
 	done
 
 GameCenterCoinFlipCheersText:
-	textfw "れんぞく10かいを めざして"
-	linefw "がんばってください!"
+	text "Go for 10 Heads in a row!"
+	line "Good luck!"
 	done
 
 GameCenterCoinFlipDialogText:
-	textfw "10かいれんぞくせいこうで"
-	linefw "ごうかしょうひんゲット!"
+	text "Get 10 Heads in a row to win"
+	line "a fabulous prize!"
 	done
 
 GameCenterCoinFlipPlayAgainPromptText:
-	textfw "もういちど あそびますか?"
+	text "Would you like to try again?"
 	done
 
 GameCenterPrizeExchangeText:
-	textfw "けいひんカウンター"
+	text "Prize Counter"
 	done
 
 DebugDuelText:
-	textfw "たいせん"
+	text "Duel"
 	done
 
 SpecialRuleChlorophyllTitleText:
-	textfw "   みどりのちから    "
+	textfw "    "
+	text "Chlorophyll"
 	done
 
 SpecialRuleChlorophyllDescriptionText:
-	textfw "この対戦では 「草ポケモン」は"
-	linefw "「どく・マヒ・こんらん・ねむり」の"
-	linefw "状態に ならない"
+	text "For this Duel, <GRASS> Pokémon cannot"
+	line "become Asleep, Confused, Paralyzed,"
+	line "or Poisoned."
 	done
 
 SpecialRuleThunderChargeTitleText:
-	textfw "   雷パワーアップ    "
+	textfw "   "
+	text " Thunder Charge"
 	done
 
 SpecialRuleThunderChargeDescriptionText:
-	textfw "この対戦では 「雷ポケモン」が"
-	linefw "ワザによって あいての対戦ポケモンに"
-	linefw "あたえるダメージが 「+10」される"
+	text "For this Duel, when a <LIGHTNING> Pokémon"
+	line "attacks, the Defending Pokémon"
+	line "receives 10 more damage."
 	done
 
 SpecialRuleFlameArmorTitleText:
-	textfw "   ほのおのよろい    "
+	textfw "    "
+	text "Flame Armor"
 	done
 
 SpecialRuleFlameArmorDescriptionText:
-	textfw "この対戦では 「炎ポケモン」は"
-	linefw "「水ポケモン」からの ワザによる"
-	linefw "ダメージにたいして 弱点の"
-	linefw "えいきょうをうけない"
+	text "For this Duel, when a <WATER> Pokémon"
+	line "attacks a <FIRE> Pokémon, don't apply"
+	line "Weakness."
 	done
 
 SpecialRuleSmallBenchTitleText:
-	textfw "    せまいベンチ    "
+	textfw "    "
+	text "Small Bench"
 	done
 
 SpecialRuleSmallBenchDescriptionText:
-	textfw "この対戦では おたがいのベンチ数が"
-	linefw "「3」になる"
-	linefw "(「ひかえポケモン」のおける数が"
-	linefw " 「3」匹になる)"
+	text "For this Duel, each player's Bench"
+	line "can only have up to 3 Pokémon."
 	done
 
 SpecialRuleRunningWaterTitleText:
-	textfw "    にげみずの場    "
+	textfw "   "
+	text " Running Water"
 	done
 
 SpecialRuleRunningWaterDescriptionText:
-	textfw "この対戦では"
-	linefw "「水ポケモン」が 「にげる」ときに"
-	linefw "ひつような エネルギーの数が"
-	linefw "「-1」される"
+	text "For this Duel, <WATER> Pokémon pay <COLORLESS>"
+	line "less to retreat to the Bench."
 	done
 
 SpecialRuleEarthPowerTitleText:
-	textfw "   だいちのちから    "
+	textfw "    "
+	text "Earth Power"
 	done
 
 SpecialRuleEarthPowerDescriptionText:
-	textfw "この対戦では 「闘ポケモン」が"
-	linefw "あたえるダメージは 抵抗力の"
-	linefw "えいきょうをうけず そのままあたえる"
+	text "For this Duel, when a <FIGHTING> Pokémon"
+	line "attacks, don't apply Resistance."
 	done
 
 SpecialRuleLowResistanceTitleText:
-	textfw "    抵抗力ていか    "
+	textfw "   "
+	text " Low Resistance"
 	done
 
 SpecialRuleLowResistanceDescriptionText:
-	textfw "この対戦では 抵抗力のえいきょうを"
-	linefw "「-30」から「-10」に"
-	linefw "へんこうする"
+	text "For this Duel, the effect of"
+	line "Resistance is changed from -30"
+	line "damage to -10 damage."
 	done
 
 SpecialRuleEnergyReturnTitleText:
-	textfw "  エネルギーリターン   "
+	textfw "   "
+	text " Energy Return"
 	done
 
 SpecialRuleEnergyReturnDescriptionText:
-	textfw "この対戦では 場にいるポケモンが"
-	linefw "トラッシュされるとき そのポケモンに"
-	linefw "ついている「基本エネルギーカード」は"
-	linefw "そのポケモンの もちぬしの手札に"
-	linefw "もどる"
+	text "For this Duel, when a Pokémon is"
+	line "discarded from play, all Energy"
+	line "cards attached to it return to the"
+	line "Hand."
 	done
 
 SpecialRuleToughEscapeTitleText:
-	textfw "    にげにくい場    "
+	textfw "    "
+	text "Tough Escape"
 	done
 
 SpecialRuleToughEscapeDescriptionText:
-	textfw "この対戦では 「対戦ポケモン」が"
-	linefw "バトル場から 「にげる」ときに"
-	linefw "トラッシュする エネルギーの数が"
-	linefw "「+1」される"
+	text "For this Duel, all Pokémon pay <COLORLESS>"
+	line "more to retreat to the Bench."
 	done
 
 SpecialRuleBlackHoleTitleText:
-	textfw " トラッシュブラックホール "
+	textfw "    "
+	text " Black Hole"
 	done
 
 SpecialRuleBlackHoleDescriptionText:
-	textfw "この対戦では トラッシュしたカードは"
-	linefw "この対戦中は つかえなくなる。"
-	linefw "(トラッシュには つねに カードが"
-	linefw " ない状態になっている)"
-	done
-
-MainCharacterText:
-	textfw "主人公"
+	text "For this Duel, the Discard Pile is"
+	line "always empty. Discarded cards are"
+	line "permanently removed from play."
 	done
 
 TechText:
-	textfw "研究員"
+	text "Tech"
 	done
 
 DuelistIntroLightningClubMemberText:
-	textfw "エレキクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Lightning Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroPsychicClubMemberText:
-	textfw "エスパークラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Psychic Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroRockClubMemberText:
-	textfw "ストーンクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Rock Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroFightingClubMemberText:
-	textfw "バトルクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Fighting Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGrassClubMemberText:
-	textfw "グリーンクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Grass Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroScienceClubMemberText:
-	textfw "サイエンスクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Science Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroWaterClubMemberText:
-	textfw "アクアクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Water Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroFireClubMemberText:
-	textfw "ファイアクラブメンバー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Fire Club Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroLightningClubMasterText:
-	textfw "エレキクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Lightning Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroPsychicClubMasterText:
-	textfw "エスパークラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Psychic Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroRockClubMasterText:
-	textfw "ストーンクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Rock Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroFightingClubMasterText:
-	textfw "バトルクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Fighting Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGrassClubMasterText:
-	textfw "グリーンクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Grass Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroScienceClubMasterText:
-	textfw "サイエンスクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Science Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroWaterClubMasterText:
-	textfw "アクアクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Water Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroFireClubMasterText:
-	textfw "ファイアクラブマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Fire Club Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGrandMasterText:
-	textfw "グランドマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Grand Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroTechText:
-	textfw "研究員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Tech <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroStrangeLifeFormText:
-	textfw "ふしぎないきもの <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Strange Life-form <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroCollectorText:
-	textfw "コレクター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Collector <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroRivalText:
-	textfw "ライバル <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Rival <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroEnigmaticMaskText:
-	textfw "ナゾのかめん <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Masked Mystery <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRGrassFortMemberText:
-	textfw "草のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Grass Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRLightningFortMemberText:
-	textfw "雷のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Lightning Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRFireFortMemberText:
-	textfw "炎のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Fire Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRWaterFortMemberText:
-	textfw "水のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Water Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRFightingFortMemberText:
-	textfw "闘のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Fighting Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRPsychicStrongholdMemberText:
-	textfw "超のGR団員 <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Psychic Fort Member <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRGrassFortLeaderText:
-	textfw "草のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Grass Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRLightningFortLeaderText:
-	textfw "雷のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Lightning Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRFireFortLeaderText:
-	textfw "炎のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Fire Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRWaterFortLeaderText:
-	textfw "水のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Water Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRFightingFortLeaderText:
-	textfw "闘のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Fighting Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRPsychicStrongholdLeaderText:
-	textfw "超のGR団リーダー <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Psychic Fort Leader <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroColorlessAltarGuardianText:
-	textfw "無のばんにん <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Colorless Altar Guardian <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRBigBossText:
-	textfw "GR団 大かんぶ <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR Executive <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGRKingText:
-	textfw "GR団 キング <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "GR King <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroTapText:
-	textfw "<RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "<RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroDungeonMasterText:
-	textfw "ダンジョンマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Dungeon Master <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 DuelistIntroGhostMasterText:
-	textfw "ゴーストカードマスター <RAMTEXT>"
-	linefw "<RAMTEXT>デッキ!"
+	text "Ghost Champion <RAMTEXT>"
+	line "<RAMTEXT> Deck"
 	done
 
 MinicomDeckSaveMachineText:
-	textfw "デッキきろくマシンにせつぞく"
+	text "Deck Save Machine"
 	done
 
 MinicomMailboxText:
-	textfw "メールボックスをみる"
+	text "Read Mail"
 	done
 
 MinicomCardAlbumText:
-	textfw "カードいちらんをみる"
+	text "Cards"
 	done
 
 MinicomDialogText:
-	textfw "メニューを えらんでください"
+	text "Please choose a menu option."
 	done
 
 PlayersChipsText:
-	textfw " <RAMNAME>のチップ "
+	text " <RAMNAME>'s Chips "
 	done
 
 BoosterPackBeginningPokemonText:
-	textfw "はじめてのポケモン"
+	text "Beginning Pokémon"
 	done
 
 BoosterPackLegendaryPowerText:
-	textfw "でんせつのちから"
+	text "Legendary Power"
 	done
 
 BoosterPackIslandOfFossilText:
-	textfw "化石のしま"
+	text "Fossil Island"
 	done
 
 BoosterPackPsychicBattleText:
-	textfw "超バトル"
+	text "Psychic Battle"
 	done
 
 BoosterPackFlyingPokemonText:
-	textfw "そらとぶポケモン"
+	text "Sky-Flying Pokémon"
 	done
 
 BoosterPackWeAreTeamRocketText:
-	textfw "われらロケット団"
+	text "We Are Team Rocket"
 	done
 
 BoosterPackTeamRocketsAmbitionText:
-	textfw "ロケット団のやぼう"
+	text "Team Rocket's Ambition"
 	done
 
 EnergyPackText:
-	textfw "エネルギー"
+	text "Energy"
 	done
 
 PresentPackText:
-	textfw "プレゼントパック"
+	text "Present"
 	done
 
 ReceivedBoosterPackText:
-	textfw "<RAMNAME>は <RAMTEXT>"
-	linefw "「<RAMTEXT>」を ゲット!"
+	text "<RAMNAME> received a Booster"
+	line "Pack: <RAMTEXT>."
 	done
 
 ReceivedAnotherBoosterPackText:
-	textfw "さらに <RAMTEXT>"
-	linefw "「<RAMTEXT>」を ゲット!"
-	done
-
-BoosterPack1Text:
-	textfw "第1彈"
-	done
-
-BoosterPack2Text:
-	textfw "第2彈"
-	done
-
-BoosterPack3Text:
-	textfw "第3彈"
-	done
-
-BoosterPack4Text:
-	textfw "第4彈"
-	done
-
-BoosterPack5Text:
-	textfw "第5彈"
-	done
-
-BoosterPack6Text:
-	textfw "第6彈"
-	done
-
-BoosterPack7Text:
-	textfw "第7彈"
+	text "...And another Booster Pack:"
+	line "<RAMTEXT>."
 	done
 
 GetPackText:
-	textfw "パック入手"
+	text "Get Pack"
 	done
 
 GameCenter1ChipPerPlayText:
-	textfw "チップ1枚"
+	text "1 Chip"
 	done
 
 GameCenter5ChipsPerPlayText:
-	textfw "チップ5枚"
+	text "5 Chips"
 	done
 
 GameCenterSlotMachineDialogText:
-	textfw "十字ボタンの下で ゲームスタート"
-	linefw "Bボタンで おわります"
+	text "Press Down on the D-Pad to start."
+	line "Press B to Exit."
 	done
 
 GameCenterSlotMachineBonusPlayText:
-	textfw "ボーナスゲーム スタート!!"
-	linefw "10かいまでチャレンジできます!"
+	text "Bonus Game Start!!"
+	line "You get up to 10 attempts!"
 	done
 
 GameCenterSlotMachineBonusPlayMoneybagHitText:
-	textfw "ボーナスチップマークが そろいました"
-	linefw "チップ<RAMNUM>枚を ゲット!"
+	text "Bonus Chip symbols lined up!"
+	line "Received <RAMNUM> Chips!"
 	done
 
 ; calls Articuno/Zapdos/Moltres/Dragonite symbols "edition mark"
 GameCenterSlotMachineBonusPlayLegendaryHitText:
-	textfw "エディションマークが そろいました"
+	text "Legendary symbols lined up!"
 	done
 
 GameCenterSlotMachineMissedText:
-	textfw "ざんねん!"
-	linefw "はずれてしまいました"
+	text "Too bad!"
+	line "Better luck next time!"
 	done
 
 DebugAdjustChipsText:
-	textfw "しょじきんへんこう"
+	text "Adjust Chips"
 	done
 
 DebugImageListText:
-	textfw "イメージ一覽"
+	text "Image List"
 	done
 
 DebugUnregisteredText:
-	textfw "未登錄"
+	text "Unregistered"
 	done
 
 GrandMasterCupBracketTitleText:
-	textfw "<グランドマスター杯トーナメント表>"
+	text "-Grand Master Cup Tournament Table-"
 	done
 
 GrandMasterCupBracketChampionshipText:
-	textfw "!優勝!"
+	text "Championship"
 	done
 
 ConfirmedCardsText:
-	textfw "<RAMNAME>は "
-	linefw "カードを かくにんした!!"
+	text "<RAMNAME>"
+	line "checked the cards!"
 	done
 
 MailboxEmptySenderText:
@@ -1135,890 +1038,910 @@ MailboxEmptySubjectText:
 	done
 
 MailBlackBoxOutputSubjectText:
-	textfw "ブラックボックス"
+	text "Black Box"
 	done
 
 MailBlackBoxOutputBody1Text:
-	textfw "「ブラックボックス」センターです"
-	linefw "「ブラックボックス」を ごりよう"
-	linefw "いただき ありがとうございます"
-	linefw "「ブラックボックスゲーム」のけっかを"
-	linefw "おおくり いたしましたので"
-	linefw "どうぞ おうけとりください"
+	text "This is the Black Box!"
+	line "Thank you for using the"
+	line "Black Box service."
+	line "We are sending you the cards"
+	line "from your Black Box Game,"
+	line "so please accept them!"
 	done
 
 MailBlackBoxOutputBody2Text:
-	textfw "どうですか いいカードが"
-	linefw "にゅうしゅ できましたか?"
-	linefw "またの 「ブラックボックス」の"
-	linefw "ごりようを おまちしています"
-	linefw ""
-	linefw "  GR団ゲームセンター(^-^)/"
+	text "Did you get the rare cards"
+	line "you were looking for?"
+	line "Please come play the"
+	line "Black Box game again!"
+	line ""
+	line "    GR Game Center  :D"
 	done
 
 MailBillsPCOutputBody1Text:
-	textfw "「マサキのパソコン」センターです"
-	linefw "「マサキのパソコン」を ごりよう"
-	linefw "いただき ありがとうございます"
-	linefw "「マサキのパソコン」のけっかを"
-	linefw "おおくり いたしましたので"
-	linefw "どうぞ ごかくにんください"
+	text "This is Bill's PC!"
+	line "Thank you for using"
+	line "Bill's PC service."
+	line "We are sending you the"
+	line "cards from Bill's PC,"
+	line "so please check them!"
 	done
 
 MailBillsPCOutputBody2Text:
-	textfw "すばらしいカードが"
-	linefw "にゅうしゅ できましたか?"
-	linefw "またの 「マサキのパソコン」の"
-	linefw "ごりようを おまちしています"
-	linefw ""
-	linefw "  GR団ゲームセンター(^-^)/"
+	text "Did you find some great"
+	line "cards for your Deck?"
+	line "Please use Bill's PC"
+	line "again anytime!"
+	line ""
+	line "    GR Game Center  :D"
 	done
 
 MailMailboxIntroSubjectText:
-	textfw "ミニコンとメール"
+	text "MiniCOM and Mail"
 	done
 
 MailMailboxIntroBody1Text:
-	textfw "<RAMNAME>!"
-	linefw "わしじゃ D<RDOT>オーヤマじゃ"
-	linefw "ちゃんと このメールを"
-	linefw "よむことが できたかな?"
-	linefw "よいか いろいろな じょうほうが"
-	linefw "メールで このようにとどくのじゃ"
+	text "Hi, <RAMNAME>!"
+	line "It's me, Doctor Mason."
+	line "Are you able to read"
+	line "this mail properly?"
+	line "I will send you lots of"
+	line "useful information by mail."
 	done
 
 MailMailboxIntroBody2Text:
-	textfw "こまめに 「ミニコン」をひらいて"
-	linefw "あたらしいメールが とどいているかを"
-	linefw "チェックするんじゃぞ"
-	linefw "「ミニコン」は 8通しかメールを"
-	linefw "うけとれないんじゃ よんだメールは"
-	linefw "さくじょして あきをつくるんじゃよ"
+	text "Check your MiniCOM often"
+	line "to see if you have new mail!"
+	line "The MiniCOM can only hold"
+	line "8 messages at a time."
+	line "Be sure to delete old mail"
+	line "to make room for new messages."
 	done
 
 MailMailboxIntroBody3Text:
-	textfw "ミニコンを メールで いっぱいに"
-	linefw "しておくと あたらしいメールが"
-	linefw "うけとれないことが あるからのう"
-	linefw ""
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "If your mail box is full,"
+	line "you won't be able to"
+	line "receive my helpful advice!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailMailboxIntroBody4Text:
-	textfw "ついしん"
-	linefw ""
-	linefw "これは わしからの せんべつじゃ"
-	linefw "これからの対戦に やくだててくれ"
+	text "P.S."
+	line "Here's a gift for you..."
+	line "I hope it helps you win"
+	line "your upcoming Duels!"
 	done
 
 MailDeckDiagnosis1SubjectText:
-	textfw "「デッキしんだん」"
+	text "Deck Diagnosis"
 	done
 
 MailDeckDiagnosis1Body1Text:
-	textfw "<RAMNAME>!"
-	linefw "わしじゃ D<RDOT>オーヤマじゃ"
-	linefw "しんはつめいの おしらせじゃ"
-	linefw "わしのながねんの ポケモンカードの"
-	linefw "研究せいかを けっしゅうした"
-	linefw "「デッキしんだんシステム」じゃ"
+	text "<RAMNAME>,"
+	line "It's me, Doctor Mason."
+	line "I have built a brand new"
+	line "invention at the Lab -"
+	line "the Deck Diagnosis Machine!"
+	line "It will check the balance"
+	line "of any Deck you build!"
 	done
 
 MailDeckDiagnosis1Body2Text:
-	textfw "とりあえず しょしんしゃのための"
-	linefw "「ステップ1」が かんせいしておる"
-	linefw "「デッキチェック」は"
-	linefw "おまえのつくったデッキの バランスを"
-	linefw "チェックすることが できるんじゃ"
-	linefw "どうじゃ すごいじゃろ!"
+	text "Step 1 is finally ready!"
+	line "It is built for beginners."
+	line "The Deck Diagnosis can look"
+	line "at your cards to see if"
+	line "your Deck is well balanced."
+	line "Isn't that wonderful?"
 	done
 
 MailDeckDiagnosis1Body3Text:
-	textfw "「パソコン」から アクセスするんじゃ"
-	linefw "あくまでも きほんてきなアドバイスと"
-	linefw "デッキチェックじゃがな・・・"
-	linefw ""
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "You can use this system"
+	line "from any PC!"
+	line "Give it a try right away!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailDeckDiagnosis1Body4Text:
-	textfw "ついしん"
-	linefw "「ステップ2」が かんせいしたら"
-	linefw "また れんらくするからな・・・"
+	text "P.S."
+	line "I'll send you more mail"
+	line "when Step 2 is finished!"
 	done
 
 MailDeckDiagnosis2SubjectText:
-	textfw "「デッキしんだん」2"
+	text "Deck Diagnosis 2"
 	done
 
 MailDeckDiagnosis2Body1Text:
-	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
-	linefw "「デッキしんだんシステム」の"
-	linefw "バージョンアップの おしらせじゃ"
-	linefw "ちょっと ポケモンカードになれた"
-	linefw "ひとのための 「ステップ2」が"
-	linefw "かんせいじゃ"
+	text "<RAMNAME>,"
+	line "It's me, Doctor Mason."
+	line "I have upgraded the"
+	line "Deck Diagnosis Machine!"
+	line "Step 2 is now ready for"
+	line "players who want to build"
+	line "better Decks!"
 	done
 
 MailDeckDiagnosis2Body2Text:
-	textfw "デッキを つくるうえでの"
-	linefw "ちょっとした アドバイスじゃ"
-	linefw "やくにたつ トレーナーカードや"
-	linefw "「どく・マヒ・ねむり・こんらん」の"
-	linefw "たいしょほうほう といった"
-	linefw "アドバイスが まんさいじゃ!"
+	text "This step will give you"
+	line "helpful hints on Trainer cards!"
+	line "It also has hints on dealing"
+	line "with Poison, Paralysis, Sleep,"
+	line "and Confusion!"
+	line "Check it out on any PC!"
 	done
 
 MailDeckDiagnosis2Body3Text:
-	textfw "れいに よって"
-	linefw "「パソコン」から アクセスできるぞ"
-	linefw "どんなもんか ためしてみてくれ"
-	linefw ""
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "I hope it helps you make"
+	line "your Decks even stronger!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailDeckDiagnosis2Body4Text:
-	textfw "ついしん"
-	linefw "「ステップ3」が かんせいしたら"
-	linefw "また れんらくするからな・・・"
+	text "P.S."
+	line "I'll send you more mail"
+	line "when Step 3 is finished!"
 	done
 
 MailDeckDiagnosis3SubjectText:
-	textfw "「デッキしんだん」3"
+	text "Deck Diagnosis 3"
 	done
 
 MailDeckDiagnosis3Body1Text:
-	textfw "わしじゃ D<RDOT>オーヤマじゃ"
-	linefw "「デッキしんだんシステム」の"
-	linefw "バージョンアップの おしらせじゃ"
-	linefw "「ステップ3」の かんせいじゃ"
-	linefw "こんどは デッキの色についての"
-	linefw "アドバイスが メインじゃ!"
+	text "It's me, Doctor Mason."
+	line "I have finished another upgrade!"
+	line "Step 3 of the Deck Diagnosis"
+	line "Machine is complete."
+	line "This time, it gives advice"
+	line "on combining different"
+	line "Pokémon types!"
 	done
 
 MailDeckDiagnosis3Body2Text:
-	textfw "デッキを つくるうえでの"
-	linefw "きほんてきな アドバイスは"
-	linefw "これで おわりじゃな・・・"
-	linefw ""
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "These are the final basic tips"
+	line "for building a proper Deck."
+	line "Study them carefully!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailDeckDiagnosis3Body3Text:
-	textfw "ついしん"
-	linefw "「ステップ4」が かんせいしたら"
-	linefw "また れんらくするからな・・・"
+	text "P.S."
+	line "I'll send you more mail"
+	line "when Step 4 is finished!"
 	done
 
 MailDeckDiagnosis4SubjectText:
-	textfw "「デッキしんだん」4"
+	text "Deck Diagnosis 4"
 	done
 
 MailDeckDiagnosis4Body1Text:
-	textfw "<RAMNAME> D<RDOT>オーヤマじゃ"
-	linefw "また 「デッキしんだんシステム」の"
-	linefw "バージョンアップの おしらせじゃ"
-	linefw "「ステップ4」は よりよいデッキを"
-	linefw "つくるための アドバイスが"
-	linefw "ちゅうしんに なっているぞ"
+	text "<RAMNAME>,"
+	line "It's me, Doctor Mason."
+	line "The final upgrade is here!"
+	line "Step 4 focuses entirely on"
+	line "advanced strategies for"
+	line "building expert Decks!"
 	done
 
 MailDeckDiagnosis4Body2Text:
-	textfw "対戦を 勝ちすすめないときには"
-	linefw "デッキに もんだいが あるのじゃ"
-	linefw "そんなときは デッキを キチンと"
-	linefw "みなおして みるのも たいせつじゃぞ"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "If you are having trouble"
+	line "winning your Duels, look at"
+	line "your Deck balance again."
+	line "A few small changes can make"
+	line "a very powerful Deck!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailAutoDeckMachine1SubjectText:
-	textfw "オートデッキマシン1"
+	text "Auto Deck Machine 1"
 	done
 
 MailAutoDeckMachine1Body1Text:
-	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
-	linefw "デッキをつくるのが たいへんなら"
-	linefw "オートデッキマシンを つかうと"
-	linefw "いいじゃろう"
-	linefw "ひつようなカードを もっていれば"
-	linefw "すぐ つくってくれるぞ!"
+	text "Hi, <RAMNAME>! It's Doctor Mason."
+	line "If you are having trouble"
+	line "building a Deck from scratch,"
+	line "use the Auto Deck Machine!"
+	line "If you have the right cards,"
+	line "it builds the Deck for you!"
 	done
 
 MailAutoDeckMachine1Body2Text:
-	textfw "このオートデッキマシンも"
-	linefw "だんだん バージョンアップさせる"
-	linefw "よていじゃ!"
-	linefw "これからの対戦に やくだててくれ"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "I will add more Deck"
+	line "Configurations to the"
+	line "machine time goes on!"
+	line "Use it to build great Decks!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailAutoDeckMachine1Body3Text:
-	textfw "ついしん"
-	linefw "これで つくれるデッキが"
-	linefw "ふえるとも おもえんが"
-	linefw "とりあえず プレゼントじゃ!"
+	text "P.S."
+	line "Here is a gift for you to"
+	line "help build your collection!"
 	done
 
 MailAutoDeckMachine2SubjectText:
-	textfw "オートデッキマシン2"
+	text "Auto Deck Machine 2"
 	done
 
 MailAutoDeckMachine2Body1Text:
-	textfw "D<RDOT>オーヤマじゃ"
-	linefw "<RAMNAME>! オートデッキマシンに"
-	linefw "だいぶ デッキが あつまっておるぞ"
-	linefw "たまには 研究所へ もどって"
-	linefw "オートデッキマシンを かくにんして"
-	linefw "みては どうじゃ?"
+	text "Doctor Mason here."
+	line "<RAMNAME>, I have added many"
+	line "new Deck Configurations to"
+	line "the Auto Deck Machine!"
+	line "Come visit the Laboratory"
+	line "and check out the machine"
+	line "whenever you can!"
 	done
 
 MailAutoDeckMachine2Body2Text:
-	textfw "これからも オートデッキマシンは"
-	linefw "バージョンアップする つもりじゃ"
-	linefw "どんどん つかって 対戦に"
-	linefw "やくだてて くれ"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "I will keep updating the"
+	line "Auto Deck Machine for you."
+	line "Use these Decks to defeat"
+	line "your opponents!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailAutoDeckMachine2Body3Text:
-	textfw "ついしん"
-	linefw "とりあえず プレゼントじゃ!"
-	linefw "うけとって くれ"
+	text "P.S."
+	line "Here is another Booster Pack!"
+	line "Open it right away!"
 	done
 
 MailAutoDeckMachine3SubjectText:
-	textfw "オートデッキマシン3"
+	text "Auto Deck Machine 3"
 	done
 
 MailAutoDeckMachine3Body1Text:
-	textfw "おお <RAMNAME>! げんきかな"
-	linefw "オートデッキマシン2号が"
-	linefw "かんせいしたんじゃ!!"
-	linefw "オートデッキマシン2号は GR団の"
-	linefw "カードに たいおうした マシンじゃ"
-	linefw "どうじゃ スゴイじゃろ!"
+	text "Hey <RAMNAME>! How are you?"
+	line "Auto Deck Machine 2"
+	line "is finally finished!!"
+	line "Machine 2 can build Decks"
+	line "using Team GR's cards."
+	line "Isn't that exciting?"
 	done
 
 MailAutoDeckMachine3Body2Text:
-	textfw "GR団のデッキを 研究するには"
-	linefw "もってこいの マシンじゃぞ"
-	linefw "たまには 研究所へもどってきて"
-	linefw "あいてを 研究するんじゃ!"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "It is a great way to learn"
+	line "the strategies used by Team GR!"
+	line "Come back to the Lab and"
+	line "study their Decks!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailAutoDeckMachine3Body3Text:
-	textfw "ついしん"
-	linefw "また プレゼントじゃ"
-	linefw "こんどは 第3彈じゃ!!"
+	text "P.S."
+	line "Here is a special Booster"
+	line "Pack from the Series 3 set!!"
 	done
 
 MailAutoDeckMachine4SubjectText:
-	textfw "オートデッキマシン4"
+	text "Auto Deck Machine 4"
 	done
 
 MailAutoDeckMachine4Body1Text:
-	textfw "<RAMNAME>! D<RDOT>オーヤマじゃ"
-	linefw "GR団との対戦は どうじゃ?"
-	linefw "オートデッキマシン2号には"
-	linefw "けっこう GR団のカードをつかった"
-	linefw "デッキが あつまってきたぞ!"
-	linefw "いちど 研究所へ もどってはどうかな"
+	text "Hi, <RAMNAME>! It's Doctor Mason."
+	line "How are your Duels with Team GR?"
+	line "Auto Deck Machine 2 now has"
+	line "Configurations for Decks that"
+	line "use Team GR's rarest cards!"
+	line "Come to the Lab to check it!"
 	done
 
+SECTION "Text 6", ROMX
+
 MailAutoDeckMachine4Body2Text:
-	textfw "おまえのおかげで カードも"
-	linefw "とりもどしたし たまには"
-	linefw "こちらのしまの れんちゅうとも"
-	linefw "対戦してみては どうかな?"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "We are winning our cards back"
+	line "thanks to you! Try practicing"
+	line "against the Club Members on"
+	line "our island to test your skills!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailAutoDeckMachine4Body3Text:
-	textfw "ついしん"
-	linefw "これが おまえが とりもどした"
-	linefw "さいしんの拡張パックじゃ!"
+	text "P.S."
+	line "Here is a new Booster Pack"
+	line "that you helped win back!"
 	done
 
 MailAutoDeckMachine5SubjectText:
-	textfw "オートデッキマシン5"
+	text "Auto Deck Machine 5"
 	done
 
 MailAutoDeckMachine5Body1Text:
-	textfw "わしじゃ D<RDOT>オーヤマじゃ"
-	linefw "ついに GR団のキング ビルリッチを"
-	linefw "かいしんさせた そうじゃな"
-	linefw "だが まだまだポケモンカードを"
-	linefw "きわめたわけでは ないぞ!"
-	linefw "<RAMNAME>"
+	text "It's me, Doctor Mason."
+	line "I heard you defeated the"
+	line "Leader of Team GR, Villicci!"
+	line "But your journey is not"
+	line "finished yet, <RAMNAME>!"
 	done
 
 MailAutoDeckMachine5Body2Text:
-	textfw "オートデッキマシンのデッキを"
-	linefw "すべて つくってみたかな?"
-	linefw "いろんなデッキで 戦ってみてこそ"
-	linefw "たのしめるのじゃ"
-	linefw "さあ がんばって すべてのデッキの"
-	linefw "コンプリートを めざすのじゃ"
+	text "Have you built every Deck from"
+	line "the Auto Deck Machines?"
+	line "The real fun of the TCG is"
+	line "Dueling with different Decks."
+	line "Try to collect all the cards"
+	line "and build every single one!"
 	done
 
 MailAutoDeckMachine5Body3Text:
-	textfw "オートデッキマシン1号も 2号も"
-	linefw "まだまだ デッキは ふえるぞ!"
-	linefw ""
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^о^)"
+	text "Auto Deck Machines 1 and 2 still"
+	line "have many secret Configurations"
+	line "for you to find!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailChallengeMachineSubjectText:
-	textfw "チャレンジマシーン!"
+	text "Challenge Machine!"
 	done
 
 MailChallengeMachineBody1Text:
-	textfw "わしじゃ! D<RDOT>オーヤマじゃ"
-	linefw "チャレンジマシーンは"
-	linefw "たのしんで もらえておるかな?"
-	linefw "さいきょうの デッキをつくって"
-	linefw "なんども チャレンジして"
-	linefw "れんしょうきろくを のばすんじゃ!!"
+	text "It's me! Doctor Mason."
+	line "Are you Dueling against"
+	line "the Challenge Machine?"
+	line "Choose your absolute best Deck"
+	line "and see how many times you"
+	line "can win in a row!!"
 	done
 
 MailChallengeMachineBody2Text:
-	textfw "50れんしょうしたら わしがステキな"
-	linefw "コインを <RAMNAME>に やろう"
-	linefw "「ダグトリオ」のコインじゃ!!"
-	linefw "さあ レッツ チャレンジじゃ"
-	linefw "D<RDOT>オーヤマ研究所"
-	linefw "   所長 D<RDOT>オーヤマ (^◇^)"
+	text "If you can get a streak of"
+	line "50 wins in a row, I will"
+	line "give you a very rare coin!"
+	line "It's a Dugtrio Coin!!"
+	line "Go try the Challenge Machine!"
+	line ""
+	line "Mason Laboratory"
+	line "      Doctor Mason  ;)"
 	done
 
 MailGRChallengeMachineSubjectText:
-	textfw "GR団チャレンジマシン"
+	text "GR Challenge Machine"
 	done
 
 MailGRChallengeMachineBody1Text:
-	textfw "げんきで ポケモンカードを"
-	linefw "あそんでいるかな <RAMNAME>くん"
-	linefw "すてきな おしらせだ"
-	linefw "GR団のチャレンジホールに"
-	linefw "「GR団チャレンジマシン」を"
-	linefw "セットした!"
+	text "Are you enjoying the Pokémon"
+	line "TCG, young <RAMNAME>?"
+	line "I have some news for you."
+	line "Inside the GR Challenge Hall,"
+	line "we have turned on the new"
+	line "GR Challenge Machine!"
 	done
 
 MailGRChallengeMachineBody2Text:
-	textfw "マシンは D<RDOT>オーヤマに"
-	linefw "つくって もらったものだが"
-	linefw "けっこう たのしいものだ"
-	linefw "ぜひ チャレンジしてみてくれ!"
-	linefw "50れんしょうしたら あたらしい"
-	linefw "コインを プレゼント!!"
+	text "Doctor Mason built this machine"
+	line "for us, and it is proving to"
+	line "be a very fun challenge!"
+	line "You should try it yourself."
+	line "Get 50 wins in a row and"
+	line "you will win a special coin!!"
 	done
 
 MailGRChallengeMachineBody3Text:
-	textfw "「ゲンガー」のコインだ!"
-	linefw "がんばって ぜひ ゲットしてくれ"
-	linefw ""
-	linefw "GR団のキング"
-	linefw "        ビルリッチ(ˉ^ˉ)"
+	text "It's a Gengar Coin!"
+	line "Let's see if you can win it!"
+	line ""
+	line "King of Team GR"
+	line "          Villicci  :["
 	done
 
 MailGrandMasterCupSubjectText:
-	textfw "グランドマスター杯"
+	text "Grand Master Cup"
 	done
 
 MailGrandMasterCupBody1Text:
-	textfw "<RAMNAME>くん!"
-	linefw "グランドマスターのリュウドーだ"
-	linefw "われら グランドマスターは"
-	linefw "さいこうの ポケモンカードの大会を"
-	linefw "けいかくしているんだ"
-	linefw "そのなも 「グランドマスター杯」!"
+	text "Greetings, <RAMNAME>!"
+	line "This is Grand Master Rod."
+	line "The Grand Masters are hosting"
+	line "a spectacular new tournament"
+	line "for the island's best players -"
+	line "The Grand Master Cup!"
 	done
 
 MailGrandMasterCupBody2Text:
-	textfw "きみにも さんかしてほしいんだ"
-	linefw "まもなく 「グランドマスター杯」の"
-	linefw "じゅんびが できるから たまに"
-	linefw "ポケモンドームに よってくれたまえ"
-	linefw "グランドマスター リーダー"
-	linefw "        リュウドー(^о^)"
+	text "We want you to join us."
+	line "Preparations will be finished"
+	line "very soon, so come to the"
+	line "Pokémon Dome to register!"
+	line ""
+	line "Grand Master Leader"
+	line "               Rod  ;)"
 	done
 
 MailRonaldsScoutGR1SubjectText:
-	textfw "GR1号のデッキ"
+	text "GR1's Deck"
 	done
 
 MailRonaldsScoutGR1Body1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "いいか こうやって メールで"
-	linefw "GR団のやつらの じょうほうを"
-	linefw "おくってやるからよ"
-	linefw "こまめに メールをチェックするんだぜ"
-	linefw "でないと じょうほうが クサるぜ!"
+	text "Yo, <RAMNAME>!"
+	line "It's me, Ronald!"
+	line "I'll send you information about"
+	line "Team GR by mail whenever"
+	line "I find out their secrets!"
+	line "Make sure to check your mail"
+	line "often so you don't miss it!"
 	done
 
 MailRonaldsScoutGR1Body2Text:
-	textfw "GR1号のデッキの じょうほうだ!"
-	linefw "やつのデッキは 水と雷のデッキだ!"
-	linefw "コイルの「ちょくれつじりょく」に"
-	linefw "きを つけろ! じゃあな"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Here is the scoop on GR1!"
+	line "That Deck uses Water and"
+	line "Lightning Pokémon!"
+	line "Watch out for Magnemite's"
+	line "quick attacks! See ya!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutGR2SubjectText:
-	textfw "GR2号のデッキ"
+	text "GR2's Deck"
 	done
 
 MailRonaldsScoutGR2Body1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "ちゃんと オレのじょうほうを"
-	linefw "やくだててるだろうな えっ!"
-	linefw "ちゃんと メールをチェックすんだぜ!"
-	linefw "メールのあきにも きを くばってな"
-	linefw "いいな <RAMNAME>!"
+	text "Yo, <RAMNAME>!"
+	line "Are you using my tips to win"
+	line "your Duels out there?"
+	line "Keep checking your mail!"
+	line "And don't let your mailbox get"
+	line "full or you won't get my mail!"
 	done
 
 MailRonaldsScoutGR2Body2Text:
-	textfw "GR2号のデッキの じょうほうだ"
-	linefw "やつのデッキは 草と闘のデッキだ!"
-	linefw "とくに 「わるいアーボック」には"
-	linefw "きを つけろ! じゃあな"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Here is the info on GR2's Deck."
+	line "It uses a combination of"
+	line "Grass and Fighting Pokémon!"
+	line "Watch out for Dark Arbok's"
+	line "Poison attacks! Later!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutGR3SubjectText:
-	textfw "GR3号のデッキ"
+	text "GR3's Deck"
 	done
 
 MailRonaldsScoutGR3Body1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "ちゃんと メールをよんでるか?"
-	linefw "GR団のじょうほうを てに いれたぜ"
-	linefw "オレが いのちがけで さぐってきた"
-	linefw "じょうほうだからな!"
-	linefw "ムダにするなよ!"
+	text "Yo, <RAMNAME>!"
+	line "Are you reading these mails?"
+	line "I found some more information"
+	line "about Team GR's Decks."
+	line "I worked hard to get this info"
+	line "for you, so don't waste it!"
 	done
 
 MailRonaldsScoutGR3Body2Text:
-	textfw "GR3号のデッキの じょうほうだ"
-	linefw "やつのデッキは 草と炎のデッキだぜ!"
-	linefw "「タマタマ」を「ナッシー」にさせるな"
-	linefw "「たまなげMAX」が おそってくるぜ"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Here is the scoop on GR3's Deck."
+	line "It uses Grass and Fire Pokémon!"
+	line "Defeat Exeggcute before it can"
+	line "evolve into Exeggutor, or Big"
+	line "Eggsplosion will beat you! Bye!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutGR4SubjectText:
-	textfw "GR4号のデッキ"
+	text "GR4's Deck"
 	done
 
 MailRonaldsScoutGR4Body1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "メールを チェックしてるか?"
-	linefw "GR4号のデッキの じょうほうだ"
-	linefw "やつのデッキは 水と超のデッキだぜ!"
-	linefw "「キングラー」の「もろばバサミ」は"
-	linefw "チョーきょうりょくだぜ!"
+	text "Yo, <RAMNAME>!"
+	line "Are you checking your mail?"
+	line "Here is the info on GR4's Deck."
+	line "It uses Water and Psychic Pokémon!"
+	line "Kingler's Crabhammer attack"
+	line "does massive damage!"
 	done
 
 MailRonaldsScoutGR4Body2Text:
-	textfw "いいか なんとか エスパークラブの"
-	linefw "ミウラを しょうきに もどして"
-	linefw "アドバイスを もらうんだ いいな"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Listen, do whatever it takes to"
+	line "snap Mitch out of his trance at"
+	line "the Psychic Club so you can get"
+	line "his advice, got it? Catch ya!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutMorinoSubjectText:
-	textfw "モリノのデッキ"
+	text "Parker's Deck"
 	done
 
 MailRonaldsScoutMorinoBody1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "草のGR団リーダー モリノの"
-	linefw "じょうほうを てにいれたぜ!"
-	linefw "なんと モリノのとこの 対戦では"
-	linefw "草ポケモンが 「どく・マヒ・ねむり・"
-	linefw "こんらん」に ならないんだ!"
+	text "Hey <RAMNAME>!"
+	line "I got some info on Parker,"
+	line "the Grass GR Leader!"
+	line "In Duels against him, Grass"
+	line "Pokémon cannot be Poisoned,"
+	line "Paralyzed, Asleep, or Confused!"
 	done
 
 MailRonaldsScoutMorinoBody2Text:
-	textfw "モリノは それを りようした"
-	linefw "デッキを つかっているんだ!"
-	linefw "やつのデッキの 草のデッキ!"
-	linefw "「クサイハナ」「ラフレシア」と"
-	linefw "その2つの 「わるい」ポケモンが"
-	linefw "メインのデッキだ!"
+	text "Parker uses a Deck built"
+	line "entirely around this rule!"
+	line "His Deck has Grass Pokémon,"
+	line "featuring Dark Gloom and"
+	line "Dark Vileplume as his"
+	line "main attackers!"
 	done
 
 MailRonaldsScoutMorinoBody3Text:
-	textfw "それらポケモンのワザで [自分]も"
-	linefw "「こんらん」する ワザをつかって"
-	linefw "こうげきしてくるぞ! ふつうなら"
-	linefw "こうげきしたポケモンが 「こんらん」"
-	linefw "しちまうんだが モリノのとこでは"
-	linefw "草ポケモンは 「こんらん」しない!"
+	text "Their attacks usually make the"
+	line "user Confused as well! Normally,"
+	line "the attacking Pokémon would hurt"
+	line "itself, but in Parker's room,"
+	line "Grass Pokémon don't get Confused!"
 	done
 
 MailRonaldsScoutMorinoBody4Text:
-	textfw "こいつは シャレに ならないぜ!"
-	linefw "なんとかして 「クサイハナ」や"
-	linefw "「ラフレシア」に 進化するまえに"
-	linefw "もやしちまうんだな! じゃあな!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "This is no joke!"
+	line "Find a way to burn them down"
+	line "before they can evolve into"
+	line "Gloom or Vileplume! See ya!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutCatherineSubjectText:
-	textfw "キャサリンのデッキ"
+	text "Catherine's Deck"
 	done
 
 MailRonaldsScoutCatherineBody1Text:
-	textfw "<RAMNAME>! げんきか!"
-	linefw "こんかいは 雷のGR団リーダー"
-	linefw "キャサリンの じょうほうだぜ!"
-	linefw "キャサリンは エレキパワーバリバリだ"
-	linefw "やつとの 対戦じゃ 雷ポケモンの"
-	linefw "あたえるダメージが +10UPだ!"
+	text "<RAMNAME>! How's it going?"
+	line "This time, I've got info on the"
+	line "Lightning GR Leader, Catherine!"
+	line "She is bursting with electric power!"
+	line "In Duels with her, Lightning"
+	line "Pokémon deal +10 extra damage!"
 	done
 
 MailRonaldsScoutCatherineBody2Text:
-	textfw "10ダメージのワザが 雷ポケモンのみ"
-	linefw "20ダメージになるって わけだ!"
-	linefw "キャサリンのデッキは 「ピカチュウ」"
-	linefw "「ビリリダマ」「わるいサンダース」"
-	linefw "「わるいライチュウ」と 雷ポケモンで"
-	linefw "いっぱいだ!!"
+	text "That means a 10-damage attack"
+	line "becomes 20 damage, but only"
+	line "for Lightning Pokémon!"
+	line "Catherine's Deck is packed with"
+	line "Pikachu, Voltorb, Dark Jolteon,"
+	line "and Dark Raichu!!"
 	done
 
 MailRonaldsScoutCatherineBody3Text:
-	textfw "雷ポケモンのデッキで たたかって"
-	linefw "チカラで うち勝つか?"
-	linefw "べつのデッキで うまく かわして"
-	linefw "たたかうかは おまえしだいだ!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Will you bring your own Lightning"
+	line "Deck to match her raw power,"
+	line "or evade her attacks using"
+	line "a completely different strategy?"
+	line "It's all up to you!"
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutHideroSubjectText:
-	textfw "ヒデロウのデッキ"
+	text "Bernard's Deck"
 	done
 
 MailRonaldsScoutHideroBody1Text:
-	textfw "<RAMNAME>! オレだ! ランドだ!"
-	linefw "炎のGR団リーダー ヒデロウの"
-	linefw "じょうほうを ゲットだぜ!"
-	linefw "やつのところは 炎で いっぱい!"
-	linefw "水ポケモンのこうげきは 炎ポケモンの"
-	linefw "弱点には ならないぜ!"
+	text "Hey <RAMNAME>! It's me, Ronald!"
+	line "I grabbed some intel on the Fire GR"
+	line "Leader, Bernard! His arena is full"
+	line "of flames! Water Pokémon attacks"
+	line "will not apply Weakness against his"
+	line "Fire Pokémon!"
 	done
 
 MailRonaldsScoutHideroBody2Text:
-	textfw "つまり 炎ポケモンを 弱点をついて"
-	linefw "たおそうとしても ムダってことだ!"
-	linefw "しかも ヒデロウのデッキは"
-	linefw "炎1色の 炎ポケモンデッキだ!!"
-	linefw "弱点をつくなんて セコイては"
-	linefw "つうよう しないぜ!!"
+	text "In short, trying to take down his"
+	line "Fire Pokémon by targeting their"
+	line "Weakness is useless! On top of that,"
+	line "Bernard uses a pure Fire-type Deck!!"
+	line "Cheap tricks like relying on"
+	line "Weaknesses won't work here!!"
 	done
 
 MailRonaldsScoutHideroBody3Text:
-	textfw "せいせいどうどう しょうぶするしか"
-	linefw "ほうほうは ないぜ!"
-	linefw "どんなデッキで たたかうかは"
-	linefw "<RAMNAME>が かんがえな!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "You have no choice but to win"
+	line "in a fair and square fight!"
+	line "Think carefully about what kind"
+	line "of Deck you want to use!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutKanokoSubjectText:
-	textfw "カノコのデッキ"
+	text "Brooke's Deck"
 	done
 
 MailRonaldsScoutKanokoBody1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "水のGR団リーダー カノコの"
-	linefw "じょうほうを おしえてやるぜ!"
-	linefw "あのへやは 水ポケモンが すばやい!"
-	linefw "水ポケモンが 「にげる」ときの"
-	linefw "エネルギーのかずが 「-1」されるぜ"
+	text "Hey <RAMNAME>!"
+	line "Let me tell you about Brooke,"
+	line "the Water GR Leader!"
+	line "Water Pokémon are very nimble in her"
+	line "room! The Energy required for Water"
+	line "Pokémon to Retreat is reduced by 1!"
 	done
 
 MailRonaldsScoutKanokoBody2Text:
-	textfw "水ポケモンは カノコのとこじゃ"
-	linefw "「水をえた さかな」で 水ポケモンは"
-	linefw "にげやすい カノコは やばくなった"
-	linefw "ポケモンを にがしまくってくるぜ!"
-	linefw "やっかいだぜ! 「きぜつ」できそうな"
-	linefw "ポケモンは にげちまうんだからよ"
+	text "Water Pokémon are like fish in water"
+	line "over at Brooke's place. Since they"
+	line "can retreat so easily, Brooke will"
+	line "constantly pull back her damaged"
+	line "Pokémon. Annoying! Just as you're"
+	line "about to Knock one Out, it flees!"
 	done
 
 MailRonaldsScoutKanokoBody3Text:
-	textfw "にがさない ほうほうを かんがえるか"
-	linefw "にげられるまえに だいダメージで"
-	linefw "「きぜつ」させるか・・・"
-	linefw "まっ かんがえるんだな じゃあな!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "You'll need to find a way to"
+	line "prevent them from retreating,"
+	line "or deal massive damage to get"
+	line "a Knock Out before they run..."
+	line "Well, figure it out! See ya!"
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutKamiyaSubjectText:
-	textfw "カミヤのデッキ"
+	text "Brutus' Deck"
 	done
 
 MailRonaldsScoutKamiyaBody1Text:
-	textfw "いいちょうしだな <RAMNAME>!"
-	linefw "わすれんなよ!"
-	linefw "オレが こうやって メールで"
-	linefw "おしえてやってる おかげだってな!"
-	linefw "さて 闘のGR団リーダー カミヤの"
-	linefw "じょうほうだぜ!!"
+	text "Looking good, <RAMNAME>!"
+	line "Don't you forget it! The only reason"
+	line "you know all this is because of the"
+	line "emails I've been sending you!"
+	line "Anyway, here is the info on the"
+	line "Fighting GR Leader, Brutus!!"
 	done
 
 MailRonaldsScoutKamiyaBody2Text:
-	textfw "カミヤのところは 闘パワーだぜ!"
-	linefw "カミヤとの 対戦では 闘ポケモンの"
-	linefw "ダメージは 抵抗力で「-30」して"
-	linefw "ふせぐことが できないんだ!"
-	linefw "つまり 闘ポケモンダメージは"
-	linefw "まともに くらうってことだな!"
+	text "Brutus's arena is all about raw"
+	line "Fighting power! In his Duels,"
+	line "Fighting Pokémon damage cannot be"
+	line "reduced or blocked by the -30"
+	line "Resistance property! In other words,"
+	line "you take Fighting damage directly!"
 	done
 
 MailRonaldsScoutKamiyaBody3Text:
-	textfw "抵抗力は つかえなくても"
-	linefw "闘ポケモンの 弱点をついたデッキで"
-	linefw "こうげきするなら OKだぜ!"
-	linefw "たぶんな・・・まあ ガンバレよ!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Even if you can't use Resistance,"
+	line "building a Deck that hits the"
+	line "Weaknesses of his Fighting-types"
+	line "will still work perfectly!"
+	line "Probably... well, do your best!"
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutMamiSubjectText:
-	textfw "マミのデッキ"
+	text "Claire's Deck"
 	done
 
 MailRonaldsScoutMamiBody1Text:
-	textfw "<RAMNAME>! ランドだぜ!"
-	linefw "超のGR団リーダー マミの"
-	linefw "じょうほうを ゲットしたぜ!"
-	linefw "マミってのは バアさんなんだぜ!"
-	linefw "しかも へんなルールで対戦するんだ"
+	text "<RAMNAME>! Ronald here!"
+	line "I've uncovered intel on the"
+	line "Psychic GR Leader, Claire!"
+	line "Turns out Claire is an old lady!"
+	line "And she plays by some really"
+	line "bizarre rules."
 	done
 
 MailRonaldsScoutMamiBody2Text:
-	textfw "へんなルールってのが"
-	linefw "「ポケモンが トラッシュされるとき"
-	linefw " ポケモンについている エネルギーで"
-	linefw " 基本エネルギーは 手札にもどる」"
-	linefw "っていう ルールなんだぜ!"
-	linefw "エネルギーぶそくには ならねぇけどな"
+	text "The weird rule is that whenever a"
+	line "Pokémon is sent to the Discard Pile,"
+	line "any Basic Energy cards attached to"
+	line "it are returned to that player's"
+	line "Hand instead! You won't run out of"
+	line "Energy, but there's a catch..."
 	done
 
 MailRonaldsScoutMamiBody3Text:
-	textfw "でも あのバアさんは おまえに"
-	linefw "このルールを りようさせないつもりだ"
-	linefw "「エネルギー・リムーブ」や"
-	linefw "「超エネルギーリムーブ」を"
-	linefw "じぶんのデッキに えらくたくさん"
-	linefw "つっこんで やがったぜ!"
+	text "But that old lady has no intention"
+	line "of letting you abuse this rule."
+	line "She has packed an absolute ton"
+	line "of Energy Removal and Super"
+	line "Energy Removal cards straight"
+	line "into her own Deck!"
 	done
 
 MailRonaldsScoutMamiBody4Text:
-	textfw "ポケモンが トラッシュされるまえに"
-	linefw "エネルギーだけを トラッシュするって"
-	linefw "さくせんらしい・・・"
-	linefw "あとは 「わるいゲンガー」の"
-	linefw "「かみかくし」に きをつけろ!!"
-	linefw "あのバアさんは ただもんじゃねぇ"
+	text "It seems her strategy is to"
+	line "discard your Energy cards before"
+	line "your Pokémon gets Knocked Out..."
+	line "Also, watch out for the Push Aside"
+	line "Power of her Dark Gengar!!"
+	line "That old lady is no joke."
 	done
 
 MailRonaldsScoutMamiBody5Text:
-	textfw "こっちも エネルギー・リムーブを"
-	linefw "つっこんで たたかうか"
-	linefw "超デッキの たいこうデッキで たえて"
-	linefw "たたかうしかねぇかな・・・"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Should you counter her by adding"
+	line "Energy Removals into your Deck too,"
+	line "or withstand it with a resilient"
+	line "anti-Psychic Deck?..."
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutColorlessAltarSubjectText:
-	textfw "無のさいだんじょうほう"
+	text "Colorless Altar tips"
 	done
 
 MailRonaldsScoutColorlessAltarBody1Text:
-	textfw "よう <RAMNAME>!"
-	linefw "無のさいだんの じょうほうだ!"
-	linefw "無のばんにんの 「ニシジマ」"
-	linefw "「イシイ」「サメジマ」の3にんは"
-	linefw "対戦するときに とくていのカードを"
-	linefw "4枚 デッキにいれろと いってくる"
+	text "Hey <RAMNAME>!"
+	line "Here is some info on the Colorless"
+	line "Altar! The 3 Colorless Guardians -"
+	line "Nishijima, Ishii, and Samejima -"
+	line "will ask for 4 copies of a specific"
+	line "card in your Deck before the Duel."
 	done
 
 MailRonaldsScoutColorlessAltarBody2Text:
-	textfw "しかも 1ど 対戦すると"
-	linefw "いれろって カードをかえてくるんだ!"
-	linefw "こいつが やっかいなんだが・・・"
-	linefw "つかいやすいカードが でるまで"
-	linefw "まけてみるって ほうほうもあるぜ!"
-	linefw "でもな・・・"
+	text "To make things worse, they change"
+	line "the required card after every Duel!"
+	line "It's a real pain, but... You could"
+	line "always intentionally lose until they"
+	line "ask for a card that is easy for you"
+	line "to use! However..."
 	done
 
 MailRonaldsScoutColorlessAltarBody3Text:
-	textfw "1ど 対戦するには"
-	linefw "していされたカードが 4枚いるからな"
-	linefw "そのカードが どの拡張パックに"
-	linefw "はいっているかを アルバムでしらべて"
-	linefw "その拡張パックを くれるやつと"
-	linefw "対戦しなくちゃ ならないけどな・・・"
+	text "To challenge them even once,"
+	line "you must own 4 copies of that card."
+	line "Check your Card Album to see which"
+	line "Booster Pack contains it, then"
+	line "Duel whoever hands out those packs"
+	line "to stock up on copies..."
 	done
 
 MailRonaldsScoutColorlessAltarBody4Text:
-	textfw "まあ たまには オレたちのしまへ"
-	linefw "もどって みんなと対戦するのも"
-	linefw "いいかもな ここまできて"
-	linefw "あわてても しょうがないだろ・・・"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Well, maybe it's a good excuse to"
+	line "head back to our island and Duel"
+	line "everyone again. No use rushing into"
+	line "things blindly at this point..."
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailRonaldsScoutBiruritchiSubjectText:
-	textfw "ビルリッチのデッキ"
+	text "Villicci's Deck"
 	done
 
 MailRonaldsScoutBiruritchiBody1Text:
-	textfw "<RAMNAME>・・・"
-	linefw "ついに GR団との たたかいも"
-	linefw "おおづめって かんじだな・・・"
-	linefw "オレも まけちまって・・・"
-	linefw "もう おまえしか いないんだからな!"
-	linefw "たのむぞ <RAMNAME>!"
+	text "<RAMNAME>..."
+	line "It feels like our battle against"
+	line "Team GR is finally reaching the"
+	line "finish line... I ended up losing"
+	line "to them... You're the only one left!"
+	line "I'm counting on you, <RAMNAME>!"
 	done
 
 MailRonaldsScoutBiruritchiBody2Text:
-	textfw "GR団に! キングのビルリッチに!"
-	linefw "オレたちの カードへのおもいを"
-	linefw "ちからのかぎり ぶつけてくれ!!"
-	linefw "たのむぞ <RAMNAME>・・・・"
-	linefw "オレのさいごの じょうほうを"
-	linefw "おまえに おしえるよ"
+	text "Pour all of our shared passion"
+	line "for cards into striking down"
+	line "Team GR and King Villicci"
+	line "with everything you've got!!"
+	line "Please, <RAMNAME>..."
+	line "Here is the final piece of info"
+	line "I can give you."
 	done
 
 MailRonaldsScoutBiruritchiBody3Text:
-	textfw "オレは GR団のかんぶに"
-	linefw "コテンパンに やられちまって・・・"
-	linefw "GR団キング ビルリッチのことは"
-	linefw "くわしく しらべられなかったが"
-	linefw "ビルリッチは 4つのデッキを もって"
-	linefw "いるらしいんだ!"
+	text "I got completely pulverized by"
+	line "the GR Fort Leaders..."
+	line "So I couldn't dig up thorough"
+	line "details on GR King Villicci,"
+	line "but rumor has it that he commands"
+	line "four distinct Decks!"
 	done
 
 MailRonaldsScoutBiruritchiBody4Text:
-	textfw "しかも ビルリッチとの対戦は"
-	linefw "「さきに 2かい勝ったほうが勝ち」"
-	linefw "という ながい たたかいだ"
-	linefw "ビルリッチのやつは 対戦のたびに"
-	linefw "デッキを かえてくるだろう!"
-	linefw "4つのデッキを つかいこなしてくる"
+	text "Furthermore, a Match with Villicci"
+	line "is a long, grueling battle where"
+	line "the first to win 2 Duels wins."
+	line "He will likely swap his Deck"
+	line "between every single game!"
+	line "He has mastered all four Decks."
 	done
 
 MailRonaldsScoutBiruritchiBody5Text:
-	textfw "だから"
-	linefw "おまえも 対戦デッキを"
-	linefw "たくさん よういしていけ!"
-	linefw "ガンバレよ! <RAMNAME>!!"
-	linefw ""
-	linefw "          ランド(●_●)"
+	text "Because of that,"
+	line "you should prepare plenty of"
+	line "competitive Decks yourself!"
+	line "Go get 'em <RAMNAME>!!"
+	line ""
+	line "            Ronald  :P"
 	done
 
 MailLinkDuelSubjectText:
-	textfw "つうしん対戦をしよう!"
+	text "Let's Link Duel!"
 	done
 
 MailLinkDuelBody1Text:
-	textfw "バトルセンターからの おしらせです"
-	linefw "つうしんケーブルを つかって"
-	linefw "どんどん 対戦しましょう"
-	linefw "対戦して勝てば 拡張パックを"
-	linefw "3つプレゼント まけても"
-	linefw "拡張パックを 1つ プレゼント!"
+	text "Notice from the Battle Center:"
+	line "Connect a Game Link Cable"
+	line "and challenge your friends!"
+	line "Win a Link Duel to receive"
+	line "3 Booster Packs! Even if you lose,"
+	line "you still get 1 Booster Pack!"
 	done
 
 MailLinkDuelBody2Text:
-	textfw "つうしん対戦で 50勝したら"
-	linefw "バトルセンター とくせいのコインを"
-	linefw "プレゼントします"
-	linefw "ごりようを おまちしております"
-	linefw ""
-	linefw "    バトルセンター m(__)m"
+	text "If you achieve 50 Link Duel wins,"
+	line "the Battle Center will give you"
+	line "a special Coin as an award!"
+	line "We look forward to your visit."
+	line ""
+	line "     Battle Center  =)"
 	done
 
 MailboxTitleText:
-	textfw " メールボックス "
+	text " <RAMNAME>'s Mail "
 	done
 
 MailboxFullWarningText:
-	textfw "メールボックスが いっぱいで"
-	linefw "あたらしいメールを よみこめません"
-	linefw "あたらしいメールを よむばあいは"
-	linefw "ひつようないメールを けしてください"
+	text "Your Mailbox is full and"
+	line "cannot receive new mail."
+	line "To read new messages, please"
+	line "delete any unneeded mail."
 	done
 
-SECTION "Text 7", ROMX
-
 MailboxNoNewMailText:
-	textfw "あたらしいメールは"
-	linefw "とどいていません"
+	text "There is no new mail."
 	done
 
 MailboxNewMailText:
-	textfw "あたらしいメールが とどいています!"
+	text "You have received new mail!"
 	done
 
 MailboxChooseMailText:
-	textfw "メールをえらんでください"
+	text "Which mail would you like to choose?"
 	done
 
 MailboxSenderText:
-	textfw "だれから:"
+	text " Sender"
+	half2full
+	textfw ":"
 	done
 
 MailboxSubjectText:
-	textfw "タイトル:"
+	text " Subject"
+	half2full
+	textfw ":"
 	done
 
 MailboxActionPromptText:
-	textfw "どうしますか?"
+	text "What would you like to do?"
 	done
 
 MailboxActionReadText:
-	textfw "よむ"
+	text "Read"
 	done
 
 MailboxActionDeleteText:
-	textfw "けす"
+	text "Delete"
 	done
 
 MailboxActionDeleteConfirmText:
-	textfw "ほんとうに けしてよろしいですか?"
+	text "Are you sure you want to delete it?"
 	done
 
 MailboxActionDeleteUnreadConfirmText:
-	textfw "よまれていませんが よろしいですか?"
+	text "This mail is unread. Delete anyway?"
 	done
 
 MailboxDeletedText:
-	textfw "メールを けしました"
+	text "The mail was deleted."
 	done
 
 MailboxUnreadSymbolText:
@@ -2026,11 +1949,11 @@ MailboxUnreadSymbolText:
 	done
 
 DebugSendMailText:
-	textfw "メール送信"
+	text "Send Mail"
 	done
 
 MailboxEmptyText:
-	textfw "メールはありません"
+	text "There is no mail."
 	done
 
 SingleColonText: ; for time display
@@ -2038,286 +1961,272 @@ SingleColonText: ; for time display
 	done
 
 SamRulesEnergyText:
-	textfw "エネルギーについて"
+	text "Energy"
 	done
 
 SamRulesAttackText:
-	textfw "ワザを つかう"
+	text "Attacking"
 	done
 
 SamRulesSwitchText:
-	textfw "ポケモンを いれかえる"
+	text "Retreating"
 	done
 
 SamRulesEvolutionText:
-	textfw "ポケモンを 進化させる"
+	text "Evolving Pokémon"
 	done
 
 SamRulesPokemonPowerText:
-	textfw "特殊能力を つかう"
+	text "Using Pokémon Power"
 	done
 
 SamRulesEndOfTurnText:
-	textfw "じぶんの番を おわる"
+	text "Ending Your Turn"
 	done
 
 SamRulesDecisionText:
-	textfw "対戦の勝ち まけ"
+	text "Win or Loss of a Duel"
 	done
 
 SamRulesQuitText:
-	textfw "きくことは ない"
+	text "Nothing to Ask"
 	done
 
 MasonLabPracticeDuelText:
-	textfw "れんしゅう対戦"
+	text "Practice"
 	done
 
 MasonLabRegularDuelText:
-	textfw "ふつうに対戦"
+	text "Normal Duel"
 	done
 
 SamRulesText:
-	textfw "ルールせつめい"
+	text "Rules"
 	done
 
 SamQuitText:
-	textfw "なんでもない"
+	text "Nothing"
 	done
 
 AaronStep1Text:
-	textfw "ステップ1"
+	text "Step 1"
 	done
 
 AaronStep2Text:
-	textfw "ステップ2"
+	text "Step 2"
 	done
 
 AaronStep3Text:
-	textfw "ステップ3"
+	text "Step 3"
 	done
 
 AaronStep4Text:
-	textfw "ステップ4"
+	text "Step 4"
 	done
 
-; homonym bug, 商品 (merchandise) should be 賞品 (prize)
 GrandMasterCupPrizesTitleText:
-	textfw "グランドマスター杯 商品"
+	text "Grand Master Cup Prizes"
 	done
 
-; homonym bug, 商品 (merchandise) should be 賞品 (prize)
 GrandMasterCupPrizesDialogText:
-	textfw "グランドマスター杯の商品です"
-	linefw "すきなカードを 2枚えらんでください"
+	text "These are the Grand Master Cup"
+	line "prizes. Choose any 2 cards you like."
 	done
 
 GrandMasterCupPrizesConfirmPromptText:
-	textfw "この2枚で よろしいですか?"
-	done
-
-DebugTitleScreenTentativeText:
-	textfw "タイトル画面(仮)"
-	done
-
-DebugPlayerGenderSelectionScreenText:
-	textfw "性別選択画面"
-	done
-
-DebugStartMenuText:
-	textfw "スタートメニュー"
+	text "Are these 2 cards OK?"
 	done
 
 GameCenterBlackBoxTitleText:
-	textfw " ブラックボックス "
+	text " Black Box "
 	done
 
 GameCenterBlackBoxDescriptionText:
-	textfw "1から5枚の カードをいれると"
-	linefw "あたらしいカードが もらえます"
-	linefw "くみあわせかたで もらえるカードが"
-	linefw "へんかするので いろいろなカードで"
-	linefw "ためしてみましょう!"
+	text "Insert 1 to 5 cards to"
+	line "receive a brand new card!"
+	line "The card you get depends"
+	line "on the combination you use,"
+	line "so try out different cards!"
 	done
 
 GameCenterBlackBoxStartPromptText:
-	textfw "ブラックボックスで あそびますか?"
+	text "Would you like to use the Black Box?"
 	done
 
 GameCenterBlackBoxSaveRequestText:
-	textfw "それでは あそぶまえに"
-	linefw "「にっき」を つけてください"
+	text "Please write in your Diary"
+	line "before the transaction."
 	done
 
 GameCenterBlackBoxUnableNotEnoughChipsText:
-	textfw "ブラックボックスは 1かい5枚です"
-	linefw "チップが たりません!"
+	text "The Black Box requires 5 cards."
+	line "You don't have enough cards!"
 	done
 
 GameCenterBlackBoxUnableLastOutputRemainingText:
-	textfw "ブラックボックスからの メールが"
-	linefw "メールボックスに のこっています"
+	text "A message from the Black Box is"
+	line "still waiting in your Mailbox."
 	done
 
 GameCenterBlackBoxUnableLastOutputRemainingTextCont:
-	textfw "メールをよんでカードをうけとってから"
-	linefw "きてください"
+	text "Please read the mail and claim"
+	line "your card before trying again."
 	done
 
 GameCenterBlackBoxUnableSaveRequiredText:
-	textfw "「にっき」を つけなければ"
-	linefw "あそぶことが できません"
+	text "We can't complete the transaction"
+	line "unless you write in your Diary."
 	done
 
 GameCenterBlackBoxProcedureText:
-	textfw "   おくるカードの えらびかた"
-	linefw " "
-	linefw "1ˍデッキをつくるように おくりたい"
-	linefw "  カードをえらび 左右でふやします"
-	linefw " "
-	linefw "2ˍおくるカードを すべてきめたら"
-	linefw "  Bボタンで メニューをひらきます"
-	linefw " "
-	linefw "3ˍ「おくる」で カードをおくる"
-	linefw "  じゅんびが かんりょうです"
+	text "Procedure for Black Box trades:"
+	line ""
+	line "1. Choose the card you wish to send."
+	line "   Press left/right to choose more."
+	line ""
+	line "2. Choose all the cards. Then press"
+	line "   the B Button to open the menu."
+	line ""
+	line "3. Choose Send to finish"
+	line "   the process."
 	done
 
 GameCenterBlackBoxProcedureDialogText:
-	textfw "ブラックボックスへ おくるカードの"
-	linefw "えらびかたです"
+	text "This explains how to select cards"
+	line "to send into the Black Box."
 	done
 
 GameCenterBlackBoxDoneText:
-	textfw "ブラックボックスへ"
-	linefw "カードを おくりました!"
+	text "The cards have been sent"
+	line "into the Black Box!"
 	done
 
 GameCenterToBeMailedText:
-	textfw "けっかはメールボックスに とどきます"
-	linefw "おたのしみに!"
+	text "The results will be sent to your"
+	line "Mailbox. Look forward to it!"
 	done
 
 MainMenuNewGameInsteadOfContinueWarning1Text:
-	textfw "すでに セーブデータがあります"
+	text "Saved data already exists."
 	done
 
 MainMenuNewGameInsteadOfContinueWarning2Text:
-	textfw "このまま はじめると"
-	linefw "すべてのカードを うしないます"
+	text "If you continue, you will lose"
+	line "all the cards you have collected."
 	done
 
 MainMenuNewGameInsteadOfContinueConfirmPromptText:
-	textfw "それでも よろしいですか?"
+	text "OK to delete the data?"
 	done
 
 MainMenuNewGameInsteadOfContinueDeletedText:
-	textfw "すべてのデータをさくじょしました"
+	text "All data was deleted."
 	done
 
 ProloguePlayerRecapLine1Text:
-	textfw "<RAMNAME>は ポケモンカードを"
-	linefw "あつめるのが だいすきです"
+	text "<RAMNAME> is crazy about Pokémon"
+	line "and Pokémon card collecting!"
 	done
 
 ProloguePlayerRecapLine2Text:
-	textfw "<RAMNAME>は このしまにつたわる"
-	linefw "伝説のポケモンカードを ゲットのため"
+	text "To inherit the island's secret"
+	line "Legendary Pokémon Cards,"
 	done
 
 ProloguePlayerRecapLine3Text:
-	textfw "8にんの クラブマスターと"
-	linefw "伝説のポケモンカードを まもる"
+	text "<RAMNAME> battled the 8 Club"
+	line "Masters and challenged the"
 	done
 
 ProloguePlayerRecapLine4Text:
-	textfw "4にんの グランドマスターに"
-	linefw "ちょうせんしたのでした・・・"
+	text "4 Grand Masters who guarded"
+	line "the ultimate cards..."
 	done
 
 ProloguePlayerRecapLine5Text:
-	textfw "そして ついには!"
-	linefw "グランドマスターを たおして"
+	text "And finally, victory!"
+	line "Defeating the Grand Masters,"
 	done
 
 ProloguePlayerRecapLine6Text:
-	textfw "4枚の 伝説のポケモンカードを"
-	linefw "そのてに ゲットしたのです"
+	text "<RAMNAME> inherited the 4"
+	line "Legendary Pokémon Cards!"
 	done
 
 ProloguePlayerRecapLine7Text:
-	textfw "そんな ある日・・・"
-	linefw "じけんは おこりました!"
+	text "But then, one fateful day..."
+	line "Disaster struck the island!"
 	done
 
 PrologueGRInvasionLine1Text:
-	textfw "とつぜん"
-	linefw "なぞのぐん団が おそってきたのです!"
+	text "Suddenly, a mysterious group"
+	line "launched a fierce attack!"
 	done
 
 PrologueGRInvasionLine2Text:
-	textfw "その名を 「GR団」!"
-	linefw "「グレートロケット団」と いいました"
+	text "They called themselves Team GR -"
+	line "Team Great Rocket!"
 	done
 
 PrologueGRInvasionLine3Text:
-	textfw "「GR団」は クラブを こうげき!"
-	linefw "カードを うばっていったのです!"
+	text "Team GR invaded the Clubs,"
+	line "stealing everyone's cards!"
 	done
 
 ProloguePlayerToLabLine1Text:
-	textfw "もっていたカードを GR団に"
-	linefw "うばわれた <RAMNAME>は"
+	text "With the card collection"
+	line "stolen by Team GR, <RAMNAME>"
 	done
 
 ProloguePlayerToLabLine2Text:
-	textfw "このことを しらせるため"
-	linefw "ポケモンカードの 研究者である"
+	text "rushed off to report the crisis"
+	line "to the Pokémon card expert,"
 	done
 
 ProloguePlayerToLabLine3Text:
-	textfw "D<RDOT>オーヤマのいる 研究所へ"
-	linefw "むかったのでした・・・"
+	text "Dr. Mason, over at the"
+	line "Mason Laboratory..."
 	done
 
 IntroductionText:
-	textfw "イントロダクション"
+	text "Introduction"
 	done
 
 ConfigFrameColorText:
-	textfw " ウィンドウカラー "
+	text " Window Color"
 	done
 
 ConfigFrameColorRedText:
-	textfw "あか"
+	text "Red"
 	done
 
 ConfigFrameColorBlueText:
-	textfw "あお"
+	text "Blue"
 	done
 
 ConfigFrameColorGreenText:
-	textfw "みどり"
+	text "Green"
 	done
 
 ConfigFrameColorBlackText:
-	textfw "くろ"
+	text "Black"
 	done
 
 GameCenterBlackBoxSendingHeaderText:
-	textfw "おくるカード"
+	text "Selected Cards"
 	done
 
 GameCenterBlackBoxConfirmPromptText:
-	textfw "これらのカードをおくりますか?"
+	text "Send these cards away?"
 	done
 
 GameCenterBlackBoxCancelPromptText:
-	textfw "ブラックボックスを やめますか?"
+	text "Exit the Black Box?"
 	done
 
 GameCenterBlackBoxChipsPaidText:
-	textfw "それでは てすうりょうとして"
-	linefw "チップ5枚を いただきます"
+	text "We'll take 5 Chips as a"
+	line "service fee. Thank you!"
 	done
 
 NumberSlashNumberText:
@@ -2329,183 +2238,158 @@ TxRam2TextPadded:
 	done
 
 GameCenterCardDungeonBet10Text:
-	textfw " 10枚"
+	text " 10 Chips"
 	done
 
 GameCenterCardDungeonBet20Text:
-	textfw " 20枚"
+	text " 20 Chips"
 	done
 
 GameCenterCardDungeonBet30Text:
-	textfw " 30枚"
+	text " 30 Chips"
 	done
 
 GameCenterCardDungeonBet50Text:
-	textfw " 50枚"
+	text " 50 Chips"
 	done
 
 GameCenterCardDungeonBet100Text:
-	textfw "100枚"
+	text "100 Chips"
 	done
 
 GameCenterCardDungeonBetCancelText:
-	textfw " やめる"
+	text " Cancel"
 	done
 
 GameCenter10ChipsPerPlayText:
-	textfw "チップ10枚"
+	text " 10 Chips"
 	done
 
 GameCenter20ChipsPerPlayText:
-	textfw "チップ20枚"
+	text " 20 Chips"
 	done
 
 GameCenterCardDungeonTitleText:
-	textfw " カードダンジョン "
+	text " Card Dungeon"
 	done
 
 GameCenterCardDungeonDescriptionText:
-	textfw "チップを かけて 対戦しよう!"
-	linefw "かけるチップの まいすうをえらんで"
-	linefw "勝つと かけたチップが ばいになる!"
-	linefw "まけたら チップをとられて"
-	linefw "ゲームオーバーだ!"
+	text "Wager your chips and Duel!"
+	line "Choose an amount of chips to bet;"
+	line "if you win, your wager doubles!"
+	line "But if you lose, your chips are"
+	line "forfeited and it's Game Over!"
 	done
 
 GameCenterCardDungeonUnableNotEnoughChipsText:
-	textfw "チップが10枚いじょう ひつようです"
-	linefw "チップをあつめてください"
+	text "You need at least 10 chips to play."
+	line "Please gather more chips first."
 	done
 
 GameCenterCardDungeonDialogText:
-	textfw "どんどん たたかって"
-	linefw "チップを たくさん あつめよう!"
+	text "Keep on fighting to win big"
+	line "and stack up your chips!"
 	done
 
 MainMenuContinueFromDiaryInsteadOfDuelWarning1Text:
-	textfw "対戦中に 電源が きれたときの"
-	linefw "データが あります"
+	text "Data exists from when the power "
+	line "was turned OFF during a duel."
 	done
 
 MainMenuContinueFromDiaryInsteadOfDuelWarning2Text:
-	textfw "「対戦から あそぶ」を えらぶと"
-	linefw "電源がきれた 対戦から はじまります"
+	text "Choose Continue Duel on the"
+	line "Main Menu to continue the duel."
 	done
 
 MainMenuContinueFromDiaryInsteadOfDuelWarning3Text:
-	textfw "このまま はじめると メニューの"
-	linefw "「対戦から あそぶ」が なくなり"
+	text "If you continue now, the heading,"
+	line "Continue Duel, will be deleted, and"
 	done
 
 MainMenuContinueFromDiaryInsteadOfDuelWarning4Text:
-	textfw "ゲームは さいごに「にっき」を"
-	linefw "つけた ところから はじまります"
+	text "the game will start from the point"
+	line "when you last wrote in the Diary."
+	done
+
+MainMenuContinueFromDiaryInsteadOfDuelWarning5Text:
+	text "Would you like to continue the"
+	line "Game from the point saved in"
 	done
 
 MainMenuContinueFromDiaryInsteadOfDuelConfirmText:
-	textfw "「つづきを あそぶ」で はじめます?"
+	text "Continue from Diary?"
 	done
 
 TCGChallengeMachineText:
-	textfw "チャレンジマシン"
+	text "  Challenge Machine  "
 	done
 
 GRChallengeMachineText:
-	textfw "GR団チャレンジマシン"
+	text " GR Challenge Machine "
 	done
 
 ChallengeMachineScoreTitleText:
-	textfw "<RAMNAME>のスコア"
+	text "<RAMNAME>'s Score"
 	done
 
 ChallengeMachineSetsWonRecordText:
-	textfw "5人ぬきクリア数"
+	text "Defeated 5 opponents"
 	done
 
 ChallengeMachineCurrentWinStreakText:
-	textfw "いまの れんしょう数"
+	text "Present Consecutive Wins"
 	done
 
 ChallengeMachineWinStreakRecordText:
-	textfw "れんしょう きろく"
+	text "Maximum Consecutive Wins"
+	line "  ["
+	half2full
+	textfw "      "
+	text " ]"
 	done
 
 AttemptsUnitText:
-	textfw "回"
+	text "time(s)."
 	done
 
 WinsUnitText:
-	textfw "勝"
+	text "wins"
 	done
 
 ChallengeMachineStartPromptText:
-	textfw "チャレンジマシンで あそびますか?"
-	done
-
-OpponentGrassScienceClubMemberSimpleText:
-	; The machine actually uses 0x0a6b--
-	textfw "クラブメンバー<GRASS>"
-	done
-
-OpponentWaterClubMemberSimpleText:
-	textfw "クラブメンバー<WATER>"
-	done
-
-OpponentFireClubMemberSimpleText:
-	textfw "クラブメンバー<FIRE>"
-	done
-
-OpponentPsychicClubMemberSimpleText:
-	textfw "クラブメンバー<PSYCHIC>"
-	done
-
-OpponentLightningClubMemberSimpleText:
-	textfw "クラブメンバー<LIGHTNING>"
-	done
-
-OpponentRockFightingClubMemberSimpleText:
-	textfw "クラブメンバー<FIGHTING>"
+	text "Play the Challenge Machine?"
 	done
 
 ChallengeMachineOpponentListDialogText:
-	textfw "こんかいの ゲームの対戦メンバーです"
-	done
-
-ChallengeMachineOpponent1DialogText:
-	textfw "<RAMNAME>は <RAMNUM>れんしょう中!"
-	linefw "1人目は 「<RAMTEXT>」です"
+	text "Your opponents for this game:"
 	done
 
 ChallengeMachineDuelPromptText:
-	textfw "対戦を はじめますか?"
-	done
-
-ChallengeMachineOpponentGrandMasterText:
-	textfw "グランドマスター"
+	text "Would you like to begin the Duel?"
 	done
 
 GameCenterXChipsPerPlayText:
-	textfw "チップ<RAMNUM>枚"
+	text " <RAMNUM> Chips "
 	done
 
 ChallengeMachineOpponentXDialogText:
-	textfw "<RAMNAME>は <RAMNUM>れんしょう中!"
-	linefw "<RAMNUM>人目は 「<RAMTEXT>」です"
+	text "<RAMNUM> consecutive wins, <RAMNAME>!"
+	line "Opponent <RAMNUM> is <RAMTEXT>."
 	done
 
 ChallengeMachineWinDialogText:
-	textfw "<RAMNUM>人目"
-	linefw "「<RAMTEXT>」に 勝ちました!"
+	text "You won against opponent <RAMNUM>,"
+	line "<RAMTEXT>!"
 	done
 
 ChallengeMachineLossDialogText:
-	textfw "<RAMNUM>人目"
-	linefw "「<RAMTEXT>」に まけました!"
+	text "You lost to opponent <RAMNUM>,"
+	line "<RAMTEXT>!"
 	done
 
 ChallengeMachineLossDialogWinStreakText:
-	textfw "<RAMNAME>の れんしょうきろくは"
-	linefw "<RAMNUM>で とまりました"
+	text "<RAMNAME>'s consecutive wins"
+	line "ended at <RAMNUM>."
 	done
 
 TxRam3Text:
@@ -2513,430 +2397,415 @@ TxRam3Text:
 	done
 
 DebugCreditsText:
-	textfw "スタッフロール"
+	text "Credits Roll"
 	done
 
 CreditsStaffText:
-	textfw "S T A F F"
+	text "Staff"
 	done
 
 CreditsProducersText:
-	textfw "プロデューサー"
+	text "Producers"
 	done
 
 CreditsProducersListText:
-	textfw "いしはら つねかず"
-	linefw "なかもと しんいち"
-	linefw "はらだ たかひろ"
+	text "Tsunekazu Ishihara"
+	line "Shinichi Nakamoto"
+	line "Takahiro Harada"
 	done
 
 CreditsDirectorText:
-	textfw "ディレクター"
+	text "Director"
 	done
 
 CreditsDirectorListText:
-	textfw "あらい こうじ"
+	text "Koji Arai"
 	done
 
 CreditsStoryText:
-	textfw "おはなし"
+	text "Story"
 	done
 
 CreditsStoryListText:
-	textfw "ふじた てるゆき"
+	text "Teruyuki Fujita"
 	done
 
 CreditsPlannerText:
-	textfw "プランナー"
+	text "Planner"
 	done
 
 CreditsPlannerListText:
-	textfw "きたむら よしまさ"
+	text "Yoshimasa Kitamura"
 	done
 
 CreditsProgrammersText:
-	textfw "プログラム"
+	text "Programmers"
 	done
 
 CreditsProgrammersList1Text:
-	textfw "とびた まさひろ"
+	text "Masahiro Tobita"
 	done
 
 CreditsProgrammersList2Text:
-	textfw "つもり まさき"
-	linefw "こんどう けい"
-	linefw "よしだ まこと"
+	text "Masaki Tsumori"
+	line "Kei Kondo"
+	line "Makoto Yoshida"
 	done
 
 CreditsProgrammersList3Text:
-	textfw "みかみ さとし"
+	text "Satoshi Mikami"
 	done
 
 CreditsGBGraphicDesignersText:
-	textfw "GBグラフィックデザイン"
+	text "GB Graphic Designers"
 	done
 
 CreditsGBGraphicDesignersList1Text:
-	textfw "いちざわ やすひろ"
+	text "Yasuhiro Ichizawa"
 	done
 
 CreditsGBGraphicDesignersList2Text:
-	textfw "やまもと つぐゆき"
-	linefw "まつだ まり"
+	text "Tsuguyuki Yamamoto"
+	line "Mari Matsuda"
 	done
 
 CreditsGBGraphicDesignersList3Text:
-	textfw "やまぐち もと"
-	linefw "こうさか かずし"
-	linefw "さとう しげる"
-	linefw "にしき ちあき"
+	text "Moto Yamaguchi"
+	line "Kazushi Kousaka"
+	line "Shigeru Sato"
+	line "Chiaki Nishiki"
 	done
 
 CreditsGBGraphicDesignersList4Text:
-	textfw "そうま ひでき"
+	text "Hideki Souma"
 	done
 
 CreditsSoundDirectorText:
-	textfw "サウンドディレクション"
+	text "Sound Director"
 	done
 
 CreditsSoundDirectorListText:
-	textfw "たきもと としあき"
+	text "Toshiaki Takimoto"
 	done
 
 CreditsMusicText:
-	textfw "ミュージック"
+	text "Music"
 	done
 
 CreditsMusicListText:
-	textfw "しまくら いちろう"
+	text "Ichiro Shimakura"
 	done
 
 CreditsMusicProgrammerText:
-	textfw "ミュージックプログラム"
+	text "Music Programmer"
 	done
 
 CreditsMusicProgrammerListText:
-	textfw "ほし けいた"
+	text "Keita Hoshi"
 	done
 
 CreditsSoundEffectsText:
-	textfw "サウンドエフェクト"
+	text "Sound Effects"
 	done
 
 CreditsSoundEffectsListText:
-	textfw "しまくら いちろう"
-	linefw "あいはら まさと"
+	text "Ichiro Shimakura"
+	line "Masato Aihara"
 	done
 
 CreditsSoundSupportText:
-	textfw "サウンドサポート"
+	text "Sound System Support"
 	done
 
 CreditsSoundSupportListText:
-	textfw "たかはし かつのり"
-	linefw "おか ひでき"
+	text "Katsunori Takahashi"
+	line "Hideki Oka"
 	done
 
 CreditsCardGameProductionText:
-	textfw "カードゲームせいさく"
+	text "Card Game Creator"
 	done
 
 CreditsCardGameProductionList1Text:
-	textfw "あかばね たくみ"
+	text "Takumi Akabane"
 	done
 
 CreditsCardGameProductionList2Text:
-	textfw "おおやま こういち"
+	text "Kouichi Oyama"
 	done
 
 CreditsCardGameProductionList3Text:
-	textfw "みうら あきひこ"
+	text "Akihiko Miura"
 	done
 
 CreditsCardIllustratorsText:
-	textfw "カード・イラストレーター"
+	text "Card Illustrators"
 	done
 
 CreditsCardIllustratorsList1Text:
-	textfw "すぎもり けん"
-	linefw "よしだ ひろのぶ"
-	linefw "にしだ あつこ"
-	linefw "ありた みつひろ"
+	text "Ken Sugimori"
+	line "Hironobu Yoshida"
+	line "Atsuko Nishida"
+	line "Mitsuhiro Arita"
 	done
 
 CreditsCardIllustratorsList2Text:
-	textfw "きねぶち けいじ"
-	linefw "ひめの かげまる"
-	linefw "たなか みき"
-	linefw "きづき すみよし"
+	text "Keiji Kinebuchi"
+	line "Kagemaru Himeno"
+	line "Miki Tanaka"
+	line "Sumiyoshi Kizuki"
 	done
 
 CreditsCardIllustratorsList3Text:
-	textfw "よしだ しんいち"
-	linefw "きむら なおよ"
-	linefw "くすべ あや"
-	linefw "こみや ともかず"
+	text "Shin-ichi Yoshida"
+	line "Naoyo Kimura"
+	line "Aya Kusube"
+	line "Tomokazu Komiya"
 	done
 
 CreditsCardIllustratorsList4Text:
-	textfw "こいけ ひかる"
-	linefw "はぶ のぶゆき"
-	linefw "ばば ゆきこ"
-	linefw "やました まさこ"
+	text "Hikaru Koike"
+	line "Nobuyuki Habu"
+	line "Yukiko Baba"
+	line "Masako Yamashita"
 	done
 
 CreditsCardIllustratorsList5Text:
-	textfw "くりはら あい"
-	linefw "まつだ かすみ"
-	linefw "たかはし けいた"
-	linefw "かわむら ゆうき"
+	text "Ai Kurihara"
+	line "Kasumi Matsuda"
+	line "Keita Takahashi"
+	line "Yuuki Kawamura"
 	done
 
 CreditsCardIllustratorsList6Text:
-	textfw "にしはら かずひこ"
-	linefw "あおき としなお"
-	linefw "いとう べにまる"
-	linefw "すぎやま ひろみち"
+	text "Kazuhiko Nishihara"
+	line "Toshinao Aoki"
+	line "Benimaru Ito"
+	line "Hiromichi Sugiyama"
 	done
 
 CreditsGuestAppearancesText:
-	textfw "しゅつえん きょうりょく"
+	text "Special Appearances by"
 	done
 
 CreditsGuestAppearancesListText:
-	textfw "イマクニ?"
-	linefw "かわむら くにみ"
-	linefw "やまぐち りゅうたろう"
-	linefw "くるしま ゆうすけ"
+	text "Imakuni?"
+	line "Kunimi Kawamura"
+	line "Ryuutarou Yamaguchi"
+	line "Yusuke Kurushima"
 	done
 
 CreditsMasteringText:
-	textfw "マスタリング"
+	text "Mastering"
 	done
 
 CreditsMasteringListText:
-	textfw "こまつ てつや"
+	text "Tetsuya Komatsu"
 	done
 
 CreditsManualProductionText:
-	textfw "マニュアルせいさく"
+	text "Manual Creation"
 	done
 
 CreditsManualProductionListText:
-	textfw "みたに はるき"
-	linefw "せざき ひでのり"
+	text "Haruki Mitani"
+	line "Hidenori Sezaki"
 	done
 
 CreditsManualIllustrationsText:
-	textfw "マニュアルイラスト"
+	text "Manual Illustrations"
 	done
 
 CreditsManualIllustrationsListText:
-	textfw "ひめの かげまる"
+	text "Kagemaru Himeno"
 	done
 
 CreditsPackageArtworkText:
-	textfw "パッケージアートワーク"
+	text "Package Artwork"
 	done
 
 CreditsPackageArtworkListText:
-	textfw "かざま ひでき"
+	text "Hideki Kazama"
 	done
 
 CreditsOriginalPokemonCreatorText:
-	textfw "ポケットモンスターげんさく"
+	text "Pokémon Original Story"
 	done
 
 CreditsOriginalPokemonCreatorListText:
-	textfw "たじり さとし"
+	text "Satoshi Tajiri"
 	done
 
 CreditsProductionAssistanceText:
-	textfw "せいさくきょうりょく"
+	text "Created in Cooperation With"
 	done
 
 CreditsProductionAssistanceListText:
-	textfw "はたの しんじ"
-	linefw "やまと さとし"
+	text "Shinji Hatano"
+	line "Satoshi Yamato"
 	done
 
 CreditsAssistanceText:
-	textfw "きょうりょく"
+	text "With Cooperation from"
 	done
 
 CreditsAssistanceList1Text:
-	textfw "たかはし のぶちか"
-	linefw "にしだ だいさく"
-	linefw "つくだ よしはる"
+	text "Nobuchika Takahashi"
+	line "Daisaku Nishida"
+	line "Yoshiharu Tsukuda"
 	done
 
 CreditsAssistanceList2Text:
-	textfw "ほさか さとし"
-	linefw "とみた ゆきこ"
+	text "Satoshi Hosaka"
+	line "Yukiko Tomita"
 	done
 
 CreditsAssistanceList3Text:
-	textfw "おおさわ とおる"
-	linefw "こがねざわ のぶと"
+	text "Toru Osawa"
+	line "Nobuto Koganezawa"
 	done
 
 CreditsAssistanceList4Text:
-	textfw "みかみ ひろゆき"
-	linefw "かつき くんじ"
+	text "Hiroyuki Mikami"
+	line "Kunji Katsuki"
 	done
 
 CreditsAssistanceList5Text:
-	textfw "やすだ けいご"
-	linefw "りっち うぃるそん"
+	text "Keigo Yasuda"
+	line "Ritch Wilson"
 	done
 
 CreditsAssistanceList5ContText:
-	textfw "     くにひこ"
+	text "  Kunihiko"
 	done
 
 CreditsAssistanceList6Text:
-	textfw "クリーチャーズ "
+	text "Creatures Inc."
 	done
 
 CreditsAssistanceList7Text:
-	textfw "カードゲーム   "
+	text "Card Game Quality"
 	done
 
 CreditsAssistanceList7ContText:
-	textfw "   せいさくしつ"
+	text "       Production"
 	done
 
 CreditsAssistanceList8Text:
-	textfw "テストプレイヤーズ"
+	text "Test Players"
 	done
 
 CreditsProjectManagerText:
-	textfw "プロジェクトマネージャー"
+	text "Project Manager"
 	done
 
 CreditsProjectManagerListText:
-	textfw "かきせこ やすたか"
+	text "Yasutaka Kakiseko"
 	done
 
 CreditsSupervisorText:
-	textfw "スーパーバイザー"
+	text "Supervisor"
 	done
 
 CreditsSupervisorListText:
-	textfw "くどう ひろし"
+	text "Hiroshi Kudo"
 	done
 
 CreditsExecutiveProducerText:
-	textfw "エグゼクティブプロデューサー"
+	text "Executive Producer"
 	done
 
 CreditsExecutiveProducerListText:
-	textfw "やまうち ひろし"
+	text "Hiroshi Yamauchi"
 	done
 
 CreditsGameProductionText:
-	textfw "ゲームせいさく"
+	text "Created by"
 	done
 
 CreditsGameProductionListText:
-	textfw "ハ ド ソ ン"
+	text "Hudson"
 	done
 
 CreditsToBeContinuedText:
-	textfw "TO BE CONTINUED"
+	text "TO BE CONTINUED"
 	done
 
 DebugNameEntryText:
-	textfw "なまえにゅうりょく"
-	done
-
-PleasePressAText:
-	textfw "Aボタンを押してください"
+	text "Name Entry"
 	done
 
 AttendantText:
-	textfw "かかりいん"
+	text "Attendant"
 	done
 
 DebugClearMailText:
-	textfw "メールクリア"
+	text "Clear Mail"
 	done
 
 ObtainedGRCoinPieceTotalNumberText:
-	textfw "<RAMNUM>枚めのGRコインのカケラです!"
+	text "Obtained GR Coin Piece <RAMNUM>!"
 	done
 
 ChallengeMachineQuitWinStreakWarningText:
-	textfw "対戦をやめると れんしょうきろくが"
-	linefw "とまることに なります"
+	text "If you quit the Duel,"
+	line "Your consecutive wins will end."
 	done
 
 ChallengeMachineQuitPromptText:
-	textfw "それでも 対戦をやめますか?"
+	text "Would you like to quit the Duel?"
 	done
 
 ChallengeMachineWonASetText:
-	textfw "おめでとうございます"
-	linefw "5人勝ちぬき せいこうです!"
+	text "Congratulations!"
+	line "You defeated 5 opponents!"
 	done
 
 ChallengeMachineSetsWonText:
-	textfw "<RAMNAME> 5人勝ちぬき せいこう"
-	linefw "<RAMNUM>回目!!"
+	text "<RAMNAME> successfully defeated"
+	line "5 opponents <RAMNUM> time(s)!!!"
 	done
 
 ChallengeMachineComeAgainText:
-	textfw "それでは つぎの"
-	linefw "チャレンジを おまちしております"
+	text "We await your next challenge."
 	done
 
 OpenedBoosterPackText:
-	textfw "<RAMNAME>は"
-	linefw "拡張パックのなかを みた!!"
+	text "<RAMNAME> checked the cards"
+	line "in the Booster Pack!!"
 	done
 
 NoCardsSelectedTryAgainText:
-	textfw "カードのまいすうが 0枚です"
-	linefw "もういちど えらびなおしてください"
-	done
-
-DebugDummyLinesText:
-	textfw "ダミー行だよ"
-	linefw ""
-	linefw ""
-	done
-
-DebugYoshidaDebugMenuText:
-	textfw "YOSHIDA DEBUG MENU"
+	text "No cards selected."
+	line "Please select your cards again."
 	done
 
 DebugScenarioDebugMenuText:
-	textfw "  シナリオ デバッグ メニュー"
+	text "Debug Extras"
 	done
 
 DebugModifyEventsText:
-	textfw "イベントを操作する"
+	text "Modify Events"
 	done
 
 DebugModifyFlagsText:
-	textfw "フラグを操作する"
+	text "Modify Flags"
 	done
 
 DebugModifyCountersText:
-	textfw "カウンタを操作する"
+	text "Modify Counters"
 	done
 
 DebugModifyCardCountText:
-	textfw "カード枚数を操作する"
+	text "Modify Card Quantities"
 	done
 
 DebugReturnToGameText:
-	textfw "ゲームにもどる"
+	text "Return to Game"
 	done
 
 DebugModifyFlagsNumberLabelText:
-	textfw "フラグ Nоˍ"
+	text "Flag No."
 	done
 
 DebugModifyFlagsOnText:
@@ -2948,7 +2817,7 @@ DebugModifyFlagsOffText:
 	done
 
 DebugModifyCountersNumberLabelText:
-	textfw "カウンタ Nоˍ"
+	text "Counter No."
 	done
 
 DebugBlankValueSelectorText:
@@ -2956,18 +2825,26 @@ DebugBlankValueSelectorText:
 	done
 
 DebugModifyCardCountNumberLabelText:
-	textfw "カードNоˍ<RAMNUM>"
+	text "Card <No> "
+	half2full
+	textfw "<RAMNUM>"
 	done
 
 DebugModifyCardCountCardNameText:
-	textfw "【<RAMTEXT>】"
+	text "[ <RAMTEXT> ]"
 	done
 
 ; file (collection), deck, total
 DebugModifyCardCountValuesText:
-	textfw "F    D    T"
+	text "File"
+	half2full
+	textfw "     "
+	text "Deck"
+	half2full
+	textfw "     "
+	text "Total"
 	done
 
 DebugBeatTheGameText:
-	textfw "ゲームクリア直後にする"
+	text "Trigger Post-Game State"
 	done

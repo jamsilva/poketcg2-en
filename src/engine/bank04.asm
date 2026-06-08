@@ -18,7 +18,7 @@ StartUpDebugMenu::
 	jr c, .done
 	jr .loop
 .done
-	call ClearSpriteAnimsAndSetInitialGraphicsConfiguration
+	farcall CoreGameLoop
 	pop hl
 	pop de
 	pop bc
@@ -30,7 +30,7 @@ StartUpDebugMenu::
 	push bc
 	push de
 	push hl
-	lb de, 0, 0
+	lb de, 4, 4
 	ld b, BANK(.menu_params)
 	ld hl, .menu_params
 	call LoadMenuBoxParams
@@ -43,17 +43,16 @@ StartUpDebugMenu::
 	ret
 
 .menu_params:
-	menubox_params TRUE, 16, 11, \
+	menubox_params TRUE, 12, 10, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, FALSE, 1, NULL, DebugKondoDebugText
-	textitem 2, 2, DebugPowerOnText
-	textitem 2, 3, PauseMenuCoinText
-	textitem 2, 4, PauseMenuConfigText
-	textitem 2, 5, DebugEffectViewerText
-	textitem 2, 6, DebugCreditsText
-	textitem 2, 7, DebugDuelText
-	textitem 2, 8, DebugSlotMachineText
-	textitem 2, 9, PauseMenuExitText
+	textitem 2, 2, PauseMenuCoinText
+	textitem 2, 3, PauseMenuConfigText
+	textitem 2, 4, DebugEffectViewerText
+	textitem 2, 5, DebugCreditsText
+	textitem 2, 6, DebugDuelText
+	textitem 2, 7, DebugSlotMachineText
+	textitem 2, 8, PauseMenuExitText
 	textitems_end
 
 .HandleMenuBox:
@@ -63,12 +62,11 @@ StartUpDebugMenu::
 	jr c, .exit
 	push af
 	ld a, SFX_CONFIRM
-	call CallPlaySFX
-	pop af
-	ret
+	jr .play_sfx
 .exit
 	push af
 	ld a, SFX_CANCEL
+.play_sfx
 	call CallPlaySFX
 	pop af
 	ret
@@ -79,7 +77,6 @@ StartUpDebugMenu::
 	ret
 
 .FunctionMap
-	key_func DEBUGMENU_POWER_ON,      _CoreGameLoop
 	key_func DEBUGMENU_COIN,          SetAllCoinsObtainedAndShowCoinMenu
 	key_func DEBUGMENU_CONFIG,        DebugShowConfigMenu
 	key_func DEBUGMENU_EFFECT_VIEWER, DebugEffectViewer
@@ -163,15 +160,15 @@ DebugSlotMachine:
 	call ClearGameCenterChips
 	ld bc, 100
 	call AddChips
-	call PauseSong_SaveState
 	push af
 	ld a, MUSIC_DUEL_THEME_GR_LEADER
 	call SetMusic
 	pop af
 	ld a, CHIPS_BET_SLOT_5
-	farcall SlotMachine
+	farcall OWInteractionSlotMachine
 	call ResumeSong_ClearTemp
 	call UnsetSpriteAnimationAndFadePalsFrameFunc
+	call PauseSong
 	ret
 
 InGameDebugMenu:
@@ -204,7 +201,7 @@ InGameDebugMenu:
 	push bc
 	push de
 	push hl
-	lb de, 0, 4
+	lb de, 8, 3
 	ld b, BANK(.menu_params)
 	ld hl, .menu_params
 	call LoadMenuBoxParams
@@ -218,20 +215,21 @@ InGameDebugMenu:
 	ret
 
 .menu_params:
-	menubox_params TRUE, 14, 14, \
+	menubox_params TRUE, 12, 15, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, FALSE, 1, NULL, DebugKondoDebugText
 	textitem 2,  2, DebugBackgroundFontStateText
 	textitem 2,  3, DebugBackgroundFaceDisplayText
 	textitem 2,  4, DebugEffectViewerText
 	textitem 2,  5, DebugObjectCharacterDisplayText
-	textitem 2,  6, DebugClearMailText
-	textitem 2,  7, DebugTournamentTableText
+	textitem 2,  6, DebugTournamentTableText
+	textitem 2,  7, DebugClearMailText
 	textitem 2,  8, DebugSendMailText
 	textitem 2,  9, DebugAdjustChipsText
 	textitem 2, 10, DebugNameEntryText
 	textitem 2, 11, DebugCreditsText
-	textitem 2, 12, PauseMenuExitText
+	textitem 2, 12, DebugScenarioDebugMenuText
+	textitem 2, 13, PauseMenuExitText
 	textitems_end
 
 .HandleMenuBox:
@@ -241,12 +239,11 @@ InGameDebugMenu:
 	jr c, .exit_menu_box
 	push af
 	ld a, SFX_CONFIRM
-	call CallPlaySFX
-	pop af
-	ret
+	jr .play_sfx
 .exit_menu_box
 	push af
 	ld a, SFX_CANCEL
+.play_sfx
 	call CallPlaySFX
 	pop af
 	ret
@@ -261,12 +258,13 @@ InGameDebugMenu:
 	key_func INGAMEDEBUGMENU_BG_PORTRAIT_VIEWER, DebugBackgroundPortraitViewerScreen
 	key_func INGAMEDEBUGMENU_EFFECT_VIEWER,      DebugEffectViewerScreen
 	key_func INGAMEDEBUGMENU_OBJ_VIEWER,         DebugNPCObjectViewerScreen
-	key_func INGAMEDEBUGMENU_CLEAR_MAIL,         InitializeMailboxWRAM
 	key_func INGAMEDEBUGMENU_CUP_BRACKET,        DebugGrandMasterCupBracket
+	key_func INGAMEDEBUGMENU_CLEAR_MAIL,         InitializeMailboxWRAM
 	key_func INGAMEDEBUGMENU_SEND_MAIL,          DebugSendMailScreen
 	key_func INGAMEDEBUGMENU_ADJUST_CHIPS,       DebugAdjustChips
 	key_func INGAMEDEBUGMENU_ENTER_NAME,         PlayerNameSelectionScreen
 	key_func INGAMEDEBUGMENU_CREDITS,            DebugPlayCredits
+	key_func INGAMEDEBUGMENU_SCENARIO,           ScenarioDebugMenu
 	key_funcs_end
 
 .ExitMenu:
@@ -1281,21 +1279,34 @@ HandlePauseMenu:
 .display
 	call .ShowMenu
 	call .HandleInput
+	push af
 	jr c, .cancel
+IF DEBUG
+	cp PAUSEMENU_DEBUG
+	call nz, .ExecuteSelectedOption
+ELSE
 	call .ExecuteSelectedOption
-	jr c, .cancel
-	call .RestoreNPCs
-	ld a, [wPauseMenuWithChips]
-	and a
-	jr z, .loop_menu
-	call TurnOffCurChipsHUD
-	jr .loop_menu
+ENDC
+	jr nc, .cancel
+	pop af
+	scf
+	push af
 .cancel
 	call .RestoreNPCs
 	ld a, [wPauseMenuWithChips]
 	and a
-	jr z, .quit
+	jr z, .test_item
 	call TurnOffCurChipsHUD
+.test_item
+	pop af
+	jr c, .quit
+IF DEBUG
+	cp PAUSEMENU_DEBUG
+	jr nz, .loop_menu
+	call .ExecuteSelectedOption
+ELSE
+	jr .loop_menu
+ENDC
 .quit
 	pop hl
 	pop de
@@ -1330,16 +1341,27 @@ HandlePauseMenu:
 	ret
 
 .menu_params
+IF DEBUG
+	menubox_params TRUE, 8, 18, \
+		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
+		PAD_A, PAD_B, FALSE, 1, NULL, NULL
+ELSE
 	menubox_params TRUE, 8, 16, \
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, FALSE, 1, NULL, NULL
+ENDC
 	textitem 2,  2, PauseMenuStatusText
 	textitem 2,  4, PauseMenuDiaryText
 	textitem 2,  6, PauseMenuDeckText
 	textitem 2,  8, PauseMenuMinicomText
 	textitem 2, 10, PauseMenuCoinText
 	textitem 2, 12, PauseMenuConfigText
+IF DEBUG
+	textitem 2, 14, DebugMenuDebugText
+	textitem 2, 16, PauseMenuExitText
+ELSE
 	textitem 2, 14, PauseMenuExitText
+ENDC
 	textitems_end
 
 .HandleInput:
@@ -1349,12 +1371,11 @@ HandlePauseMenu:
 	jr c, .cancel_input
 	push af
 	ld a, SFX_CONFIRM
-	call CallPlaySFX
-	pop af
-	ret
+	jr .play_sfx
 .cancel_input
 	push af
 	ld a, SFX_CANCEL
+.play_sfx
 	call CallPlaySFX
 	pop af
 	ret
@@ -1372,16 +1393,15 @@ HandlePauseMenu:
 	key_func PAUSEMENU_MINICOM, PauseMenuMinicomScreen
 	key_func PAUSEMENU_COIN,    PauseMenuCoinScreen
 	key_func PAUSEMENU_CONFIG,  PauseMenuConfigScreen
+IF DEBUG
+	key_func PAUSEMENU_DEBUG,   InGameDebugMenu
+ENDC
 	key_funcs_end
 
 .RestoreNPCs:
 	farcall ShowNPCAnimsUnderMenuBox
 	call LoadSymbolsFont
 	call SetupTextDefault
-	ret
-
-; unreferenced?
-	ld [wPauseMenuCursorPosition], a
 	ret
 
 PauseMenuDeckScreen:
@@ -1570,9 +1590,10 @@ SetNewSpriteAnimValues::
 	ld a, SPRITEANIMSTRUCT_ANIMATING | SPRITEANIMSTRUCT_FLAG6 | SPRITEANIMSTRUCT_ACTIVE
 	call SetSpriteAnimFlags
 	xor a
-	lb bc, $0, $0
-	lb de, $0, $0
-	call StubSetSpriteAnimValue
+	ld b, a
+	ld c, a
+	ld d, a
+	ld e, a
 	call SetSpriteAnimPosition
 	call SetSpriteAnimFrameIndex
 	call SetSpriteAnimOWFrameGroup
@@ -2327,9 +2348,6 @@ SetSpriteAnimStartDelay:
 
 SetSpriteAnimFlags:
 	ld [hl], a ; SPRITEANIMSTRUCT_FLAGS
-	ret
-
-StubSetSpriteAnimValue:
 	ret
 
 SetSpriteAnimFrameDuration:
@@ -3331,12 +3349,11 @@ _PCMenu:
 	jr c, .cancel_input
 	push af
 	ld a, SFX_CONFIRM
-	call CallPlaySFX
-	pop af
-	ret
+	jr .play_sfx
 .cancel_input
 	push af
 	ld a, SFX_CANCEL
+.play_sfx
 	call CallPlaySFX
 	pop af
 	ret
@@ -3972,8 +3989,6 @@ TurnOnCurChipsHUD:
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	lb de, 6, 2
 	call AdjustDECoordByhSC
-	ldtx hl, CardsAndChipsUnitText
-	call InitTextPrinting_ProcessTextFromIDVRAM0
 	call PrintNumberOfChips
 
 .fill
@@ -5638,7 +5653,7 @@ HandlePopupMenu:
 		SYM_CURSOR_R, SYM_SPACE, SYM_CURSOR_R, SYM_CURSOR_R, \
 		PAD_A, PAD_B, FALSE, 1, NULL, NULL
 	textitem 2, 2, AaronStep1Text
-	textitem 2, 4, GiftCenterQuitText
+	textitem 2, 4, CancelText
 	textitems_end
 
 .Aaron2
@@ -5647,7 +5662,7 @@ HandlePopupMenu:
 		PAD_A, PAD_B, FALSE, 1, NULL, NULL
 	textitem 2, 2, AaronStep1Text
 	textitem 2, 4, AaronStep2Text
-	textitem 2, 6, GiftCenterQuitText
+	textitem 2, 6, CancelText
 	textitems_end
 
 .Aaron3
@@ -5657,7 +5672,7 @@ HandlePopupMenu:
 	textitem 2, 2, AaronStep1Text
 	textitem 2, 4, AaronStep2Text
 	textitem 2, 6, AaronStep3Text
-	textitem 2, 8, GiftCenterQuitText
+	textitem 2, 8, CancelText
 	textitems_end
 
 .Aaron4
@@ -5668,7 +5683,7 @@ HandlePopupMenu:
 	textitem 2,  4, AaronStep2Text
 	textitem 2,  6, AaronStep3Text
 	textitem 2,  8, MasonLabRegularDuelText
-	textitem 2, 10, GiftCenterQuitText
+	textitem 2, 10, CancelText
 	textitems_end
 
 .CardDungeonKnight

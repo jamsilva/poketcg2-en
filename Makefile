@@ -13,12 +13,14 @@ RGBGFXFLAGS  ?= -Weverything
 
 ### Options
 
+DEBUG ?= 0
+
 ifeq (metric,$(MAKECMDGOALS))
   FLAVOR := _metric
-  RGBASMFLAGS += -DMETRIC=1
+  RGBASMFLAGS += -DMETRIC=1 -DDEBUG=$(DEBUG)
 else
   FLAVOR = _imperial
-  RGBASMFLAGS += -DMETRIC=0
+  RGBASMFLAGS += -DMETRIC=0 -DDEBUG=$(DEBUG)
 endif
 
 ### Objects

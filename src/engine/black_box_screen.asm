@@ -113,6 +113,9 @@ BlackBox:
 
 .ShowProcedureScreen:
 	call ClearSpriteAnimsAndSetInitialGraphicsConfiguration
+	call EmptyScreen
+	lb de, $40, $ff
+	call SetupText
 	call .DrawProcedureScreen
 	call SetFrameFuncAndFadeFromWhite
 	ldtx hl, GameCenterBlackBoxProcedureDialogText

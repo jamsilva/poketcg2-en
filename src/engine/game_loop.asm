@@ -23,7 +23,11 @@ GameLoop::
 	ldh a, [hKeysHeld]
 	cp PAD_A | PAD_B
 	jr z, .ask_erase_backup_ram
-	farcall _CoreGameLoop
+IF DEBUG
+	farcall StartUpDebugMenu
+ELSE
+	farcall CoreGameLoop
+ENDC
 	jr GameLoop
 
 .not_cgb

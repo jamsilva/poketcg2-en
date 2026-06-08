@@ -2235,6 +2235,8 @@ PracticeDuel_DonePuttingOnBench:
 
 PracticeDuel_PrintTurnInstructions:
 	call EmptyScreen
+	lb de, $38, $ff
+	call SetupText
 	ld a, [wDuelTurns]
 	srl a
 	inc a
@@ -2388,6 +2390,8 @@ PrintPracticeDuelInstructions:
 PrintPracticeDuelLetsPlayTheGame:
 	ldtx hl, PracticeDuelMasonProceedAsTaughtText
 	call PrintPracticeDuelDrMasonInstructions
+	lb de, $38, $9f
+	call SetupText
 	ret
 
 ; simplified version of PrintPracticeDuelInstructions that skips Dr. Mason's text
@@ -4418,19 +4422,6 @@ SelectingBenchPokemonMenu:
 	ld e, 16
 	lb bc, SYM_CURSOR_R, SYM_SPACE
 	jp SetCursorParametersForTextBox
-
-; remnant from tcg1, unreferenced
-SetupAndPrintPlayAreaCardScreen:
-	ldh [hTempPlayAreaLocation_ff9d], a
-	call ZeroObjectPositionsAndToggleOAMCopy
-	call EmptyScreen
-	call LoadDuelCardSymbolTiles
-	call LoadDuelCheckPokemonScreenTiles
-	xor a ; FALSE
-	ld [wExcludeArenaPokemon], a
-	call PrintPlayAreaCardList
-	call EnableLCD
-; fallthrough
 
 InitAndPrintPlayAreaCardInformationAndLocation:
 	ld hl, wCurPlayAreaSlot

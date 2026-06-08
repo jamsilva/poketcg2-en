@@ -65,7 +65,7 @@ ChallengeMachine_DrawScoreScreen:
 	lb de, 1, 2
 	call PrintTextNoDelay_InitVRAM0
 	ld hl, wChallengeMachineSetsWonRecords
-	lb de, 14, 4
+	lb de, 12, 4
 	call .PrintScore
 	ld hl, wChallengeMachineCurWinStreaks
 	lb de, 14, 6
@@ -96,7 +96,7 @@ ChallengeMachine_DrawScoreScreen:
 	textitem  2,  4, ChallengeMachineSetsWonRecordText
 	textitem  2,  6, ChallengeMachineCurrentWinStreakText
 	textitem  1,  8, ChallengeMachineWinStreakRecordText
-	textitem 17,  4, AttemptsUnitText
+	textitem 15,  4, AttemptsUnitText
 	textitem 17,  6, WinsUnitText
 	textitem 17, 10, WinsUnitText
 	textitems_end
@@ -118,7 +118,7 @@ ENDR
 	add hl, bc
 	call SavePlayerName
 	ldtx hl, TxRam1Text
-	lb de, 2, 10
+	lb de, 3, 10
 	call PrintTextNoDelay_InitVRAM0
 	ld hl, wChallengeMachineTempPlayerName
 	call SavePlayerName

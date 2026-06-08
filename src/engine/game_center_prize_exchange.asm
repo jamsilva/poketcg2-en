@@ -68,9 +68,6 @@ DrawGameCenterPrizeExchangeMenu:
 	lb de, 14, 0
 	lb bc, 5, 1
 	farcall FillBoxInBGMapWithZero
-	ldtx hl, CardsAndChipsUnitText
-	lb de, 18, 0
-	call InitTextPrinting_ProcessTextFromIDVRAM0
 	farcall GetGameCenterChips
 	lb de, 14, 0
 	ld h, b
@@ -121,9 +118,6 @@ DrawGameCenterPrizeExchangeMenu:
 	ld b, TRUE
 	ld d, 14 ; x
 	call PrintNumber
-	ld d, 18 ; x
-	ldtx hl, CardsAndChipsUnitText
-	call InitTextPrinting_ProcessTextFromIDVRAM0
 	pop hl
 	pop de
 	pop bc

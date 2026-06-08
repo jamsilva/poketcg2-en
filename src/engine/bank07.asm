@@ -118,6 +118,26 @@ CalculateDecimalDigits:
 	inc de
 	ret
 
+; receives 2 arguments:
+; \1: 0|1 how far from the rightmost column to print the name
+; \2: the y position
+MACRO print_player_name_aligned_right
+	ld e, (\2 << 1) | \1
+	call PrintPlayerNameAlignedRight
+ENDM
+
+; Receives e = (y pos << 1) | 1 if the name should be printed one tile away from the right or 0 if on the right itself
+PrintPlayerNameAlignedRight:
+	push de
+	farcall LoadPlayerName ; now we have the number of characters of the player's name in a
+	pop de
+	srl e
+	adc -20-1 ; the 20 in -20 is the x position (in tiles) we want for the rightmost character of the name
+	cpl ; now do the complement - because of the extra 1 in the previous instruction, we effectively did ~(a-20-1) = -(a-20) = 20 - a	
+	ld d, a
+	call PrintTextNoDelay_InitVRAM0
+	ret
+
 FillVRAMTilesSolid::
 	push af
 	push bc
@@ -810,7 +830,7 @@ DrawDiaryStatusBox:
 	lb de, 0, 0
 	lb bc, 20, 12
 	call DrawRegularTextBoxVRAM0
-	lb de, 0, 12
+	ld e, c ; de is now 0, 12
 	lb bc, 20, 6
 	call DrawRegularTextBoxVRAM0
 	ld hl, .TextItems
@@ -821,12 +841,11 @@ DrawDiaryStatusBox:
 	lb de, 5, 1
 	call PrintTextNoDelay_InitVRAM0
 	ldtx hl, TxRam1Text
-	lb de, 11, 4
-	call PrintTextNoDelay_InitVRAM0
+	print_player_name_aligned_right 1, 4
 	call CountCoinsObtained
 	ld l, a
 	ld h, $00
-	lb de, 16, 6
+	lb de, 17, 6
 	ld a, 2
 	ld b, TRUE
 	call PrintNumber
@@ -837,11 +856,10 @@ DrawDiaryStatusBox:
 	ret
 
 .TextItems:
-	textitem  7,  4, NameText
-	textitem  7,  6, EventCoinText
-	textitem 18,  6, CardsAndChipsUnitText
-	textitem  7,  8, PlayerDiaryAlbumText
-	textitem  7, 10, PlayerDiaryPlayTimeText
+	textitem  8,  4, NameText
+	textitem  8,  6, EventCoinText
+	textitem  8,  8, PlayerDiaryAlbumText
+	textitem  8, 10, PlayerDiaryPlayTimeText
 	textitems_end
 
 ; if c is TRUE, call ow-map/obj push/pop wrapper on saving
@@ -935,8 +953,7 @@ DrawStatusScreenTopBox:
 	lb bc, 1, 1
 	call DrawPlayerPortrait
 	ldtx hl, TxRam1Text
-	lb de, 11, 2
-	call PrintTextNoDelay_InitVRAM0
+	print_player_name_aligned_right 1, 2
 	lb de, 13, 6
 	farcall PrintPlayTime
 	lb de, 12, 4
@@ -944,9 +961,9 @@ DrawStatusScreenTopBox:
 	ret
 
 .TextItems:
-	textitem 7, 2, NameText
-	textitem 7, 4, PlayerDiaryAlbumText
-	textitem 7, 6, PlayerDiaryPlayTimeText
+	textitem 8, 2, NameText
+	textitem 8, 4, PlayerDiaryAlbumText
+	textitem 8, 6, PlayerDiaryPlayTimeText
 	textitems_end
 
 DrawStatusScreenBottomBox:
@@ -954,13 +971,13 @@ DrawStatusScreenBottomBox:
 	lb bc, 20, 10
 	call DrawRegularTextBoxVRAM0
 	lb de, 1, 8
-	lb bc, 9, 1
+	lb bc, 7, 1
 	farcall FillBoxInBGMapWithZero
 	ld hl, .TextItems
 	call PlaceTextItemsVRAM0
 	call GetSelectedCoin
 	call GetCoinName
-	lb de, 4, 12
+	lb de, 5, 12
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	call GetSelectedCoin
 	add COIN_SMALL_START
@@ -974,14 +991,14 @@ DrawStatusScreenBottomBox:
 	and a
 	jr z, .done
 	ldtx hl, PlayerStatusGRCoinText
-	lb de, 4, 14
+	lb de, 5, 14
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 .done
 	ret
 
 .TextItems:
-	textitem 1,  8, EventCoinText
-	textitem 4, 10, PlayerStatusCurrentCoinText
+	textitem 2,  8, EventCoinText
+	textitem 5, 10, PlayerStatusCurrentCoinText
 	textitems_end
 
 SetAllPaletteFadeConfigsToEnabled:
@@ -2306,7 +2323,7 @@ ShowStartMenu:
 
 .HandleMenu:
 	farcall ClearSpriteAnimsAndSetInitialGraphicsConfiguration
-	lb de, $40, $90
+	lb de, $40, $c0
 	call SetupText
 	call .DrawMenu
 	farcall SetFrameFuncAndFadeFromWhite
@@ -2329,29 +2346,22 @@ ShowStartMenu:
 	call DrawNPCPortrait
 
 ; print player's name
-	farcall LoadPlayerName
-	ld b, a
-	ld a, MAX_PLAYER_NAME_CHARS
-	sub b
-	ld d, 13
-	add d
-	ld d, a
-	ld e, 8
 	ldtx hl, TxRam1Text
-	call PrintTextNoDelay_InitVRAM0
+	print_player_name_aligned_right 0, 8
 
 .skip_portrait_and_name
 	ld a, [wStartMenuConfiguration]
 	add a
 	ld c, a
-	ld b, $00
+	ld b, 0
+	ld d, b
+	ld e, b
 	ld hl, .MenuBoxParamPointers
 	add hl, bc
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
 	ld b, BANK(.MenuBoxParamPointers)
-	lb de, 0, 0
 	call LoadMenuBoxParams
 	ld a, [wStartMenuConfiguration]
 	ld c, a
@@ -2519,7 +2529,7 @@ _StartMenuBoxUpdate::
 	call CountCoinsObtained
 	ld l, a
 	ld h, $00
-	lb de, 13, 12
+	lb de, 14, 12
 	ld a, 2
 	ld b, TRUE
 	call PrintNumber
@@ -2531,10 +2541,9 @@ _StartMenuBoxUpdate::
 	ret
 
 .TextItems:
-	textitem  3, 12, EventCoinText
-	textitem 15, 12, CardsAndChipsUnitText
-	textitem  3, 14, PlayerDiaryAlbumText
-	textitem  3, 16, PlayerDiaryPlayTimeText
+	textitem  4, 12, EventCoinText
+	textitem  4, 14, PlayerDiaryAlbumText
+	textitem  4, 16, PlayerDiaryPlayTimeText
 	textitems_end
 
 .CardPop:
@@ -2622,7 +2631,6 @@ AskToContinueFromDiaryInsteadOfDuel:
 	ldtx hl, MainMenuContinueFromDiaryInsteadOfDuelConfirmText
 	ld a, $1 ; "no" selected by default
 	farcall DrawWideTextBox_PrintTextWithYesOrNoMenu
-	jr c, .fade_out ; unnecessary jump
 .fade_out
 	call StartFadeToWhite
 	call WaitPalFading_Bank07
@@ -2637,6 +2645,7 @@ AskToContinueFromDiaryInsteadOfDuel:
 	tx MainMenuContinueFromDiaryInsteadOfDuelWarning2Text
 	tx MainMenuContinueFromDiaryInsteadOfDuelWarning3Text
 	tx MainMenuContinueFromDiaryInsteadOfDuelWarning4Text
+	tx MainMenuContinueFromDiaryInsteadOfDuelWarning5Text
 	dw $ffff
 
 ConfirmPlayerNameAndGender:
@@ -3326,7 +3335,7 @@ GiftCenter_HandleMenu:
 	textitem 2,  4, GiftCenterReceiveCardsText
 	textitem 2,  6, GiftCenterSendDeckConfigurationText
 	textitem 2,  8, GiftCenterReceiveDeckConfigurationText
-	textitem 2, 10, GiftCenterQuitText
+	textitem 2, 10, CancelText
 	textitems_end
 
 .HandleInput:
@@ -3631,9 +3640,6 @@ CoinMenu:
 	lb de,  0, 0
 	lb bc, 20, 8
 	call DrawRegularTextBoxVRAM0
-	ldtx hl, PlayerCoinSelectText
-	lb de,  1, 2
-	call InitTextPrinting_ProcessTextFromIDVRAM0
 	ld a, [wSelectedCoin]
 	call CalculateCoinMenuPosition
 	push af
@@ -3642,6 +3648,12 @@ CoinMenu:
 	pop af
 	call ShowCoinMenuPage
 	call ShowSelectedCoinOnCoinMenu
+;	fallthrough
+
+ShowSelectCoin:
+	ldtx hl, PlayerCoinSelectText
+	lb de,  2, 2
+	call InitTextPrinting_ProcessTextFromIDVRAM0
 	ret
 
 ShowSelectedCoinOnCoinMenu:
@@ -3651,9 +3663,9 @@ ShowSelectedCoinOnCoinMenu:
 	push hl
 	ld a, [wSelectedCoin]
 	ldtx hl, PlayerStatusCurrentCoinText
-	lb de,  4, 4
+	lb de,  5, 4
 	call InitTextPrinting_ProcessTextFromIDVRAM0
-	lb de,  4, 6
+	lb de,  5, 6
 	lb bc, 12, 1
 	farcall FillBoxInBGMapWithZero
 	call GetCoinName
@@ -3748,7 +3760,7 @@ ShowCoinMenuPage:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	lb de, 6, 8
+	lb de, 5, 8
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	pop bc
 
@@ -3943,6 +3955,7 @@ ENDR
 	ld a, b
 	ld [wSelectedCoin], a
 	call ShowSelectedCoinOnCoinMenu
+	call ShowSelectCoin ; workaround for a bug where the select coin text gets corrupted after the previous call
 	ret
 
 HandleCoinMenuPageInput::
@@ -4386,7 +4399,6 @@ LoadAnimationAndPlay:
 	ld c, a
 	ld a, [wAnimationTileset + 1]
 	ld b, a
-	farcall StubSetSpriteAnimValue
 	farcall LoadSpriteAnimGfx
 	farcall SetSpriteAnimTileOffset
 
@@ -5327,7 +5339,7 @@ DrawMinicomMainScreen:
 	lb bc, 20, 4
 	call DrawRegularTextBoxVRAM0
 	ldtx hl, PauseMenuMinicomText
-	lb de, 7, 2
+	lb de, 8, 2
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	lb de, 0, 12
 	lb bc, 20, 6
@@ -5518,20 +5530,20 @@ _GiveBoosterPack:
 
 ; pack number, title
 .TextTable:
-	tx BoosterPack1Text, BoosterPackBeginningPokemonText    ; BOOSTER_BEGINNING_POKEMON
-	tx BoosterPack2Text, BoosterPackLegendaryPowerText      ; BOOSTER_LEGENDARY_POWER
-	tx BoosterPack3Text, BoosterPackIslandOfFossilText      ; BOOSTER_ISLAND_OF_FOSSIL
-	tx BoosterPack4Text, BoosterPackPsychicBattleText       ; BOOSTER_PSYCHIC_BATTLE
-	tx BoosterPack5Text, BoosterPackFlyingPokemonText       ; BOOSTER_SKY_FLYING_POKEMON
-	tx BoosterPack6Text, BoosterPackWeAreTeamRocketText     ; BOOSTER_WE_ARE_TEAM_ROCKET
-	tx BoosterPack7Text, BoosterPackTeamRocketsAmbitionText ; BOOSTER_TEAM_ROCKETS_AMBITION
-	tx SingleSpaceText,  DebugUnregisteredText              ; BOOSTER_DEBUG_10_STAR
-	tx SingleSpaceText,  PresentPackText                    ; BOOSTER_PRESENT_10_ENERGY
-	tx SingleSpaceText,  PresentPackText                    ; BOOSTER_PRESENT_FROM_ALL_SETS
-	tx SingleSpaceText,  PresentPackText                    ; BOOSTER_PRESENT_FROM_NON_ROCKET_SETS
-	tx SingleSpaceText,  PresentPackText                    ; BOOSTER_PRESENT_FROM_LATTER_4_SETS
-	tx SingleSpaceText,  PresentPackText                    ; BOOSTER_PRESENT_FROM_ROCKET_SETS
-	tx SingleSpaceText,  DebugUnregisteredText              ; BOOSTER_DEBUG_2_STAR
+	tx BoosterPackBeginningPokemonText,    BoosterPackBeginningPokemonText    ; BOOSTER_BEGINNING_POKEMON
+	tx BoosterPackLegendaryPowerText,      BoosterPackLegendaryPowerText      ; BOOSTER_LEGENDARY_POWER
+	tx BoosterPackIslandOfFossilText,      BoosterPackIslandOfFossilText      ; BOOSTER_ISLAND_OF_FOSSIL
+	tx BoosterPackPsychicBattleText,       BoosterPackPsychicBattleText       ; BOOSTER_PSYCHIC_BATTLE
+	tx BoosterPackFlyingPokemonText,       BoosterPackFlyingPokemonText       ; BOOSTER_SKY_FLYING_POKEMON
+	tx BoosterPackWeAreTeamRocketText,     BoosterPackWeAreTeamRocketText     ; BOOSTER_WE_ARE_TEAM_ROCKET
+	tx BoosterPackTeamRocketsAmbitionText, BoosterPackTeamRocketsAmbitionText ; BOOSTER_TEAM_ROCKETS_AMBITION
+	tx DebugUnregisteredText,              DebugUnregisteredText              ; BOOSTER_DEBUG_10_STAR
+	tx PresentPackText,                    PresentPackText                    ; BOOSTER_PRESENT_10_ENERGY
+	tx PresentPackText,                    PresentPackText                    ; BOOSTER_PRESENT_FROM_ALL_SETS
+	tx PresentPackText,                    PresentPackText                    ; BOOSTER_PRESENT_FROM_NON_ROCKET_SETS
+	tx PresentPackText,                    PresentPackText                    ; BOOSTER_PRESENT_FROM_LATTER_4_SETS
+	tx PresentPackText,                    PresentPackText                    ; BOOSTER_PRESENT_FROM_ROCKET_SETS
+	tx DebugUnregisteredText,              DebugUnregisteredText              ; BOOSTER_DEBUG_2_STAR
 
 .DrawScreen:
 	ld a, [wCurBoosterPack]
@@ -6171,8 +6183,8 @@ DrawMailboxTitleAndScene:
 	lb de, 0, 0
 	lb bc, 20, 4
 	call DrawRegularTextBoxVRAM0
-	ldtx hl, MailboxTitleText
-	lb de, 6, 2
+	ldtx hl, MinicomMailboxText
+	lb de, 8, 2
 	call InitTextPrinting_ProcessTextFromIDVRAM0
 	lb de, 0, 12
 	lb bc, 20, 6
@@ -6556,7 +6568,7 @@ MailboxSelectedMail_LoadMenuBoxParams:
 		PAD_A, PAD_B, TRUE, 0, NULL, NULL
 	textitem  2, 3, MailboxActionReadText
 	textitem  9, 3, MailboxActionDeleteText
-	textitem 16, 3, GiftCenterQuitText
+	textitem 16, 3, CancelText
 	textitems_end
 
 MailboxSelectedMail_HandleMenuBox:

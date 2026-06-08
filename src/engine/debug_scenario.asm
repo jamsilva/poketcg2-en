@@ -516,10 +516,10 @@ DebugModifyCardCount:
 	push de
 	farcall GetReceivingCardLongName
 	call LoadTxRam2
-	lb de, 5, 16
+	lb de, 1, 16
 	ldtx hl, DebugModifyCardCountCardNameText
 	call PrintTextNoDelay_Init
-	lb de, 5, 17
+	lb de, 0, 17
 	ldtx hl, DebugModifyCardCountValuesText
 	call PrintTextNoDelay_Init
 	pop de
@@ -529,17 +529,17 @@ DebugModifyCardCount:
 	ld c, a
 	push bc
 	ld a, b
-	lb bc, 6, 17
+	lb bc, 3, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	pop bc
 	push bc
 	ld a, c
-	lb bc, 16, 17
+	lb bc, 17, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	pop bc
 	ld a, c
 	sub b
-	lb bc, 11, 17
+	lb bc, 10, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	ret
 
@@ -613,17 +613,17 @@ DebugModifyCardCountValue:
 	ld c, a
 	push bc
 	ld a, b
-	lb bc, 6, 17
+	lb bc, 3, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	pop bc
 	push bc
 	ld a, c
-	lb bc, 16, 17
+	lb bc, 17, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	pop bc
 	ld a, c
 	sub b
-	lb bc, 11, 17
+	lb bc, 10, 17
 	bank1call WriteOneByteNumberInTxSymbol_PadSpace
 	ret
 
