@@ -9,6 +9,8 @@ GameLoop::
 	ld [wTextSpeed], a
 	ld a, [sSkipDelayAllowed]
 	ld [wSkipDelayAllowed], a
+	ld a, 1
+	ld [wUppercaseHalfWidthLetters], a
 	call DisableSRAM
 	ld a, DECK_SIZE
 	ld [wDeckSize], a
@@ -21,7 +23,7 @@ GameLoop::
 	ldh a, [hKeysHeld]
 	cp PAD_A | PAD_B
 	jr z, .ask_erase_backup_ram
-	farcall $4, CoreGameLoop ; unnecessary farcall?
+	farcall _CoreGameLoop
 	jr GameLoop
 
 .not_cgb
