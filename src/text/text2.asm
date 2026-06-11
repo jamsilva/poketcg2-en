@@ -269,11 +269,6 @@ ChoosePokemonToAttachEnergyCardText:
 	line "the Energy card to."
 	done
 
-ChooseAndDiscard1FireEnergyCardText:
-	text "Choose and Discard"
-	line "1 Fire Energy card."
-	done
-
 ChooseAndDiscard2FireEnergyCardsText:
 	text "Choose and Discard"
 	line "2 Fire Energy cards."
@@ -1338,8 +1333,6 @@ CardPopExitText:
 	text "Finished with Card Pop!"
 	done
 
-SECTION "Text 3", ROMX
-
 AreYouBothReadyToCardPopText:
 	text "Are you both ready"
 	line "to Card Pop!?"
@@ -1476,11 +1469,6 @@ GameCenterBillsPCUnableNoCompatibleCardsText:
 	line "get the cards you need."
 	done
 
-GameCenterBillsPCChooseACardToInsertText: ; unused?
-	text "Choose a card to insert"
-	line "along with Bill's PC."
-	done
-
 GameCenterBillsPCConfirmPromptText:
 	text "Is this card OK?"
 	done
@@ -1522,6 +1510,8 @@ EndText:
 WhatIsYourNameText:
 	text "What is your name?"
 	done
+
+SECTION "Text 3", ROMX
 
 PlayerNameKeyboardText:
 	textfw "A B C D E F G H I"

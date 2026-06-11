@@ -266,8 +266,6 @@ GlossaryEvolutionCardsDescriptionText:
 	line "place the Stage 2 Evolution Card."
 	done
 
-SECTION "Text 4", ROMX
-
 GlossaryDarkEvolutionCardsDescriptionText:
 	text "Evolution cards with Dark in their"
 	line "name, such as Dark Charmeleon and"
@@ -331,6 +329,8 @@ GlossaryRetreatDescriptionText:
 	line "Energy equal to the Retreat Cost"
 	line "of the retreating Pokémon."
 	done
+
+SECTION "Text 4", ROMX
 
 GlossaryPoisonedDescriptionText:
 	text "When your Pokémon is poisoned, it"
@@ -2047,8 +2047,6 @@ DeckDiagnosisStep2Advice2DescriptionText:
 	line "and about 2 copies of Switch."
 	done
 
-SECTION "Text 5", ROMX
-
 DeckDiagnosisStep2Advice3DescriptionText:
 	text "Your Pokémon can be inflicted with"
 	line "Special Conditions like Poison,"
@@ -2114,6 +2112,8 @@ DeckDiagnosisStep3Advice2Description2Text:
 	line "It looks just like traffic lights..."
 	line "Haha! Give it a shot!"
 	done
+
+SECTION "Text 5", ROMX
 
 DeckDiagnosisStep3Advice3Description1Text:
 	text "Don't worry about losing! Duel as"

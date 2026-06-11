@@ -1,3 +1,6 @@
+SECTION "Text 8", ROMX
+SECTION "Text 9", ROMX
+
 Text093f:
 	textfw "これで きさまが 1勝"
 	linefw "わたしが 1勝だ・・・"

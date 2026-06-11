@@ -1,2024 +1,1594 @@
-SECTION "Text 7", ROMX
-
 DebugSwapPlayerGenderText:
-	textfw "プレイヤーの性別を入れ替える"
+	text "Swap player gender"
 	done
 
 DebugGoToTCGIslandText:
-	textfw "はじまりの島に行く"
+	text "Go to TCG Island"
 	done
 
 DebugGoToGRIslandText:
-	textfw "GR団の島に行く"
+	text "Go to GR Island"
 	done
 
 DebugGetAllCoinsText:
-	textfw "すべてのコインをゲットする"
+	text "Get all Coins"
 	done
 
 DebugDeliverAllMailText:
-	textfw "すべてのメールを配信する"
+	text "Send all Mail"
 	done
 
 DebugResetChallengeMachineDataText:
-	textfw "チャレンジマシンのデータを壊す"
+	text "Reset Challenge Machine data"
 	done
 
 DebugUnlockSealedFortText:
-	textfw "ふういんのトリデOPEN"
+	text "Open Sealed Fortress"
 	done
 
 DebugHoldGrandMasterCupText:
-	textfw "GM杯開催(クリアデータのみ)"
+	text "Hold GM Cup (Clear data only)"
 	done
 
 DebugGet10CardsEachText:
-	textfw "すべてのカードを10枚ふやす"
+	text "Add 10 of each card"
 	done
 
 DebugGet10EnergyCardsEachText:
-	textfw "エネルギーカードを10枚ふやす"
+	text "Add 10 of each Energy card"
 	done
 
 TCGAirportGR5FlightInitialText:
-	textfw "このひこう船に のれ"
-	linefw "GR団のしまに つれていってやる"
-	linefw "かくごは いいな"
-	linefw "さあ いくぞ!"
+	text "Get on this airship."
+	line "I'll take you to GR Island."
 	done
 
 TCGAirportGR5FlightPromptText:
-	textfw "ひこう船に のりたいんだな?"
+	text "Do you want to board the airship?"
 	done
 
 TCGAirportGR5DeclinedFlightText:
-	textfw "GR団のしまに いきたくなったら"
-	linefw "われに はなしかけるのだ"
+	text "If you want to go to GR Island,"
+	line "come see me."
 	done
 
-TCGAirportGR5StartFlightText:
-	textfw "では ついてこい"
+AirportGR5StartFlightText:
+	text "Follow me, then."
 	done
 
 TCGAirportGR5LandedText:
-	textfw "さあ ついたぞ"
-	linefw "すきなところに いくがよい"
+	text "We've arrived."
+	line "Go wherever you wish."
 	done
 
 TCGAirportGR5FirstInteractionText:
-	textfw "ここを とおれるのは"
-	linefw "えらばれたものだけだ!"
-	linefw "そうだな 「GRコインのカケラ」を"
-	linefw "4つ あつめるんだな"
-	linefw "あっちこっちのクラブに GR1号から"
-	linefw "GR4号までが いっている"
-	linefw "全員と たたかって 勝ってくるんだな"
-	linefw "そうすれば カケラは てにはいる"
-	linefw "カケラを 4つ てにいれて"
-	linefw "「GRコイン」を かんせいさせろ"
-	linefw "そうすれば ここを とおして"
-	linefw "GR団のしまに いかせてやる!"
+	text "Only the chosen may pass!"
+	line "You need 4 GR Coin Pieces."
+	line "Defeat the 4 GR members in the"
+	line "Clubs to get those pieces."
 	done
 
 TCGAirportGR5GRCoinIncompleteText:
-	textfw "GR1号から GR4号と たたかい"
-	linefw "勝って くるんだな!"
-	linefw "勝てば 「GRコインのカケラ」が"
-	linefw "4つ てにはいる"
-	linefw "それで 「GRコイン」を"
-	linefw "かんせいさせろ!"
-	linefw "「GRコイン」を もっていれば"
-	linefw "ここを とおしてやる"
+	text "Defeat GR1 through GR4!"
+	line "Assemble the 4 GR Coin Pieces."
+	line "Bring me the completed GR Coin,"
+	line "and I will let you pass!"
 	done
 
 TCGAirportGR5GRCoinCompleteText:
-	textfw "ほう 「GRコイン」を"
-	linefw "てに いれたのか!"
-	linefw "よかろう! おまえを みとめて"
-	linefw "GR団のしまに つれていってやる"
-	linefw "ついてこい"
+	text "Ho! You've obtained the GR Coin!"
+	line "Very well. Follow me."
 	done
 
 TCGAirportGRClerkGRCoinIncompleteText:
-	textfw "ひこう船に のれば GR団のしまに"
-	linefw "いくことが できます"
-	linefw "ひこう船に のるには"
-	linefw "「GRコイン」が ひつようです"
-	linefw "「GRコイン」を おさがしください"
+	text "You can take the airship, but"
+	line "you need the GR Coin to board."
 	done
 
 TCGAirportGRClerkGRCoinCompleteText:
-	textfw "「GRコイン」は おもちのようですね"
-	linefw " "
-	linefw "それでは GR5号さまと"
-	linefw "おはなしくださいませ"
+	text "I see you have the GR Coin."
+	line "Please speak with GR5."
 	done
 
 TCGAirportGRSisNormalText:
-	textfw "みて! わたしたちのキング"
-	linefw "ビルリッチさまよ!"
-	linefw "つかわれないカードを すくうために"
-	linefw "GR団を つくられたの!"
-	linefw "すってきよねー"
-	linefw "あこがれちゃうわー!!"
+	text "Look! It's King Villicci!"
+	line "He saved cards that were neglected!"
+	line "That's why he founded Team GR."
+	line "Isn't he amazing? I admire him!"
 	done
 
 TCGAirportGRSisPostgameText:
-	textfw "ビルリッチさまって"
-	linefw "やっぱり すてきだわー"
-	linefw "じぶんのまちがいを みとめるなんて"
-	linefw "かんたんに できないもの!"
+	text "King Villicci is truly remarkable."
+	line "Admitting his own mistakes..."
+	line "That takes courage."
 	done
 
 TCGAirportMartialArtistGRCoinIncompleteText:
-	textfw "ここから ひこう船に のれるらしいよ"
-	linefw "でも ひつようなものが あるんだ"
-	linefw "「GRコイン」! それが あると"
-	linefw "ひこう船に のれるんだって!"
-	linefw "でも どうやって 「GRコイン」を"
-	linefw "ゲットするんだろう?"
+	text "I heard you can take an airship"
+	line "from here, but you need the GR Coin."
+	line "How do you get one?"
 	done
 
 TCGAirportMartialArtistGRCoinCompleteText:
-	textfw "<RAMNAME>くん!"
-	linefw "それが 「GRコイン」だね!"
-	linefw "よーし オレも がんばって"
-	linefw "「GRコイン」を ゲットするぞー!!"
+	text "<RAMNAME>! That's the GR Coin!"
+	line "Alright! I'll work hard too!"
 	done
 
 TCGAirportMartialArtistPostgameText:
-	textfw "「GRコイン」を ゲットしなくても"
-	linefw "ひこう船に のれるようになった"
-	linefw "オレも GR団のしまに いって"
-	linefw "GR団員と 対戦だ!"
+	text "You don't need the GR Coin anymore"
+	line "to board the airship."
+	line "I'm going to GR Island as well!"
 	done
 
 GRAirportGR5FlightPromptText:
-	textfw "ひこう船に のりたいんだな?"
+	text "Would you like to board the airship?"
 	done
 
 GRAirportGR5DeclinedFlightText:
-	textfw "GR団のしまから にげたければ"
-	linefw "われに はなしかけろ"
-	done
-
-GRAirportGR5StartFlightText:
-	textfw "では ついてこい"
+	text "If you want to leave,"
+	line "come see me."
 	done
 
 GRAirportGR5LandedInitialText:
-	textfw "あとは おまえの かってにしろ"
-	linefw "さあ いけ"
-	linefw "むこうに もどりたくなったら"
-	linefw "われに はなしかけるがいい"
+	text "Do as you wish from here."
+	line "If you want to return, come see me."
 	done
 
 GRAirportGR5LandedRepeatText:
-	textfw "さあ ついたぞ"
-	linefw "すきなところに いくがよい"
+	text "We've arrived."
+	line "Go wherever you wish."
 	done
 
 GRAirportGRClerkText:
-	textfw "ひこう船に のれば むこうに"
-	linefw "かえることが できます"
-	linefw "おくに すすんで GR5号さまに"
-	linefw "はなしかけて くださいませ"
+	text "You can use our airship to go back."
+	line "Speak with GR5 when you're ready."
 	done
 
 GRAirportGRPappyNormalText:
-	textfw "ワシが もっと わかければ"
-	linefw "わかいもんと いっしょに"
-	linefw "おまえさんのしまへ わたって"
-	linefw "たたかったんじゃが のう"
+	text "If I were younger, I'd go"
+	line "to your island and duel too."
 	done
 
 GRAirportGRPappyPostgameText:
-	textfw "なんでも おまえさんのしまの ひとと"
-	linefw "ともだちに なったそうじゃな"
-	linefw "それなら むこうに あそびに"
-	linefw "いってみたいもんじゃ"
+	text "I hear you've made friends there."
+	line "I'd like to visit someday."
 	done
 
 GRAirportGRLassNormalText:
-	textfw "あっちから GR団のしまに"
-	linefw "くるひとが いるって きいたの"
-	linefw "ふーん あなたなんだぁ"
-	linefw "やるじゃない"
-	linefw "でも こっちで"
-	linefw "どこまで かてるのかなぁー"
+	text "So you're from the other island?"
+	line "Not bad..."
+	line "How many of us can you beat?"
 	done
 
 GRAirportGRLassPostgameText:
-	textfw "ふーん あなたね"
-	linefw "<RAMNAME>って"
-	linefw "びっくり! ビルリッチさまに"
-	linefw "勝っちゃうなんて・・・"
+	text "So you're <RAMNAME>..."
+	line "You even beat Villicci..."
 	done
 
 Text0833:
-	textfw "ヤクソクじゃからな クラブメンバーは"
-	linefw "オリから だしてやるわい"
+	text "A promise is a promise."
+	line "I'll release the Club Members."
 	done
 
 Text0834:
-	textfw "かぁーーーーーー!!!!"
+	text "Kaaaaah!!!!"
 	done
 
 Text0835:
-	textfw "わしは これから ファイアクラブに"
-	linefw "むかうことにするわい"
-	linefw "ファイアクラブで まっとるぞ!"
+	text "I'm heading to the Fire Club."
+	line "I'll be waiting there!"
 	done
 
 Text0836:
-	textfw "わたしが アクアクラブのマスター"
-	linefw "ウッチーよ"
-	linefw "GR団から たすけてくれて"
-	linefw "どうもありがとう!"
-	linefw "おれいに このデッキを"
-	linefw "うけとってね"
-	linefw "GR3号との たたかいに"
-	linefw "ぜったいに やくにたつわ!"
+	text "I'm Amy, Water Club Master."
+	line "Thank you for rescuing us."
+	line "Take this Deck."
+	line "It will help against GR3."
 	done
 
 Text0837:
-	textfw "<RAMNAME>は デッキ"
-	linefw "「しかえしGR3ごう」をゲット!"
+	text "<RAMNAME> got the"
+	line "GR3's Punishment Deck!"
 	done
 
 Text0838:
-	textfw "あら デッキを わたしたくても"
-	linefw "もう もてないようね"
-	linefw "「しかえしGR3ごうデッキ」の"
-	linefw "カードを 60枚あげるわね!"
+	text "You can't carry any more Decks."
+	line "I'll give you 60 cards instead."
 	done
 
 Text0839:
-	textfw "<RAMNAME>は デッキつくるための"
-	linefw "カード60枚を ゲット!"
+	text "<RAMNAME> got 60 cards"
+	line "to build a new Deck!"
 	done
 
 Text083a:
-	textfw "「デッキのつくりかた」は"
-	linefw "オートデッキマシンに おくるわ"
-	linefw "オーヤマ研究所の"
-	linefw "オートデッキマシンで つくって!"
+	text "I'll send the Deck Configuration to"
+	line "the Mason Lab Auto Deck Machine."
 	done
 
 Text083b:
-	textfw "これも あげるから"
-	linefw "うけとって"
+	text "Take this too."
 	done
 
 Text083c:
-	textfw "コインを かえて キブンを"
-	linefw "かえるのも いいわよ"
-	linefw "GR3号は ファイアクラブよ"
-	linefw "ガッツンと やっつけちゃってね!"
-	linefw "<RAMNAME>くんなら"
-	linefw "ぜったいに 勝てるわ!!"
+	text "Try changing your Coin to match"
+	line "your mood. GR3 is at the Fire Club."
+	line "Go teach him a lesson!"
 	done
 
 Text083d:
-	textfw "GR3号は ファイアクラブよ"
-	linefw "ガッツンと やっつけちゃってね!"
-	linefw "<RAMNAME>くんなら"
-	linefw "ぜったいに 勝てるわ!!"
+	text "GR3 is at the Fire Club."
+	line "Go teach him a lesson!"
 	done
 
 Text083e:
-	textfw "こんにちは <RAMNAME>くん"
-	linefw "あげたデッキは やくにたってる?"
-	linefw "GR団とのたたかいは たいへんだけど"
-	linefw "みんなのために がんばってね!"
+	text "Hi, <RAMNAME>! Is the Deck I gave"
+	line "you helping? Do your best!"
 	done
 
 Text083f:
-	textfw "ポケモンカードは たのしむものだって"
-	linefw "わたしは おもうの"
-	linefw "だから GR団との たたかいも"
-	linefw "たのしんじゃえば いいと おもうわ"
+	text "Pokémon Cards are for fun."
+	line "Why not enjoy this duel too?"
 	done
 
 Text0840:
-	textfw "あら <RAMNAME>くん!"
-	linefw "かつやくは きいてるわよ"
-	linefw "GR団のしままで いったんですってね"
-	linefw "そのつよさを わたしにも みせて"
-	linefw "やっと カードが そろったから"
-	linefw "いいデッキが できたわ"
-	linefw "どう? 対戦してくれるかしら?"
+	text "<RAMNAME>! I've heard the news."
+	line "You even made it to GR Island!"
+	line "I built a good Deck."
+	line "Want to see it in action?"
 	done
 
 Text0841:
-	textfw "<RAMNAME>くん よくきてくれたわ"
-	linefw "GR団との たたかいは どう?"
-	linefw "せっかく きたんだから"
-	linefw "対戦していかない?"
+	text "Thanks for coming, <RAMNAME>."
+	line "Want to duel?"
 	done
 
 Text0842:
-	textfw "ウッチーと 対戦しますか?"
+	text "Would you like to duel Amy?"
 	done
 
 Text0843:
-	textfw "サイドカードは 6枚で いいわね?"
+	text "6 Prizes, right?"
 	done
 
 Text0844:
-	textfw "せっかく 対戦できると おもったのに"
-	linefw "ざんねんだわ"
+	text "I was hoping to duel... Too bad."
 	done
 
 Text0845:
-	textfw "<RAMNAME>くん おつかれさま"
-	linefw "GR団まで たおしちゃったのね"
-	linefw "これで もう 勝てるひとは"
-	linefw "いないかもしれないわね"
-	linefw "でも 対戦は たのしいから"
-	linefw "あいてをして ほしいんだけど"
+	text "Good work, <RAMNAME>."
+	line "You defeated Team GR!"
+	line "Dueling is still fun, though."
+	line "Want to be my opponent?"
 	done
 
 Text0846:
-	textfw "つよい<RAMNAME>くんとの対戦なら"
-	linefw "いつでも いいわよ"
+	text "I'm always happy to duel"
+	line "a strong player like <RAMNAME>."
 	done
 
 Text0847:
-	textfw "うーん 勝てるかと おもったのになぁ"
+	text "Hmm... I thought I could win."
 	done
 
 Text0848:
-	textfw "GR団との たたかいは"
-	linefw "たいへんだと おもうわ"
-	linefw "勝ち まけよりも 対戦を"
-	linefw "たのしむキモチを わすれないでね"
+	text "The fight against Team GR is hard,"
+	line "but don't forget to enjoy the duels!"
 	done
 
 Text0849:
-	textfw "GR団のほうが わたしより"
-	linefw "ぜったいに つよいわ"
-	linefw "だから がんばってね!"
-	linefw "<RAMNAME>くん"
+	text "Team GR is stronger than me."
+	line "Do your best, <RAMNAME>!"
 	done
 
 Text084a:
-	textfw "わたしだけじゃなくて"
-	linefw "みんなも つよくならないとね"
-	linefw "そうしないと <RAMNAME>くんも"
-	linefw "たのしくないでしょ"
+	text "Everyone needs to get stronger."
+	line "Otherwise, it won't be fun."
 	done
 
 Text084b:
-	textfw "また 対戦に きてね"
-	linefw "<RAMNAME>くん"
+	text "Come duel again sometime,"
+	line "<RAMNAME>."
 	done
 
+SECTION "Text 7", ROMX
+
 Text084c:
-	textfw "へいわに なったし"
-	linefw "わたしに まけても もんだいないか"
+	text "Things are peaceful now."
+	line "I guess it's okay if I lose."
 	done
 
 Text084d:
-	textfw "ぼくだよ シンタローだ"
-	linefw "プレイホールに もどってきたんだ"
-	linefw "みんなを たすけてくれて"
-	linefw "ありがとう <RAMNAME>!"
-	linefw "それで・・・どうする?"
-	linefw "対戦するかい?"
+	text "It's me, Joshua! Thanks for"
+	line "rescuing everyone, <RAMNAME>!"
+	line "Want to duel?"
 	done
 
 Text084e:
-	textfw "<RAMNAME>か! どうしたんだい?"
-	linefw "対戦するのかい?"
+	text "<RAMNAME>! What's up?"
+	line "Want to duel?"
 	done
 
 Text084f:
-	textfw "シンタローと 対戦しますか?"
+	text "Would you like to duel Joshua?"
 	done
 
 Text0850:
-	textfw "サイドカードは 4枚で・・・"
-	linefw "いっくぞー!"
+	text "4 Prizes... here we go!"
 	done
 
 Text0851:
-	textfw "対戦しないのかい?"
-	linefw " "
-	linefw "まさか ぼくと 対戦して"
-	linefw "まけるのが こわいんじゃないよね?"
+	text "You don't want to duel?"
+	line "You're not afraid of losing, right?"
 	done
 
 Text0852:
-	textfw "<RAMNAME>!"
-	linefw "デッキを あたらしくしたよ!"
-	linefw "さいしょに きみと 対戦したくて"
-	linefw "くるのを まってたんだ!"
-	linefw "さあ 対戦しよう!"
+	text "<RAMNAME>! I've got a new Deck!"
+	line "I wanted to duel you first."
+	line "Let's go!"
 	done
 
 Text0853:
-	textfw "<RAMNAME> まってたよ!"
-	linefw "さあ 対戦しよう!!"
+	text "<RAMNAME>! I've been waiting!"
+	line "Let's duel!"
 	done
 
 Text0854:
-	textfw "サイドカードの枚数は かえないよ"
-	linefw "こんかいも 4枚だからね!"
+	text "Same as always: 4 Prizes!"
 	done
 
 Text0855:
-	textfw "ちぇっ デッキを かえたから"
-	linefw "つよいあいてと 対戦したかったのに"
+	text "I built a new Deck because"
+	line "I wanted to duel someone strong..."
 	done
 
 Text0856:
-	textfw "まけたからには 拡張パックを"
-	linefw "わたさないとね!"
+	text "I lost, so I have to give you"
+	line "a Booster Pack!"
 	done
 
 Text0857:
-	textfw "しばらくして カードが ふえたら"
-	linefw "デッキを かえるつもりなんだ"
-	linefw "デッキを かえたら"
-	linefw "また 対戦しよう!"
+	text "Once I get more cards, I'm going"
+	line "to build a new Deck. Let's duel!"
 	done
 
 Text0858:
-	textfw "<RAMNAME>に 勝てたなんて"
-	linefw "じまんできそうだ"
+	text "I can brag that I beat <RAMNAME>!"
 	done
 
 Text0859:
-	textfw "こんどのデッキなら"
-	linefw "勝てると おもったのに・・・"
+	text "I thought I could win with this"
+	line "new Deck..."
 	done
 
 Text085a:
-	textfw "デッキを かえるだけじゃなくて"
-	linefw "ウデを みがかないと ダメだね"
+	text "I don't just need a new Deck."
+	line "I need to train harder."
 	done
 
 Text085b:
-	textfw "すこしは つよくなったのかな?"
-	linefw "ぼくは つよくならなきゃ"
-	linefw "なにかあっても ウッチーさんを"
-	linefw "まもれるようにね!"
+	text "Have I gotten any stronger?"
+	line "I need to improve to protect Amy."
 	done
 
 Text085c:
-	textfw "メグミと ふたごの マリよ"
-	linefw "プールで おぼれそうだったわ"
-	linefw "だって ずっと オリのなかで"
-	linefw "およいでて つかれちゃったんだもん"
-	linefw "ありがと <RAMNAME>くん"
-	linefw "おぼれるまえに たすけてくれて"
+	text "I'm Sara, Amanda's twin."
+	line "Thanks for rescuing me!"
 	done
 
 Text085d:
-	textfw "ファイアクラブでの たたかいも"
-	linefw "きをつけてね!"
+	text "Be careful at the Fire Club!"
 	done
 
 Text085e:
-	textfw "<RAMNAME>くんの おかげで"
-	linefw "やっと オリから でられたんだし"
-	linefw "じゆうなきもちで 対戦しません?"
+	text "Thanks to you, I'm free."
+	line "Want to duel?"
 	done
 
 Text085f:
-	textfw "やっぱり じゆうに あそばないと"
-	linefw "ポケモンカードは おもしろくないわ"
-	linefw "わたし <RAMNAME>くんと"
-	linefw "対戦したいんだけど・・・"
-	linefw "よかったら 対戦してくれない?"
+	text "You can't enjoy Pokémon Cards"
+	line "if you're not free to play."
+	line "I want to duel you, <RAMNAME>."
 	done
 
 Text0860:
-	textfw "マリと 対戦しますか?"
+	text "Would you like to duel Sara?"
 	done
 
 Text0861:
-	textfw "えーと サイドカードは"
-	linefw "4枚で 対戦しましょう"
+	text "Um... let's duel with 4 Prizes."
 	done
 
-SECTION "Text 8", ROMX
-
 Text0862:
-	textfw "対戦しないのも じゆうだから"
-	linefw "しょうがないわ"
-	linefw "でも わたしが 対戦したいと"
-	linefw "おもってるって わすれないでね"
+	text "Not dueling is a choice too."
+	line "But I want to duel you."
 	done
 
 Text0863:
-	textfw "あらら まけちゃった・・・"
-	linefw "<RAMNAME>くんは つよいわねー"
+	text "Oh no... I lost."
+	line "You're strong, <RAMNAME>!"
 	done
 
 Text0864:
-	textfw "わたしと 対戦したくなったら"
-	linefw "また アクアクラブに きてね"
-	linefw "もちろん くるかどうかは"
-	linefw "あなたの じゆうよ"
+	text "If you want to duel me again,"
+	line "come back to the Water Club."
 	done
 
 Text0865:
-	textfw "<RAMNAME>くんに 勝てたってことは"
-	linefw "わたし・・・つよいのかしら?"
+	text "If I beat <RAMNAME>..."
+	line "does that mean I'm strong?"
 	done
 
 Text0866:
-	textfw "あたしは メグミ!"
-	linefw "たすけてくれて ありがと"
-	linefw "さっすが <RAMNAME>!"
-	linefw "たよりになるぅー"
+	text "I'm Amanda! Thanks for the rescue."
+	line "You're reliable, <RAMNAME>!"
 	done
 
 Text0867:
-	textfw "このちょうしで GR団を"
-	linefw "おっぱらっちゃって ほしィな"
+	text "Now chase Team GR off this island!"
 	done
 
 Text0868:
-	textfw "あぁー あたし 対戦ができなくて"
-	linefw "つまんないィー"
-	linefw "あたしの カードかえしてよぉー"
-	linefw "GR団の ばかぁーー!!"
+	text "Aaaah! I'm so bored! Give me"
+	line "back my cards, you GR idiots!"
 	done
 
 Text0869:
-	textfw "うふふふ・・・きいてよ"
-	linefw "あたしも できるように なったの!"
-	linefw "・・・なにがって?"
-	linefw "た・い・せ・ん! 対戦よ!"
-	linefw "ポケモンカードで あそべなくて"
-	linefw "うずうずしてたのよ"
-	linefw "はやくぅー 対戦しよう!"
+	text "Hehehe... I learned how to do it!"
+	line "Dueling! Come on, let's duel!"
 	done
 
 Text086a:
-	textfw "およいで! カードで あそんで!"
-	linefw "あたしは ゲンキいっぱいィ!"
-	linefw "とーぜん あたしと 対戦しにィ"
-	linefw "ここまで きたのよね?"
+	text "Swim! Play cards! I'm energetic!"
+	line "You came here to duel me, right?"
 	done
 
 Text086b:
-	textfw "メグミと 対戦しますか?"
+	text "Would you like to duel Amanda?"
 	done
 
 Text086c:
-	textfw "いい? サイドカードは 4枚ィ!"
-	linefw "対戦 たのしもう!"
+	text "4 Prizes! Let's have fun!"
 	done
 
 Text086d:
-	textfw "なによぉ! あたしと 対戦するのが"
-	linefw "イヤだって いうの?"
-	linefw "もー しょうがないなぁ"
-	linefw "いまは あきらめるわよぉ"
+	text "What?! You don't want to duel?"
+	line "Geez, fine."
 	done
 
 Text086e:
-	textfw "えー まけちゃったぁ"
-	linefw "ちょっとは てかげんしてよ もぉ"
+	text "Aww, I lost! Go easy on me!"
 	done
 
 Text086f:
-	textfw "ああ たのしかった!"
-	linefw "また 対戦してね それから・・・"
-	linefw "カードを とりもどしてくれて"
-	linefw "ありがとう!"
+	text "That was fun! Duel me again!"
+	line "Thanks for getting our cards back!"
 	done
 
 Text0870:
-	textfw "ああ たのしかった!"
-	linefw "カードで あそぶのって サイコー!"
+	text "That was fun!"
+	line "Playing cards is the best!"
 	done
 
 Text0871:
-	textfw "つよい<RAMNAME>に 勝つって"
-	linefw "サイコーのきぶんだわぁ!"
-	linefw "また 対戦して あたしを"
-	linefw "いいきぶんに してねぇ"
+	text "Beating strong <RAMNAME> feels amazing!"
+	line "Duel me again!"
 	done
 
 Text0872:
-	textfw "わしは GR団のGR3号じゃ!"
-	linefw "アクアクラブは わしのモンじゃい!"
-	linefw "プールを みるが ええ!"
+	text "I am GR3 of Team GR!"
+	line "The Water Club is mine!"
 	done
 
 Text0873:
-	textfw "クラブメンバーは あのざまじゃわい!"
-	linefw " "
-	linefw "マスターのウッチーに"
-	linefw "マリとメグミは オリのなかじゃい"
-	linefw "あとひとりの シンタローとか"
-	linefw "いうのは にげていきおったがの"
+	text "Look at the Club Members!"
+	line "Amy, Sara, and Amanda are in cages."
+	line "Joshua escaped the Club."
 	done
 
 Text0874:
-	textfw "なんじゃい? オリから だせと"
-	linefw "いうんかい?"
-	linefw "そうじゃな・・・わしと バトルして"
-	linefw "勝てたら かんがえても ええぞ"
+	text "You want me to let them out?"
+	line "Fine. Duel me."
+	line "If you win, I'll consider it."
 	done
 
 Text0875:
-	textfw "アクアクラブのメンバーを"
-	linefw "たすけたいんじゃろ?"
-	linefw "じゃったら わしと バトルして"
-	linefw "勝ってみせるんじゃい!"
+	text "You want to rescue them?"
+	line "Then duel me and win!"
 	done
 
 Text0876:
-	textfw "GR3号と 対戦しますか?"
+	text "Would you like to duel GR3?"
 	done
 
 Text0877:
-	textfw "6枚じゃ! わしとの バトルは"
-	linefw "サイドカード6枚じゃい!!"
+	text "6 Prizes! That's how I duel!"
 	done
 
 Text0878:
-	textfw "アクアクラブのメンバーを"
-	linefw "たすけたいんじゃ なかったんかい"
-	linefw "まっ わしのシゴトは"
-	linefw "おヌシとの バトルじゃないからの"
-	linefw "すきにするが ええ"
+	text "It's not my job to duel you."
+	line "Do what you want."
 	done
 
 Text0879:
-	textfw "ぬぅ わしを まかすとは"
-	linefw "やるもんじゃわい!"
-	linefw "ほれ 拡張パックじゃい"
+	text "Ngh! You defeated me!"
+	line "Impressive. Here's a Booster Pack."
 	done
 
 Text087a:
-	textfw "そんなウデじゃ おはなしにならんわい"
-	linefw "でなおして くるんじゃな"
-	linefw "ところで シンタローとかいうのは"
-	linefw "どこへ いったか しらんか?"
+	text "With skills like that, you're"
+	line "hopeless. Come back later."
 	done
 
 Text087b:
-	textfw "ボクは アクアクラブで ただひとり"
-	linefw "にげだせた シンタローだ"
-	linefw "クラブマスター ウッチーさんの"
-	linefw "おかげで ここに にげられたんだ"
-	linefw "ウッチーさんも マリも メグミも"
-	linefw "GR3号に つかまってしまった"
-	linefw "キミ GR団を やっつけようとしてる"
-	linefw "<RAMNAME>だろ!"
-	linefw "プレイホールに GR3号がいるんだ"
-	linefw "やっつけてくれよ"
-	linefw "でも ボクでも 勝てないんだ"
-	linefw "ボクとたたかって 勝てないとな"
+	text "I'm Joshua."
+	line "I escaped the Water Club."
+	line "The others were caught."
+	line "You're <RAMNAME>, right?"
+	line "Please beat GR3!"
+	line "But let's duel first."
 	done
 
 Text087c:
-	textfw "つよいボクでも 勝てないんだ"
-	linefw "ボクに 勝ってから いくんだ"
-	done
-
-Text087d:
-	textfw "シンタローと 対戦しますか?"
+	text "I couldn't beat him..."
+	line "Duel me first, then go."
 	done
 
 Text087e:
-	textfw "サイドカードは 4枚で いいよな"
-	linefw "いくぞ! <RAMNAME>!!"
+	text "4 Prizes, okay?"
+	line "Let's go, <RAMNAME>!"
 	done
 
 Text087f:
-	textfw "ボクが つよいから じしんが"
-	linefw "ないんだろ?"
-	linefw "まけを くりかえさないと"
-	linefw "つよくなんて なれないぜ!"
+	text "You're not confident? You won't get"
+	line "stronger without losing sometimes!"
 	done
 
 Text0880:
-	textfw "GR3号は ファイアクラブに"
-	linefw "にげたみたいだぞ"
-	linefw "ボクも つよいけど"
-	linefw "キミのほうが もっとつよいのか"
-	linefw "つよさを わけてもらうためにも"
-	linefw "対戦してもらうぞ"
+	text "GR3 ran to the Fire Club."
+	line "Before you go, I want to duel you!"
 	done
 
 Text0881:
-	textfw "まけた・・・"
-	linefw "拡張パックを やるよ!"
+	text "I lost... Here's a Booster Pack!"
 	done
 
 Text0882:
-	textfw "つよいボクに 勝ったんだから"
-	linefw "GR団にも まけるなよ!"
+	text "You beat me. Don't lose to Team GR!"
 	done
 
 Text0883:
-	textfw "いくらボクが つよいとはいえ"
-	linefw "だいじょうぶなのか?"
-	linefw "もう1回 しょうぶしてやろうか?"
+	text "I'm strong, but is it enough?"
+	line "Want to go another round?"
 	done
 
 Text0884:
-	textfw "ねぇ きいてよぉ"
-	linefw "イマクニ?って ヘンなのが いるのぉ"
-	linefw "まっくろで テケテケして"
-	linefw "サロンのすみっこに あらわれるのよぉ"
-	linefw "GR団なんて ヘンなのもいるから"
-	linefw "こまっちゃうのぉ"
+	text "There's a weird guy named Imakuni?"
+	line "He's all black and goes 'teke teke'."
+	line "He stands in the corner of the room."
 	done
 
 Text0885:
-	textfw "ねぇ みた みた みたのよぉ"
-	linefw "なにって? イマクニ?よぉ"
-	linefw "サロンのすみっこに あらわれたのよぉ"
-	linefw "やっぱり くろいのぉ"
-	linefw "イマクニ?って ヘンだから"
-	linefw "ちかづかないほうが いいのよぉ"
+	text "Did you see Imakuni?! He's all black"
+	line "and weird! Don't go near him!"
 	done
 
 Text0886:
-	textfw "クラブマスターのウッチーさんが"
-	linefw "つかまって しまった"
-	linefw "それで トホーにくれて いけを"
-	linefw "みておるのじゃよ トホホ・・・"
+	text "Club Master Amy has been captured..."
+	line "I feel lost... toohoohoo..."
 	done
 
 Text0887:
-	textfw "ウッチーさんたちを たすけて"
-	linefw "くれたそうじゃな"
-	linefw "さすがは グランドマスターを"
-	linefw "たおした<RAMNAME>さんじゃ"
-	linefw "かんしゃしておりますぞ"
+	text "I heard you rescued Amy!"
+	line "As expected of <RAMNAME>."
 	done
 
 Text0888:
-	textfw "あらそいでなく みずのように こころ"
-	linefw "しずかに するのが いいのじゃよ"
+	text "Instead of fighting, calm your"
+	line "heart like still water."
 	done
 
 Text0889:
-	textfw "あー あー カード とられちゃって"
-	linefw "あそべないやー"
-	linefw "でも クラブマスターでも"
-	linefw "かてないんだから しょうがないよね"
+	text "They took my cards..."
+	line "Even the Master couldn't win."
+	line "I guess it can't be helped."
 	done
 
 Text088a:
-	textfw "ありがとー! <RAMNAME>ちゃん!!"
-	linefw "カード かえってきたよ"
-	linefw "このまま"
-	linefw "GR団に しかえししてね!"
+	text "Thanks, <RAMNAME>! I got my cards"
+	line "back! Now go get revenge!"
 	done
 
 Text088b:
-	textfw "GR団の いちばんエライひとに"
-	linefw "勝ったんだって"
-	linefw "<RAMNAME>ちゃん! さいきょー!!"
+	text "You beat the leader of Team GR!"
+	line "<RAMNAME>, you're the best!"
 	done
 
 Text088c:
-	textfw "GR団のしまでは せわになったな"
-	linefw "おかげで かえってこれたよ"
-	linefw "だが なにもしていなかったせいか"
-	linefw "しょうぶがしたくて しかたがないんだ"
-	linefw "どうだ しょうぶをしないか?"
+	text "Thanks for your help on GR Island."
+	line "I want a duel. How about it?"
 	done
 
 Text088d:
-	textfw "いろいろと せわになったが"
-	linefw "しょうぶに なさけは かけない"
-	linefw "しんけんしょうぶだ!"
-	linefw "<RAMNAME>!!"
+	text "I owe you one. But no mercy in"
+	line "a duel, <RAMNAME>!"
 	done
 
 Text088e:
-	textfw "ヤマグチと 対戦しますか?"
+	text "Would you like to duel Mitch?"
 	done
 
 Text088f:
-	textfw "オレとのしょうぶは"
-	linefw "サイドカード6枚だ!"
-	linefw "さあ! いくぞ!"
-	linefw "<RAMNAME>!!"
+	text "My duels are 6 Prizes!"
+	line "Let's go, <RAMNAME>!"
 	done
 
 Text0890:
-	textfw "おまえとなら いいしょうぶが"
-	linefw "できそうなのに・・・ざんねんだ"
+	text "I thought we'd have a good duel..."
+	line "Too bad."
 	done
 
 Text0891:
-	textfw "グランドマスターだけでなく"
-	linefw "GR団のキングも たおしたのか・・・"
-	linefw "よおし! そのチカラを"
-	linefw "オレに みせてくれ!"
+	text "You beat Team GR's King..."
+	line "Alright! Show me that power!"
 	done
 
 Text0892:
-	textfw "みごとに うちまかされたか!"
-	linefw "これは おまえのものだ!"
+	text "I've been outclassed!"
+	line "This is yours!"
 	done
 
 Text0893:
-	textfw "おまえと 戦うと しゅぎょうになる"
-	linefw "なんどでも 戦いたいものだな"
+	text "Dueling you is good training."
+	line "I want to duel you again."
 	done
 
 Text0894:
-	textfw "ふふふ・・・おまえでも"
-	linefw "まけることが あるのだな"
+	text "Hehehe... So even you can lose."
 	done
 
 Text0895:
-	textfw "ぼくは マサヒロ・・・って"
-	linefw "もう なまえは いったっけ?"
-	linefw "ヤマグチさんが もどるまで"
-	linefw "ぼくらが バトルクラブを まもるんだ"
-	linefw "すこしでも つよくなりたいから"
-	linefw "対戦してくれないかい?"
+	text "I'm Isaac. We're defending the"
+	line "Fighting Club. Will you duel me?"
 	done
 
 Text0896:
-	textfw "マサヒロと 対戦しますか?"
+	text "Would you like to duel Isaac?"
 	done
 
 Text0897:
-	textfw "ぼくとの対戦は"
-	linefw "サイドカード4枚のしょうぶだよ"
+	text "My duels are 4 Prizes."
 	done
 
 Text0898:
-	textfw "うん まあ・・・対戦したくないなら"
-	linefw "しょうがないよね うん"
+	text "Well... if you don't want to duel,"
+	line "I guess that's okay."
 	done
 
 Text0899:
-	textfw "GR団も いなくなったし"
-	linefw "だいかつやくだね <RAMNAME>くん"
-	linefw "おかげで カードが ふえて"
-	linefw "デッキも あたらしくできたよ"
-	linefw "拡張パックも あたらしいのを"
-	linefw "あげるから ぼくと対戦しないかい?"
+	text "Team GR is gone. I built a new Deck."
+	line "I'll give you a Booster Pack."
+	line "Want to duel?"
 	done
 
 Text089a:
-	textfw "<RAMNAME>くんなら いつでも"
-	linefw "対戦の あいてになるよ"
-	linefw "勝ったら 拡張パック第3彈!"
-	linefw "「化石のしま」を あげよう"
+	text "I'll duel you anytime <RAMNAME>."
+	line "If you win, I'll give you a Pack."
 	done
 
 Text089b:
-	textfw "サイドカードは いつもどおりに4枚!"
-	linefw "さあ やろう!!"
+	text "Same as always - 4 Prizes!"
+	line "Let's do this!"
 	done
 
 Text089c:
-	textfw "キミと 対戦するのは"
-	linefw "たのしいんだけどなあ・・・"
-	linefw "ムリな対戦は たのしくないもんね"
-	linefw "つぎのチャンスを まつよ"
+	text "I enjoy dueling, but forcing it"
+	line "isn't fun. I'll wait."
 	done
 
 Text089d:
-	textfw "ヤマグチさんが もどってきたんだ!"
-	linefw "キミが たすけてくれたんだって?"
-	linefw "グランドマスターを たおしたキミは"
-	linefw "やっぱり ツヨイよね"
+	text "Mitch is back! Thanks to you,"
+	line "he's safe. You're strong."
 	done
 
 Text089e:
-	textfw "うーん さすが<RAMNAME>くん!"
-	linefw "つよい つよい"
-	linefw "じゃあ 拡張パックを わたすよ"
+	text "Wow, <RAMNAME>! You're strong!"
+	line "Here's a Booster Pack."
 	done
 
 Text089f:
-	textfw "うーん まけたか・・・"
-	linefw "もっと しゅぎょうしないとね"
+	text "Aww, I lost... I need more training."
 	done
 
 Text08a0:
-	textfw "勝てたのは しゅぎょうを"
-	linefw "がんばったからだと おもう"
-	linefw "マグレかもしれないから"
-	linefw "また あとで対戦してね"
+	text "If I won, it means I trained!"
+	line "Let's duel again later."
 	done
 
 Text08a1:
-	textfw "ふぅ また まけた・・・"
-	linefw "つよすぎるよ <RAMNAME>くん"
+	text "Phew, I lost again..."
+	line "You're too strong, <RAMNAME>."
 	done
 
 Text08a2:
-	textfw "キミとの対戦は たのしいから"
-	linefw "また 対戦してよね"
+	text "I enjoy dueling you, so let's do"
+	line "it again sometime."
 	done
 
 Text08a3:
-	textfw "やっぱり ポケモンカードは"
-	linefw "対戦が おもしろいよな"
-	linefw "いつでもいいから"
-	linefw "また 対戦しような"
+	text "Dueling makes Pokémon Cards fun."
+	line "Let's duel again."
 	done
 
 Text08a4:
-	textfw "オレは タツロー"
-	linefw "カードをあつめに いってたんだ"
-	linefw "でも GR団に勝てなくて"
-	linefw "カードは あつめられなかった"
-	linefw "クラブマスターの ヤマグチさんが"
-	linefw "かえってきたら また しゅぎょうだ!"
+	text "I'm Chris. Team GR took my cards!"
+	line "Once Mitch returns, I'll train!"
 	done
 
 Text08a5:
-	textfw "<RAMNAME> きいてくれ!"
-	linefw "ポケモンカードが もどってきたんだ"
-	linefw "これも <RAMNAME>のおかげだ"
-	linefw "せっかくだから 対戦しないか?"
+	text "<RAMNAME>, I got my cards back!"
+	line "Thank you. Want to duel?"
 	done
 
 Text08a6:
-	textfw "やあ <RAMNAME>"
-	linefw "ちょうしは どうだい?"
-	linefw "つよくなったか たしかめたいんだ"
-	linefw "対戦してくれるかい?"
-	linefw "勝ったら 拡張パックを"
-	linefw "2つ プレゼントだ!"
+	text "Hey, <RAMNAME>. How's it going?"
+	line "Want to duel?"
+	line "If you win, I'll give you"
+	line "2 Booster Packs!"
 	done
 
 Text08a7:
-	textfw "タツローと 対戦しますか?"
+	text "Would you like to duel Chris?"
 	done
 
 Text08a8:
-	textfw "サイドカードは 4枚!"
-	linefw "勝ったら 拡張パックは2つ!"
+	text "4 Prizes! Win and get 2 Packs!"
 	done
 
 Text08a9:
-	textfw "そっか 対戦は いやなのか"
-	linefw "なら ほかのだれかと対戦するよ"
+	text "You don't want to duel?"
+	line "Then I'll find someone else."
 	done
 
 Text08aa:
-	textfw "ヤマグチさんが もどってきたんだ"
-	linefw "<RAMNAME>のおかげだってな"
-	linefw "オレも しゅぎょうして"
-	linefw "<RAMNAME>みたいになるぜ!"
+	text "Mitch is back! Thanks to you."
+	line "I'll train hard!"
 	done
 
 Text08ab:
-	textfw "あれ? まけちゃったよ"
+	text "Huh? I lost..."
 	done
 
 Text08ac:
-	textfw "うーん しゅぎょうが たりないんだな"
-	linefw "よっし! もっとがんばるぞ!!"
+	text "I haven't trained enough!"
+	line "I'll work harder!"
 	done
 
 Text08ad:
-	textfw "よっし! 勝てたってことは"
-	linefw "しゅぎょうも バッチリ!"
-	linefw "おたがいに しゅぎょうして"
-	linefw "また 対戦しようぜ"
+	text "If I won, it means I trained!"
+	line "Let's train and duel again."
 	done
 
 Text08ae:
-	textfw "あたし ナツキ"
-	linefw "いちおうバトルクラブのメンバー"
-	linefw "しゅぎょうは したくないけど"
-	linefw "ポケモンカードで あそびたいのよねー"
-	linefw "だれか GR団のヤツらを"
-	linefw "やっつけて くれないかなー"
+	text "I'm Jessica. I'm technically a"
+	line "Fighting Club Member. I don't like"
+	line "training, but I want to play cards."
+	line "Can someone beat up Team GR for us?"
 	done
 
 Text08af:
-	textfw "あんたが おそかったから"
-	linefw "ずっと デッキが くめなかったのよ!"
-	linefw "さあ しょうぶ!"
-	linefw "さっさと しょうぶするのよ!!"
+	text "You took too long! I couldn't"
+	line "build a Deck forever! Let's duel!"
+	line "Right now!"
 	done
 
 Text08b0:
-	textfw "なによー"
-	linefw "あたしとしょうぶしたいのー?"
-	linefw "どうせ 拡張パック第4彈"
-	linefw "「超バトル」が ほしいだけでしょ"
+	text "What? You want to duel me?"
+	line "You just want Series 4 Booster Pack"
+	line "Psychic Battle, don't you?"
 	done
 
 Text08b1:
-	textfw "ナツキと 対戦しますか?"
+	text "Would you like to duel Jessica?"
 	done
 
 Text08b2:
-	textfw "さっさと しょうぶよ"
-	linefw "サイドカードは 4まいね!"
+	text "Let's duel already. 4 Prizes!"
 	done
 
 Text08b3:
-	textfw "対戦するつもりが ないなら"
-	linefw "はなしかけないでよね!"
+	text "If you're not going to duel,"
+	line "don't talk to me!"
 	done
 
 Text08b4:
-	textfw "まけちゃったー"
-	linefw "しゅぎょうしてないもんね"
-	linefw "勝った ゴホウビに"
-	linefw "拡張パックを あげるわ"
+	text "I lost... I don't train, after all."
+	line "Here's your Booster Pack."
 	done
 
 Text08b5:
-	textfw "しゅぎょうは めんどうだけど"
-	linefw "対戦は たのしーわ"
+	text "Training's hard, but dueling is fun!"
 	done
 
 Text08b6:
-	textfw "やっぱり 勝つと"
-	linefw "キモチいーわねー"
+	text "Winning feels great!"
 	done
 
 Text08b7:
-	textfw "なんだ おまえは?"
-	linefw " "
-	linefw "オレは ストーンクラブのゲンゾウに"
-	linefw "まけて キゲンが わるいんだ!"
-	linefw "オレと たたかいたければ"
-	linefw "ゲンゾウを まかしてみろ!!"
-	linefw "オレを まかしたゲンゾウに"
-	linefw "勝てたら あいてをしてやるぞ!"
+	text "Who are you? I lost to Gene of the"
+	line "Rock Club, and I'm in a bad mood!"
+	line "If you want to duel me, beat Gene"
+	line "first! If you beat him, I'll duel!"
 	done
 
 Text08b8:
-	textfw "オレは ストーンクラブのゲンゾウに"
-	linefw "まけて キゲンが わるいんだ!"
-	linefw "ストーンクラブのゲンゾウに"
-	linefw "勝てたら たたかってやる!"
+	text "I lost to Gene of the Rock Club,"
+	line "and I'm in a bad mood!"
+	line "Beat Gene of the Rock Club,"
+	line "then I'll duel you!"
 	done
 
 Text08b9:
-	textfw "なに!"
-	linefw "ゲンゾウに 勝ったって?"
-	linefw "それは ストーンコイン!"
-	linefw "ほんとうに ゲンゾウに 勝ったのか"
-	linefw "それなら おまえと"
-	linefw "たたかってやっても いいぞ"
-	linefw "だが おまえに このGR1号と"
-	linefw "しょうぶするユウキが あるか?"
+	text "What! You beat Gene? That's the"
+	line "Rock Coin! You really beat him?"
+	line "Then I'll duel you. But do you"
+	line "have the courage to duel me, GR1?"
 	done
 
 Text08ba:
-	textfw "にがしてやったのに"
-	linefw "また きたのか?"
-	linefw "オレとたたかいたいのか?"
+	text "I let you go, and you came back?"
+	line "You want to duel me?"
 	done
 
 Text08bb:
-	textfw "GR1号と 対戦しますか?"
+	text "Would you like to duel GR1?"
 	done
 
 Text08bc:
-	textfw "サイドカード6枚のしょうぶだ!"
-	linefw " "
-	linefw "このオレに 勝てたら"
-	linefw "バトルクラブから でていってやるぞ!"
-	linefw "もっとも オレに"
-	linefw "勝てるわけが ないけどな"
+	text "6 Prizes! If you beat me, I'll"
+	line "leave the Fighting Club!"
+	line "Not that you'll win."
 	done
 
 Text08bd:
-	textfw "たたかうユウキの ないヤツは"
-	linefw "あいてに しないぜ"
-	linefw "ゆるしてやるから"
-	linefw "さっさと にげな"
+	text "I don't duel cowards. I'll let"
+	line "you live. Now run."
 	done
 
 Text08be:
-	textfw "オレに 勝つなんて"
-	linefw "おもったよりも つよいな!"
+	text "You beat me... You're stronger than"
+	line "I thought!"
 	done
 
 Text08bf:
-	textfw "あっはははははは!"
-	linefw "なんて よわいんだ!"
-	linefw "ゲンゾウに 勝ったのは"
-	linefw "まぐれだったんだな!"
-	linefw "いいぜ!"
-	linefw "みのがしてやるから にげな"
+	text "Hahahahaha! You're so weak!"
+	line "Beating Gene must have been a fluke!"
+	line "Fine! I'll let you go. Now run."
 	done
 
 Text08c0:
-	textfw "それと・・・"
-	linefw "これを うけとれ!"
+	text "And... take this!"
 	done
 
 Text08c1:
-	textfw "われらGR団に"
-	linefw "ちょうせんするユウキが あるなら"
-	linefw "この「GRコインのカケラ」を"
-	linefw "4つあつめろ!"
-	linefw "そうすれば われらGR団のしまへ"
-	linefw "おまえを しょうたいしてやる!"
-	linefw "でも・・・"
-	linefw "おまえに あつめられるかな?"
+	text "If you have the courage to challenge"
+	line "Team GR, collect 4 GR Coin Pieces."
+	line "Then I'll invite you to GR Island."
+	line "But... can you do it?"
 	done
 
 Text08c2:
-	textfw "どうやら 「GRコインのカケラ」を"
-	linefw "4つ あつめたようだな"
-	linefw "われらGR団に ちょうせんする"
-	linefw "というわけだな・・・"
-	linefw "われらGR団のしまへ"
-	linefw "おまえを しょうたいしてやる!"
-	linefw "その「GRコイン」を みせて"
-	linefw "エアポートから ひこう船にのれ"
-	linefw "GR団の ほんとうのチカラを"
-	linefw "みせてやる!"
+	text "You collected all 4 GR Coin Pieces."
+	line "I'll invite you to our island."
+	line "Show your GR Coin to board"
+	line "the airship at the Airport!"
 	done
 
 Text08c3:
-	textfw "そうだ! ここのクラブマスターの"
-	linefw "ヤマグチは GR団があずかっている"
-	linefw "とりもどしたければ"
-	linefw "GR団のしまへ くるんだな!"
+	text "Oh yes! Team GR is holding the"
+	line "Club Master of this place, Mitch."
+	line "If you want him back, come to"
+	line "GR Island!"
 	done
 
 Text08c4:
-	textfw "ぼくは マサヒロ!"
-	linefw "バトルクラブのメンバーだ"
-	linefw "クラブマスターの ヤマグチさんが"
-	linefw "GR1号に さらわれちゃったんだ!"
-	linefw "バトルクラブのカードも"
-	linefw "やつらに もっていかれちゃった!"
-	linefw "ほかのメンバーの タツローとナツキは"
-	linefw "カードあつめに いっちゃったし・・・"
-	linefw "しゅぎょうちゅうの ぼくじゃぁ"
-	linefw "GR1号に 勝てない・・・"
+	text "I'm Isaac! GR1 kidnapped Mitch and"
+	line "took the Fighting Club cards!"
+	line "Chris and Jessica are out"
+	line "collecting cards..."
+	line "I'm still in training, so I can't"
+	line "beat GR1..."
 	done
 
 Text08c5:
-	textfw "たのむ! GR1号をたおしてくれ!"
+	text "Please! Defeat GR1!"
 	done
 
 Text08c6:
-	textfw "ええ!"
-	linefw "そんなこといわずに たのむよ!"
+	text "Come on! Don't say that! Please!"
 	done
 
 Text08c7:
-	textfw "えっ? ほんとうかい?"
-	linefw "ありがとう!"
-	linefw "じゃ GR1号とたたかうまえに"
-	linefw "ぼくと しゅぎょうをしよう"
-	linefw "勝ったら のこりすくない"
-	linefw "カードを キミに あげるよ!"
+	text "Huh? Really? Thank you! Then before"
+	line "you duel GR1, let's train together."
+	line "If you win, I'll give you what few"
+	line "cards I have left!"
 	done
 
 Text08c8:
-	textfw "ヤマグチさんをさらった GR1号は"
-	linefw "ストーンクラブへ いったらしい!"
-	linefw "たのむ! GR1号を"
-	linefw "かならず たおしてくれよ!"
-	linefw "そのためにも ぼくと"
-	linefw "しゅぎょうして カードをふやそう!"
+	text "GR1, who kidnapped Mitch, went to"
+	line "the Rock Club! Please beat GR1!"
+	line "To help with that, let's train and"
+	line "get you more cards!"
 	done
 
 Text08c9:
-	textfw "<RAMNAME>くん!"
-	linefw "いいところに きてくれた!"
-	linefw "GR1号が プレイホールに"
-	linefw "もどってきてるんだ"
-	linefw "たたかうなら いまが チャンスだよ!"
-	linefw "・・・でも さきに 対戦するかい?"
-	done
-
-Text08ca:
-	textfw "マサヒロと対戦しますか?"
+	text "<RAMNAME>! Good timing! GR1 is"
+	line "back at the Play Hall. Now's your"
+	line "chance to duel him!"
+	line "...But first, do you want to duel?"
 	done
 
 Text08cb:
-	textfw "サイドカード4枚のしょうぶだ!"
-	linefw "さあ はじめよう!"
+	text "4 Prizes! Let's begin!"
 	done
 
 Text08cc:
-	textfw "GR団に 勝てそうなのは"
-	linefw "キミしか いないんだ!"
-	linefw "よかったら ぼくと たたかって"
-	linefw "しゅぎょうを しよう"
+	text "You're the only one who can beat"
+	line "Team GR!"
+	line "If you're willing, let's duel and"
+	line "train together."
 	done
 
 Text08cd:
-	textfw "GR1号を たおしてくれたんだ"
-	linefw "ありがとう!!"
-	linefw "ヤマグチさんが もどるまで"
-	linefw "バトルクラブを まもらなくっちゃ"
-	linefw "でも そのまえに"
-	linefw "ぼくのしゅぎょうに つきあって"
+	text "You beat GR1! Thanks! Without Mitch,"
+	line "I have to defend the Fighting Club!"
+	line "But first, please train with me."
 	done
 
 Text08ce:
-	textfw "やっぱり つよいや"
-	linefw "これを もっていって!"
+	text "You're strong! Take this!"
 	done
 
 Text08cf:
-	textfw "キミにしゅぎょうは いらないね"
-	linefw "だって つよいもの"
+	text "You don't need training."
+	line "You're already strong."
 	done
 
 Text08d0:
-	textfw "ぼくが 勝った?"
-	linefw "しゅぎょうのおかげかな?"
-	linefw "でも マグレだとおもう"
-	linefw "キミに 勝てるわけがないからね"
+	text "I won? Is it thanks to my training?"
+	line "But I think it was luck. There's"
+	line "no way I could really beat you."
 	done
 
 Text08d1:
-	textfw "カードのこうかんを したいんじゃが"
-	linefw "わしは はずかしがりやさんでのぉ"
-	linefw "はなしたくても だれにも"
-	linefw "はなしかけられないんじゃ"
+	text "I want to trade cards, but I'm"
+	line "very shy. Even though I want to"
+	line "talk, I can't approach anyone."
 	done
 
 Text08d2:
-	textfw "カードのこうかんを したいんじゃが"
-	linefw "わしは はずかしがりやさんでのぉ"
+	text "I want to trade cards, but I'm"
+	line "very shy..."
 	done
 
 Text08d3:
-	textfw "「サワムラー<Lv>23」を くれたら"
-	linefw "超めずらしいカードを あげるんじゃが"
-	linefw "「ミュウツー<Lv>60」なんじゃが"
-	linefw "だれか こうかんしてくれんかのぉ"
+	text "If you give me <Lv>23 Hitmonlee,"
+	line "I'll give you a super-rare card."
+	line "It's a <Lv>60 Mewtwo!"
+	line "Will anyone trade with me?"
 	done
 
 Text08d4:
-	textfw "こうかんして もらえんか・・・"
-	linefw "それじゃ しかたがないのぉ"
-	linefw "はずかしがらずに ほかのひとに"
-	linefw "はなしかけるしか ないのかのぉ"
+	text "You won't trade with me...?"
+	line "Then I have no choice..."
+	line "I'll have to overcome my shyness"
+	line "and talk to someone else."
 	done
 
 Text08d5:
-	textfw "むむむ 「サワムラー<Lv>23」は"
-	linefw "もって いないようですじゃ"
-	linefw "もって いないのであれば"
-	linefw "どうにも ならんのぉ"
+	text "Hmm... you don't seem to have"
+	line "<Lv>23 Hitmonlee."
+	line "If you don't have it, there's"
+	line "nothing I can do."
 	done
 
 Text08d6:
-	textfw "むむむ デッキのなかのカードを"
-	linefw "もらうのは しつれいですじゃ"
-	linefw "いまは えんりょしときますじゃ"
+	text "Hmm... asking for cards from your"
+	line "Deck is rude. I'll refrain for now."
 	done
 
 Text08d7:
-	textfw "おお こうかんしてくださるか"
-	linefw "やさしいひとじゃ"
-	linefw "では 「ミュウツー<Lv>60」を"
-	linefw "おわたししますじゃ"
+	text "You'll trade with me? You're kind."
+	line "Then I'll give you <Lv>60 Mewtwo."
 	done
 
 Text08d8:
-	textfw "「サワムラー<Lv>23」 ゲットじゃ!"
-	linefw "それ まわしげりじゃ!!"
+	text "I got <Lv>23 Hitmonlee!"
+	line "Take that, Rolling Kick!!"
 	done
 
 Text08d9:
-	textfw "カードを こうかんしてもらったら"
-	linefw "ユウキが でてきましたわい"
-	linefw "これからは ひとと はなすのも"
-	linefw "たのしく なりそうですじゃ"
-	linefw "とても かんしゃしておりますじゃ"
+	text "Now that I've traded cards, I've"
+	line "gained courage."
+	line "Talking to people might become fun"
+	line "now. I'm very grateful."
 	done
 
 Text08da:
-	textfw "GR団は カードをつかわないなら"
-	linefw "もらって いくっていってるんだ"
-	linefw "男らしいよな・・・ボクは"
-	linefw "GR団が ただしいとおもうよ!"
-	linefw "ポケモンカードは デッキにいれて"
-	linefw "つかわなきゃ イミないもん"
+	text "Team GR says if you don't use"
+	line "your cards, they'll take them."
+	line "That's manly..."
+	line "I think Team GR is right!"
+	line "If you don't use them,"
+	line "what's the point?"
 	done
 
 Text08db:
-	textfw "GR団は にげちゃったんだって?"
-	linefw "だらしないよね"
-	linefw "やっぱり ポケモンカードは"
-	linefw "あつめることが ただしいんだよ!"
+	text "I heard Team GR ran away?"
+	line "How lame."
+	line "Collecting cards is the"
+	line "right way to enjoy them!"
 	done
 
 Text08dc:
-	textfw "けっきょく カードを あつめるのも"
-	linefw "GR団も みんな ただしくなかったよ"
-	linefw "ポケモンカードは たのしまなきゃね"
-	linefw "うん それが いちばん ただしい!"
+	text "In the end, neither collecting"
+	line "cards nor Team GR was right."
+	line "You have to enjoy Pokémon Cards!"
+	line "Yeah, that's the most correct!"
 	done
 
 Text08dd:
-	textfw "ひとのモノを うばうなんて"
-	linefw "男らしくない!"
-	linefw "カードは あつめるのが たのしいんだ"
-	linefw "GR団は まちがってるよ"
+	text "Robbing other people isn't manly!"
+	line "Collecting cards is the fun part."
+	line "Team GR is wrong!"
 	done
 
 Text08de:
-	textfw "うーん かんがえると カードも"
-	linefw "つかわないと つまんないよな"
-	linefw "やっぱし GR団の いってることが"
-	linefw "ただしいことだと オレは おもう"
+	text "Hmm... when you think about it,"
+	line "not using cards is boring too."
+	line "Maybe Team GR is right after all."
 	done
 
 Text08df:
-	textfw "うーん そうだよな"
-	linefw "ポケモンカードは 対戦しないとなー"
-	linefw "うん! 対戦が イチバン たのしい!"
-	linefw "オレは そうおもう!"
+	text "Yeah... you've gotta duel with"
+	line "Pokémon Cards!"
+	line "Dueling is the most fun!"
+	line "That's what I think!"
 	done
 
 Text08e0:
-	textfw "男のこたちの はなし きいた?"
-	linefw "ほんと なに いってるんだろ"
-	linefw "ポケモンカードは 対戦するのが"
-	linefw "いちばん おもしろいのにね!"
-	linefw "そんなことも わからないなんて"
-	linefw "男のこって コドモよね"
+	text "Did you hear those boys? Dueling"
+	line "is the fun part of Pokémon Cards!"
+	line "How can they not get that?"
+	line "Boys are so childish."
 	done
 
 Text08e1:
-	textfw "男のこたちの はなし きいた?"
-	linefw "ほんと なに いってるんだろう"
-	linefw "ポケモンカードは 対戦するのが"
-	linefw "たのしいなんて あたりまえよね"
-	linefw "そんなことも わからないんだから"
-	linefw "男のこって コドモよね"
+	text "Did you hear those boys talking?"
+	line "What are they on about?"
+	line "Of course dueling is fun!"
+	line "Boys are so childish."
 	done
 
 Text08e2:
-	textfw "「超のGR団コイン」を"
-	linefw "おもちください"
-	linefw "「超のGR団コイン」は"
-	linefw "超のGR団のようさいに ございます"
+	text "Please present the"
+	line "GR Psychic Coin."
+	line "The GR Psychic Coin is inside the"
+	line "GR Psychic Fort."
 	done
 
 Text08e3:
-	textfw "「超のGR団コイン」を"
-	linefw "おもちでしたら おわたしください"
+	text "If you have the GR Psychic Coin,"
+	line "please hand it over."
 	done
 
 Text08e4:
-	textfw "超のGR団コインを わたしますか?"
+	text "Hand over the GR Psychic Coin?"
 	done
 
 Text08e5:
-	textfw "たしかに うけとりました"
+	text "I have received it."
 	done
 
 Text08e6:
-	textfw "「超のGR団コイン」を"
-	linefw "トビラに はめました"
+	text "The GR Psychic Coin was inserted"
+	line "into the door."
 	done
 
 Text08e7:
-	textfw "「超のGR団コイン」が なければ"
-	linefw "おはいりには なれません"
+	text "Without the GR Psychic Coin, you"
+	line "may not enter."
 	done
 
 Text08e8:
-	textfw "「無のGR団コイン」を"
-	linefw "おもちください"
-	linefw "「無のGR団コイン」は"
-	linefw "無のさいだんに ございます"
-	done
-
-Text08e9:
-	textfw "「無のGR団コイン」を"
-	linefw "おもちください"
-	linefw "「無のGR団コイン」は"
-	linefw "無のさいだんに ございます"
+	text "Please present the"
+	line "GR Colorless Coin."
+	line "The GR Colorless Coin is inside the"
+	line "Colorless Altar."
 	done
 
 Text08ea:
-	textfw "「無のGR団コイン」を"
-	linefw "おもちでしたら おわたしください"
+	text "If you have the GR Colorless Coin,"
+	line "please hand it over."
 	done
 
 Text08eb:
-	textfw "無のGR団コインを わたしますか?"
+	text "Hand over the GR Colorless Coin?"
 	done
 
 Text08ec:
-	textfw "「無のGR団コイン」を"
-	linefw "トビラに はめました"
+	text "The GR Colorless Coin was inserted"
+	line "into the door."
 	done
 
 Text08ed:
-	textfw "「無のGR団コイン」が なければ"
-	linefw "おはいりには なれません"
+	text "Without the GR Colorless Coin, you"
+	line "may not enter."
 	done
 
 Text08ee:
-	textfw "「超のGR団コイン」を"
-	linefw "おもちください"
-	linefw "「超のGR団コイン」は"
-	linefw "超のGR団のようさいに ございます"
+	text "Please present the GR Psychic Coin."
+	line "The GR Psychic Coin is inside the"
+	line "GR Psychic Fort."
 	done
 
 Text08ef:
-	textfw "どうぞ"
-	linefw "なかへ おはいりください"
+	text "Please, enter."
 	done
 
 Text08f0:
-	textfw "コインが そろいましたので"
-	linefw "トビラを おあけしました"
+	text "The Coins are in place."
+	line "The door has been opened."
 	done
 
 Text08f1:
-	textfw "とうとう ここまで きたか・・・"
-	linefw "ほめてあげよう <RAMNAME>くん"
+	text "So you've finally made it this far."
+	line "I'll give you credit, <RAMNAME>."
 	done
 
 Text08f2:
-	textfw "だが きさまらは 伝説だなんだと"
-	linefw "カードを あつめているだけだ!"
-	linefw "カードは デッキに いれて"
-	linefw "つかうことが いちばん ただしいのだ"
-	linefw "GR団にも かんがえを かえたものが"
-	linefw "でているようだ・・・・"
-	linefw "だが わたしは みとめない!"
-	linefw "わたしの かんがえは ただしいのだ!"
+	text "But you're just collecting cards"
+	line "because they're Legendary!"
+	line "The right way is to put them in a"
+	line "Deck and use them!"
+	line "Some in Team GR have changed"
+	line "their minds... but I won't!"
 	done
 
 Text08f3:
-	textfw "ひとりで たたかってきたことは"
-	linefw "みとめてやろう!"
+	text "I'll acknowledge that you fought"
+	line "your way here alone!"
 	done
 
 Text08f4:
-	textfw "大かんぶ カンザキ!"
+	text "Executive Clay!"
 	done
 
 Text08f5:
-	textfw "ハッ!"
+	text "Hah!"
 	done
 
 Text08f6:
-	textfw "大かんぶ ルイ!"
+	text "Executive Allison!"
 	done
 
 Text08f7:
-	textfw "はい! ビルリッチさま!!"
+	text "Yes, King Villicci!!"
 	done
 
 Text08f8:
-	textfw "<RAMNAME>!"
-	linefw "このふたりの 大かんぶに 勝つのだ!"
-	linefw "さすれば わたしが ちょくせつ"
-	linefw "たたかってやろうでは ないか!"
-	linefw "勝てれば・・・だがな"
+	text "<RAMNAME>! Defeat these two"
+	line "Executives! Then I will duel you"
+	line "myself! If you can win, that is."
 	done
 
 Text08f9:
-	textfw "さいしょのあいては このオレ"
-	linefw "大かんぶのカンザキだ!"
-	linefw "だが ここでは なんだからな"
-	linefw "対戦テーブルに つけ"
+	text "Your first opponent is me, Clay!"
+	line "But this isn't the place."
+	line "Take a seat at the duel table."
 	done
 
 Text08fa:
-	textfw "わたくしたちに 勝ったのだから"
-	linefw "ビルリッチさまに あわせるわ"
-	linefw "ついて きなさい"
+	text "You've beaten us, so we'll take"
+	line "you to King Villicci. Follow me."
 	done
 
 Text08fb:
-	textfw "では"
-	linefw "対戦をはじめよう"
-	linefw "だが オレの対戦には"
-	linefw "じょうけんを つけさせてもらう!"
-	linefw "おまえたちが あがめている"
-	linefw "伝説のポケモンカード・・・"
-	linefw "しっては いるだろうが"
-	linefw "伝説のポケモンカードは この4枚だ!"
-	linefw "「ファイヤー<Lv>40」!!"
-	linefw "「フリーザー<Lv>37」!!"
-	linefw "「サンダー<Lv>68」!!"
-	linefw "「カイリュー<Lv>41」!!"
-	linefw "この4枚の 伝説のポケモンカードを"
-	linefw "デッキに いれるのだ"
-	linefw "そうすれば オレは よろこんで"
-	linefw "キサマと たたかおう"
+	text "Now, let's begin the duel."
+	line "But I have conditions!"
+	line "The Legendary Pokémon Cards you"
+	line "worship... there are 4 of them:"
+	line "Moltres Lv40, Articuno Lv37,"
+	line "Zapdos Lv68, Dragonite Lv41!"
+	line "Put all 4 in your Deck to duel."
 	done
 
 Text08fc:
-	textfw "「ファイヤー<Lv>40」!!"
-	linefw "「フリーザー<Lv>37」!!"
-	linefw "「サンダー<Lv>68」!!"
-	linefw "「カイリュー<Lv>41」!!"
-	linefw "伝説のポケモンカードを"
-	linefw "1枚ずつ デッキに いれる"
-	linefw "それが!"
-	linefw "オレと 対戦するじょうけんだ"
-	linefw "すでに デッキに はいっているならば"
-	linefw "すぐに たたかうぞ どうだ?"
+	text "Moltres Lv40, Articuno Lv37,"
+	line "Zapdos Lv68, Dragonite Lv41!"
+	line "Put one of each in your Deck."
+	line "If you have them, we can duel now."
 	done
 
 Text08fd:
-	textfw "カンザキと 対戦しますか?"
+	text "Would you like to duel Clay?"
 	done
 
 Text08fe:
-	textfw "ふざけるな <RAMNAME>!!"
-	linefw "オレを バカにしているのか!"
-	linefw "どこに 伝説のポケモンカードが"
-	linefw "はいっていると いうのだ!"
-	linefw "伝説のポケモンカードが ないなら"
-	linefw "グランドマスターにでも きいてこい!"
-	linefw "伝説のポケモンカードを あつめろ!"
-	linefw "それでなくては 対戦せんぞ!"
+	text "Don't mock me, <RAMNAME>!!"
+	line "Bring the Legendary Pokémon Cards!"
+	line "Go ask the Grand Masters!"
+	line "Otherwise, I won't duel you!"
 	done
 
 Text08ff:
-	textfw "サイドカードは 6枚だ"
-	linefw " "
-	linefw "キサマの じつりょくのほど"
-	linefw "みさせてもらうぞ"
+	text "6 Prizes."
+	line "Let me see just how skilled you are."
 	done
 
 Text0900:
-	textfw "伝説のポケモンカードが ないのか?"
-	linefw " "
-	linefw "伝説のポケモンカードが ないなら"
-	linefw "グランドマスターにでも きいてこい!"
+	text "No Legendary Pokémon Cards?"
+	line "If you don't have them, go ask"
+	line "the Grand Masters."
 	done
 
 Text0901:
-	textfw "キサマのあいては"
-	linefw "大かんぶ ルイだ オレではない!"
+	text "Your opponent is Executive Allison,"
+	line "not me!"
 	done
 
 Text0902:
-	textfw "ルイと 対戦しながら"
-	linefw "いろいろと かんがえている"
-	linefw "オレと たたかうのか?"
-	linefw "じょうけんは かえないぞ"
-	linefw "伝説のポケモンカードを 1枚ずつ"
-	linefw "デッキにいれるんだ"
-	linefw "よういが できているなら"
-	linefw "たたかおう"
+	text "While dueling Allison, I've been"
+	line "thinking. Do you want to duel me?"
+	line "My conditions haven't changed."
+	line "Put one of each Legendary Pokémon"
+	line "Card in your Deck. If you're ready,"
+	line "let's duel."
 	done
 
 Text0903:
-	textfw "みずを さすな <RAMNAME>"
-	linefw " "
-	linefw "デッキに 伝説のポケモンカードが"
-	linefw "はいっておらん!"
-	linefw "たたかいたくなければ"
-	linefw "たたかわなくとも かまわんよ"
+	text "Don't interrupt, <RAMNAME>."
+	line "You don't have the Legendary"
+	line "Pokémon Cards in your Deck!"
+	line "If you don't want to duel,"
+	line "that's fine with me."
 	done
 
 Text0904:
-	textfw "では せきにつけ!"
-	linefw "対戦を はじめよう"
+	text "Then take your seat!"
+	line "Let's begin the duel."
 	done
 
 Text0905:
-	textfw "サイドカードは 6枚だ"
-	linefw "いくぞ <RAMNAME>!!"
+	text "6 Prizes. Let's go, <RAMNAME>!!"
 	done
 
 Text0906:
-	textfw "やるきのないものと たたかっても"
-	linefw "つまらないだけだ"
-	linefw "よかろう"
-	linefw "こんかいは やめにしておくとするか"
+	text "Dueling someone with no spirit"
+	line "is boring. Fine. I'll call it off."
 	done
 
 Text0907:
-	textfw "ビルリッチさまから はなしは きいた"
-	linefw "オレたちにも まちがいは あった"
-	linefw "ポケモンカードは みんなで 対戦を"
-	linefw "たのしむものだ"
-	linefw "キモチを かえたところで"
-	linefw "どうだ? たたかってみるか?"
-	linefw "じょうけんは いままでどおりだ"
-	linefw "伝説のポケモンカードを 1枚ずつ"
-	linefw "いいか <RAMNAME>?"
+	text "I've heard from King Villicci."
+	line "We were wrong too."
+	line "Pokémon Cards are for everyone to"
+	line "enjoy. How about a duel like before?"
+	line "One of each Legendary Pokémon Card."
+	line "You hear me, <RAMNAME>?"
 	done
 
 Text0908:
-	textfw "ぬう ここまで きたのは"
-	linefw "マグレでは ないようだな"
+	text "Ngh... you getting this far"
+	line "wasn't just luck."
 	done
 
 Text0909:
-	textfw "たしかに キサマ・・・いや"
-	linefw "キミのつよさは みとめる"
-	linefw "オレには 勝った・・・"
-	linefw "だが まだ ルイがいる!!"
-	linefw "ルイに 勝たねば ビルリッチさまに"
-	linefw "あうことは かなわないぞ!"
-	linefw "さあ ルイと たたかえ!"
+	text "I acknowledge your strength. You've"
+	line "beaten me... but Allison is next!"
+	line "If you don't beat Allison,"
+	line "you won't get to see Villicci!"
+	line "Now, duel Allison!"
 	done
 
 Text090a:
-	textfw "フッ・・・はなしに ならん"
-	linefw " "
-	linefw "そのていどなら クラブマスターとでも"
-	linefw "あそんで いるんだな"
+	text "Hmph... this is pointless."
+	line "With that level of skill..."
+	line "You should just play with"
+	line "the Club Masters."
 	done
 
 Text090b:
-	textfw "・・・拡張パックだ"
+	text "...Here's a Booster Pack."
 	done
 
 Text090c:
-	textfw "まけたのに ふしぎなきもちだ・・・"
-	linefw "この きもちは なんだ?"
+	text "Despite losing... I feel strange."
+	line "What is this feeling?"
 	done
 
 Text090d:
-	textfw "オレの 勝ちだな"
-	linefw "だが・・・いままでと きぶんがちがう"
+	text "I win. But... this feels different"
+	line "than before."
 	done
 
 Text090e:
-	textfw "まけたと いうのに いいきぶんだ"
-	linefw "これなんだな"
-	linefw "たしかに ポケモンカードは"
-	linefw "たのしむことが だいじだな"
+	text "Even though I lost, I feel good."
+	line "So this is it. Enjoying Pokémon"
+	line "Cards really is important."
 	done
 
 Text090f:
-	textfw "ふしぎだ・・・オレは 勝った"
-	linefw "だが それよりも うれしいことがある"
-	linefw "勝ちまけよりも 対戦していることが"
-	linefw "一番たのしいと おもえる"
-	linefw "いいきぶんだ・・・"
+	text "Strange... I won."
+	line "But more than that, I'm happy."
+	line "I think enjoying the duel is more"
+	line "important than winning or losing."
 	done
 
 Text0910:
-	textfw "あなたは まだ"
-	linefw "わたくしとは 対戦できませんわ"
-	linefw "まずは 大かんぶ カンザキに"
-	linefw "勝たなければ なりません"
+	text "You cannot duel me yet."
+	line "First you must defeat Clay."
 	done
 
 Text0911:
-	textfw "わたくしが 対戦するばんね"
-	linefw "かわりましょう カンザキ"
+	text "It's my turn to duel."
+	line "I'll take over, Clay."
 	done
 
 Text0912:
-	textfw "ああ・・・"
+	text "Ah..."
 	done
 
 Text0913:
-	textfw "ふふふ・・・カンザキに 勝っても"
-	linefw "まだ だめよ わたくしに 勝たないと"
-	linefw "わたくしは とくべつなちからを"
-	linefw "3つ もっているのよ"
+	text "Fufufu... Even if you beat Clay,"
+	line "you still have to beat me."
+	line "I possess 3 special powers."
 	done
 
 Text0914:
-	textfw "ひとつは"
-	linefw "「にげにくい場」よ"
-	linefw "にげるときに ひつような"
-	linefw "エネルギーが 「+1」されるの"
-	linefw "にげるときに ひつようなエネルギーが"
-	linefw "「1」だったら 「2」になるわ"
-	linefw "ひとつは"
-	linefw "「トラッシュが ブラックホール」よ"
-	linefw "これは トラッシュしたカードは"
-	linefw "その対戦では つかえなくなるのよ"
-	linefw "ひとつは"
-	linefw "「抵抗力ていか」よ"
-	linefw "これは 抵抗力が 「-30」から"
-	linefw "「-10」に かわるわ"
-	linefw "3つのちからが 対戦するときに"
-	linefw "わたくしを とりまくの"
-	linefw "さあ わたくしと 対戦なさるのかしら"
-	linefw "それとも おやめになる?"
+	text "First: 'Tough Escape'."
+	line "Retreating requires 1 more Energy."
+	line "Second: 'Black Hole'. Cards sent to"
+	line "the Discard Pile are unusable."
+	line "Third: 'Low Resistance'. Resistance"
+	line "drops to -10. Will you duel me?"
 	done
 
 Text0915:
-	textfw "ルイと 対戦しますか?"
+	text "Would you like to duel Allison?"
 	done
 
 Text0916:
-	textfw "こんかいの対戦は"
-	linefw "「にげにくい場」よ"
-	linefw "にげるときに ひつようなエネルギーが"
-	linefw "「+1」されるわ"
+	text "This duel uses 'Tough Escape'."
+	line "Retreating requires 1 more Energy."
 	done
 
 Text0917:
-	textfw "サイドカードは 6枚よ"
-	linefw "さあ いくわよ <RAMNAME>!"
+	text "6 Prizes. Here I go, <RAMNAME>!"
 	done
 
 Text0918:
-	textfw "こんかいの対戦は"
-	linefw "「トラッシュブラックホール」よ!"
-	linefw "トラッシュしたカードは"
-	linefw "この対戦では つかえなくなるわ"
+	text "This duel uses"
+	line "'Black Hole'!"
+	line "Cards sent to the Discard Pile can't"
+	line "be used for the rest of this Duel."
 	done
 
 Text0919:
-	textfw "こんかいの対戦は"
-	linefw "「抵抗力ていか」よ"
-	linefw "抵抗力が 「-30」から"
-	linefw "「-10」になるわ"
+	text "This duel uses 'Low Resistance'."
+	line "Resistance changes to -10."
 	done
 
 Text091a:
-	textfw "じゅんびが できてないのかしら?"
-	linefw "でも ムダですわ"
-	linefw "つぎの対戦のときには わたくしを"
-	linefw "また べつのちからが とりまくわ"
-	linefw "じゅんびするなら どんなデッキとでも"
-	linefw "対戦できるように するのね"
+	text "Not ready?"
+	line "It doesn't matter."
+	line "Next time we duel, different"
+	line "powers will surround me."
+	line "If you want to be prepared,"
+	line "be ready for any Deck."
 	done
 
 Text091b:
-	textfw "もう わかっているわ"
-	linefw " "
-	linefw "どんなりゆうが あっても"
-	linefw "カードは うばうべきじゃ ないってね"
-	linefw "そして 対戦を たのしむって"
-	linefw "だいじな こともね"
-	linefw "でも わたくしは とくべつなちからを"
-	linefw "3つ もっているのよ"
+	text "I already know. No matter the"
+	line "reason, stealing cards is wrong."
+	line "But I still have 3 special powers."
 	done
 
 Text091c:
-	textfw "それじゃあ"
-	linefw "せきに おすわりになって"
+	text "Then please take your seat."
 	done
 
 Text091d:
-	textfw "サイドカードは 6枚よ"
-	linefw "対戦を たのしみましょう!"
+	text "6 Prizes. Let's enjoy the duel!"
 	done
 
 Text091e:
-	textfw "そう? こういった対戦も"
-	linefw "たのしいと おもうのだけど?"
+	text "Really? I think duels like this"
+	line "are fun too."
 	done
 
 Text091f:
-	textfw "たいしたものね <RAMNAME>"
+	text "Impressive, <RAMNAME>."
 	done
 
 Text0920:
-	textfw "カンザキと わたくしに 勝つなんて"
-	linefw "おどろきだわ"
-	linefw "いいでしょう ビルリッチさまの"
-	linefw "ところに あんないするわ"
+	text "You beat both Clay and me."
+	line "I'm surprised. Very well. I'll"
+	line "take you to King Villicci."
 	done
 
 Text0921:
-	textfw "ふふふ・・・ざんねんね"
-	linefw " "
-	linefw "わたくしに 勝てなければ"
-	linefw "ビルリッチさまには 勝てないわ"
+	text "Fufufu... too bad. If you can't"
+	line "beat me, you can't beat Villicci."
 	done
 
 Text0922:
-	textfw "やはり 対戦を たのしんでいる"
-	linefw "あなたは つよいわ"
+	text "You really enjoy dueling."
+	line "That's why you're strong."
 	done
 
 Text0923:
-	textfw "ふふふふ・・いいものね"
-	linefw "対戦を たのしむって"
-	linefw "また たのしみましょうね"
+	text "Fufufu... it feels good. Enjoying a"
+	line "duel... Let's enjoy another one!"
 	done
 
 Text0924:
-	textfw "どう? たのしめたかしら"
-	linefw "また 対戦しましょうね"
+	text "Did you enjoy yourself?"
+	line "Let's duel again."
 	done
 
 Text0925:
-	textfw "わたくしたちに 勝てなければ"
-	linefw "さきには とおしませんわ"
+	text "If you can't beat us, you won't"
+	line "go any further."
 	done
 
 Text0926:
-	textfw "ルイに 勝てねば"
-	linefw "さきに すすむことは まかりならん"
+	text "If you can't beat Allison, you shall"
+	line "not pass."
 	done
 
 Text0927:
-	textfw "なんだと・・・"
-	linefw "このわたしが まけた・・・"
-	linefw "わたしのカードへの あいが"
-	linefw "きさまに まけたというのか・・・"
-	linefw "だが この対戦は"
-	linefw "たのしかったぞ・・・なぜだ!"
-	linefw "きさまとの 対戦は たのしかった"
-	linefw "たのしかったのだ・・・"
-	linefw "なんだ このドキドキは・・・"
-	linefw "わすれていた この ときめき!"
-	linefw "ポケモンカードは たのしい"
-	linefw "そうだ・・・たのしいのだ!!"
-	linefw "はじめて ポケモンカードを"
-	linefw "てにしたときの あの ときめきだ"
-	linefw "おぼえているか? カードを"
-	linefw "てにするだけで たのしかった"
-	linefw "すくないカードで つくったデッキで"
-	linefw "なんども あそんだ あのときを!"
-	linefw "カードを あつめて たのしむのも"
-	linefw "デッキにいれて たのしむのも"
-	linefw "ポケモンカードの"
-	linefw "たのしみかたの ひとつ!"
-	linefw "きみは 対戦で わたしに"
-	linefw "それを おもいださせてくれた!"
-	linefw "<RAMNAME>くん・・・"
-	linefw "ありがとう!"
-	linefw "もう つかっていないからといって"
-	linefw "カードを うばうことは やめよう"
-	linefw "ポケモンカードを もっているものは"
-	linefw "ポケモンカードを あいしている"
-	linefw "ポケモンカードをもつ ものは"
-	linefw "みんな ともだちだと わかった"
-	linefw "これから きみとも ともだちだ"
-	linefw "ゆうじょうの しるしを あげよう!"
+	text "What? I lost... Was my love of cards"
+	line "no match for yours? But it was fun."
+	line "Why? Pokémon Cards are fun."
+	line "Yes... They ARE fun!!"
+	line "It's that excitement I felt when I"
+	line "first held a card. Do you remember?"
+	line "Thanks <RAMNAME>..."
+	line "I'll stop stealing cards."
+	line "Everyone who owns Pokémon Cards"
+	line "loves them. We are friends."
+	line "Have a symbol of our friendship!"
 	done
 
 Text0928:
-	textfw "そして このカードも あげよう"
-	linefw "GR団でも とてもめずらしいカードだ"
+	text "And take this card too. It's a"
+	line "very rare card, even within Team GR."
 	done
 
 Text0929:
-	textfw "あらそいは これでおわりだ!"
-	linefw "さあ <RAMNAME>くん"
-	linefw "これからは ポケモンカードを"
-	linefw "おおいに たのしもうでは ないか!"
+	text "The conflict is over!"
+	line "Wouldn't you say so, <RAMNAME>?"
+	line "Let's enjoy our Pokémon Cards!"
 	done
 
 Text092a:
-	textfw "ビルリッチさま!"
-	linefw "大かんぶ カンザキ まけました"
+	text "King Villicci!"
+	line "Executive Clay has lost."
 	done
 
 Text092b:
-	textfw "ビルリッチさま!"
-	linefw "大かんぶ ルイ まけました"
+	text "King Villicci!"
+	line "Executive Allison has lost."
 	done
 
 Text092c:
-	textfw "ほぉ カンザキと ルイを"
-	linefw "まかしおったか"
-	linefw "もっとも そうでなければ"
-	linefw "わたしと対戦する しかくはない"
-	linefw "さがれ!"
-	linefw "カンザキ! ルイ!"
+	text "Ho... you've defeated Clay and"
+	line "Allison. You are worthy to duel me."
+	line "Clay! Allison! Begone!"
 	done
 
 Text092d:
-	textfw "ビルリッチさまと たたかえ"
-	linefw "そして まければ わかるだろう"
-	linefw "GR団が ただしいと いうことが"
+	text "Duel King Villicci. When you lose,"
+	line "you'll know that Team GR is right."
 	done
 
 Text092e:
-	textfw "あなたが ビルリッチさまに"
-	linefw "勝てるかどうか たのしみだわ"
+	text "I'm curious whether you can"
+	line "beat King Villicci."
 	done
 
 Text092f:
-	textfw "いいか"
-	linefw "<RAMNAME>!"
+	text "Listen well, <RAMNAME>!"
 	done
 
 Text0930:
-	textfw "「ポケモンカードは 対戦で"
-	linefw "つかってこそ かちがある!」"
-	linefw "わたしは このおもいをこめて"
-	linefw "GR団を つくった!"
-	linefw "コレクションされるだけで 対戦に"
-	linefw "つかわれることのない カードを"
+	text "'Pokémon Cards only have value"
+	line "when used in duels!'."
+	line "I created Team GR to rescue cards"
+	line "only collected, never used in duels."
 	done
 
 Text0931:
-	textfw "つかってやろうと おもってな!"
-	linefw " "
+	text "I wanted to use them!"
 	done
 
 Text0932:
-	textfw "あつめるだけの ヤツラから"
-	linefw "カードを たすけだしてやったのだ"
-	linefw "さまざまなルールでの 対戦をして"
-	linefw "カードを つかってやる!"
-	linefw "これこそが ポケモンカードを"
-	linefw "あいするものの ほんとうのすがただ!"
-	linefw "あつめるだけの ヤツラに"
-	linefw "カードは ひつようない!"
+	text "I saved those cards from"
+	line "collectors who just hoard them."
+	line "Duel under various rules"
+	line "and use the cards!"
+	line "That is the true form of"
+	line "those who love Pokémon Cards!"
 	done
 
 Text0933:
-	textfw "そして カードを あいするものが"
-	linefw "カードのチカラを つかいこなせるのだ"
-	linefw "あつめるだけで よろこんでいる"
-	linefw "やつになど まけはしない!"
-	linefw "さあ きさまを うちのめしてやる"
-	linefw "対戦テーブルに つくがいい!!"
+	text "Those who love cards can truly"
+	line "harness their power!"
+	line "I won't lose to a hoarder!"
+	line "Now, I'll crush you!"
+	line "Take your seat at the duel table!!"
 	done
 
 Text0934:
-	textfw "わたしは 4つのデッキをもっている"
-	linefw "対戦ごとに かえさせてもらう"
-	linefw "もちろん きさまにも つかうデッキを"
-	linefw "かえるチャンスを やるがな"
-	linefw "さいごの たたかいを"
-	linefw "はじめようではないか"
-	linefw "さいごのたたかいに ふさわしく"
-	linefw "さきに 2勝したものが 勝ちだ"
+	text "I have 4 Decks. I'll switch each"
+	line "duel. Of course, you can switch too."
+	line "First to win 2 duels is the victor."
 	done
 
 Text0935:
-	textfw "対戦するきに なったか"
-	linefw "もどってくるとは おもっていたがな"
-	linefw "わかっているな?"
-	linefw "さきに 2勝したものが 勝ちだ"
-	linefw "わたしの 4つのデッキを"
-	linefw "おそれぬのなら かかってくるが いい"
+	text "So you've decided to duel?"
+	line "First to 2 wins."
+	line "If you're not afraid of my"
+	line "4 Decks, then come at me."
 	done
 
 Text0936:
-	textfw "ビルリッチと 対戦しますか?"
+	text "Would you like to duel Villicci?"
 	done
 
 Text0937:
-	textfw "サイドカードは 6枚だ"
-	linefw "さて どのデッキを つかうかな"
+	text "6 Prizes. Now, which Deck shall"
+	line "I use?"
 	done
 
 Text0938:
-	textfw "いいだろう!"
-	linefw "まってやる"
-	linefw "だが どうせ きさまの"
-	linefw "ポケモンカードへの あいが"
-	linefw "わたしのポケモンカードへの あいに"
-	linefw "かなうはずが ないがな!"
-	linefw "それでも たたかうというなら"
-	linefw "くるがいい!"
-	linefw "じゅんびをして"
-	linefw "また もどってくるのだな!"
+	text "Very well! I'll wait. Your love for"
+	line "cards will never surpass mine!"
+	line "Come back when you're ready!"
 	done
 
 Text0939:
-	textfw "<RAMNAME>くんか"
-	linefw "たのしんで 対戦をしているかね?"
-	linefw "また わたしと"
-	linefw "たのしい対戦を しないかね?"
-	linefw "れいによって"
-	linefw "さきに 2勝したほうが 勝ちだ"
-	linefw "わたしの 4つのデッキと"
-	linefw "めいっぱい たのしもう!"
+	text "Greetings, <RAMNAME>."
+	line "Are you enjoying your duels?"
+	line "Would you like to have"
+	line "another fun duel with me?"
+	line "Same as before - first to 2 wins."
 	done
 
 Text093a:
-	textfw "では サイドカード 6枚で"
-	linefw "たのしみながら 対戦しよう"
+	text "Then let's duel with 6 Prizes"
+	line "and enjoy ourselves."
 	done
 
 Text093b:
-	textfw "それなら わたしは ほかの団員と"
-	linefw "対戦を たのしむことにしよう"
+	text "In that case, I'll enjoy dueling"
+	line "with other Team GR members."
 	done
 
-SECTION "Text 9", ROMX
-
 Text093c:
-	textfw "だが もう1ど わたしに勝つと"
-	linefw "たのしいことが あるかもしれないぞ!"
+	text "But if you beat me again,"
+	line "something fun might happen!"
 	done
 
 Text093d:
-	textfw "まずは きさまの 1勝だ!"
-	linefw "つづけて つぎの対戦だ!"
-	linefw "わたしは つかうデッキを かえるが"
-	linefw "きさまは どうするのだ?"
+	text "First win goes to you!"
+	line "On to the next duel!"
+	line "I'll switch Decks. What will you do?"
 	done
 
 Text093e:
-	textfw "まずは"
-	linefw "わたしの 1勝だな"
-	linefw "つぎに"
-	linefw "わたしが 勝てば おわりだ"
-	linefw "わたしは つかうデッキを かえるが"
-	linefw "きさまは どうするのだ?"
+	text "First win goes to me."
+	line "One more win and it's over."
+	line "I'll switch Decks. What will you do?"
 	done

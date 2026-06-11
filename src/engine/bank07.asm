@@ -3280,34 +3280,34 @@ SetGiftCenterMenuCursorToQuit:
 
 GiftCenter_PrintWelcome:
 	ldtx hl, GiftCenterWelcomeText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ldtx hl, GiftCenterServicePromptText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret
 
 GiftCenter_PrintComeAgain:
 	ldtx hl, GiftCenterComeAgainText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret
 
 GiftCenter_PrintSelectedService:
 	ldtx hl, GiftCenterServiceAcknowledgementText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret
 
 GiftCenter_SaveRequest:
 	ldtx hl, GiftCenterServiceSaveRequestText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ld c, TRUE
 	call SaveGamePrompt
 	ret nc
 	ldtx hl, GiftCenterServiceUnavailableSaveRequiredText
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret
 
@@ -7735,7 +7735,7 @@ ShowCardDungeonDescriptionScreen:
 	ldtx hl, GameCenterCardDungeonTitleText
 	lb de, 1, 0
 	call PrintTextNoDelay_ZeroAttributes
-	ldtx hl, GameCenter10ChipsPerPlayText
+	ldtx hl, GameCenterCardDungeonBet10Text
 	lb de, 13, 0
 	call PrintTextNoDelay_ZeroAttributes
 	lb de, 0, 12

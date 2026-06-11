@@ -28,13 +28,13 @@ GameCenterPrizeExchange:
 	ret
 
 .PrintWelcome:
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	ldtx hl, GameCenterPrizeExchangeWelcomeText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret
 
 .PrintComeAgain:
-	ldtx de, ReceptionistText
+	ldtx de, DialogReceptionistText
 	ldtx hl, GameCenterPrizeExchangeComeAgainText
 	farcall PrintScrollableText_WithTextBoxLabelVRAM0
 	ret

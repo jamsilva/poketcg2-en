@@ -257,10 +257,6 @@ PlayerGenderText:
 	text "Gender"
 	done
 
-ReceptionistText:
-	text "Receptionist"
-	done
-
 GameCenterPrizeExchangeWelcomeText:
 	text "Welcome!"
 	line "This is the Prize Counter!"
@@ -1344,8 +1340,6 @@ MailAutoDeckMachine4Body1Text:
 	line "Come to the Lab to check it!"
 	done
 
-SECTION "Text 6", ROMX
-
 MailAutoDeckMachine4Body2Text:
 	text "We are winning our cards back"
 	line "thanks to you! Try practicing"
@@ -1449,6 +1443,8 @@ MailGRChallengeMachineBody3Text:
 MailGrandMasterCupSubjectText:
 	text "Grand Master Cup"
 	done
+
+SECTION "Text 6", ROMX
 
 MailGrandMasterCupBody1Text:
 	text "Greetings, <RAMNAME>!"
@@ -2259,14 +2255,6 @@ GameCenterCardDungeonBet100Text:
 
 GameCenterCardDungeonBetCancelText:
 	text " Cancel"
-	done
-
-GameCenter10ChipsPerPlayText:
-	text " 10 Chips"
-	done
-
-GameCenter20ChipsPerPlayText:
-	text " 20 Chips"
 	done
 
 GameCenterCardDungeonTitleText:

@@ -3567,7 +3567,7 @@ Script_MichaelFightingClubLobby:
 	check_event EVENT_MET_GR1_ROCK_CLUB
 	print_variable_npc_text Text08c8, Text08c9
 .ows_2db4c
-	ask_question Text08ca, TRUE
+	ask_question Text0896, TRUE
 	script_jump_if_b0z .ows_2db5c
 	print_npc_text Text08cb
 	end_dialog
@@ -3581,7 +3581,7 @@ Script_MichaelFightingClubLobby:
 	ret
 .ows_2db62
 	print_npc_text Text08cd
-	ask_question Text08ca, TRUE
+	ask_question Text0896, TRUE
 	script_jump_if_b0z .ows_2db75
 	print_npc_text Text08cb
 	end_dialog
@@ -6252,7 +6252,7 @@ Script_JoshuaWaterClubLobby:
 .ows_2ef11
 	print_npc_text Text087c
 .ows_2ef14
-	ask_question Text087d, TRUE
+	ask_question Text084f, TRUE
 	script_jump_if_b0z .ows_2ef24
 	print_npc_text Text087e
 	end_dialog
@@ -6266,7 +6266,7 @@ Script_JoshuaWaterClubLobby:
 	ret
 .ows_2ef2a
 	print_npc_text Text0880
-	ask_question Text087d, TRUE
+	ask_question Text084f, TRUE
 	script_jump_if_b0z .ows_2ef3d
 	print_npc_text Text087e
 	end_dialog

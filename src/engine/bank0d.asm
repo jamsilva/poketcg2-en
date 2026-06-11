@@ -1200,7 +1200,7 @@ Script_GR5_TCGAirport:
 	end_script
 	ret
 .start_flight
-	print_npc_text TCGAirportGR5StartFlightText
+	print_npc_text AirportGR5StartFlightText
 	end_dialog
 	get_player_direction
 	compare_loaded_var WEST
@@ -6891,7 +6891,7 @@ Script_GrCastleEntranceGRClerkLeft:
 	script_jump_if_b0z .ows_375cf
 	check_event EVENT_GOT_SNORLAX_COIN
 	script_jump_if_b0z .ows_3755e
-	print_npc_text Text08e9
+	print_npc_text Text08e8
 	end_dialog
 	end_script
 	ret

@@ -3296,7 +3296,7 @@ Script_GR5_GrAirport:
 	end_script
 	ret
 .start_flight
-	print_npc_text GRAirportGR5StartFlightText
+	print_npc_text AirportGR5StartFlightText
 	end_dialog
 	get_player_direction
 	compare_loaded_var WEST
