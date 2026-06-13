@@ -2284,11 +2284,11 @@ Palette155:: ; Legendary booster pack palette
 	rgb  5,  0,  0
 
 	rgb 31, 31, 31
-	rgb  4, 12,  0
+	rgb 31, 20,  0
 	rgb 31, 12,  0
 	rgb  5,  0,  0
 
-	rgb 31, 27,  8
+	rgb 31, 31, 31
 	rgb  4, 12,  0
 	rgb 31, 12,  0
 	rgb  5,  0,  0
