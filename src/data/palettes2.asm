@@ -2608,9 +2608,9 @@ Palette15F:: ; Intro screen Team Rocket booster palette
 	rgb 28, 10,  0
 	rgb  0,  0,  0
 
-	rgb 13,  5, 15
-	rgb 29, 16,  9
-	rgb 22,  2, 14
+	rgb 31, 24,  0
+	rgb 31, 31, 31
+	rgb  4,  7, 15
 	rgb  0,  0,  0
 
 	rgb 31, 31, 27
