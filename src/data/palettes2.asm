@@ -2491,106 +2491,101 @@ Palette15B:: ; Present booster pack palette
 	rgb  0, 31, 31
 	rgb  0, 31, 31
 
-Palette15C::
+Palette15C:: ; Intro screen Base Set booster palette
 	db 6 ; number of palettes
 
-	rgb 24, 16,  0
-	rgb 24,  4,  0
-	rgb 16, 24,  0
-	rgb  0,  0, 12
+	rgb 31, 24,  0
+	rgb 31, 18,  7
+	rgb  4,  7, 15
+	rgb  0,  0,  4
+
+	rgb 31, 24,  0
+	rgb 18,  8,  4
+	rgb  4,  7, 15
+	rgb  0,  0,  4
+
+	rgb 26, 30, 31
+	rgb 11, 17, 31
+	rgb  4,  7, 15
+	rgb  0,  0,  4
+
+	rgb 31, 28, 18
+	rgb 31, 18,  7
+	rgb 18,  8,  4
+	rgb  0,  0,  4
 
 	rgb 31, 31, 31
-	rgb 16, 24,  0
-	rgb  8, 15,  0
-	rgb  0,  0, 12
+	rgb 31, 18,  7
+	rgb 25,  7,  0
+	rgb  0,  0,  4
 
-	rgb 31, 31, 31
-	rgb 31, 16, 12
-	rgb  8, 15,  0
-	rgb  0,  0, 12
+	rgb  4,  7, 15
+	rgb 31, 18,  7
+	rgb 18,  8,  4
+	rgb  0,  0,  4
 
-	rgb 31, 31, 31
-	rgb 31, 16, 12
-	rgb 24,  4,  0
-	rgb  0,  0, 12
-
-	rgb 31, 16, 12
-	rgb 16, 24,  0
-	rgb  8, 15,  0
-	rgb  0,  0, 12
-
-	rgb 31, 31, 31
-	rgb 31, 17,  5
-	rgb 28,  2,  0
-	rgb  0,  0, 12
-
-Palette15D::
+Palette15D:: ; Intro screen Jungle booster palette
 	db 6 ; number of palettes
 
-	rgb 31, 31, 31
-	rgb  8,  8,  4
-	rgb 31,  4,  0
-	rgb  0,  0,  0
+	rgb 31, 26,  0
+	rgb 10, 23,  9
+	rgb  7,  9, 18
+	rgb  8,  1,  1
 
-	rgb 16, 16, 28
-	rgb 19, 31, 12
-	rgb  4, 13,  0
-	rgb  0,  0,  0
+	rgb 31, 26,  0
+	rgb 10, 23,  9
+	rgb  5, 14,  4
+	rgb  8,  1,  1
 
-	rgb 27, 31, 28
-	rgb 11, 21, 28
-	rgb  4, 13,  0
-	rgb  0,  2,  2
+	rgb 26, 26, 27
+	rgb  5, 14,  4
+	rgb 24,  2,  1
+	rgb  8,  1,  1
 
-	rgb 28, 28,  0
-	rgb 12, 20, 20
-	rgb 28, 16, 28
-	rgb  0,  0,  0
+	rgb 31, 26,  0
+	rgb 26, 26, 27
+	rgb  5, 14,  4
+	rgb  8,  1,  1
 
-	rgb 29, 16,  8
-	rgb  4, 13,  0
-	rgb  8,  8,  4
-	rgb  0,  0,  0
+	rgb 28, 31, 19
+	rgb 10, 23,  9
+	rgb  5, 14,  4
+	rgb  8,  1,  1
 
-	rgb 31, 31, 31
-	rgb 29, 16,  8
-	rgb  8,  8,  4
-	rgb  0,  0,  0
+	rgb 26, 26, 27
+	rgb 10, 23,  9
+	rgb 24,  2,  1
+	rgb  8,  1,  1
 
-Palette15E::
-	db 6 ; number of palettes
+Palette15E:: ; Intro screen Fossil booster palette
+	db 5 ; number of palettes
 
-	rgb 31, 31, 31
-	rgb 31, 28,  0
-	rgb 31,  0,  0
-	rgb  8,  0,  0
+	rgb 25, 30, 31
+	rgb 30, 23, 20
+	rgb 18, 12, 12
+	rgb  3,  1,  1
 
-	rgb 31, 31, 31
-	rgb 31, 28,  0
-	rgb 25, 15,  0
-	rgb  8,  0,  0
+	rgb 31, 27,  0
+	rgb 30, 23, 20
+	rgb  7,  7, 15
+	rgb  0,  0,  6
 
-	rgb 31, 31, 17
-	rgb 31,  9,  4
-	rgb  3, 17, 31
-	rgb  0,  0,  7
+	rgb 30, 30, 30
+	rgb 30, 23, 20
+	rgb 23,  2,  2
+	rgb  0,  0,  6
 
-	rgb 31, 26, 12
-	rgb 15, 10,  0
-	rgb 25, 15,  0
-	rgb  6,  0,  0
+	rgb 31, 26,  0
+	rgb 30, 23, 20
+	rgb 18, 12, 12
+	rgb  3,  1,  1
 
-	rgb 31, 31, 14
-	rgb 31,  9,  4
-	rgb 25,  9, 31
-	rgb  6,  0,  0
+	rgb  6,  6, 15
+	rgb 30, 23, 20
+	rgb 18, 12, 12
+	rgb  3,  1,  1
 
-	rgb 15, 10,  0
-	rgb 31, 28,  0
-	rgb 31,  9,  4
-	rgb  6,  0,  0
-
-Palette15F::
+Palette15F:: ; Intro screen Team Rocket booster palette
 	db 6 ; number of palettes
 
 	rgb 31, 31, 31
